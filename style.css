@@ -70,12 +70,10 @@ a {
 }
 
 .brand img {
-  width: clamp(520px, 48vw, 860px);
-  max-height: 120px;
+  width: clamp(260px, 24vw, 420px);
+  max-height: 78px;
   object-fit: contain;
   object-position: left center;
-  transform: scale(1.75);
-  transform-origin: left center;
 }
 
 .main-nav {
