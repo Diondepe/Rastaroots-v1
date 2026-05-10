@@ -50,7 +50,7 @@ a {
 
 .site-header {
   width: 100%;
-  min-height: 132px;
+  min-height: 118px;
   padding: 18px clamp(18px, 4vw, 58px);
   display: flex;
   align-items: center;
@@ -70,10 +70,12 @@ a {
 }
 
 .brand img {
-  width: clamp(360px, 44vw, 760px);
-  max-height: 112px;
+  width: clamp(520px, 48vw, 860px);
+  max-height: 120px;
   object-fit: contain;
   object-position: left center;
+  transform: scale(1.75);
+  transform-origin: left center;
 }
 
 .main-nav {
