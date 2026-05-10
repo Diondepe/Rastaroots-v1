@@ -48,3 +48,21 @@ const revealObserver = new IntersectionObserver(
 revealItems.forEach((item) => {
   revealObserver.observe(item);
 });
+
+// Hero parallax
+const parallaxMedia = document.querySelector(".parallax-media img");
+
+window.addEventListener("scroll", () => {
+  if (!parallaxMedia) return;
+
+  const offset = window.scrollY * 0.12;
+
+  parallaxMedia.style.transform = `translateY(${offset}px) scale(1.04)`;
+});
+
+// Stagger product cards
+const cards = document.querySelectorAll(".product-card");
+
+cards.forEach((card, index) => {
+  card.style.transitionDelay = `${index * 120}ms`;
+});
