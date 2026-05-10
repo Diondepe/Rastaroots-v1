@@ -642,3 +642,12 @@ a {
     text-align: center;
   }
 }
+.subscribe-section .hero-actions {
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-section .btn {
+  margin-left: auto;
+  margin-right: auto;
+}
