@@ -75,6 +75,15 @@ a {
   object-fit: contain;
   object-position: left center;
 }
+.brand {
+  flex: 0 0 auto;
+  max-width: 460px;
+  overflow: visible;
+}
+
+.main-nav {
+  margin-left: auto;
+}
 
 .main-nav {
   display: flex;
