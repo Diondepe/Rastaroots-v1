@@ -59,12 +59,12 @@ a {
 
 .site-header {
   width: 100%;
-  height: 112px;
+  height: 116px;
   padding: 14px 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 34px;
+  gap: 30px;
   background: linear-gradient(180deg, #fff8ea 0%, var(--cream) 100%);
   border-bottom: 1px solid rgba(182, 138, 51, 0.32);
   position: sticky;
@@ -76,15 +76,15 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  flex: 0 0 410px;
-  max-width: 410px;
-  height: 84px;
+  flex: 0 0 470px;
+  max-width: 470px;
+  height: 90px;
   overflow: hidden;
 }
 
 .brand img {
-  width: 410px;
-  max-height: 84px;
+  width: 470px;
+  max-height: 90px;
   object-fit: contain;
   object-position: left center;
 }
@@ -92,7 +92,7 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 30px;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
   white-space: nowrap;
@@ -118,8 +118,8 @@ a {
 
 .menu-toggle {
   display: none;
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   border: 1px solid rgba(16, 60, 37, 0.25);
   border-radius: 999px;
   background: rgba(255, 249, 238, 0.78);
@@ -131,7 +131,7 @@ a {
 }
 
 .menu-toggle span {
-  width: 18px;
+  width: 20px;
   height: 2px;
   background: var(--green);
   border-radius: 999px;
@@ -144,7 +144,7 @@ a {
 /* HERO */
 
 .hero {
-  min-height: 700px;
+  min-height: 720px;
   display: grid;
   grid-template-columns: 43% 57%;
   background: linear-gradient(90deg, var(--cream-light), #f8edda);
@@ -152,7 +152,7 @@ a {
 }
 
 .hero-copy {
-  padding: 90px 6vw;
+  padding: 110px 6vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,26 +243,29 @@ a {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.01);
 }
 
 .btn-primary {
   background: var(--green);
   color: var(--gold-soft);
+  border: 1px solid rgba(244, 216, 138, 0.22);
   box-shadow: 0 16px 34px rgba(6, 37, 22, 0.2);
+  backdrop-filter: blur(8px);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 20px 40px rgba(6, 37, 22, 0.28);
+  box-shadow: 0 22px 44px rgba(6, 37, 22, 0.3);
 }
 
 .btn-secondary {
   color: var(--green);
   border: 1px solid rgba(16, 60, 37, 0.28);
+  background: rgba(255, 249, 238, 0.46);
 }
 
 .hero-media {
-  min-height: 700px;
+  min-height: 720px;
   overflow: hidden;
 }
 
@@ -276,6 +279,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
   transition: transform 0.15s linear;
   will-change: transform;
 }
@@ -741,8 +745,8 @@ a {
 }
 
 .site-footer img {
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -767,6 +771,21 @@ a {
 }
 
 /* TABLET */
+
+@media (max-width: 1360px) {
+  .brand {
+    flex: 0 0 410px;
+    max-width: 410px;
+  }
+
+  .brand img {
+    width: 410px;
+  }
+
+  .main-nav {
+    gap: 24px;
+  }
+}
 
 @media (max-width: 1280px) {
   .tea-grid {
@@ -831,19 +850,19 @@ a {
   }
 
   .site-header {
-    height: 86px;
+    height: 88px;
     padding: 12px 16px;
   }
 
   .brand {
     flex: 0 0 250px;
     max-width: 250px;
-    height: 58px;
+    height: 60px;
   }
 
   .brand img {
     width: 250px;
-    max-height: 58px;
+    max-height: 60px;
   }
 
   .main-nav {
@@ -857,7 +876,7 @@ a {
   .mobile-nav {
     display: none;
     position: fixed;
-    inset: 86px 0 0 0;
+    inset: 88px 0 0 0;
     z-index: 999;
     background: rgba(255, 249, 238, 0.98);
     padding: 32px 24px;
@@ -886,7 +905,7 @@ a {
   }
 
   .hero-copy {
-    padding: 58px 22px;
+    padding: 62px 22px;
   }
 
   .hero h1 {
@@ -894,7 +913,11 @@ a {
   }
 
   .hero-media {
-    min-height: 390px;
+    min-height: 430px;
+  }
+
+  .hero-media img {
+    object-position: center top;
   }
 
   .hero-actions {
@@ -914,6 +937,7 @@ a {
   .founder-banner img {
     min-height: 340px;
     object-fit: cover;
+    object-position: center center;
   }
 
   .value-strip,
