@@ -59,8 +59,8 @@ a {
 
 .site-header {
   width: 100%;
-  height: 116px;
-  padding: 14px 56px;
+  height: 108px;
+  padding: 12px 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,15 +76,15 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  flex: 0 0 470px;
-  max-width: 470px;
-  height: 90px;
+  flex: 0 0 455px;
+  max-width: 455px;
+  height: 84px;
   overflow: hidden;
 }
 
 .brand img {
-  width: 470px;
-  max-height: 90px;
+  width: 455px;
+  max-height: 84px;
   object-fit: contain;
   object-position: left center;
 }
@@ -152,7 +152,7 @@ a {
 }
 
 .hero-copy {
-  padding: 110px 6vw;
+  padding: 120px 6vw 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,7 +279,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: 58% center;
   transition: transform 0.15s linear;
   will-change: transform;
 }
@@ -336,6 +336,7 @@ a {
   width: 100%;
   display: block;
   object-fit: cover;
+  object-position: center center;
 }
 
 /* SECTIONS */
