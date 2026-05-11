@@ -92,7 +92,7 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 42px;
+  gap: 32px;
   margin-left: auto;
   font-family: Arial, Helvetica, sans-serif;
   white-space: nowrap;
@@ -100,7 +100,7 @@ a {
 
 .main-nav a {
   color: var(--green);
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -144,7 +144,7 @@ a {
 /* HERO */
 
 .hero {
-  min-height: 680px;
+  min-height: 700px;
   display: grid;
   grid-template-columns: 43% 57%;
   background: linear-gradient(90deg, var(--cream-light), #f8edda);
@@ -207,6 +207,26 @@ a {
   flex-wrap: wrap;
 }
 
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.hero-proof span {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(182, 138, 51, 0.28);
+  background: rgba(255, 249, 238, 0.6);
+  color: var(--green);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -242,8 +262,14 @@ a {
 }
 
 .hero-media {
-  min-height: 680px;
+  min-height: 700px;
   overflow: hidden;
+}
+
+.hero-media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-media img {
@@ -293,6 +319,21 @@ a {
   line-height: 1.5;
 }
 
+/* FOUNDER BANNER */
+
+.founder-banner {
+  width: 100%;
+  padding: 0;
+  background: #041b10;
+  border-bottom: 1px solid rgba(244, 216, 138, 0.12);
+}
+
+.founder-banner img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 /* SECTIONS */
 
 .section {
@@ -305,10 +346,22 @@ a {
   margin-bottom: 46px;
 }
 
+.center-heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-heading p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section h2,
 .feature-copy h2,
 .subscribe-section h2,
-.launch-section h2 {
+.launch-section h2,
+.club-copy h2 {
   color: var(--green);
   font-size: clamp(2.6rem, 5.2vw, 5.7rem);
   line-height: 0.98;
@@ -319,7 +372,8 @@ a {
 .section-heading p,
 .feature-copy p,
 .subscribe-section p,
-.launch-section p {
+.launch-section p,
+.club-copy p {
   color: #354036;
   max-width: 720px;
   font-family: Arial, Helvetica, sans-serif;
@@ -327,61 +381,181 @@ a {
   line-height: 1.78;
 }
 
-/* PRODUCTS */
+/* TEA SECTION */
 
-.products-section {
-  background: var(--cream-light);
+.teas-section {
+  background:
+    radial-gradient(circle at top right, rgba(182, 138, 51, 0.12), transparent 30%),
+    linear-gradient(180deg, #fff9ee 0%, #f4ead7 100%);
 }
 
-.product-grid {
+.tea-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 22px;
 }
 
-.product-card {
+.tea-card {
+  position: relative;
   overflow: hidden;
-  background: #fff4df;
-  border: 1px solid rgba(182, 138, 51, 0.22);
-  border-radius: 34px;
-  box-shadow: 0 18px 42px rgba(26, 34, 23, 0.08);
+  min-height: 520px;
+  border-radius: 30px;
+  background: #0b1d13;
+  border: 1px solid rgba(244, 216, 138, 0.18);
+  box-shadow:
+    0 18px 48px rgba(26, 34, 23, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.product-card:hover {
+.tea-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(26, 34, 23, 0.16);
+  box-shadow:
+    0 34px 70px rgba(26, 34, 23, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-.product-card img {
+.tea-card.fire {
+  background: linear-gradient(180deg, #6d3611 0%, #1d0d05 100%);
+}
+
+.tea-card.doctor {
+  background: linear-gradient(180deg, #1d4d25 0%, #06140b 100%);
+}
+
+.tea-card.bloom {
+  background: linear-gradient(180deg, #74131d 0%, #1a0508 100%);
+}
+
+.tea-card.iron {
+  background: linear-gradient(180deg, #4b2a18 0%, #120907 100%);
+}
+
+.tea-card.mind {
+  background: linear-gradient(180deg, #0b5d63 0%, #041314 100%);
+}
+
+.tea-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 280px;
   object-fit: cover;
+  border-bottom: 1px solid rgba(244, 216, 138, 0.12);
 }
 
-.product-card div {
-  padding: 28px;
+.tea-card-copy {
+  padding: 28px 24px 30px;
 }
 
-.product-card p {
-  color: var(--gold);
+.tea-number {
+  color: var(--gold-soft);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 900;
-  letter-spacing: 0.16em;
-  margin-bottom: 12px;
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
 }
 
-.product-card h3 {
-  color: var(--green);
+.tea-card h3 {
+  color: var(--gold-soft);
   font-size: 2rem;
   line-height: 1;
   margin-bottom: 12px;
 }
 
-.product-card span {
+.tea-card span {
   display: block;
-  color: var(--muted);
+  color: rgba(255, 249, 238, 0.74);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.tea-card strong {
+  display: block;
+  color: #fff9ee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.84rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.tea-card p:last-child {
+  color: rgba(255, 249, 238, 0.76);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* FULL SELECTION SHOWCASE */
+
+.selection-showcase {
+  background: linear-gradient(180deg, #f4ead7 0%, #fff9ee 100%);
+}
+
+.selection-showcase .wide-image {
+  margin-top: 18px;
+}
+
+/* CLUB SECTION */
+
+.club-section {
+  display: grid;
+  grid-template-columns: 52% 48%;
+  gap: 72px;
+  align-items: center;
+  padding: 110px 7vw;
+  background:
+    radial-gradient(circle at top left, rgba(244, 216, 138, 0.12), transparent 26%),
+    linear-gradient(135deg, #041b10 0%, #103c25 60%, #092315 100%);
+  border-bottom: 1px solid rgba(244, 216, 138, 0.1);
+}
+
+.club-image img {
+  width: 100%;
+  border-radius: 34px;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.34),
+    0 8px 20px rgba(0, 0, 0, 0.24);
+}
+
+.club-copy .section-kicker {
+  color: var(--gold-soft);
+}
+
+.club-copy h2,
+.club-copy p {
+  color: var(--cream-light);
+}
+
+.club-benefits {
+  display: grid;
+  gap: 16px;
+  margin: 36px 0;
+}
+
+.club-benefits div {
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(244, 216, 138, 0.16);
+  backdrop-filter: blur(6px);
+}
+
+.club-benefits strong {
+  display: block;
+  color: var(--gold-soft);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.club-benefits span {
+  color: rgba(255, 249, 238, 0.76);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
@@ -401,6 +575,10 @@ a {
 .feature-section.reverse {
   grid-template-columns: 50% 50%;
   background: #f1e4cf;
+}
+
+.lifestyle-section {
+  background: linear-gradient(180deg, #fff9ee 0%, #f4ead7 100%);
 }
 
 .feature-image img,
@@ -424,10 +602,6 @@ a {
   text-transform: uppercase;
   border-bottom: 1px solid var(--gold);
   padding-bottom: 8px;
-}
-
-.heritage-section {
-  background: linear-gradient(180deg, #fff9ee 0%, #f4ead7 100%);
 }
 
 /* LAUNCH */
@@ -594,6 +768,12 @@ a {
 
 /* TABLET */
 
+@media (max-width: 1280px) {
+  .tea-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 1180px) {
   .site-header {
     height: 100px;
@@ -620,7 +800,8 @@ a {
 
   .hero,
   .feature-section,
-  .feature-section.reverse {
+  .feature-section.reverse,
+  .club-section {
     grid-template-columns: 1fr;
   }
 
@@ -628,7 +809,6 @@ a {
     min-height: 520px;
   }
 
-  .product-grid,
   .value-strip,
   .launch-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -722,14 +902,32 @@ a {
     align-items: stretch;
   }
 
+  .hero-proof {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .btn {
     width: 100%;
   }
 
+  .founder-banner img {
+    min-height: 340px;
+    object-fit: cover;
+  }
+
   .value-strip,
-  .product-grid,
+  .tea-grid,
   .launch-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tea-card {
+    min-height: auto;
+  }
+
+  .tea-card img {
+    height: auto;
   }
 
   .value-strip {
@@ -743,13 +941,15 @@ a {
   .section,
   .feature-section,
   .feature-section.reverse,
+  .club-section,
   .launch-section {
     padding: 70px 22px;
   }
 
-  .product-card,
   .feature-image img,
-  .wide-image {
+  .wide-image,
+  .club-image img,
+  .tea-card {
     border-radius: 24px;
   }
 
