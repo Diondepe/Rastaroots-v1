@@ -25,7 +25,7 @@ if (menuToggle && mobileNav) {
 
 // Smooth reveal animations
 const revealItems = document.querySelectorAll(
-  ".hero, .value-strip, .section, .feature-section, .launch-section, .subscribe-section, .site-footer"
+  ".hero, .value-strip, .founder-banner, .section, .feature-section, .club-section, .launch-section, .subscribe-section, .site-footer"
 );
 
 revealItems.forEach((item) => {
@@ -52,17 +52,37 @@ revealItems.forEach((item) => {
 // Hero parallax
 const parallaxMedia = document.querySelector(".parallax-media img");
 
-window.addEventListener("scroll", () => {
-  if (!parallaxMedia) return;
+window.addEventListener(
+  "scroll",
+  () => {
+    if (!parallaxMedia) return;
 
-  const offset = window.scrollY * 0.12;
+    const offset = window.scrollY * 0.08;
 
-  parallaxMedia.style.transform = `translateY(${offset}px) scale(1.04)`;
-});
+    parallaxMedia.style.transform = `translateY(${offset}px) scale(1.04)`;
+  },
+  { passive: true }
+);
 
-// Stagger product cards
-const cards = document.querySelectorAll(".product-card");
+// Stagger cards and upgraded sections
+const cards = document.querySelectorAll(
+  ".product-card, .tea-card, .launch-grid div, .how-grid div, .club-benefits div"
+);
 
 cards.forEach((card, index) => {
-  card.style.transitionDelay = `${index * 120}ms`;
+  card.style.transitionDelay = `${index * 90}ms`;
+});
+
+// Track Rootz List / signup clicks in Google Analytics
+const signupLinks = document.querySelectorAll('a[href*="eepurl.com"]');
+
+signupLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof gtag === "function") {
+      gtag("event", "rootz_list_click", {
+        event_category: "signup",
+        event_label: link.textContent.trim(),
+      });
+    }
+  });
 });
