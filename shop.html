@@ -13,7 +13,7 @@
   />
 
   <link rel="icon" href="./assets/badge-logo.png" />
-  <link rel="stylesheet" href="./style.css?v=600" />
+  <link rel="stylesheet" href="./style.css?v=601" />
 </head>
 
 <body id="top">
@@ -27,14 +27,28 @@
       <img src="./assets/rastaroots-header-logo.png?v=600" alt="RastaRoots Life logo" />
     </a>
 
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
     <nav class="main-nav" aria-label="Main navigation">
       <a href="./index.html">Home</a>
-      <a href="./index.html#teas">Rituals</a>
-      <a href="./tea-ritual.html">Tea Ritual</a>
+      <a href="#included">What’s Included</a>
+      <a href="#ritual">Tea Ritual</a>
       <a href="./faq.html">FAQ</a>
+      <a href="./community.html">Community</a>
       <a class="nav-cta preorder-link" href="#">Checkout</a>
     </nav>
   </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="./index.html">Home</a>
+    <a href="#included">What’s Included</a>
+    <a href="#ritual">Tea Ritual</a>
+    <a href="./faq.html">FAQ</a>
+    <a href="./community.html">Community</a>
+    <a class="preorder-link" href="#">Checkout</a>
+  </nav>
 
   <main>
 
@@ -59,7 +73,7 @@
           </a>
 
           <a class="btn btn-secondary" href="#included">
-            What's Included
+            What’s Included
           </a>
         </div>
 
@@ -72,8 +86,8 @@
 
       <div class="hero-media parallax-media">
         <img
-          src="./assets/tea-selection-hero.png?v=600"
-          alt="RastaRoots Discovery Collection product image"
+          src="./assets/discovery-closed-box.png"
+          alt="RastaRoots Discovery Collection closed box"
         />
       </div>
     </section>
@@ -102,52 +116,54 @@
 
     <section id="included" class="section selection-showcase">
       <div class="section-heading center-heading">
-        <p class="section-kicker">What's Included</p>
+        <p class="section-kicker">What’s Included</p>
 
         <h2>40 sachets. 5 rituals. 1 rooted experience.</h2>
 
         <p>
           The first RastaRoots box brings together all five signature blends in
-          one premium founder collection.
+          one premium Founder Discovery Collection.
         </p>
       </div>
 
       <div class="launch-grid">
+
         <div>
-          <strong>01</strong>
-          <h3>Roots Fire</h3>
-          <p>Energy • Warmth • Vitality</p>
+          <img
+            src="./assets/discovery-closed-box.png"
+            alt="RastaRoots closed Discovery Collection box"
+          />
+          <h3>1. Closed Box</h3>
+          <p>Premium presentation designed for gifting and daily ritual.</p>
         </div>
 
         <div>
-          <strong>02</strong>
-          <h3>Bush Doctor</h3>
-          <p>Restore • Balance • Cleanse</p>
+          <img
+            src="./assets/discovery-open-box.png"
+            alt="RastaRoots open Discovery Collection box"
+          />
+          <h3>2. Open Box</h3>
+          <p>Five signature blends arranged inside the founder box.</p>
         </div>
 
         <div>
-          <strong>03</strong>
-          <h3>Empress Bloom</h3>
-          <p>Glow • Nourish • Flourish</p>
+          <img
+            src="./assets/discovery-whats-included.png"
+            alt="What is included in the RastaRoots Discovery Collection"
+          />
+          <h3>3. What’s Included</h3>
+          <p>40 sachets, 5 rituals and access to the Tea Ritual playlist.</p>
         </div>
 
         <div>
-          <strong>04</strong>
-          <h3>Iron Root</h3>
-          <p>Strength • Blood • Endurance</p>
+          <img
+            src="./assets/discovery-tea-ritual.png"
+            alt="RastaRoots Tea Ritual playlist and QR code"
+          />
+          <h3>4. Tea Ritual</h3>
+          <p>Scan the QR code and pair your brew with rooted rhythms.</p>
         </div>
 
-        <div>
-          <strong>05</strong>
-          <h3>Cool Mind</h3>
-          <p>Calm • Focus • Clarity</p>
-        </div>
-
-        <div>
-          <strong>+</strong>
-          <h3>Tea Ritual</h3>
-          <p>Access to the official RastaRoots playlist.</p>
-        </div>
       </div>
 
       <div class="section-heading center-heading" style="margin-top: 46px;">
@@ -160,8 +176,8 @@
     <section class="feature-section lifestyle-section">
       <div class="feature-image">
         <img
-          src="./assets/tea-selection.png?v=600"
-          alt="RastaRoots Discovery Collection full tea selection"
+          src="./assets/discovery-open-box.png"
+          alt="Open RastaRoots Discovery Collection box"
         />
       </div>
 
@@ -186,11 +202,11 @@
       </div>
     </section>
 
-    <section class="feature-section">
+    <section id="ritual" class="feature-section">
       <div class="feature-image">
         <img
-          src="./assets/lifestyle-tea-drinking-scene.png?v=600"
-          alt="RastaRoots Tea Ritual lifestyle"
+          src="./assets/discovery-tea-ritual.png"
+          alt="RastaRoots Tea Ritual playlist access"
         />
       </div>
 
@@ -276,6 +292,23 @@
       </div>
     </section>
 
+    <section class="launch-section">
+      <div class="launch-inner">
+        <p class="section-kicker">Ready To Join The First Drop?</p>
+
+        <h2>Secure your Founder Discovery Collection.</h2>
+
+        <p>
+          Founder pricing is available before public launch. Checkout is handled
+          securely through Shopify.
+        </p>
+
+        <a class="btn btn-primary preorder-link" href="#">
+          Continue To Secure Checkout
+        </a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -288,6 +321,7 @@
       <a href="./refunds.html">Refunds</a> •
       <a href="./privacy.html">Privacy</a> •
       <a href="./terms.html">Terms</a> •
+      <a href="./faq.html">FAQ</a> •
       <a href="./contact.html">Contact</a>
     </p>
   </footer>
