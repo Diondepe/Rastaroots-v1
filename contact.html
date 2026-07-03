@@ -19,11 +19,30 @@
 
   <link rel="icon" href="./assets/badge-logo.png" />
   <link rel="stylesheet" href="./style.css?v=604" />
+
+  <!-- Google Analytics 4 cross-domain tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX', {
+      linker: {
+        domains: [
+          'www.rastarootslife.com',
+          'rastarootslife.com',
+          'shop.rastarootslife.com'
+        ]
+      }
+    });
+  </script>
 </head>
 
 <body id="top">
 
-  <a class="announcement-bar" href="https://5w4dw4-1e.myshopify.com/products/rastaroots-discovery-collection">
+  <a class="announcement-bar" href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
     🌿 Founder Pre-Orders Now Open • Discovery Collection Ships September 2026
   </a>
 
@@ -44,7 +63,7 @@
       <a href="./community.html">Community</a>
       <a href="./faq.html">FAQ</a>
       <a href="./contact.html">Contact</a>
-      <a class="nav-cta" href="https://5w4dw4-1e.myshopify.com/products/rastaroots-discovery-collection">
+      <a class="nav-cta" href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
         Pre-Order
       </a>
     </nav>
@@ -58,7 +77,7 @@
     <a href="./community.html">Community</a>
     <a href="./faq.html">FAQ</a>
     <a href="./contact.html">Contact</a>
-    <a href="https://5w4dw4-1e.myshopify.com/products/rastaroots-discovery-collection">Pre-Order</a>
+    <a href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">Pre-Order</a>
   </nav>
 
   <main>
@@ -83,7 +102,7 @@
             Email Us
           </a>
 
-          <a class="btn btn-secondary" href="https://5w4dw4-1e.myshopify.com/products/rastaroots-discovery-collection">
+          <a class="btn btn-secondary" href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
             Pre-Order Discovery Collection
           </a>
         </div>
@@ -284,7 +303,7 @@
 
           <a
             class="btn btn-secondary"
-            href="https://5w4dw4-1e.myshopify.com/products/rastaroots-discovery-collection"
+            href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
           >
             Pre-Order Discovery Collection
           </a>
@@ -321,12 +340,12 @@
   </footer>
 
   <div class="mobile-sticky-cta">
-    <a href="https://5w4dw4-1e.myshopify.com/products/rastaroots-discovery-collection">
+    <a href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
       Pre-Order Now
     </a>
   </div>
 
-  <script src="./script.js?v=600"></script>
+  <script src="./script.js?v=601"></script>
 
 </body>
 </html>
