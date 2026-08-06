@@ -1113,3 +1113,441 @@ a {
     padding: 26px;
   }
 }
+/* ==========================================================
+   RASTAROOTS WEBSITE V2 ENHANCEMENTS
+   Add to bottom of style.css
+========================================================== */
+
+
+/* ---------- FLAVOUR SHORTCUTS UNDER HERO ---------- */
+
+.blend-shortcuts{
+    margin-top:42px;
+}
+
+.blend-shortcuts-title{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:.82rem;
+    font-weight:900;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--green);
+    margin-bottom:14px;
+}
+
+.blend-shortcuts-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.blend-shortcuts-list a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:11px 18px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(16,60,37,.15);
+
+    background:#fff8ef;
+
+    color:var(--green);
+
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:800;
+    font-size:.82rem;
+
+    transition:.25s;
+}
+
+.blend-shortcuts-list a:hover{
+
+    background:var(--green);
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+/* ---------- SPOTIFY BUTTON ---------- */
+
+.spotify-shortcut{
+
+    background:#1DB954 !important;
+
+    color:white !important;
+
+    border:none !important;
+
+}
+
+.spotify-shortcut:hover{
+
+    background:#149945 !important;
+
+}
+
+
+
+
+/* ---------- TEA CARD ---------- */
+
+.tea-card{
+
+    cursor:pointer;
+
+    transition:
+        transform .28s,
+        box-shadow .28s;
+
+}
+
+.tea-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 36px 70px rgba(0,0,0,.18);
+
+}
+
+
+
+
+/* ---------- TEA COPY ---------- */
+
+.tea-card-copy{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+
+
+
+.tea-card-copy p{
+
+    color:rgba(255,249,238,.88);
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    line-height:1.7;
+
+    margin-bottom:18px;
+
+}
+
+
+
+
+.tea-card-copy strong{
+
+    color:#ffffff;
+
+}
+
+
+
+
+.tea-card-copy span{
+
+    color:rgba(255,249,238,.86);
+
+}
+
+
+
+
+/* ---------- INGREDIENT LINK ---------- */
+
+.tea-card-link{
+
+    margin-top:auto;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    font-weight:900;
+
+    letter-spacing:.05em;
+
+    color:var(--gold-soft);
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.tea-card-link:hover{
+
+    color:white;
+
+}
+
+
+
+
+/* ---------- FLAVOUR TAGS ---------- */
+
+.ingredients-preview{
+
+    margin-top:28px;
+
+}
+
+.ingredients-preview-title{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    font-size:.78rem;
+
+    font-weight:900;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+    color:var(--green);
+
+    margin-bottom:12px;
+
+}
+
+.ingredients-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.ingredients-tags span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 15px;
+
+    border-radius:999px;
+
+    background:white;
+
+    border:1px solid rgba(16,60,37,.12);
+
+    color:var(--green);
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    font-size:.8rem;
+
+    font-weight:700;
+}
+
+
+
+
+/* ---------- PAGE HERO FOR INDIVIDUAL FLAVOURS ---------- */
+
+.flavour-hero{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    padding:90px 7vw;
+
+}
+
+.flavour-image img{
+
+    width:100%;
+
+    border-radius:32px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.flavour-copy h1{
+
+    color:var(--green);
+
+    font-size:5rem;
+
+    line-height:.92;
+
+    margin-bottom:18px;
+
+}
+
+.flavour-copy p{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    color:#374139;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* ---------- INGREDIENT SECTION ---------- */
+
+.ingredients-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:26px;
+
+    margin-top:55px;
+
+}
+
+.ingredient-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(16,60,37,.1);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.05);
+
+}
+
+.ingredient-card h3{
+
+    color:var(--green);
+
+    margin-bottom:14px;
+
+    font-size:1.5rem;
+
+}
+
+.ingredient-card p{
+
+    color:#555;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    line-height:1.7;
+
+}
+
+
+
+
+/* ---------- BREWING ---------- */
+
+.brew-box{
+
+    background:#fff8ef;
+
+    border-radius:28px;
+
+    padding:36px;
+
+    border:1px solid rgba(182,138,51,.18);
+
+    margin-top:55px;
+
+}
+
+.brew-box ul{
+
+    margin-top:18px;
+
+    padding-left:20px;
+
+}
+
+.brew-box li{
+
+    margin-bottom:10px;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+}
+
+
+
+
+/* ---------- NEXT BLEND ---------- */
+
+.next-blend{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:70px;
+
+    border-top:1px solid rgba(16,60,37,.1);
+
+    padding-top:35px;
+
+}
+
+.next-blend a{
+
+    color:var(--green);
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    font-weight:900;
+
+}
+
+
+
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:980px){
+
+.flavour-hero{
+
+grid-template-columns:1fr;
+
+}
+
+.ingredients-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
