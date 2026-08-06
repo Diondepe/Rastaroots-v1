@@ -10,7 +10,7 @@
   --line: rgba(16, 60, 37, 0.14);
   --shadow: 0 28px 70px rgba(25, 35, 24, 0.14);
 }
-
+ 
 * {
   box-sizing: border-box;
   margin: 0;
