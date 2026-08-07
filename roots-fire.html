@@ -15,7 +15,12 @@
 
   <meta
     name="description"
-    content="Discover Roots Fire, a warming RastaRoots herbal infusion made with ginger, lemongrass and mint. Explore its flavour, ingredients, ritual and cultural inspiration."
+    content="Discover Roots Fire, a warming RastaRoots herbal infusion made with ginger, lemongrass and mint. Explore its flavour, ingredients, Guardian and Tea Ritual."
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.rastarootslife.com/roots-fire.html"
   />
 
   <meta
@@ -25,12 +30,12 @@
 
   <meta
     property="og:description"
-    content="Discover the ingredients, flavour and ritual behind Roots Fire — a warming herbal infusion from the RastaRoots Discovery Collection."
+    content="Discover Roots Fire — a warming infusion of ginger, lemongrass and mint from the RastaRoots Discovery Collection."
   />
 
   <meta
     property="og:image"
-    content="./assets/roots-fire.png"
+    content="https://www.rastarootslife.com/assets/roots-fire.png"
   />
 
   <meta
@@ -38,6 +43,22 @@
     content="product"
   />
 
+  <meta
+    property="og:url"
+    content="https://www.rastarootslife.com/roots-fire.html"
+  />
+
+  <link
+    rel="icon"
+    href="./assets/badge-logo.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./style.css?v=607"
+  />
+
+  <!-- Google Analytics 4 -->
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
@@ -63,29 +84,29 @@
     });
   </script>
 
-  <link
-    rel="icon"
-    href="./assets/badge-logo.png"
-  />
-
-  <link
-    rel="stylesheet"
-    href="./style.css?v=605"
-  />
-
   <style>
     /* ======================================================
-       ROOTS FIRE PAGE
+       ROOTS FIRE
     ====================================================== */
 
     .flavour-breadcrumb {
       padding: 22px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
-      font-family: Arial, Helvetica, sans-serif;
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.78rem;
       font-weight: 800;
+
       letter-spacing: 0.06em;
+
       text-transform: uppercase;
     }
 
@@ -94,115 +115,179 @@
     }
 
     .flavour-breadcrumb span {
-      color: #8a7a60;
       margin: 0 8px;
+
+      color: #8a7a60;
     }
 
+
+    /* ======================================================
+       HERO
+    ====================================================== */
+
     .roots-fire-hero {
+      min-height: 720px;
+
       display: grid;
       grid-template-columns: 48% 52%;
-      min-height: 720px;
+
       background:
         radial-gradient(
           circle at top left,
-          rgba(182, 138, 51, 0.14),
-          transparent 30%
+          rgba(182, 107, 44, 0.16),
+          transparent 32%
         ),
         linear-gradient(
           135deg,
           #fff9ee 0%,
-          #f4ead7 100%
+          #f1ddc5 100%
         );
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .roots-fire-hero-copy {
-      padding: 90px 7vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      padding: 90px 7vw;
     }
 
     .roots-fire-label {
-      color: #b68a33;
-      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 20px;
+
+      color: #a75a1d;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
       font-weight: 900;
+
       letter-spacing: 0.2em;
+
       text-transform: uppercase;
-      margin-bottom: 20px;
     }
 
     .roots-fire-hero h1 {
+      margin-bottom: 24px;
+
       color: #103c25;
-      font-size: clamp(4.6rem, 8vw, 8rem);
+
+      font-size:
+        clamp(4.6rem, 8vw, 8rem);
+
       line-height: 0.88;
       letter-spacing: -0.06em;
-      margin-bottom: 24px;
     }
 
     .roots-fire-tagline {
-      color: #b68a33;
-      font-size: clamp(1.7rem, 3vw, 2.8rem);
-      line-height: 1.05;
       margin-bottom: 24px;
+
+      color: #a75a1d;
+
+      font-size:
+        clamp(1.7rem, 3vw, 2.8rem);
+
+      line-height: 1.05;
     }
 
     .roots-fire-intro {
       max-width: 620px;
+
+      margin-bottom: 30px;
+
       color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.08rem;
       line-height: 1.8;
-      margin-bottom: 30px;
     }
 
     .roots-fire-ingredient-line {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+
       margin-bottom: 32px;
     }
 
     .roots-fire-ingredient-line span {
       padding: 9px 14px;
-      border: 1px solid rgba(16, 60, 37, 0.18);
+
+      border:
+        1px solid rgba(167, 90, 29, 0.22);
+
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.65);
+
+      background:
+        rgba(255, 255, 255, 0.7);
+
       color: #103c25;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
       font-weight: 800;
     }
 
     .roots-fire-hero-image {
       min-height: 720px;
+
       overflow: hidden;
     }
 
     .roots-fire-hero-image img {
       width: 100%;
       height: 100%;
+
       object-fit: cover;
       object-position: center;
     }
 
+
+    /* ======================================================
+       QUICK FACTS
+    ====================================================== */
+
     .roots-fire-facts {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      background: linear-gradient(
-        90deg,
-        #6d3611,
-        #2a1308
-      );
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      background:
+        linear-gradient(
+          90deg,
+          #7a3a10,
+          #2a1308
+        );
+
       color: #fff9ee;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
     }
 
     .roots-fire-facts div {
       padding: 28px 34px;
+
       text-align: center;
-      border-right: 1px solid rgba(244, 216, 138, 0.2);
+
+      border-right:
+        1px solid rgba(244, 216, 138, 0.2);
     }
 
     .roots-fire-facts div:last-child {
@@ -211,11 +296,16 @@
 
     .roots-fire-facts strong {
       display: block;
-      color: #f4d88a;
-      font-size: 0.78rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
+
       margin-bottom: 8px;
+
+      color: #f4d88a;
+
+      font-size: 0.78rem;
+
+      letter-spacing: 0.13em;
+
+      text-transform: uppercase;
     }
 
     .roots-fire-facts span {
@@ -223,42 +313,51 @@
       line-height: 1.5;
     }
 
+
+    /* ======================================================
+       GUARDIAN
+    ====================================================== */
+
     .guardian-section {
       display: grid;
       grid-template-columns: 45% 55%;
       align-items: center;
+
       gap: 70px;
+
       padding: 100px 7vw;
+
       background:
         radial-gradient(
           circle at bottom left,
-          rgba(182, 138, 51, 0.16),
-          transparent 28%
+          rgba(182, 107, 44, 0.25),
+          transparent 30%
         ),
         linear-gradient(
           135deg,
-          #061d11,
-          #103c25
+          #241006,
+          #6a2e0b
         );
     }
 
     .guardian-image {
-      min-height: 520px;
-      border-radius: 34px;
+      min-height: 560px;
+
       overflow: hidden;
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
-      background:
-        radial-gradient(
-          circle,
-          rgba(244, 216, 138, 0.16),
-          transparent 58%
-        );
+
+      border-radius: 34px;
+
+      background: #241006;
+
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.34);
     }
 
     .guardian-image img {
       width: 100%;
       height: 100%;
-      min-height: 520px;
+      min-height: 560px;
+
       object-fit: cover;
       object-position: center;
     }
@@ -268,17 +367,28 @@
     }
 
     .guardian-copy h2 {
+      margin-bottom: 24px;
+
       color: #fff9ee;
-      font-size: clamp(2.8rem, 5vw, 5.6rem);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.6rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 24px;
     }
 
     .guardian-copy > p {
-      color: rgba(255, 249, 238, 0.8);
       max-width: 680px;
-      font-family: Arial, Helvetica, sans-serif;
+
+      color:
+        rgba(255, 249, 238, 0.82);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.06rem;
       line-height: 1.8;
     }
@@ -286,140 +396,242 @@
     .guardian-quote {
       margin-top: 34px;
       padding: 30px;
-      border-left: 3px solid #f4d88a;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 0 22px 22px 0;
+
+      border-left:
+        3px solid #f4d88a;
+
+      border-radius:
+        0 22px 22px 0;
+
+      background:
+        rgba(255, 255, 255, 0.05);
+
       color: #fff9ee;
-      font-size: clamp(1.5rem, 2.5vw, 2.3rem);
+
+      font-size:
+        clamp(1.5rem, 2.5vw, 2.3rem);
+
       line-height: 1.25;
     }
 
-    .roots-fire-purpose {
+
+    /* ======================================================
+       STORY
+    ====================================================== */
+
+    .roots-fire-story {
       padding: 100px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
-    .purpose-inner {
+    .story-inner {
       max-width: 1050px;
+
       margin: 0 auto;
+
       text-align: center;
     }
 
-    .purpose-inner h2 {
+    .story-inner h2 {
+      margin-bottom: 24px;
+
       color: #103c25;
-      font-size: clamp(2.8rem, 5vw, 5.5rem);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 24px;
     }
 
-    .purpose-inner > p {
-      max-width: 780px;
-      margin: 0 auto;
+    .story-inner > p {
+      max-width: 790px;
+
+      margin: 0 auto 22px;
+
       color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.08rem;
       line-height: 1.8;
     }
 
+
+    /* ======================================================
+       INGREDIENTS
+    ====================================================== */
+
     .roots-fire-ingredients {
       padding: 100px 7vw;
-      background: linear-gradient(
-        180deg,
-        #f4ead7,
-        #fff9ee
-      );
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      background:
+        linear-gradient(
+          180deg,
+          #f0deca,
+          #fff9ee
+        );
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .ingredient-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 26px;
+
       margin-top: 48px;
     }
 
     .ingredient-detail-card {
-      background: #fff9ee;
-      border: 1px solid rgba(182, 138, 51, 0.24);
-      border-radius: 28px;
       padding: 34px;
-      box-shadow: 0 20px 48px rgba(26, 34, 23, 0.08);
+
+      border:
+        1px solid rgba(167, 90, 29, 0.24);
+
+      border-radius: 28px;
+
+      background: #fff9ee;
+
+      box-shadow:
+        0 20px 48px rgba(26, 34, 23, 0.08);
     }
 
     .ingredient-icon {
       width: 56px;
       height: 56px;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 50%;
-      background: #103c25;
-      color: #f4d88a;
-      font-size: 1.7rem;
+
       margin-bottom: 22px;
+
+      border-radius: 50%;
+
+      background: #7a3a10;
+      color: #f4d88a;
+
+      font-size: 1.7rem;
     }
 
     .ingredient-detail-card h3 {
-      color: #103c25;
-      font-size: 2rem;
       margin-bottom: 12px;
+
+      color: #103c25;
+
+      font-size: 2rem;
     }
 
     .ingredient-detail-card p {
-      color: #5c5a50;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
       margin-bottom: 16px;
+
+      color: #5c5a50;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.7;
     }
 
     .ingredient-detail-card strong {
       display: block;
-      color: #b68a33;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+
       margin-bottom: 7px;
+
+      color: #a75a1d;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: 0.75rem;
+
+      letter-spacing: 0.1em;
+
+      text-transform: uppercase;
     }
 
     .library-link {
       display: inline-flex;
+
       margin-top: 10px;
+      padding-bottom: 6px;
+
+      border-bottom:
+        1px solid #a75a1d;
+
       color: #103c25;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.78rem;
       font-weight: 900;
+
       letter-spacing: 0.07em;
+
       text-transform: uppercase;
-      border-bottom: 1px solid #b68a33;
-      padding-bottom: 6px;
     }
+
+
+    /* ======================================================
+       FLAVOUR PROFILE
+    ====================================================== */
 
     .flavour-profile-section {
       display: grid;
       grid-template-columns: 48% 52%;
-      gap: 70px;
       align-items: center;
+
+      gap: 70px;
+
       padding: 100px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .flavour-profile-copy h2 {
+      margin-bottom: 24px;
+
       color: #103c25;
-      font-size: clamp(2.8rem, 5vw, 5rem);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 24px;
     }
 
     .flavour-profile-copy > p {
-      color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.8;
       margin-bottom: 30px;
+
+      color: #354036;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.8;
     }
 
     .profile-bars {
@@ -430,34 +642,49 @@
     .profile-row {
       display: grid;
       grid-template-columns: 110px 1fr;
-      gap: 18px;
       align-items: center;
+
+      gap: 18px;
     }
 
     .profile-row strong {
       color: #103c25;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
+
       letter-spacing: 0.08em;
+
       text-transform: uppercase;
     }
 
     .profile-track {
       height: 12px;
-      background: #eadcc5;
-      border-radius: 999px;
+
       overflow: hidden;
+
+      border-radius: 999px;
+
+      background: #eadcc5;
     }
 
     .profile-fill {
       display: block;
+
       height: 100%;
+
       border-radius: 999px;
-      background: linear-gradient(
-        90deg,
-        #b68a33,
-        #6d3611
-      );
+
+      background:
+        linear-gradient(
+          90deg,
+          #d88738,
+          #6a2e0b
+        );
     }
 
     .profile-fill.warm {
@@ -482,36 +709,51 @@
 
     .flavour-profile-image img {
       width: 100%;
+
       border-radius: 34px;
-      box-shadow: 0 28px 70px rgba(25, 35, 24, 0.14);
+
+      box-shadow:
+        0 28px 70px rgba(25, 35, 24, 0.14);
     }
+
+
+    /* ======================================================
+       TEA RITUAL
+    ====================================================== */
 
     .ritual-section {
       padding: 110px 7vw;
+
       background:
         radial-gradient(
           circle at top right,
-          rgba(244, 216, 138, 0.12),
+          rgba(244, 216, 138, 0.14),
           transparent 28%
         ),
         linear-gradient(
           135deg,
-          #061d11,
-          #103c25
+          #241006,
+          #6a2e0b
         );
+
       color: #fff9ee;
-      border-bottom: 1px solid rgba(244, 216, 138, 0.12);
+
+      border-bottom:
+        1px solid rgba(244, 216, 138, 0.12);
     }
 
     .ritual-inner {
       max-width: 1100px;
+
       margin: 0 auto;
     }
 
     .ritual-heading {
-      text-align: center;
       max-width: 800px;
+
       margin: 0 auto 52px;
+
+      text-align: center;
     }
 
     .ritual-heading .section-kicker {
@@ -519,52 +761,86 @@
     }
 
     .ritual-heading h2 {
+      margin-bottom: 22px;
+
       color: #fff9ee;
-      font-size: clamp(3rem, 5vw, 5.6rem);
+
+      font-size:
+        clamp(3rem, 5vw, 5.6rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 22px;
     }
 
     .ritual-heading p {
-      color: rgba(255, 249, 238, 0.76);
-      font-family: Arial, Helvetica, sans-serif;
+      color:
+        rgba(255, 249, 238, 0.78);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       line-height: 1.8;
     }
 
     .ritual-steps {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 20px;
+
       margin-bottom: 44px;
     }
 
     .ritual-step {
       padding: 30px;
-      border: 1px solid rgba(244, 216, 138, 0.18);
+
+      border:
+        1px solid rgba(244, 216, 138, 0.18);
+
       border-radius: 24px;
-      background: rgba(255, 255, 255, 0.05);
+
+      background:
+        rgba(255, 255, 255, 0.05);
     }
 
     .ritual-step span {
       display: block;
+
+      margin-bottom: 16px;
+
       color: #f4d88a;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.75rem;
       font-weight: 900;
+
       letter-spacing: 0.14em;
-      margin-bottom: 16px;
     }
 
     .ritual-step h3 {
-      color: #fff9ee;
-      font-size: 1.55rem;
       margin-bottom: 12px;
+
+      color: #fff9ee;
+
+      font-size: 1.55rem;
     }
 
     .ritual-step p {
-      color: rgba(255, 249, 238, 0.72);
-      font-family: Arial, Helvetica, sans-serif;
+      color:
+        rgba(255, 249, 238, 0.74);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.93rem;
       line-height: 1.65;
     }
@@ -573,132 +849,209 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+
       gap: 14px;
     }
 
     .spotify-button {
+      border:
+        1px solid #1db954;
+
       background: #1db954;
       color: #ffffff;
-      border: 1px solid #1db954;
     }
 
     .spotify-button:hover {
       background: #149945;
     }
 
+
+    /* ======================================================
+       ROOTZ PRINCIPLE
+    ====================================================== */
+
     .principle-section {
       padding: 110px 7vw;
+
       text-align: center;
+
       background:
         radial-gradient(
           circle at center,
-          rgba(182, 138, 51, 0.14),
+          rgba(167, 90, 29, 0.15),
           transparent 42%
         ),
-        #f4ead7;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+        #f0deca;
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .principle-section blockquote {
       max-width: 1000px;
+
       margin: 0 auto;
+
       color: #103c25;
-      font-size: clamp(2.7rem, 5.5vw, 6rem);
+
+      font-size:
+        clamp(2.7rem, 5.5vw, 6rem);
+
       line-height: 1;
       letter-spacing: -0.045em;
     }
 
     .principle-section cite {
       display: block;
+
       margin-top: 28px;
-      color: #b68a33;
-      font-family: Arial, Helvetica, sans-serif;
+
+      color: #a75a1d;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.78rem;
       font-style: normal;
       font-weight: 900;
+
       letter-spacing: 0.16em;
+
       text-transform: uppercase;
     }
 
-    .library-coming-soon {
+
+    /* ======================================================
+       HERBAL LIBRARY
+    ====================================================== */
+
+    .library-section {
       padding: 100px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
-    .library-coming-inner {
+    .library-inner {
       max-width: 1100px;
-      margin: 0 auto;
+
       display: grid;
       grid-template-columns: 56% 44%;
-      gap: 60px;
       align-items: center;
+
+      gap: 60px;
+
+      margin: 0 auto;
       padding: 54px;
+
+      border:
+        1px solid rgba(167, 90, 29, 0.22);
+
       border-radius: 34px;
-      background: linear-gradient(
-        135deg,
-        #f4ead7,
-        #fff9ee
-      );
-      border: 1px solid rgba(182, 138, 51, 0.24);
-      box-shadow: 0 24px 60px rgba(26, 34, 23, 0.08);
+
+      background:
+        linear-gradient(
+          135deg,
+          #f0deca,
+          #fff9ee
+        );
+
+      box-shadow:
+        0 24px 60px rgba(26, 34, 23, 0.08);
     }
 
-    .library-coming-copy h2 {
+    .library-copy h2 {
+      margin-bottom: 22px;
+
       color: #103c25;
-      font-size: clamp(2.6rem, 4.8vw, 5rem);
+
+      font-size:
+        clamp(2.6rem, 4.8vw, 5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 22px;
     }
 
-    .library-coming-copy p {
-      color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.8;
+    .library-copy p {
       margin-bottom: 28px;
+
+      color: #354036;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.8;
     }
 
     .library-badge {
       min-height: 320px;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      padding: 30px;
+
       border-radius: 28px;
+
       background:
         radial-gradient(
           circle,
-          rgba(244, 216, 138, 0.2),
+          rgba(244, 216, 138, 0.18),
           transparent 55%
         ),
-        #103c25;
+        #6a2e0b;
+
       text-align: center;
-      padding: 30px;
     }
 
     .library-badge img {
       width: 150px;
+
       margin-bottom: 24px;
     }
 
     .library-badge strong {
-      color: #f4d88a;
-      font-size: 1.7rem;
       margin-bottom: 8px;
+
+      color: #f4d88a;
+
+      font-size: 1.7rem;
     }
 
     .library-badge span {
-      color: rgba(255, 249, 238, 0.72);
-      font-family: Arial, Helvetica, sans-serif;
+      color:
+        rgba(255, 249, 238, 0.74);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.82rem;
+
       letter-spacing: 0.1em;
+
       text-transform: uppercase;
     }
 
+
+    /* ======================================================
+       COLLECTION CTA
+    ====================================================== */
+
     .collection-cta {
       padding: 110px 7vw;
+
       text-align: center;
+
       background:
         radial-gradient(
           circle at top,
@@ -707,39 +1060,72 @@
         ),
         linear-gradient(
           135deg,
-          #061d11,
-          #103c25
+          #241006,
+          #6a2e0b
         );
     }
 
+    .collection-cta .section-kicker {
+      color: #f4d88a;
+    }
+
     .collection-cta h2 {
+      margin-bottom: 22px;
+
       color: #fff9ee;
-      font-size: clamp(3rem, 5vw, 5.5rem);
+
+      font-size:
+        clamp(3rem, 5vw, 5.5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 22px;
     }
 
     .collection-cta p {
       max-width: 700px;
+
       margin: 0 auto 34px;
-      color: rgba(255, 249, 238, 0.76);
-      font-family: Arial, Helvetica, sans-serif;
+
+      color:
+        rgba(255, 249, 238, 0.78);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.05rem;
       line-height: 1.75;
     }
 
+
+    /* ======================================================
+       BLEND NAVIGATION
+    ====================================================== */
+
     .blend-navigation {
       display: flex;
       justify-content: space-between;
+
       gap: 20px;
+
       padding: 32px 7vw;
-      background: #f4ead7;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
-      font-family: Arial, Helvetica, sans-serif;
+
+      background: #f0deca;
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
       font-weight: 900;
+
       letter-spacing: 0.08em;
+
       text-transform: uppercase;
     }
 
@@ -747,11 +1133,17 @@
       color: #103c25;
     }
 
+
+    /* ======================================================
+       RESPONSIVE
+    ====================================================== */
+
     @media (max-width: 980px) {
+
       .roots-fire-hero,
       .guardian-section,
       .flavour-profile-section,
-      .library-coming-inner {
+      .library-inner {
         grid-template-columns: 1fr;
       }
 
@@ -765,7 +1157,9 @@
 
       .roots-fire-facts div {
         border-right: 0;
-        border-bottom: 1px solid rgba(244, 216, 138, 0.2);
+
+        border-bottom:
+          1px solid rgba(244, 216, 138, 0.2);
       }
 
       .ingredient-grid {
@@ -773,25 +1167,28 @@
       }
 
       .ritual-steps {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
     }
 
     @media (max-width: 780px) {
+
       .roots-fire-hero-copy,
       .guardian-section,
-      .roots-fire-purpose,
+      .roots-fire-story,
       .roots-fire-ingredients,
       .flavour-profile-section,
       .ritual-section,
       .principle-section,
-      .library-coming-soon,
+      .library-section,
       .collection-cta {
         padding: 70px 22px;
       }
 
       .roots-fire-hero h1 {
-        font-size: clamp(4rem, 19vw, 6rem);
+        font-size:
+          clamp(4rem, 19vw, 6rem);
       }
 
       .roots-fire-hero-image {
@@ -800,23 +1197,25 @@
 
       .guardian-image,
       .guardian-image img {
-        min-height: 400px;
+        min-height: 430px;
       }
 
       .ritual-steps {
         grid-template-columns: 1fr;
       }
 
-      .library-coming-inner {
+      .library-inner {
         padding: 28px;
       }
 
       .profile-row {
-        grid-template-columns: 84px 1fr;
+        grid-template-columns:
+          84px 1fr;
       }
 
       .blend-navigation {
         flex-direction: column;
+
         text-align: center;
       }
     }
@@ -825,12 +1224,21 @@
 
 <body id="top">
 
+  <!-- ======================================================
+       ANNOUNCEMENT
+  ======================================================= -->
+
   <a
     class="announcement-bar"
     href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
   >
-    🌿 Founder Pre-Orders Now Open • Save £5 Before Public Launch • Ships September 2026
+    🌿 Founder Pre-Orders Open • £19.99 Founder Price • Ships September 2026
   </a>
+
+
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
 
   <header class="site-header">
 
@@ -859,13 +1267,34 @@
       class="main-nav"
       aria-label="Main navigation"
     >
-      <a href="./index.html">Home</a>
-      <a href="./shop.html">Shop</a>
-      <a href="./founder.html">Founder</a>
-      <a href="./tea-ritual.html">Tea Ritual</a>
-      <a href="./community.html">Community</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./contact.html">Contact</a>
+
+      <a href="./index.html">
+        Home
+      </a>
+
+      <a href="./shop.html">
+        Shop
+      </a>
+
+      <a href="./founder.html">
+        Founder
+      </a>
+
+      <a href="./tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="./herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="./community.html">
+        Community
+      </a>
+
+      <a href="./faq.html">
+        FAQ
+      </a>
 
       <a
         class="nav-cta"
@@ -873,39 +1302,91 @@
       >
         Pre-Order
       </a>
+
     </nav>
 
   </header>
+
+
+  <!-- ======================================================
+       MOBILE NAV
+  ======================================================= -->
 
   <nav
     class="mobile-nav"
     id="mobileNav"
     aria-label="Mobile navigation"
   >
-    <a href="./index.html">Home</a>
-    <a href="./shop.html">Shop</a>
-    <a href="./founder.html">Founder</a>
-    <a href="./tea-ritual.html">Tea Ritual</a>
-    <a href="./community.html">Community</a>
-    <a href="./faq.html">FAQ</a>
-    <a href="./contact.html">Contact</a>
+
+    <a href="./index.html">
+      Home
+    </a>
+
+    <a href="./shop.html">
+      Shop
+    </a>
+
+    <a href="./founder.html">
+      Founder
+    </a>
+
+    <a href="./tea-ritual.html">
+      Tea Ritual
+    </a>
+
+    <a href="./herbal-library.html">
+      Herbal Library
+    </a>
+
+    <a href="./community.html">
+      Community
+    </a>
+
+    <a href="./faq.html">
+      FAQ
+    </a>
+
+    <a href="./contact.html">
+      Contact
+    </a>
 
     <a
       href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
     >
       Pre-Order
     </a>
+
   </nav>
+
 
   <main>
 
+    <!-- ====================================================
+         BREADCRUMB
+    ===================================================== -->
+
     <div class="flavour-breadcrumb">
-      <a href="./index.html">Home</a>
+
+      <a href="./index.html">
+        Home
+      </a>
+
       <span>/</span>
-      <a href="./index.html#teas">Discovery Collection</a>
+
+      <a href="./index.html#teas">
+        Discovery Collection
+      </a>
+
       <span>/</span>
+
       Roots Fire
+
     </div>
+
+
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
 
     <section class="roots-fire-hero">
 
@@ -926,17 +1407,27 @@
 
         <p class="roots-fire-intro">
           A warming herbal infusion bringing together spicy ginger, bright
-          lemongrass and cooling mint. Roots Fire was created for mornings,
-          movement and the moments when you want to begin with intention.
+          lemongrass and cooling mint. Roots Fire was created around movement,
+          intention and the energy of a new beginning.
         </p>
 
         <div
           class="roots-fire-ingredient-line"
           aria-label="Roots Fire ingredients"
         >
-          <span>Ginger</span>
-          <span>Lemongrass</span>
-          <span>Mint</span>
+
+          <span>
+            Ginger
+          </span>
+
+          <span>
+            Lemongrass
+          </span>
+
+          <span>
+            Mint
+          </span>
+
         </div>
 
         <div class="hero-actions">
@@ -959,10 +1450,11 @@
 
       </div>
 
+
       <div class="roots-fire-hero-image">
 
         <img
-          src="./assets/roots-fire.png?v=600"
+          src="./assets/roots-fire.png?v=607"
           alt="Roots Fire herbal tea with ginger, lemongrass and mint"
         />
 
@@ -970,37 +1462,63 @@
 
     </section>
 
+
+    <!-- ====================================================
+         FACTS
+    ===================================================== -->
+
     <section class="roots-fire-facts">
 
       <div>
-        <strong>Flavour</strong>
-        <span>Warming spice, bright citrus and cooling mint</span>
+
+        <strong>
+          Flavour
+        </strong>
+
+        <span>
+          Warming ginger, bright citrus and cooling mint
+        </span>
+
       </div>
 
       <div>
-        <strong>The Moment</strong>
-        <span>Morning, movement and intentional beginnings</span>
+
+        <strong>
+          The Moment
+        </strong>
+
+        <span>
+          Mornings, movement and intentional beginnings
+        </span>
+
       </div>
 
       <div>
-        <strong>The Collection</strong>
-        <span>8 sachets inside the 40-sachet Discovery Collection</span>
+
+        <strong>
+          The Collection
+        </strong>
+
+        <span>
+          8 sachets inside the 40-sachet Discovery Collection
+        </span>
+
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         GUARDIAN
+    ===================================================== -->
 
     <section class="guardian-section">
 
       <div class="guardian-image">
 
-        <!--
-          Replace this image later with your dedicated Roots Fire Guardian artwork:
-          ./assets/guardian-roots-fire.png
-        -->
-
         <img
-          src="./assets/tea-selection-hero-text.png?v=600"
-          alt="RastaRoots Guardian and Roots Fire ritual artwork"
+          src="./assets/guardian-roots-fire.png?v=607"
+          alt="Young athletic Roots Fire Guardian standing before a sunrise"
         />
 
       </div>
@@ -1012,14 +1530,14 @@
         </p>
 
         <h2>
-          Knowledge protects the ritual.
+          Every beginning needs intention.
         </h2>
 
         <p>
-          The Guardian is the guide through the RastaRoots world. He represents
-          the responsibility to protect cultural knowledge, understand the
-          ingredients behind every blend and pass meaningful traditions forward
-          rather than allowing them to disappear.
+          The Roots Fire Guardian represents movement, discipline and the
+          decision to begin. He does not wait for perfect conditions. He
+          understands that direction comes from knowing what you are moving
+          towards — and remembering what you are carrying with you.
         </p>
 
         <blockquote class="guardian-quote">
@@ -1030,29 +1548,44 @@
 
     </section>
 
-    <section class="roots-fire-purpose">
 
-      <div class="purpose-inner">
+    <!-- ====================================================
+         STORY
+    ===================================================== -->
+
+    <section class="roots-fire-story">
+
+      <div class="story-inner">
 
         <p class="section-kicker">
-          Why Roots Fire Exists
+          The Story Behind The Blend
         </p>
 
         <h2>
-          Some mornings need more than another rushed drink.
+          Begin deliberately.
         </h2>
 
         <p>
-          Roots Fire was created as a deliberate morning ritual: warming,
-          aromatic and full of character. It brings together three familiar
-          herbs with contrasting flavour profiles—spice, citrus and cooling
-          freshness—to create a cup that feels bold without relying on artificial
-          flavouring or excessive sweetness.
+          Roots Fire was created as the opening ritual of the RastaRoots
+          Discovery Collection. Ginger provides the warmth and spice,
+          lemongrass brings brightness, and mint gives the infusion its clean,
+          cooling finish.
+        </p>
+
+        <p>
+          The blend represents the moment before movement — when you decide how
+          you want to enter the day rather than simply allowing the day to
+          decide for you.
         </p>
 
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         INGREDIENTS
+    ===================================================== -->
 
     <section class="roots-fire-ingredients">
 
@@ -1063,18 +1596,21 @@
         </p>
 
         <h2>
-          Three ingredients. One rooted blend.
+          Three botanicals. One warming ritual.
         </h2>
 
         <p>
-          Each ingredient contributes a distinct flavour, aroma and cultural
-          connection. The information below describes flavour and traditional
+          Roots Fire combines warming spice, citrus aroma and cooling
+          freshness. The information below describes flavour and cultural
           context rather than promising medical outcomes.
         </p>
 
       </div>
 
+
       <div class="ingredient-grid">
+
+        <!-- GINGER -->
 
         <article class="ingredient-detail-card">
 
@@ -1085,17 +1621,23 @@
             ✦
           </div>
 
-          <strong>Ingredient 01</strong>
+          <strong>
+            Ingredient 01
+          </strong>
 
-          <h3>Ginger</h3>
+          <h3>
+            Ginger
+          </h3>
 
           <p>
-            Ginger gives Roots Fire its warming character, natural spice and
+            Ginger gives Roots Fire its warming character, aromatic spice and
             lingering finish. It has a long history within food and herbal
             preparations across Africa, the Caribbean and many other regions.
           </p>
 
-          <strong>Taste</strong>
+          <strong>
+            Taste
+          </strong>
 
           <p>
             Spicy, warming and aromatic.
@@ -1103,12 +1645,15 @@
 
           <a
             class="library-link"
-            href="#herbal-library"
+            href="./herbal-library.html"
           >
-            Herbal Library Coming Soon →
+            Explore Ginger In The Herbal Library →
           </a>
 
         </article>
+
+
+        <!-- LEMONGRASS -->
 
         <article class="ingredient-detail-card">
 
@@ -1119,17 +1664,23 @@
             ✦
           </div>
 
-          <strong>Ingredient 02</strong>
+          <strong>
+            Ingredient 02
+          </strong>
 
-          <h3>Lemongrass</h3>
+          <h3>
+            Lemongrass
+          </h3>
 
           <p>
-            Lemongrass brings bright citrus aroma and a clean herbal quality.
+            Lemongrass brings bright citrus aroma and clean herbal character.
             It balances the stronger ginger notes and gives the infusion a
             lighter, more refreshing middle.
           </p>
 
-          <strong>Taste</strong>
+          <strong>
+            Taste
+          </strong>
 
           <p>
             Citrusy, grassy and fresh.
@@ -1137,12 +1688,15 @@
 
           <a
             class="library-link"
-            href="#herbal-library"
+            href="./herbal-library.html"
           >
-            Herbal Library Coming Soon →
+            Explore Lemongrass In The Herbal Library →
           </a>
 
         </article>
+
+
+        <!-- MINT -->
 
         <article class="ingredient-detail-card">
 
@@ -1153,17 +1707,23 @@
             ✦
           </div>
 
-          <strong>Ingredient 03</strong>
+          <strong>
+            Ingredient 03
+          </strong>
 
-          <h3>Mint</h3>
+          <h3>
+            Mint
+          </h3>
 
           <p>
             Mint creates the cooling finish that distinguishes Roots Fire from
             a standard ginger infusion. Its freshness lifts the aroma and
-            softens the warming spice.
+            balances the warming spice.
           </p>
 
-          <strong>Taste</strong>
+          <strong>
+            Taste
+          </strong>
 
           <p>
             Cooling, clean and refreshing.
@@ -1171,9 +1731,9 @@
 
           <a
             class="library-link"
-            href="#herbal-library"
+            href="./herbal-library.html"
           >
-            Herbal Library Coming Soon →
+            Explore Mint In The Herbal Library →
           </a>
 
         </article>
@@ -1181,6 +1741,11 @@
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         FLAVOUR PROFILE
+    ===================================================== -->
 
     <section class="flavour-profile-section">
 
@@ -1195,11 +1760,11 @@
         </h2>
 
         <p>
-          Roots Fire opens with the aroma of lemongrass, develops into warming
-          ginger spice and finishes with cooling mint. It is bold enough to feel
-          distinctive while remaining clean and easy to incorporate into a
-          daily ritual.
+          Roots Fire opens with the brightness of lemongrass, develops into
+          warming ginger spice and finishes with cooling mint. It is bold,
+          aromatic and distinctive without relying on excessive sweetness.
         </p>
+
 
         <div
           class="profile-bars"
@@ -1207,59 +1772,90 @@
         >
 
           <div class="profile-row">
-            <strong>Warmth</strong>
+
+            <strong>
+              Warmth
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill warm"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Spice</strong>
+
+            <strong>
+              Spice
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill spice"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Fresh</strong>
+
+            <strong>
+              Fresh
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill fresh"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Sweet</strong>
+
+            <strong>
+              Sweet
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill sweet"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Earthy</strong>
+
+            <strong>
+              Earthy
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill earthy"></span>
             </div>
+
           </div>
 
         </div>
 
       </div>
 
+
       <div class="flavour-profile-image">
 
         <img
-          src="./assets/roots-fire.png?v=600"
+          src="./assets/roots-fire.png?v=607"
           alt="Roots Fire flavour and ingredient presentation"
+          loading="lazy"
         />
 
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         TEA RITUAL
+    ===================================================== -->
 
     <section
       class="ritual-section"
@@ -1279,68 +1875,90 @@
           </h2>
 
           <p>
-            Roots Fire is more than the contents of the sachet. The complete
-            ritual combines preparation, music and a short moment of intention
-            before the demands of the day begin.
+            Roots Fire is designed as a morning ritual: a simple opportunity to
+            stop before the noise begins and decide how you want to enter the
+            day.
           </p>
 
         </div>
+
 
         <div class="ritual-steps">
 
           <article class="ritual-step">
 
-            <span>STEP 01</span>
+            <span>
+              STEP 01
+            </span>
 
-            <h3>Prepare</h3>
+            <h3>
+              Prepare
+            </h3>
 
             <p>
               Place one Roots Fire sachet into your cup and prepare it according
-              to the brewing instructions supplied with the collection.
+              to the brewing guidance supplied with the collection.
             </p>
 
           </article>
 
+
           <article class="ritual-step">
 
-            <span>STEP 02</span>
+            <span>
+              STEP 02
+            </span>
 
-            <h3>Pause</h3>
+            <h3>
+              Notice
+            </h3>
 
             <p>
-              Allow the infusion to develop. Put the phone down and give the
-              ritual your attention rather than treating it as another task.
+              Let the infusion develop. Notice the ginger warmth, citrus aroma
+              and cooling mint rather than treating preparation as another task
+              to rush through.
             </p>
 
           </article>
 
+
           <article class="ritual-step">
 
-            <span>STEP 03</span>
+            <span>
+              STEP 03
+            </span>
 
-            <h3>Listen</h3>
+            <h3>
+              Listen
+            </h3>
 
             <p>
-              Open the RastaRoots Tea Ritual playlist and pair the cup with
-              rooted rhythms selected for reflection, movement and connection.
+              Play the RastaRoots Tea Ritual playlist and create a short space
+              for movement, reflection or preparation for what comes next.
             </p>
 
           </article>
 
+
           <article class="ritual-step">
 
-            <span>STEP 04</span>
+            <span>
+              STEP 04
+            </span>
 
-            <h3>Begin</h3>
+            <h3>
+              Begin
+            </h3>
 
             <p>
-              Choose one intention for the day. Drink slowly, move deliberately
-              and carry that intention into what comes next.
+              Choose one intention for the day. Finish the cup, move
+              deliberately and carry that intention into your next action.
             </p>
 
           </article>
 
         </div>
+
 
         <div class="ritual-actions">
 
@@ -1366,6 +1984,11 @@
 
     </section>
 
+
+    <!-- ====================================================
+         ROOTZ PRINCIPLE
+    ===================================================== -->
+
     <section class="principle-section">
 
       <p class="section-kicker">
@@ -1382,55 +2005,59 @@
 
     </section>
 
+
+    <!-- ====================================================
+         HERBAL LIBRARY
+    ===================================================== -->
+
     <section
-      class="library-coming-soon"
+      class="library-section"
       id="herbal-library"
     >
 
-      <div class="library-coming-inner">
+      <div class="library-inner">
 
-        <div class="library-coming-copy">
+        <div class="library-copy">
 
           <p class="section-kicker">
             RastaRoots Herbal Library
           </p>
 
           <h2>
-            Learn the roots behind every ingredient.
+            Learn the roots behind the blend.
           </h2>
 
           <p>
-            The RastaRoots Herbal Library is being built as a permanent home
-            for African and Caribbean herbal knowledge. It will explore plant
-            origins, flavour, cultural traditions, preparation methods and
-            modern research while clearly distinguishing cultural knowledge
-            from established scientific evidence.
+            Explore ginger, lemongrass and mint through the RastaRoots Herbal
+            Library. The library brings together plant origins, flavour,
+            cultural traditions, preparation and modern research while keeping
+            cultural knowledge distinct from established scientific evidence.
           </p>
 
           <a
             class="btn btn-primary"
-            href="https://eepurl.com/9sLCn3GjES"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="./herbal-library.html"
           >
-            Join The Library Waitlist
+            Explore The Herbal Library
           </a>
 
         </div>
+
 
         <div class="library-badge">
 
           <img
             src="./assets/badge-logo.png"
             alt="RastaRoots Herbal Library"
+            loading="lazy"
           />
 
           <strong>
-            Herbal Library
+            Know Your Rootz.
           </strong>
 
           <span>
-            Coming Soon
+            Herbal Knowledge • Culture • Evidence
           </span>
 
         </div>
@@ -1439,10 +2066,15 @@
 
     </section>
 
+
+    <!-- ====================================================
+         COLLECTION
+    ===================================================== -->
+
     <section class="collection-cta">
 
       <p class="section-kicker">
-        Begin The Journey
+        Continue The Journey
       </p>
 
       <h2>
@@ -1450,12 +2082,15 @@
       </h2>
 
       <p>
-        The Founder Discovery Collection includes 40 premium herbal tea
-        sachets across Roots Fire, Bush Doctor, Empress Bloom, Iron Root and
-        Cool Mind, together with access to the official Tea Ritual playlist.
+        The Founder Discovery Collection contains 40 herbal tea sachets across
+        Roots Fire, Bush Doctor, Empress Bloom, Iron Root and Cool Mind,
+        together with access to the official RastaRoots Tea Ritual playlist.
       </p>
 
-      <div class="hero-actions" style="justify-content: center;">
+      <div
+        class="hero-actions"
+        style="justify-content: center;"
+      >
 
         <a
           class="btn btn-primary"
@@ -1479,6 +2114,11 @@
 
     </section>
 
+
+    <!-- ====================================================
+         NEXT BLEND
+    ===================================================== -->
+
     <nav
       class="blend-navigation"
       aria-label="Flavour navigation"
@@ -1496,6 +2136,11 @@
 
   </main>
 
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
   <footer class="site-footer">
 
     <img
@@ -1508,17 +2153,54 @@
       class="footer-links"
       aria-label="Footer navigation"
     >
-      <a href="./index.html">Home</a>
-      <a href="./shop.html">Shop</a>
-      <a href="./founder.html">Founder</a>
-      <a href="./tea-ritual.html">Tea Ritual</a>
-      <a href="./community.html">Community</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./shipping.html">Shipping</a>
-      <a href="./refunds.html">Refunds</a>
-      <a href="./privacy.html">Privacy</a>
-      <a href="./terms.html">Terms</a>
-      <a href="./contact.html">Contact</a>
+
+      <a href="./index.html">
+        Home
+      </a>
+
+      <a href="./shop.html">
+        Shop
+      </a>
+
+      <a href="./founder.html">
+        Founder
+      </a>
+
+      <a href="./tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="./herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="./community.html">
+        Community
+      </a>
+
+      <a href="./faq.html">
+        FAQ
+      </a>
+
+      <a href="./shipping.html">
+        Shipping
+      </a>
+
+      <a href="./refunds.html">
+        Refunds
+      </a>
+
+      <a href="./privacy.html">
+        Privacy
+      </a>
+
+      <a href="./terms.html">
+        Terms
+      </a>
+
+      <a href="./contact.html">
+        Contact
+      </a>
 
       <a
         href="https://instagram.com/rastarootzs"
@@ -1527,6 +2209,7 @@
       >
         Instagram
       </a>
+
     </nav>
 
     <p>
@@ -1535,6 +2218,11 @@
     </p>
 
   </footer>
+
+
+  <!-- ======================================================
+       MOBILE CTA
+  ======================================================= -->
 
   <div class="mobile-sticky-cta">
 
@@ -1545,6 +2233,7 @@
     </a>
 
   </div>
+
 
   <script src="./script.js?v=601"></script>
 
