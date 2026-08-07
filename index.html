@@ -107,10 +107,13 @@
       scroll-margin-top: 125px;
     }
 
-    /* ---------- GUARDIANS ---------- */
+
+    /* ======================================================
+       FIVE GUARDIANS — CINEMATIC CAROUSEL
+    ====================================================== */
 
     .guardians-section {
-      padding: 105px 5%;
+      padding: 105px 0;
 
       background:
         radial-gradient(
@@ -123,11 +126,17 @@
           #071d12,
           #103c25
         );
+
+      overflow: hidden;
     }
 
     .guardians-section .section-heading {
+      max-width: 920px;
+
       margin-left: auto;
       margin-right: auto;
+      padding: 0 5%;
+
       text-align: center;
     }
 
@@ -143,11 +152,215 @@
       color: rgba(255, 249, 238, 0.78);
     }
 
-    .guardians-section .guardian-grid {
-      margin-top: 48px;
+    .guardian-carousel {
+      width: 100%;
+
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(390px, 31vw);
+
+      gap: 24px;
+
+      margin-top: 50px;
+
+      padding:
+        4px
+        max(5%, calc((100vw - 1500px) / 2))
+        26px;
+
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      scroll-snap-type: x mandatory;
+      scroll-padding-left: 5%;
+
+      overscroll-behavior-inline: contain;
+
+      scrollbar-width: thin;
+      scrollbar-color:
+        rgba(244, 216, 138, 0.45)
+        rgba(255, 255, 255, 0.05);
     }
 
-    /* ---------- HERBAL LIBRARY ---------- */
+    .guardian-carousel::-webkit-scrollbar {
+      height: 7px;
+    }
+
+    .guardian-carousel::-webkit-scrollbar-track {
+      background:
+        rgba(255, 255, 255, 0.05);
+
+      border-radius: 999px;
+    }
+
+    .guardian-carousel::-webkit-scrollbar-thumb {
+      background:
+        rgba(244, 216, 138, 0.42);
+
+      border-radius: 999px;
+    }
+
+    .guardian-carousel .guardian-card {
+      width: 100%;
+      min-height: 600px;
+
+      scroll-snap-align: start;
+
+      position: relative;
+
+      display: flex;
+
+      overflow: hidden;
+
+      border:
+        1px solid rgba(244, 216, 138, 0.22);
+
+      border-radius: 30px;
+
+      background: #06170e;
+
+      box-shadow:
+        0 26px 60px rgba(0, 0, 0, 0.26);
+
+      isolation: isolate;
+
+      transition:
+        transform 260ms ease,
+        box-shadow 260ms ease;
+    }
+
+    .guardian-carousel .guardian-card:hover,
+    .guardian-carousel .guardian-card:focus-visible {
+      transform: translateY(-6px);
+
+      box-shadow:
+        0 36px 76px rgba(0, 0, 0, 0.34);
+    }
+
+    .guardian-carousel .guardian-card img {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center center;
+
+      transition:
+        transform 600ms ease;
+    }
+
+    .guardian-carousel .guardian-card:hover img,
+    .guardian-carousel .guardian-card:focus-visible img {
+      transform: scale(1.025);
+    }
+
+    .guardian-carousel .guardian-card::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 35%,
+          rgba(0, 0, 0, 0.18) 56%,
+          rgba(0, 0, 0, 0.94) 100%
+        );
+    }
+
+    .guardian-carousel .guardian-card-copy {
+      width: 100%;
+
+      align-self: flex-end;
+
+      padding: 36px 30px;
+
+      color: #fff9ee;
+    }
+
+    .guardian-carousel .guardian-card-copy span {
+      display: block;
+
+      margin-bottom: 10px;
+
+      color: #f4d88a;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: 0.7rem;
+      font-weight: 900;
+
+      letter-spacing: 0.15em;
+
+      text-transform: uppercase;
+    }
+
+    .guardian-carousel .guardian-card-copy h3 {
+      margin-bottom: 10px;
+
+      color: #fff9ee;
+
+      font-size:
+        clamp(2rem, 2.6vw, 3rem);
+
+      line-height: 1;
+    }
+
+    .guardian-carousel .guardian-card-copy p {
+      max-width: 360px;
+
+      color:
+        rgba(255, 249, 238, 0.8);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
+
+    .guardian-carousel-hint {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      margin-top: 8px;
+
+      color:
+        rgba(255, 249, 238, 0.58);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: 0.7rem;
+      font-weight: 800;
+
+      letter-spacing: 0.1em;
+
+      text-transform: uppercase;
+    }
+
+    .guardian-carousel-hint span {
+      color: #f4d88a;
+    }
+
+
+    /* ======================================================
+       HERBAL LIBRARY PREVIEW
+    ====================================================== */
 
     .library-preview {
       padding: 105px 7vw;
@@ -184,7 +397,9 @@
 
       color: #103c25;
 
-      font-size: clamp(2.9rem, 5vw, 5.5rem);
+      font-size:
+        clamp(2.9rem, 5vw, 5.5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
     }
@@ -194,7 +409,11 @@
 
       color: #354036;
 
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.05rem;
       line-height: 1.8;
     }
@@ -219,15 +438,23 @@
 
       color: #8a6322;
 
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.72rem;
       font-weight: 900;
 
       letter-spacing: 0.1em;
+
       text-transform: uppercase;
     }
 
-    /* ---------- BRAND PILLARS ---------- */
+
+    /* ======================================================
+       BRAND PILLARS
+    ====================================================== */
 
     .brand-pillars {
       padding: 105px 7vw;
@@ -240,7 +467,9 @@
 
     .brand-pillar-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 22px;
 
       margin-top: 48px;
@@ -275,11 +504,16 @@
 
       color: #b68a33;
 
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.7rem;
       font-weight: 900;
 
       letter-spacing: 0.13em;
+
       text-transform: uppercase;
     }
 
@@ -294,15 +528,24 @@
     .brand-pillar p {
       color: #5c5a50;
 
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       line-height: 1.7;
     }
 
-    /* ---------- HOMEPAGE FAQ ---------- */
+
+    /* ======================================================
+       HOMEPAGE FAQ
+    ====================================================== */
 
     .home-faq-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 22px;
 
       margin-top: 44px;
@@ -326,11 +569,16 @@
 
       color: #b68a33;
 
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.7rem;
       font-weight: 900;
 
       letter-spacing: 0.12em;
+
       text-transform: uppercase;
     }
 
@@ -345,15 +593,33 @@
     .home-faq-card p {
       color: #665f52;
 
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.94rem;
       line-height: 1.65;
     }
 
+
+    /* ======================================================
+       RESPONSIVE
+    ====================================================== */
+
     @media (max-width: 1180px) {
       .brand-pillar-grid,
       .home-faq-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .guardian-carousel {
+        grid-auto-columns:
+          minmax(360px, 62vw);
+
+        padding-left: 7vw;
+        padding-right: 7vw;
       }
     }
 
@@ -364,7 +630,14 @@
     }
 
     @media (max-width: 780px) {
-      .guardians-section,
+      .guardians-section {
+        padding: 70px 0;
+      }
+
+      .guardians-section .section-heading {
+        padding: 0 22px;
+      }
+
       .library-preview,
       .brand-pillars {
         padding: 70px 22px;
@@ -377,6 +650,49 @@
 
       .library-preview-card {
         min-height: 380px;
+      }
+
+      .guardian-carousel {
+        grid-auto-columns:
+          minmax(300px, 88vw);
+
+        gap: 16px;
+
+        margin-top: 36px;
+
+        padding:
+          3px
+          22px
+          24px;
+
+        scroll-padding-left: 22px;
+      }
+
+      .guardian-carousel .guardian-card {
+        min-height: 500px;
+
+        border-radius: 26px;
+      }
+
+      .guardian-carousel .guardian-card-copy {
+        padding: 28px 24px;
+      }
+
+      .guardian-carousel-hint {
+        padding: 0 22px;
+
+        font-size: 0.64rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .guardian-carousel {
+        grid-auto-columns:
+          calc(100vw - 44px);
+      }
+
+      .guardian-carousel .guardian-card {
+        min-height: 470px;
       }
     }
   </style>
@@ -394,6 +710,7 @@
   >
     🌿 Founder Pre-Orders Open • £19.99 Founder Price • Ships September 2026
   </a>
+
 
   <!-- ======================================================
        HEADER
@@ -466,6 +783,7 @@
 
   </header>
 
+
   <!-- ======================================================
        MOBILE NAV
   ======================================================= -->
@@ -515,6 +833,7 @@
     </a>
 
   </nav>
+
 
   <main>
 
@@ -645,6 +964,7 @@
 
     </section>
 
+
     <!-- ====================================================
          SHORTCUTS
     ===================================================== -->
@@ -696,6 +1016,7 @@
       </div>
 
     </nav>
+
 
     <!-- ====================================================
          VALUE STRIP
@@ -752,6 +1073,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          FIVE RITUALS
@@ -828,6 +1150,7 @@
 
         </article>
 
+
         <!-- BUSH DOCTOR -->
 
         <article
@@ -874,6 +1197,7 @@
           </div>
 
         </article>
+
 
         <!-- EMPRESS BLOOM -->
 
@@ -922,6 +1246,7 @@
 
         </article>
 
+
         <!-- IRON ROOT -->
 
         <article
@@ -968,6 +1293,7 @@
           </div>
 
         </article>
+
 
         <!-- COOL MIND -->
 
@@ -1034,6 +1360,7 @@
 
     </section>
 
+
     <!-- ====================================================
          WHAT'S INCLUDED
     ===================================================== -->
@@ -1092,6 +1419,7 @@
 
         </div>
 
+
         <div>
 
           <img
@@ -1113,6 +1441,7 @@
           </p>
 
         </div>
+
 
         <div>
 
@@ -1136,6 +1465,7 @@
           </p>
 
         </div>
+
 
         <div>
 
@@ -1163,6 +1493,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          TEA RITUAL
@@ -1228,6 +1559,7 @@
 
     </section>
 
+
     <!-- ====================================================
          GUARDIANS
     ===================================================== -->
@@ -1248,23 +1580,29 @@
         </h2>
 
         <p>
-          The Guardians turn the five blends into five distinct stories —
-          representing movement, knowledge, growth, endurance and stillness.
+          Swipe through the five Guardians and explore the story,
+          character and ritual behind each blend.
         </p>
 
       </div>
 
-      <div class="guardian-grid">
+
+      <div
+        class="guardian-carousel"
+        aria-label="RastaRoots Five Guardians"
+      >
+
+        <!-- ROOTS FIRE GUARDIAN -->
 
         <a
           class="guardian-card"
           href="./roots-fire.html"
-          aria-label="Meet the Roots Fire Guardian"
+          aria-label="Explore Roots Fire"
         >
 
           <img
-            src="./assets/guardian-roots-fire.png"
-            alt="Young athletic Roots Fire Guardian at sunrise"
+            src="./assets/guardian-roots-fire.png?v=607"
+            alt="Young athletic Roots Fire Guardian standing in front of a sunrise"
             loading="lazy"
           />
 
@@ -1286,15 +1624,18 @@
 
         </a>
 
+
+        <!-- BUSH DOCTOR GUARDIAN -->
+
         <a
           class="guardian-card"
           href="./bush-doctor.html"
-          aria-label="Meet the Bush Doctor Guardian"
+          aria-label="Explore Bush Doctor"
         >
 
           <img
-            src="./assets/guardian-bush-doctor.png"
-            alt="Bush Doctor Guardian surrounded by herbs"
+            src="./assets/guardian-bush-doctor.png?v=607"
+            alt="Bush Doctor Guardian surrounded by Caribbean herbs"
             loading="lazy"
           />
 
@@ -1316,15 +1657,18 @@
 
         </a>
 
+
+        <!-- EMPRESS BLOOM GUARDIAN -->
+
         <a
           class="guardian-card"
           href="./empress-bloom.html"
-          aria-label="Meet the Empress Bloom Guardian"
+          aria-label="Explore Empress Bloom"
         >
 
           <img
-            src="./assets/guardian-empress-bloom.png"
-            alt="Empress Bloom Guardian"
+            src="./assets/guardian-empress-bloom.png?v=607"
+            alt="Empress Bloom Guardian in a lush botanical environment"
             loading="lazy"
           />
 
@@ -1346,15 +1690,18 @@
 
         </a>
 
+
+        <!-- IRON ROOT GUARDIAN -->
+
         <a
           class="guardian-card"
           href="./iron-root.html"
-          aria-label="Meet the Iron Root Guardian"
+          aria-label="Explore Iron Root"
         >
 
           <img
-            src="./assets/guardian-iron-root.png"
-            alt="Strong elder Iron Root Guardian"
+            src="./assets/guardian-iron-root.png?v=607"
+            alt="Powerful elder Iron Root Guardian beneath ancient roots"
             loading="lazy"
           />
 
@@ -1376,15 +1723,18 @@
 
         </a>
 
+
+        <!-- COOL MIND GUARDIAN -->
+
         <a
           class="guardian-card"
           href="./cool-mind.html"
-          aria-label="Meet the Cool Mind Guardians"
+          aria-label="Explore Cool Mind"
         >
 
           <img
-            src="./assets/guardian-cool-mind.png"
-            alt="Mother and child sharing the Cool Mind ritual"
+            src="./assets/guardian-cool-mind.png?v=607"
+            alt="Mother and child sharing the Cool Mind meditation ritual"
             loading="lazy"
           />
 
@@ -1408,7 +1758,23 @@
 
       </div>
 
+
+      <div class="guardian-carousel-hint">
+
+        <span>
+          ←
+        </span>
+
+        Swipe or scroll to explore all five
+
+        <span>
+          →
+        </span>
+
+      </div>
+
     </section>
+
 
     <!-- ====================================================
          HERBAL LIBRARY
@@ -1498,6 +1864,7 @@
 
         </div>
 
+
         <div class="library-preview-card">
 
           <img
@@ -1519,6 +1886,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          WHY RASTAROOTS
@@ -1562,6 +1930,7 @@
 
         </article>
 
+
         <article class="brand-pillar">
 
           <span>
@@ -1579,6 +1948,7 @@
 
         </article>
 
+
         <article class="brand-pillar">
 
           <span>
@@ -1595,6 +1965,7 @@
           </p>
 
         </article>
+
 
         <article class="brand-pillar">
 
@@ -1616,6 +1987,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          FOUNDER
@@ -1667,6 +2039,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          COMMUNITY
@@ -1720,6 +2093,7 @@
 
     </section>
 
+
     <!-- ====================================================
          TRUST
     ===================================================== -->
@@ -1765,6 +2139,7 @@
 
           </div>
 
+
           <div>
 
             <strong>
@@ -1782,6 +2157,7 @@
 
           </div>
 
+
           <div>
 
             <strong>
@@ -1798,6 +2174,7 @@
             </p>
 
           </div>
+
 
           <div>
 
@@ -1827,6 +2204,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          FAQ PREVIEW
@@ -1871,6 +2249,7 @@
 
         </article>
 
+
         <article class="home-faq-card">
 
           <strong>
@@ -1886,6 +2265,7 @@
           </p>
 
         </article>
+
 
         <article class="home-faq-card">
 
@@ -1903,6 +2283,7 @@
           </p>
 
         </article>
+
 
         <article class="home-faq-card">
 
@@ -1938,6 +2319,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          INSTAGRAM
@@ -1975,6 +2357,7 @@
       </div>
 
     </section>
+
 
     <!-- ====================================================
          EMAIL
@@ -2022,6 +2405,7 @@
     </section>
 
   </main>
+
 
   <!-- ======================================================
        FOOTER
@@ -2105,6 +2489,7 @@
 
   </footer>
 
+
   <!-- ======================================================
        MOBILE CTA
   ======================================================= -->
@@ -2118,6 +2503,7 @@
     </a>
 
   </div>
+
 
   <script src="./script.js?v=601"></script>
 
