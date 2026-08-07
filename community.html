@@ -5,25 +5,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Community Fund | RastaRoots Life</title>
+  <title>Community | Rootz Community Vision | RastaRoots Life</title>
 
   <meta
     name="description"
-    content="Discover the RastaRoots Community Fund, supporting youth empowerment, mental wellbeing, heritage, grassroots projects, wellness access and community events."
+    content="Discover the RastaRoots community vision — supporting heritage, young people, wellbeing, grassroots ideas, cultural connection and future community projects."
   />
 
-  <meta property="og:title" content="Community Fund | RastaRoots Life" />
+  <meta
+    property="og:title"
+    content="Rootz Community Vision | RastaRoots Life"
+  />
+
   <meta
     property="og:description"
-    content="Every Founder Pre-Order helps build more than a tea brand. It helps grow stronger roots."
+    content="RastaRoots is being built for more than product sales. Discover the long-term community vision behind the brand."
   />
-  <meta property="og:image" content="./assets/community-fund.png" />
-  <meta property="og:type" content="website" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"></script>
+  <meta
+    property="og:image"
+    content="./assets/community-fund.png"
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <link
+    rel="icon"
+    href="./assets/badge-logo.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./style.css?v=606"
+  />
+
+  <!-- Google Analytics 4 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
+  ></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
     gtag("js", new Date());
 
@@ -38,394 +68,1627 @@
     });
   </script>
 
-  <link rel="icon" href="./assets/badge-logo.png" />
-  <link rel="stylesheet" href="./style.css?v=604" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ======================================================
+       COMMUNITY PAGE
+    ====================================================== */
+
+    .community-intro {
+      padding: 105px 7vw;
+
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(182, 138, 51, 0.12),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #fff9ee,
+          #f4ead7
+        );
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .community-intro-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .community-intro-inner h2 {
+      margin-bottom: 25px;
+
+      color: #103c25;
+
+      font-size: clamp(3.1rem, 5.4vw, 5.9rem);
+      line-height: 0.97;
+      letter-spacing: -0.05em;
+    }
+
+    .community-intro-inner p {
+      max-width: 820px;
+      margin: 0 auto 18px;
+
+      color: #354036;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.82;
+    }
+
+    /* ======================================================
+       COMMUNITY PROMISE
+    ====================================================== */
+
+    .community-promise {
+      padding: 115px 7vw;
+
+      text-align: center;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(244, 216, 138, 0.13),
+          transparent 38%
+        ),
+        linear-gradient(
+          135deg,
+          #06170e,
+          #103c25
+        );
+    }
+
+    .community-promise-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .community-promise .section-kicker {
+      color: #f4d88a;
+    }
+
+    .community-promise h2 {
+      margin-bottom: 28px;
+
+      color: #fff9ee;
+
+      font-size: clamp(3.4rem, 6vw, 6.4rem);
+      line-height: 0.96;
+      letter-spacing: -0.055em;
+    }
+
+    .community-promise p {
+      max-width: 790px;
+      margin: 0 auto 18px;
+
+      color: rgba(255, 249, 238, 0.78);
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .community-promise blockquote {
+      max-width: 900px;
+
+      margin: 46px auto 0;
+      padding-top: 38px;
+
+      border-top: 1px solid rgba(244, 216, 138, 0.24);
+
+      color: #f4d88a;
+
+      font-size: clamp(2rem, 4vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    /* ======================================================
+       SIX PILLARS
+    ====================================================== */
+
+    .community-pillars {
+      padding: 105px 7vw;
+
+      background: #fff9ee;
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .community-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+
+      margin-top: 52px;
+    }
+
+    .community-pillar-card {
+      display: flex;
+      flex-direction: column;
+
+      min-height: 470px;
+
+      overflow: hidden;
+
+      border-radius: 26px;
+      border: 1px solid rgba(16, 60, 37, 0.12);
+
+      background: #f8efdf;
+
+      box-shadow: 0 18px 46px rgba(16, 60, 37, 0.07);
+
+      transition:
+        transform 220ms ease,
+        box-shadow 220ms ease;
+    }
+
+    .community-pillar-card:hover {
+      transform: translateY(-6px);
+
+      box-shadow: 0 28px 58px rgba(16, 60, 37, 0.13);
+    }
+
+    .community-pillar-image {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+
+    .community-pillar-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform 450ms ease;
+    }
+
+    .community-pillar-card:hover img {
+      transform: scale(1.025);
+    }
+
+    .community-pillar-copy {
+      padding: 28px;
+
+      display: flex;
+      flex-direction: column;
+
+      flex: 1;
+    }
+
+    .community-pillar-copy span {
+      display: block;
+
+      margin-bottom: 12px;
+
+      color: #b68a33;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .community-pillar-copy h3 {
+      margin-bottom: 12px;
+
+      color: #103c25;
+
+      font-size: 1.75rem;
+    }
+
+    .community-pillar-copy p {
+      color: #5c5a50;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.72;
+    }
+
+    /* ======================================================
+       TRANSPARENCY
+    ====================================================== */
+
+    .community-transparency {
+      padding: 105px 7vw;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f4ead7,
+          #fff9ee
+        );
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .transparency-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+
+      margin-top: 48px;
+    }
+
+    .transparency-card {
+      padding: 32px;
+
+      border-radius: 24px;
+      border: 1px solid rgba(16, 60, 37, 0.12);
+
+      background: rgba(255, 255, 255, 0.62);
+    }
+
+    .transparency-card span {
+      display: block;
+
+      margin-bottom: 14px;
+
+      color: #b68a33;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .transparency-card h3 {
+      margin-bottom: 12px;
+
+      color: #103c25;
+
+      font-size: 1.65rem;
+    }
+
+    .transparency-card p {
+      color: #5c5a50;
+
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    /* ======================================================
+       COMMUNITY PRINCIPLES
+    ====================================================== */
+
+    .community-principles {
+      padding: 110px 7vw;
+
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(244, 216, 138, 0.12),
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          #06170e,
+          #103c25
+        );
+    }
+
+    .community-principles .section-kicker,
+    .community-principles .section-heading h2 {
+      color: #f4d88a;
+    }
+
+    .community-principles .section-heading > p:last-child {
+      color: rgba(255, 249, 238, 0.76);
+    }
+
+    .community-principles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+
+      margin-top: 50px;
+    }
+
+    .community-principle {
+      padding: 30px;
+
+      border-radius: 24px;
+      border: 1px solid rgba(244, 216, 138, 0.18);
+
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .community-principle span {
+      display: block;
+
+      margin-bottom: 15px;
+
+      color: #f4d88a;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+    }
+
+    .community-principle h3 {
+      margin-bottom: 12px;
+
+      color: #fff9ee;
+
+      font-size: 1.65rem;
+    }
+
+    .community-principle p {
+      color: rgba(255, 249, 238, 0.72);
+
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    /* ======================================================
+       PARTICIPATION
+    ====================================================== */
+
+    .community-participation {
+      padding: 105px 7vw;
+
+      background: #fff9ee;
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .participation-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+
+      margin-top: 48px;
+    }
+
+    .participation-card {
+      display: flex;
+      flex-direction: column;
+
+      min-height: 290px;
+
+      padding: 30px;
+
+      border-radius: 24px;
+      border: 1px solid rgba(16, 60, 37, 0.12);
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(182, 138, 51, 0.1),
+          transparent 35%
+        ),
+        #f8efdf;
+    }
+
+    .participation-card strong {
+      display: block;
+
+      margin-bottom: 14px;
+
+      color: #b68a33;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .participation-card h3 {
+      margin-bottom: 12px;
+
+      color: #103c25;
+
+      font-size: 1.65rem;
+    }
+
+    .participation-card p {
+      margin-bottom: 20px;
+
+      color: #5c5a50;
+
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .participation-card a {
+      margin-top: auto;
+
+      color: #103c25;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.76rem;
+      font-weight: 900;
+
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* ======================================================
+       ROOTZ PRINCIPLES / CULTURE
+    ====================================================== */
+
+    .rootz-culture {
+      display: grid;
+      grid-template-columns: 48% 52%;
+      gap: 70px;
+      align-items: center;
+
+      padding: 105px 7vw;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f4ead7,
+          #fff9ee
+        );
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .rootz-culture-copy h2 {
+      margin-bottom: 22px;
+
+      color: #103c25;
+
+      font-size: clamp(3rem, 5vw, 5.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+    }
+
+    .rootz-culture-copy p {
+      margin-bottom: 18px;
+
+      color: #354036;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.04rem;
+      line-height: 1.8;
+    }
+
+    .rootz-culture-card {
+      min-height: 450px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 46px;
+
+      border-radius: 30px;
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(244, 216, 138, 0.15),
+          transparent 40%
+        ),
+        #103c25;
+
+      color: #fff9ee;
+
+      box-shadow: 0 28px 64px rgba(16, 60, 37, 0.17);
+    }
+
+    .rootz-culture-card span {
+      display: block;
+
+      margin-bottom: 20px;
+
+      color: #f4d88a;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .rootz-culture-card blockquote {
+      color: #fff9ee;
+
+      font-size: clamp(2rem, 3.5vw, 3.7rem);
+      line-height: 1.06;
+      letter-spacing: -0.03em;
+    }
+
+    /* ======================================================
+       FUTURE FUND
+    ====================================================== */
+
+    .future-fund {
+      padding: 110px 7vw;
+
+      text-align: center;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(244, 216, 138, 0.13),
+          transparent 36%
+        ),
+        linear-gradient(
+          135deg,
+          #06170e,
+          #103c25
+        );
+    }
+
+    .future-fund-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .future-fund .section-kicker {
+      color: #f4d88a;
+    }
+
+    .future-fund h2 {
+      margin-bottom: 24px;
+
+      color: #fff9ee;
+
+      font-size: clamp(3rem, 5.5vw, 5.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+
+    .future-fund p {
+      max-width: 770px;
+      margin: 0 auto 20px;
+
+      color: rgba(255, 249, 238, 0.77);
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    /* ======================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1100px) {
+      .community-pillars-grid,
+      .transparency-grid,
+      .participation-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .community-principles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .rootz-culture {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .community-intro,
+      .community-promise,
+      .community-pillars,
+      .community-transparency,
+      .community-principles,
+      .community-participation,
+      .rootz-culture,
+      .future-fund {
+        padding: 70px 22px;
+      }
+
+      .community-pillars-grid,
+      .transparency-grid,
+      .community-principles-grid,
+      .participation-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .community-pillar-card {
+        min-height: auto;
+      }
+
+      .rootz-culture-card {
+        min-height: 380px;
+        padding: 32px;
+      }
+    }
+  </style>
 </head>
 
 <body id="top">
+
+  <!-- ======================================================
+       ANNOUNCEMENT
+  ======================================================= -->
 
   <a
     class="announcement-bar"
     href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
   >
-    🌿 Founder Pre-Orders Now Open • Every Sip Helps Grow Stronger Roots
+    🌿 Founder Pre-Orders Now Open • Discovery Collection Ships September 2026
   </a>
 
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
+
   <header class="site-header">
-    <a class="brand" href="./index.html" aria-label="RastaRoots Life home">
-      <img src="./assets/rastaroots-header-logo.png?v=600" alt="RastaRoots Life logo" />
+
+    <a
+      class="brand"
+      href="./index.html"
+      aria-label="RastaRoots Life home"
+    >
+      <img
+        src="./assets/rastaroots-header-logo.png?v=600"
+        alt="RastaRoots Life logo"
+      />
     </a>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="./index.html">Home</a>
-      <a href="./shop.html">Shop</a>
-      <a href="./founder.html">Founder</a>
-      <a href="./tea-ritual.html">Tea Ritual</a>
-      <a href="./community.html">Community</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./contact.html">Contact</a>
+    <nav
+      class="main-nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="./index.html">
+        Home
+      </a>
+
+      <a href="./shop.html">
+        Shop
+      </a>
+
+      <a href="./founder.html">
+        Founder
+      </a>
+
+      <a href="./tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="./herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="./community.html">
+        Community
+      </a>
+
+      <a href="./faq.html">
+        FAQ
+      </a>
+
       <a
         class="nav-cta"
         href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
       >
         Pre-Order
       </a>
+
     </nav>
+
   </header>
 
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="./index.html">Home</a>
-    <a href="./shop.html">Shop</a>
-    <a href="./founder.html">Founder</a>
-    <a href="./tea-ritual.html">Tea Ritual</a>
-    <a href="./community.html">Community</a>
-    <a href="./faq.html">FAQ</a>
-    <a href="./contact.html">Contact</a>
-    <a href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
+  <!-- ======================================================
+       MOBILE NAV
+  ======================================================= -->
+
+  <nav
+    class="mobile-nav"
+    id="mobileNav"
+    aria-label="Mobile navigation"
+  >
+
+    <a href="./index.html">
+      Home
+    </a>
+
+    <a href="./shop.html">
+      Shop
+    </a>
+
+    <a href="./founder.html">
+      Founder
+    </a>
+
+    <a href="./tea-ritual.html">
+      Tea Ritual
+    </a>
+
+    <a href="./herbal-library.html">
+      Herbal Library
+    </a>
+
+    <a href="./community.html">
+      Community
+    </a>
+
+    <a href="./faq.html">
+      FAQ
+    </a>
+
+    <a href="./contact.html">
+      Contact
+    </a>
+
+    <a
+      href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+    >
       Pre-Order
     </a>
+
   </nav>
 
   <main>
 
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
+
     <section class="hero hero-upgraded">
+
       <div class="hero-copy">
-        <p class="eyebrow">Rootz Community Fund • Purpose Before Profit</p>
 
-        <h1>Stronger roots.<br />Stronger communities.</h1>
+        <p class="eyebrow">
+          Rootz Community Vision • Built For The Long Term
+        </p>
 
-        <div class="ornament" aria-hidden="true">
-          <span></span><b>✦</b><span></span>
+        <h1>
+          Stronger roots.<br />
+          Stronger communities.
+        </h1>
+
+        <div
+          class="ornament"
+          aria-hidden="true"
+        >
+          <span></span>
+          <b>✦</b>
+          <span></span>
         </div>
 
         <p class="hero-text">
-          RastaRoots Life is being built as more than a herbal tea brand.
-          The Rootz Community Fund is our long-term commitment to youth,
-          wellbeing, heritage and grassroots community impact.
+          RastaRoots is being built with a bigger ambition than selling herbal
+          tea. As the business grows, we want that growth to create meaningful
+          opportunities for heritage, young people, wellbeing and grassroots
+          communities.
         </p>
 
         <div class="hero-actions">
+
           <a
             class="btn btn-primary"
-            href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+            href="#vision"
           >
-            Pre-Order Discovery Collection
+            Explore The Vision
           </a>
 
-          <a class="btn btn-secondary" href="./founder.html">
+          <a
+            class="btn btn-secondary"
+            href="./founder.html"
+          >
             Read The Founder Story
           </a>
+
         </div>
 
         <div class="hero-proof">
-          <span>Youth Empowerment</span>
-          <span>Mental Wellbeing</span>
-          <span>Grassroots Impact</span>
+          <span>Heritage</span>
+          <span>Opportunity</span>
+          <span>Community</span>
         </div>
+
       </div>
 
       <div class="hero-media parallax-media">
+
         <img
           src="./assets/community-fund.png?v=600"
-          alt="RastaRoots Community Fund artwork"
+          alt="RastaRoots Rootz Community vision artwork"
         />
+
       </div>
+
     </section>
+
+    <!-- ====================================================
+         VALUE STRIP
+    ===================================================== -->
 
     <section class="value-strip">
+
       <div>
-        <strong>Purpose-Led</strong>
-        <p>Built for more than product sales.</p>
+        <strong>
+          Built Transparently
+        </strong>
+
+        <p>
+          Clear about what exists now and what is still being built.
+        </p>
       </div>
 
       <div>
-        <strong>Founder Powered</strong>
-        <p>Early customers help shape the mission.</p>
+        <strong>
+          Community Led
+        </strong>
+
+        <p>
+          Future work should respond to real needs, not marketing campaigns.
+        </p>
       </div>
 
       <div>
-        <strong>Community First</strong>
-        <p>Focused on real people and local impact.</p>
+        <strong>
+          Culture Matters
+        </strong>
+
+        <p>
+          Heritage, memory and identity belong inside the mission.
+        </p>
       </div>
 
       <div>
-        <strong>Long-Term Vision</strong>
-        <p>A fund designed to grow with the brand.</p>
+        <strong>
+          Long-Term Thinking
+        </strong>
+
+        <p>
+          Sustainable impact should grow with a sustainable business.
+        </p>
       </div>
+
     </section>
+
+    <!-- ====================================================
+         INTRO
+    ===================================================== -->
+
+    <section
+      id="vision"
+      class="community-intro"
+    >
+
+      <div class="community-intro-inner">
+
+        <p class="section-kicker">
+          The Community Vision
+        </p>
+
+        <h2>
+          We want growth to mean something beyond bigger sales.
+        </h2>
+
+        <p>
+          RastaRoots is still at the beginning. The Community Fund is not being
+          presented as an established charitable programme today.
+        </p>
+
+        <p>
+          It is a commitment to build towards something meaningful as the
+          business becomes strong enough to support it properly — with clear
+          goals, visible projects and honest reporting rather than vague claims.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         CORE PROMISE
+    ===================================================== -->
+
+    <section class="community-promise">
+
+      <div class="community-promise-inner">
+
+        <p class="section-kicker">
+          The Principle
+        </p>
+
+        <h2>
+          Build the business. Strengthen the Rootz around it.
+        </h2>
+
+        <p>
+          A successful brand creates attention, resources, relationships and
+          opportunities. The question is what we eventually choose to do with
+          those things.
+        </p>
+
+        <p>
+          Our ambition is for RastaRoots to become capable of supporting people
+          and projects that strengthen identity, confidence, connection and
+          opportunity.
+        </p>
+
+        <blockquote>
+          “Community should not be the decoration around the brand. It should
+          become part of what the brand makes possible.”
+        </blockquote>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         SIX PILLARS
+    ===================================================== -->
+
+    <section class="community-pillars">
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          Where We Want To Make A Difference
+        </p>
+
+        <h2>
+          Six areas that fit the Rootz mission.
+        </h2>
+
+        <p>
+          These are the areas we believe naturally connect to the RastaRoots
+          philosophy. Future activity will depend on resources, partnerships
+          and the needs of the communities involved.
+        </p>
+
+      </div>
+
+      <div class="community-pillars-grid">
+
+        <!-- 01 -->
+
+        <article class="community-pillar-card">
+
+          <div class="community-pillar-image">
+
+            <img
+              src="./assets/community-01-youth-empowerment.png"
+              alt="RastaRoots youth empowerment community vision"
+            />
+
+          </div>
+
+          <div class="community-pillar-copy">
+
+            <span>
+              01 • Youth
+            </span>
+
+            <h3>
+              Youth Opportunity
+            </h3>
+
+            <p>
+              Helping young people access positive experiences, confidence,
+              mentorship, skills and stronger connections to community.
+            </p>
+
+          </div>
+
+        </article>
+
+        <!-- 02 -->
+
+        <article class="community-pillar-card">
+
+          <div class="community-pillar-image">
+
+            <img
+              src="./assets/community-02-mental-wellbeing.png"
+              alt="RastaRoots mental wellbeing community vision"
+            />
+
+          </div>
+
+          <div class="community-pillar-copy">
+
+            <span>
+              02 • Wellbeing
+            </span>
+
+            <h3>
+              Better Conversations
+            </h3>
+
+            <p>
+              Supporting spaces and initiatives that encourage people to talk,
+              connect, slow down and access appropriate wellbeing support.
+            </p>
+
+          </div>
+
+        </article>
+
+        <!-- 03 -->
+
+        <article class="community-pillar-card">
+
+          <div class="community-pillar-image">
+
+            <img
+              src="./assets/community-03-heritage.png"
+              alt="RastaRoots heritage and cultural memory"
+            />
+
+          </div>
+
+          <div class="community-pillar-copy">
+
+            <span>
+              03 • Heritage
+            </span>
+
+            <h3>
+              Cultural Memory
+            </h3>
+
+            <p>
+              Helping protect stories, traditions, music, family history and
+              intergenerational knowledge that can easily disappear when they
+              are not passed forward.
+            </p>
+
+          </div>
+
+        </article>
+
+        <!-- 04 -->
+
+        <article class="community-pillar-card">
+
+          <div class="community-pillar-image">
+
+            <img
+              src="./assets/community-04-grassroots-projects.png"
+              alt="RastaRoots grassroots community projects"
+            />
+
+          </div>
+
+          <div class="community-pillar-copy">
+
+            <span>
+              04 • Grassroots
+            </span>
+
+            <h3>
+              Local Ideas
+            </h3>
+
+            <p>
+              Supporting smaller groups and individuals whose local work can
+              have meaningful impact without needing to become large
+              organisations first.
+            </p>
+
+          </div>
+
+        </article>
+
+        <!-- 05 -->
+
+        <article class="community-pillar-card">
+
+          <div class="community-pillar-image">
+
+            <img
+              src="./assets/community-05-wellness-access.png"
+              alt="RastaRoots nature and wellness community experiences"
+            />
+
+          </div>
+
+          <div class="community-pillar-copy">
+
+            <span>
+              05 • Nature & Ritual
+            </span>
+
+            <h3>
+              Everyday Wellbeing
+            </h3>
+
+            <p>
+              Creating accessible opportunities around nature, movement,
+              reflection, culture and healthy daily routines without presenting
+              lifestyle practices as substitutes for healthcare.
+            </p>
+
+          </div>
+
+        </article>
+
+        <!-- 06 -->
+
+        <article class="community-pillar-card">
+
+          <div class="community-pillar-image">
+
+            <img
+              src="./assets/community-06-community-events.png"
+              alt="RastaRoots community gatherings and events"
+            />
+
+          </div>
+
+          <div class="community-pillar-copy">
+
+            <span>
+              06 • Connection
+            </span>
+
+            <h3>
+              Community Experiences
+            </h3>
+
+            <p>
+              Future walks, conversations, cultural events, Tea Ritual sessions
+              and experiences that bring people together offline as well as
+              online.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         TRANSPARENCY
+    ===================================================== -->
+
+    <section class="community-transparency">
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          Transparency
+        </p>
+
+        <h2>
+          Promise less. Show more.
+        </h2>
+
+        <p>
+          If the Community Fund develops, people should be able to understand
+          what it is doing rather than relying on broad claims.
+        </p>
+
+      </div>
+
+      <div class="transparency-grid">
+
+        <article class="transparency-card">
+
+          <span>
+            Stage 01
+          </span>
+
+          <h3>
+            Build responsibly.
+          </h3>
+
+          <p>
+            The first priority is creating a viable RastaRoots business that can
+            support future community work without making promises it cannot
+            sustain.
+          </p>
+
+        </article>
+
+        <article class="transparency-card">
+
+          <span>
+            Stage 02
+          </span>
+
+          <h3>
+            Choose real projects.
+          </h3>
+
+          <p>
+            Community activity should involve credible partners, clear needs
+            and outcomes that make sense for the RastaRoots mission.
+          </p>
+
+        </article>
+
+        <article class="transparency-card">
+
+          <span>
+            Stage 03
+          </span>
+
+          <h3>
+            Report what happened.
+          </h3>
+
+          <p>
+            As projects develop, RastaRoots should publish what was supported,
+            what resources were committed and what was learned.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         ROOTZ PRINCIPLES
+    ===================================================== -->
+
+    <section class="community-principles">
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          Community Principles
+        </p>
+
+        <h2>
+          How we want to show up.
+        </h2>
+
+        <p>
+          The community work should follow the same standards as the rest of
+          the brand.
+        </p>
+
+      </div>
+
+      <div class="community-principles-grid">
+
+        <article class="community-principle">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Listen first.
+          </h3>
+
+          <p>
+            Communities understand their needs better than brands looking in
+            from the outside.
+          </p>
+
+        </article>
+
+        <article class="community-principle">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Respect dignity.
+          </h3>
+
+          <p>
+            Community work should never turn people into marketing props for
+            the company.
+          </p>
+
+        </article>
+
+        <article class="community-principle">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Build locally.
+          </h3>
+
+          <p>
+            Small, specific action can matter more than ambitious language with
+            no practical effect.
+          </p>
+
+        </article>
+
+        <article class="community-principle">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Stay accountable.
+          </h3>
+
+          <p>
+            If RastaRoots says it supported something, customers should
+            eventually be able to see what that means.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         ROOTZ CULTURE
+    ===================================================== -->
+
+    <section class="rootz-culture">
+
+      <div class="rootz-culture-copy">
+
+        <p class="section-kicker">
+          Rootz Principles
+        </p>
+
+        <h2>
+          Community also means preserving what connects us.
+        </h2>
+
+        <p>
+          RastaRoots community work is not only about money. Storytelling,
+          conversation, music, nature, heritage and intergenerational memory
+          can also create connection.
+        </p>
+
+        <p>
+          That is why Rootz Principles, founder content, herbal education and
+          cultural storytelling belong alongside the products.
+        </p>
+
+        <p>
+          The objective is to build an audience that buys from the brand, but
+          also learns something, remembers something and shares something.
+        </p>
+
+      </div>
+
+      <div class="rootz-culture-card">
+
+        <span>
+          Rootz Principle
+        </span>
+
+        <blockquote>
+          “What we fail to pass forward becomes something the next generation
+          has to rediscover alone.”
+        </blockquote>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         PARTICIPATION
+    ===================================================== -->
+
+    <section class="community-participation">
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          Be Part Of The Rootz
+        </p>
+
+        <h2>
+          Community starts before there is a fund.
+        </h2>
+
+        <p>
+          There are already ways to take part in the RastaRoots journey while
+          the wider community programme develops.
+        </p>
+
+      </div>
+
+      <div class="participation-grid">
+
+        <article class="participation-card">
+
+          <strong>
+            Learn
+          </strong>
+
+          <h3>
+            Explore the Herbal Library.
+          </h3>
+
+          <p>
+            Learn more about the plants, flavour, culture and traditions behind
+            the five RastaRoots rituals.
+          </p>
+
+          <a href="./herbal-library.html">
+            Enter The Herbal Library →
+          </a>
+
+        </article>
+
+        <article class="participation-card">
+
+          <strong>
+            Ritual
+          </strong>
+
+          <h3>
+            Make time for connection.
+          </h3>
+
+          <p>
+            Use Tea Ritual as a reason to slow down, listen, talk, reflect or
+            spend intentional time with someone else.
+          </p>
+
+          <a href="./tea-ritual.html">
+            Explore Tea Ritual →
+          </a>
+
+        </article>
+
+        <article class="participation-card">
+
+          <strong>
+            Follow
+          </strong>
+
+          <h3>
+            Help shape what comes next.
+          </h3>
+
+          <p>
+            Follow the build, respond to ideas and stay connected as the
+            product, content and community vision develop.
+          </p>
+
+          <a
+            href="https://instagram.com/rastarootzs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow @rastarootzs →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         FOUNDER
+    ===================================================== -->
 
     <section class="feature-section reverse">
 
       <div class="feature-image">
+
         <img
-          src="./assets/community-01-youth-empowerment.png"
-          alt="RastaRoots Youth Empowerment community fund poster"
+          src="./assets/founder-hero.png"
+          alt="Founder of RastaRoots Life"
         />
+
       </div>
 
       <div class="feature-copy">
-        <p class="section-kicker">The Mission</p>
 
-        <h2>Every sip can help grow stronger roots.</h2>
+        <p class="section-kicker">
+          Founder Vision
+        </p>
+
+        <h2>
+          The mission has to grow at the same pace as the business.
+        </h2>
 
         <p>
-          The Rootz Community Fund is our commitment to using the growth of
-          RastaRoots Life to support real people, real communities and real cultural impact.
+          It is easy for a new brand to promise that it will change the world.
+          It is harder to build something capable of doing useful work
+          consistently.
         </p>
 
         <p>
-          As the brand grows, we aim to contribute towards projects that
-          strengthen families, support young people, protect heritage and improve mental wellbeing.
-        </p>
-
-        <a class="text-link" href="./shop.html">
-          Explore The First Drop →
-        </a>
-      </div>
-
-    </section>
-
-    <section class="section selection-showcase">
-
-      <div class="section-heading center-heading">
-        <p class="section-kicker">What We Aim To Support</p>
-
-        <h2>Six pillars for stronger communities.</h2>
-
-        <p>
-          The giving model will develop as RastaRoots grows, but the long-term impact
-          will be built around these six areas.
-        </p>
-      </div>
-
-      <div class="launch-grid">
-
-        <div>
-          <img
-            src="./assets/community-01-youth-empowerment.png"
-            alt="Youth Empowerment RastaRoots Community Fund"
-          />
-          <strong>01</strong>
-          <h3>Youth Empowerment</h3>
-          <p>Supporting young people with positive opportunities, confidence and community connection.</p>
-        </div>
-
-        <div>
-          <img
-            src="./assets/community-02-mental-wellbeing.png"
-            alt="Mental Wellbeing RastaRoots Community Fund"
-          />
-          <strong>02</strong>
-          <h3>Mental Wellbeing</h3>
-          <p>Backing projects that help people slow down, talk, heal and reconnect.</p>
-        </div>
-
-        <div>
-          <img
-            src="./assets/community-03-heritage.png"
-            alt="Heritage RastaRoots Community Fund"
-          />
-          <strong>03</strong>
-          <h3>Heritage</h3>
-          <p>Preserving cultural memory, family stories, traditions and intergenerational wisdom.</p>
-        </div>
-
-        <div>
-          <img
-            src="./assets/community-04-grassroots-projects.png"
-            alt="Grassroots Projects RastaRoots Community Fund"
-          />
-          <strong>04</strong>
-          <h3>Grassroots Projects</h3>
-          <p>Supporting local ideas, small community groups and people creating positive change.</p>
-        </div>
-
-        <div>
-          <img
-            src="./assets/community-05-wellness-access.png"
-            alt="Wellness Access RastaRoots Community Fund"
-          />
-          <strong>05</strong>
-          <h3>Wellness Access</h3>
-          <p>Encouraging natural wellbeing, daily ritual and accessible wellness conversations.</p>
-        </div>
-
-        <div>
-          <img
-            src="./assets/community-06-community-events.png"
-            alt="Community Events RastaRoots Community Fund"
-          />
-          <strong>06</strong>
-          <h3>Community Events</h3>
-          <p>Future workshops, tea rituals, cultural events and community gatherings.</p>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="feature-section">
-
-      <div class="feature-copy">
-        <p class="section-kicker">Transparency</p>
-
-        <h2>Built openly from day one.</h2>
-
-        <p>
-          At launch, the Community Fund begins as a commitment. As the brand grows,
-          we will develop it into a more structured programme with clear updates,
-          supported projects and visible progress.
-        </p>
-
-        <p>
-          Founder customers will be part of the journey from the beginning,
-          helping shape both the product and the purpose behind it.
-        </p>
-      </div>
-
-      <div class="feature-image">
-        <img
-          src="./assets/community-06-community-events.png"
-          alt="RastaRoots community events gathering"
-        />
-      </div>
-
-    </section>
-
-    <section class="feature-section reverse">
-
-      <div class="feature-image">
-        <img
-          src="./assets/community-05-wellness-access.png"
-          alt="RastaRoots wellness access tea ritual"
-        />
-      </div>
-
-      <div class="feature-copy soft-card">
-        <p class="section-kicker">Founder Customers</p>
-
-        <h2>You help build the beginning.</h2>
-
-        <p>
-          Every Founder Pre-Order helps RastaRoots move from vision to reality.
-          Early customers are supporting the first production run, the tea ritual
-          experience and the foundation of the wider community mission.
+          The approach with RastaRoots is to build the company properly first,
+          then increase what it can contribute as the resources, partnerships
+          and community relationships become real.
         </p>
 
         <a
-          class="btn btn-primary"
-          href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+          class="text-link"
+          href="./founder.html"
         >
-          Pre-Order The First Drop
+          Read The Founder Story →
         </a>
+
       </div>
 
     </section>
+
+    <!-- ====================================================
+         FUTURE FUND
+    ===================================================== -->
+
+    <section class="future-fund">
+
+      <div class="future-fund-inner">
+
+        <p class="section-kicker">
+          Rootz Community Fund
+        </p>
+
+        <h2>
+          A future commitment worth building properly.
+        </h2>
+
+        <p>
+          The long-term ambition is to establish a structured Rootz Community
+          Fund as RastaRoots grows.
+        </p>
+
+        <p>
+          When that happens, this page should evolve into the public record of
+          what the programme supports, how funds or resources are allocated and
+          what progress has actually been made.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         STAY CONNECTED
+    ===================================================== -->
 
     <section class="launch-section">
+
       <div class="launch-inner">
-        <p class="section-kicker">Our Promise</p>
 
-        <h2>No fake reviews. Just real intention.</h2>
-
-        <p>
-          We are pre-launch, so instead of pretending we have customer reviews,
-          we are telling you exactly what we stand for.
+        <p class="section-kicker">
+          Stay Connected
         </p>
 
-        <div class="launch-grid">
-          <div>
-            <strong>✓</strong>
-            <h3>Premium Ingredients</h3>
-            <p>Created around natural herbal blends, daily ritual and a premium discovery experience.</p>
-          </div>
+        <h2>
+          Watch the vision become real.
+        </h2>
 
-          <div>
-            <strong>✓</strong>
-            <h3>Purpose Before Profit</h3>
-            <p>Built with a long-term commitment to community impact, not just product sales.</p>
-          </div>
+        <p>
+          Join the Rootz List for product news, Herbal Library updates,
+          founder stories and future community announcements.
+        </p>
 
-          <div>
-            <strong>✓</strong>
-            <h3>Founder Updates</h3>
-            <p>Founder customers will be part of the journey as the first drop comes to life.</p>
-          </div>
-
-          <div>
-            <strong>✓</strong>
-            <h3>Secure Checkout</h3>
-            <p>Checkout is completed securely through Shopify when you are ready to pre-order.</p>
-          </div>
-        </div>
-
-        <a
-          class="btn btn-primary"
-          href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+        <div
+          class="hero-actions"
+          style="justify-content: center;"
         >
-          Pre-Order Discovery Collection
-        </a>
-      </div>
-    </section>
 
-    <section class="section selection-showcase">
-      <div class="section-heading center-heading">
-        <p class="section-kicker">Long-Term Vision</p>
-
-        <h2>From tea ritual to community movement.</h2>
-
-        <p>
-          The goal is not only to sell tea. The goal is to build a premium lifestyle
-          brand that can support culture, wellbeing and community projects at scale.
-        </p>
-      </div>
-
-      <div class="launch-grid">
-        <div>
-          <img
-            src="./assets/community-03-heritage.png"
-            alt="Heritage and intergenerational wisdom"
-          />
-          <h3>Culture</h3>
-          <p>Protecting stories, roots, memory and identity through content and community work.</p>
-        </div>
-
-        <div>
-          <img
-            src="./assets/community-02-mental-wellbeing.png"
-            alt="Mental wellbeing and tea ritual"
-          />
-          <h3>Wellbeing</h3>
-          <p>Helping people slow down, talk, reset and reconnect through ritual.</p>
-        </div>
-
-        <div>
-          <img
-            src="./assets/community-04-grassroots-projects.png"
-            alt="Grassroots community projects"
-          />
-          <h3>Action</h3>
-          <p>Backing local ideas and people creating positive change from the ground up.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="launch-section">
-      <div class="launch-inner">
-        <p class="section-kicker">Stay Connected</p>
-
-        <h2>Follow the journey.</h2>
-
-        <p>
-          Join the Rootz List for Community Fund updates, launch news, founder updates
-          and future opportunities.
-        </p>
-
-        <div class="hero-actions">
           <a
             class="btn btn-primary"
             href="https://eepurl.com/9sLCn3GjES"
@@ -439,47 +1702,111 @@
             class="btn btn-secondary"
             href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
           >
-            Pre-Order Discovery Collection
+            Explore The First Drop
           </a>
+
         </div>
+
       </div>
+
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <img src="./assets/rastaroots-logo-light.png?v=600" alt="" aria-hidden="true" />
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
 
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="./index.html">Home</a>
-      <a href="./shop.html">Shop</a>
-      <a href="./founder.html">Founder</a>
-      <a href="./tea-ritual.html">Tea Ritual</a>
-      <a href="./community.html">Community</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./shipping.html">Shipping</a>
-      <a href="./refunds.html">Refunds</a>
-      <a href="./privacy.html">Privacy</a>
-      <a href="./terms.html">Terms</a>
-      <a href="./contact.html">Contact</a>
-      <a href="https://instagram.com/rastarootzs" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="#" aria-label="TikTok coming soon">TikTok</a>
-      <a href="#" aria-label="YouTube coming soon">YouTube</a>
+  <footer class="site-footer">
+
+    <img
+      src="./assets/rastaroots-logo-light.png?v=600"
+      alt=""
+      aria-hidden="true"
+    />
+
+    <nav
+      class="footer-links"
+      aria-label="Footer navigation"
+    >
+
+      <a href="./index.html">
+        Home
+      </a>
+
+      <a href="./shop.html">
+        Shop
+      </a>
+
+      <a href="./founder.html">
+        Founder
+      </a>
+
+      <a href="./tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="./herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="./community.html">
+        Community
+      </a>
+
+      <a href="./faq.html">
+        FAQ
+      </a>
+
+      <a href="./shipping.html">
+        Shipping
+      </a>
+
+      <a href="./refunds.html">
+        Refunds
+      </a>
+
+      <a href="./privacy.html">
+        Privacy
+      </a>
+
+      <a href="./terms.html">
+        Terms
+      </a>
+
+      <a href="./contact.html">
+        Contact
+      </a>
+
+      <a
+        href="https://instagram.com/rastarootzs"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
     </nav>
 
     <p>
       © 2026 RastaRoots Life.<br />
       Rooted in nature. Fueled by life.
     </p>
+
   </footer>
 
   <div class="mobile-sticky-cta">
-    <a href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
+
+    <a
+      href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+    >
       Pre-Order Now
     </a>
+
   </div>
 
   <script src="./script.js?v=601"></script>
 
 </body>
+
 </html>
