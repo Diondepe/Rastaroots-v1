@@ -15,7 +15,12 @@
 
   <meta
     name="description"
-    content="Discover Bush Doctor, a bold RastaRoots herbal infusion made with cerasee, bitter melon and moringa. Explore its flavour, ingredients, ritual and Caribbean inspiration."
+    content="Discover Bush Doctor, a bold RastaRoots herbal infusion made with cerasee, bitter melon and moringa. Explore its flavour, ingredients, Guardian and Tea Ritual."
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.rastarootslife.com/bush-doctor.html"
   />
 
   <meta
@@ -25,12 +30,12 @@
 
   <meta
     property="og:description"
-    content="Discover the ingredients, flavour and ritual behind Bush Doctor — a bold, naturally bitter herbal infusion from the RastaRoots Discovery Collection."
+    content="Discover Bush Doctor — a deliberately bitter infusion of cerasee, bitter melon and moringa from the RastaRoots Discovery Collection."
   />
 
   <meta
     property="og:image"
-    content="./assets/bush-doctor.png"
+    content="https://www.rastarootslife.com/assets/bush-doctor.png"
   />
 
   <meta
@@ -38,6 +43,22 @@
     content="product"
   />
 
+  <meta
+    property="og:url"
+    content="https://www.rastarootslife.com/bush-doctor.html"
+  />
+
+  <link
+    rel="icon"
+    href="./assets/badge-logo.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./style.css?v=607"
+  />
+
+  <!-- Google Analytics 4 -->
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
@@ -63,29 +84,29 @@
     });
   </script>
 
-  <link
-    rel="icon"
-    href="./assets/badge-logo.png"
-  />
-
-  <link
-    rel="stylesheet"
-    href="./style.css?v=605"
-  />
-
   <style>
     /* ======================================================
-       BUSH DOCTOR PAGE
+       BUSH DOCTOR
     ====================================================== */
 
     .flavour-breadcrumb {
       padding: 22px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
-      font-family: Arial, Helvetica, sans-serif;
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.78rem;
       font-weight: 800;
+
       letter-spacing: 0.06em;
+
       text-transform: uppercase;
     }
 
@@ -94,115 +115,179 @@
     }
 
     .flavour-breadcrumb span {
-      color: #8a7a60;
       margin: 0 8px;
+
+      color: #8a7a60;
     }
 
+
+    /* ======================================================
+       HERO
+    ====================================================== */
+
     .bush-doctor-hero {
+      min-height: 720px;
+
       display: grid;
       grid-template-columns: 48% 52%;
-      min-height: 720px;
+
       background:
         radial-gradient(
           circle at top left,
-          rgba(73, 117, 60, 0.16),
+          rgba(45, 99, 50, 0.15),
           transparent 32%
         ),
         linear-gradient(
           135deg,
           #fff9ee 0%,
-          #e9efdd 100%
+          #dfe8d5 100%
         );
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .bush-doctor-hero-copy {
-      padding: 90px 7vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      padding: 90px 7vw;
     }
 
     .bush-doctor-label {
-      color: #678348;
-      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 20px;
+
+      color: #2d6332;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
       font-weight: 900;
+
       letter-spacing: 0.2em;
+
       text-transform: uppercase;
-      margin-bottom: 20px;
     }
 
     .bush-doctor-hero h1 {
+      margin-bottom: 24px;
+
       color: #103c25;
-      font-size: clamp(4.4rem, 7.5vw, 7.5rem);
+
+      font-size:
+        clamp(4.3rem, 7.5vw, 7.5rem);
+
       line-height: 0.88;
       letter-spacing: -0.06em;
-      margin-bottom: 24px;
     }
 
     .bush-doctor-tagline {
-      color: #678348;
-      font-size: clamp(1.7rem, 3vw, 2.8rem);
-      line-height: 1.05;
       margin-bottom: 24px;
+
+      color: #2d6332;
+
+      font-size:
+        clamp(1.7rem, 3vw, 2.8rem);
+
+      line-height: 1.05;
     }
 
     .bush-doctor-intro {
       max-width: 620px;
+
+      margin-bottom: 30px;
+
       color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.08rem;
       line-height: 1.8;
-      margin-bottom: 30px;
     }
 
     .bush-doctor-ingredient-line {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+
       margin-bottom: 32px;
     }
 
     .bush-doctor-ingredient-line span {
       padding: 9px 14px;
-      border: 1px solid rgba(16, 60, 37, 0.18);
+
+      border:
+        1px solid rgba(45, 99, 50, 0.22);
+
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.7);
+
+      background:
+        rgba(255, 255, 255, 0.7);
+
       color: #103c25;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
       font-weight: 800;
     }
 
     .bush-doctor-hero-image {
       min-height: 720px;
+
       overflow: hidden;
     }
 
     .bush-doctor-hero-image img {
       width: 100%;
       height: 100%;
+
       object-fit: cover;
       object-position: center;
     }
 
+
+    /* ======================================================
+       QUICK FACTS
+    ====================================================== */
+
     .bush-doctor-facts {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      background: linear-gradient(
-        90deg,
-        #173e20,
-        #061b0d
-      );
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      background:
+        linear-gradient(
+          90deg,
+          #1f5527,
+          #071b0c
+        );
+
       color: #fff9ee;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
     }
 
     .bush-doctor-facts div {
       padding: 28px 34px;
+
       text-align: center;
-      border-right: 1px solid rgba(244, 216, 138, 0.2);
+
+      border-right:
+        1px solid rgba(213, 232, 196, 0.2);
     }
 
     .bush-doctor-facts div:last-child {
@@ -211,11 +296,16 @@
 
     .bush-doctor-facts strong {
       display: block;
-      color: #d7dd9f;
-      font-size: 0.78rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
+
       margin-bottom: 8px;
+
+      color: #d5e8c4;
+
+      font-size: 0.78rem;
+
+      letter-spacing: 0.13em;
+
+      text-transform: uppercase;
     }
 
     .bush-doctor-facts span {
@@ -223,62 +313,82 @@
       line-height: 1.5;
     }
 
+
+    /* ======================================================
+       GUARDIAN
+    ====================================================== */
+
     .guardian-section {
       display: grid;
       grid-template-columns: 45% 55%;
       align-items: center;
+
       gap: 70px;
+
       padding: 100px 7vw;
+
       background:
         radial-gradient(
           circle at bottom left,
-          rgba(103, 131, 72, 0.2),
+          rgba(90, 143, 75, 0.22),
           transparent 30%
         ),
         linear-gradient(
           135deg,
-          #04170b,
-          #12351c
+          #06170b,
+          #1d4d25
         );
     }
 
     .guardian-image {
-      min-height: 520px;
-      border-radius: 34px;
+      min-height: 560px;
+
       overflow: hidden;
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
-      background:
-        radial-gradient(
-          circle,
-          rgba(215, 221, 159, 0.14),
-          transparent 58%
-        );
+
+      border-radius: 34px;
+
+      background: #06170b;
+
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.34);
     }
 
     .guardian-image img {
       width: 100%;
       height: 100%;
-      min-height: 520px;
+      min-height: 560px;
+
       object-fit: cover;
       object-position: center;
     }
 
     .guardian-copy .section-kicker {
-      color: #d7dd9f;
+      color: #d5e8c4;
     }
 
     .guardian-copy h2 {
+      margin-bottom: 24px;
+
       color: #fff9ee;
-      font-size: clamp(2.8rem, 5vw, 5.6rem);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.6rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 24px;
     }
 
     .guardian-copy > p {
-      color: rgba(255, 249, 238, 0.8);
       max-width: 680px;
-      font-family: Arial, Helvetica, sans-serif;
+
+      color:
+        rgba(255, 249, 238, 0.82);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.06rem;
       line-height: 1.8;
     }
@@ -286,140 +396,242 @@
     .guardian-quote {
       margin-top: 34px;
       padding: 30px;
-      border-left: 3px solid #d7dd9f;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 0 22px 22px 0;
+
+      border-left:
+        3px solid #d5e8c4;
+
+      border-radius:
+        0 22px 22px 0;
+
+      background:
+        rgba(255, 255, 255, 0.05);
+
       color: #fff9ee;
-      font-size: clamp(1.5rem, 2.5vw, 2.3rem);
+
+      font-size:
+        clamp(1.5rem, 2.5vw, 2.3rem);
+
       line-height: 1.25;
     }
 
+
+    /* ======================================================
+       STORY
+    ====================================================== */
+
     .bush-doctor-story {
       padding: 100px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .story-inner {
       max-width: 1050px;
+
       margin: 0 auto;
+
       text-align: center;
     }
 
     .story-inner h2 {
+      margin-bottom: 24px;
+
       color: #103c25;
-      font-size: clamp(2.8rem, 5vw, 5.5rem);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5.5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 24px;
     }
 
     .story-inner > p {
       max-width: 790px;
+
       margin: 0 auto 22px;
+
       color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.08rem;
       line-height: 1.8;
     }
 
+
+    /* ======================================================
+       INGREDIENTS
+    ====================================================== */
+
     .bush-doctor-ingredients {
       padding: 100px 7vw;
-      background: linear-gradient(
-        180deg,
-        #e7ecd9,
-        #fff9ee
-      );
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      background:
+        linear-gradient(
+          180deg,
+          #e2ead9,
+          #fff9ee
+        );
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .ingredient-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 26px;
+
       margin-top: 48px;
     }
 
     .ingredient-detail-card {
-      background: #fff9ee;
-      border: 1px solid rgba(103, 131, 72, 0.28);
-      border-radius: 28px;
       padding: 34px;
-      box-shadow: 0 20px 48px rgba(26, 34, 23, 0.08);
+
+      border:
+        1px solid rgba(45, 99, 50, 0.23);
+
+      border-radius: 28px;
+
+      background: #fff9ee;
+
+      box-shadow:
+        0 20px 48px rgba(26, 34, 23, 0.08);
     }
 
     .ingredient-icon {
       width: 56px;
       height: 56px;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 50%;
-      background: #103c25;
-      color: #d7dd9f;
-      font-size: 1.7rem;
+
       margin-bottom: 22px;
+
+      border-radius: 50%;
+
+      background: #1f5527;
+      color: #d5e8c4;
+
+      font-size: 1.7rem;
     }
 
     .ingredient-detail-card h3 {
-      color: #103c25;
-      font-size: 2rem;
       margin-bottom: 12px;
+
+      color: #103c25;
+
+      font-size: 2rem;
     }
 
     .ingredient-detail-card p {
-      color: #5c5a50;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
       margin-bottom: 16px;
+
+      color: #5c5a50;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.7;
     }
 
     .ingredient-detail-card strong {
       display: block;
-      color: #678348;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+
       margin-bottom: 7px;
+
+      color: #2d6332;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: 0.75rem;
+
+      letter-spacing: 0.1em;
+
+      text-transform: uppercase;
     }
 
     .library-link {
       display: inline-flex;
+
       margin-top: 10px;
+      padding-bottom: 6px;
+
+      border-bottom:
+        1px solid #2d6332;
+
       color: #103c25;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.78rem;
       font-weight: 900;
+
       letter-spacing: 0.07em;
+
       text-transform: uppercase;
-      border-bottom: 1px solid #678348;
-      padding-bottom: 6px;
     }
+
+
+    /* ======================================================
+       FLAVOUR PROFILE
+    ====================================================== */
 
     .flavour-profile-section {
       display: grid;
       grid-template-columns: 48% 52%;
-      gap: 70px;
       align-items: center;
+
+      gap: 70px;
+
       padding: 100px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .flavour-profile-copy h2 {
+      margin-bottom: 24px;
+
       color: #103c25;
-      font-size: clamp(2.8rem, 5vw, 5rem);
+
+      font-size:
+        clamp(2.8rem, 5vw, 5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 24px;
     }
 
     .flavour-profile-copy > p {
-      color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.8;
       margin-bottom: 30px;
+
+      color: #354036;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.8;
     }
 
     .profile-bars {
@@ -430,141 +642,205 @@
     .profile-row {
       display: grid;
       grid-template-columns: 110px 1fr;
-      gap: 18px;
       align-items: center;
+
+      gap: 18px;
     }
 
     .profile-row strong {
       color: #103c25;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
+
       letter-spacing: 0.08em;
+
       text-transform: uppercase;
     }
 
     .profile-track {
       height: 12px;
-      background: #dfe5d2;
-      border-radius: 999px;
+
       overflow: hidden;
+
+      border-radius: 999px;
+
+      background: #dce6d6;
     }
 
     .profile-fill {
       display: block;
+
       height: 100%;
+
       border-radius: 999px;
-      background: linear-gradient(
-        90deg,
-        #678348,
-        #173e20
-      );
+
+      background:
+        linear-gradient(
+          90deg,
+          #6e9a5d,
+          #1f5527
+        );
     }
 
     .profile-fill.bitter {
-      width: 94%;
+      width: 96%;
     }
 
-    .profile-fill.herbal {
-      width: 88%;
+    .profile-fill.green {
+      width: 82%;
     }
 
     .profile-fill.earthy {
-      width: 76%;
+      width: 72%;
     }
 
     .profile-fill.fresh {
-      width: 54%;
+      width: 34%;
     }
 
     .profile-fill.sweet {
-      width: 12%;
+      width: 10%;
     }
 
     .flavour-profile-image img {
       width: 100%;
+
       border-radius: 34px;
-      box-shadow: 0 28px 70px rgba(25, 35, 24, 0.14);
+
+      box-shadow:
+        0 28px 70px rgba(25, 35, 24, 0.14);
     }
+
+
+    /* ======================================================
+       TEA RITUAL
+    ====================================================== */
 
     .ritual-section {
       padding: 110px 7vw;
+
       background:
         radial-gradient(
           circle at top right,
-          rgba(215, 221, 159, 0.12),
+          rgba(213, 232, 196, 0.13),
           transparent 28%
         ),
         linear-gradient(
           135deg,
-          #04170b,
-          #12351c
+          #06170b,
+          #1d4d25
         );
+
       color: #fff9ee;
-      border-bottom: 1px solid rgba(215, 221, 159, 0.12);
+
+      border-bottom:
+        1px solid rgba(213, 232, 196, 0.12);
     }
 
     .ritual-inner {
       max-width: 1100px;
+
       margin: 0 auto;
     }
 
     .ritual-heading {
-      text-align: center;
       max-width: 800px;
+
       margin: 0 auto 52px;
+
+      text-align: center;
     }
 
     .ritual-heading .section-kicker {
-      color: #d7dd9f;
+      color: #d5e8c4;
     }
 
     .ritual-heading h2 {
+      margin-bottom: 22px;
+
       color: #fff9ee;
-      font-size: clamp(3rem, 5vw, 5.6rem);
+
+      font-size:
+        clamp(3rem, 5vw, 5.6rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 22px;
     }
 
     .ritual-heading p {
-      color: rgba(255, 249, 238, 0.76);
-      font-family: Arial, Helvetica, sans-serif;
+      color:
+        rgba(255, 249, 238, 0.78);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       line-height: 1.8;
     }
 
     .ritual-steps {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 20px;
+
       margin-bottom: 44px;
     }
 
     .ritual-step {
       padding: 30px;
-      border: 1px solid rgba(215, 221, 159, 0.18);
+
+      border:
+        1px solid rgba(213, 232, 196, 0.18);
+
       border-radius: 24px;
-      background: rgba(255, 255, 255, 0.05);
+
+      background:
+        rgba(255, 255, 255, 0.05);
     }
 
     .ritual-step span {
       display: block;
-      color: #d7dd9f;
-      font-family: Arial, Helvetica, sans-serif;
+
+      margin-bottom: 16px;
+
+      color: #d5e8c4;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.75rem;
       font-weight: 900;
+
       letter-spacing: 0.14em;
-      margin-bottom: 16px;
     }
 
     .ritual-step h3 {
-      color: #fff9ee;
-      font-size: 1.55rem;
       margin-bottom: 12px;
+
+      color: #fff9ee;
+
+      font-size: 1.55rem;
     }
 
     .ritual-step p {
-      color: rgba(255, 249, 238, 0.72);
-      font-family: Arial, Helvetica, sans-serif;
+      color:
+        rgba(255, 249, 238, 0.74);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.93rem;
       line-height: 1.65;
     }
@@ -573,173 +849,283 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+
       gap: 14px;
     }
 
     .spotify-button {
+      border:
+        1px solid #1db954;
+
       background: #1db954;
       color: #ffffff;
-      border: 1px solid #1db954;
     }
 
     .spotify-button:hover {
       background: #149945;
     }
 
+
+    /* ======================================================
+       ROOTZ PRINCIPLE
+    ====================================================== */
+
     .principle-section {
       padding: 110px 7vw;
+
       text-align: center;
+
       background:
         radial-gradient(
           circle at center,
-          rgba(103, 131, 72, 0.18),
+          rgba(45, 99, 50, 0.14),
           transparent 42%
         ),
-        #e7ecd9;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+        #e2ead9;
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
     .principle-section blockquote {
       max-width: 1000px;
+
       margin: 0 auto;
+
       color: #103c25;
-      font-size: clamp(2.7rem, 5.5vw, 6rem);
+
+      font-size:
+        clamp(2.7rem, 5.5vw, 6rem);
+
       line-height: 1;
       letter-spacing: -0.045em;
     }
 
     .principle-section cite {
       display: block;
+
       margin-top: 28px;
-      color: #678348;
-      font-family: Arial, Helvetica, sans-serif;
+
+      color: #2d6332;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.78rem;
       font-style: normal;
       font-weight: 900;
+
       letter-spacing: 0.16em;
+
       text-transform: uppercase;
     }
 
-    .library-coming-soon {
+
+    /* ======================================================
+       HERBAL LIBRARY
+    ====================================================== */
+
+    .library-section {
       padding: 100px 7vw;
+
       background: #fff9ee;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
     }
 
-    .library-coming-inner {
+    .library-inner {
       max-width: 1100px;
-      margin: 0 auto;
+
       display: grid;
       grid-template-columns: 56% 44%;
-      gap: 60px;
       align-items: center;
+
+      gap: 60px;
+
+      margin: 0 auto;
       padding: 54px;
+
+      border:
+        1px solid rgba(45, 99, 50, 0.22);
+
       border-radius: 34px;
-      background: linear-gradient(
-        135deg,
-        #e7ecd9,
-        #fff9ee
-      );
-      border: 1px solid rgba(103, 131, 72, 0.25);
-      box-shadow: 0 24px 60px rgba(26, 34, 23, 0.08);
+
+      background:
+        linear-gradient(
+          135deg,
+          #e2ead9,
+          #fff9ee
+        );
+
+      box-shadow:
+        0 24px 60px rgba(26, 34, 23, 0.08);
     }
 
-    .library-coming-copy h2 {
+    .library-copy h2 {
+      margin-bottom: 22px;
+
       color: #103c25;
-      font-size: clamp(2.6rem, 4.8vw, 5rem);
+
+      font-size:
+        clamp(2.6rem, 4.8vw, 5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 22px;
     }
 
-    .library-coming-copy p {
-      color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.8;
+    .library-copy p {
       margin-bottom: 28px;
+
+      color: #354036;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.8;
     }
 
     .library-badge {
       min-height: 320px;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      padding: 30px;
+
       border-radius: 28px;
+
       background:
         radial-gradient(
           circle,
-          rgba(215, 221, 159, 0.2),
+          rgba(213, 232, 196, 0.2),
           transparent 55%
         ),
-        #103c25;
+        #1d4d25;
+
       text-align: center;
-      padding: 30px;
     }
 
     .library-badge img {
       width: 150px;
+
       margin-bottom: 24px;
     }
 
     .library-badge strong {
-      color: #d7dd9f;
-      font-size: 1.7rem;
       margin-bottom: 8px;
+
+      color: #d5e8c4;
+
+      font-size: 1.7rem;
     }
 
     .library-badge span {
-      color: rgba(255, 249, 238, 0.72);
-      font-family: Arial, Helvetica, sans-serif;
+      color:
+        rgba(255, 249, 238, 0.74);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.82rem;
+
       letter-spacing: 0.1em;
+
       text-transform: uppercase;
     }
 
+
+    /* ======================================================
+       COLLECTION CTA
+    ====================================================== */
+
     .collection-cta {
       padding: 110px 7vw;
+
       text-align: center;
+
       background:
         radial-gradient(
           circle at top,
-          rgba(215, 221, 159, 0.12),
+          rgba(213, 232, 196, 0.12),
           transparent 35%
         ),
         linear-gradient(
           135deg,
-          #04170b,
-          #12351c
+          #06170b,
+          #1d4d25
         );
     }
 
+    .collection-cta .section-kicker {
+      color: #d5e8c4;
+    }
+
     .collection-cta h2 {
+      margin-bottom: 22px;
+
       color: #fff9ee;
-      font-size: clamp(3rem, 5vw, 5.5rem);
+
+      font-size:
+        clamp(3rem, 5vw, 5.5rem);
+
       line-height: 0.98;
       letter-spacing: -0.045em;
-      margin-bottom: 22px;
     }
 
     .collection-cta p {
       max-width: 700px;
+
       margin: 0 auto 34px;
-      color: rgba(255, 249, 238, 0.76);
-      font-family: Arial, Helvetica, sans-serif;
+
+      color:
+        rgba(255, 249, 238, 0.78);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 1.05rem;
       line-height: 1.75;
     }
 
+
+    /* ======================================================
+       BLEND NAVIGATION
+    ====================================================== */
+
     .blend-navigation {
       display: flex;
       justify-content: space-between;
+
       gap: 20px;
+
       padding: 32px 7vw;
-      background: #e7ecd9;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
-      font-family: Arial, Helvetica, sans-serif;
+
+      background: #e2ead9;
+
+      border-bottom:
+        1px solid rgba(16, 60, 37, 0.12);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       font-size: 0.8rem;
       font-weight: 900;
+
       letter-spacing: 0.08em;
+
       text-transform: uppercase;
     }
 
@@ -747,11 +1133,17 @@
       color: #103c25;
     }
 
+
+    /* ======================================================
+       RESPONSIVE
+    ====================================================== */
+
     @media (max-width: 980px) {
+
       .bush-doctor-hero,
       .guardian-section,
       .flavour-profile-section,
-      .library-coming-inner {
+      .library-inner {
         grid-template-columns: 1fr;
       }
 
@@ -765,7 +1157,9 @@
 
       .bush-doctor-facts div {
         border-right: 0;
-        border-bottom: 1px solid rgba(215, 221, 159, 0.2);
+
+        border-bottom:
+          1px solid rgba(213, 232, 196, 0.2);
       }
 
       .ingredient-grid {
@@ -773,11 +1167,13 @@
       }
 
       .ritual-steps {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
     }
 
     @media (max-width: 780px) {
+
       .bush-doctor-hero-copy,
       .guardian-section,
       .bush-doctor-story,
@@ -785,13 +1181,14 @@
       .flavour-profile-section,
       .ritual-section,
       .principle-section,
-      .library-coming-soon,
+      .library-section,
       .collection-cta {
         padding: 70px 22px;
       }
 
       .bush-doctor-hero h1 {
-        font-size: clamp(3.8rem, 18vw, 5.8rem);
+        font-size:
+          clamp(3.8rem, 17vw, 5.8rem);
       }
 
       .bush-doctor-hero-image {
@@ -800,23 +1197,25 @@
 
       .guardian-image,
       .guardian-image img {
-        min-height: 400px;
+        min-height: 430px;
       }
 
       .ritual-steps {
         grid-template-columns: 1fr;
       }
 
-      .library-coming-inner {
+      .library-inner {
         padding: 28px;
       }
 
       .profile-row {
-        grid-template-columns: 84px 1fr;
+        grid-template-columns:
+          84px 1fr;
       }
 
       .blend-navigation {
         flex-direction: column;
+
         text-align: center;
       }
     }
@@ -825,12 +1224,21 @@
 
 <body id="top">
 
+  <!-- ======================================================
+       ANNOUNCEMENT
+  ======================================================= -->
+
   <a
     class="announcement-bar"
     href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
   >
-    🌿 Founder Pre-Orders Now Open • Save £5 Before Public Launch • Ships September 2026
+    🌿 Founder Pre-Orders Open • £19.99 Founder Price • Ships September 2026
   </a>
+
+
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
 
   <header class="site-header">
 
@@ -859,13 +1267,34 @@
       class="main-nav"
       aria-label="Main navigation"
     >
-      <a href="./index.html">Home</a>
-      <a href="./shop.html">Shop</a>
-      <a href="./founder.html">Founder</a>
-      <a href="./tea-ritual.html">Tea Ritual</a>
-      <a href="./community.html">Community</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./contact.html">Contact</a>
+
+      <a href="./index.html">
+        Home
+      </a>
+
+      <a href="./shop.html">
+        Shop
+      </a>
+
+      <a href="./founder.html">
+        Founder
+      </a>
+
+      <a href="./tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="./herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="./community.html">
+        Community
+      </a>
+
+      <a href="./faq.html">
+        FAQ
+      </a>
 
       <a
         class="nav-cta"
@@ -873,39 +1302,91 @@
       >
         Pre-Order
       </a>
+
     </nav>
 
   </header>
+
+
+  <!-- ======================================================
+       MOBILE NAV
+  ======================================================= -->
 
   <nav
     class="mobile-nav"
     id="mobileNav"
     aria-label="Mobile navigation"
   >
-    <a href="./index.html">Home</a>
-    <a href="./shop.html">Shop</a>
-    <a href="./founder.html">Founder</a>
-    <a href="./tea-ritual.html">Tea Ritual</a>
-    <a href="./community.html">Community</a>
-    <a href="./faq.html">FAQ</a>
-    <a href="./contact.html">Contact</a>
+
+    <a href="./index.html">
+      Home
+    </a>
+
+    <a href="./shop.html">
+      Shop
+    </a>
+
+    <a href="./founder.html">
+      Founder
+    </a>
+
+    <a href="./tea-ritual.html">
+      Tea Ritual
+    </a>
+
+    <a href="./herbal-library.html">
+      Herbal Library
+    </a>
+
+    <a href="./community.html">
+      Community
+    </a>
+
+    <a href="./faq.html">
+      FAQ
+    </a>
+
+    <a href="./contact.html">
+      Contact
+    </a>
 
     <a
       href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
     >
       Pre-Order
     </a>
+
   </nav>
+
 
   <main>
 
+    <!-- ====================================================
+         BREADCRUMB
+    ===================================================== -->
+
     <div class="flavour-breadcrumb">
-      <a href="./index.html">Home</a>
+
+      <a href="./index.html">
+        Home
+      </a>
+
       <span>/</span>
-      <a href="./index.html#teas">Discovery Collection</a>
+
+      <a href="./index.html#teas">
+        Discovery Collection
+      </a>
+
       <span>/</span>
+
       Bush Doctor
+
     </div>
+
+
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
 
     <section class="bush-doctor-hero">
 
@@ -925,19 +1406,29 @@
         </p>
 
         <p class="bush-doctor-intro">
-          A naturally bitter herbal infusion combining cerasee, bitter melon
-          and moringa. Bush Doctor was inspired by Caribbean bush-tea traditions
-          and the generations who understood that not every meaningful ritual
-          needs to be sweet.
+          A deliberately bitter herbal infusion combining cerasee, bitter
+          melon and moringa. Bush Doctor is inspired by the uncompromising
+          character of Caribbean bush-tea traditions and the knowledge carried
+          between generations.
         </p>
 
         <div
           class="bush-doctor-ingredient-line"
           aria-label="Bush Doctor ingredients"
         >
-          <span>Cerasee</span>
-          <span>Bitter Melon</span>
-          <span>Moringa</span>
+
+          <span>
+            Cerasee
+          </span>
+
+          <span>
+            Bitter Melon
+          </span>
+
+          <span>
+            Moringa
+          </span>
+
         </div>
 
         <div class="hero-actions">
@@ -960,10 +1451,11 @@
 
       </div>
 
+
       <div class="bush-doctor-hero-image">
 
         <img
-          src="./assets/bush-doctor.png?v=600"
+          src="./assets/bush-doctor.png?v=607"
           alt="Bush Doctor herbal tea with cerasee, bitter melon and moringa"
         />
 
@@ -971,37 +1463,63 @@
 
     </section>
 
+
+    <!-- ====================================================
+         FACTS
+    ===================================================== -->
+
     <section class="bush-doctor-facts">
 
       <div>
-        <strong>Flavour</strong>
-        <span>Distinctive bitterness with green and earthy herbal notes</span>
+
+        <strong>
+          Flavour
+        </strong>
+
+        <span>
+          Distinct bitterness, green herbs and an earthy finish
+        </span>
+
       </div>
 
       <div>
-        <strong>The Moment</strong>
-        <span>Slow mornings, reflection and intentional herbal ritual</span>
+
+        <strong>
+          The Moment
+        </strong>
+
+        <span>
+          Reflection, grounding and deliberate simplicity
+        </span>
+
       </div>
 
       <div>
-        <strong>The Collection</strong>
-        <span>8 sachets inside the 40-sachet Discovery Collection</span>
+
+        <strong>
+          The Collection
+        </strong>
+
+        <span>
+          8 sachets inside the 40-sachet Discovery Collection
+        </span>
+
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         GUARDIAN
+    ===================================================== -->
 
     <section class="guardian-section">
 
       <div class="guardian-image">
 
-        <!--
-          Replace this image later with dedicated Bush Doctor Guardian artwork:
-          ./assets/guardian-bush-doctor.png
-        -->
-
         <img
-          src="./assets/tea-selection-hero-text.png?v=600"
-          alt="RastaRoots Guardian and Bush Doctor ritual artwork"
+          src="./assets/guardian-bush-doctor.png?v=607"
+          alt="Bush Doctor Guardian surrounded by Caribbean herbs"
         />
 
       </div>
@@ -1013,52 +1531,64 @@
         </p>
 
         <h2>
-          The deepest knowledge is rarely the loudest.
+          Knowledge comes before the claim.
         </h2>
 
         <p>
-          The Guardian represents the responsibility to listen before speaking,
-          learn before claiming and protect the knowledge that has travelled
-          through families and communities. Bush Doctor honours the elders who
-          understood plants through experience, observation and traditions
-          passed forward over time.
+          The Bush Doctor Guardian represents plant knowledge, patience and
+          respect for tradition. He understands that knowing a herb means more
+          than repeating what someone says it can do. It means knowing the
+          plant, its history, its preparation, its flavour and the context in
+          which that knowledge was carried.
         </p>
 
         <blockquote class="guardian-quote">
-          “Bitterness teaches patience. Wisdom is not always wrapped in sweetness.”
+          “Know the plant before you ask what the plant can do.”
         </blockquote>
 
       </div>
 
     </section>
 
+
+    <!-- ====================================================
+         STORY
+    ===================================================== -->
+
     <section class="bush-doctor-story">
 
       <div class="story-inner">
 
         <p class="section-kicker">
-          The Story Behind The Name
+          The Story Behind The Blend
         </p>
 
         <h2>
-          The Bush Doctor understood what grew around them.
+          Not everything valuable was made to taste sweet.
         </h2>
 
         <p>
-          Across Caribbean communities, plant knowledge was often carried by
-          elders, growers and family members who understood the leaves, roots
-          and preparations used within everyday life.
+          Bush Doctor is the most uncompromising blend in the Discovery
+          Collection. Cerasee and bitter melon create the distinctive bitter
+          character, while moringa provides a softer leafy foundation beneath
+          them.
         </p>
 
         <p>
-          Bush Doctor is not presented as a medical title or a promise of
-          treatment. It is a cultural tribute to the people who preserved
-          practical plant knowledge and shared it with their communities.
+          The blend is inspired by the Caribbean tradition of bush tea and the
+          generations who learned plants through observation, family knowledge
+          and lived experience — long before herbal wellness became a modern
+          industry.
         </p>
 
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         INGREDIENTS
+    ===================================================== -->
 
     <section class="bush-doctor-ingredients">
 
@@ -1069,19 +1599,22 @@
         </p>
 
         <h2>
-          Three bold herbs. One uncompromising ritual.
+          Three botanicals. One uncompromising blend.
         </h2>
 
         <p>
-          Bush Doctor is defined by natural bitterness, green herbal character
-          and an earthy finish. The information below describes flavour and
-          traditional context rather than promising medical outcomes.
+          Bush Doctor is intentionally bitter. The information below describes
+          flavour and traditional context rather than promising medical
+          outcomes.
         </p>
 
       </div>
 
+
       <div class="ingredient-grid">
 
+        <!-- CERASEE -->
+
         <article class="ingredient-detail-card">
 
           <div
@@ -1091,30 +1624,39 @@
             ✦
           </div>
 
-          <strong>Ingredient 01</strong>
+          <strong>
+            Ingredient 01
+          </strong>
 
-          <h3>Cerasee</h3>
+          <h3>
+            Cerasee
+          </h3>
 
           <p>
-            Cerasee is closely associated with Caribbean bush-tea traditions.
-            It gives Bush Doctor its central bitter character and distinctive
-            green-herbal aroma.
+            Cerasee is strongly associated with Caribbean bush-tea traditions
+            and is recognised for its unmistakably bitter character. It gives
+            Bush Doctor much of its distinctive identity.
           </p>
 
-          <strong>Taste</strong>
+          <strong>
+            Taste
+          </strong>
 
           <p>
-            Intensely bitter, green and earthy.
+            Bitter, green and earthy.
           </p>
 
           <a
             class="library-link"
-            href="#herbal-library"
+            href="./herbal-library.html"
           >
-            Herbal Library Coming Soon →
+            Explore Cerasee In The Herbal Library →
           </a>
 
         </article>
+
+
+        <!-- BITTER MELON -->
 
         <article class="ingredient-detail-card">
 
@@ -1125,30 +1667,39 @@
             ✦
           </div>
 
-          <strong>Ingredient 02</strong>
+          <strong>
+            Ingredient 02
+          </strong>
 
-          <h3>Bitter Melon</h3>
+          <h3>
+            Bitter Melon
+          </h3>
 
           <p>
-            Bitter melon reinforces the blend’s uncompromising flavour profile.
-            It is used in food and traditional preparations across several
-            regions, including parts of Asia and the Caribbean.
+            Bitter melon is used in food and traditional preparations across
+            several regions of the world. Its pronounced vegetal bitterness
+            deepens the profile of Bush Doctor.
           </p>
 
-          <strong>Taste</strong>
+          <strong>
+            Taste
+          </strong>
 
           <p>
-            Sharp, vegetal and naturally bitter.
+            Bitter, vegetal and bold.
           </p>
 
           <a
             class="library-link"
-            href="#herbal-library"
+            href="./herbal-library.html"
           >
-            Herbal Library Coming Soon →
+            Explore Bitter Melon In The Herbal Library →
           </a>
 
         </article>
+
+
+        <!-- MORINGA -->
 
         <article class="ingredient-detail-card">
 
@@ -1159,17 +1710,23 @@
             ✦
           </div>
 
-          <strong>Ingredient 03</strong>
+          <strong>
+            Ingredient 03
+          </strong>
 
-          <h3>Moringa</h3>
+          <h3>
+            Moringa
+          </h3>
 
           <p>
-            Moringa adds body and a softer leafy character, helping round out
-            the sharper bitterness of cerasee and bitter melon without removing
-            the blend’s authentic personality.
+            Moringa contributes a milder leafy character beneath the stronger
+            bitter ingredients. It helps give the infusion a more rounded,
+            grounded finish.
           </p>
 
-          <strong>Taste</strong>
+          <strong>
+            Taste
+          </strong>
 
           <p>
             Leafy, mild and gently earthy.
@@ -1177,9 +1734,9 @@
 
           <a
             class="library-link"
-            href="#herbal-library"
+            href="./herbal-library.html"
           >
-            Herbal Library Coming Soon →
+            Explore Moringa In The Herbal Library →
           </a>
 
         </article>
@@ -1187,6 +1744,11 @@
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         FLAVOUR PROFILE
+    ===================================================== -->
 
     <section class="flavour-profile-section">
 
@@ -1197,14 +1759,14 @@
         </p>
 
         <h2>
-          Bold bitterness. Deep herbal character.
+          Bitter by design.
         </h2>
 
         <p>
-          Bush Doctor opens with fresh green aromatics before developing into
-          an assertive natural bitterness. Earthy and leafy notes remain through
-          the finish, making this the most traditional and uncompromising blend
-          in the Discovery Collection.
+          Bush Doctor begins with the unmistakable bitterness of cerasee and
+          bitter melon before developing into a greener, earthier moringa
+          finish. It is intentionally challenging and deliberately different
+          from sweeter everyday infusions.
         </p>
 
         <div
@@ -1213,59 +1775,90 @@
         >
 
           <div class="profile-row">
-            <strong>Bitter</strong>
+
+            <strong>
+              Bitter
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill bitter"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Herbal</strong>
+
+            <strong>
+              Green
+            </strong>
 
             <div class="profile-track">
-              <span class="profile-fill herbal"></span>
+              <span class="profile-fill green"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Earthy</strong>
+
+            <strong>
+              Earthy
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill earthy"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Fresh</strong>
+
+            <strong>
+              Fresh
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill fresh"></span>
             </div>
+
           </div>
 
+
           <div class="profile-row">
-            <strong>Sweet</strong>
+
+            <strong>
+              Sweet
+            </strong>
 
             <div class="profile-track">
               <span class="profile-fill sweet"></span>
             </div>
+
           </div>
 
         </div>
 
       </div>
 
+
       <div class="flavour-profile-image">
 
         <img
-          src="./assets/bush-doctor.png?v=600"
+          src="./assets/bush-doctor.png?v=607"
           alt="Bush Doctor flavour and ingredient presentation"
+          loading="lazy"
         />
 
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         TEA RITUAL
+    ===================================================== -->
 
     <section
       class="ritual-section"
@@ -1281,72 +1874,93 @@
           </p>
 
           <h2>
-            Brew. Listen. Understand.
+            Brew. Taste. Remember.
           </h2>
 
           <p>
-            Bush Doctor is a ritual for slowing down and paying attention. Its
-            naturally bitter flavour encourages you to sip deliberately rather
-            than rushing through the cup.
+            Bush Doctor is designed as a slower ritual — a reminder that not
+            every meaningful experience needs to be softened, sweetened or
+            made instantly comfortable.
           </p>
 
         </div>
+
 
         <div class="ritual-steps">
 
           <article class="ritual-step">
 
-            <span>STEP 01</span>
+            <span>
+              STEP 01
+            </span>
 
-            <h3>Prepare</h3>
+            <h3>
+              Prepare
+            </h3>
 
             <p>
-              Place one Bush Doctor sachet into your cup and prepare it according
-              to the brewing instructions supplied with the collection.
+              Place one Bush Doctor sachet into your cup and prepare it
+              according to the brewing guidance supplied with the collection.
             </p>
 
           </article>
 
+
           <article class="ritual-step">
 
-            <span>STEP 02</span>
+            <span>
+              STEP 02
+            </span>
 
-            <h3>Observe</h3>
+            <h3>
+              Notice
+            </h3>
 
             <p>
-              Notice the deep green colour and herbal aroma as the ingredients
-              infuse. Allow the cup time to develop its full character.
+              Allow the bitterness to develop fully. Notice how the green,
+              earthy and bitter notes change as the infusion rests.
             </p>
 
           </article>
 
+
           <article class="ritual-step">
 
-            <span>STEP 03</span>
+            <span>
+              STEP 03
+            </span>
 
-            <h3>Listen</h3>
+            <h3>
+              Listen
+            </h3>
 
             <p>
-              Open the RastaRoots Tea Ritual playlist and create a quiet space
-              where you can experience the blend without distraction.
+              Play the RastaRoots Tea Ritual playlist and use the moment for
+              quiet reflection, reading, conversation or simply being still.
             </p>
 
           </article>
 
+
           <article class="ritual-step">
 
-            <span>STEP 04</span>
+            <span>
+              STEP 04
+            </span>
 
-            <h3>Reflect</h3>
+            <h3>
+              Remember
+            </h3>
 
             <p>
-              Consider one lesson or piece of knowledge you want to preserve,
-              practise or pass forward to someone else.
+              Think about one piece of family, cultural or practical knowledge
+              worth carrying forward rather than allowing it to disappear.
             </p>
 
           </article>
 
         </div>
+
 
         <div class="ritual-actions">
 
@@ -1372,6 +1986,11 @@
 
     </section>
 
+
+    <!-- ====================================================
+         ROOTZ PRINCIPLE
+    ===================================================== -->
+
     <section class="principle-section">
 
       <p class="section-kicker">
@@ -1379,7 +1998,7 @@
       </p>
 
       <blockquote>
-        “The things worth knowing are not always the easiest to swallow.”
+        “What your elders knew is only inherited if somebody remembers to ask.”
       </blockquote>
 
       <cite>
@@ -1388,55 +2007,59 @@
 
     </section>
 
+
+    <!-- ====================================================
+         HERBAL LIBRARY
+    ===================================================== -->
+
     <section
-      class="library-coming-soon"
+      class="library-section"
       id="herbal-library"
     >
 
-      <div class="library-coming-inner">
+      <div class="library-inner">
 
-        <div class="library-coming-copy">
+        <div class="library-copy">
 
           <p class="section-kicker">
             RastaRoots Herbal Library
           </p>
 
           <h2>
-            Learn the roots behind every ingredient.
+            Learn the roots behind the blend.
           </h2>
 
           <p>
-            The RastaRoots Herbal Library is being built as a permanent home
-            for African and Caribbean herbal knowledge. The Bush Doctor library
-            will explore cerasee, bitter melon and moringa through plant origins,
-            flavour, cultural traditions, preparation methods and modern
-            research.
+            Explore cerasee, bitter melon and moringa through the RastaRoots
+            Herbal Library. The library examines plant origins, flavour,
+            traditional context, preparation and modern research while clearly
+            separating cultural knowledge from established scientific evidence.
           </p>
 
           <a
             class="btn btn-primary"
-            href="https://eepurl.com/9sLCn3GjES"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="./herbal-library.html"
           >
-            Join The Library Waitlist
+            Explore The Herbal Library
           </a>
 
         </div>
+
 
         <div class="library-badge">
 
           <img
             src="./assets/badge-logo.png"
             alt="RastaRoots Herbal Library"
+            loading="lazy"
           />
 
           <strong>
-            Herbal Library
+            Know Your Rootz.
           </strong>
 
           <span>
-            Coming Soon
+            Herbal Knowledge • Culture • Evidence
           </span>
 
         </div>
@@ -1444,6 +2067,11 @@
       </div>
 
     </section>
+
+
+    <!-- ====================================================
+         COLLECTION
+    ===================================================== -->
 
     <section class="collection-cta">
 
@@ -1456,9 +2084,9 @@
       </h2>
 
       <p>
-        The Founder Discovery Collection includes 40 premium herbal tea sachets
-        across Roots Fire, Bush Doctor, Empress Bloom, Iron Root and Cool Mind,
-        together with access to the official Tea Ritual playlist.
+        The Founder Discovery Collection contains 40 herbal tea sachets across
+        Roots Fire, Bush Doctor, Empress Bloom, Iron Root and Cool Mind,
+        together with access to the official RastaRoots Tea Ritual playlist.
       </p>
 
       <div
@@ -1488,6 +2116,11 @@
 
     </section>
 
+
+    <!-- ====================================================
+         BLEND NAVIGATION
+    ===================================================== -->
+
     <nav
       class="blend-navigation"
       aria-label="Flavour navigation"
@@ -1505,6 +2138,11 @@
 
   </main>
 
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
   <footer class="site-footer">
 
     <img
@@ -1517,17 +2155,54 @@
       class="footer-links"
       aria-label="Footer navigation"
     >
-      <a href="./index.html">Home</a>
-      <a href="./shop.html">Shop</a>
-      <a href="./founder.html">Founder</a>
-      <a href="./tea-ritual.html">Tea Ritual</a>
-      <a href="./community.html">Community</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./shipping.html">Shipping</a>
-      <a href="./refunds.html">Refunds</a>
-      <a href="./privacy.html">Privacy</a>
-      <a href="./terms.html">Terms</a>
-      <a href="./contact.html">Contact</a>
+
+      <a href="./index.html">
+        Home
+      </a>
+
+      <a href="./shop.html">
+        Shop
+      </a>
+
+      <a href="./founder.html">
+        Founder
+      </a>
+
+      <a href="./tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="./herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="./community.html">
+        Community
+      </a>
+
+      <a href="./faq.html">
+        FAQ
+      </a>
+
+      <a href="./shipping.html">
+        Shipping
+      </a>
+
+      <a href="./refunds.html">
+        Refunds
+      </a>
+
+      <a href="./privacy.html">
+        Privacy
+      </a>
+
+      <a href="./terms.html">
+        Terms
+      </a>
+
+      <a href="./contact.html">
+        Contact
+      </a>
 
       <a
         href="https://instagram.com/rastarootzs"
@@ -1536,6 +2211,7 @@
       >
         Instagram
       </a>
+
     </nav>
 
     <p>
@@ -1544,6 +2220,11 @@
     </p>
 
   </footer>
+
+
+  <!-- ======================================================
+       MOBILE CTA
+  ======================================================= -->
 
   <div class="mobile-sticky-cta">
 
@@ -1554,6 +2235,7 @@
     </a>
 
   </div>
+
 
   <script src="./script.js?v=601"></script>
 
