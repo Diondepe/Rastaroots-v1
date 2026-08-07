@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Herbal Library | Caribbean Herbs & Plant Knowledge | RastaRoots</title>
+
+  <meta
+    name="description"
+    content="Explore the RastaRoots Herbal Library — a growing home for Caribbean and African plant knowledge, flavour, traditional context, preparation and modern research."
+  />
+
+  <meta
+    property="og:title"
+    content="RastaRoots Herbal Library | Know What’s In Your Cup"
+  />
+
+  <meta
+    property="og:description"
+    content="Discover the roots behind ginger, cerasee, moringa, hibiscus, sarsaparilla, mint and more through the growing RastaRoots Herbal Library."
+  />
+
+  <meta
+    property="og:image"
+    content="./assets/badge-logo.png"
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <link
+    rel="icon"
+    href="./assets/badge-logo.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./style.css?v=606"
+  />
+
+  <!-- Google Analytics 4 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
+  ></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+
+    gtag("config", "G-1XKF37N3P9", {
+      linker: {
+        domains: [
+          "www.rastarootslife.com",
+          "rastarootslife.com",
+          "shop.rastarootslife.com"
+        ]
+      }
+    });
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ======================================================
+       HERBAL LIBRARY HERO
+    ====================================================== */
+
+    .library-hero {
+      display: grid;
+      grid-template-columns: 52% 48%;
+      min-height: 760px;
+
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(182, 138, 51, 0.16),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #f7eedf,
+          #fff9ee
+        );
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .library-hero-copy {
+      padding: 100px 7vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .library-eyebrow {
+      margin-bottom: 18px;
+
+      color: #b68a33;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 900;
+
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .library-hero h1 {
+      margin-bottom: 24px;
+
+      color: #103c25;
+
+      font-size: clamp(4.2rem, 7.4vw, 7.5rem);
+      line-height: 0.9;
+      letter-spacing: -0.055em;
+    }
+
+    .library-hero-text {
+      max-width: 680px;
+      margin-bottom: 30px;
+
+      color: #354036;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.82;
+    }
+
+    .library-coming-label {
+      display: inline-flex;
+      width: fit-content;
+
+      margin-bottom: 30px;
+      padding: 10px 16px;
+
+      border-radius: 999px;
+      border: 1px solid rgba(182, 138, 51, 0.35);
+
+      background: rgba(255, 255, 255, 0.68);
+
+      color: #8a6322;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 900;
+
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .library-hero-media {
+      min-height: 760px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 70px;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(244, 216, 138, 0.18),
+          transparent 48%
+        ),
+        linear-gradient(
+          135deg,
+          #06170e,
+          #103c25
+        );
+    }
+
+    .library-hero-card {
+      width: min(100%, 560px);
+      min-height: 500px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      padding: 48px;
+
+      text-align: center;
+
+      border: 1px solid rgba(244, 216, 138, 0.22);
+      border-radius: 34px;
+
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(244, 216, 138, 0.18),
+          transparent 45%
+        ),
+        #0b2c1b;
+
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.28);
+    }
+
+    .library-hero-card img {
+      width: 190px;
+      margin-bottom: 26px;
+    }
+
+    .library-hero-card strong {
+      color: #f4d88a;
+
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1;
+    }
+
+    .library-hero-card span {
+      margin-top: 12px;
+
+      color: rgba(255, 249, 238, 0.72);
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.76rem;
+      font-weight: 900;
+
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    /* ======================================================
+       PURPOSE
+    ====================================================== */
+
+    .library-purpose {
+      padding: 105px 7vw;
+
+      background: #fff9ee;
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .library-purpose-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+
+      text-align: center;
+    }
+
+    .library-purpose-inner h2 {
+      margin-bottom: 24px;
+
+      color: #103c25;
+
+      font-size: clamp(3rem, 5vw, 5.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+    }
+
+    .library-purpose-inner p {
+      max-width: 820px;
+      margin: 0 auto;
+
+      color: #354036;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.82;
+    }
+
+    /* ======================================================
+       LIBRARY PRINCIPLES
+    ====================================================== */
+
+    .library-principles {
+      padding: 100px 7vw;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f4ead7,
+          #fff9ee
+        );
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .library-principles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+
+      margin-top: 48px;
+    }
+
+    .library-principle-card {
+      padding: 32px;
+
+      border-radius: 24px;
+      border: 1px solid rgba(16, 60, 37, 0.11);
+
+      background: rgba(255, 255, 255, 0.64);
+
+      box-shadow: 0 18px 42px rgba(16, 60, 37, 0.06);
+    }
+
+    .library-principle-card strong {
+      display: block;
+
+      margin-bottom: 14px;
+
+      color: #b68a33;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .library-principle-card h3 {
+      margin-bottom: 12px;
+
+      color: #103c25;
+
+      font-size: 1.65rem;
+    }
+
+    .library-principle-card p {
+      color: #5c5a50;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* ======================================================
+       HERB GRID
+    ====================================================== */
+
+    .herbs-section {
+      padding: 105px 7vw;
+
+      background: #fff9ee;
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .herb-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+
+      margin-top: 52px;
+    }
+
+    .herb-card {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      min-height: 365px;
+
+      padding: 30px;
+
+      overflow: hidden;
+
+      border-radius: 26px;
+      border: 1px solid rgba(16, 60, 37, 0.12);
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(182, 138, 51, 0.11),
+          transparent 34%
+        ),
+        linear-gradient(
+          145deg,
+          #f4ead7,
+          #fff9ee
+        );
+
+      box-shadow: 0 18px 48px rgba(16, 60, 37, 0.07);
+
+      transition:
+        transform 200ms ease,
+        box-shadow 200ms ease;
+    }
+
+    .herb-card:hover,
+    .herb-card:focus-within {
+      transform: translateY(-6px);
+
+      box-shadow: 0 28px 58px rgba(16, 60, 37, 0.13);
+    }
+
+    .herb-number {
+      margin-bottom: 18px;
+
+      color: #b68a33;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .herb-symbol {
+      width: 56px;
+      height: 56px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 22px;
+
+      border-radius: 50%;
+
+      background: #103c25;
+      color: #f4d88a;
+
+      font-size: 1.6rem;
+    }
+
+    .herb-card h3 {
+      margin-bottom: 10px;
+
+      color: #103c25;
+
+      font-size: 2rem;
+    }
+
+    .herb-card .herb-taste {
+      display: block;
+
+      margin-bottom: 14px;
+
+      color: #8a6322;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.77rem;
+      font-weight: 900;
+
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .herb-card p {
+      margin-bottom: 20px;
+
+      color: #5c5a50;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+
+    .herb-card-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      margin-top: auto;
+    }
+
+    .herb-card-links a {
+      display: inline-flex;
+
+      padding: 8px 11px;
+
+      border-radius: 999px;
+      border: 1px solid rgba(16, 60, 37, 0.16);
+
+      color: #103c25;
+      background: rgba(255, 255, 255, 0.72);
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 800;
+
+      text-decoration: none;
+    }
+
+    .herb-status {
+      display: block;
+
+      margin-top: 18px;
+
+      color: #9b7b45;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    /* ======================================================
+       GUARDIAN
+    ====================================================== */
+
+    .library-guardian {
+      display: grid;
+      grid-template-columns: 46% 54%;
+      gap: 70px;
+      align-items: center;
+
+      padding: 110px 7vw;
+
+      background:
+        radial-gradient(
+          circle at bottom left,
+          rgba(182, 138, 51, 0.13),
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          #06170e,
+          #103c25
+        );
+
+      color: #fff9ee;
+    }
+
+    .library-guardian-image {
+      min-height: 570px;
+
+      overflow: hidden;
+
+      border-radius: 32px;
+
+      box-shadow: 0 30px 76px rgba(0, 0, 0, 0.3);
+    }
+
+    .library-guardian-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 570px;
+
+      object-fit: cover;
+    }
+
+    .library-guardian-copy .section-kicker {
+      color: #f4d88a;
+    }
+
+    .library-guardian-copy h2 {
+      margin-bottom: 22px;
+
+      color: #fff9ee;
+
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+    }
+
+    .library-guardian-copy > p {
+      margin-bottom: 18px;
+
+      color: rgba(255, 249, 238, 0.78);
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .library-guardian-quote {
+      margin-top: 30px;
+      padding: 28px;
+
+      border-left: 3px solid #f4d88a;
+      border-radius: 0 20px 20px 0;
+
+      background: rgba(255, 255, 255, 0.05);
+
+      color: #fff9ee;
+
+      font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+      line-height: 1.25;
+    }
+
+    /* ======================================================
+       WHAT EACH ENTRY WILL CONTAIN
+    ====================================================== */
+
+    .entry-format {
+      padding: 105px 7vw;
+
+      background: #fff9ee;
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .entry-format-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+
+      margin-top: 48px;
+    }
+
+    .entry-format-card {
+      padding: 30px;
+
+      border-radius: 24px;
+      border: 1px solid rgba(16, 60, 37, 0.12);
+
+      background: #f8efdf;
+    }
+
+    .entry-format-card span {
+      display: block;
+
+      margin-bottom: 12px;
+
+      color: #b68a33;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .entry-format-card h3 {
+      margin-bottom: 10px;
+
+      color: #103c25;
+
+      font-size: 1.6rem;
+    }
+
+    .entry-format-card p {
+      color: #5c5a50;
+
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    /* ======================================================
+       WAITLIST
+    ====================================================== */
+
+    .library-waitlist {
+      padding: 110px 7vw;
+
+      text-align: center;
+
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(244, 216, 138, 0.13),
+          transparent 34%
+        ),
+        linear-gradient(
+          135deg,
+          #06170e,
+          #103c25
+        );
+    }
+
+    .library-waitlist-inner {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .library-waitlist .section-kicker {
+      color: #f4d88a;
+    }
+
+    .library-waitlist h2 {
+      margin-bottom: 22px;
+
+      color: #fff9ee;
+
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+    }
+
+    .library-waitlist p {
+      margin-bottom: 30px;
+
+      color: rgba(255, 249, 238, 0.78);
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .library-waitlist small {
+      display: block;
+
+      margin-top: 16px;
+
+      color: rgba(255, 249, 238, 0.52);
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.74rem;
+    }
+
+    /* ======================================================
+       COLLECTION CTA
+    ====================================================== */
+
+    .library-collection {
+      padding: 105px 7vw;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f4ead7,
+          #fff9ee
+        );
+
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .library-collection h2 {
+      margin-bottom: 22px;
+
+      color: #103c25;
+
+      font-size: clamp(3rem, 5vw, 5.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+    }
+
+    .library-collection p {
+      max-width: 760px;
+      margin: 0 auto 32px;
+
+      color: #354036;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    /* ======================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1180px) {
+      .herb-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .library-principles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .library-hero,
+      .library-guardian {
+        grid-template-columns: 1fr;
+      }
+
+      .library-hero-media {
+        min-height: 600px;
+      }
+
+      .entry-format-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .library-hero-copy,
+      .library-purpose,
+      .library-principles,
+      .herbs-section,
+      .library-guardian,
+      .entry-format,
+      .library-waitlist,
+      .library-collection {
+        padding: 70px 22px;
+      }
+
+      .library-hero h1 {
+        font-size: clamp(4rem, 17vw, 5.7rem);
+      }
+
+      .library-hero-media {
+        min-height: auto;
+        padding: 40px 22px 70px;
+      }
+
+      .library-hero-card {
+        min-height: 410px;
+        padding: 32px;
+      }
+
+      .herb-grid,
+      .library-principles-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .library-guardian-image,
+      .library-guardian-image img {
+        min-height: 420px;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <a
+    class="announcement-bar"
+    href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+  >
+    🌿 Founder Pre-Orders Now Open • Discovery Collection Ships September 2026
+  </a>
+
+  <header class="site-header">
+
+    <a
+      class="brand"
+      href="./index.html"
+      aria-label="RastaRoots Life home"
+    >
+      <img
+        src="./assets/rastaroots-header-logo.png?v=600"
+        alt="RastaRoots Life logo"
+      />
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav
+      class="main-nav"
+      aria-label="Main navigation"
+    >
+      <a href="./index.html">Home</a>
+      <a href="./shop.html">Shop</a>
+      <a href="./founder.html">Founder</a>
+      <a href="./tea-ritual.html">Tea Ritual</a>
+      <a href="./herbal-library.html">Herbal Library</a>
+      <a href="./community.html">Community</a>
+      <a href="./faq.html">FAQ</a>
+
+      <a
+        class="nav-cta"
+        href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+      >
+        Pre-Order
+      </a>
+    </nav>
+
+  </header>
+
+  <nav
+    class="mobile-nav"
+    id="mobileNav"
+    aria-label="Mobile navigation"
+  >
+    <a href="./index.html">Home</a>
+    <a href="./shop.html">Shop</a>
+    <a href="./founder.html">Founder</a>
+    <a href="./tea-ritual.html">Tea Ritual</a>
+    <a href="./herbal-library.html">Herbal Library</a>
+    <a href="./community.html">Community</a>
+    <a href="./faq.html">FAQ</a>
+    <a href="./contact.html">Contact</a>
+
+    <a
+      href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+    >
+      Pre-Order
+    </a>
+  </nav>
+
+  <main>
+
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="library-hero">
+
+      <div class="library-hero-copy">
+
+        <p class="library-eyebrow">
+          RastaRoots Knowledge • Coming Soon
+        </p>
+
+        <h1>
+          The Herbal<br />
+          Library.
+        </h1>
+
+        <span class="library-coming-label">
+          Building Now • First Entries Coming Soon
+        </span>
+
+        <p class="library-hero-text">
+          Know what is in your cup — and where it comes from. The RastaRoots
+          Herbal Library is being built as a growing home for plant origins,
+          flavour, Caribbean and African cultural traditions, preparation
+          methods and modern research.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-primary"
+            href="#herbs"
+          >
+            Explore The Herbs
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="https://eepurl.com/9sLCn3GjES"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join The Library Waitlist
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="library-hero-media">
+
+        <div class="library-hero-card">
+
+          <img
+            src="./assets/badge-logo.png"
+            alt="RastaRoots Herbal Library"
+          />
+
+          <strong>
+            Know Your Rootz.
+          </strong>
+
+          <span>
+            Herbal Library • Coming Soon
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         PURPOSE
+    ===================================================== -->
+
+    <section class="library-purpose">
+
+      <div class="library-purpose-inner">
+
+        <p class="section-kicker">
+          Why The Library Exists
+        </p>
+
+        <h2>
+          Herbal knowledge deserves more than a product label.
+        </h2>
+
+        <p>
+          RastaRoots is building beyond tea. The Herbal Library will help people
+          understand the plants behind the blends — what they taste like, where
+          they grow, how communities have traditionally used them and what
+          modern evidence does or does not currently support. Cultural tradition
+          and scientific evidence will be treated as related, but not identical.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         PRINCIPLES
+    ===================================================== -->
+
+    <section class="library-principles">
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          Our Approach
+        </p>
+
+        <h2>
+          Respect the tradition. Respect the evidence.
+        </h2>
+
+        <p>
+          The Herbal Library will be built around four principles.
+        </p>
+
+      </div>
+
+      <div class="library-principles-grid">
+
+        <article class="library-principle-card">
+
+          <strong>01 • Origins</strong>
+
+          <h3>
+            Know the plant.
+          </h3>
+
+          <p>
+            Botanical identity, where the plant grows and the parts typically
+            used in food or herbal preparations.
+          </p>
+
+        </article>
+
+        <article class="library-principle-card">
+
+          <strong>02 • Tradition</strong>
+
+          <h3>
+            Know the history.
+          </h3>
+
+          <p>
+            Explore traditional and cultural use while being clear that
+            historical use is not automatically proof of a modern medical
+            effect.
+          </p>
+
+        </article>
+
+        <article class="library-principle-card">
+
+          <strong>03 • Evidence</strong>
+
+          <h3>
+            Know what we know.
+          </h3>
+
+          <p>
+            Modern research will be explained carefully, including uncertainty,
+            evidence quality and areas where more research is still needed.
+          </p>
+
+        </article>
+
+        <article class="library-principle-card">
+
+          <strong>04 • Ritual</strong>
+
+          <h3>
+            Know your cup.
+          </h3>
+
+          <p>
+            Understand flavour, aroma, preparation and which RastaRoots rituals
+            feature each ingredient.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         HERBS
+    ===================================================== -->
+
+    <section
+      id="herbs"
+      class="herbs-section"
+    >
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          First Library Collection
+        </p>
+
+        <h2>
+          The plants behind the five rituals.
+        </h2>
+
+        <p>
+          These are the first ingredients being prepared for the RastaRoots
+          Herbal Library.
+        </p>
+
+      </div>
+
+      <div class="herb-grid">
+
+        <!-- GINGER -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 01
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Ginger
+          </h3>
+
+          <span class="herb-taste">
+            Warming • Spicy • Aromatic
+          </span>
+
+          <p>
+            One of the most recognisable warming ingredients in herbal drinks.
+            Ginger contributes spice, aroma and a lingering finish.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./roots-fire.html">
+              Roots Fire
+            </a>
+
+            <a href="./iron-root.html">
+              Iron Root
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+        <!-- LEMONGRASS -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 02
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Lemongrass
+          </h3>
+
+          <span class="herb-taste">
+            Citrusy • Fresh • Grassy
+          </span>
+
+          <p>
+            A bright aromatic herb that introduces citrus character without the
+            acidity of citrus fruit.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./roots-fire.html">
+              Roots Fire
+            </a>
+
+            <a href="./cool-mind.html">
+              Cool Mind
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+        <!-- MINT -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 03
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Mint
+          </h3>
+
+          <span class="herb-taste">
+            Cooling • Clean • Fresh
+          </span>
+
+          <p>
+            Mint brings immediate freshness and a cooling aromatic finish to a
+            herbal infusion.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./roots-fire.html">
+              Roots Fire
+            </a>
+
+            <a href="./empress-bloom.html">
+              Empress Bloom
+            </a>
+
+            <a href="./cool-mind.html">
+              Cool Mind
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+        <!-- CERASEE -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 04
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Cerasee
+          </h3>
+
+          <span class="herb-taste">
+            Bitter • Green • Earthy
+          </span>
+
+          <p>
+            A distinctly bitter plant strongly associated with Caribbean
+            bush-tea traditions and family herbal knowledge.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./bush-doctor.html">
+              Bush Doctor
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+        <!-- BITTER MELON -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 05
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Bitter Melon
+          </h3>
+
+          <span class="herb-taste">
+            Bitter • Vegetal • Bold
+          </span>
+
+          <p>
+            A highly distinctive plant used in cuisines and traditional
+            preparations across several parts of the world.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./bush-doctor.html">
+              Bush Doctor
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+        <!-- MORINGA -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 06
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Moringa
+          </h3>
+
+          <span class="herb-taste">
+            Leafy • Mild • Earthy
+          </span>
+
+          <p>
+            Moringa leaf contributes a mild green character that pairs well with
+            stronger bitter, floral and root flavours.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./bush-doctor.html">
+              Bush Doctor
+            </a>
+
+            <a href="./empress-bloom.html">
+              Empress Bloom
+            </a>
+
+            <a href="./iron-root.html">
+              Iron Root
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+        <!-- HIBISCUS -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 07
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Hibiscus / Sorrel
+          </h3>
+
+          <span class="herb-taste">
+            Tart • Floral • Bright
+          </span>
+
+          <p>
+            Hibiscus provides vivid colour and tart floral character. Sorrel
+            drinks have a strong place within Caribbean food culture.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./empress-bloom.html">
+              Empress Bloom
+            </a>
+
+            <a href="./cool-mind.html">
+              Cool Mind
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+        <!-- SARSAPARILLA -->
+
+        <article class="herb-card">
+
+          <span class="herb-number">
+            Herb 08
+          </span>
+
+          <div
+            class="herb-symbol"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+
+          <h3>
+            Sarsaparilla
+          </h3>
+
+          <span class="herb-taste">
+            Rooty • Woody • Earthy
+          </span>
+
+          <p>
+            A root ingredient strongly associated with traditional Caribbean
+            root drinks and deep, earthy flavour profiles.
+          </p>
+
+          <div class="herb-card-links">
+
+            <a href="./iron-root.html">
+              Iron Root
+            </a>
+
+          </div>
+
+          <span class="herb-status">
+            Full Entry Coming Soon
+          </span>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         GUARDIAN
+    ===================================================== -->
+
+    <section class="library-guardian">
+
+      <div class="library-guardian-image">
+
+        <img
+          src="./assets/guardian-bush-doctor.png"
+          alt="RastaRoots Guardian representing herbal knowledge and tradition"
+        />
+
+      </div>
+
+      <div class="library-guardian-copy">
+
+        <p class="section-kicker">
+          The Guardian Of Knowledge
+        </p>
+
+        <h2>
+          Knowing a plant means knowing more than its benefits.
+        </h2>
+
+        <p>
+          The Guardian exists to protect context. Plants have histories,
+          flavours, communities, preparation traditions and limitations.
+        </p>
+
+        <p>
+          RastaRoots will not reduce generations of plant knowledge to
+          exaggerated wellness headlines. The aim is to make herbal education
+          accessible while respecting both tradition and evidence.
+        </p>
+
+        <blockquote class="library-guardian-quote">
+          “Before you ask what a plant can do for you, learn where it came from.”
+        </blockquote>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         ENTRY FORMAT
+    ===================================================== -->
+
+    <section class="entry-format">
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          Inside Every Library Entry
+        </p>
+
+        <h2>
+          More context. Less hype.
+        </h2>
+
+        <p>
+          Every completed herb entry will follow the same framework.
+        </p>
+
+      </div>
+
+      <div class="entry-format-grid">
+
+        <article class="entry-format-card">
+          <span>01</span>
+          <h3>Plant Profile</h3>
+          <p>
+            Botanical name, common names, plant family and the parts commonly
+            used.
+          </p>
+        </article>
+
+        <article class="entry-format-card">
+          <span>02</span>
+          <h3>Origins</h3>
+          <p>
+            Where the plant originates, where it grows today and how it spread
+            between regions.
+          </p>
+        </article>
+
+        <article class="entry-format-card">
+          <span>03</span>
+          <h3>Caribbean Context</h3>
+          <p>
+            Traditional preparations, family practices and cultural references
+            associated with the plant.
+          </p>
+        </article>
+
+        <article class="entry-format-card">
+          <span>04</span>
+          <h3>Flavour & Aroma</h3>
+          <p>
+            How the ingredient actually tastes and what it contributes to a
+            finished infusion.
+          </p>
+        </article>
+
+        <article class="entry-format-card">
+          <span>05</span>
+          <h3>Modern Evidence</h3>
+          <p>
+            A careful overview of relevant contemporary research without
+            turning early findings into unsupported claims.
+          </p>
+        </article>
+
+        <article class="entry-format-card">
+          <span>06</span>
+          <h3>RastaRoots Rituals</h3>
+          <p>
+            Which blends contain the ingredient and how it contributes to their
+            flavour profiles.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         WAITLIST
+    ===================================================== -->
+
+    <section class="library-waitlist">
+
+      <div class="library-waitlist-inner">
+
+        <p class="section-kicker">
+          Be First Into The Library
+        </p>
+
+        <h2>
+          Get the first herbal guides when they launch.
+        </h2>
+
+        <p>
+          Join the Founder Circle for new Herbal Library entries, downloadable
+          guides, product updates and RastaRoots stories.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://eepurl.com/9sLCn3GjES"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join The Herbal Library List
+        </a>
+
+        <small>
+          No spam. Just new guides, product updates and rooted stories.
+        </small>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         DISCOVERY COLLECTION CTA
+    ===================================================== -->
+
+    <section class="library-collection">
+
+      <p class="section-kicker">
+        Taste The First Chapter
+      </p>
+
+      <h2>
+        Meet the herbs inside the Discovery Collection.
+      </h2>
+
+      <p>
+        Eight core botanicals come together across five signature RastaRoots
+        rituals. Explore the flavour pages now, then return as the Herbal
+        Library grows.
+      </p>
+
+      <div
+        class="hero-actions"
+        style="justify-content: center;"
+      >
+
+        <a
+          class="btn btn-primary"
+          href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+        >
+          Pre-Order Discovery Collection
+        </a>
+
+        <a
+          class="btn btn-secondary"
+          href="./index.html#teas"
+        >
+          Explore The Five Rituals
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <img
+      src="./assets/rastaroots-logo-light.png?v=600"
+      alt=""
+      aria-hidden="true"
+    />
+
+    <nav
+      class="footer-links"
+      aria-label="Footer navigation"
+    >
+      <a href="./index.html">Home</a>
+      <a href="./shop.html">Shop</a>
+      <a href="./founder.html">Founder</a>
+      <a href="./tea-ritual.html">Tea Ritual</a>
+      <a href="./herbal-library.html">Herbal Library</a>
+      <a href="./community.html">Community</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./shipping.html">Shipping</a>
+      <a href="./refunds.html">Refunds</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./contact.html">Contact</a>
+
+      <a
+        href="https://instagram.com/rastarootzs"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+    </nav>
+
+    <p>
+      © 2026 RastaRoots Life.<br />
+      Rooted in nature. Fueled by life.
+    </p>
+
+  </footer>
+
+  <div class="mobile-sticky-cta">
+
+    <a
+      href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+    >
+      Pre-Order Now
+    </a>
+
+  </div>
+
+  <script src="./script.js?v=601"></script>
+
+</body>
+
+</html>
