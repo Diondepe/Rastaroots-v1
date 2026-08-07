@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,15 +12,30 @@
     content="Pre-order the RastaRoots Discovery Collection. 40 premium herbal tea sachets, 5 signature rituals, Tea Ritual playlist access and founder pricing before launch."
   />
 
-  <meta property="og:title" content="RastaRoots Life | Founder Pre-Order Discovery Collection" />
+  <meta
+    property="og:title"
+    content="RastaRoots Life | Founder Pre-Order Discovery Collection"
+  />
+
   <meta
     property="og:description"
     content="Pre-order the first RastaRoots Discovery Collection. 40 sachets, 5 rituals and Tea Ritual playlist access."
   />
-  <meta property="og:image" content="./assets/discovery-open-box.png" />
-  <meta property="og:type" content="website" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"></script>
+  <meta
+    property="og:image"
+    content="./assets/discovery-open-box.png"
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
+  ></script>
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -42,8 +57,15 @@
     });
   </script>
 
-  <link rel="icon" href="./assets/badge-logo.png" />
-  <link rel="stylesheet" href="./style.css?v=604" />
+  <link
+    rel="icon"
+    href="./assets/badge-logo.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./style.css?v=606"
+  />
 
   <style>
     html {
@@ -169,6 +191,252 @@
         flex: 0 0 auto;
       }
     }
+
+    /* ======================================================
+       DISCOVERY COLLECTION V3
+    ====================================================== */
+
+    .tea-card {
+      position: relative;
+      transition:
+        transform 220ms ease,
+        box-shadow 220ms ease;
+    }
+
+    .tea-card:hover,
+    .tea-card:focus-within {
+      transform: translateY(-8px);
+      box-shadow: 0 26px 58px rgba(16, 60, 37, 0.18);
+    }
+
+    .tea-card img {
+      transition: transform 420ms ease;
+    }
+
+    .tea-card:hover img,
+    .tea-card:focus-within img {
+      transform: scale(1.025);
+    }
+
+    .tea-card-link {
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 5px;
+    }
+
+    .guardians-section {
+      padding: 100px 5%;
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(182, 138, 51, 0.12),
+          transparent 34%
+        ),
+        linear-gradient(
+          135deg,
+          #071d12,
+          #103c25
+        );
+    }
+
+    .guardians-section .section-kicker,
+    .guardians-section .section-heading h2 {
+      color: #f4d88a;
+    }
+
+    .guardians-section .section-heading > p:last-child {
+      color: rgba(255, 249, 238, 0.78);
+    }
+
+    .guardian-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .guardian-card {
+      display: flex;
+      min-height: 460px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 26px;
+      border: 1px solid rgba(244, 216, 138, 0.22);
+      background: #06170e;
+      box-shadow: 0 24px 54px rgba(0, 0, 0, 0.22);
+      isolation: isolate;
+    }
+
+    .guardian-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 500ms ease;
+      z-index: -2;
+    }
+
+    .guardian-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.02) 20%,
+        rgba(0, 0, 0, 0.86) 100%
+      );
+      z-index: -1;
+    }
+
+    .guardian-card:hover img,
+    .guardian-card:focus-visible img {
+      transform: scale(1.04);
+    }
+
+    .guardian-card-copy {
+      width: 100%;
+      align-self: flex-end;
+      padding: 28px 24px;
+      color: #fff9ee;
+    }
+
+    .guardian-card-copy span {
+      display: block;
+      margin-bottom: 8px;
+      color: #f4d88a;
+      font: 800 0.68rem/1.3 Arial, Helvetica, sans-serif;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .guardian-card-copy h3 {
+      margin-bottom: 9px;
+      color: #fff9ee;
+      font-size: 1.75rem;
+    }
+
+    .guardian-card-copy p {
+      color: rgba(255, 249, 238, 0.78);
+      font: 0.9rem/1.55 Arial, Helvetica, sans-serif;
+    }
+
+    .library-preview {
+      padding: 100px 5%;
+      background: linear-gradient(
+        135deg,
+        #f4ead7,
+        #fff9ee
+      );
+      border-top: 1px solid rgba(16, 60, 37, 0.1);
+      border-bottom: 1px solid rgba(16, 60, 37, 0.1);
+    }
+
+    .library-preview-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .library-preview-inner h2 {
+      color: #103c25;
+      font-size: clamp(2.8rem, 5vw, 5.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      margin-bottom: 22px;
+    }
+
+    .library-preview-inner > div:first-child > p:not(.section-kicker) {
+      max-width: 720px;
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.78;
+    }
+
+    .library-herbs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 32px;
+    }
+
+    .library-herbs span {
+      padding: 9px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(16, 60, 37, 0.18);
+      background: rgba(255, 255, 255, 0.7);
+      color: #103c25;
+      font: 800 0.78rem/1.2 Arial, Helvetica, sans-serif;
+    }
+
+    .library-preview-card {
+      min-height: 390px;
+      border-radius: 30px;
+      padding: 42px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle,
+          rgba(244, 216, 138, 0.2),
+          transparent 55%
+        ),
+        #103c25;
+      color: #fff9ee;
+      box-shadow: 0 26px 60px rgba(16, 60, 37, 0.18);
+    }
+
+    .library-preview-card img {
+      width: 160px;
+      margin-bottom: 24px;
+    }
+
+    .library-preview-card strong {
+      color: #f4d88a;
+      font-size: 2rem;
+    }
+
+    .library-preview-card span {
+      margin-top: 8px;
+      font: 800 0.76rem/1.3 Arial, Helvetica, sans-serif;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1180px) {
+      .guardian-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .guardian-card:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .guardians-section,
+      .library-preview {
+        padding: 70px 22px;
+      }
+
+      .guardian-grid,
+      .library-preview-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .guardian-card,
+      .guardian-card:last-child {
+        grid-column: auto;
+        min-height: 430px;
+      }
+    }
   </style>
 </head>
 
@@ -182,6 +450,7 @@
   </a>
 
   <header class="site-header">
+
     <a
       class="brand"
       href="./index.html"
@@ -203,7 +472,10 @@
       <span></span>
     </button>
 
-    <nav class="main-nav" aria-label="Main navigation">
+    <nav
+      class="main-nav"
+      aria-label="Main navigation"
+    >
       <a href="./index.html">Home</a>
       <a href="./shop.html">Shop</a>
       <a href="./founder.html">Founder</a>
@@ -219,6 +491,7 @@
         Pre-Order
       </a>
     </nav>
+
   </header>
 
   <nav
@@ -244,7 +517,9 @@
   <main>
 
     <section class="hero hero-upgraded">
+
       <div class="hero-copy">
+
         <p class="eyebrow">
           Founder Discovery Collection • Limited Pre-Order
         </p>
@@ -254,7 +529,10 @@
           your Rootz.
         </h1>
 
-        <div class="ornament" aria-hidden="true">
+        <div
+          class="ornament"
+          aria-hidden="true"
+        >
           <span></span>
           <b>✦</b>
           <span></span>
@@ -267,6 +545,7 @@
         </p>
 
         <div class="hero-actions">
+
           <a
             class="btn btn-primary"
             href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
@@ -280,6 +559,7 @@
           >
             See What’s Inside
           </a>
+
         </div>
 
         <div class="hero-proof">
@@ -301,10 +581,13 @@
           <span>Lemongrass</span>
           <span>Mint</span>
         </div>
+
       </div>
 
       <div class="hero-media parallax-media">
+
         <picture>
+
           <source
             media="(max-width: 780px)"
             srcset="./assets/mobile-hero-crop.png?v=600"
@@ -314,22 +597,43 @@
             src="./assets/tea-selection-hero.png?v=600"
             alt="RastaRoots Discovery Collection hero scene"
           />
+
         </picture>
+
       </div>
+
     </section>
 
     <nav
       class="blend-shortcuts"
       aria-label="Explore the Discovery Collection"
     >
-      <p>Explore the Discovery Collection</p>
+
+      <p>
+        Explore the Discovery Collection
+      </p>
 
       <div class="blend-shortcuts-list">
-        <a href="#roots-fire">Roots Fire</a>
-        <a href="#bush-doctor">Bush Doctor</a>
-        <a href="#empress-bloom">Empress Bloom</a>
-        <a href="#iron-root">Iron Root</a>
-        <a href="#cool-mind">Cool Mind</a>
+
+        <a href="./roots-fire.html">
+          Roots Fire
+        </a>
+
+        <a href="./bush-doctor.html">
+          Bush Doctor
+        </a>
+
+        <a href="./empress-bloom.html">
+          Empress Bloom
+        </a>
+
+        <a href="./iron-root.html">
+          Iron Root
+        </a>
+
+        <a href="./cool-mind.html">
+          Cool Mind
+        </a>
 
         <a
           class="spotify-shortcut"
@@ -339,10 +643,13 @@
         >
           Play Tea Ritual ♫
         </a>
+
       </div>
+
     </nav>
 
     <section class="value-strip">
+
       <div>
         <strong>Natural & Herbal</strong>
         <p>Made with premium herbal ingredients.</p>
@@ -362,16 +669,23 @@
         <strong>Secure Checkout</strong>
         <p>Pay safely through Shopify, PayPal and card.</p>
       </div>
+
     </section>
 
     <section
       id="included"
       class="section selection-showcase"
     >
-      <div class="section-heading center-heading">
-        <p class="section-kicker">What’s Included</p>
 
-        <h2>40 sachets. 5 rituals. 1 rooted experience.</h2>
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          What’s Included
+        </p>
+
+        <h2>
+          40 sachets. 5 rituals. 1 rooted experience.
+        </h2>
 
         <p>
           The Discovery Collection brings together the full first drop in one
@@ -385,80 +699,106 @@
         >
           View Full Collection
         </a>
+
       </div>
 
       <div class="launch-grid">
 
         <div>
+
           <img
             src="./assets/discovery-closed-box.png"
             alt="RastaRoots closed Discovery Collection box"
           />
 
-          <h3>1. Closed Box</h3>
+          <h3>
+            1. Closed Box
+          </h3>
 
           <p>
             Premium founder packaging with RastaRoots design language.
           </p>
+
         </div>
 
         <div>
+
           <img
             src="./assets/discovery-open-box.png"
             alt="RastaRoots open Discovery Collection box"
           />
 
-          <h3>2. Open Box</h3>
+          <h3>
+            2. Open Box
+          </h3>
 
           <p>
             Five signature blends arranged inside the Discovery Collection.
           </p>
+
         </div>
 
         <div>
+
           <img
             src="./assets/discovery-whats-included.png"
             alt="What is included in the RastaRoots Discovery Collection"
           />
 
-          <h3>3. What’s Included</h3>
+          <h3>
+            3. What’s Included
+          </h3>
 
           <p>
             40 sachets, 5 rituals and Tea Ritual playlist access.
           </p>
+
         </div>
 
         <div>
+
           <img
             src="./assets/discovery-tea-ritual.png"
             alt="RastaRoots Tea Ritual playlist and QR code"
           />
 
-          <h3>4. Tea Ritual</h3>
+          <h3>
+            4. Tea Ritual
+          </h3>
 
           <p>
             Scan the QR code and pair your brew with rooted rhythms.
           </p>
+
         </div>
 
       </div>
+
     </section>
 
     <section
       class="feature-section lifestyle-section"
       id="tea-ritual"
     >
+
       <div class="feature-image">
+
         <img
           src="./assets/discovery-tea-ritual.png"
           alt="RastaRoots Tea Ritual playlist and QR code"
         />
+
       </div>
 
       <div class="feature-copy">
-        <p class="section-kicker">Tea Ritual</p>
 
-        <h2>Brew. Sip. Root. Repeat.</h2>
+        <p class="section-kicker">
+          Tea Ritual
+        </p>
+
+        <h2>
+          Brew. Sip. Root. Repeat.
+        </h2>
 
         <p>
           Every Discovery Collection includes access to the official RastaRoots
@@ -467,6 +807,7 @@
         </p>
 
         <div class="hero-actions">
+
           <a
             class="btn btn-primary"
             href="./tea-ritual.html"
@@ -483,23 +824,33 @@
           >
             Listen On Spotify
           </a>
+
         </div>
+
       </div>
+
     </section>
 
     <section
       id="teas"
       class="section teas-section"
     >
-      <div class="section-heading center-heading">
-        <p class="section-kicker">The Five Rituals</p>
 
-        <h2>Discover the five signature blends.</h2>
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          The Five Rituals
+        </p>
+
+        <h2>
+          Discover the five signature blends.
+        </h2>
 
         <p>
           Five distinct herbal infusions inspired by African and Caribbean
           traditions — each with its own ingredients, flavour profile and ritual.
         </p>
+
       </div>
 
       <div class="tea-grid">
@@ -508,15 +859,21 @@
           class="tea-card fire"
           id="roots-fire"
         >
+
           <img
             src="./assets/roots-fire.png?v=600"
             alt="Roots Fire herbal tea blend"
           />
 
           <div class="tea-card-copy">
-            <p class="tea-number">01</p>
 
-            <h3>Roots Fire</h3>
+            <p class="tea-number">
+              01
+            </p>
+
+            <h3>
+              Roots Fire
+            </h3>
 
             <span>
               Ginger • Lemongrass • Mint
@@ -533,26 +890,35 @@
 
             <a
               class="tea-card-link"
-              href="#roots-fire"
+              href="./roots-fire.html"
+              aria-label="Discover the Roots Fire ritual"
             >
-              See ingredients
+              Discover The Ritual →
             </a>
+
           </div>
+
         </article>
 
         <article
           class="tea-card doctor"
           id="bush-doctor"
         >
+
           <img
             src="./assets/bush-doctor.png?v=600"
             alt="Bush Doctor herbal tea blend"
           />
 
           <div class="tea-card-copy">
-            <p class="tea-number">02</p>
 
-            <h3>Bush Doctor</h3>
+            <p class="tea-number">
+              02
+            </p>
+
+            <h3>
+              Bush Doctor
+            </h3>
 
             <span>
               Cerasee • Bitter Melon • Moringa
@@ -569,26 +935,35 @@
 
             <a
               class="tea-card-link"
-              href="#bush-doctor"
+              href="./bush-doctor.html"
+              aria-label="Discover the Bush Doctor ritual"
             >
-              See ingredients
+              Discover The Ritual →
             </a>
+
           </div>
+
         </article>
 
         <article
           class="tea-card bloom"
           id="empress-bloom"
         >
+
           <img
             src="./assets/empress-bloom.png?v=600"
             alt="Empress Bloom herbal tea blend"
           />
 
           <div class="tea-card-copy">
-            <p class="tea-number">03</p>
 
-            <h3>Empress Bloom</h3>
+            <p class="tea-number">
+              03
+            </p>
+
+            <h3>
+              Empress Bloom
+            </h3>
 
             <span>
               Hibiscus/Sorrel • Mint • Moringa
@@ -605,26 +980,35 @@
 
             <a
               class="tea-card-link"
-              href="#empress-bloom"
+              href="./empress-bloom.html"
+              aria-label="Discover the Empress Bloom ritual"
             >
-              See ingredients
+              Discover The Ritual →
             </a>
+
           </div>
+
         </article>
 
         <article
           class="tea-card iron"
           id="iron-root"
         >
+
           <img
             src="./assets/iron-root.png?v=600"
             alt="Iron Root herbal tea blend"
           />
 
           <div class="tea-card-copy">
-            <p class="tea-number">04</p>
 
-            <h3>Iron Root</h3>
+            <p class="tea-number">
+              04
+            </p>
+
+            <h3>
+              Iron Root
+            </h3>
 
             <span>
               Sarsaparilla • Ginger • Moringa
@@ -641,29 +1025,38 @@
 
             <a
               class="tea-card-link"
-              href="#iron-root"
+              href="./iron-root.html"
+              aria-label="Discover the Iron Root ritual"
             >
-              See ingredients
+              Discover The Ritual →
             </a>
+
           </div>
+
         </article>
 
         <article
           class="tea-card mind"
           id="cool-mind"
         >
+
           <img
             src="./assets/cool-mind.png?v=600"
             alt="Cool Mind herbal tea blend"
           />
 
           <div class="tea-card-copy">
-            <p class="tea-number">05</p>
 
-            <h3>Cool Mind</h3>
+            <p class="tea-number">
+              05
+            </p>
+
+            <h3>
+              Cool Mind
+            </h3>
 
             <span>
-              Mint • Lemongrass • Hibiscus Light
+              Mint • Lemongrass • Hibiscus
             </span>
 
             <strong>
@@ -677,11 +1070,14 @@
 
             <a
               class="tea-card-link"
-              href="#cool-mind"
+              href="./cool-mind.html"
+              aria-label="Discover the Cool Mind ritual"
             >
-              See ingredients
+              Discover The Ritual →
             </a>
+
           </div>
+
         </article>
 
       </div>
@@ -690,30 +1086,234 @@
         class="section-heading center-heading"
         style="margin-top: 54px;"
       >
+
         <a
           class="btn btn-primary"
           href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
         >
           Pre-Order The Full Collection
         </a>
+
       </div>
+
+    </section>
+
+    <section
+      id="guardians"
+      class="guardians-section"
+    >
+
+      <div class="section-heading center-heading">
+
+        <p class="section-kicker">
+          Meet The Five Guardians
+        </p>
+
+        <h2>
+          Five blends. Five rituals. Five ways to return to your Rootz.
+        </h2>
+
+        <p>
+          Each Guardian embodies the character of a signature blend — from
+          morning fire and enduring strength to reflection, renewal and calm.
+        </p>
+
+      </div>
+
+      <div class="guardian-grid">
+
+        <a
+          class="guardian-card"
+          href="./roots-fire.html"
+          aria-label="Meet the Roots Fire Guardian"
+        >
+
+          <img
+            src="./assets/guardian-roots-fire.png"
+            alt="Young athletic Roots Fire Guardian at sunrise"
+          />
+
+          <div class="guardian-card-copy">
+            <span>Ritual 01</span>
+            <h3>Roots Fire</h3>
+            <p>Morning energy, movement and intentional beginnings.</p>
+          </div>
+
+        </a>
+
+        <a
+          class="guardian-card"
+          href="./bush-doctor.html"
+          aria-label="Meet the Bush Doctor Guardian"
+        >
+
+          <img
+            src="./assets/guardian-bush-doctor.png"
+            alt="Bush Doctor Guardian surrounded by Caribbean herbs"
+          />
+
+          <div class="guardian-card-copy">
+            <span>Ritual 02</span>
+            <h3>Bush Doctor</h3>
+            <p>Plant knowledge, patience and uncompromising tradition.</p>
+          </div>
+
+        </a>
+
+        <a
+          class="guardian-card"
+          href="./empress-bloom.html"
+          aria-label="Meet the Empress Bloom Guardian"
+        >
+
+          <img
+            src="./assets/guardian-empress-bloom.png"
+            alt="Young Black woman representing the Empress Bloom ritual"
+          />
+
+          <div class="guardian-card-copy">
+            <span>Ritual 03</span>
+            <h3>Empress Bloom</h3>
+            <p>Presence, confidence and growth from strong roots.</p>
+          </div>
+
+        </a>
+
+        <a
+          class="guardian-card"
+          href="./iron-root.html"
+          aria-label="Meet the Iron Root Guardian"
+        >
+
+          <img
+            src="./assets/guardian-iron-root.png"
+            alt="Muscular elder Iron Root Guardian beneath an ancient tree"
+          />
+
+          <div class="guardian-card-copy">
+            <span>Ritual 04</span>
+            <h3>Iron Root</h3>
+            <p>Endurance, discipline and strength tested over time.</p>
+          </div>
+
+        </a>
+
+        <a
+          class="guardian-card"
+          href="./cool-mind.html"
+          aria-label="Meet the Cool Mind Guardians"
+        >
+
+          <img
+            src="./assets/guardian-cool-mind.png"
+            alt="Mother and child practising the Cool Mind meditation ritual"
+          />
+
+          <div class="guardian-card-copy">
+            <span>Ritual 05</span>
+            <h3>Cool Mind</h3>
+            <p>Stillness, connection and the space to respond deliberately.</p>
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+    <section
+      id="herbal-library"
+      class="library-preview"
+    >
+
+      <div class="library-preview-inner">
+
+        <div>
+
+          <p class="section-kicker">
+            RastaRoots Herbal Library
+          </p>
+
+          <h2>
+            Learn the roots behind every ingredient.
+          </h2>
+
+          <p>
+            We are building a permanent educational home for African and
+            Caribbean plant knowledge — covering flavour, origins, cultural
+            traditions, preparation and modern research without overstating
+            medical claims.
+          </p>
+
+          <div
+            class="library-herbs"
+            aria-label="Herbal Library ingredients"
+          >
+            <span>Ginger</span>
+            <span>Lemongrass</span>
+            <span>Mint</span>
+            <span>Cerasee</span>
+            <span>Bitter Melon</span>
+            <span>Moringa</span>
+            <span>Hibiscus</span>
+            <span>Sarsaparilla</span>
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="https://eepurl.com/9sLCn3GjES"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join The Library Waitlist
+          </a>
+
+        </div>
+
+        <div class="library-preview-card">
+
+          <img
+            src="./assets/badge-logo.png"
+            alt="RastaRoots Herbal Library"
+          />
+
+          <strong>
+            Herbal Library
+          </strong>
+
+          <span>
+            Coming Soon
+          </span>
+
+        </div>
+
+      </div>
+
     </section>
 
     <section
       id="philosophy"
       class="feature-section"
     >
+
       <div class="feature-image">
+
         <img
           src="./assets/tea-selection-hero-text.png?v=600"
           alt="RastaRoots philosophy artwork"
         />
+
       </div>
 
       <div class="feature-copy">
-        <p class="section-kicker">Why RastaRoots</p>
 
-        <h2>More than tea. A return to ritual.</h2>
+        <p class="section-kicker">
+          Why RastaRoots
+        </p>
+
+        <h2>
+          More than tea. A return to ritual.
+        </h2>
 
         <p>
           RastaRoots Life is built around natural living, Caribbean heritage,
@@ -728,24 +1328,34 @@
         >
           Pre-Order The First Drop →
         </a>
+
       </div>
+
     </section>
 
     <section
       id="founder"
       class="feature-section reverse"
     >
+
       <div class="feature-image">
+
         <img
           src="./assets/discovery-open-box.png"
           alt="RastaRoots Discovery Collection open box"
         />
+
       </div>
 
       <div class="feature-copy">
-        <p class="section-kicker">Founder Story</p>
 
-        <h2>Built from roots, not trends.</h2>
+        <p class="section-kicker">
+          Founder Story
+        </p>
+
+        <h2>
+          Built from roots, not trends.
+        </h2>
 
         <p>
           RastaRoots Life started from a simple belief: wellness should feel
@@ -760,21 +1370,27 @@
         >
           Read The Founder Story →
         </a>
+
       </div>
+
     </section>
 
     <section
       id="community"
       class="feature-section"
     >
+
       <div class="feature-image">
+
         <img
           src="./assets/community-fund.png?v=600"
           alt="Rootz Community Fund artwork"
         />
+
       </div>
 
       <div class="feature-copy">
+
         <p class="section-kicker">
           Rootz Community Fund
         </p>
@@ -794,14 +1410,18 @@
         >
           Learn About The Fund →
         </a>
+
       </div>
+
     </section>
 
     <section
       class="launch-section"
       id="promise"
     >
+
       <div class="launch-inner">
+
         <p class="section-kicker">
           Our Promise
         </p>
@@ -817,55 +1437,85 @@
         </p>
 
         <div class="launch-grid">
-          <div>
-            <strong>✓</strong>
 
-            <h3>Premium Ingredients</h3>
+          <div>
+
+            <strong>
+              ✓
+            </strong>
+
+            <h3>
+              Premium Ingredients
+            </h3>
 
             <p>
               Created around natural herbal blends, daily ritual and a premium
               discovery experience.
             </p>
+
           </div>
 
           <div>
-            <strong>✓</strong>
 
-            <h3>Production Updates</h3>
+            <strong>
+              ✓
+            </strong>
+
+            <h3>
+              Production Updates
+            </h3>
 
             <p>
               Founder customers receive updates before dispatch.
             </p>
+
           </div>
 
           <div>
-            <strong>✓</strong>
 
-            <h3>Secure Payments</h3>
+            <strong>
+              ✓
+            </strong>
+
+            <h3>
+              Secure Payments
+            </h3>
 
             <p>
               Shopify checkout with card and PayPal payment options.
             </p>
+
           </div>
 
           <div>
-            <strong>✓</strong>
 
-            <h3>Rooted Mission</h3>
+            <strong>
+              ✓
+            </strong>
+
+            <h3>
+              Rooted Mission
+            </h3>
 
             <p>
               A lifestyle brand built around nature, culture and community.
             </p>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
     <section
       id="faq"
       class="section selection-showcase"
     >
+
       <div class="section-heading center-heading">
+
         <p class="section-kicker">
           FAQ
         </p>
@@ -877,11 +1527,16 @@
         <p>
           Clear answers before you place your order.
         </p>
+
       </div>
 
       <div class="launch-grid">
+
         <div>
-          <strong>Shipping</strong>
+
+          <strong>
+            Shipping
+          </strong>
 
           <h3>
             When will it ship?
@@ -890,10 +1545,14 @@
           <p>
             Founder pre-orders are expected to ship in September 2026.
           </p>
+
         </div>
 
         <div>
-          <strong>Included</strong>
+
+          <strong>
+            Included
+          </strong>
 
           <h3>
             What’s in the box?
@@ -902,10 +1561,14 @@
           <p>
             40 sachets across 5 signature RastaRoots ritual blends.
           </p>
+
         </div>
 
         <div>
-          <strong>Playlist</strong>
+
+          <strong>
+            Playlist
+          </strong>
 
           <h3>
             How do I access Tea Ritual?
@@ -914,27 +1577,34 @@
           <p>
             Each box includes access to the official Tea Ritual playlist.
           </p>
+
         </div>
+
       </div>
 
       <div
         class="section-heading center-heading"
         style="margin-top: 46px;"
       >
+
         <a
           class="btn btn-primary"
           href="./faq.html"
         >
           View Full FAQ
         </a>
+
       </div>
+
     </section>
 
     <section
       id="instagram"
       class="section selection-showcase"
     >
+
       <div class="section-heading center-heading">
+
         <p class="section-kicker">
           Follow The Journey
         </p>
@@ -956,14 +1626,18 @@
         >
           Follow @rastarootzs
         </a>
+
       </div>
+
     </section>
 
     <section
       id="subscribe"
       class="subscribe-section"
     >
+
       <div class="subscribe-inner">
+
         <p class="section-kicker">
           Not Ready To Pre-Order?
         </p>
@@ -978,6 +1652,7 @@
         </p>
 
         <div class="subscribe-button-wrap">
+
           <a
             class="btn btn-primary subscribe-btn"
             href="https://eepurl.com/9sLCn3GjES"
@@ -986,17 +1661,21 @@
           >
             Join The Founder Circle
           </a>
+
         </div>
 
         <small>
           No spam. Just product drops, offers and community updates.
         </small>
+
       </div>
+
     </section>
 
   </main>
 
   <footer class="site-footer">
+
     <img
       src="./assets/rastaroots-logo-light.png?v=600"
       alt=""
@@ -1046,14 +1725,17 @@
       © 2026 RastaRoots Life.<br />
       Rooted in nature. Fueled by life.
     </p>
+
   </footer>
 
   <div class="mobile-sticky-cta">
+
     <a
       href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
     >
       Pre-Order Now
     </a>
+
   </div>
 
   <script src="./script.js?v=601"></script>
