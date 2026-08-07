@@ -9,38 +9,439 @@
 
   <meta
     name="description"
-    content="The official RastaRoots Tea Ritual. Brew slowly, stay rooted and pair your herbal tea with the official RastaRoots Spotify playlist."
+    content="Discover the official RastaRoots Tea Ritual — five herbal blends, rooted music, intentional moments and Spotify playlist access."
   />
 
   <meta property="og:title" content="Tea Ritual | RastaRoots Life" />
+
   <meta
     property="og:description"
-    content="Brew. Sip. Root. Repeat. Discover the official RastaRoots Tea Ritual playlist and daily ritual guide."
+    content="Brew. Sip. Root. Repeat. Discover the official RastaRoots Tea Ritual, five signature blends and the rooted Spotify playlist."
   />
+
   <meta property="og:image" content="./assets/discovery-tea-ritual.png" />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="./assets/badge-logo.png" />
-  <link rel="stylesheet" href="./style.css?v=604" />
+  <link rel="stylesheet" href="./style.css?v=606" />
 
-  <!-- Google Analytics 4 cross-domain tracking -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google Analytics 4 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
+  ></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
 
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-    gtag('config', 'G-XXXXXXXXXX', {
+    gtag("js", new Date());
+
+    gtag("config", "G-1XKF37N3P9", {
       linker: {
         domains: [
-          'www.rastarootslife.com',
-          'rastarootslife.com',
-          'shop.rastarootslife.com'
+          "www.rastarootslife.com",
+          "rastarootslife.com",
+          "shop.rastarootslife.com"
         ]
       }
     });
   </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .ritual-intro {
+      padding: 100px 7vw;
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(182, 138, 51, 0.12),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #fff9ee,
+          #f4ead7
+        );
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .ritual-intro-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .ritual-intro-inner h2 {
+      color: #103c25;
+      font-size: clamp(3rem, 5vw, 5.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      margin-bottom: 24px;
+    }
+
+    .ritual-intro-inner p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .ritual-process {
+      padding: 100px 7vw;
+      background: #fff9ee;
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .ritual-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 48px;
+    }
+
+    .ritual-step-card {
+      padding: 30px;
+      border-radius: 24px;
+      background: linear-gradient(
+        135deg,
+        #f4ead7,
+        #fff9ee
+      );
+      border: 1px solid rgba(16, 60, 37, 0.12);
+      box-shadow: 0 18px 44px rgba(16, 60, 37, 0.07);
+    }
+
+    .ritual-step-card strong {
+      display: block;
+      color: #b68a33;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .ritual-step-card h3 {
+      color: #103c25;
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
+
+    .ritual-step-card p {
+      color: #5c5a50;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .five-rituals-section {
+      padding: 100px 7vw;
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(244, 216, 138, 0.12),
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          #071d12,
+          #103c25
+        );
+    }
+
+    .five-rituals-section .section-kicker,
+    .five-rituals-section .section-heading h2 {
+      color: #f4d88a;
+    }
+
+    .five-rituals-section .section-heading > p:last-child {
+      color: rgba(255, 249, 238, 0.78);
+    }
+
+    .ritual-card-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .ritual-card {
+      min-height: 440px;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      border-radius: 26px;
+      border: 1px solid rgba(244, 216, 138, 0.2);
+      background: #06170e;
+      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2);
+      isolation: isolate;
+    }
+
+    .ritual-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 500ms ease;
+      z-index: -2;
+    }
+
+    .ritual-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.03) 20%,
+        rgba(0, 0, 0, 0.86) 100%
+      );
+      z-index: -1;
+    }
+
+    .ritual-card:hover img,
+    .ritual-card:focus-visible img {
+      transform: scale(1.04);
+    }
+
+    .ritual-card-copy {
+      width: 100%;
+      align-self: flex-end;
+      padding: 26px 22px;
+      color: #fff9ee;
+    }
+
+    .ritual-card-copy span {
+      display: block;
+      margin-bottom: 8px;
+      color: #f4d88a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .ritual-card-copy h3 {
+      color: #fff9ee;
+      font-size: 1.65rem;
+      margin-bottom: 8px;
+    }
+
+    .ritual-card-copy p {
+      color: rgba(255, 249, 238, 0.78);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .guardian-philosophy {
+      display: grid;
+      grid-template-columns: 46% 54%;
+      align-items: center;
+      gap: 70px;
+      padding: 100px 7vw;
+      background: #fff9ee;
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .guardian-philosophy-image {
+      min-height: 560px;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 26px 60px rgba(16, 60, 37, 0.14);
+    }
+
+    .guardian-philosophy-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      object-fit: cover;
+    }
+
+    .guardian-philosophy-copy h2 {
+      color: #103c25;
+      font-size: clamp(2.8rem, 5vw, 5.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      margin-bottom: 22px;
+    }
+
+    .guardian-philosophy-copy > p {
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.04rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .guardian-quote {
+      margin-top: 30px;
+      padding: 26px;
+      border-left: 3px solid #b68a33;
+      background: #f4ead7;
+      border-radius: 0 20px 20px 0;
+      color: #103c25;
+      font-size: clamp(1.45rem, 2.4vw, 2.2rem);
+      line-height: 1.25;
+    }
+
+    .spotify-experience {
+      padding: 110px 7vw;
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(29, 185, 84, 0.14),
+          transparent 26%
+        ),
+        linear-gradient(
+          135deg,
+          #06170e,
+          #103c25
+        );
+      color: #fff9ee;
+    }
+
+    .spotify-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 52% 48%;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .spotify-copy .section-kicker {
+      color: #f4d88a;
+    }
+
+    .spotify-copy h2 {
+      color: #fff9ee;
+      font-size: clamp(3rem, 5vw, 5.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      margin-bottom: 22px;
+    }
+
+    .spotify-copy p {
+      color: rgba(255, 249, 238, 0.78);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    .spotify-art {
+      min-height: 460px;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 26px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .spotify-art img {
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      object-fit: cover;
+    }
+
+    .spotify-button {
+      background: #1db954;
+      color: #fff;
+      border-color: #1db954;
+    }
+
+    .spotify-button:hover {
+      background: #159947;
+    }
+
+    .collection-ritual-cta {
+      padding: 110px 7vw;
+      text-align: center;
+      background: linear-gradient(
+        135deg,
+        #f4ead7,
+        #fff9ee
+      );
+      border-bottom: 1px solid rgba(16, 60, 37, 0.12);
+    }
+
+    .collection-ritual-cta h2 {
+      color: #103c25;
+      font-size: clamp(3rem, 5vw, 5.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      margin-bottom: 22px;
+    }
+
+    .collection-ritual-cta p {
+      max-width: 760px;
+      margin: 0 auto 32px;
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.78;
+    }
+
+    @media (max-width: 1180px) {
+      .ritual-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ritual-card:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .guardian-philosophy,
+      .spotify-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .ritual-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 780px) {
+      .ritual-intro,
+      .ritual-process,
+      .five-rituals-section,
+      .guardian-philosophy,
+      .spotify-experience,
+      .collection-ritual-cta {
+        padding: 70px 22px;
+      }
+
+      .ritual-card-grid,
+      .ritual-steps-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ritual-card,
+      .ritual-card:last-child {
+        grid-column: auto;
+        min-height: 420px;
+      }
+
+      .guardian-philosophy-image,
+      .guardian-philosophy-image img,
+      .spotify-art,
+      .spotify-art img {
+        min-height: 400px;
+      }
+    }
+  </style>
 </head>
 
 <body id="top">
@@ -53,12 +454,26 @@
   </a>
 
   <header class="site-header">
-    <a class="brand" href="./index.html" aria-label="RastaRoots Life home">
-      <img src="./assets/rastaroots-header-logo.png?v=600" alt="RastaRoots Life logo" />
+
+    <a
+      class="brand"
+      href="./index.html"
+      aria-label="RastaRoots Life home"
+    >
+      <img
+        src="./assets/rastaroots-header-logo.png?v=600"
+        alt="RastaRoots Life logo"
+      />
     </a>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <nav class="main-nav" aria-label="Main navigation">
@@ -69,6 +484,7 @@
       <a href="./community.html">Community</a>
       <a href="./faq.html">FAQ</a>
       <a href="./contact.html">Contact</a>
+
       <a
         class="nav-cta"
         href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
@@ -76,9 +492,14 @@
         Pre-Order
       </a>
     </nav>
+
   </header>
 
-  <nav class="mobile-nav" id="mobileNav">
+  <nav
+    class="mobile-nav"
+    id="mobileNav"
+    aria-label="Mobile navigation"
+  >
     <a href="./index.html">Home</a>
     <a href="./shop.html">Shop</a>
     <a href="./founder.html">Founder</a>
@@ -86,7 +507,10 @@
     <a href="./community.html">Community</a>
     <a href="./faq.html">FAQ</a>
     <a href="./contact.html">Contact</a>
-    <a href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
+
+    <a
+      href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+    >
       Pre-Order
     </a>
   </nav>
@@ -94,298 +518,517 @@
   <main>
 
     <section class="hero hero-upgraded">
+
       <div class="hero-copy">
-        <p class="eyebrow">Official RastaRoots Playlist • Brew Slowly</p>
 
-        <h1>Brew. Sip.<br />Root. Repeat.</h1>
+        <p class="eyebrow">
+          Official RastaRoots Playlist • Five Signature Rituals
+        </p>
 
-        <div class="ornament" aria-hidden="true">
-          <span></span><b>✦</b><span></span>
+        <h1>
+          Brew. Sip.<br />
+          Root. Repeat.
+        </h1>
+
+        <div
+          class="ornament"
+          aria-hidden="true"
+        >
+          <span></span>
+          <b>✦</b>
+          <span></span>
         </div>
 
         <p class="hero-text">
-          The Tea Ritual is where herbal wellness meets music, stillness and culture.
-          Put the kettle on, press play and give yourself a moment to come back to your roots.
+          Tea Ritual brings together herbal tradition, music and intentional
+          time. Choose your blend, prepare your cup, press play and give
+          yourself a moment to return to your Rootz.
         </p>
 
         <div class="hero-actions">
+
           <a
-            class="btn btn-primary"
+            class="btn btn-primary spotify-button"
             href="https://open.spotify.com/playlist/0o8bpkBhGDzAt9zKJWefec?si=S0BgITNBQPyBcX99gJvFhQ&pi=DVXu9BK3RbG7Q"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open Spotify Playlist
+            Play Tea Ritual On Spotify
           </a>
 
           <a
             class="btn btn-secondary"
-            href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+            href="#five-rituals"
           >
-            Pre-Order Discovery Collection
+            Explore The Five Rituals
           </a>
+
         </div>
 
         <div class="hero-proof">
           <span>Rooted Rhythms</span>
-          <span>Daily Ritual</span>
+          <span>Five Herbal Rituals</span>
           <span>Included With Every Box</span>
         </div>
+
       </div>
 
       <div class="hero-media parallax-media">
+
         <img
           src="./assets/discovery-tea-ritual.png"
-          alt="RastaRoots Tea Ritual playlist and QR code"
+          alt="RastaRoots Tea Ritual playlist and QR access"
         />
+
       </div>
+
     </section>
 
     <section class="value-strip">
+
+      <div>
+        <strong>Herbal Ritual</strong>
+        <p>Turn preparation into a meaningful pause.</p>
+      </div>
+
       <div>
         <strong>Music For The Moment</strong>
-        <p>Rooted rhythms for calm, reflection and connection.</p>
+        <p>Rooted rhythms for reflection and connection.</p>
+      </div>
+
+      <div>
+        <strong>Five Blends</strong>
+        <p>Choose the ritual that fits the moment.</p>
       </div>
 
       <div>
         <strong>QR Access Included</strong>
-        <p>Every Discovery Collection includes Tea Ritual playlist access.</p>
+        <p>Tea Ritual playlist access comes with every box.</p>
       </div>
 
-      <div>
-        <strong>Five Rituals</strong>
-        <p>Pair each blend with the mood and energy of the moment.</p>
-      </div>
-
-      <div>
-        <strong>Slow Down</strong>
-        <p>A simple daily reset for body, mind and spirit.</p>
-      </div>
     </section>
 
-    <section class="feature-section">
-      <div class="feature-image">
-        <img
-          src="./assets/discovery-open-box.png"
-          alt="Open RastaRoots Discovery Collection box"
-        />
-      </div>
+    <section class="ritual-intro">
 
-      <div class="feature-copy">
-        <p class="section-kicker">Why Tea Ritual?</p>
+      <div class="ritual-intro-inner">
 
-        <h2>Tea slows the body. Music slows the mind.</h2>
-
-        <p>
-          RastaRoots was created around the idea that wellness should feel like
-          a real moment, not just a product. The Tea Ritual brings together
-          herbal blends, rooted music and intentional time away from the noise.
+        <p class="section-kicker">
+          Why Tea Ritual?
         </p>
 
+        <h2>
+          A cup can become more than something you drink.
+        </h2>
+
         <p>
-          It is designed for mornings, evenings, reflection, creativity, prayer,
-          journaling, family moments or simply taking five minutes for yourself.
+          RastaRoots was built around the idea that wellness and heritage should
+          feel lived, not performed. Tea Ritual creates one small space in the
+          day where preparation, flavour, music and intention come together.
+          There is no complicated routine — just a deliberate pause that helps
+          you reconnect with the moment.
         </p>
+
       </div>
+
     </section>
 
-    <section class="section selection-showcase">
+    <section class="ritual-process">
+
       <div class="section-heading center-heading">
-        <p class="section-kicker">How To Use It</p>
 
-        <h2>Your daily rooted ritual.</h2>
+        <p class="section-kicker">
+          How It Works
+        </p>
+
+        <h2>
+          Keep it simple. Make it meaningful.
+        </h2>
 
         <p>
-          Keep it simple. Make the tea. Play the music. Take the moment.
+          Choose the blend. Prepare the tea. Play the music. Give the moment
+          your attention.
         </p>
+
       </div>
 
-      <div class="launch-grid">
-        <div>
-          <strong>01</strong>
-          <h3>Choose Your Blend</h3>
-          <p>Select the ritual that fits your mood — fire, cleanse, glow, strength or calm.</p>
-        </div>
+      <div class="ritual-steps-grid">
 
-        <div>
-          <strong>02</strong>
-          <h3>Boil The Water</h3>
-          <p>Prepare your cup slowly. Let the process become part of the reset.</p>
-        </div>
+        <article class="ritual-step-card">
+          <strong>Step 01</strong>
+          <h3>Choose</h3>
+          <p>
+            Select the RastaRoots blend that best matches the moment you want
+            to create.
+          </p>
+        </article>
 
-        <div>
-          <strong>03</strong>
-          <h3>Scan The QR Code</h3>
-          <p>Use the Tea Ritual card inside your Discovery Collection to access the playlist.</p>
-        </div>
+        <article class="ritual-step-card">
+          <strong>Step 02</strong>
+          <h3>Prepare</h3>
+          <p>
+            Brew your sachet according to the preparation guidance supplied
+            with the collection.
+          </p>
+        </article>
 
-        <div>
-          <strong>04</strong>
-          <h3>Press Play</h3>
-          <p>Let the music create the atmosphere before the first sip.</p>
-        </div>
+        <article class="ritual-step-card">
+          <strong>Step 03</strong>
+          <h3>Pause</h3>
+          <p>
+            Step away from unnecessary noise and allow the herbs time to
+            develop.
+          </p>
+        </article>
 
-        <div>
-          <strong>05</strong>
-          <h3>Brew Slowly</h3>
-          <p>Give the herbs time. Give yourself time too.</p>
-        </div>
+        <article class="ritual-step-card">
+          <strong>Step 04</strong>
+          <h3>Play</h3>
+          <p>
+            Scan the QR code or open the official Spotify playlist and bring
+            music into the ritual.
+          </p>
+        </article>
 
-        <div>
-          <strong>06</strong>
-          <h3>Stay Rooted</h3>
-          <p>Sip, breathe, reflect and reconnect with your centre.</p>
-        </div>
+        <article class="ritual-step-card">
+          <strong>Step 05</strong>
+          <h3>Sip</h3>
+          <p>
+            Notice the flavour, temperature and aroma instead of treating the
+            cup as something to rush through.
+          </p>
+        </article>
+
+        <article class="ritual-step-card">
+          <strong>Step 06</strong>
+          <h3>Root</h3>
+          <p>
+            Use the moment for reflection, conversation, creativity, stillness
+            or simply being present.
+          </p>
+        </article>
+
       </div>
+
     </section>
 
-    <section class="feature-section reverse">
-      <div class="feature-copy">
-        <p class="section-kicker">Playlist Energy</p>
+    <section
+      id="five-rituals"
+      class="five-rituals-section"
+    >
 
-        <h2>Rooted rhythms for reflection and connection.</h2>
+      <div class="section-heading center-heading">
 
-        <p>
-          The official RastaRoots Tea Ritual playlist is built to support calm,
-          warmth and cultural connection. It is not background noise — it is part
-          of the ritual.
+        <p class="section-kicker">
+          The Five Rituals
         </p>
 
+        <h2>
+          Match the blend to the moment.
+        </h2>
+
         <p>
-          Use it while journaling, working, cooking, creating, praying, stretching
-          or winding down at night.
+          Each blend has its own flavour, character and Guardian. Explore the
+          ritual that fits where you are right now.
         </p>
+
+      </div>
+
+      <div class="ritual-card-grid">
 
         <a
-          class="text-link"
-          href="https://open.spotify.com/playlist/0o8bpkBhGDzAt9zKJWefec?si=S0BgITNBQPyBcX99gJvFhQ&pi=DVXu9BK3RbG7Q"
-          target="_blank"
-          rel="noopener noreferrer"
+          class="ritual-card"
+          href="./roots-fire.html"
+          aria-label="Explore Roots Fire ritual"
         >
-          Open Spotify Playlist →
+
+          <img
+            src="./assets/guardian-roots-fire.png"
+            alt="Roots Fire Guardian at sunrise"
+          />
+
+          <div class="ritual-card-copy">
+            <span>Ritual 01</span>
+            <h3>Roots Fire</h3>
+            <p>Morning movement, warmth and intentional beginnings.</p>
+          </div>
+
         </a>
+
+        <a
+          class="ritual-card"
+          href="./bush-doctor.html"
+          aria-label="Explore Bush Doctor ritual"
+        >
+
+          <img
+            src="./assets/guardian-bush-doctor.png"
+            alt="Bush Doctor Guardian surrounded by herbs"
+          />
+
+          <div class="ritual-card-copy">
+            <span>Ritual 02</span>
+            <h3>Bush Doctor</h3>
+            <p>Plant knowledge, grounding and traditional herbal character.</p>
+          </div>
+
+        </a>
+
+        <a
+          class="ritual-card"
+          href="./empress-bloom.html"
+          aria-label="Explore Empress Bloom ritual"
+        >
+
+          <img
+            src="./assets/guardian-empress-bloom.png"
+            alt="Empress Bloom Guardian surrounded by hibiscus"
+          />
+
+          <div class="ritual-card-copy">
+            <span>Ritual 03</span>
+            <h3>Empress Bloom</h3>
+            <p>Refreshing pauses, presence and growth from strong roots.</p>
+          </div>
+
+        </a>
+
+        <a
+          class="ritual-card"
+          href="./iron-root.html"
+          aria-label="Explore Iron Root ritual"
+        >
+
+          <img
+            src="./assets/guardian-iron-root.png"
+            alt="Iron Root elder Guardian representing endurance"
+          />
+
+          <div class="ritual-card-copy">
+            <span>Ritual 04</span>
+            <h3>Iron Root</h3>
+            <p>Endurance, discipline and the strength to continue.</p>
+          </div>
+
+        </a>
+
+        <a
+          class="ritual-card"
+          href="./cool-mind.html"
+          aria-label="Explore Cool Mind ritual"
+        >
+
+          <img
+            src="./assets/guardian-cool-mind.png"
+            alt="Mother and child practising the Cool Mind ritual"
+          />
+
+          <div class="ritual-card-copy">
+            <span>Ritual 05</span>
+            <h3>Cool Mind</h3>
+            <p>Stillness, connection and a deliberate transition into rest.</p>
+          </div>
+
+        </a>
+
       </div>
 
-      <div class="feature-image">
-        <img
-          src="./assets/discovery-tea-ritual.png"
-          alt="RastaRoots Tea Ritual Spotify playlist access"
-        />
-      </div>
     </section>
 
-    <section class="launch-section">
-      <div class="launch-inner">
-        <p class="section-kicker">Included In The Discovery Collection</p>
+    <section class="guardian-philosophy">
 
-        <h2>40 sachets. 5 rituals. Tea Ritual access.</h2>
+      <div class="guardian-philosophy-image">
 
-        <p>
-          Every Founder Discovery Collection includes five signature herbal rituals
-          and access to the Tea Ritual playlist, designed to make each cup feel
-          like a moment of culture, wellness and reconnection.
+        <img
+          src="./assets/guardian-roots-fire.png"
+          alt="RastaRoots Guardian representing the ritual philosophy"
+        />
+
+      </div>
+
+      <div class="guardian-philosophy-copy">
+
+        <p class="section-kicker">
+          The Guardian Says
         </p>
 
-        <div class="hero-actions">
-          <a
-            class="btn btn-primary"
-            href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
-          >
-            Pre-Order Discovery Collection
-          </a>
+        <h2>
+          Ritual turns habit into meaning.
+        </h2>
 
-          <a class="btn btn-secondary" href="./shop.html">
-            View The Collection
-          </a>
-        </div>
+        <p>
+          The Guardian represents the knowledge behind the cup. RastaRoots
+          rituals are not about making life complicated or pretending that one
+          drink can solve everything.
+        </p>
+
+        <p>
+          They are about paying attention. Choose the blend that fits the
+          moment, prepare it deliberately, press play and give your attention
+          somewhere worth keeping.
+        </p>
+
+        <blockquote class="guardian-quote">
+          “The ritual is not the tea alone. The ritual is the attention you bring to it.”
+        </blockquote>
+
       </div>
+
     </section>
 
-    <section class="section selection-showcase">
-      <div class="section-heading center-heading">
-        <p class="section-kicker">The Five Moments</p>
+    <section class="spotify-experience">
 
-        <h2>Match the blend to the moment.</h2>
+      <div class="spotify-inner">
+
+        <div class="spotify-copy">
+
+          <p class="section-kicker">
+            The Soundtrack
+          </p>
+
+          <h2>
+            Tea sounds better with rooted rhythms.
+          </h2>
+
+          <p>
+            The official RastaRoots Tea Ritual playlist was created to give the
+            cup an atmosphere — music for reflection, connection, creativity,
+            conversation and slower moments.
+          </p>
+
+          <p>
+            Play it while you brew, journal, stretch, cook, work, talk with
+            family or simply sit without needing to fill every second with
+            noise.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="btn spotify-button"
+              href="https://open.spotify.com/playlist/0o8bpkBhGDzAt9zKJWefec?si=S0BgITNBQPyBcX99gJvFhQ&pi=DVXu9BK3RbG7Q"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Spotify Playlist
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="spotify-art">
+
+          <img
+            src="./assets/discovery-tea-ritual.png"
+            alt="RastaRoots Tea Ritual Spotify playlist artwork"
+          />
+
+        </div>
+
       </div>
 
-      <div class="launch-grid">
-        <div>
-          <strong>Roots Fire</strong>
-          <h3>Morning Energy</h3>
-          <p>For the days when you need warmth, movement and focus.</p>
-        </div>
+    </section>
 
-        <div>
-          <strong>Bush Doctor</strong>
-          <h3>Deep Reset</h3>
-          <p>For cleansing, grounding and returning to natural simplicity.</p>
-        </div>
+    <section class="collection-ritual-cta">
 
-        <div>
-          <strong>Empress Bloom</strong>
-          <h3>Glow & Refresh</h3>
-          <p>For brightness, beauty, balance and feel-good refreshment.</p>
-        </div>
+      <p class="section-kicker">
+        Included In The Discovery Collection
+      </p>
 
-        <div>
-          <strong>Iron Root</strong>
-          <h3>Strength</h3>
-          <p>For bold energy, resilience and rooted vitality.</p>
-        </div>
+      <h2>
+        40 sachets. Five rituals. One rooted experience.
+      </h2>
 
-        <div>
-          <strong>Cool Mind</strong>
-          <h3>Evening Calm</h3>
-          <p>For slowing down, breathing deeper and easing the spirit.</p>
-        </div>
+      <p>
+        The Founder Discovery Collection includes eight sachets of each
+        signature blend, together with access to the official Tea Ritual
+        playlist. Explore all five flavours, discover their ingredients and
+        find the ritual that becomes part of your own routine.
+      </p>
 
-        <div>
-          <strong>Tea Ritual</strong>
-          <h3>The Soundtrack</h3>
-          <p>For making the moment feel deeper than just a cup of tea.</p>
-        </div>
+      <div
+        class="hero-actions"
+        style="justify-content: center;"
+      >
+
+        <a
+          class="btn btn-primary"
+          href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+        >
+          Pre-Order Discovery Collection
+        </a>
+
+        <a
+          class="btn btn-secondary"
+          href="./index.html#teas"
+        >
+          Explore All Five Blends
+        </a>
+
       </div>
+
     </section>
 
     <section class="feature-section">
+
       <div class="feature-image">
+
         <img
           src="./assets/community-fund.png?v=600"
           alt="RastaRoots Community Fund artwork"
         />
+
       </div>
 
       <div class="feature-copy">
-        <p class="section-kicker">More Than A Playlist</p>
 
-        <h2>A ritual that connects product, culture and community.</h2>
+        <p class="section-kicker">
+          More Than A Playlist
+        </p>
+
+        <h2>
+          Product. Culture. Community.
+        </h2>
 
         <p>
-          The Tea Ritual helps make RastaRoots feel different. It turns the box
-          into an experience and gives every customer a reason to pause, listen,
-          sip and reconnect.
+          Tea Ritual is designed to make the Discovery Collection feel like
+          more than a box of herbal tea. Music, storytelling, Guardians and
+          herbal education give each blend a deeper place within the RastaRoots
+          world.
         </p>
 
         <p>
-          As the brand grows, the ritual will expand into community sessions,
-          content, founder updates and cultural storytelling.
+          As the brand grows, Tea Ritual can expand through founder content,
+          community sessions, cultural storytelling, nature, music and shared
+          experiences.
         </p>
 
-        <a class="text-link" href="./community.html">
+        <a
+          class="text-link"
+          href="./community.html"
+        >
           Explore The Community Vision →
         </a>
+
       </div>
+
     </section>
 
     <section class="launch-section">
-      <div class="launch-inner">
-        <p class="section-kicker">Don’t Lose Your Rootz</p>
 
-        <h2>Start with the first cup.</h2>
+      <div class="launch-inner">
+
+        <p class="section-kicker">
+          Don’t Lose Your Rootz
+        </p>
+
+        <h2>
+          Start with the first cup.
+        </h2>
 
         <p>
-          Founder Pre-Orders are now open. Secure the first Discovery Collection
-          and become part of the beginning.
+          Founder Pre-Orders are open now. Secure the first Discovery Collection
+          and begin exploring the five RastaRoots rituals.
         </p>
 
         <a
@@ -394,15 +1037,25 @@
         >
           Continue To Secure Checkout
         </a>
+
       </div>
+
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <img src="./assets/rastaroots-logo-light.png?v=600" alt="" aria-hidden="true" />
 
-    <nav class="footer-links" aria-label="Footer navigation">
+    <img
+      src="./assets/rastaroots-logo-light.png?v=600"
+      alt=""
+      aria-hidden="true"
+    />
+
+    <nav
+      class="footer-links"
+      aria-label="Footer navigation"
+    >
       <a href="./index.html">Home</a>
       <a href="./shop.html">Shop</a>
       <a href="./founder.html">Founder</a>
@@ -414,21 +1067,45 @@
       <a href="./privacy.html">Privacy</a>
       <a href="./terms.html">Terms</a>
       <a href="./contact.html">Contact</a>
-      <a href="https://instagram.com/rastarootzs" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="#" aria-label="TikTok coming soon">TikTok</a>
-      <a href="#" aria-label="YouTube coming soon">YouTube</a>
+
+      <a
+        href="https://instagram.com/rastarootzs"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+      <a
+        href="#"
+        aria-label="TikTok coming soon"
+      >
+        TikTok
+      </a>
+
+      <a
+        href="#"
+        aria-label="YouTube coming soon"
+      >
+        YouTube
+      </a>
     </nav>
 
     <p>
       © 2026 RastaRoots Life.<br />
       Rooted in nature. Fueled by life.
     </p>
+
   </footer>
 
   <div class="mobile-sticky-cta">
-    <a href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
+
+    <a
+      href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+    >
       Pre-Order Now
     </a>
+
   </div>
 
   <script src="./script.js?v=601"></script>
