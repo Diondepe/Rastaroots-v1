@@ -265,25 +265,14 @@
 
     .botanical-member-bar {
       display: none;
-
       padding: 11px 7vw;
-
       background: #b68a33;
-
       color: #06170e;
-
       text-align: center;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 0.72rem;
       font-weight: 900;
-
       letter-spacing: 0.1em;
-
       text-transform: uppercase;
     }
 
@@ -294,10 +283,63 @@
 
     .botanical-member-bar a {
       color: #06170e;
+      border-bottom: 1px solid rgba(6,23,14,.38);
+    }
 
-      border-bottom:
-        1px solid
-        rgba(6,23,14,.38);
+
+    /* ======================================================
+       BOTANICAL PROGRESS
+    ====================================================== */
+
+    .botanical-progress-wrap {
+      padding: 18px 7vw;
+      background: #f8efdf;
+      border-bottom: 1px solid rgba(16,60,37,.12);
+    }
+
+    .botanical-progress {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .progress-label {
+      color: #103c25;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .68rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .progress-dots {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .progress-dot {
+      width: 27px;
+      height: 27px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(16,60,37,.18);
+      border-radius: 50%;
+      color: #6f726c;
+      background: rgba(255,255,255,.55);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .58rem;
+      font-weight: 900;
+    }
+
+    .progress-dot.active {
+      background: #103c25;
+      color: #f4d88a;
+      border-color: #103c25;
     }
 
 
@@ -307,40 +349,28 @@
 
     .botanical-hero {
       min-height: 800px;
-
       position: relative;
-
       display: flex;
       align-items: center;
-
       overflow: hidden;
-
       background: #06170e;
-
       isolation: isolate;
     }
 
     .botanical-hero-image {
       position: absolute;
-
       inset: 0;
-
       width: 100%;
       height: 100%;
-
       z-index: -3;
-
       object-fit: cover;
       object-position: center;
     }
 
     .botanical-hero-overlay {
       position: absolute;
-
       inset: 0;
-
       z-index: -2;
-
       background:
         linear-gradient(
           90deg,
@@ -353,139 +383,70 @@
 
     .botanical-hero-content {
       width: min(820px, 61%);
-
-      padding:
-        120px
-        7vw;
-
+      padding: 120px 7vw;
       color: #fff9ee;
     }
 
     .botanical-number {
       margin-bottom: 14px;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .72rem;
       font-weight: 900;
-
       letter-spacing: .18em;
-
       text-transform: uppercase;
     }
 
     .botanical-hero h1 {
       margin-bottom: 10px;
-
       color: #fff9ee;
-
-      font-size:
-        clamp(
-          5rem,
-          9vw,
-          9.5rem
-        );
-
+      font-size: clamp(5rem,9vw,9.5rem);
       line-height: .86;
-
-      letter-spacing:
-        -.06em;
+      letter-spacing: -.06em;
     }
 
     .botanical-latin {
       margin-bottom: 20px;
-
       color: #f4d88a;
-
-      font-size:
-        clamp(
-          1.3rem,
-          2vw,
-          1.8rem
-        );
-
+      font-size: clamp(1.3rem,2vw,1.8rem);
       font-style: italic;
     }
 
     .botanical-flavour {
       display: inline-flex;
-
       margin-bottom: 28px;
-
-      padding:
-        10px
-        16px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.35);
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(6,37,22,.52);
-
+      padding: 10px 16px;
+      border: 1px solid rgba(244,216,138,.35);
+      border-radius: 999px;
+      background: rgba(6,37,22,.52);
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .72rem;
       font-weight: 900;
-
       letter-spacing: .1em;
-
       text-transform: uppercase;
-
-      backdrop-filter:
-        blur(8px);
+      backdrop-filter: blur(8px);
     }
 
     .botanical-intro {
       max-width: 650px;
-
       margin-bottom: 32px;
-
-      color:
-        rgba(255,249,238,.82);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.82);
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 1.08rem;
-
       line-height: 1.8;
     }
 
     .botanical-hero-actions {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 12px;
     }
 
-    .botanical-hero
-    .btn-secondary {
+    .botanical-hero .btn-secondary {
       color: #fff9ee !important;
-
-      border-color:
-        rgba(255,249,238,.45)
-        !important;
-
-      background:
-        rgba(6,37,22,.28)
-        !important;
+      border-color: rgba(255,249,238,.45) !important;
+      background: rgba(6,37,22,.28) !important;
     }
 
 
@@ -494,13 +455,8 @@
     ====================================================== */
 
     .botanical-section {
-      padding:
-        105px
-        7vw;
-
-      border-bottom:
-        1px solid
-        rgba(16,60,37,.12);
+      padding: 105px 7vw;
+      border-bottom: 1px solid rgba(16,60,37,.12);
     }
 
     .section-light {
@@ -508,12 +464,7 @@
     }
 
     .section-cream {
-      background:
-        linear-gradient(
-          135deg,
-          #f4ead7,
-          #fff9ee
-        );
+      background: linear-gradient(135deg,#f4ead7,#fff9ee);
     }
 
     .section-dark {
@@ -523,97 +474,61 @@
           rgba(182,138,51,.12),
           transparent 32%
         ),
-        linear-gradient(
-          135deg,
-          #06170e,
-          #103c25
-        );
-
+        linear-gradient(135deg,#06170e,#103c25);
       color: #fff9ee;
     }
 
     .botanical-container {
       max-width: 1180px;
-
       margin: 0 auto;
     }
 
     .botanical-heading {
       max-width: 880px;
-
       margin-bottom: 48px;
     }
 
     .botanical-heading.center {
       margin-left: auto;
       margin-right: auto;
-
       text-align: center;
     }
 
     .botanical-kicker {
       margin-bottom: 14px;
-
       color: #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .72rem;
       font-weight: 900;
-
       letter-spacing: .15em;
-
       text-transform: uppercase;
     }
 
-    .section-dark
-    .botanical-kicker {
+    .section-dark .botanical-kicker {
       color: #f4d88a;
     }
 
     .botanical-heading h2 {
       margin-bottom: 20px;
-
       color: #103c25;
-
-      font-size:
-        clamp(
-          3rem,
-          5vw,
-          5.6rem
-        );
-
+      font-size: clamp(3rem,5vw,5.6rem);
       line-height: .98;
-
-      letter-spacing:
-        -.045em;
+      letter-spacing: -.045em;
     }
 
-    .section-dark
-    .botanical-heading h2 {
+    .section-dark .botanical-heading h2 {
       color: #fff9ee;
     }
 
     .botanical-heading p {
       color: #4f574f;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 1.04rem;
-
       line-height: 1.82;
     }
 
-    .section-dark
-    .botanical-heading p {
-      color:
-        rgba(255,249,238,.75);
+    .section-dark .botanical-heading p {
+      color: rgba(255,249,238,.75);
     }
 
 
@@ -623,51 +538,31 @@
 
     .glance-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(5,1fr);
-
+      grid-template-columns: repeat(5,1fr);
       gap: 16px;
     }
 
     .glance-card {
       padding: 25px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.12);
-
+      border: 1px solid rgba(16,60,37,.12);
       border-radius: 22px;
-
-      background:
-        rgba(255,255,255,.63);
+      background: rgba(255,255,255,.63);
     }
 
     .glance-card span {
       display: block;
-
       margin-bottom: 10px;
-
       color: #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .66rem;
       font-weight: 900;
-
       letter-spacing: .12em;
-
       text-transform: uppercase;
     }
 
     .glance-card strong {
       color: #103c25;
-
       font-size: 1.15rem;
-
       line-height: 1.4;
     }
 
@@ -678,73 +573,40 @@
 
     .split-grid {
       display: grid;
-
-      grid-template-columns:
-        1fr
-        1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 72px;
-
       align-items: center;
     }
 
     .editorial-copy p {
       margin-bottom: 20px;
-
       color: #4f574f;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 1.04rem;
-
       line-height: 1.82;
     }
 
     .editorial-quote {
       margin-top: 30px;
-
       padding: 28px;
-
-      border-left:
-        3px solid
-        #b68a33;
-
-      background:
-        rgba(182,138,51,.08);
-
+      border-left: 3px solid #b68a33;
+      background: rgba(182,138,51,.08);
       color: #103c25;
-
-      font-size:
-        clamp(
-          1.4rem,
-          2.2vw,
-          2rem
-        );
-
+      font-size: clamp(1.4rem,2.2vw,2rem);
       line-height: 1.35;
     }
 
     .botanical-image-card {
       min-height: 520px;
-
       overflow: hidden;
-
       border-radius: 30px;
-
-      box-shadow:
-        0 28px 68px
-        rgba(16,60,37,.16);
+      box-shadow: 0 28px 68px rgba(16,60,37,.16);
     }
 
     .botanical-image-card img {
       width: 100%;
       height: 100%;
-
       min-height: 520px;
-
       object-fit: cover;
     }
 
@@ -755,121 +617,66 @@
 
     .uses-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
+      grid-template-columns: repeat(4,1fr);
       gap: 20px;
     }
 
     .use-card {
       padding: 28px;
-
       border-radius: 24px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.12);
-
-      background:
-        #fff9ee;
+      border: 1px solid rgba(16,60,37,.12);
+      background: #fff9ee;
     }
 
     .use-icon {
       width: 48px;
       height: 48px;
-
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       margin-bottom: 20px;
-
       border-radius: 50%;
-
       background: #103c25;
-
       color: #f4d88a;
-
       font-size: 1.25rem;
     }
 
     .use-card h3 {
       margin-bottom: 10px;
-
       color: #103c25;
-
       font-size: 1.45rem;
     }
 
     .use-card p {
       color: #5d615b;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .92rem;
-
       line-height: 1.7;
     }
 
     .tradition-label {
       display: inline-block;
-
       margin-top: 16px;
-
-      padding:
-        6px
-        9px;
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(182,138,51,.1);
-
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: rgba(182,138,51,.1);
       color: #8a6322;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .62rem;
       font-weight: 900;
-
       letter-spacing: .08em;
-
       text-transform: uppercase;
     }
 
     .context-note {
       max-width: 900px;
-
-      margin:
-        35px auto
-        0;
-
+      margin: 35px auto 0;
       padding: 22px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.12);
-
+      border: 1px solid rgba(16,60,37,.12);
       border-radius: 18px;
-
       color: #5c5a50;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .85rem;
-
       line-height: 1.7;
     }
 
@@ -880,102 +687,58 @@
 
     .heritage-grid {
       display: grid;
-
-      grid-template-columns:
-        1.05fr
-        .95fr;
-
+      grid-template-columns: 1.05fr .95fr;
       gap: 70px;
-
       align-items: start;
     }
 
     .heritage-copy p {
       margin-bottom: 20px;
-
-      color:
-        rgba(255,249,238,.78);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.78);
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 1.03rem;
-
       line-height: 1.82;
     }
 
     .heritage-points {
       display: grid;
-
       gap: 14px;
     }
 
     .heritage-point {
       padding: 22px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.18);
-
+      border: 1px solid rgba(244,216,138,.18);
       border-radius: 20px;
-
-      background:
-        rgba(255,255,255,.04);
+      background: rgba(255,255,255,.04);
     }
 
     .heritage-point strong {
       display: block;
-
       margin-bottom: 7px;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .72rem;
-
       letter-spacing: .1em;
-
       text-transform: uppercase;
     }
 
     .heritage-point p {
-      color:
-        rgba(255,249,238,.74);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.74);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.65;
     }
 
 
     /* ======================================================
-       JOURNEY MAP
+       JOURNEY
     ====================================================== */
 
     .journey-board {
       position: relative;
-
       overflow: hidden;
-
-      padding:
-        55px
-        44px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.2);
-
+      padding: 55px 44px;
+      border: 1px solid rgba(244,216,138,.2);
       border-radius: 30px;
-
       background:
         radial-gradient(
           circle at 20% 30%,
@@ -985,154 +748,76 @@
         #082116;
     }
 
-    .journey-map {
-      min-height: 390px;
-
+    .heritage-map {
       position: relative;
+      min-height: 470px;
+      margin-top: 8px;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid rgba(244,216,138,.18);
+      background:
+        radial-gradient(
+          circle at 70% 25%,
+          rgba(244,216,138,.09),
+          transparent 30%
+        ),
+        #071d13;
     }
 
-    .map-world {
-      position: absolute;
-
-      inset:
-        10px
-        0
-        40px;
-
-      opacity: .2;
-    }
-
-    .map-world svg {
+    .heritage-map svg {
+      display: block;
       width: 100%;
       height: 100%;
+      min-height: 470px;
     }
 
-    .journey-route {
-      position: relative;
-
-      z-index: 2;
-
-      min-height: 390px;
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
-      align-items: center;
-
-      gap: 18px;
+    .map-region {
+      fill: rgba(244,216,138,.16);
+      stroke: rgba(244,216,138,.22);
+      stroke-width: 1.2;
     }
 
-    .route-stop {
-      position: relative;
-
-      text-align: center;
+    .map-route {
+      fill: none;
+      stroke: #f4d88a;
+      stroke-width: 2.2;
+      stroke-dasharray: 8 8;
+      opacity: .82;
     }
 
-    .route-stop::after {
-      content: "";
-
-      position: absolute;
-
-      top: 28px;
-      left: 62%;
-
-      width: 82%;
-
-      height: 1px;
-
-      background:
-        linear-gradient(
-          90deg,
-          #f4d88a,
-          rgba(244,216,138,.15)
-        );
+    .map-stop {
+      fill: #103c25;
+      stroke: #f4d88a;
+      stroke-width: 2;
     }
 
-    .route-stop:last-child::after {
-      display: none;
+    .map-label {
+      fill: #fff9ee;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 800;
     }
 
-    .route-dot {
-      width: 56px;
-      height: 56px;
+    .map-small {
+      fill: rgba(255,249,238,.65);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
 
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      position: relative;
-
-      z-index: 2;
-
-      margin:
-        0 auto
-        18px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.55);
-
-      border-radius: 50%;
-
-      background: #103c25;
-
-      color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size: .68rem;
+    .map-number {
+      fill: #f4d88a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
       font-weight: 900;
-    }
-
-    .route-stop strong {
-      display: block;
-
-      margin-bottom: 7px;
-
-      color: #fff9ee;
-
-      font-size: 1.2rem;
-    }
-
-    .route-stop span {
-      color:
-        rgba(255,249,238,.60);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size: .75rem;
-
-      line-height: 1.45;
     }
 
     .journey-caption {
       max-width: 760px;
-
-      margin:
-        28px auto
-        0;
-
-      color:
-        rgba(255,249,238,.62);
-
+      margin: 28px auto 0;
+      color: rgba(255,249,238,.62);
       text-align: center;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .78rem;
-
       line-height: 1.65;
     }
 
@@ -1143,23 +828,15 @@
 
     .body-grid {
       display: grid;
-
-      grid-template-columns:
-        .8fr
-        1.2fr;
-
+      grid-template-columns: .8fr 1.2fr;
       gap: 70px;
-
       align-items: center;
     }
 
     .body-visual {
       position: relative;
-
       min-height: 570px;
-
       display: flex;
-
       align-items: center;
       justify-content: center;
     }
@@ -1167,28 +844,17 @@
     .body-svg {
       width: min(290px,80%);
       height: auto;
-
       opacity: .94;
     }
 
     .body-marker {
       position: absolute;
-
       width: 24px;
       height: 24px;
-
-      border:
-        3px solid
-        #f4d88a;
-
+      border: 3px solid #f4d88a;
       border-radius: 50%;
-
-      background:
-        #103c25;
-
-      box-shadow:
-        0 0 0 7px
-        rgba(244,216,138,.13);
+      background: #103c25;
+      box-shadow: 0 0 0 7px rgba(244,216,138,.13);
     }
 
     .marker-digestive {
@@ -1208,62 +874,37 @@
 
     .body-legend {
       display: grid;
-
       gap: 16px;
     }
 
     .body-research-card {
       padding: 24px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.18);
-
+      border: 1px solid rgba(244,216,138,.18);
       border-radius: 20px;
-
-      background:
-        rgba(255,255,255,.04);
+      background: rgba(255,255,255,.04);
     }
 
     .body-research-card span {
       display: block;
-
       margin-bottom: 8px;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .68rem;
       font-weight: 900;
-
       letter-spacing: .1em;
-
       text-transform: uppercase;
     }
 
     .body-research-card h3 {
       margin-bottom: 8px;
-
       color: #fff9ee;
-
       font-size: 1.45rem;
     }
 
     .body-research-card p {
-      color:
-        rgba(255,249,238,.68);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.68);
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .9rem;
-
       line-height: 1.65;
     }
 
@@ -1274,163 +915,145 @@
 
     .evidence-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
+      grid-template-columns: repeat(3,1fr);
       gap: 20px;
     }
 
     .evidence-card {
       padding: 29px;
-
       border-radius: 24px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.12);
-
-      background:
-        rgba(255,255,255,.68);
+      border: 1px solid rgba(16,60,37,.12);
+      background: rgba(255,255,255,.68);
     }
 
     .evidence-level {
       display: inline-flex;
-
       margin-bottom: 17px;
-
-      padding:
-        7px
-        10px;
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(16,60,37,.08);
-
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(16,60,37,.08);
       color: #103c25;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .62rem;
       font-weight: 900;
-
       letter-spacing: .08em;
-
       text-transform: uppercase;
     }
 
     .evidence-card h3 {
       margin-bottom: 10px;
-
       color: #103c25;
-
       font-size: 1.5rem;
     }
 
     .evidence-card p {
       color: #5b5c56;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .91rem;
-
       line-height: 1.7;
+    }
+
+    .evidence-key {
+      margin: 34px auto 0;
+      max-width: 980px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 14px;
+    }
+
+    .evidence-key-item {
+      padding: 18px;
+      border: 1px solid rgba(16,60,37,.12);
+      border-radius: 18px;
+      background: rgba(255,255,255,.5);
+    }
+
+    .evidence-key-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #103c25;
+      font-size: .95rem;
+    }
+
+    .evidence-key-item p {
+      color: #65665f;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .78rem;
+      line-height: 1.55;
     }
 
 
     /* ======================================================
-       TRADITION VS RESEARCH
+       THREE LENSES
     ====================================================== */
 
     .compare-grid {
       display: grid;
-
-      grid-template-columns:
-        1fr
-        1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 22px;
+    }
+
+    .compare-grid.three-way {
+      grid-template-columns: repeat(3,1fr);
     }
 
     .compare-card {
       padding: 34px;
-
       border-radius: 26px;
     }
 
     .compare-tradition {
-      border:
-        1px solid
-        rgba(182,138,51,.22);
-
+      border: 1px solid rgba(182,138,51,.22);
       background: #f8efdf;
     }
 
     .compare-research {
-      border:
-        1px solid
-        rgba(16,60,37,.18);
+      border: 1px solid rgba(16,60,37,.18);
+      background: #edf2ec;
+    }
 
-      background:
-        #edf2ec;
+    .compare-ritual {
+      border: 1px solid rgba(182,138,51,.30);
+      background: linear-gradient(145deg,#103c25,#0a2c1a);
     }
 
     .compare-card span {
       display: block;
-
       margin-bottom: 14px;
-
       color: #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .68rem;
       font-weight: 900;
-
       letter-spacing: .12em;
-
       text-transform: uppercase;
     }
 
     .compare-card h3 {
       margin-bottom: 14px;
-
       color: #103c25;
-
       font-size: 1.7rem;
     }
 
     .compare-card p,
     .compare-card li {
       color: #555b54;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .94rem;
-
       line-height: 1.7;
     }
 
     .compare-card ul {
-      margin:
-        18px
-        0
-        0
-        18px;
+      margin: 18px 0 0 18px;
+    }
+
+    .compare-ritual span,
+    .compare-ritual h3 {
+      color: #f4d88a;
+    }
+
+    .compare-ritual p,
+    .compare-ritual li {
+      color: rgba(255,249,238,.76);
     }
 
 
@@ -1440,62 +1063,89 @@
 
     .prep-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
+      grid-template-columns: repeat(4,1fr);
       gap: 18px;
     }
 
     .prep-card {
       padding: 28px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.12);
-
+      border: 1px solid rgba(16,60,37,.12);
       border-radius: 23px;
-
       background: #fff9ee;
     }
 
     .prep-number {
       display: block;
-
       margin-bottom: 20px;
-
       color: #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .68rem;
       font-weight: 900;
-
       letter-spacing: .12em;
     }
 
     .prep-card h3 {
       margin-bottom: 10px;
-
       color: #103c25;
-
       font-size: 1.45rem;
     }
 
     .prep-card p {
       color: #5c6059;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .9rem;
-
       line-height: 1.65;
+    }
+
+    .home-ritual-card {
+      margin-top: 28px;
+      padding: 30px;
+      border: 1px solid rgba(16,60,37,.14);
+      border-radius: 24px;
+      background: linear-gradient(145deg,#fff9ee,#f4ead7);
+    }
+
+    .home-ritual-card h3 {
+      margin-bottom: 12px;
+      color: #103c25;
+      font-size: 1.7rem;
+    }
+
+    .home-ritual-card p {
+      color: #5a5e58;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .home-ritual-meta {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .home-ritual-meta div {
+      padding: 16px;
+      border: 1px solid rgba(16,60,37,.10);
+      border-radius: 16px;
+      background: rgba(255,255,255,.55);
+    }
+
+    .home-ritual-meta strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #8a6322;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .64rem;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .home-ritual-meta span {
+      color: #103c25;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .88rem;
+      line-height: 1.45;
     }
 
 
@@ -1505,106 +1155,55 @@
 
     .ritual-panel {
       display: grid;
-
-      grid-template-columns:
-        1.05fr
-        .95fr;
-
+      grid-template-columns: 1.05fr .95fr;
       gap: 50px;
-
       align-items: center;
-
       padding: 50px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.20);
-
+      border: 1px solid rgba(244,216,138,.20);
       border-radius: 32px;
-
-      background:
-        rgba(255,255,255,.035);
+      background: rgba(255,255,255,.035);
     }
 
     .ritual-copy h3 {
       margin-bottom: 16px;
-
       color: #fff9ee;
-
-      font-size:
-        clamp(
-          2.4rem,
-          4vw,
-          4.2rem
-        );
-
+      font-size: clamp(2.4rem,4vw,4.2rem);
       line-height: 1;
     }
 
     .ritual-copy p {
       margin-bottom: 20px;
-
-      color:
-        rgba(255,249,238,.73);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.73);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
 
     .ritual-steps {
       display: grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
+      grid-template-columns: repeat(3,1fr);
       gap: 13px;
     }
 
     .ritual-step {
       padding: 22px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.15);
-
+      border: 1px solid rgba(244,216,138,.15);
       border-radius: 18px;
-
-      background:
-        rgba(255,255,255,.035);
+      background: rgba(255,255,255,.035);
     }
 
     .ritual-step strong {
       display: block;
-
       margin-bottom: 8px;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .68rem;
-
       text-transform: uppercase;
     }
 
     .ritual-step span {
-      color:
-        rgba(255,249,238,.74);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.74);
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .85rem;
-
       line-height: 1.5;
     }
 
@@ -1615,106 +1214,56 @@
 
     .blend-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(2,1fr);
-
+      grid-template-columns: repeat(2,1fr);
       gap: 22px;
     }
 
     .blend-card {
       position: relative;
-
       min-height: 330px;
-
       display: flex;
-
       flex-direction: column;
-
       justify-content: flex-end;
-
       overflow: hidden;
-
       padding: 34px;
-
       border-radius: 28px;
-
-      background:
-        linear-gradient(
-          145deg,
-          #06170e,
-          #103c25
-        );
-
+      background: linear-gradient(145deg,#06170e,#103c25);
       color: #fff9ee;
     }
 
     .blend-card span {
       margin-bottom: 9px;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .7rem;
       font-weight: 900;
-
       letter-spacing: .11em;
-
       text-transform: uppercase;
     }
 
     .blend-card h3 {
       margin-bottom: 11px;
-
       color: #fff9ee;
-
-      font-size:
-        clamp(
-          2.2rem,
-          3.4vw,
-          3.5rem
-        );
+      font-size: clamp(2.2rem,3.4vw,3.5rem);
     }
 
     .blend-card p {
       max-width: 480px;
-
       margin-bottom: 22px;
-
-      color:
-        rgba(255,249,238,.68);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.68);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.65;
     }
 
     .blend-link {
       width: fit-content;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .73rem;
       font-weight: 900;
-
       letter-spacing: .07em;
-
       text-transform: uppercase;
-
-      border-bottom:
-        1px solid #f4d88a;
+      border-bottom: 1px solid #f4d88a;
     }
 
 
@@ -1724,99 +1273,56 @@
 
     .media-panel {
       display: grid;
-
-      grid-template-columns:
-        1.1fr
-        .9fr;
-
+      grid-template-columns: 1.1fr .9fr;
       gap: 40px;
-
       align-items: center;
     }
 
     .video-placeholder {
-      aspect-ratio:
-        16 / 9;
-
+      aspect-ratio: 16 / 9;
       position: relative;
-
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       overflow: hidden;
-
       border-radius: 28px;
-
       background:
         radial-gradient(
           circle at center,
           rgba(244,216,138,.14),
           transparent 34%
         ),
-        linear-gradient(
-          145deg,
-          #06170e,
-          #103c25
-        );
-
-      box-shadow:
-        0 28px 65px
-        rgba(16,60,37,.15);
+        linear-gradient(145deg,#06170e,#103c25);
+      box-shadow: 0 28px 65px rgba(16,60,37,.15);
     }
 
     .play-circle {
       width: 76px;
       height: 76px;
-
       display: flex;
-
       align-items: center;
       justify-content: center;
-
-      border:
-        1px solid
-        rgba(244,216,138,.5);
-
+      border: 1px solid rgba(244,216,138,.5);
       border-radius: 50%;
-
       color: #f4d88a;
-
       font-size: 1.4rem;
     }
 
     .coming-video {
       position: absolute;
-
       bottom: 22px;
-
-      color:
-        rgba(255,249,238,.62);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.62);
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .68rem;
       font-weight: 900;
-
       letter-spacing: .12em;
-
       text-transform: uppercase;
     }
 
     .media-copy p {
       margin-bottom: 18px;
-
       color: #565b55;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
 
@@ -1827,91 +1333,52 @@
 
     .archive-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
+      grid-template-columns: repeat(4,1fr);
       gap: 18px;
     }
 
     .archive-card {
       min-height: 250px;
-
       display: flex;
-
       flex-direction: column;
-
       padding: 26px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.18);
-
+      border: 1px solid rgba(244,216,138,.18);
       border-radius: 22px;
-
-      background:
-        rgba(255,255,255,.035);
+      background: rgba(255,255,255,.035);
     }
 
     .archive-card span {
       margin-bottom: 14px;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .66rem;
       font-weight: 900;
-
       letter-spacing: .11em;
-
       text-transform: uppercase;
     }
 
     .archive-card h3 {
       margin-bottom: 10px;
-
       color: #fff9ee;
-
       font-size: 1.5rem;
     }
 
     .archive-card p {
       margin-bottom: 22px;
-
-      color:
-        rgba(255,249,238,.62);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.62);
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .87rem;
-
       line-height: 1.6;
     }
 
     .archive-link {
       width: fit-content;
-
       margin-top: auto;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .68rem;
       font-weight: 900;
-
       letter-spacing: .07em;
-
       text-transform: uppercase;
     }
 
@@ -1926,38 +1393,23 @@
 
     .safety-box {
       max-width: 950px;
-
       margin: 0 auto;
-
       padding: 36px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.16);
-
+      border: 1px solid rgba(16,60,37,.16);
       border-radius: 28px;
-
       background: #f8efdf;
     }
 
     .safety-box h3 {
       margin-bottom: 16px;
-
       color: #103c25;
-
       font-size: 2rem;
     }
 
     .safety-box p {
       margin-bottom: 14px;
-
       color: #555b54;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
 
@@ -1976,68 +1428,33 @@
 
     .share-box {
       max-width: 820px;
-
       margin: 0 auto;
-
-      padding:
-        52px
-        35px;
-
-      border:
-        1px solid
-        rgba(244,216,138,.20);
-
+      padding: 52px 35px;
+      border: 1px solid rgba(244,216,138,.20);
       border-radius: 30px;
-
-      background:
-        rgba(255,255,255,.035);
+      background: rgba(255,255,255,.035);
     }
 
     .share-box h2 {
       margin-bottom: 18px;
-
       color: #fff9ee;
-
-      font-size:
-        clamp(
-          2.7rem,
-          5vw,
-          5rem
-        );
-
+      font-size: clamp(2.7rem,5vw,5rem);
       line-height: 1;
     }
 
     .share-box p {
       max-width: 600px;
-
-      margin:
-        0 auto
-        28px;
-
-      color:
-        rgba(255,249,238,.7);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      margin: 0 auto 28px;
+      color: rgba(255,249,238,.7);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
 
     .share-status {
       min-height: 24px;
-
       margin-top: 14px;
-
       color: #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .72rem;
     }
 
@@ -2048,51 +1465,33 @@
 
     .sources-list {
       display: grid;
-
       gap: 14px;
-
       max-width: 980px;
-
       margin: 0 auto;
     }
 
     .source-card {
       padding: 22px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.12);
-
+      border: 1px solid rgba(16,60,37,.12);
       border-radius: 18px;
-
-      background:
-        rgba(255,255,255,.65);
+      background: rgba(255,255,255,.65);
     }
 
     .source-card strong {
       display: block;
-
       margin-bottom: 6px;
-
       color: #103c25;
     }
 
     .source-card p {
       color: #65665f;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .85rem;
-
       line-height: 1.6;
     }
 
     .source-card a {
       color: #8a6322;
-
       text-decoration: underline;
     }
 
@@ -2103,71 +1502,42 @@
 
     .next-botanical {
       display: grid;
-
-      grid-template-columns:
-        1fr
-        1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 18px;
     }
 
     .next-card {
       padding: 34px;
-
       border-radius: 24px;
-
-      border:
-        1px solid
-        rgba(16,60,37,.12);
-
+      border: 1px solid rgba(16,60,37,.12);
       background: #f8efdf;
     }
 
     .next-card span {
       display: block;
-
       margin-bottom: 9px;
-
       color: #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .67rem;
       font-weight: 900;
-
       letter-spacing: .11em;
-
       text-transform: uppercase;
     }
 
     .next-card strong {
       display: block;
-
       margin-bottom: 12px;
-
       color: #103c25;
-
       font-size: 2rem;
     }
 
     .next-card a {
       color: #103c25;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       font-size: .72rem;
       font-weight: 900;
-
       text-transform: uppercase;
-
-      border-bottom:
-        1px solid #b68a33;
+      border-bottom: 1px solid #b68a33;
     }
 
 
@@ -2176,57 +1546,33 @@
     ====================================================== */
 
     .visitor-gate {
-      padding:
-        100px
-        7vw;
-
+      padding: 100px 7vw;
       text-align: center;
-
       background:
         radial-gradient(
           circle at top,
           rgba(244,216,138,.11),
           transparent 30%
         ),
-        linear-gradient(
-          135deg,
-          #06170e,
-          #103c25
-        );
+        linear-gradient(135deg,#06170e,#103c25);
     }
 
     .visitor-gate-inner {
       max-width: 760px;
-
       margin: 0 auto;
     }
 
     .visitor-gate h2 {
       margin-bottom: 20px;
-
       color: #fff9ee;
-
-      font-size:
-        clamp(
-          3rem,
-          5vw,
-          5.2rem
-        );
-
+      font-size: clamp(3rem,5vw,5.2rem);
       line-height: 1;
     }
 
     .visitor-gate p {
       margin-bottom: 28px;
-
-      color:
-        rgba(255,249,238,.72);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      color: rgba(255,249,238,.72);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
 
@@ -2235,33 +1581,28 @@
        RESPONSIVE
     ====================================================== */
 
-    @media (
-      max-width: 1100px
-    ) {
+    @media (max-width: 1100px) {
 
       .glance-grid {
-        grid-template-columns:
-          repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
       }
 
       .uses-grid,
       .prep-grid,
       .archive-grid {
-        grid-template-columns:
-          repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
       }
 
-      .evidence-grid {
-        grid-template-columns:
-          1fr;
+      .evidence-grid,
+      .evidence-key,
+      .compare-grid.three-way {
+        grid-template-columns: 1fr;
       }
 
     }
 
 
-    @media (
-      max-width: 900px
-    ) {
+    @media (max-width: 900px) {
 
       .botanical-hero-content {
         width: 72%;
@@ -2272,43 +1613,34 @@
       .body-grid,
       .ritual-panel,
       .media-panel {
-        grid-template-columns:
-          1fr;
-      }
-
-      .journey-route {
-        grid-template-columns:
-          repeat(2,1fr);
-
-        gap: 36px;
-      }
-
-      .route-stop::after {
-        display: none;
+        grid-template-columns: 1fr;
       }
 
       .blend-grid {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
     }
 
 
-    @media (
-      max-width: 700px
-    ) {
+    @media (max-width: 700px) {
+
+      .botanical-progress {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .progress-dots {
+        flex-wrap: wrap;
+      }
 
       .botanical-hero {
         min-height: 720px;
-
         align-items: flex-end;
       }
 
       .botanical-hero-image {
-        object-position:
-          58%
-          center;
+        object-position: 58% center;
       }
 
       .botanical-hero-overlay {
@@ -2323,27 +1655,16 @@
 
       .botanical-hero-content {
         width: 100%;
-
-        padding:
-          250px
-          22px
-          58px;
+        padding: 250px 22px 58px;
       }
 
       .botanical-hero h1 {
-        font-size:
-          clamp(
-            4.2rem,
-            20vw,
-            6rem
-          );
+        font-size: clamp(4.2rem,20vw,6rem);
       }
 
       .botanical-section,
       .visitor-gate {
-        padding:
-          70px
-          22px;
+        padding: 70px 22px;
       }
 
       .glance-grid,
@@ -2351,30 +1672,29 @@
       .prep-grid,
       .archive-grid,
       .compare-grid,
-      .next-botanical {
-        grid-template-columns:
-          1fr;
+      .next-botanical,
+      .home-ritual-meta {
+        grid-template-columns: 1fr;
       }
 
       .journey-board {
-        padding:
-          38px
-          22px;
+        padding: 30px 18px;
       }
 
-      .journey-route {
-        grid-template-columns:
-          1fr;
+      .heritage-map {
+        overflow-x: auto;
+      }
+
+      .heritage-map svg {
+        min-width: 820px;
       }
 
       .ritual-panel {
-        padding:
-          30px;
+        padding: 30px;
       }
 
       .ritual-steps {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
       .body-visual {
@@ -2493,6 +1813,37 @@
   </nav>
 
 
+  <!-- ======================================================
+       BOTANICAL PROGRESS
+  ======================================================= -->
+
+  <div class="botanical-progress-wrap member-only">
+
+    <div class="botanical-progress">
+
+      <span class="progress-label">
+        Botanical 01 of 08 • Ginger
+      </span>
+
+      <div
+        class="progress-dots"
+        aria-label="Botanical collection progress"
+      >
+        <span class="progress-dot active">01</span>
+        <span class="progress-dot">02</span>
+        <span class="progress-dot">03</span>
+        <span class="progress-dot">04</span>
+        <span class="progress-dot">05</span>
+        <span class="progress-dot">06</span>
+        <span class="progress-dot">07</span>
+        <span class="progress-dot">08</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
   <main>
 
 
@@ -2544,14 +1895,15 @@
             class="btn btn-primary member-only"
             href="#know-the-root"
           >
-            Explore Ginger
+            Discover Its Roots ↓
           </a>
 
           <a
-            class="btn btn-secondary member-only"
+            class="btn btn-secondary member-only field-guide-download"
             href="/downloads/rootz-field-guide-001.pdf"
+            download
           >
-            Field Guide 001
+            Download Field Guide 001
           </a>
 
           <a
@@ -2716,10 +2068,11 @@
               </p>
 
               <p>
-                Today it is cultivated throughout many tropical
-                regions and has become deeply embedded in food,
-                drink and herbal traditions far beyond its
-                earliest Asian range.
+                Kew records <em>Zingiber officinale</em> as native
+                from the Eastern Himalaya to south-central China.
+                Centuries of cultivation and exchange have since
+                made ginger part of food and plant traditions
+                across tropical regions worldwide.
               </p>
 
               <blockquote class="editorial-quote">
@@ -2792,7 +2145,8 @@
               <p>
                 Ginger is widely associated with preparations
                 used for nausea and unsettled stomachs.
-                This is also one of its better-studied areas
+                Nausea — particularly pregnancy-related nausea —
+                is also one of ginger's better-studied areas
                 in modern clinical research.
               </p>
 
@@ -2838,8 +2192,8 @@
 
               <p>
                 Its pungent heat has made ginger a familiar
-                ingredient in warming teas, tonics,
-                culinary drinks and seasonal preparations.
+                ingredient in warming teas, culinary drinks
+                and seasonal preparations.
               </p>
 
               <span class="tradition-label">
@@ -2860,10 +2214,10 @@
               </h3>
 
               <p>
-                Ginger has a history of traditional use around
+                Ginger has been used traditionally around
                 menstrual discomfort and has also been studied
-                clinically, although evidence varies by preparation
-                and dose.
+                clinically. Evidence depends on the preparation,
+                dose and study population.
               </p>
 
               <span class="tradition-label">
@@ -2918,23 +2272,23 @@
               <p>
                 Ginger did not originate in the Caribbean or Africa.
                 Its botanical history begins in Asia, but centuries
-                of cultivation, trade, migration and cultural exchange
-                carried it far beyond its earliest range.
+                of cultivation, trade and cultural exchange carried
+                it far beyond its native range.
               </p>
 
               <p>
-                It became established across tropical Africa
-                and the Caribbean, including Jamaica, where ginger
-                developed an especially strong agricultural,
-                culinary and beverage identity.
+                It became cultivated across tropical Africa
+                and the Caribbean. Kew specifically records
+                commercial cultivation in tropical Africa
+                and highlights Jamaica within the Caribbean.
               </p>
 
               <p>
                 Across Caribbean communities, ginger appears
                 in teas, juices, cooking, seasonal drinks and
-                family herbal preparations. Its modern role is
-                therefore not simply imported botanical history:
-                it is part of living regional food culture.
+                household herbal traditions. Its modern role is
+                therefore more than imported botanical history:
+                it forms part of living regional food culture.
               </p>
 
             </div>
@@ -2949,8 +2303,8 @@
                 </strong>
 
                 <p>
-                  Ginger became cultivated across tropical Africa
-                  and incorporated into local culinary and
+                  Ginger is cultivated across tropical Africa
+                  and has been incorporated into culinary and
                   traditional plant practices.
                 </p>
 
@@ -2964,8 +2318,8 @@
 
                 <p>
                   Ginger is established within Caribbean food,
-                  beverage and household herbal traditions,
-                  alongside other culturally important plants.
+                  drink and household plant traditions alongside
+                  other culturally important botanicals.
                 </p>
 
               </div>
@@ -2977,8 +2331,8 @@
                 </strong>
 
                 <p>
-                  Jamaica became particularly associated
-                  with ginger cultivation and strong,
+                  Jamaica is particularly associated with
+                  commercial ginger cultivation and strongly
                   aromatic ginger products.
                 </p>
 
@@ -3015,9 +2369,9 @@
 
             <p>
               Ginger's historical movement was complex,
-              with multiple trade and cultivation routes.
-              This map shows the broad cultural journey rather
-              than claiming one single chronological path.
+              involving multiple cultivation and trade networks.
+              This map shows a broad cultural journey rather than
+              claiming one single chronological route.
             </p>
 
           </div>
@@ -3025,132 +2379,198 @@
 
           <div class="journey-board">
 
-            <div class="journey-map">
+            <div class="heritage-map">
 
-
-              <!-- Decorative abstract world map -->
-
-              <div
-                class="map-world"
-                aria-hidden="true"
+              <svg
+                viewBox="0 0 1100 470"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Interpretive map showing ginger's broad cultural journey from its Asian native range through long-distance trade, tropical Africa and the Caribbean"
               >
 
-                <svg
-                  viewBox="0 0 1000 420"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <path
+                  class="map-region"
+                  d="M70 120 C155 60 260 70 330 115 C370 140 390 180 355 207 C316 238 266 213 232 250 C195 290 134 278 102 236 C72 198 40 157 70 120Z"
+                />
+
+                <path
+                  class="map-region"
+                  d="M420 96 C488 52 585 60 636 104 C676 137 666 170 705 185 C745 200 812 174 864 205 C916 235 920 293 882 319 C838 349 786 318 743 333 C691 352 679 403 621 396 C566 389 565 336 520 313 C479 293 431 306 399 268 C359 221 369 133 420 96Z"
+                />
+
+                <path
+                  class="map-region"
+                  d="M917 205 C956 180 1011 183 1038 211 C1062 236 1054 277 1023 291 C996 303 964 284 938 295 C914 305 889 284 889 257 C889 236 899 216 917 205Z"
+                />
+
+                <path
+                  class="map-route"
+                  d="M760 170 C675 150 610 165 535 205 C454 249 389 267 315 266 C239 264 185 249 135 232"
+                />
+
+                <path
+                  class="map-route"
+                  d="M535 205 C589 229 624 253 648 300"
+                />
+
+                <path
+                  class="map-route"
+                  d="M648 300 C758 311 836 297 943 257"
+                />
+
+
+                <circle
+                  class="map-stop"
+                  cx="760"
+                  cy="170"
+                  r="20"
+                />
+
+                <text
+                  class="map-number"
+                  x="760"
+                  y="174"
+                  text-anchor="middle"
                 >
+                  01
+                </text>
 
-                  <path
-                    d="M76 114
-                    C130 68 218 52 285 82
-                    C323 99 338 126 317 149
-                    C291 176 249 171 226 197
-                    C195 231 206 275 168 290
-                    C119 310 79 266 71 219
-                    C64 177 42 145 76 114Z"
-                    fill="#F4D88A"
-                  />
+                <text
+                  class="map-label"
+                  x="760"
+                  y="135"
+                  text-anchor="middle"
+                >
+                  Asian native range
+                </text>
 
-                  <path
-                    d="M438 84
-                    C489 55 565 64 606 92
-                    C643 117 639 145 678 158
-                    C720 173 774 153 820 176
-                    C864 198 889 246 857 274
-                    C816 309 749 270 700 290
-                    C660 307 637 351 590 338
-                    C538 323 555 271 515 245
-                    C480 223 435 231 412 196
-                    C386 157 400 106 438 84Z"
-                    fill="#F4D88A"
-                  />
-
-                </svg>
-
-              </div>
+                <text
+                  class="map-small"
+                  x="760"
+                  y="151"
+                  text-anchor="middle"
+                >
+                  Eastern Himalaya to south-central China
+                </text>
 
 
-              <div class="journey-route">
+                <circle
+                  class="map-stop"
+                  cx="535"
+                  cy="205"
+                  r="20"
+                />
+
+                <text
+                  class="map-number"
+                  x="535"
+                  y="209"
+                  text-anchor="middle"
+                >
+                  02
+                </text>
+
+                <text
+                  class="map-label"
+                  x="535"
+                  y="168"
+                  text-anchor="middle"
+                >
+                  Trade & cultivation
+                </text>
+
+                <text
+                  class="map-small"
+                  x="535"
+                  y="184"
+                  text-anchor="middle"
+                >
+                  Multiple routes over centuries
+                </text>
 
 
-                <div class="route-stop">
+                <circle
+                  class="map-stop"
+                  cx="648"
+                  cy="300"
+                  r="20"
+                />
 
-                  <div class="route-dot">
-                    01
-                  </div>
+                <text
+                  class="map-number"
+                  x="648"
+                  y="304"
+                  text-anchor="middle"
+                >
+                  03
+                </text>
 
-                  <strong>
-                    Asia
-                  </strong>
+                <text
+                  class="map-label"
+                  x="648"
+                  y="342"
+                  text-anchor="middle"
+                >
+                  Tropical Africa
+                </text>
 
-                  <span>
-                    Earliest botanical and cultivation history
-                  </span>
-
-                </div>
-
-
-                <div class="route-stop">
-
-                  <div class="route-dot">
-                    02
-                  </div>
-
-                  <strong>
-                    Trade Routes
-                  </strong>
-
-                  <span>
-                    Movement through long-distance exchange
-                  </span>
-
-                </div>
-
-
-                <div class="route-stop">
-
-                  <div class="route-dot">
-                    03
-                  </div>
-
-                  <strong>
-                    Africa
-                  </strong>
-
-                  <span>
-                    Tropical cultivation and local adoption
-                  </span>
-
-                </div>
+                <text
+                  class="map-small"
+                  x="648"
+                  y="358"
+                  text-anchor="middle"
+                >
+                  Cultivation and local adoption
+                </text>
 
 
-                <div class="route-stop">
+                <circle
+                  class="map-stop"
+                  cx="943"
+                  cy="257"
+                  r="20"
+                />
 
-                  <div class="route-dot">
-                    04
-                  </div>
+                <text
+                  class="map-number"
+                  x="943"
+                  y="261"
+                  text-anchor="middle"
+                >
+                  04
+                </text>
 
-                  <strong>
-                    Caribbean
-                  </strong>
+                <text
+                  class="map-label"
+                  x="943"
+                  y="218"
+                  text-anchor="middle"
+                >
+                  Caribbean
+                </text>
 
-                  <span>
-                    Food, drink, herbal tradition and Jamaica
-                  </span>
+                <text
+                  class="map-small"
+                  x="943"
+                  y="234"
+                  text-anchor="middle"
+                >
+                  Food, drink, herbal culture
+                </text>
 
-                </div>
-
-
-              </div>
+              </svg>
 
             </div>
 
 
             <p class="journey-caption">
-              This is an interpretive heritage overview,
-              not a claim that ginger moved through one
-              single route or at one single moment in history.
+              Kew records <em>Zingiber officinale</em> as native from
+              the Eastern Himalaya to south-central China and widely
+              cultivated across tropical Africa and the Caribbean,
+              including Jamaica. The route shown here is deliberately
+              interpretive: ginger moved through multiple trade,
+              cultivation and migration networks rather than one
+              single documented path.
             </p>
 
           </div>
@@ -3179,10 +2599,10 @@
             </h2>
 
             <p>
-              This does not show organs that ginger
-              “treats.” It highlights body systems and
-              outcomes that have been investigated in
-              human or biomedical research.
+              This does not show organs that ginger “treats.”
+              It highlights body systems and outcomes that
+              have been investigated in human or biomedical
+              research.
             </p>
 
           </div>
@@ -3192,9 +2612,6 @@
 
 
             <div class="body-visual">
-
-
-              <!-- Stylised anatomical silhouette -->
 
               <svg
                 class="body-svg"
@@ -3210,11 +2627,7 @@
                   opacity=".75"
                 >
 
-                  <circle
-                    cx="130"
-                    cy="53"
-                    r="34"
-                  />
+                  <circle cx="130" cy="53" r="34" />
 
                   <path
                     d="
@@ -3274,8 +2687,6 @@
                 </g>
 
 
-                <!-- digestive system -->
-
                 <g
                   fill="none"
                   stroke="#F4D88A"
@@ -3320,7 +2731,6 @@
                 title="Metabolic research"
               ></span>
 
-
             </div>
 
 
@@ -3339,7 +2749,7 @@
 
                 <p>
                   Nausea and vomiting are among the most
-                  extensively researched clinical uses of ginger,
+                  researched clinical areas for ginger,
                   although results depend on the cause of nausea,
                   dose and preparation.
                 </p>
@@ -3361,7 +2771,7 @@
                   Ginger has been investigated in research
                   involving pain, muscle soreness and
                   osteoarthritis-related outcomes.
-                  Evidence is not equivalent to a treatment claim.
+                  Research is not equivalent to a treatment claim.
                 </p>
 
               </article>
@@ -3380,7 +2790,7 @@
                 <p>
                   Researchers have studied ginger in relation
                   to glucose, lipids and inflammatory biomarkers,
-                  but evidence quality varies considerably.
+                  but evidence quality and effect sizes vary.
                 </p>
 
               </article>
@@ -3415,10 +2825,10 @@
 
             <p>
               Ginger has been investigated across many
-              outcomes. Some areas have more convincing
-              evidence than others, and results cannot
-              automatically be transferred between food,
-              tea, extracts and supplements.
+              outcomes. Some areas have stronger evidence
+              than others, and findings from supplements or
+              extracts cannot automatically be transferred
+              to a normal cup of tea.
             </p>
 
           </div>
@@ -3438,10 +2848,10 @@
               </h3>
 
               <p>
-                Clinical research suggests ginger supplements
-                may reduce the severity of nausea during pregnancy.
-                Pregnancy still warrants individual medical advice,
-                particularly for supplement use.
+                Research reviews suggest ginger supplements
+                may help reduce the severity of nausea during
+                pregnancy. Pregnancy still warrants individual
+                healthcare advice, particularly for supplements.
               </p>
 
             </article>
@@ -3458,9 +2868,10 @@
               </h3>
 
               <p>
-                Ginger has also been studied for postoperative,
-                chemotherapy-related and motion-related nausea,
-                but findings are not uniformly positive.
+                Ginger has also been investigated for
+                postoperative, chemotherapy-related and
+                motion-related nausea. Findings differ across
+                conditions and study designs.
               </p>
 
             </article>
@@ -3477,14 +2888,61 @@
               </h3>
 
               <p>
-                Reviews report research into blood pressure,
-                lipids, glucose, pain and inflammatory markers,
-                but evidence strength ranges from low to moderate
-                and varies by outcome.
+                Reviews report research into glucose control,
+                lipids, pain and inflammatory markers.
+                Evidence strength varies substantially by outcome.
               </p>
 
             </article>
 
+
+          </div>
+
+
+          <div class="evidence-key">
+
+            <div class="evidence-key-item">
+
+              <strong>
+                Better studied
+              </strong>
+
+              <p>
+                Supported by multiple human studies or reviews,
+                with comparatively stronger evidence for the
+                specific outcome described.
+              </p>
+
+            </div>
+
+
+            <div class="evidence-key-item">
+
+              <strong>
+                Mixed / context dependent
+              </strong>
+
+              <p>
+                Human research exists, but results vary by
+                population, preparation, dose or study design.
+              </p>
+
+            </div>
+
+
+            <div class="evidence-key-item">
+
+              <strong>
+                Emerging / variable
+              </strong>
+
+              <p>
+                An active research area where findings are
+                interesting but not strong enough for firm
+                conclusions.
+              </p>
+
+            </div>
 
           </div>
 
@@ -3494,7 +2952,7 @@
 
 
       <!-- ==================================================
-           TRADITION VS EVIDENCE
+           THREE LENSES
       =================================================== -->
 
       <section class="botanical-section section-light">
@@ -3504,17 +2962,24 @@
           <div class="botanical-heading center">
 
             <p class="botanical-kicker">
-              07 • Two Ways Of Knowing
+              07 • Three Ways Of Understanding
             </p>
 
             <h2>
-              Tradition and evidence are not the same thing.
+              Tradition.
+              Evidence.
+              Ritual.
             </h2>
+
+            <p>
+              Three different lenses — each valuable,
+              but never interchangeable.
+            </p>
 
           </div>
 
 
-          <div class="compare-grid">
+          <div class="compare-grid three-way">
 
 
             <div class="compare-card compare-tradition">
@@ -3557,8 +3022,8 @@
               <p>
                 Clinical research evaluates specific preparations,
                 doses, populations and outcomes. Results from
-                supplements or extracts do not automatically describe
-                what a normal cup of herbal tea will do.
+                supplements or extracts do not automatically
+                describe what a cup of herbal tea will do.
               </p>
 
               <ul>
@@ -3567,6 +3032,33 @@
                 <li>Preparation matters</li>
                 <li>Population matters</li>
                 <li>Evidence quality matters</li>
+              </ul>
+
+            </div>
+
+
+            <div class="compare-card compare-ritual">
+
+              <span>
+                RastaRoots Ritual
+              </span>
+
+              <h3>
+                How we bring the plant into the cup.
+              </h3>
+
+              <p>
+                RastaRoots uses botanical knowledge to inform
+                flavour, preparation and ritual — not to turn
+                a tea into a medical treatment.
+              </p>
+
+              <ul>
+                <li>Know the ingredient</li>
+                <li>Understand the flavour</li>
+                <li>Respect its heritage</li>
+                <li>Brew with intention</li>
+                <li>Keep claims evidence-led</li>
               </ul>
 
             </div>
@@ -3633,7 +3125,7 @@
               </h3>
 
               <p>
-                Drying concentrates the spice character
+                Drying changes the spice character
                 and creates a different aromatic profile
                 from fresh ginger.
               </p>
@@ -3672,12 +3164,73 @@
 
               <p>
                 Ginger remains as much a culinary ingredient
-                as a herbal one — used across sweet,
+                as a herbal one — appearing across sweet,
                 savoury and beverage traditions.
               </p>
 
             </article>
 
+
+          </div>
+
+
+          <div class="home-ritual-card">
+
+            <h3>
+              Simple Ginger Infusion
+            </h3>
+
+            <p>
+              A straightforward food-style preparation for
+              exploring ginger's aroma and flavour at home.
+              This is a culinary ritual, not a medical dose.
+            </p>
+
+            <div class="home-ritual-meta">
+
+              <div>
+
+                <strong>
+                  Prepare
+                </strong>
+
+                <span>
+                  Thinly slice or lightly crush a small piece
+                  of fresh ginger.
+                </span>
+
+              </div>
+
+
+              <div>
+
+                <strong>
+                  Steep
+                </strong>
+
+                <span>
+                  Cover with freshly boiled water and allow
+                  the flavour to develop to your preference.
+                </span>
+
+              </div>
+
+
+              <div>
+
+                <strong>
+                  Make It Yours
+                </strong>
+
+                <span>
+                  Add lemon or honey for flavour if you wish.
+                  Sip slowly and notice the aroma and heat.
+                </span>
+
+              </div>
+
+
+            </div>
 
           </div>
 
@@ -3805,6 +3358,12 @@
             <h2>
               Found inside two rituals.
             </h2>
+
+            <p>
+              Ginger's role here is flavour and botanical
+              character — not a promise that the finished tea
+              reproduces effects seen in supplement studies.
+            </p>
 
           </div>
 
@@ -3955,7 +3514,7 @@
             </h2>
 
             <p>
-              The Field Archive will grow alongside the
+              The Field Archive grows alongside the
               digital Herbal Library.
             </p>
 
@@ -4002,8 +3561,9 @@
               </h3>
 
               <p>
-                A concise printable reference for
-                botanical identity, heritage and evidence.
+                A concise printable reference covering
+                botanical identity, heritage, evidence,
+                preparation and safety.
               </p>
 
               <span class="archive-link">
@@ -4025,7 +3585,7 @@
 
               <p>
                 A downloadable visual exploring ginger's
-                broad movement and cultural adoption.
+                broad movement, cultivation and cultural adoption.
               </p>
 
               <span class="archive-link">
@@ -4092,15 +3652,15 @@
             </h3>
 
             <p>
-              Ginger used in normal food and drink is not
-              automatically equivalent to taking concentrated
-              extracts or supplements.
+              Ginger used in ordinary food and drink is not
+              automatically equivalent to concentrated extracts
+              or dietary supplements used in clinical studies.
             </p>
 
             <p>
-              Reported side effects of oral ginger can include
+              NCCIH notes that oral ginger can cause effects such as
               abdominal discomfort, heartburn, diarrhoea,
-              and mouth or throat irritation.
+              and mouth or throat irritation in some people.
             </p>
 
             <p>
@@ -4109,7 +3669,7 @@
                 taking medication, preparing for surgery
                 or managing a medical condition,
               </strong>
-              speak to an appropriate healthcare professional
+              speak with an appropriate healthcare professional
               before using concentrated herbal supplements.
             </p>
 
@@ -4154,7 +3714,7 @@
               id="shareBotanical"
               type="button"
             >
-              Share Ginger
+              Share This Entry
             </button>
 
             <div
@@ -4189,7 +3749,7 @@
             </h2>
 
             <p>
-              Rootz Library entries are designed to be updated
+              Rootz Library entries are designed to evolve
               as stronger evidence and better historical
               documentation become available.
             </p>
@@ -4231,7 +3791,8 @@
               <p>
                 Plants of the World Online:
                 Zingiber officinale Roscoe.
-                Botanical identity and distribution.
+                Accepted botanical identity, native range
+                and global cultivation information.
                 <a
                   href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:798372-1"
                   target="_blank"
@@ -4339,7 +3900,7 @@
                   font-size:.75rem;
                 "
               >
-                Full entry coming next
+                Botanical 02 • Full entry coming next
               </span>
 
             </div>
@@ -4412,10 +3973,6 @@
 
   <script>
 
-    /* ======================================================
-       NATIVE SHARE
-    ======================================================= */
-
     const shareButton =
       document.getElementById(
         "shareBotanical"
@@ -4449,9 +4006,7 @@
 
           try {
 
-            if (
-              navigator.share
-            ) {
+            if (navigator.share) {
 
               await navigator.share(
                 shareData
@@ -4528,10 +4083,6 @@
     }
 
 
-    /* ======================================================
-       MEMBER BOTANICAL VIEW
-    ======================================================= */
-
     if (
       document.documentElement
         .classList
@@ -4559,10 +4110,6 @@
 
     }
 
-
-    /* ======================================================
-       FIELD GUIDE TRACKING
-    ======================================================= */
 
     document
       .querySelectorAll(
