@@ -60,8 +60,63 @@
 
   <link
     rel="stylesheet"
-    href="/style.css?v=610"
+    href="/style.css?v=611"
   />
+
+
+  <!-- ======================================================
+       ROOTZ LIBRARY MEMBER ACCESS
+
+       Mailchimp only sends successful subscribers to this page.
+
+       When someone arrives here we remember their membership
+       in this browser so they do not need to enter their email
+       every time they return to the Herbal Library.
+  ======================================================= -->
+
+  <script>
+    (function () {
+
+      try {
+
+        const alreadyMember =
+          localStorage.getItem("rootzLibraryMember") === "true";
+
+        localStorage.setItem(
+          "rootzLibraryMember",
+          "true"
+        );
+
+        localStorage.setItem(
+          "rootzLibraryAccess",
+          "granted"
+        );
+
+        if (!alreadyMember) {
+
+          localStorage.setItem(
+            "rootzLibraryJoinedAt",
+            new Date().toISOString()
+          );
+
+        }
+
+        localStorage.setItem(
+          "rootzLibraryLastVisit",
+          new Date().toISOString()
+        );
+
+      } catch (error) {
+
+        console.warn(
+          "Rootz Library member status could not be saved.",
+          error
+        );
+
+      }
+
+    })();
+  </script>
 
 
   <!-- ======================================================
@@ -74,7 +129,9 @@
   ></script>
 
   <script>
-    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer =
+      window.dataLayer || [];
 
     function gtag() {
       dataLayer.push(arguments);
@@ -82,21 +139,31 @@
 
     gtag("js", new Date());
 
-    gtag("config", "G-1XKF37N3P9", {
-      linker: {
-        domains: [
-          "www.rastarootslife.com",
-          "rastarootslife.com",
-          "shop.rastarootslife.com"
-        ]
+    gtag(
+      "config",
+      "G-1XKF37N3P9",
+      {
+        linker: {
+          domains: [
+            "www.rastarootslife.com",
+            "rastarootslife.com",
+            "shop.rastarootslife.com"
+          ]
+        }
       }
-    });
+    );
 
-    gtag("event", "rootz_library_welcome", {
-      event_category: "membership",
-      event_label: "Rootz Library",
-      page_location: window.location.href
-    });
+    gtag(
+      "event",
+      "rootz_library_welcome",
+      {
+        event_category: "membership",
+        event_label: "Rootz Library",
+        page_location:
+          window.location.href
+      }
+    );
+
   </script>
 
 
@@ -163,6 +230,7 @@
     .welcome-hero-background {
       position: absolute;
       inset: 0;
+
       z-index: -3;
 
       width: 100%;
@@ -175,6 +243,7 @@
     .welcome-hero-overlay {
       position: absolute;
       inset: 0;
+
       z-index: -2;
 
       background:
@@ -222,17 +291,21 @@
         clamp(4rem, 7vw, 7.6rem);
 
       line-height: 0.9;
+
       letter-spacing: -0.055em;
     }
 
     .member-status {
       display: inline-flex;
+
       align-items: center;
+
       gap: 8px;
 
       width: fit-content;
 
       margin-bottom: 28px;
+
       padding: 10px 16px;
 
       border:
@@ -280,6 +353,7 @@
         sans-serif;
 
       font-size: 1.08rem;
+
       line-height: 1.82;
     }
 
@@ -297,12 +371,15 @@
         sans-serif;
 
       font-size: 0.76rem;
+
       line-height: 1.6;
     }
 
     .welcome-hero .hero-actions {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 12px;
     }
 
@@ -336,6 +413,7 @@
       max-width: 1180px;
 
       display: grid;
+
       grid-template-columns:
         repeat(4, 1fr);
 
@@ -414,8 +492,12 @@
       max-width: 1180px;
 
       display: grid;
-      grid-template-columns: 52% 48%;
+
+      grid-template-columns:
+        52% 48%;
+
       gap: 74px;
+
       align-items: center;
 
       margin: 0 auto;
@@ -430,6 +512,7 @@
         clamp(3rem, 5vw, 5.5rem);
 
       line-height: 0.98;
+
       letter-spacing: -0.045em;
     }
 
@@ -446,11 +529,13 @@
         sans-serif;
 
       font-size: 1.04rem;
+
       line-height: 1.8;
     }
 
     .resource-list {
       display: grid;
+
       grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
@@ -461,7 +546,9 @@
 
     .resource-list div {
       display: flex;
+
       gap: 10px;
+
       align-items: flex-start;
 
       color: #103c25;
@@ -472,6 +559,7 @@
         sans-serif;
 
       font-size: 0.94rem;
+
       line-height: 1.55;
     }
 
@@ -481,8 +569,11 @@
 
     .resource-actions {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 12px;
+
       align-items: center;
 
       margin-top: 10px;
@@ -503,6 +594,7 @@
         sans-serif;
 
       font-size: 0.76rem;
+
       line-height: 1.5;
     }
 
@@ -517,7 +609,9 @@
       position: relative;
 
       display: flex;
+
       flex-direction: column;
+
       justify-content: flex-end;
 
       overflow: hidden;
@@ -551,6 +645,7 @@
       content: "";
 
       position: absolute;
+
       inset: 22px;
 
       z-index: -1;
@@ -565,7 +660,9 @@
       content: "HERBAL LIBRARY";
 
       position: absolute;
+
       top: 36px;
+
       right: 38px;
 
       color:
@@ -631,14 +728,19 @@
 
     .guide-cover-number {
       position: absolute;
+
       top: 44px;
+
       left: 44px;
 
       width: 58px;
+
       height: 58px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       border:
@@ -673,6 +775,7 @@
 
     .dashboard-grid {
       display: grid;
+
       grid-template-columns:
         repeat(4, 1fr);
 
@@ -685,6 +788,7 @@
       min-height: 310px;
 
       display: flex;
+
       flex-direction: column;
 
       padding: 30px;
@@ -757,6 +861,7 @@
         sans-serif;
 
       font-size: 0.94rem;
+
       line-height: 1.7;
     }
 
@@ -764,6 +869,7 @@
       width: fit-content;
 
       margin-top: auto;
+
       padding-bottom: 5px;
 
       border-bottom:
@@ -828,6 +934,7 @@
         clamp(3rem, 5vw, 5.4rem);
 
       line-height: 0.98;
+
       letter-spacing: -0.045em;
     }
 
@@ -845,6 +952,7 @@
         sans-serif;
 
       font-size: 1.05rem;
+
       line-height: 1.82;
     }
 
@@ -852,6 +960,7 @@
       max-width: 760px;
 
       margin: 36px auto 0;
+
       padding: 30px;
 
       border:
@@ -900,6 +1009,7 @@
         clamp(3rem, 5vw, 5.4rem);
 
       line-height: 0.98;
+
       letter-spacing: -0.045em;
     }
 
@@ -918,6 +1028,7 @@
         sans-serif;
 
       font-size: 1.05rem;
+
       line-height: 1.8;
     }
 
@@ -934,6 +1045,7 @@
       }
 
     }
+
 
     @media (max-width: 980px) {
 
@@ -959,6 +1071,7 @@
       }
 
     }
+
 
     @media (max-width: 780px) {
 
@@ -999,12 +1112,14 @@
       .welcome-hero .hero-actions,
       .resource-actions {
         flex-direction: column;
+
         align-items: stretch;
       }
 
       .welcome-hero .hero-actions .btn,
       .resource-actions .btn {
         width: 100%;
+
         justify-content: center;
       }
 
@@ -1083,11 +1198,14 @@
       href="/index.html"
       aria-label="RastaRoots Life home"
     >
+
       <img
         src="/assets/rastaroots-header-logo.png?v=600"
         alt="RastaRoots Life logo"
       />
+
     </a>
+
 
     <button
       class="menu-toggle"
@@ -1095,22 +1213,46 @@
       aria-expanded="false"
       aria-controls="mobileNav"
     >
+
       <span></span>
       <span></span>
       <span></span>
+
     </button>
+
 
     <nav
       class="main-nav"
       aria-label="Main navigation"
     >
-      <a href="/index.html">Home</a>
-      <a href="/shop.html">Shop</a>
-      <a href="/founder.html">Founder</a>
-      <a href="/tea-ritual.html">Tea Ritual</a>
-      <a href="/herbal-library.html">Herbal Library</a>
-      <a href="/community.html">Community</a>
-      <a href="/faq.html">FAQ</a>
+
+      <a href="/index.html">
+        Home
+      </a>
+
+      <a href="/shop.html">
+        Shop
+      </a>
+
+      <a href="/founder.html">
+        Founder
+      </a>
+
+      <a href="/tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="/herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="/community.html">
+        Community
+      </a>
+
+      <a href="/faq.html">
+        FAQ
+      </a>
 
       <a
         class="nav-cta"
@@ -1118,6 +1260,7 @@
       >
         Pre-Order
       </a>
+
     </nav>
 
   </header>
@@ -1132,20 +1275,45 @@
     id="mobileNav"
     aria-label="Mobile navigation"
   >
-    <a href="/index.html">Home</a>
-    <a href="/shop.html">Shop</a>
-    <a href="/founder.html">Founder</a>
-    <a href="/tea-ritual.html">Tea Ritual</a>
-    <a href="/herbal-library.html">Herbal Library</a>
-    <a href="/community.html">Community</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/contact.html">Contact</a>
+
+    <a href="/index.html">
+      Home
+    </a>
+
+    <a href="/shop.html">
+      Shop
+    </a>
+
+    <a href="/founder.html">
+      Founder
+    </a>
+
+    <a href="/tea-ritual.html">
+      Tea Ritual
+    </a>
+
+    <a href="/herbal-library.html">
+      Herbal Library
+    </a>
+
+    <a href="/community.html">
+      Community
+    </a>
+
+    <a href="/faq.html">
+      FAQ
+    </a>
+
+    <a href="/contact.html">
+      Contact
+    </a>
 
     <a
       href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
     >
       Pre-Order
     </a>
+
   </nav>
 
 
@@ -1160,11 +1328,13 @@
 
       <img
         class="welcome-hero-background"
-        src="/assets/library-welcome-hero.png?v=610"
+        src="/assets/library-welcome-hero.png?v=611"
         alt="Welcome to the RastaRoots Rootz Library"
       />
 
+
       <div class="welcome-hero-overlay"></div>
+
 
       <div class="welcome-hero-content">
 
@@ -1172,20 +1342,28 @@
           RastaRoots Herbal Library
         </p>
 
+
         <h1>
           Welcome to<br />
           the Rootz Library.
         </h1>
 
+
         <span class="member-status">
           Founding Member
         </span>
 
+
         <p class="welcome-hero-text">
-          You're in. Your Rootz Library journey begins with Field Guide 001
-          and continues through herbal knowledge, Tea Ritual, culture,
-          founder stories and the five RastaRoots blends.
+
+          You're in.
+
+          Your Rootz Library journey begins with Field Guide 001
+          and continues through herbal knowledge, Tea Ritual,
+          culture, founder stories and the five RastaRoots blends.
+
         </p>
+
 
         <div class="hero-actions">
 
@@ -1195,22 +1373,31 @@
             download="RastaRoots-Field-Guide-001.pdf"
             data-download-location="hero"
           >
+
             Download Field Guide 001
+
           </a>
+
 
           <a
             class="btn btn-secondary"
-            href="/herbal-library.html"
+            href="/herbal-library.html#herbs"
           >
-            Explore The Herbal Library
+
+            Enter The Herbal Library
+
           </a>
 
         </div>
 
+
         <p class="welcome-note">
-          Your membership is free. New Field Guides, herbal articles and
-          future Rootz Library releases will be sent to the email address
-          you joined with.
+
+          Your membership is free.
+
+          This browser will now remember your Rootz Library
+          membership so you can return without signing up again.
+
         </p>
 
       </div>
@@ -1229,25 +1416,58 @@
 
       <div class="member-start-inner">
 
-        <div class="member-start-item">
-          <strong>Field Guides</strong>
-          <span>Downloadable library editions</span>
-        </div>
 
         <div class="member-start-item">
-          <strong>Herbal Knowledge</strong>
-          <span>Tradition, flavour and research</span>
+
+          <strong>
+            Field Guides
+          </strong>
+
+          <span>
+            Downloadable library editions
+          </span>
+
         </div>
 
-        <div class="member-start-item">
-          <strong>Early Access</strong>
-          <span>Future releases and collections</span>
-        </div>
 
         <div class="member-start-item">
-          <strong>Rootz Community</strong>
-          <span>Stories, rituals and culture</span>
+
+          <strong>
+            Herbal Knowledge
+          </strong>
+
+          <span>
+            Tradition, flavour and research
+          </span>
+
         </div>
+
+
+        <div class="member-start-item">
+
+          <strong>
+            Early Access
+          </strong>
+
+          <span>
+            Future releases and collections
+          </span>
+
+        </div>
+
+
+        <div class="member-start-item">
+
+          <strong>
+            Rootz Community
+          </strong>
+
+          <span>
+            Stories, rituals and culture
+          </span>
+
+        </div>
+
 
       </div>
 
@@ -1272,19 +1492,28 @@
             Your First Resource
           </p>
 
+
           <h2>
             Field Guide 001 is ready.
           </h2>
 
-          <p>
-            The first publication from the RastaRoots Herbal Library introduces
-            eight botanicals at the heart of the Discovery Collection.
-          </p>
 
           <p>
-            Explore flavour, origins, cultural context, preparation, traditional
-            knowledge and modern research — presented with respect for both
-            heritage and evidence.
+
+            The first publication from the RastaRoots Herbal Library
+            introduces eight botanicals at the heart of the
+            Discovery Collection.
+
+          </p>
+
+
+          <p>
+
+            Explore flavour, origins, cultural context,
+            preparation, traditional knowledge and modern
+            research — presented with respect for both heritage
+            and evidence.
+
           </p>
 
 
@@ -1344,8 +1573,11 @@
               download="RastaRoots-Field-Guide-001.pdf"
               data-download-location="resource"
             >
+
               Download Field Guide 001
+
             </a>
+
 
             <a
               class="btn btn-secondary field-guide-view"
@@ -1354,8 +1586,11 @@
               rel="noopener noreferrer"
               data-view-location="resource"
             >
+
               View In Browser
+
             </a>
+
 
             <small class="resource-help">
               PDF • 18 pages • Free for Rootz Library members
@@ -1385,8 +1620,11 @@
           </strong>
 
           <p>
-            The first Field Guide in a growing RastaRoots collection exploring
-            herbs, heritage, flavour, ritual and modern research.
+
+            The first Field Guide in a growing RastaRoots
+            collection exploring herbs, heritage, flavour,
+            ritual and modern research.
+
           </p>
 
         </div>
@@ -1403,6 +1641,7 @@
 
     <section class="member-dashboard">
 
+
       <div class="section-heading center-heading">
 
         <p class="section-kicker">
@@ -1414,8 +1653,10 @@
         </h2>
 
         <p>
-          Your membership connects the educational, cultural, ritual
-          and community sides of RastaRoots.
+
+          Your membership connects the educational,
+          cultural, ritual and community sides of RastaRoots.
+
         </p>
 
       </div>
@@ -1423,6 +1664,8 @@
 
       <div class="dashboard-grid">
 
+
+        <!-- HERBAL LIBRARY -->
 
         <article class="dashboard-card">
 
@@ -1435,19 +1678,26 @@
           </h3>
 
           <p>
-            Explore the first eight botanicals behind the five RastaRoots
-            rituals and follow the Library as new entries are published.
+
+            Explore the first eight botanicals behind the five
+            RastaRoots rituals and follow the Library as new
+            entries are published.
+
           </p>
 
           <a
             class="dashboard-link"
             href="/herbal-library.html#herbs"
           >
-            Explore The Herbs →
+
+            Enter The Herbal Library →
+
           </a>
 
         </article>
 
+
+        <!-- TEA RITUAL -->
 
         <article class="dashboard-card">
 
@@ -1460,19 +1710,25 @@
           </h3>
 
           <p>
-            Brew slowly, press play and turn preparation into an intentional
-            moment through tea, music and stillness.
+
+            Brew slowly, press play and turn preparation into an
+            intentional moment through tea, music and stillness.
+
           </p>
 
           <a
             class="dashboard-link"
             href="/tea-ritual.html"
           >
+
             Discover Tea Ritual →
+
           </a>
 
         </article>
 
+
+        <!-- FIVE RITUALS -->
 
         <article class="dashboard-card">
 
@@ -1485,19 +1741,26 @@
           </h3>
 
           <p>
-            Roots Fire, Bush Doctor, Empress Bloom, Iron Root and Cool Mind —
-            five herbal blends created for different moments of the day.
+
+            Roots Fire, Bush Doctor, Empress Bloom,
+            Iron Root and Cool Mind — five herbal blends
+            created for different moments of the day.
+
           </p>
 
           <a
             class="dashboard-link"
             href="/index.html#teas"
           >
+
             Meet The Five Blends →
+
           </a>
 
         </article>
 
+
+        <!-- FOUNDER -->
 
         <article class="dashboard-card">
 
@@ -1510,19 +1773,26 @@
           </h3>
 
           <p>
-            Discover why RastaRoots was created and the thinking behind a brand
-            built around roots, culture, nature and community.
+
+            Discover why RastaRoots was created and the thinking
+            behind a brand built around roots, culture,
+            nature and community.
+
           </p>
 
           <a
             class="dashboard-link"
             href="/founder.html"
           >
+
             Read The Founder Story →
+
           </a>
 
         </article>
 
+
+        <!-- GUARDIANS -->
 
         <article class="dashboard-card">
 
@@ -1535,19 +1805,26 @@
           </h3>
 
           <p>
-            Every blend carries its own Guardian — representing movement,
-            knowledge, growth, endurance and stillness.
+
+            Every blend carries its own Guardian —
+            representing movement, knowledge, growth,
+            endurance and stillness.
+
           </p>
 
           <a
             class="dashboard-link"
             href="/index.html#guardians"
           >
+
             Meet The Five Guardians →
+
           </a>
 
         </article>
 
+
+        <!-- COMMUNITY -->
 
         <article class="dashboard-card">
 
@@ -1560,19 +1837,26 @@
           </h3>
 
           <p>
-            Explore the long-term vision for a brand designed to grow beyond
-            product and support culture, wellbeing and community.
+
+            Explore the long-term vision for a brand designed
+            to grow beyond product and support culture,
+            wellbeing and community.
+
           </p>
 
           <a
             class="dashboard-link"
             href="/community.html"
           >
+
             Explore The Vision →
+
           </a>
 
         </article>
 
+
+        <!-- SHOP -->
 
         <article class="dashboard-card">
 
@@ -1585,19 +1869,26 @@
           </h3>
 
           <p>
-            Experience the eight botanicals across five signature blends in
-            the first RastaRoots Founder Discovery Collection.
+
+            Experience the eight botanicals across five
+            signature blends in the first RastaRoots
+            Founder Discovery Collection.
+
           </p>
 
           <a
             class="dashboard-link"
             href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
           >
+
             View The Collection →
+
           </a>
 
         </article>
 
+
+        <!-- INSTAGRAM -->
 
         <article class="dashboard-card">
 
@@ -1610,8 +1901,11 @@
           </h3>
 
           <p>
-            Follow RastaRoots through founder stories, Rootz Principles,
-            Tea Ritual, heritage, adventures and product development.
+
+            Follow RastaRoots through founder stories,
+            Rootz Principles, Tea Ritual, heritage,
+            adventures and product development.
+
           </p>
 
           <a
@@ -1620,7 +1914,9 @@
             target="_blank"
             rel="noopener noreferrer"
           >
+
             Follow On Instagram →
+
           </a>
 
         </article>
@@ -1639,29 +1935,44 @@
 
       <div class="member-promise-inner">
 
+
         <p class="section-kicker">
           The Rootz Library Promise
         </p>
+
 
         <h2>
           Knowledge without the hype.
         </h2>
 
-        <p>
-          The Rootz Library exists to explore plants with respect for their
-          origins, cultural traditions and modern evidence.
-        </p>
 
         <p>
-          Traditional knowledge matters. Scientific evidence matters.
-          They are not always the same thing, and the Library will always
-          be clear about the difference.
+
+          The Rootz Library exists to explore plants with
+          respect for their origins, cultural traditions
+          and modern evidence.
+
         </p>
+
+
+        <p>
+
+          Traditional knowledge matters.
+          Scientific evidence matters.
+
+          They are not always the same thing, and the Library
+          will always be clear about the difference.
+
+        </p>
+
 
         <blockquote class="member-promise-quote">
+
           “Before you ask what a plant can do for you,
           learn where it came from.”
+
         </blockquote>
+
 
       </div>
 
@@ -1674,19 +1985,27 @@
 
     <section class="next-steps">
 
+
       <p class="section-kicker">
         The Journey Has Just Started
       </p>
+
 
       <h2>
         Stay curious. Stay rooted.
       </h2>
 
+
       <p>
-        Field Guide 001 is only the first chapter. New plant profiles,
-        Field Guides, Tea Ritual resources, founder stories and future
+
+        Field Guide 001 is only the first chapter.
+
+        New plant profiles, Field Guides,
+        Tea Ritual resources, founder stories and future
         discoveries will be added as the Rootz Library grows.
+
       </p>
+
 
       <div
         class="hero-actions"
@@ -1695,19 +2014,25 @@
 
         <a
           class="btn btn-primary"
-          href="/herbal-library.html"
+          href="/herbal-library.html#herbs"
         >
+
           Enter The Herbal Library
+
         </a>
+
 
         <a
           class="btn btn-secondary"
           href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
         >
+
           Explore Discovery Collection
+
         </a>
 
       </div>
+
 
     </section>
 
@@ -1721,28 +2046,66 @@
 
   <footer class="site-footer">
 
+
     <img
       src="/assets/rastaroots-logo-light.png?v=600"
       alt=""
       aria-hidden="true"
     />
 
+
     <nav
       class="footer-links"
       aria-label="Footer navigation"
     >
-      <a href="/index.html">Home</a>
-      <a href="/shop.html">Shop</a>
-      <a href="/founder.html">Founder</a>
-      <a href="/tea-ritual.html">Tea Ritual</a>
-      <a href="/herbal-library.html">Herbal Library</a>
-      <a href="/community.html">Community</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/shipping.html">Shipping</a>
-      <a href="/refunds.html">Refunds</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-      <a href="/contact.html">Contact</a>
+
+      <a href="/index.html">
+        Home
+      </a>
+
+      <a href="/shop.html">
+        Shop
+      </a>
+
+      <a href="/founder.html">
+        Founder
+      </a>
+
+      <a href="/tea-ritual.html">
+        Tea Ritual
+      </a>
+
+      <a href="/herbal-library.html">
+        Herbal Library
+      </a>
+
+      <a href="/community.html">
+        Community
+      </a>
+
+      <a href="/faq.html">
+        FAQ
+      </a>
+
+      <a href="/shipping.html">
+        Shipping
+      </a>
+
+      <a href="/refunds.html">
+        Refunds
+      </a>
+
+      <a href="/privacy.html">
+        Privacy
+      </a>
+
+      <a href="/terms.html">
+        Terms
+      </a>
+
+      <a href="/contact.html">
+        Contact
+      </a>
 
       <a
         href="https://instagram.com/rastarootzs"
@@ -1751,12 +2114,18 @@
       >
         Instagram
       </a>
+
     </nav>
 
+
     <p>
+
       © 2026 RastaRoots Life.<br />
+
       Rooted in nature. Fueled by life.
+
     </p>
+
 
   </footer>
 
@@ -1772,53 +2141,118 @@
 
 
 <!-- ======================================================
-     MEMBER ANALYTICS
+     MEMBER + ANALYTICS
 ======================================================= -->
 
 <script>
 
+  /* ------------------------------------------------------
+     REFRESH MEMBER LAST VISIT
+  ------------------------------------------------------ */
+
+  try {
+
+    localStorage.setItem(
+      "rootzLibraryLastVisit",
+      new Date().toISOString()
+    );
+
+  } catch (error) {
+
+    console.warn(
+      "Unable to update Rootz Library visit."
+    );
+
+  }
+
+
+  /* ------------------------------------------------------
+     FIELD GUIDE DOWNLOAD TRACKING
+  ------------------------------------------------------ */
+
   document
-    .querySelectorAll(".field-guide-download")
+    .querySelectorAll(
+      ".field-guide-download"
+    )
     .forEach(function (link) {
 
-      link.addEventListener("click", function () {
+      link.addEventListener(
+        "click",
+        function () {
 
-        if (typeof gtag === "function") {
+          if (
+            typeof gtag === "function"
+          ) {
 
-          gtag("event", "field_guide_download", {
-            event_category: "Rootz Library",
-            event_label: "Field Guide 001",
-            download_location:
-              link.dataset.downloadLocation || "unknown",
-            file_name:
-              "rootz-field-guide-001.pdf"
-          });
+            gtag(
+              "event",
+              "field_guide_download",
+              {
+
+                event_category:
+                  "Rootz Library",
+
+                event_label:
+                  "Field Guide 001",
+
+                download_location:
+                  link.dataset.downloadLocation ||
+                  "unknown",
+
+                file_name:
+                  "rootz-field-guide-001.pdf"
+
+              }
+            );
+
+          }
 
         }
-
-      });
+      );
 
     });
 
 
+  /* ------------------------------------------------------
+     FIELD GUIDE VIEW TRACKING
+  ------------------------------------------------------ */
+
   document
-    .querySelectorAll(".field-guide-view")
+    .querySelectorAll(
+      ".field-guide-view"
+    )
     .forEach(function (link) {
 
-      link.addEventListener("click", function () {
+      link.addEventListener(
+        "click",
+        function () {
 
-        if (typeof gtag === "function") {
+          if (
+            typeof gtag === "function"
+          ) {
 
-          gtag("event", "field_guide_view", {
-            event_category: "Rootz Library",
-            event_label: "Field Guide 001",
-            view_location:
-              link.dataset.viewLocation || "unknown"
-          });
+            gtag(
+              "event",
+              "field_guide_view",
+              {
+
+                event_category:
+                  "Rootz Library",
+
+                event_label:
+                  "Field Guide 001",
+
+                view_location:
+                  link.dataset.viewLocation ||
+                  "unknown"
+
+              }
+            );
+
+          }
 
         }
-
-      });
+      );
 
     });
 
@@ -1826,4 +2260,5 @@
 
 
 </body>
+
 </html>
