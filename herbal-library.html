@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
 
   <meta
@@ -55,18 +56,16 @@
 
   <link
     rel="stylesheet"
-    href="/style.css?v=612"
+    href="/style.css?v=613"
   />
 
 
   <!-- ======================================================
-       MEMBER DETECTION
-
-       Run before the page renders so returning members
-       do not briefly see the signup version of the page.
+       ROOTZ LIBRARY MEMBER DETECTION
   ======================================================= -->
 
   <script>
+
     (function () {
 
       let isMember = false;
@@ -82,6 +81,7 @@
         isMember = false;
 
       }
+
 
       if (isMember) {
 
@@ -107,6 +107,7 @@
       }
 
     })();
+
   </script>
 
 
@@ -188,6 +189,33 @@
 
 
     /* ======================================================
+       HERO IMAGE STATE
+
+       Visitor:
+       herbal-library-hero.png
+
+       Member:
+       library-member-hero.png
+    ====================================================== */
+
+    .visitor-hero-image {
+      display: block;
+    }
+
+    .member-hero-image {
+      display: none;
+    }
+
+    .rootz-member .visitor-hero-image {
+      display: none;
+    }
+
+    .rootz-member .member-hero-image {
+      display: block;
+    }
+
+
+    /* ======================================================
        MEMBER RETURN BANNER
     ====================================================== */
 
@@ -251,6 +279,7 @@
 
     .library-hero-background {
       position: absolute;
+
       inset: 0;
 
       z-index: -3;
@@ -262,8 +291,24 @@
       object-position: center;
     }
 
+
+    /* Visitor image composition */
+
+    .visitor-hero-image {
+      object-position: center;
+    }
+
+
+    /* Member image composition */
+
+    .member-hero-image {
+      object-position: center;
+    }
+
+
     .library-hero-overlay {
       position: absolute;
+
       inset: 0;
 
       z-index: -2;
@@ -278,15 +323,37 @@
         );
     }
 
+
+    /* Slightly softer member overlay so the new
+       library environment remains more visible */
+
+    .rootz-member .library-hero-overlay {
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4, 24, 14, 0.96) 0%,
+          rgba(4, 24, 14, 0.82) 31%,
+          rgba(4, 24, 14, 0.40) 58%,
+          rgba(4, 24, 14, 0.08) 100%
+        );
+
+    }
+
+
     .library-hero-content {
+
       width: min(760px, 56%);
 
       padding: 105px 7vw;
 
       color: #fff9ee;
+
     }
 
+
     .library-eyebrow {
+
       margin-bottom: 18px;
 
       color: #f4d88a;
@@ -302,9 +369,12 @@
       letter-spacing: 0.18em;
 
       text-transform: uppercase;
+
     }
 
+
     .library-hero h1 {
+
       margin-bottom: 24px;
 
       color: #fff9ee;
@@ -315,9 +385,12 @@
       line-height: 0.9;
 
       letter-spacing: -0.055em;
+
     }
 
+
     .library-coming-label {
+
       display: inline-flex;
 
       width: fit-content;
@@ -349,9 +422,12 @@
       text-transform: uppercase;
 
       backdrop-filter: blur(8px);
+
     }
 
+
     .library-hero-text {
+
       max-width: 640px;
 
       margin-bottom: 32px;
@@ -367,9 +443,12 @@
       font-size: 1.08rem;
 
       line-height: 1.8;
+
     }
 
+
     .library-free-guide-btn {
+
       color: #fff9ee !important;
 
       border-color:
@@ -379,14 +458,16 @@
         rgba(6, 37, 22, 0.34) !important;
 
       backdrop-filter: blur(8px);
+
     }
 
 
     /* ======================================================
-       FIELD GUIDE / FREE GUIDE
+       FIELD GUIDE
     ====================================================== */
 
     .free-guide-section {
+
       padding: 100px 7vw;
 
       background:
@@ -398,9 +479,12 @@
 
       border-bottom:
         1px solid rgba(16, 60, 37, 0.12);
+
     }
 
+
     .free-guide-inner {
+
       max-width: 1180px;
 
       display: grid;
@@ -413,9 +497,12 @@
       align-items: center;
 
       margin: 0 auto;
+
     }
 
+
     .free-guide-copy h2 {
+
       margin-bottom: 22px;
 
       color: #103c25;
@@ -426,9 +513,12 @@
       line-height: 0.98;
 
       letter-spacing: -0.045em;
+
     }
 
+
     .free-guide-copy > p {
+
       max-width: 690px;
 
       margin-bottom: 26px;
@@ -443,9 +533,12 @@
       font-size: 1.04rem;
 
       line-height: 1.8;
+
     }
 
+
     .free-guide-list {
+
       display: flex;
 
       flex-wrap: wrap;
@@ -453,9 +546,12 @@
       gap: 9px;
 
       margin-bottom: 30px;
+
     }
 
+
     .free-guide-list span {
+
       padding: 8px 12px;
 
       border:
@@ -475,9 +571,12 @@
 
       font-size: 0.76rem;
       font-weight: 800;
+
     }
 
+
     .free-guide-copy small {
+
       display: block;
 
       margin-top: 14px;
@@ -490,9 +589,12 @@
         sans-serif;
 
       font-size: 0.75rem;
+
     }
 
+
     .guide-actions {
+
       display: flex;
 
       flex-wrap: wrap;
@@ -500,9 +602,12 @@
       gap: 12px;
 
       align-items: center;
+
     }
 
+
     .free-guide-preview {
+
       min-height: 470px;
 
       display: flex;
@@ -532,9 +637,12 @@
 
       box-shadow:
         0 30px 70px rgba(16, 60, 37, 0.18);
+
     }
 
+
     .free-guide-preview > span {
+
       margin-bottom: 34px;
 
       color: #f4d88a;
@@ -550,18 +658,24 @@
       letter-spacing: 0.16em;
 
       text-transform: uppercase;
+
     }
 
+
     .free-guide-preview > strong {
+
       color: #fff9ee;
 
       font-size:
         clamp(2.7rem, 4vw, 4.5rem);
 
       line-height: 0.96;
+
     }
 
+
     .free-guide-preview > p {
+
       max-width: 330px;
 
       margin-top: 24px;
@@ -575,9 +689,12 @@
         sans-serif;
 
       line-height: 1.65;
+
     }
 
+
     .free-guide-mark {
+
       width: fit-content;
 
       margin-top: 42px;
@@ -598,6 +715,7 @@
       font-weight: 900;
 
       letter-spacing: 0.14em;
+
     }
 
 
@@ -606,23 +724,30 @@
     ====================================================== */
 
     .library-purpose {
+
       padding: 105px 7vw;
 
       background: #fff9ee;
 
       border-bottom:
         1px solid rgba(16, 60, 37, 0.12);
+
     }
 
+
     .library-purpose-inner {
+
       max-width: 1040px;
 
       margin: 0 auto;
 
       text-align: center;
+
     }
 
+
     .library-purpose-inner h2 {
+
       margin-bottom: 24px;
 
       color: #103c25;
@@ -633,9 +758,12 @@
       line-height: 0.98;
 
       letter-spacing: -0.045em;
+
     }
 
+
     .library-purpose-inner p {
+
       max-width: 820px;
 
       margin: 0 auto;
@@ -650,6 +778,7 @@
       font-size: 1.08rem;
 
       line-height: 1.82;
+
     }
 
 
@@ -658,6 +787,7 @@
     ====================================================== */
 
     .library-principles {
+
       padding: 100px 7vw;
 
       background:
@@ -669,9 +799,12 @@
 
       border-bottom:
         1px solid rgba(16, 60, 37, 0.12);
+
     }
 
+
     .library-principles-grid {
+
       display: grid;
 
       grid-template-columns:
@@ -680,9 +813,12 @@
       gap: 22px;
 
       margin-top: 48px;
+
     }
 
+
     .library-principle-card {
+
       padding: 32px;
 
       border-radius: 24px;
@@ -695,9 +831,12 @@
 
       box-shadow:
         0 18px 42px rgba(16, 60, 37, 0.06);
+
     }
 
+
     .library-principle-card strong {
+
       display: block;
 
       margin-bottom: 14px;
@@ -715,17 +854,23 @@
       letter-spacing: 0.13em;
 
       text-transform: uppercase;
+
     }
 
+
     .library-principle-card h3 {
+
       margin-bottom: 12px;
 
       color: #103c25;
 
       font-size: 1.65rem;
+
     }
 
+
     .library-principle-card p {
+
       color: #5c5a50;
 
       font-family:
@@ -736,6 +881,7 @@
       font-size: 0.95rem;
 
       line-height: 1.7;
+
     }
 
 
@@ -744,15 +890,19 @@
     ====================================================== */
 
     .herbs-section {
+
       padding: 105px 7vw;
 
       background: #fff9ee;
 
       border-bottom:
         1px solid rgba(16, 60, 37, 0.12);
+
     }
 
+
     .herb-grid {
+
       display: grid;
 
       grid-template-columns:
@@ -761,9 +911,12 @@
       gap: 22px;
 
       margin-top: 52px;
+
     }
 
+
     .herb-card {
+
       display: flex;
 
       flex-direction: column;
@@ -795,17 +948,23 @@
       transition:
         transform 200ms ease,
         box-shadow 200ms ease;
+
     }
+
 
     .herb-card:hover,
     .herb-card:focus-within {
+
       transform: translateY(-6px);
 
       box-shadow:
         0 28px 58px rgba(16, 60, 37, 0.13);
+
     }
 
+
     .herb-number {
+
       margin-bottom: 18px;
 
       color: #b68a33;
@@ -821,9 +980,12 @@
       letter-spacing: 0.13em;
 
       text-transform: uppercase;
+
     }
 
+
     .herb-symbol {
+
       width: 56px;
       height: 56px;
 
@@ -842,17 +1004,23 @@
       color: #f4d88a;
 
       font-size: 1.6rem;
+
     }
 
+
     .herb-card h3 {
+
       margin-bottom: 10px;
 
       color: #103c25;
 
       font-size: 2rem;
+
     }
 
+
     .herb-card .herb-taste {
+
       display: block;
 
       margin-bottom: 14px;
@@ -870,9 +1038,12 @@
       letter-spacing: 0.08em;
 
       text-transform: uppercase;
+
     }
 
+
     .herb-card p {
+
       margin-bottom: 20px;
 
       color: #5c5a50;
@@ -885,9 +1056,12 @@
       font-size: 0.94rem;
 
       line-height: 1.7;
+
     }
 
+
     .herb-card-links {
+
       display: flex;
 
       flex-wrap: wrap;
@@ -895,9 +1069,12 @@
       gap: 8px;
 
       margin-top: auto;
+
     }
 
+
     .herb-card-links a {
+
       display: inline-flex;
 
       padding: 8px 11px;
@@ -919,9 +1096,12 @@
 
       font-size: 0.7rem;
       font-weight: 800;
+
     }
 
+
     .herb-status {
+
       display: block;
 
       margin-top: 18px;
@@ -939,9 +1119,12 @@
       letter-spacing: 0.13em;
 
       text-transform: uppercase;
+
     }
 
+
     .herb-launch-link {
+
       display: inline-flex;
 
       width: fit-content;
@@ -966,9 +1149,12 @@
       letter-spacing: 0.06em;
 
       text-transform: uppercase;
+
     }
 
+
     .member-herb-status {
+
       margin-top: 10px;
 
       color: #103c25;
@@ -984,6 +1170,7 @@
       letter-spacing: 0.06em;
 
       text-transform: uppercase;
+
     }
 
 
@@ -992,6 +1179,7 @@
     ====================================================== */
 
     .library-guardian {
+
       display: grid;
 
       grid-template-columns:
@@ -1016,9 +1204,12 @@
         );
 
       color: #fff9ee;
+
     }
 
+
     .library-guardian-image {
+
       min-height: 570px;
 
       overflow: hidden;
@@ -1027,22 +1218,29 @@
 
       box-shadow:
         0 30px 76px rgba(0, 0, 0, 0.3);
+
     }
 
+
     .library-guardian-image img {
+
       width: 100%;
       height: 100%;
 
       min-height: 570px;
 
       object-fit: cover;
+
     }
+
 
     .library-guardian-copy .section-kicker {
       color: #f4d88a;
     }
 
+
     .library-guardian-copy h2 {
+
       margin-bottom: 22px;
 
       color: #fff9ee;
@@ -1053,9 +1251,12 @@
       line-height: 0.98;
 
       letter-spacing: -0.045em;
+
     }
 
+
     .library-guardian-copy > p {
+
       margin-bottom: 18px;
 
       color:
@@ -1069,9 +1270,12 @@
       font-size: 1.05rem;
 
       line-height: 1.8;
+
     }
 
+
     .library-guardian-quote {
+
       margin-top: 30px;
 
       padding: 28px;
@@ -1091,6 +1295,7 @@
         clamp(1.5rem, 2.5vw, 2.25rem);
 
       line-height: 1.25;
+
     }
 
 
@@ -1099,15 +1304,19 @@
     ====================================================== */
 
     .entry-format {
+
       padding: 105px 7vw;
 
       background: #fff9ee;
 
       border-bottom:
         1px solid rgba(16, 60, 37, 0.12);
+
     }
 
+
     .entry-format-grid {
+
       display: grid;
 
       grid-template-columns:
@@ -1116,9 +1325,12 @@
       gap: 22px;
 
       margin-top: 48px;
+
     }
 
+
     .entry-format-card {
+
       padding: 30px;
 
       border-radius: 24px;
@@ -1127,9 +1339,12 @@
         1px solid rgba(16, 60, 37, 0.12);
 
       background: #f8efdf;
+
     }
 
+
     .entry-format-card span {
+
       display: block;
 
       margin-bottom: 12px;
@@ -1147,17 +1362,23 @@
       letter-spacing: 0.13em;
 
       text-transform: uppercase;
+
     }
 
+
     .entry-format-card h3 {
+
       margin-bottom: 10px;
 
       color: #103c25;
 
       font-size: 1.6rem;
+
     }
 
+
     .entry-format-card p {
+
       color: #5c5a50;
 
       font-family:
@@ -1166,6 +1387,7 @@
         sans-serif;
 
       line-height: 1.7;
+
     }
 
 
@@ -1174,6 +1396,7 @@
     ====================================================== */
 
     .library-waitlist {
+
       padding: 110px 7vw;
 
       text-align: center;
@@ -1189,19 +1412,26 @@
           #06170e,
           #103c25
         );
+
     }
 
+
     .library-waitlist-inner {
+
       max-width: 820px;
 
       margin: 0 auto;
+
     }
+
 
     .library-waitlist .section-kicker {
       color: #f4d88a;
     }
 
+
     .library-waitlist h2 {
+
       margin-bottom: 22px;
 
       color: #fff9ee;
@@ -1212,9 +1442,12 @@
       line-height: 0.98;
 
       letter-spacing: -0.045em;
+
     }
 
+
     .library-waitlist p {
+
       margin-bottom: 30px;
 
       color:
@@ -1228,9 +1461,12 @@
       font-size: 1.05rem;
 
       line-height: 1.8;
+
     }
 
+
     .library-waitlist small {
+
       display: block;
 
       margin-top: 16px;
@@ -1244,6 +1480,7 @@
         sans-serif;
 
       font-size: 0.74rem;
+
     }
 
 
@@ -1252,6 +1489,7 @@
     ====================================================== */
 
     .library-collection {
+
       padding: 105px 7vw;
 
       text-align: center;
@@ -1265,9 +1503,12 @@
 
       border-bottom:
         1px solid rgba(16, 60, 37, 0.12);
+
     }
 
+
     .library-collection h2 {
+
       margin-bottom: 22px;
 
       color: #103c25;
@@ -1278,9 +1519,12 @@
       line-height: 0.98;
 
       letter-spacing: -0.045em;
+
     }
 
+
     .library-collection p {
+
       max-width: 760px;
 
       margin: 0 auto 32px;
@@ -1295,6 +1539,7 @@
       font-size: 1.05rem;
 
       line-height: 1.8;
+
     }
 
 
@@ -1359,38 +1604,69 @@
     @media (max-width: 780px) {
 
       .library-hero {
+
         min-height: 690px;
 
         align-items: flex-end;
+
       }
 
-      .library-hero-background {
+
+      .visitor-hero-image {
         object-position: 57% center;
       }
 
+
+      .member-hero-image {
+        object-position: 60% center;
+      }
+
+
       .library-hero-overlay {
+
         background:
           linear-gradient(
             180deg,
-            rgba(4, 24, 14, 0.18) 0%,
+            rgba(4, 24, 14, 0.16) 0%,
             rgba(4, 24, 14, 0.58) 42%,
-            rgba(4, 24, 14, 0.96) 100%
+            rgba(4, 24, 14, 0.97) 100%
           );
+
       }
 
+
+      .rootz-member .library-hero-overlay {
+
+        background:
+          linear-gradient(
+            180deg,
+            rgba(4, 24, 14, 0.12) 0%,
+            rgba(4, 24, 14, 0.52) 40%,
+            rgba(4, 24, 14, 0.98) 100%
+          );
+
+      }
+
+
       .library-hero-content {
+
         width: 100%;
 
         padding:
           250px
           22px
           58px;
+
       }
 
+
       .library-hero h1 {
+
         font-size:
           clamp(3.8rem, 17vw, 5.6rem);
+
       }
+
 
       .free-guide-section,
       .library-purpose,
@@ -1400,35 +1676,52 @@
       .entry-format,
       .library-waitlist,
       .library-collection {
+
         padding: 70px 22px;
+
       }
+
 
       .herb-grid,
       .library-principles-grid {
+
         grid-template-columns: 1fr;
+
       }
 
+
       .free-guide-preview {
+
         min-height: 390px;
 
         padding: 32px;
+
       }
+
 
       .library-guardian-image,
       .library-guardian-image img {
+
         min-height: 420px;
+
       }
 
+
       .guide-actions {
+
         flex-direction: column;
 
         align-items: stretch;
+
       }
 
+
       .guide-actions .btn {
+
         width: 100%;
 
         justify-content: center;
+
       }
 
     }
@@ -1442,12 +1735,13 @@
 
 
   <!-- ======================================================
-       MEMBER RETURN STATUS
+       MEMBER RETURN BAR
   ======================================================= -->
 
   <div class="member-return-bar">
 
     Welcome back, Founding Member •
+
     <a href="/downloads/rootz-field-guide-001.pdf">
       Open Field Guide 001
     </a>
@@ -1463,7 +1757,9 @@
     class="announcement-bar"
     href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
   >
+
     🌿 Founder Pre-Orders Open • £19.99 Founder Price • Ships September 2026
+
   </a>
 
 
@@ -1472,6 +1768,7 @@
   ======================================================= -->
 
   <header class="site-header">
+
 
     <a
       class="brand"
@@ -1538,10 +1835,13 @@
         class="nav-cta"
         href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
       >
+
         Pre-Order
+
       </a>
 
     </nav>
+
 
   </header>
 
@@ -1601,15 +1901,31 @@
 
 
     <!-- ====================================================
-         HERO
+         DUAL-STATE HERO
     ===================================================== -->
 
     <section class="library-hero">
 
+
+      <!-- ================================================
+           NEW VISITOR IMAGE
+      ================================================= -->
+
       <img
-        class="library-hero-background"
-        src="/assets/herbal-library-hero.png?v=608"
+        class="library-hero-background visitor-hero-image"
+        src="/assets/herbal-library-hero.png?v=613"
         alt="The RastaRoots Herbal Library with herbs, botanical books and plant knowledge"
+      />
+
+
+      <!-- ================================================
+           MEMBER IMAGE
+      ================================================= -->
+
+      <img
+        class="library-hero-background member-hero-image"
+        src="/assets/library-member-hero.png?v=613"
+        alt="The RastaRoots member Herbal Library with Field Guide 001, botanical books, herbs and tea"
       />
 
 
@@ -1618,23 +1934,42 @@
 
       <div class="library-hero-content">
 
-        <p class="library-eyebrow">
+
+        <p class="library-eyebrow visitor-only">
+
           RastaRoots Herbal Library
+
         </p>
 
 
-        <!-- NEW VISITOR -->
+        <p class="library-eyebrow member-only">
+
+          Your RastaRoots Herbal Library
+
+        </p>
+
+
+        <!-- ================================================
+             NEW VISITOR HERO CONTENT
+        ================================================= -->
 
         <div class="visitor-only">
 
+
           <h1>
+
             Know what’s<br />
             in your cup.
+
           </h1>
 
+
           <span class="library-coming-label">
+
             The Library Is Growing • Full Herb Guides Coming Soon
+
           </span>
+
 
           <p class="library-hero-text">
 
@@ -1644,98 +1979,134 @@
 
           </p>
 
+
           <div class="hero-actions">
+
 
             <a
               class="btn btn-primary"
               href="#herbs"
             >
+
               Explore The Library Preview
+
             </a>
+
 
             <a
               class="btn btn-secondary library-free-guide-btn"
               href="/join-library.html"
             >
+
               Get The Free Herbal Guide
+
             </a>
 
+
           </div>
+
 
         </div>
 
 
-        <!-- RETURNING MEMBER -->
+        <!-- ================================================
+             RETURNING MEMBER HERO CONTENT
+        ================================================= -->
 
         <div class="member-only block">
 
+
           <h1>
-            Welcome<br />
-            back to<br />
-            your Library.
+
+            Knowledge<br />
+            grows here.
+
           </h1>
 
+
           <span class="library-coming-label">
+
             Founding Member • Access Active
+
           </span>
+
 
           <p class="library-hero-text">
 
+            Welcome back to your Rootz Library.
+
             Continue exploring the plants behind RastaRoots,
             revisit Field Guide 001 and follow the Library
-            as new guides and deeper herb entries are released.
+            as new botanical entries, research and Field Guides
+            are added.
 
           </p>
 
+
           <div class="hero-actions">
+
 
             <a
               class="btn btn-primary"
               href="#herbs"
             >
-              Enter The Herbal Library
+
+              Continue Exploring
+
             </a>
+
 
             <a
               class="btn btn-secondary library-free-guide-btn field-guide-download"
               href="/downloads/rootz-field-guide-001.pdf"
               download="RastaRoots-Field-Guide-001.pdf"
-              data-download-location="library-hero"
+              data-download-location="library-member-hero"
             >
-              Download Field Guide 001
+
+              Field Guide 001
+
             </a>
+
 
           </div>
 
+
         </div>
 
+
       </div>
+
 
     </section>
 
 
     <!-- ====================================================
-         FIELD GUIDE / FREE GUIDE
+         FIELD GUIDE
     ===================================================== -->
 
     <section class="free-guide-section">
+
 
       <div class="free-guide-inner">
 
 
         <div class="free-guide-copy">
 
+
           <!-- VISITOR -->
 
           <div class="visitor-only">
+
 
             <p class="section-kicker">
               Free Rootz Guide
             </p>
 
+
             <h2>
               8 Caribbean herbs to know.
             </h2>
+
 
             <p>
 
@@ -1748,6 +2119,7 @@
 
             </p>
 
+
           </div>
 
 
@@ -1755,13 +2127,16 @@
 
           <div class="member-only block">
 
+
             <p class="section-kicker">
               Your First Field Guide
             </p>
 
+
             <h2>
               Field Guide 001.
             </h2>
+
 
             <p>
 
@@ -1774,10 +2149,12 @@
 
             </p>
 
+
           </div>
 
 
           <div class="free-guide-list">
+
 
             <span>
               Ginger
@@ -1811,6 +2188,7 @@
               Sarsaparilla
             </span>
 
+
           </div>
 
 
@@ -1818,16 +2196,24 @@
 
           <div class="visitor-only">
 
+
             <a
               class="btn btn-primary"
               href="/join-library.html"
             >
+
               Join The Rootz Library
+
             </a>
 
+
             <small>
-              Join free to unlock Field Guide 001 and future Rootz Library releases.
+
+              Join free to unlock Field Guide 001
+              and future Rootz Library releases.
+
             </small>
+
 
           </div>
 
@@ -1836,7 +2222,9 @@
 
           <div class="member-only block">
 
+
             <div class="guide-actions">
+
 
               <a
                 class="btn btn-primary field-guide-download"
@@ -1844,8 +2232,11 @@
                 download="RastaRoots-Field-Guide-001.pdf"
                 data-download-location="library-guide"
               >
+
                 Download Field Guide 001
+
               </a>
+
 
               <a
                 class="btn btn-secondary field-guide-view"
@@ -1854,34 +2245,52 @@
                 rel="noopener noreferrer"
                 data-view-location="library-guide"
               >
+
                 View In Browser
+
               </a>
+
 
             </div>
 
+
             <small>
+
               Founding Member access • PDF • 18 pages
+
             </small>
 
+
           </div>
+
 
         </div>
 
 
         <div class="free-guide-preview">
 
+
           <span class="visitor-only">
+
             Free When You Join
+
           </span>
+
 
           <span class="member-only">
+
             Founding Member Edition
+
           </span>
 
+
           <strong>
+
             Field Guide 001<br />
             8 Caribbean Herbs
+
           </strong>
+
 
           <p>
 
@@ -1890,14 +2299,19 @@
 
           </p>
 
+
           <div class="free-guide-mark">
+
             RASTAROOTS HERBAL LIBRARY
+
           </div>
+
 
         </div>
 
 
       </div>
+
 
     </section>
 
@@ -1908,15 +2322,23 @@
 
     <section class="library-purpose">
 
+
       <div class="library-purpose-inner">
 
+
         <p class="section-kicker">
+
           Why The Library Exists
+
         </p>
 
+
         <h2>
+
           Herbal knowledge deserves more than a product label.
+
         </h2>
+
 
         <p>
 
@@ -1932,7 +2354,9 @@
 
         </p>
 
+
       </div>
+
 
     </section>
 
@@ -1943,19 +2367,30 @@
 
     <section class="library-principles">
 
+
       <div class="section-heading center-heading">
 
+
         <p class="section-kicker">
+
           Our Approach
+
         </p>
+
 
         <h2>
+
           Respect the tradition. Respect the evidence.
+
         </h2>
 
+
         <p>
+
           The Herbal Library is built around four principles.
+
         </p>
+
 
       </div>
 
@@ -1965,13 +2400,20 @@
 
         <article class="library-principle-card">
 
+
           <strong>
+
             01 • Origins
+
           </strong>
 
+
           <h3>
+
             Know the plant.
+
           </h3>
+
 
           <p>
 
@@ -1980,18 +2422,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="library-principle-card">
 
+
           <strong>
+
             02 • Tradition
+
           </strong>
 
+
           <h3>
+
             Know the history.
+
           </h3>
+
 
           <p>
 
@@ -2001,18 +2451,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="library-principle-card">
 
+
           <strong>
+
             03 • Evidence
+
           </strong>
 
+
           <h3>
+
             Know what we know.
+
           </h3>
+
 
           <p>
 
@@ -2022,18 +2480,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="library-principle-card">
 
+
           <strong>
+
             04 • Ritual
+
           </strong>
 
+
           <h3>
+
             Know your cup.
+
           </h3>
+
 
           <p>
 
@@ -2042,10 +2508,12 @@
 
           </p>
 
+
         </article>
 
 
       </div>
+
 
     </section>
 
@@ -2059,15 +2527,23 @@
       class="herbs-section"
     >
 
+
       <div class="section-heading center-heading">
 
+
         <p class="section-kicker">
+
           First Library Collection
+
         </p>
 
+
         <h2>
+
           The plants behind the five rituals.
+
         </h2>
+
 
         <p class="visitor-only">
 
@@ -2076,13 +2552,16 @@
 
         </p>
 
+
         <p class="member-only block">
 
-          Your first eight Library ingredients.
-          Full individual entries will continue to be added
-          as the Rootz Library grows.
+          Your first eight Library botanicals.
+
+          Full member entries will be connected here as the
+          Rootz Library grows.
 
         </p>
+
 
       </div>
 
@@ -2090,78 +2569,103 @@
       <div class="herb-grid">
 
 
-        <!-- ==================================================
-             GINGER
-        =================================================== -->
+        <!-- GINGER -->
 
         <article class="herb-card">
+
 
           <span class="herb-number">
             Herb 01
           </span>
 
+
           <div
             class="herb-symbol"
             aria-hidden="true"
           >
             ✦
           </div>
+
 
           <h3>
             Ginger
           </h3>
 
+
           <span class="herb-taste">
+
             Warming • Spicy • Aromatic
+
           </span>
+
 
           <p>
 
             One of the most recognisable warming ingredients
-            in herbal drinks. Ginger contributes spice,
-            aroma and a lingering finish.
+            in herbal drinks.
+
+            Ginger contributes spice, aroma
+            and a lingering finish.
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/roots-fire.html">
+
               Roots Fire
+
             </a>
 
+
             <a href="/iron-root.html">
+
               Iron Root
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
-        <!-- ==================================================
-             LEMONGRASS
-        =================================================== -->
+        <!-- LEMONGRASS -->
 
         <article class="herb-card">
+
 
           <span class="herb-number">
             Herb 02
           </span>
+
 
           <div
             class="herb-symbol"
@@ -2170,13 +2674,20 @@
             ✦
           </div>
 
+
           <h3>
+
             Lemongrass
+
           </h3>
 
+
           <span class="herb-taste">
+
             Citrusy • Fresh • Grassy
+
           </span>
+
 
           <p>
 
@@ -2185,60 +2696,89 @@
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/roots-fire.html">
+
               Roots Fire
+
             </a>
 
+
             <a href="/cool-mind.html">
+
               Cool Mind
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
-        <!-- ==================================================
-             MINT
-        =================================================== -->
+        <!-- MINT -->
 
         <article class="herb-card">
 
+
           <span class="herb-number">
+
             Herb 03
+
           </span>
+
 
           <div
             class="herb-symbol"
             aria-hidden="true"
           >
+
             ✦
+
           </div>
 
+
           <h3>
+
             Mint
+
           </h3>
 
+
           <span class="herb-taste">
+
             Cooling • Clean • Fresh
+
           </span>
+
 
           <p>
 
@@ -2247,64 +2787,96 @@
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/roots-fire.html">
+
               Roots Fire
+
             </a>
+
 
             <a href="/empress-bloom.html">
+
               Empress Bloom
+
             </a>
 
+
             <a href="/cool-mind.html">
+
               Cool Mind
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
-        <!-- ==================================================
-             CERASEE
-        =================================================== -->
+        <!-- CERASEE -->
 
         <article class="herb-card">
 
+
           <span class="herb-number">
+
             Herb 04
+
           </span>
+
 
           <div
             class="herb-symbol"
             aria-hidden="true"
           >
+
             ✦
+
           </div>
 
+
           <h3>
+
             Cerasee
+
           </h3>
 
+
           <span class="herb-taste">
+
             Bitter • Green • Earthy
+
           </span>
+
 
           <p>
 
@@ -2314,56 +2886,82 @@
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/bush-doctor.html">
+
               Bush Doctor
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
-        <!-- ==================================================
-             BITTER MELON
-        =================================================== -->
+        <!-- BITTER MELON -->
 
         <article class="herb-card">
 
+
           <span class="herb-number">
+
             Herb 05
+
           </span>
+
 
           <div
             class="herb-symbol"
             aria-hidden="true"
           >
+
             ✦
+
           </div>
 
+
           <h3>
+
             Bitter Melon
+
           </h3>
 
+
           <span class="herb-taste">
+
             Bitter • Vegetal • Bold
+
           </span>
+
 
           <p>
 
@@ -2373,56 +2971,82 @@
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/bush-doctor.html">
+
               Bush Doctor
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
-        <!-- ==================================================
-             MORINGA
-        =================================================== -->
+        <!-- MORINGA -->
 
         <article class="herb-card">
 
+
           <span class="herb-number">
+
             Herb 06
+
           </span>
+
 
           <div
             class="herb-symbol"
             aria-hidden="true"
           >
+
             ✦
+
           </div>
 
+
           <h3>
+
             Moringa
+
           </h3>
 
+
           <span class="herb-taste">
+
             Leafy • Mild • Earthy
+
           </span>
+
 
           <p>
 
@@ -2432,126 +3056,189 @@
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/bush-doctor.html">
+
               Bush Doctor
+
             </a>
+
 
             <a href="/empress-bloom.html">
+
               Empress Bloom
+
             </a>
 
+
             <a href="/iron-root.html">
+
               Iron Root
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
-        <!-- ==================================================
-             HIBISCUS / SORREL
-        =================================================== -->
+        <!-- HIBISCUS / SORREL -->
 
         <article class="herb-card">
 
+
           <span class="herb-number">
+
             Herb 07
+
           </span>
+
 
           <div
             class="herb-symbol"
             aria-hidden="true"
           >
+
             ✦
+
           </div>
 
+
           <h3>
+
             Hibiscus / Sorrel
+
           </h3>
 
+
           <span class="herb-taste">
+
             Tart • Floral • Bright
+
           </span>
+
 
           <p>
 
             Hibiscus provides vivid colour and tart floral character.
-            Sorrel drinks have a strong place within Caribbean food culture.
+
+            Sorrel drinks have a strong place within Caribbean
+            food culture.
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/empress-bloom.html">
+
               Empress Bloom
+
             </a>
 
+
             <a href="/cool-mind.html">
+
               Cool Mind
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
-        <!-- ==================================================
-             SARSAPARILLA
-        =================================================== -->
+        <!-- SARSAPARILLA -->
 
         <article class="herb-card">
 
+
           <span class="herb-number">
+
             Herb 08
+
           </span>
+
 
           <div
             class="herb-symbol"
             aria-hidden="true"
           >
+
             ✦
+
           </div>
 
+
           <h3>
+
             Sarsaparilla
+
           </h3>
 
+
           <span class="herb-taste">
+
             Rooty • Woody • Earthy
+
           </span>
+
 
           <p>
 
@@ -2561,33 +3248,49 @@
 
           </p>
 
+
           <div class="herb-card-links">
 
+
             <a href="/iron-root.html">
+
               Iron Root
+
             </a>
+
 
           </div>
 
+
           <span class="herb-status">
+
             Full Guide In Development
+
           </span>
+
 
           <a
             class="herb-launch-link visitor-only"
             href="/join-library.html"
           >
+
             Join For Launch Access →
+
           </a>
 
+
           <span class="member-herb-status member-only">
+
             ✓ Member Access Active
+
           </span>
+
 
         </article>
 
 
       </div>
+
 
     </section>
 
@@ -2598,7 +3301,9 @@
 
     <section class="library-guardian">
 
+
       <div class="library-guardian-image">
+
 
         <img
           src="/assets/guardian-bush-doctor.png"
@@ -2606,18 +3311,26 @@
           loading="lazy"
         />
 
+
       </div>
 
 
       <div class="library-guardian-copy">
 
+
         <p class="section-kicker">
+
           The Guardian Of Knowledge
+
         </p>
 
+
         <h2>
+
           Knowing a plant means knowing more than its benefits.
+
         </h2>
+
 
         <p>
 
@@ -2627,6 +3340,7 @@
           preparation traditions and limitations.
 
         </p>
+
 
         <p>
 
@@ -2638,6 +3352,7 @@
 
         </p>
 
+
         <blockquote class="library-guardian-quote">
 
           “Before you ask what a plant can do for you,
@@ -2645,7 +3360,9 @@
 
         </blockquote>
 
+
       </div>
+
 
     </section>
 
@@ -2656,19 +3373,30 @@
 
     <section class="entry-format">
 
+
       <div class="section-heading center-heading">
 
+
         <p class="section-kicker">
+
           Inside Every Full Library Entry
+
         </p>
+
 
         <h2>
+
           More context. Less hype.
+
         </h2>
 
+
         <p>
+
           Every completed herb entry follows the same framework.
+
         </p>
+
 
       </div>
 
@@ -2678,13 +3406,20 @@
 
         <article class="entry-format-card">
 
+
           <span>
+
             01
+
           </span>
 
+
           <h3>
+
             Plant Profile
+
           </h3>
+
 
           <p>
 
@@ -2693,18 +3428,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="entry-format-card">
 
+
           <span>
+
             02
+
           </span>
 
+
           <h3>
+
             Origins
+
           </h3>
+
 
           <p>
 
@@ -2713,18 +3456,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="entry-format-card">
 
+
           <span>
+
             03
+
           </span>
 
+
           <h3>
+
             Caribbean Context
+
           </h3>
+
 
           <p>
 
@@ -2733,18 +3484,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="entry-format-card">
 
+
           <span>
+
             04
+
           </span>
 
+
           <h3>
+
             Flavour & Aroma
+
           </h3>
+
 
           <p>
 
@@ -2753,18 +3512,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="entry-format-card">
 
+
           <span>
+
             05
+
           </span>
 
+
           <h3>
+
             Modern Evidence
+
           </h3>
+
 
           <p>
 
@@ -2773,18 +3540,26 @@
 
           </p>
 
+
         </article>
 
 
         <article class="entry-format-card">
 
+
           <span>
+
             06
+
           </span>
 
+
           <h3>
+
             RastaRoots Rituals
+
           </h3>
+
 
           <p>
 
@@ -2793,10 +3568,12 @@
 
           </p>
 
+
         </article>
 
 
       </div>
+
 
     </section>
 
@@ -2807,6 +3584,7 @@
 
     <section class="library-waitlist">
 
+
       <div class="library-waitlist-inner">
 
 
@@ -2814,13 +3592,20 @@
 
         <div class="visitor-only">
 
+
           <p class="section-kicker">
+
             Join The Herbal Library
+
           </p>
 
+
           <h2>
+
             Get the guide. Keep the knowledge growing.
+
           </h2>
+
 
           <p>
 
@@ -2830,16 +3615,24 @@
 
           </p>
 
+
           <a
             class="btn btn-primary"
             href="/join-library.html"
           >
+
             Join The Rootz Library
+
           </a>
 
+
           <small>
-            Free to join. No spam. Just guides, releases and rooted stories.
+
+            Free to join. No spam.
+            Just guides, releases and rooted stories.
+
           </small>
+
 
         </div>
 
@@ -2848,28 +3641,38 @@
 
         <div class="member-only block">
 
+
           <p class="section-kicker">
+
             Founding Member
+
           </p>
 
+
           <h2>
+
             You’re already inside.
+
           </h2>
+
 
           <p>
 
             There is nothing else to sign up for.
 
-            Your browser recognises your Rootz Library membership,
+            This browser recognises your Rootz Library membership,
             and future Field Guides and Library updates will continue
-            to be connected to the email address you originally joined with.
+            to be connected to the email address you originally
+            joined with.
 
           </p>
+
 
           <div
             class="hero-actions"
             style="justify-content:center;"
           >
+
 
             <a
               class="btn btn-primary field-guide-download"
@@ -2877,26 +3680,38 @@
               download="RastaRoots-Field-Guide-001.pdf"
               data-download-location="library-member-bottom"
             >
+
               Download Field Guide 001
+
             </a>
+
 
             <a
               class="btn btn-secondary"
               href="#herbs"
             >
+
               Return To The Herbs
+
             </a>
+
 
           </div>
 
+
           <small>
-            Stay curious. Stay rooted. New Library releases are coming.
+
+            Stay curious. Stay rooted.
+            New Library releases are coming.
+
           </small>
+
 
         </div>
 
 
       </div>
+
 
     </section>
 
@@ -2907,13 +3722,20 @@
 
     <section class="library-collection">
 
+
       <p class="section-kicker">
+
         Taste The First Chapter
+
       </p>
 
+
       <h2>
+
         Meet the herbs inside the Discovery Collection.
+
       </h2>
+
 
       <p>
 
@@ -2925,26 +3747,35 @@
 
       </p>
 
+
       <div
         class="hero-actions"
         style="justify-content: center;"
       >
 
+
         <a
           class="btn btn-primary"
           href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
         >
+
           Pre-Order Discovery Collection
+
         </a>
+
 
         <a
           class="btn btn-secondary"
           href="/index.html#teas"
         >
+
           Explore The Five Rituals
+
         </a>
 
+
       </div>
+
 
     </section>
 
@@ -2958,6 +3789,7 @@
 
   <footer class="site-footer">
 
+
     <img
       src="/assets/rastaroots-logo-light.png?v=600"
       alt=""
@@ -2970,61 +3802,101 @@
       aria-label="Footer navigation"
     >
 
+
       <a href="/index.html">
+
         Home
+
       </a>
+
 
       <a href="/shop.html">
+
         Shop
+
       </a>
+
 
       <a href="/founder.html">
+
         Founder
+
       </a>
+
 
       <a href="/tea-ritual.html">
+
         Tea Ritual
+
       </a>
+
 
       <a href="/herbal-library.html">
+
         Herbal Library
+
       </a>
+
 
       <a href="/community.html">
+
         Community
+
       </a>
+
 
       <a href="/faq.html">
+
         FAQ
+
       </a>
+
 
       <a href="/shipping.html">
+
         Shipping
+
       </a>
+
 
       <a href="/refunds.html">
+
         Refunds
+
       </a>
+
 
       <a href="/privacy.html">
+
         Privacy
+
       </a>
+
 
       <a href="/terms.html">
+
         Terms
+
       </a>
 
+
       <a href="/contact.html">
+
         Contact
+
       </a>
+
 
       <a
         href="https://instagram.com/rastarootzs"
         target="_blank"
         rel="noopener noreferrer"
       >
+
         Instagram
+
       </a>
+
 
     </nav>
 
@@ -3037,6 +3909,7 @@
 
     </p>
 
+
   </footer>
 
 
@@ -3047,7 +3920,9 @@
   <div class="mobile-sticky-cta visitor-mobile-cta">
 
     <a href="/join-library.html">
+
       Join The Rootz Library
+
     </a>
 
   </div>
@@ -3060,7 +3935,9 @@
   <div class="mobile-sticky-cta member-mobile-cta">
 
     <a href="#herbs">
-      Enter Your Herbal Library
+
+      Continue Exploring
+
     </a>
 
   </div>
@@ -3074,10 +3951,11 @@
 
 
   <!-- ======================================================
-       LIBRARY MEMBER + ANALYTICS
+       MEMBER ANALYTICS
   ======================================================= -->
 
   <script>
+
 
     const rootzLibraryIsMember =
       document.documentElement.classList.contains(
@@ -3098,6 +3976,7 @@
         "event",
         "rootz_library_member_visit",
         {
+
           event_category:
             "Rootz Library",
 
@@ -3106,6 +3985,7 @@
 
           page_location:
             window.location.href
+
         }
       );
 
@@ -3113,7 +3993,7 @@
 
 
     /* ------------------------------------------------------
-       FIELD GUIDE DOWNLOAD TRACKING
+       FIELD GUIDE DOWNLOAD
     ------------------------------------------------------ */
 
     document
@@ -3160,7 +4040,7 @@
 
 
     /* ------------------------------------------------------
-       FIELD GUIDE VIEW TRACKING
+       FIELD GUIDE VIEW
     ------------------------------------------------------ */
 
     document
