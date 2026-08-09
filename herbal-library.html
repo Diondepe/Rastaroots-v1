@@ -1532,6 +1532,226 @@
 
 
     /* ======================================================
+       LIVE BOTANICAL ENTRY
+    ====================================================== */
+
+    .herb-card-live {
+      position: relative;
+
+      border:
+        1px solid
+        rgba(
+          182,
+          138,
+          51,
+          0.42
+        );
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(
+            182,
+            138,
+            51,
+            0.18
+          ),
+          transparent 36%
+        ),
+        linear-gradient(
+          145deg,
+          #f4ead7,
+          #fff9ee
+        );
+    }
+
+    .herb-card-live::before {
+      content: "LIVE";
+
+      position: absolute;
+
+      top: 22px;
+      right: 22px;
+
+      padding:
+        6px
+        9px;
+
+      border-radius:
+        999px;
+
+      background:
+        #103c25;
+
+      color:
+        #f4d88a;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size:
+        0.58rem;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        0.12em;
+
+      text-transform:
+        uppercase;
+    }
+
+    .herb-card-live:hover,
+    .herb-card-live:focus-within {
+      transform:
+        translateY(-8px);
+
+      border-color:
+        rgba(
+          182,
+          138,
+          51,
+          0.72
+        );
+
+      box-shadow:
+        0 32px 68px
+        rgba(
+          16,
+          60,
+          37,
+          0.16
+        );
+    }
+
+    .herb-status-live {
+      color:
+        #8a6322;
+    }
+
+    .herb-entry-link {
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      width:
+        fit-content;
+
+      margin-top:
+        10px;
+
+      padding:
+        11px
+        15px;
+
+      border:
+        1px solid
+        rgba(
+          16,
+          60,
+          37,
+          0.18
+        );
+
+      border-radius:
+        999px;
+
+      background:
+        #103c25;
+
+      color:
+        #f4d88a;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size:
+        0.7rem;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        0.06em;
+
+      line-height:
+        1;
+
+      text-transform:
+        uppercase;
+
+      text-decoration:
+        none;
+
+      transition:
+        transform 180ms ease,
+        background 180ms ease,
+        color 180ms ease;
+    }
+
+    .herb-entry-link:hover,
+    .herb-entry-link:focus-visible {
+      transform:
+        translateX(3px);
+
+      background:
+        #0a2c1a;
+
+      color:
+        #fff1bc;
+    }
+
+    .herb-entry-note {
+      display:
+        block;
+
+      margin-top:
+        10px;
+
+      color:
+        #6f6c61;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size:
+        0.68rem;
+
+      line-height:
+        1.45;
+    }
+
+    .rootz-member
+    .herb-card-live
+    .herb-symbol {
+      background:
+        #b68a33;
+
+      color:
+        #06170e;
+    }
+
+    .rootz-member
+    .herb-card-live
+    .herb-number {
+      color:
+        #8a6322;
+    }
+
+
+    /* ======================================================
        GUARDIAN
     ====================================================== */
 
@@ -2835,8 +3055,9 @@
 
         <p class="member-only block">
           Your first eight Library botanicals.
-          Full member entries will be connected here as the
-          Rootz Library grows.
+          Ginger is now open as the first full member entry,
+          with the remaining botanical experiences being added
+          as the Rootz Library grows.
         </p>
 
       </div>
@@ -2847,7 +3068,7 @@
 
         <!-- GINGER -->
 
-        <article class="herb-card">
+        <article class="herb-card herb-card-live">
 
           <span class="herb-number">
             Herb 01
@@ -2886,20 +3107,46 @@
 
           </div>
 
-          <span class="herb-status">
-            Full Guide In Development
-          </span>
 
-          <a
-            class="herb-launch-link visitor-only"
-            href="/join-library.html"
-          >
-            Join For Launch Access →
-          </a>
+          <!-- VISITOR STATE -->
 
-          <span class="member-herb-status member-only">
-            ✓ Member Access Active
-          </span>
+          <div class="visitor-only">
+
+            <span class="herb-status">
+              Full Botanical Entry Available
+            </span>
+
+            <a
+              class="herb-launch-link"
+              href="/join-library.html"
+            >
+              Join To Unlock Ginger →
+            </a>
+
+          </div>
+
+
+          <!-- MEMBER STATE -->
+
+          <div class="member-only block">
+
+            <span class="herb-status herb-status-live">
+              Full Botanical Entry • Live
+            </span>
+
+            <a
+              class="herb-entry-link"
+              href="/herb-ginger.html"
+              data-botanical-entry="ginger"
+            >
+              Explore Ginger →
+            </a>
+
+            <span class="herb-entry-note">
+              Heritage • traditional use • journey • research • preparation • Tea Ritual
+            </span>
+
+          </div>
 
         </article>
 
@@ -3795,6 +4042,51 @@
                       link.dataset
                         .viewLocation ||
                       "unknown"
+                  }
+                );
+
+              }
+
+            }
+          );
+
+        }
+      );
+
+
+    /* BOTANICAL ENTRY CLICK */
+
+    document
+      .querySelectorAll(
+        "[data-botanical-entry]"
+      )
+      .forEach(
+        function (link) {
+
+          link.addEventListener(
+            "click",
+            function () {
+
+              if (
+                typeof gtag ===
+                "function"
+              ) {
+
+                gtag(
+                  "event",
+                  "botanical_entry_click",
+                  {
+                    event_category:
+                      "Rootz Library",
+
+                    botanical:
+                      link.dataset
+                        .botanicalEntry,
+
+                    member_status:
+                      rootzLibraryIsMember
+                        ? "member"
+                        : "visitor"
                   }
                 );
 
