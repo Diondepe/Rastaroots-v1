@@ -40,7 +40,7 @@
 
 
   <!-- ======================================================
-       SOCIAL / OPEN GRAPH
+       OPEN GRAPH
   ======================================================= -->
 
   <meta
@@ -141,7 +141,7 @@
 
   <link
     rel="stylesheet"
-    href="/style.css?v=620"
+    href="/style.css?v=622"
   />
 
 
@@ -188,17 +188,7 @@
         "about": {
           "@type": "Thing",
           "name": "Zingiber officinale"
-        },
-        "keywords": [
-          "ginger",
-          "Zingiber officinale",
-          "ginger traditional uses",
-          "ginger tea",
-          "ginger Caribbean",
-          "Jamaican ginger",
-          "ginger research",
-          "ginger safety"
-        ]
+        }
       },
       {
         "@type": "BreadcrumbList",
@@ -244,8 +234,7 @@
       function getCookie(name) {
 
         const prefix =
-          encodeURIComponent(name) +
-          "=";
+          encodeURIComponent(name) + "=";
 
         const cookies =
           document.cookie
@@ -262,21 +251,18 @@
         ) {
 
           if (
-            cookies[i]
-              .indexOf(prefix) === 0
+            cookies[i].indexOf(prefix) === 0
           ) {
 
             return decodeURIComponent(
-              cookies[i]
-                .substring(
-                  prefix.length
-                )
+              cookies[i].substring(
+                prefix.length
+              )
             );
 
           }
 
         }
-
 
         return null;
 
@@ -448,89 +434,56 @@
 
     :root {
 
-      --rootz-deep:
-        #06170e;
-
-      --rootz-green:
-        #103c25;
-
-      --rootz-green-soft:
-        #194a30;
-
-      --rootz-gold:
-        #b68a33;
-
-      --rootz-gold-light:
-        #f4d88a;
-
-      --rootz-cream:
-        #fff9ee;
-
-      --rootz-paper:
-        #f4ead7;
-
-      --rootz-text:
-        #4f574f;
+      --rootz-deep: #06170e;
+      --rootz-green: #103c25;
+      --rootz-green-soft: #194a30;
+      --rootz-gold: #b68a33;
+      --rootz-gold-light: #f4d88a;
+      --rootz-cream: #fff9ee;
+      --rootz-paper: #f4ead7;
+      --rootz-text: #4f574f;
 
     }
 
 
     html {
-      scroll-behavior:
-        smooth;
+      scroll-behavior: smooth;
     }
 
 
     body {
-      background:
-        var(--rootz-cream);
+      background: var(--rootz-cream);
     }
 
 
     img {
-      max-width:
-        100%;
-
-      height:
-        auto;
+      max-width: 100%;
+      height: auto;
     }
 
 
     /* ======================================================
-       ACCESS STATES
+       ACCESS
     ====================================================== */
 
     .member-only {
-      display:
-        none !important;
+      display: none !important;
     }
 
-
-    .rootz-member
-    .member-only {
-      display:
-        block !important;
+    .rootz-member .member-only {
+      display: block !important;
     }
 
-
-    .rootz-member
-    .member-only.flex {
-      display:
-        flex !important;
+    .rootz-member .member-only.flex {
+      display: flex !important;
     }
 
-
-    .rootz-member
-    .member-only.grid {
-      display:
-        grid !important;
+    .rootz-member .member-only.grid {
+      display: grid !important;
     }
 
-
-    .rootz-member
-    .visitor-only {
-      display:
-        none !important;
+    .rootz-member .visitor-only {
+      display: none !important;
     }
 
 
@@ -540,61 +493,44 @@
 
     .botanical-member-bar {
 
-      display:
-        none;
+      display: none;
 
-      padding:
-        11px 7vw;
+      padding: 11px 7vw;
 
-      background:
-        var(--rootz-gold);
+      background: var(--rootz-gold);
 
-      color:
-        var(--rootz-deep);
+      color: var(--rootz-deep);
 
-      text-align:
-        center;
+      text-align: center;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .72rem;
+      font-size: .72rem;
+      font-weight: 900;
 
-      font-weight:
-        900;
+      letter-spacing: .1em;
 
-      letter-spacing:
-        .1em;
-
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .rootz-member
     .botanical-member-bar {
-      display:
-        block;
+      display: block;
     }
 
 
     .botanical-member-bar a {
 
-      color:
-        var(--rootz-deep);
+      color: var(--rootz-deep);
 
       border-bottom:
         1px solid
-        rgba(
-          6,
-          23,
-          14,
-          .38
-        );
+        rgba(6,23,14,.38);
 
     }
 
@@ -605,216 +541,153 @@
 
     .breadcrumbs {
 
-      padding:
-        14px 7vw;
+      padding: 14px 7vw;
 
       border-bottom:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .1
-        );
+        rgba(16,60,37,.1);
 
-      background:
-        #fbf2e2;
+      background: #fbf2e2;
 
     }
 
 
     .breadcrumbs-inner {
 
-      max-width:
-        1180px;
+      max-width: 1180px;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
-      display:
-        flex;
+      display: flex;
+      flex-wrap: wrap;
 
-      flex-wrap:
-        wrap;
+      gap: 8px;
 
-      gap:
-        8px;
+      align-items: center;
 
-      align-items:
-        center;
-
-      color:
-        #77766e;
+      color: #77766e;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .72rem;
+      font-size: .72rem;
 
     }
 
 
     .breadcrumbs a {
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-weight:
-        700;
+      font-weight: 700;
 
     }
 
 
     /* ======================================================
-       COLLECTION PROGRESS
+       BOTANICAL PROGRESS
     ====================================================== */
 
     .botanical-progress-wrap {
 
-      padding:
-        16px 7vw;
+      padding: 16px 7vw;
 
-      background:
-        #f8efdf;
+      background: #f8efdf;
 
       border-bottom:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .1
-        );
+        rgba(16,60,37,.1);
 
     }
 
 
     .botanical-progress {
 
-      max-width:
-        1180px;
+      max-width: 1180px;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
-      display:
-        flex;
+      display: flex;
 
-      justify-content:
-        space-between;
+      justify-content: space-between;
 
-      align-items:
-        center;
+      align-items: center;
 
-      gap:
-        20px;
+      gap: 20px;
 
     }
 
 
     .progress-label {
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .68rem;
+      font-size: .68rem;
+      font-weight: 900;
 
-      font-weight:
-        900;
+      letter-spacing: .12em;
 
-      letter-spacing:
-        .12em;
-
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .progress-dots {
 
-      display:
-        flex;
+      display: flex;
 
-      gap:
-        7px;
+      gap: 7px;
 
-      align-items:
-        center;
+      align-items: center;
 
     }
 
 
     .progress-dot {
 
-      width:
-        28px;
+      width: 28px;
+      height: 28px;
 
-      height:
-        28px;
+      display: inline-flex;
 
-      display:
-        inline-flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
+      align-items: center;
+      justify-content: center;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .18
-        );
+        rgba(16,60,37,.18);
 
-      border-radius:
-        50%;
+      border-radius: 50%;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .55
-        );
+        rgba(255,255,255,.55);
 
-      color:
-        #77766e;
+      color: #77766e;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .58rem;
+      font-size: .58rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
     }
 
 
     .progress-dot.active {
 
-      background:
-        var(--rootz-green);
+      background: var(--rootz-green);
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       border-color:
         var(--rootz-green);
@@ -823,99 +696,61 @@
 
 
     /* ======================================================
-       HERO 01
+       HERO
     ====================================================== */
 
     .botanical-hero {
 
-      min-height:
-        780px;
+      min-height: 780px;
 
-      position:
-        relative;
+      position: relative;
 
-      display:
-        flex;
+      display: flex;
 
-      align-items:
-        center;
+      align-items: center;
 
-      overflow:
-        hidden;
+      overflow: hidden;
 
-      background:
-        var(--rootz-deep);
+      background: var(--rootz-deep);
 
-      isolation:
-        isolate;
+      isolation: isolate;
 
     }
 
 
     .botanical-hero-image {
 
-      position:
-        absolute;
+      position: absolute;
 
-      inset:
-        0;
+      inset: 0;
 
-      width:
-        100%;
+      width: 100%;
+      height: 100%;
 
-      height:
-        100%;
+      object-fit: cover;
 
-      object-fit:
-        cover;
+      object-position: center;
 
-      object-position:
-        center;
-
-      z-index:
-        -3;
+      z-index: -3;
 
     }
 
 
     .botanical-hero-overlay {
 
-      position:
-        absolute;
+      position: absolute;
 
-      inset:
-        0;
+      inset: 0;
 
-      z-index:
-        -2;
+      z-index: -2;
 
       background:
         linear-gradient(
           90deg,
-          rgba(
-            3,
-            20,
-            12,
-            .97
-          ) 0%,
-          rgba(
-            3,
-            20,
-            12,
-            .90
-          ) 34%,
-          rgba(
-            3,
-            20,
-            12,
-            .44
-          ) 65%,
-          rgba(
-            3,
-            20,
-            12,
-            .08
-          ) 100%
+          rgba(3,20,12,.97) 0%,
+          rgba(3,20,12,.90) 34%,
+          rgba(3,20,12,.44) 65%,
+          rgba(3,20,12,.08) 100%
         );
 
     }
@@ -923,17 +758,11 @@
 
     .botanical-hero-content {
 
-      width:
-        min(
-          780px,
-          61%
-        );
+      width: min(780px,61%);
 
-      padding:
-        110px 7vw;
+      padding: 110px 7vw;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
     }
 
@@ -941,181 +770,123 @@
     .botanical-number,
     .botanical-kicker {
 
-      margin-bottom:
-        14px;
+      margin-bottom: 14px;
 
-      color:
-        var(--rootz-gold);
+      color: var(--rootz-gold);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .72rem;
+      font-size: .72rem;
+      font-weight: 900;
 
-      font-weight:
-        900;
+      letter-spacing: .15em;
 
-      letter-spacing:
-        .15em;
-
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
-    .botanical-hero
-    .botanical-number {
-      color:
-        var(--rootz-gold-light);
+    .botanical-hero .botanical-number {
+      color: var(--rootz-gold-light);
     }
 
 
     .botanical-hero h1 {
 
-      margin-bottom:
-        12px;
+      margin-bottom: 12px;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
       font-size:
-        clamp(
-          5rem,
-          9vw,
-          9rem
-        );
+        clamp(5rem,9vw,9rem);
 
-      line-height:
-        .87;
+      line-height: .87;
 
-      letter-spacing:
-        -.055em;
+      letter-spacing: -.055em;
 
     }
 
 
     .botanical-latin {
 
-      margin-bottom:
-        20px;
+      margin-bottom: 20px;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-size:
-        clamp(
-          1.3rem,
-          2vw,
-          1.85rem
-        );
+        clamp(1.3rem,2vw,1.85rem);
 
-      font-style:
-        italic;
+      font-style: italic;
 
     }
 
 
     .botanical-flavour {
 
-      display:
-        inline-flex;
+      display: inline-flex;
 
-      margin-bottom:
-        26px;
+      margin-bottom: 26px;
 
-      padding:
-        10px 16px;
+      padding: 10px 16px;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .38
-        );
+        rgba(244,216,138,.38);
 
-      border-radius:
-        999px;
+      border-radius: 999px;
 
       background:
-        rgba(
-          6,
-          37,
-          22,
-          .52
-        );
+        rgba(6,37,22,.52);
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .72rem;
+      font-size: .72rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .1em;
+      letter-spacing: .1em;
 
-      text-transform:
-        uppercase;
-
-      backdrop-filter:
-        blur(8px);
+      text-transform: uppercase;
 
     }
 
 
     .botanical-intro {
 
-      max-width:
-        650px;
+      max-width: 650px;
 
-      margin-bottom:
-        30px;
+      margin-bottom: 30px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .85
-        );
+        rgba(255,249,238,.85);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        1.05rem;
+      font-size: 1.05rem;
 
-      line-height:
-        1.82;
+      line-height: 1.82;
 
     }
 
 
     .botanical-hero-actions {
 
-      display:
-        flex;
+      display: flex;
 
-      flex-wrap:
-        wrap;
+      flex-wrap: wrap;
 
-      gap:
-        12px;
+      gap: 12px;
 
     }
 
@@ -1128,50 +899,33 @@
         !important;
 
       border-color:
-        rgba(
-          255,
-          249,
-          238,
-          .45
-        )
+        rgba(255,249,238,.45)
         !important;
 
       background:
-        rgba(
-          6,
-          37,
-          22,
-          .28
-        )
+        rgba(6,37,22,.28)
         !important;
 
     }
 
 
     /* ======================================================
-       SECTIONS
+       BASIC SECTIONS
     ====================================================== */
 
     .botanical-section {
 
-      padding:
-        105px 7vw;
+      padding: 105px 7vw;
 
       border-bottom:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .1
-        );
+        rgba(16,60,37,.1);
 
     }
 
 
     .section-light {
-      background:
-        var(--rootz-cream);
+      background: var(--rootz-cream);
     }
 
 
@@ -1192,12 +946,7 @@
       background:
         radial-gradient(
           circle at top right,
-          rgba(
-            182,
-            138,
-            51,
-            .12
-          ),
+          rgba(182,138,51,.12),
           transparent 32%
         ),
         linear-gradient(
@@ -1206,101 +955,79 @@
           var(--rootz-green)
         );
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
     }
 
 
     .botanical-container {
 
-      max-width:
-        1180px;
+      max-width: 1180px;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
     }
 
 
     .botanical-heading {
 
-      max-width:
-        880px;
+      max-width: 880px;
 
-      margin-bottom:
-        46px;
+      margin-bottom: 46px;
 
     }
 
 
     .botanical-heading.center {
 
-      margin-left:
-        auto;
+      margin-left: auto;
+      margin-right: auto;
 
-      margin-right:
-        auto;
-
-      text-align:
-        center;
+      text-align: center;
 
     }
 
 
     .botanical-heading h2 {
 
-      margin-bottom:
-        20px;
+      margin-bottom: 20px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
       font-size:
-        clamp(
-          3rem,
-          5vw,
-          5.5rem
-        );
+        clamp(3rem,5vw,5.5rem);
 
-      line-height:
-        .98;
+      line-height: .98;
 
-      letter-spacing:
-        -.045em;
+      letter-spacing: -.045em;
 
     }
 
 
     .section-dark
     .botanical-heading h2 {
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
     }
 
 
     .section-dark
     .botanical-kicker {
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
     }
 
 
     .botanical-heading p {
 
-      color:
-        var(--rootz-text);
+      color: var(--rootz-text);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        1.02rem;
+      font-size: 1.02rem;
 
-      line-height:
-        1.8;
+      line-height: 1.8;
 
     }
 
@@ -1309,596 +1036,409 @@
     .botanical-heading p {
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .74
-        );
+        rgba(255,249,238,.74);
 
     }
 
 
     /* ======================================================
-       TABLE OF CONTENTS
-    ====================================================== */
-
-    .contents-panel {
-
-      padding:
-        38px;
-
-      border:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
-
-      border-radius:
-        26px;
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          .62
-        );
-
-    }
-
-
-    .contents-panel h2 {
-
-      margin-bottom:
-        22px;
-
-      color:
-        var(--rootz-green);
-
-      font-size:
-        2rem;
-
-    }
-
-
-    .contents-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          4,
-          1fr
-        );
-
-      gap:
-        11px;
-
-    }
-
-
-    .contents-grid a {
-
-      padding:
-        13px 15px;
-
-      border:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .11
-        );
-
-      border-radius:
-        14px;
-
-      color:
-        var(--rootz-green);
-
-      background:
-        #fffaf0;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        .74rem;
-
-      font-weight:
-        800;
-
-      transition:
-        transform .18s ease,
-        border-color .18s ease;
-
-    }
-
-
-    .contents-grid a:hover {
-
-      transform:
-        translateY(-2px);
-
-      border-color:
-        rgba(
-          182,
-          138,
-          51,
-          .6
-        );
-
-    }
-
-
-    /* ======================================================
-       AT A GLANCE
+       GLANCE
     ====================================================== */
 
     .glance-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          5,
-          1fr
-        );
+        repeat(5,1fr);
 
-      gap:
-        16px;
+      gap: 16px;
 
     }
 
 
     .glance-card {
 
-      padding:
-        24px;
+      padding: 24px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      border-radius:
-        22px;
+      border-radius: 22px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .67
-        );
+        rgba(255,255,255,.67);
 
     }
 
 
     .glance-card span {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        10px;
+      margin-bottom: 10px;
 
-      color:
-        var(--rootz-gold);
+      color: var(--rootz-gold);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .65rem;
+      font-size: .65rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .11em;
+      letter-spacing: .11em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .glance-card strong {
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.12rem;
+      font-size: 1.12rem;
 
-      line-height:
-        1.4;
+      line-height: 1.4;
 
     }
 
 
-    /* ======================================================
-       PUBLIC SEO INTRO
-    ====================================================== */
-
     .public-summary {
 
-      max-width:
-        920px;
+      max-width: 920px;
 
-      margin:
-        48px auto 0;
+      margin: 48px auto 0;
 
-      padding:
-        28px;
+      padding: 28px;
 
       border-left:
         3px solid
         var(--rootz-gold);
 
       background:
-        rgba(
-          182,
-          138,
-          51,
-          .06
-        );
+        rgba(182,138,51,.06);
 
     }
 
 
     .public-summary h2 {
 
-      margin-bottom:
-        16px;
+      margin-bottom: 16px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        2rem;
+      font-size: 2rem;
 
     }
 
 
     .public-summary p {
 
-      color:
-        var(--rootz-text);
+      color: var(--rootz-text);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.8;
+      line-height: 1.8;
 
     }
 
 
     /* ======================================================
-       HERO 02 — BOTANICAL STUDY
+       CONTENTS
+    ====================================================== */
+
+    .contents-panel {
+
+      padding: 38px;
+
+      border:
+        1px solid
+        rgba(16,60,37,.12);
+
+      border-radius: 26px;
+
+      background:
+        rgba(255,255,255,.62);
+
+    }
+
+
+    .contents-panel h2 {
+
+      margin-bottom: 22px;
+
+      color: var(--rootz-green);
+
+      font-size: 2rem;
+
+    }
+
+
+    .contents-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 11px;
+
+    }
+
+
+    .contents-grid a {
+
+      padding: 13px 15px;
+
+      border:
+        1px solid
+        rgba(16,60,37,.11);
+
+      border-radius: 14px;
+
+      color: var(--rootz-green);
+
+      background: #fffaf0;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: .74rem;
+
+      font-weight: 800;
+
+    }
+
+
+    /* ======================================================
+       HERO 02 / STUDY
     ====================================================== */
 
     .study-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
         .92fr 1.08fr;
 
-      gap:
-        64px;
+      gap: 64px;
 
-      align-items:
-        center;
+      align-items: center;
 
     }
 
 
     .study-image {
 
-      overflow:
-        hidden;
+      overflow: hidden;
 
-      border-radius:
-        30px;
+      border-radius: 30px;
 
       box-shadow:
         0 28px 68px
-        rgba(
-          16,
-          60,
-          37,
-          .16
-        );
+        rgba(16,60,37,.16);
 
     }
 
 
     .study-image img {
 
-      display:
-        block;
+      display: block;
 
-      width:
-        100%;
+      width: 100%;
 
-      aspect-ratio:
-        4 / 5;
+      aspect-ratio: 4 / 5;
 
-      object-fit:
-        cover;
+      object-fit: cover;
 
     }
 
 
     .editorial-copy p {
 
-      margin-bottom:
-        20px;
+      margin-bottom: 20px;
 
-      color:
-        var(--rootz-text);
+      color: var(--rootz-text);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        1rem;
+      font-size: 1rem;
 
-      line-height:
-        1.82;
+      line-height: 1.82;
 
     }
 
 
     .editorial-quote {
 
-      margin-top:
-        28px;
+      margin-top: 28px;
 
-      padding:
-        26px;
+      padding: 26px;
 
       border-left:
         3px solid
         var(--rootz-gold);
 
       background:
-        rgba(
-          182,
-          138,
-          51,
-          .07
-        );
+        rgba(182,138,51,.07);
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
       font-size:
-        clamp(
-          1.35rem,
-          2vw,
-          1.95rem
-        );
+        clamp(1.35rem,2vw,1.95rem);
 
-      line-height:
-        1.4;
+      line-height: 1.4;
 
     }
 
 
     /* ======================================================
-       USE CARDS
+       USES
     ====================================================== */
 
     .uses-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          4,
-          1fr
-        );
+        repeat(4,1fr);
 
-      gap:
-        20px;
+      gap: 20px;
 
     }
 
 
     .use-card {
 
-      padding:
-        27px;
+      padding: 27px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      border-radius:
-        24px;
+      border-radius: 24px;
 
-      background:
-        var(--rootz-cream);
+      background: var(--rootz-cream);
 
     }
 
 
     .use-icon {
 
-      width:
-        48px;
+      width: 48px;
+      height: 48px;
 
-      height:
-        48px;
+      display: flex;
 
-      display:
-        flex;
+      align-items: center;
+      justify-content: center;
 
-      align-items:
-        center;
+      margin-bottom: 20px;
 
-      justify-content:
-        center;
+      border-radius: 50%;
 
-      margin-bottom:
-        20px;
+      background: var(--rootz-green);
 
-      border-radius:
-        50%;
-
-      background:
-        var(--rootz-green);
-
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
     }
 
 
     .use-card h3 {
 
-      margin-bottom:
-        10px;
+      margin-bottom: 10px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.4rem;
+      font-size: 1.4rem;
 
     }
 
 
     .use-card p {
 
-      color:
-        #5d615b;
+      color: #5d615b;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .91rem;
+      font-size: .91rem;
 
-      line-height:
-        1.7;
+      line-height: 1.7;
 
     }
 
 
     .tradition-label {
 
-      display:
-        inline-block;
+      display: inline-block;
 
-      margin-top:
-        15px;
+      margin-top: 15px;
 
-      padding:
-        6px 9px;
+      padding: 6px 9px;
 
-      border-radius:
-        999px;
+      border-radius: 999px;
 
       background:
-        rgba(
-          182,
-          138,
-          51,
-          .1
-        );
+        rgba(182,138,51,.1);
 
-      color:
-        #8a6322;
+      color: #8a6322;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .6rem;
+      font-size: .6rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .07em;
+      letter-spacing: .07em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .context-note {
 
-      max-width:
-        900px;
+      max-width: 900px;
 
-      margin:
-        34px auto 0;
+      margin: 34px auto 0;
 
-      padding:
-        22px;
+      padding: 22px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      border-radius:
-        18px;
+      border-radius: 18px;
 
-      color:
-        #5c5a50;
+      color: #5c5a50;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .84rem;
+      font-size: .84rem;
 
-      line-height:
-        1.72;
+      line-height: 1.72;
 
     }
 
@@ -1909,111 +1449,80 @@
 
     .heritage-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
         1.05fr .95fr;
 
-      gap:
-        65px;
+      gap: 65px;
 
-      align-items:
-        start;
+      align-items: start;
 
     }
 
 
     .heritage-copy p {
 
-      margin-bottom:
-        20px;
+      margin-bottom: 20px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .78
-        );
+        rgba(255,249,238,.78);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        1rem;
+      font-size: 1rem;
 
-      line-height:
-        1.82;
+      line-height: 1.82;
 
     }
 
 
     .heritage-points {
 
-      display:
-        grid;
+      display: grid;
 
-      gap:
-        14px;
+      gap: 14px;
 
     }
 
 
     .heritage-point {
 
-      padding:
-        22px;
+      padding: 22px;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .18
-        );
+        rgba(244,216,138,.18);
 
-      border-radius:
-        20px;
+      border-radius: 20px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .04
-        );
+        rgba(255,255,255,.04);
 
     }
 
 
     .heritage-point strong {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        7px;
+      margin-bottom: 7px;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .7rem;
+      font-size: .7rem;
 
-      letter-spacing:
-        .1em;
+      letter-spacing: .1em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
@@ -2021,106 +1530,69 @@
     .heritage-point p {
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .74
-        );
+        rgba(255,249,238,.74);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.65;
+      line-height: 1.65;
 
     }
 
 
     /* ======================================================
-       HERO 03 — JOURNEY MAP
+       JOURNEY ART
     ====================================================== */
 
     .journey-art {
 
-      position:
-        relative;
-
-      overflow:
-        hidden;
+      overflow: hidden;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .24
-        );
+        rgba(244,216,138,.24);
 
-      border-radius:
-        30px;
+      border-radius: 30px;
 
       box-shadow:
         0 30px 80px
-        rgba(
-          0,
-          0,
-          0,
-          .25
-        );
+        rgba(0,0,0,.25);
 
-      background:
-        var(--rootz-deep);
+      background: var(--rootz-deep);
 
     }
 
 
     .journey-art img {
 
-      display:
-        block;
+      display: block;
 
-      width:
-        100%;
-
-      height:
-        auto;
+      width: 100%;
 
     }
 
 
     .journey-caption {
 
-      max-width:
-        850px;
+      max-width: 850px;
 
-      margin:
-        26px auto 0;
+      margin: 26px auto 0;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .67
-        );
+        rgba(255,249,238,.67);
 
-      text-align:
-        center;
+      text-align: center;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .79rem;
+      font-size: .79rem;
 
-      line-height:
-        1.7;
+      line-height: 1.7;
 
     }
 
@@ -2131,195 +1603,137 @@
 
     .body-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
         .8fr 1.2fr;
 
-      gap:
-        65px;
+      gap: 65px;
 
-      align-items:
-        center;
+      align-items: center;
 
     }
 
 
     .body-visual {
 
-      position:
-        relative;
+      position: relative;
 
-      min-height:
-        540px;
+      min-height: 540px;
 
-      display:
-        flex;
+      display: flex;
 
-      align-items:
-        center;
-
-      justify-content:
-        center;
+      align-items: center;
+      justify-content: center;
 
     }
 
 
     .body-svg {
 
-      width:
-        min(
-          290px,
-          80%
-        );
+      width: min(290px,80%);
 
-      height:
-        auto;
+      height: auto;
 
-      opacity:
-        .94;
+      opacity: .94;
 
     }
 
 
     .body-marker {
 
-      position:
-        absolute;
+      position: absolute;
 
-      width:
-        24px;
-
-      height:
-        24px;
+      width: 24px;
+      height: 24px;
 
       border:
         3px solid
         var(--rootz-gold-light);
 
-      border-radius:
-        50%;
+      border-radius: 50%;
 
-      background:
-        var(--rootz-green);
+      background: var(--rootz-green);
 
       box-shadow:
         0 0 0 7px
-        rgba(
-          244,
-          216,
-          138,
-          .13
-        );
+        rgba(244,216,138,.13);
 
     }
 
 
     .marker-digestive {
-      top:
-        45%;
-      left:
-        48%;
+      top: 45%;
+      left: 48%;
     }
-
 
     .marker-joints {
-      top:
-        56%;
-      left:
-        38%;
+      top: 56%;
+      left: 38%;
     }
 
-
     .marker-metabolic {
-      top:
-        39%;
-      left:
-        54%;
+      top: 39%;
+      left: 54%;
     }
 
 
     .body-legend {
 
-      display:
-        grid;
+      display: grid;
 
-      gap:
-        16px;
+      gap: 16px;
 
     }
 
 
     .body-research-card {
 
-      padding:
-        24px;
+      padding: 24px;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .18
-        );
+        rgba(244,216,138,.18);
 
-      border-radius:
-        20px;
+      border-radius: 20px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .04
-        );
+        rgba(255,255,255,.04);
 
     }
 
 
     .body-research-card span {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        8px;
+      margin-bottom: 8px;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .66rem;
+      font-size: .66rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .1em;
+      letter-spacing: .1em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .body-research-card h3 {
 
-      margin-bottom:
-        8px;
+      margin-bottom: 8px;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
-      font-size:
-        1.4rem;
+      font-size: 1.4rem;
 
     }
 
@@ -2327,23 +1741,16 @@
     .body-research-card p {
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .7
-        );
+        rgba(255,249,238,.7);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .88rem;
+      font-size: .88rem;
 
-      line-height:
-        1.68;
+      line-height: 1.68;
 
     }
 
@@ -2354,204 +1761,143 @@
 
     .evidence-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          3,
-          1fr
-        );
+        repeat(3,1fr);
 
-      gap:
-        20px;
+      gap: 20px;
 
     }
 
 
     .evidence-card {
 
-      padding:
-        29px;
+      padding: 29px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      border-radius:
-        24px;
+      border-radius: 24px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .7
-        );
+        rgba(255,255,255,.7);
 
     }
 
 
     .evidence-level {
 
-      display:
-        inline-flex;
+      display: inline-flex;
 
-      margin-bottom:
-        16px;
+      margin-bottom: 16px;
 
-      padding:
-        7px 10px;
+      padding: 7px 10px;
 
-      border-radius:
-        999px;
+      border-radius: 999px;
 
       background:
-        rgba(
-          16,
-          60,
-          37,
-          .08
-        );
+        rgba(16,60,37,.08);
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .6rem;
+      font-size: .6rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .08em;
+      letter-spacing: .08em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .evidence-card h3 {
 
-      margin-bottom:
-        10px;
+      margin-bottom: 10px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.46rem;
+      font-size: 1.46rem;
 
     }
 
 
     .evidence-card p {
 
-      color:
-        #5b5c56;
+      color: #5b5c56;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .9rem;
+      font-size: .9rem;
 
-      line-height:
-        1.7;
+      line-height: 1.7;
 
     }
 
 
     .evidence-key {
 
-      margin-top:
-        30px;
+      margin-top: 30px;
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          3,
-          1fr
-        );
+        repeat(3,1fr);
 
-      gap:
-        14px;
+      gap: 14px;
 
     }
 
 
     .evidence-key-item {
 
-      padding:
-        19px;
+      padding: 19px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .11
-        );
+        rgba(16,60,37,.11);
 
-      border-radius:
-        17px;
+      border-radius: 17px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .47
-        );
+        rgba(255,255,255,.47);
 
     }
 
 
     .evidence-key-item strong {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        6px;
+      margin-bottom: 6px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
     }
 
 
     .evidence-key-item p {
 
-      color:
-        #64665f;
+      color: #64665f;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .78rem;
+      font-size: .78rem;
 
-      line-height:
-        1.6;
+      line-height: 1.6;
 
     }
 
@@ -2562,28 +1908,21 @@
 
     .compare-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          3,
-          1fr
-        );
+        repeat(3,1fr);
 
-      gap:
-        20px;
+      gap: 20px;
 
     }
 
 
     .compare-card {
 
-      padding:
-        32px;
+      padding: 32px;
 
-      border-radius:
-        25px;
+      border-radius: 25px;
 
     }
 
@@ -2592,15 +1931,9 @@
 
       border:
         1px solid
-        rgba(
-          182,
-          138,
-          51,
-          .23
-        );
+        rgba(182,138,51,.23);
 
-      background:
-        #f8efdf;
+      background: #f8efdf;
 
     }
 
@@ -2609,15 +1942,9 @@
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .18
-        );
+        rgba(16,60,37,.18);
 
-      background:
-        #edf2ec;
+      background: #edf2ec;
 
     }
 
@@ -2626,12 +1953,7 @@
 
       border:
         1px solid
-        rgba(
-          182,
-          138,
-          51,
-          .28
-        );
+        rgba(182,138,51,.28);
 
       background:
         linear-gradient(
@@ -2645,45 +1967,35 @@
 
     .compare-card span {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        13px;
+      margin-bottom: 13px;
 
-      color:
-        var(--rootz-gold);
+      color: var(--rootz-gold);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .65rem;
+      font-size: .65rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .11em;
+      letter-spacing: .11em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .compare-card h3 {
 
-      margin-bottom:
-        13px;
+      margin-bottom: 13px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.62rem;
+      font-size: 1.62rem;
 
     }
 
@@ -2691,35 +2003,28 @@
     .compare-card p,
     .compare-card li {
 
-      color:
-        #555b54;
+      color: #555b54;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .9rem;
+      font-size: .9rem;
 
-      line-height:
-        1.7;
+      line-height: 1.7;
 
     }
 
 
     .compare-card ul {
-
-      margin:
-        18px 0 0 18px;
-
+      margin: 18px 0 0 18px;
     }
 
 
     .compare-ritual h3,
     .compare-ritual span {
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
     }
 
 
@@ -2727,12 +2032,7 @@
     .compare-ritual li {
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .75
-        );
+        rgba(255,249,238,.75);
 
     }
 
@@ -2743,260 +2043,184 @@
 
     .prep-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          4,
-          1fr
-        );
+        repeat(4,1fr);
 
-      gap:
-        18px;
+      gap: 18px;
 
     }
 
 
     .prep-card {
 
-      padding:
-        27px;
+      padding: 27px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      border-radius:
-        22px;
+      border-radius: 22px;
 
-      background:
-        var(--rootz-cream);
+      background: var(--rootz-cream);
 
     }
 
 
     .prep-number {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        18px;
+      margin-bottom: 18px;
 
-      color:
-        var(--rootz-gold);
+      color: var(--rootz-gold);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .66rem;
+      font-size: .66rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .11em;
+      letter-spacing: .11em;
 
     }
 
 
     .prep-card h3 {
 
-      margin-bottom:
-        10px;
+      margin-bottom: 10px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.4rem;
+      font-size: 1.4rem;
 
     }
 
 
     .prep-card p {
 
-      color:
-        #5c6059;
+      color: #5c6059;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .88rem;
+      font-size: .88rem;
 
-      line-height:
-        1.66;
+      line-height: 1.66;
 
     }
 
 
     /* ======================================================
-       ROOTZ RITUAL
+       RITUAL
     ====================================================== */
 
     .ritual-panel {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
         1.02fr .98fr;
 
-      gap:
-        48px;
+      gap: 48px;
 
-      align-items:
-        center;
+      align-items: center;
 
-      padding:
-        48px;
+      padding: 48px;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .2
-        );
+        rgba(244,216,138,.2);
 
-      border-radius:
-        30px;
+      border-radius: 30px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .035
-        );
+        rgba(255,255,255,.035);
 
     }
 
 
     .ritual-copy h3 {
 
-      margin-bottom:
-        16px;
+      margin-bottom: 16px;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
       font-size:
-        clamp(
-          2.3rem,
-          4vw,
-          4rem
-        );
+        clamp(2.3rem,4vw,4rem);
 
-      line-height:
-        1;
+      line-height: 1;
 
     }
 
 
     .ritual-copy p {
 
-      margin-bottom:
-        20px;
+      margin-bottom: 20px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .74
-        );
+        rgba(255,249,238,.74);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.75;
+      line-height: 1.75;
 
     }
 
 
     .ritual-steps {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          3,
-          1fr
-        );
+        repeat(3,1fr);
 
-      gap:
-        12px;
+      gap: 12px;
 
     }
 
 
     .ritual-step {
 
-      padding:
-        21px;
+      padding: 21px;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .15
-        );
+        rgba(244,216,138,.15);
 
-      border-radius:
-        18px;
+      border-radius: 18px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .035
-        );
+        rgba(255,255,255,.035);
 
     }
 
 
     .ritual-step strong {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        8px;
+      margin-bottom: 8px;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .66rem;
+      font-size: .66rem;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
@@ -3004,23 +2228,16 @@
     .ritual-step span {
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .74
-        );
+        rgba(255,249,238,.74);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .83rem;
+      font-size: .83rem;
 
-      line-height:
-        1.5;
+      line-height: 1.5;
 
     }
 
@@ -3031,40 +2248,29 @@
 
     .blend-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          2,
-          1fr
-        );
+        repeat(2,1fr);
 
-      gap:
-        22px;
+      gap: 22px;
 
     }
 
 
     .blend-card {
 
-      min-height:
-        300px;
+      min-height: 300px;
 
-      display:
-        flex;
+      display: flex;
 
-      flex-direction:
-        column;
+      flex-direction: column;
 
-      justify-content:
-        flex-end;
+      justify-content: flex-end;
 
-      padding:
-        34px;
+      padding: 34px;
 
-      border-radius:
-        28px;
+      border-radius: 28px;
 
       background:
         linear-gradient(
@@ -3073,103 +2279,78 @@
           var(--rootz-green)
         );
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
     }
 
 
     .blend-card span {
 
-      margin-bottom:
-        9px;
+      margin-bottom: 9px;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .68rem;
+      font-size: .68rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .1em;
+      letter-spacing: .1em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .blend-card h3 {
 
-      margin-bottom:
-        11px;
+      margin-bottom: 11px;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
       font-size:
-        clamp(
-          2.1rem,
-          3.2vw,
-          3.4rem
-        );
+        clamp(2.1rem,3.2vw,3.4rem);
 
     }
 
 
     .blend-card p {
 
-      margin-bottom:
-        21px;
+      margin-bottom: 21px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .7
-        );
+        rgba(255,249,238,.7);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.65;
+      line-height: 1.65;
 
     }
 
 
     .blend-link {
 
-      width:
-        fit-content;
+      width: fit-content;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .71rem;
+      font-size: .71rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
       border-bottom:
         1px solid
@@ -3184,53 +2365,37 @@
 
     .media-panel {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
         1.08fr .92fr;
 
-      gap:
-        40px;
+      gap: 40px;
 
-      align-items:
-        center;
+      align-items: center;
 
     }
 
 
     .video-placeholder {
 
-      aspect-ratio:
-        16 / 9;
+      aspect-ratio: 16 / 9;
 
-      position:
-        relative;
+      position: relative;
 
-      display:
-        flex;
+      display: flex;
 
-      align-items:
-        center;
+      align-items: center;
+      justify-content: center;
 
-      justify-content:
-        center;
+      overflow: hidden;
 
-      overflow:
-        hidden;
-
-      border-radius:
-        27px;
+      border-radius: 27px;
 
       background:
         radial-gradient(
           circle at center,
-          rgba(
-            244,
-            216,
-            138,
-            .14
-          ),
+          rgba(244,216,138,.14),
           transparent 34%
         ),
         linear-gradient(
@@ -3244,107 +2409,75 @@
 
     .play-circle {
 
-      width:
-        74px;
+      width: 74px;
+      height: 74px;
 
-      height:
-        74px;
+      display: flex;
 
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
+      align-items: center;
+      justify-content: center;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .5
-        );
+        rgba(244,216,138,.5);
 
-      border-radius:
-        50%;
+      border-radius: 50%;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
-      font-size:
-        1.4rem;
+      font-size: 1.4rem;
 
     }
 
 
     .coming-video {
 
-      position:
-        absolute;
+      position: absolute;
 
-      bottom:
-        22px;
+      bottom: 22px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .64
-        );
+        rgba(255,249,238,.64);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .65rem;
+      font-size: .65rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .11em;
+      letter-spacing: .11em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .media-copy h3 {
 
-      margin-bottom:
-        12px;
+      margin-bottom: 12px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.7rem;
+      font-size: 1.7rem;
 
     }
 
 
     .media-copy p {
 
-      margin-bottom:
-        17px;
+      margin-bottom: 17px;
 
-      color:
-        #565b55;
+      color: #565b55;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.72;
+      line-height: 1.72;
 
     }
 
@@ -3355,158 +2488,114 @@
 
     .archive-grid {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
-        repeat(
-          4,
-          1fr
-        );
+        repeat(4,1fr);
 
-      gap:
-        18px;
+      gap: 18px;
 
     }
 
 
     .archive-card {
 
-      min-height:
-        245px;
+      min-height: 245px;
 
-      display:
-        flex;
+      display: flex;
 
-      flex-direction:
-        column;
+      flex-direction: column;
 
-      padding:
-        26px;
+      padding: 26px;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .18
-        );
+        rgba(244,216,138,.18);
 
-      border-radius:
-        22px;
+      border-radius: 22px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .035
-        );
+        rgba(255,255,255,.035);
 
     }
 
 
     .archive-card span {
 
-      margin-bottom:
-        13px;
+      margin-bottom: 13px;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .64rem;
+      font-size: .64rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .1em;
+      letter-spacing: .1em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .archive-card h3 {
 
-      margin-bottom:
-        10px;
+      margin-bottom: 10px;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
-      font-size:
-        1.45rem;
+      font-size: 1.45rem;
 
     }
 
 
     .archive-card p {
 
-      margin-bottom:
-        20px;
+      margin-bottom: 20px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .63
-        );
+        rgba(255,249,238,.63);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .85rem;
+      font-size: .85rem;
 
-      line-height:
-        1.62;
+      line-height: 1.62;
 
     }
 
 
     .archive-link {
 
-      width:
-        fit-content;
+      width: fit-content;
 
-      margin-top:
-        auto;
+      margin-top: auto;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .66rem;
+      font-size: .66rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .archive-coming {
-      opacity:
-        .58;
+      opacity: .58;
     }
 
 
@@ -3516,69 +2605,567 @@
 
     .safety-box {
 
-      max-width:
-        950px;
+      max-width: 950px;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
-      padding:
-        36px;
+      padding: 36px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .16
-        );
+        rgba(16,60,37,.16);
 
-      border-radius:
-        27px;
+      border-radius: 27px;
 
-      background:
-        #f8efdf;
+      background: #f8efdf;
 
     }
 
 
     .safety-box h3 {
 
-      margin-bottom:
-        16px;
+      margin-bottom: 16px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.9rem;
+      font-size: 1.9rem;
 
     }
 
 
     .safety-box p {
 
-      margin-bottom:
-        14px;
+      margin-bottom: 14px;
 
-      color:
-        #555b54;
+      color: #555b54;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.75;
+      line-height: 1.75;
 
     }
 
 
-    .safety-box strong {
+    /* ======================================================
+       ROOTZ KNOWLEDGE CHECK
+    ====================================================== */
+
+    .knowledge-section {
+
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(244,216,138,.13),
+          transparent 30%
+        ),
+        linear-gradient(
+          145deg,
+          #06170e,
+          #103c25
+        );
+
+    }
+
+
+    .knowledge-shell {
+
+      max-width: 920px;
+
+      margin: 0 auto;
+
+    }
+
+
+    .knowledge-intro {
+
+      text-align: center;
+
+      margin-bottom: 42px;
+
+    }
+
+
+    .knowledge-intro h2 {
+
+      margin-bottom: 16px;
+
+      color: var(--rootz-cream);
+
+      font-size:
+        clamp(3rem,5vw,5rem);
+
+      line-height: .98;
+
+    }
+
+
+    .knowledge-intro p {
+
+      max-width: 680px;
+
+      margin: 0 auto;
+
       color:
-        var(--rootz-green);
+        rgba(255,249,238,.72);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.75;
+
+    }
+
+
+    .rootz-score-card {
+
+      margin-bottom: 28px;
+
+      padding: 26px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr auto;
+
+      gap: 22px;
+
+      align-items: center;
+
+      border:
+        1px solid
+        rgba(244,216,138,.23);
+
+      border-radius: 24px;
+
+      background:
+        rgba(255,255,255,.045);
+
+    }
+
+
+    .rootz-score-label {
+
+      color: var(--rootz-gold-light);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: .68rem;
+
+      font-weight: 900;
+
+      letter-spacing: .11em;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .rootz-score-title {
+
+      margin-top: 6px;
+
+      color: var(--rootz-cream);
+
+      font-size: 1.55rem;
+
+    }
+
+
+    .rootz-score-points {
+
+      color: var(--rootz-gold-light);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: 1.1rem;
+
+      font-weight: 900;
+
+      white-space: nowrap;
+
+    }
+
+
+    .rootz-level-track {
+
+      height: 8px;
+
+      overflow: hidden;
+
+      margin-top: 18px;
+
+      border-radius: 999px;
+
+      background:
+        rgba(255,255,255,.10);
+
+    }
+
+
+    .rootz-level-progress {
+
+      height: 100%;
+
+      width: 0%;
+
+      border-radius: inherit;
+
+      background:
+        var(--rootz-gold-light);
+
+      transition:
+        width .5s ease;
+
+    }
+
+
+    .quiz-form {
+
+      display: grid;
+
+      gap: 18px;
+
+    }
+
+
+    .quiz-question {
+
+      padding: 28px;
+
+      border:
+        1px solid
+        rgba(244,216,138,.18);
+
+      border-radius: 22px;
+
+      background:
+        rgba(255,255,255,.04);
+
+    }
+
+
+    .quiz-question-number {
+
+      display: block;
+
+      margin-bottom: 10px;
+
+      color: var(--rootz-gold-light);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: .65rem;
+
+      font-weight: 900;
+
+      letter-spacing: .11em;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .quiz-question h3 {
+
+      margin-bottom: 18px;
+
+      color: var(--rootz-cream);
+
+      font-size: 1.35rem;
+
+      line-height: 1.35;
+
+    }
+
+
+    .quiz-options {
+
+      display: grid;
+
+      gap: 9px;
+
+    }
+
+
+    .quiz-option {
+
+      display: flex;
+
+      gap: 11px;
+
+      align-items: flex-start;
+
+      padding: 13px 15px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.11);
+
+      border-radius: 13px;
+
+      color:
+        rgba(255,249,238,.8);
+
+      background:
+        rgba(255,255,255,.025);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: .89rem;
+
+      cursor: pointer;
+
+      transition:
+        border-color .16s ease,
+        background .16s ease;
+
+    }
+
+
+    .quiz-option:hover {
+
+      border-color:
+        rgba(244,216,138,.45);
+
+      background:
+        rgba(244,216,138,.05);
+
+    }
+
+
+    .quiz-option input {
+
+      margin-top: 2px;
+
+      accent-color:
+        var(--rootz-gold);
+
+    }
+
+
+    .quiz-actions {
+
+      margin-top: 8px;
+
+      text-align: center;
+
+    }
+
+
+    .quiz-result {
+
+      display: none;
+
+      margin-top: 30px;
+
+      padding: 30px;
+
+      border:
+        1px solid
+        rgba(244,216,138,.25);
+
+      border-radius: 24px;
+
+      text-align: center;
+
+      background:
+        rgba(255,255,255,.055);
+
+    }
+
+
+    .quiz-result.visible {
+      display: block;
+    }
+
+
+    .quiz-result h3 {
+
+      margin-bottom: 10px;
+
+      color: var(--rootz-cream);
+
+      font-size: 2rem;
+
+    }
+
+
+    .quiz-result p {
+
+      color:
+        rgba(255,249,238,.73);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.7;
+
+    }
+
+
+    .quiz-points-awarded {
+
+      display: inline-block;
+
+      margin-top: 16px;
+
+      padding: 9px 13px;
+
+      border-radius: 999px;
+
+      background: var(--rootz-gold);
+
+      color: var(--rootz-deep);
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: .72rem;
+
+      font-weight: 900;
+
+      letter-spacing: .08em;
+
+      text-transform: uppercase;
+
+    }
+
+
+    /* ======================================================
+       ELDER PROGRAMME
+    ====================================================== */
+
+    .elder-panel {
+
+      max-width: 980px;
+
+      margin: 0 auto;
+
+      padding: 46px;
+
+      border:
+        1px solid
+        rgba(16,60,37,.13);
+
+      border-radius: 30px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #f4ead7,
+          #fff9ee
+        );
+
+      text-align: center;
+
+    }
+
+
+    .elder-panel h2 {
+
+      margin-bottom: 16px;
+
+      color: var(--rootz-green);
+
+      font-size:
+        clamp(2.8rem,5vw,4.8rem);
+
+      line-height: 1;
+
+    }
+
+
+    .elder-panel > p {
+
+      max-width: 690px;
+
+      margin: 0 auto 28px;
+
+      color: #555b54;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.75;
+
+    }
+
+
+    .elder-levels {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(5,1fr);
+
+      gap: 10px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .elder-level {
+
+      padding: 18px 10px;
+
+      border:
+        1px solid
+        rgba(16,60,37,.11);
+
+      border-radius: 16px;
+
+      background:
+        rgba(255,255,255,.62);
+
+    }
+
+
+    .elder-level strong {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color: var(--rootz-green);
+
+    }
+
+
+    .elder-level span {
+
+      color: #7b776c;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      font-size: .7rem;
+
     }
 
 
@@ -3587,111 +3174,77 @@
     ====================================================== */
 
     .share-section {
-      text-align:
-        center;
+      text-align: center;
     }
 
 
     .share-box {
 
-      max-width:
-        820px;
+      max-width: 820px;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
-      padding:
-        50px 34px;
+      padding: 50px 34px;
 
       border:
         1px solid
-        rgba(
-          244,
-          216,
-          138,
-          .20
-        );
+        rgba(244,216,138,.20);
 
-      border-radius:
-        30px;
+      border-radius: 30px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .035
-        );
+        rgba(255,255,255,.035);
 
     }
 
 
     .share-box h2 {
 
-      margin-bottom:
-        18px;
+      margin-bottom: 18px;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
       font-size:
-        clamp(
-          2.7rem,
-          5vw,
-          4.8rem
-        );
+        clamp(2.7rem,5vw,4.8rem);
 
-      line-height:
-        1;
+      line-height: 1;
 
     }
 
 
     .share-box p {
 
-      max-width:
-        600px;
+      max-width: 600px;
 
-      margin:
-        0 auto 27px;
+      margin: 0 auto 27px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .7
-        );
+        rgba(255,249,238,.7);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.75;
+      line-height: 1.75;
 
     }
 
 
     .share-status {
 
-      min-height:
-        24px;
+      min-height: 24px;
 
-      margin-top:
-        14px;
+      margin-top: 14px;
 
-      color:
-        var(--rootz-gold-light);
+      color: var(--rootz-gold-light);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .7rem;
+      font-size: .7rem;
 
     }
 
@@ -3702,126 +3255,91 @@
 
     .sources-list {
 
-      display:
-        grid;
+      display: grid;
 
-      gap:
-        14px;
+      gap: 14px;
 
-      max-width:
-        980px;
+      max-width: 980px;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
     }
 
 
     .source-card {
 
-      padding:
-        22px;
+      padding: 22px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      border-radius:
-        18px;
+      border-radius: 18px;
 
       background:
-        rgba(
-          255,
-          255,
-          255,
-          .68
-        );
+        rgba(255,255,255,.68);
 
     }
 
 
     .source-card strong {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        6px;
+      margin-bottom: 6px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
     }
 
 
     .source-card p {
 
-      color:
-        #65665f;
+      color: #65665f;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .84rem;
+      font-size: .84rem;
 
-      line-height:
-        1.62;
+      line-height: 1.62;
 
     }
 
 
     .source-card a {
 
-      color:
-        #8a6322;
+      color: #8a6322;
 
-      text-decoration:
-        underline;
+      text-decoration: underline;
 
     }
 
 
     .editorial-note {
 
-      max-width:
-        980px;
+      max-width: 980px;
 
-      margin:
-        28px auto 0;
+      margin: 28px auto 0;
 
-      padding-top:
-        20px;
+      padding-top: 20px;
 
       border-top:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      color:
-        #77766f;
+      color: #77766f;
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .75rem;
+      font-size: .75rem;
 
-      line-height:
-        1.65;
+      line-height: 1.65;
 
     }
 
@@ -3832,107 +3350,82 @@
 
     .next-botanical {
 
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
         1fr 1fr;
 
-      gap:
-        18px;
+      gap: 18px;
 
     }
 
 
     .next-card {
 
-      padding:
-        33px;
+      padding: 33px;
 
       border:
         1px solid
-        rgba(
-          16,
-          60,
-          37,
-          .12
-        );
+        rgba(16,60,37,.12);
 
-      border-radius:
-        24px;
+      border-radius: 24px;
 
-      background:
-        #f8efdf;
+      background: #f8efdf;
 
     }
 
 
     .next-card span {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        9px;
+      margin-bottom: 9px;
 
-      color:
-        var(--rootz-gold);
+      color: var(--rootz-gold);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .65rem;
+      font-size: .65rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      letter-spacing:
-        .11em;
+      letter-spacing: .11em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
     }
 
 
     .next-card strong {
 
-      display:
-        block;
+      display: block;
 
-      margin-bottom:
-        12px;
+      margin-bottom: 12px;
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
-      font-size:
-        1.9rem;
+      font-size: 1.9rem;
 
     }
 
 
     .next-card a {
 
-      color:
-        var(--rootz-green);
+      color: var(--rootz-green);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      font-size:
-        .7rem;
+      font-size: .7rem;
 
-      font-weight:
-        900;
+      font-weight: 900;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
       border-bottom:
         1px solid
@@ -3947,21 +3440,14 @@
 
     .visitor-gate {
 
-      padding:
-        95px 7vw;
+      padding: 95px 7vw;
 
-      text-align:
-        center;
+      text-align: center;
 
       background:
         radial-gradient(
           circle at top,
-          rgba(
-            244,
-            216,
-            138,
-            .11
-          ),
+          rgba(244,216,138,.11),
           transparent 30%
         ),
         linear-gradient(
@@ -3975,56 +3461,40 @@
 
     .visitor-gate-inner {
 
-      max-width:
-        760px;
+      max-width: 760px;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
     }
 
 
     .visitor-gate h2 {
 
-      margin-bottom:
-        20px;
+      margin-bottom: 20px;
 
-      color:
-        var(--rootz-cream);
+      color: var(--rootz-cream);
 
       font-size:
-        clamp(
-          3rem,
-          5vw,
-          5rem
-        );
+        clamp(3rem,5vw,5rem);
 
-      line-height:
-        1;
+      line-height: 1;
 
     }
 
 
     .visitor-gate p {
 
-      margin-bottom:
-        27px;
+      margin-bottom: 27px;
 
       color:
-        rgba(
-          255,
-          249,
-          238,
-          .72
-        );
+        rgba(255,249,238,.72);
 
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      line-height:
-        1.75;
+      line-height: 1.75;
 
     }
 
@@ -4033,18 +3503,12 @@
        RESPONSIVE
     ====================================================== */
 
-    @media (
-      max-width: 1100px
-    ) {
+    @media (max-width: 1100px) {
 
       .glance-grid {
         grid-template-columns:
-          repeat(
-            3,
-            1fr
-          );
+          repeat(3,1fr);
       }
-
 
       .contents-grid,
       .uses-grid,
@@ -4052,35 +3516,31 @@
       .archive-grid {
 
         grid-template-columns:
-          repeat(
-            2,
-            1fr
-          );
+          repeat(2,1fr);
 
       }
-
 
       .evidence-grid,
       .evidence-key,
       .compare-grid {
 
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
 
+      }
+
+      .elder-levels {
+        grid-template-columns:
+          repeat(3,1fr);
       }
 
     }
 
 
-    @media (
-      max-width: 900px
-    ) {
+    @media (max-width: 900px) {
 
       .botanical-hero-content {
-        width:
-          72%;
+        width: 72%;
       }
-
 
       .study-grid,
       .heritage-grid,
@@ -4088,166 +3548,115 @@
       .ritual-panel,
       .media-panel {
 
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
 
       }
 
-
       .blend-grid {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
     }
 
 
-    @media (
-      max-width: 700px
-    ) {
+    @media (max-width: 700px) {
 
       .botanical-progress {
 
-        align-items:
-          flex-start;
+        align-items: flex-start;
 
-        flex-direction:
-          column;
+        flex-direction: column;
 
       }
-
 
       .progress-dots {
-        flex-wrap:
-          wrap;
+        flex-wrap: wrap;
       }
-
 
       .botanical-hero {
 
-        min-height:
-          720px;
+        min-height: 720px;
 
-        align-items:
-          flex-end;
+        align-items: flex-end;
 
       }
-
 
       .botanical-hero-image {
-        object-position:
-          59% center;
+        object-position: 59% center;
       }
-
 
       .botanical-hero-overlay {
 
         background:
           linear-gradient(
             180deg,
-            rgba(
-              3,
-              20,
-              12,
-              .12
-            ) 0%,
-            rgba(
-              3,
-              20,
-              12,
-              .55
-            ) 38%,
-            rgba(
-              3,
-              20,
-              12,
-              .98
-            ) 100%
+            rgba(3,20,12,.12) 0%,
+            rgba(3,20,12,.55) 38%,
+            rgba(3,20,12,.98) 100%
           );
 
       }
 
-
       .botanical-hero-content {
 
-        width:
-          100%;
+        width: 100%;
 
-        padding:
-          240px 22px 58px;
+        padding: 240px 22px 58px;
 
       }
-
 
       .botanical-hero h1 {
 
         font-size:
-          clamp(
-            4.2rem,
-            20vw,
-            6rem
-          );
+          clamp(4.2rem,20vw,6rem);
 
       }
-
 
       .botanical-section,
       .visitor-gate {
 
-        padding:
-          68px 22px;
+        padding: 68px 22px;
 
       }
-
 
       .breadcrumbs,
       .botanical-progress-wrap {
 
-        padding-left:
-          22px;
-
-        padding-right:
-          22px;
+        padding-left: 22px;
+        padding-right: 22px;
 
       }
-
 
       .glance-grid,
       .contents-grid,
       .uses-grid,
       .prep-grid,
       .archive-grid,
-      .next-botanical {
+      .next-botanical,
+      .elder-levels {
 
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
 
       }
-
 
       .ritual-panel {
-        padding:
-          29px;
+        padding: 29px;
       }
-
 
       .ritual-steps {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
-
 
       .body-visual {
-        min-height:
-          470px;
+        min-height: 470px;
       }
 
+      .rootz-score-card {
+        grid-template-columns: 1fr;
+      }
 
-      .journey-art {
-
-        border-radius:
-          18px;
-
+      .elder-panel {
+        padding: 32px 22px;
       }
 
     }
@@ -4261,7 +3670,7 @@
 
 
   <!-- ======================================================
-       MEMBER STATUS
+       MEMBER BAR
   ======================================================= -->
 
   <div class="botanical-member-bar">
@@ -4324,33 +3733,13 @@
       aria-label="Main navigation"
     >
 
-      <a href="/index.html">
-        Home
-      </a>
-
-      <a href="/shop.html">
-        Shop
-      </a>
-
-      <a href="/founder.html">
-        Founder
-      </a>
-
-      <a href="/tea-ritual.html">
-        Tea Ritual
-      </a>
-
-      <a href="/herbal-library.html">
-        Herbal Library
-      </a>
-
-      <a href="/community.html">
-        Community
-      </a>
-
-      <a href="/faq.html">
-        FAQ
-      </a>
+      <a href="/index.html">Home</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/founder.html">Founder</a>
+      <a href="/tea-ritual.html">Tea Ritual</a>
+      <a href="/herbal-library.html">Herbal Library</a>
+      <a href="/community.html">Community</a>
+      <a href="/faq.html">FAQ</a>
 
       <a
         class="nav-cta"
@@ -4370,43 +3759,20 @@
     aria-label="Mobile navigation"
   >
 
-    <a href="/index.html">
-      Home
-    </a>
-
-    <a href="/shop.html">
-      Shop
-    </a>
-
-    <a href="/founder.html">
-      Founder
-    </a>
-
-    <a href="/tea-ritual.html">
-      Tea Ritual
-    </a>
-
-    <a href="/herbal-library.html">
-      Herbal Library
-    </a>
-
-    <a href="/community.html">
-      Community
-    </a>
-
-    <a href="/faq.html">
-      FAQ
-    </a>
-
-    <a href="/contact.html">
-      Contact
-    </a>
+    <a href="/index.html">Home</a>
+    <a href="/shop.html">Shop</a>
+    <a href="/founder.html">Founder</a>
+    <a href="/tea-ritual.html">Tea Ritual</a>
+    <a href="/herbal-library.html">Herbal Library</a>
+    <a href="/community.html">Community</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/contact.html">Contact</a>
 
   </nav>
 
 
   <!-- ======================================================
-       BREADCRUMBS
+       BREADCRUMB
   ======================================================= -->
 
   <nav
@@ -4420,17 +3786,13 @@
         Home
       </a>
 
-      <span aria-hidden="true">
-        ›
-      </span>
+      <span>›</span>
 
       <a href="/herbal-library.html">
         Herbal Library
       </a>
 
-      <span aria-hidden="true">
-        ›
-      </span>
+      <span>›</span>
 
       <span aria-current="page">
         Ginger
@@ -4442,7 +3804,7 @@
 
 
   <!-- ======================================================
-       COLLECTION PROGRESS
+       BOTANICAL PROGRESS
   ======================================================= -->
 
   <div class="botanical-progress-wrap member-only">
@@ -4454,42 +3816,16 @@
       </span>
 
 
-      <div
-        class="progress-dots"
-        aria-label="Botanical collection progress"
-      >
+      <div class="progress-dots">
 
-        <span class="progress-dot active">
-          01
-        </span>
-
-        <span class="progress-dot">
-          02
-        </span>
-
-        <span class="progress-dot">
-          03
-        </span>
-
-        <span class="progress-dot">
-          04
-        </span>
-
-        <span class="progress-dot">
-          05
-        </span>
-
-        <span class="progress-dot">
-          06
-        </span>
-
-        <span class="progress-dot">
-          07
-        </span>
-
-        <span class="progress-dot">
-          08
-        </span>
+        <span class="progress-dot active">01</span>
+        <span class="progress-dot">02</span>
+        <span class="progress-dot">03</span>
+        <span class="progress-dot">04</span>
+        <span class="progress-dot">05</span>
+        <span class="progress-dot">06</span>
+        <span class="progress-dot">07</span>
+        <span class="progress-dot">08</span>
 
       </div>
 
@@ -4502,14 +3838,14 @@
 
 
     <!-- ====================================================
-         HERO 01
+         HERO
     ===================================================== -->
 
     <section class="botanical-hero">
 
       <img
         class="botanical-hero-image"
-        src="/assets/botanicals/botanical-ginger.png?v=620"
+        src="/assets/botanicals/botanical-ginger.png?v=622"
         alt="Fresh ginger rhizomes and green ginger plant growing in a tropical landscape"
         fetchpriority="high"
         decoding="async"
@@ -4595,7 +3931,7 @@
 
 
     <!-- ====================================================
-         PUBLIC SEO / AT A GLANCE
+         PUBLIC SEO OVERVIEW
     ===================================================== -->
 
     <section
@@ -4605,15 +3941,18 @@
 
       <div class="botanical-container">
 
+
         <div class="botanical-heading center">
 
           <p class="botanical-kicker">
             Ginger At A Glance
           </p>
 
+
           <h2>
             What is ginger?
           </h2>
+
 
           <p>
 
@@ -4701,6 +4040,7 @@
             Ginger in traditional use and modern research
           </h2>
 
+
           <p>
 
             Ginger has travelled far beyond its Asian
@@ -4711,8 +4051,8 @@
             digestion and nausea.
 
             Modern research has examined several of these
-            areas, although the strength of evidence depends
-            on the specific preparation, dose and outcome.
+            areas, although evidence depends on the
+            preparation, dose and outcome being studied.
 
           </p>
 
@@ -4736,6 +4076,7 @@
           <p class="botanical-kicker">
             Explore Botanical 01
           </p>
+
 
           <h2>
             Inside the Ginger Field Entry
@@ -4764,7 +4105,7 @@
             </a>
 
             <a href="#research-areas">
-              05 • Where Researchers Look
+              05 • Research Areas
             </a>
 
             <a href="#evidence">
@@ -4772,7 +4113,7 @@
             </a>
 
             <a href="#ways-of-knowing">
-              07 • Tradition / Evidence / Ritual
+              07 • Three Lenses
             </a>
 
             <a href="#preparation">
@@ -4797,6 +4138,10 @@
 
             <a href="#safety">
               13 • Safety
+            </a>
+
+            <a href="#test-your-rootz">
+              Test Your Rootz
             </a>
 
             <a href="#sources">
@@ -4835,7 +4180,7 @@
           Join the Rootz Library free to unlock Ginger's
           full heritage journey, research guide,
           preparation, Rootz Ritual, Field Archive
-          and future botanical films.
+          and Rootz knowledge programme.
 
         </p>
 
@@ -4853,14 +4198,14 @@
 
 
     <!-- ====================================================
-         MEMBER LIBRARY
+         MEMBER CONTENT
     ===================================================== -->
 
     <div class="member-only">
 
 
       <!-- ==================================================
-           HERO 02 / KNOW THE ROOT
+           KNOW ROOT
       =================================================== -->
 
       <section
@@ -4870,14 +4215,13 @@
 
         <div class="botanical-container">
 
-
           <div class="study-grid">
 
 
             <div class="study-image">
 
               <img
-                src="/assets/botanicals/ginger-botanical-profile.png?v=620"
+                src="/assets/botanicals/ginger-botanical-profile.png?v=622"
                 alt="Botanical study of fresh ginger rhizomes, sliced ginger and the ginger plant"
                 loading="lazy"
                 decoding="async"
@@ -4919,9 +4263,9 @@
                 Fresh ginger has a bright,
                 pungent and aromatic character.
 
-                Drying alters that aromatic profile
-                and produces a different,
-                often sharper expression.
+                Drying changes that aromatic profile
+                and creates another expression
+                of the spice.
 
               </p>
 
@@ -4945,7 +4289,6 @@
 
             </div>
 
-
           </div>
 
         </div>
@@ -4954,7 +4297,7 @@
 
 
       <!-- ==================================================
-           TRADITIONAL USE
+           USES
       =================================================== -->
 
       <section
@@ -4964,15 +4307,18 @@
 
         <div class="botanical-container">
 
+
           <div class="botanical-heading center">
 
             <p class="botanical-kicker">
               02 • Traditional Uses Of Ginger
             </p>
 
+
             <h2>
               Why people reach for ginger.
             </h2>
+
 
             <p>
 
@@ -4992,9 +4338,7 @@
 
             <article class="use-card">
 
-              <div class="use-icon">
-                ◌
-              </div>
+              <div class="use-icon">◌</div>
 
               <h3>
                 Nausea
@@ -5006,8 +4350,8 @@
                 preparations used for nausea and
                 unsettled stomachs.
 
-                Pregnancy-related nausea is also one of
-                ginger's better-studied modern research areas.
+                Pregnancy-related nausea is also one
+                of its better-studied research areas.
 
               </p>
 
@@ -5020,9 +4364,7 @@
 
             <article class="use-card">
 
-              <div class="use-icon">
-                ◇
-              </div>
+              <div class="use-icon">◇</div>
 
               <h3>
                 Digestive Comfort
@@ -5046,9 +4388,7 @@
 
             <article class="use-card">
 
-              <div class="use-icon">
-                ✦
-              </div>
+              <div class="use-icon">✦</div>
 
               <h3>
                 Warming Drinks
@@ -5057,8 +4397,8 @@
               <p>
 
                 Ginger's pungent heat has made it
-                a familiar ingredient in warming teas,
-                cooking and seasonal beverages.
+                familiar in warming teas,
+                cooking and seasonal drinks.
 
               </p>
 
@@ -5071,9 +4411,7 @@
 
             <article class="use-card">
 
-              <div class="use-icon">
-                ○
-              </div>
+              <div class="use-icon">○</div>
 
               <h3>
                 Menstrual Discomfort
@@ -5081,11 +4419,9 @@
 
               <p>
 
-                Ginger has traditional associations with
-                menstrual discomfort and has also been
-                investigated clinically.
-
-                Evidence depends on preparation and dose.
+                Ginger has traditional associations
+                with menstrual discomfort and has also
+                been investigated clinically.
 
               </p>
 
@@ -5107,9 +4443,8 @@
             Traditional knowledge and modern clinical evidence
             are different forms of information.
 
-            We present them separately so cultural knowledge
-            can be respected without turning tradition into
-            unsupported medical claims.
+            We present them separately so heritage can be respected
+            without turning tradition into unsupported medical claims.
 
           </div>
 
@@ -5182,10 +4517,6 @@
                 juices, cooking, seasonal drinks
                 and household preparations.
 
-                It is now part of living Caribbean
-                food culture rather than simply
-                a plant imported from elsewhere.
-
               </p>
 
             </div>
@@ -5202,8 +4533,7 @@
 
                 <p>
 
-                  Kew records the native range of
-                  <em>Zingiber officinale</em> from
+                  Kew records the native range from
                   the Eastern Himalaya to south-central China.
 
                 </p>
@@ -5221,7 +4551,7 @@
 
                   Ginger became cultivated in tropical
                   African regions and incorporated into
-                  local culinary and plant traditions.
+                  local food and plant traditions.
 
                 </p>
 
@@ -5260,7 +4590,6 @@
 
               </div>
 
-
             </div>
 
           </div>
@@ -5271,7 +4600,7 @@
 
 
       <!-- ==================================================
-           HERO 03 — JOURNEY
+           JOURNEY
       =================================================== -->
 
       <section
@@ -5297,11 +4626,11 @@
 
             <p>
 
-              Ginger's historical movement involved
-              many trade, cultivation and migration networks.
+              Ginger's movement involved many trade,
+              cultivation and migration networks.
 
-              This visual presents a broad cultural journey
-              rather than claiming one single route.
+              This visual presents a broad cultural
+              journey rather than one single route.
 
             </p>
 
@@ -5311,8 +4640,8 @@
           <figure class="journey-art">
 
             <img
-              src="/assets/botanicals/ginger-heritage-journey-map.png?v=620"
-              alt="RastaRoots heritage map illustrating ginger's broad journey from its Asian native range through historic trade and cultivation into tropical Africa and the Caribbean"
+              src="/assets/botanicals/ginger-heritage-journey-map.png?v=622"
+              alt="RastaRoots heritage map illustrating ginger's broad journey from Asia through historic trade and cultivation into tropical Africa and the Caribbean"
               loading="lazy"
               decoding="async"
             />
@@ -5325,8 +4654,8 @@
             Interpretive heritage overview.
 
             The map illustrates broad historical movement
-            and cultural adoption and should not be read
-            as a single exact chronological migration route.
+            and cultural adoption rather than one exact
+            chronological migration route.
 
           </p>
 
@@ -5336,7 +4665,7 @@
 
 
       <!-- ==================================================
-           RESEARCH AREAS
+           RESEARCH
       =================================================== -->
 
       <section
@@ -5361,10 +4690,9 @@
 
             <p>
 
-              This graphic does not show organs that
-              ginger “treats.”
+              This does not show organs that ginger “treats.”
 
-              It highlights systems and outcomes that
+              It highlights systems and outcomes
               researchers have investigated.
 
             </p>
@@ -5376,7 +4704,6 @@
 
 
             <div class="body-visual">
-
 
               <svg
                 class="body-svg"
@@ -5392,65 +4719,19 @@
                   opacity=".75"
                 >
 
-                  <circle
-                    cx="130"
-                    cy="53"
-                    r="34"
-                  />
+                  <circle cx="130" cy="53" r="34" />
 
+                  <path d="M109 87 C93 105 82 136 84 171 L90 267 C92 294 79 331 75 370 L58 545" />
 
-                  <path
-                    d="
-                    M109 87
-                    C93 105 82 136 84 171
-                    L90 267
-                    C92 294 79 331 75 370
-                    L58 545
-                    "
-                  />
+                  <path d="M151 87 C167 105 178 136 176 171 L170 267 C168 294 181 331 185 370 L202 545" />
 
+                  <path d="M85 144 C57 176 43 227 33 283" />
 
-                  <path
-                    d="
-                    M151 87
-                    C167 105 178 136 176 171
-                    L170 267
-                    C168 294 181 331 185 370
-                    L202 545
-                    "
-                  />
+                  <path d="M175 144 C203 176 217 227 227 283" />
 
+                  <path d="M102 103 C116 114 144 114 158 103" />
 
-                  <path
-                    d="
-                    M85 144
-                    C57 176 43 227 33 283
-                    "
-                  />
-
-
-                  <path
-                    d="
-                    M175 144
-                    C203 176 217 227 227 283
-                    "
-                  />
-
-
-                  <path
-                    d="
-                    M102 103
-                    C116 114 144 114 158 103
-                    "
-                  />
-
-
-                  <path
-                    d="
-                    M91 266
-                    C110 279 150 279 169 266
-                    "
-                  />
+                  <path d="M91 266 C110 279 150 279 169 266" />
 
                 </g>
 
@@ -5461,46 +4742,18 @@
                   stroke-width="4"
                 >
 
-                  <path
-                    d="
-                    M129 199
-                    C109 211 108 242 124 255
-                    C143 269 158 248 151 226
-                    C146 209 135 207 129 199Z
-                    "
-                  />
+                  <path d="M129 199 C109 211 108 242 124 255 C143 269 158 248 151 226 C146 209 135 207 129 199Z" />
 
-
-                  <path
-                    d="
-                    M118 261
-                    C100 276 103 315 122 329
-                    C145 346 165 314 154 283
-                    C148 266 133 257 118 261Z
-                    "
-                  />
+                  <path d="M118 261 C100 276 103 315 122 329 C145 346 165 314 154 283 C148 266 133 257 118 261Z" />
 
                 </g>
 
               </svg>
 
 
-              <span
-                class="body-marker marker-digestive"
-                title="Digestive research"
-              ></span>
-
-
-              <span
-                class="body-marker marker-joints"
-                title="Muscle and joint research"
-              ></span>
-
-
-              <span
-                class="body-marker marker-metabolic"
-                title="Metabolic research"
-              ></span>
+              <span class="body-marker marker-digestive"></span>
+              <span class="body-marker marker-joints"></span>
+              <span class="body-marker marker-metabolic"></span>
 
             </div>
 
@@ -5522,9 +4775,6 @@
 
                   Nausea is one of the most frequently
                   investigated clinical areas for ginger.
-
-                  Findings differ depending on the type
-                  of nausea, preparation and dose.
 
                 </p>
 
@@ -5568,8 +4818,6 @@
                   in relation to glucose,
                   lipids and inflammatory biomarkers.
 
-                  Evidence varies by outcome.
-
                 </p>
 
               </article>
@@ -5609,13 +4857,11 @@
 
             <p>
 
-              Ginger has been investigated across
-              many health outcomes.
+              Ginger has been investigated across many outcomes.
 
               Evidence strength varies,
-              and results from supplements or extracts
-              cannot automatically be transferred
-              to a normal cup of herbal tea.
+              and results from concentrated supplements or extracts
+              cannot automatically be transferred to herbal tea.
 
             </p>
 
@@ -5631,20 +4877,14 @@
                 Better Studied
               </span>
 
-
               <h3>
                 Pregnancy-related nausea
               </h3>
 
-
               <p>
 
-                Research suggests ginger may help
-                reduce pregnancy-related nausea in some settings.
-
-                Pregnancy still warrants individual
-                healthcare guidance, particularly when
-                concentrated supplements are involved.
+                Research suggests ginger may help reduce
+                pregnancy-related nausea in some settings.
 
               </p>
 
@@ -5657,19 +4897,15 @@
                 Mixed / Context Dependent
               </span>
 
-
               <h3>
                 Other forms of nausea
               </h3>
-
 
               <p>
 
                 Ginger has also been investigated for
                 postoperative, chemotherapy-related
                 and motion-related nausea.
-
-                Findings are not consistently positive.
 
               </p>
 
@@ -5682,19 +4918,15 @@
                 Emerging / Variable
               </span>
 
-
               <h3>
                 Metabolic & inflammatory outcomes
               </h3>
 
-
               <p>
 
                 Studies have examined glucose,
-                lipids, discomfort and inflammatory markers.
-
-                Evidence quality and confidence
-                differ considerably between outcomes.
+                lipids, discomfort
+                and inflammatory markers.
 
               </p>
 
@@ -5713,10 +4945,7 @@
               </strong>
 
               <p>
-
-                Multiple human studies or reviews
-                investigate the specific outcome.
-
+                Multiple human studies or reviews investigate the outcome.
               </p>
 
             </div>
@@ -5729,11 +4958,7 @@
               </strong>
 
               <p>
-
-                Human research exists,
-                but results vary between studies,
-                preparations or populations.
-
+                Human evidence exists but results vary.
               </p>
 
             </div>
@@ -5746,14 +4971,10 @@
               </strong>
 
               <p>
-
-                An active research area where evidence
-                is not yet strong enough for firm conclusions.
-
+                Interesting research exists but firm conclusions are limited.
               </p>
 
             </div>
-
 
           </div>
 
@@ -5763,7 +4984,7 @@
 
 
       <!-- ==================================================
-           THREE WAYS OF KNOWING
+           THREE LENSES
       =================================================== -->
 
       <section
@@ -5789,11 +5010,7 @@
 
 
             <p>
-
               Each tells us something different.
-
-              None should be confused with another.
-
             </p>
 
           </div>
@@ -5808,40 +5025,17 @@
                 Traditional Knowledge
               </span>
 
-
               <h3>
                 What communities have done.
               </h3>
 
-
               <p>
 
-                Traditional knowledge records how
-                families and cultures have prepared
-                and understood plants across generations.
+                Traditional knowledge records
+                how people have prepared and understood
+                plants across generations.
 
               </p>
-
-
-              <ul>
-
-                <li>
-                  Household ginger drinks
-                </li>
-
-                <li>
-                  Warming preparations
-                </li>
-
-                <li>
-                  Food traditions
-                </li>
-
-                <li>
-                  Family plant knowledge
-                </li>
-
-              </ul>
 
             </article>
 
@@ -5852,40 +5046,16 @@
                 Modern Evidence
               </span>
 
-
               <h3>
                 What research asks.
               </h3>
 
-
               <p>
 
-                Clinical research examines specific
-                preparations, doses, populations
-                and measurable outcomes.
+                Research examines specific preparations,
+                doses, populations and outcomes.
 
               </p>
-
-
-              <ul>
-
-                <li>
-                  Study design matters
-                </li>
-
-                <li>
-                  Dose matters
-                </li>
-
-                <li>
-                  Preparation matters
-                </li>
-
-                <li>
-                  Evidence quality matters
-                </li>
-
-              </ul>
 
             </article>
 
@@ -5896,44 +5066,20 @@
                 RastaRoots Ritual
               </span>
 
-
               <h3>
                 How we bring it into the cup.
               </h3>
-
 
               <p>
 
                 RastaRoots uses botanical knowledge
                 to guide flavour,
                 preparation and ritual —
-                not to turn tea into medical treatment.
+                not to turn tea into treatment.
 
               </p>
 
-
-              <ul>
-
-                <li>
-                  Know the ingredient
-                </li>
-
-                <li>
-                  Respect its history
-                </li>
-
-                <li>
-                  Understand the flavour
-                </li>
-
-                <li>
-                  Brew with intention
-                </li>
-
-              </ul>
-
             </article>
-
 
           </div>
 
@@ -5983,10 +5129,7 @@
               </h3>
 
               <p>
-
-                Sliced, grated or crushed
-                for food, drinks and infusions.
-
+                Sliced, grated or crushed for food, drinks and infusions.
               </p>
 
             </article>
@@ -6003,10 +5146,7 @@
               </h3>
 
               <p>
-
-                Drying alters ginger's aromatic profile
-                and produces a different spice character.
-
+                Drying produces a different aromatic and spice profile.
               </p>
 
             </article>
@@ -6023,10 +5163,7 @@
               </h3>
 
               <p>
-
-                Ginger can be infused alone
-                or blended with other botanicals.
-
+                Ginger can be infused alone or with other botanicals.
               </p>
 
             </article>
@@ -6043,14 +5180,10 @@
               </h3>
 
               <p>
-
-                Ginger appears across sweet,
-                savoury and beverage traditions.
-
+                Ginger appears across sweet, savoury and beverage traditions.
               </p>
 
             </article>
-
 
           </div>
 
@@ -6097,21 +5230,18 @@
 
               <p>
 
-                This is about flavour and attention,
-                not a therapeutic dose.
+                Slice or lightly crush fresh ginger.
 
-                Slice or lightly crush fresh ginger,
-                steep in freshly boiled water
-                and allow the aroma and heat
-                to develop naturally.
+                Steep in freshly boiled water
+                and allow its aroma and warmth
+                to develop.
 
               </p>
 
 
               <p>
 
-                Add lemon or honey for flavour
-                if you wish.
+                Add lemon or honey for flavour if you wish.
 
                 Sit with the cup.
                 Notice the aroma.
@@ -6153,7 +5283,7 @@
                 </strong>
 
                 <span>
-                  Steep and allow flavour to develop.
+                  Steep and let the flavour develop.
                 </span>
 
               </div>
@@ -6171,7 +5301,6 @@
 
               </div>
 
-
             </div>
 
           </div>
@@ -6182,7 +5311,7 @@
 
 
       <!-- ==================================================
-           RASTAROOTS BLENDS
+           BLENDS
       =================================================== -->
 
       <section
@@ -6204,14 +5333,6 @@
               Found inside two rituals.
             </h2>
 
-
-            <p>
-
-              Here ginger is used for its
-              flavour and botanical character.
-
-            </p>
-
           </div>
 
 
@@ -6224,11 +5345,9 @@
                 Morning Ritual
               </span>
 
-
               <h3>
                 Roots Fire
               </h3>
-
 
               <p>
 
@@ -6237,7 +5356,6 @@
                 aromatic spice and depth.
 
               </p>
-
 
               <a
                 class="blend-link"
@@ -6255,21 +5373,17 @@
                 Strength Ritual
               </span>
 
-
               <h3>
                 Iron Root
               </h3>
-
 
               <p>
 
                 Ginger sits alongside
                 sarsaparilla and moringa,
-                lifting the deeper root character
-                with warming spice.
+                adding warming spice.
 
               </p>
-
 
               <a
                 class="blend-link"
@@ -6280,7 +5394,6 @@
 
             </article>
 
-
           </div>
 
         </div>
@@ -6289,7 +5402,7 @@
 
 
       <!-- ==================================================
-           FILM
+           VIDEO
       =================================================== -->
 
       <section
@@ -6306,7 +5419,6 @@
               11 • Watch The Story
             </p>
 
-
             <h2>
               The Rootz Botanical Series.
             </h2>
@@ -6319,13 +5431,9 @@
 
             <div class="video-placeholder">
 
-              <div
-                class="play-circle"
-                aria-hidden="true"
-              >
+              <div class="play-circle">
                 ▶
               </div>
-
 
               <span class="coming-video">
                 Ginger Film • Coming Soon
@@ -6340,28 +5448,18 @@
                 Ginger: The Root That Travelled
               </h3>
 
-
               <p>
 
-                Future Rootz Botanical films will combine
+                Future films will combine
                 plant history,
                 Caribbean culture,
                 flavour,
                 founder storytelling
-                and modern research.
-
-              </p>
-
-
-              <p>
-
-                This section is already prepared
-                for the final Ginger film.
+                and research.
 
               </p>
 
             </div>
-
 
           </div>
 
@@ -6371,7 +5469,7 @@
 
 
       <!-- ==================================================
-           FIELD ARCHIVE
+           ARCHIVE
       =================================================== -->
 
       <section
@@ -6388,18 +5486,9 @@
               12 • The Field Archive
             </p>
 
-
             <h2>
               Take the knowledge with you.
             </h2>
-
-
-            <p>
-
-              The Field Archive will grow alongside
-              the digital Rootz Library.
-
-            </p>
 
           </div>
 
@@ -6413,20 +5502,13 @@
                 Available Now
               </span>
 
-
               <h3>
                 Field Guide 001
               </h3>
 
-
               <p>
-
-                The first RastaRoots field guide
-                exploring eight botanicals behind
-                the Discovery Collection.
-
+                Explore eight botanicals behind the Discovery Collection.
               </p>
-
 
               <a
                 class="archive-link field-guide-download"
@@ -6445,25 +5527,16 @@
                 Coming Soon
               </span>
 
-
               <h3>
                 Ginger Field Sheet
               </h3>
 
-
               <p>
-
-                A printable Ginger reference
-                covering identity,
-                heritage,
-                preparation,
-                evidence and safety.
-
+                Printable identity, heritage, evidence and safety guide.
               </p>
 
-
               <span class="archive-link">
-                PDF In Development
+                In Development
               </span>
 
             </article>
@@ -6474,24 +5547,17 @@
               <span>
                 Coming Soon
               </span>
-
 
               <h3>
                 Journey Of Ginger
               </h3>
 
-
               <p>
-
-                A downloadable heritage map
-                exploring ginger's broad
-                cultural journey.
-
+                Downloadable heritage journey map.
               </p>
 
-
               <span class="archive-link">
-                Map Edition In Development
+                In Development
               </span>
 
             </article>
@@ -6503,26 +5569,19 @@
                 Coming Soon
               </span>
 
-
               <h3>
                 Ginger Ritual Card
               </h3>
 
-
               <p>
-
-                A simple printable preparation
-                and tasting ritual.
-
+                Printable preparation and tasting ritual.
               </p>
 
-
               <span class="archive-link">
-                Ritual Card In Development
+                In Development
               </span>
 
             </article>
-
 
           </div>
 
@@ -6549,7 +5608,6 @@
               13 • Ginger Safety & Side Effects
             </p>
 
-
             <h2>
               Natural does not mean consequence-free.
             </h2>
@@ -6560,26 +5618,26 @@
           <div class="safety-box">
 
             <h3>
-              Ginger is food — but form and dose matter.
+              Form and dose matter.
             </h3>
 
 
             <p>
 
-              Ginger used as an ordinary food or drink
-              is not the same as concentrated extracts
-              or dietary supplements used in clinical studies.
+              Ordinary food and drink use is not
+              automatically equivalent to concentrated
+              extracts or supplements used in research.
 
             </p>
 
 
             <p>
 
-              NCCIH notes that oral ginger may cause
+              Oral ginger may cause effects such as
               abdominal discomfort,
               heartburn,
               diarrhoea,
-              and mouth or throat irritation
+              or mouth and throat irritation
               in some people.
 
             </p>
@@ -6597,7 +5655,7 @@
 
               </strong>
 
-              speak with an appropriate healthcare professional
+              speak to an appropriate healthcare professional
               before using concentrated herbal supplements.
 
             </p>
@@ -6605,12 +5663,578 @@
 
             <p>
 
-              The RastaRoots Herbal Library is educational.
-
-              It does not diagnose,
-              treat or replace individual medical advice.
+              The Rootz Library is educational
+              and does not replace medical advice.
 
             </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           TEST YOUR ROOTZ
+      =================================================== -->
+
+      <section
+        id="test-your-rootz"
+        class="botanical-section knowledge-section"
+      >
+
+        <div class="knowledge-shell">
+
+
+          <div class="knowledge-intro">
+
+            <p class="botanical-kicker">
+              Test Your Rootz
+            </p>
+
+
+            <h2>
+              How much did you take in?
+            </h2>
+
+
+            <p>
+
+              Complete the Ginger knowledge check.
+
+              Score at least 4 out of 5
+              to complete Botanical 01
+              and earn 25 Rootz Points.
+
+            </p>
+
+          </div>
+
+
+          <div class="rootz-score-card">
+
+            <div>
+
+              <span class="rootz-score-label">
+                Your Rootz Journey
+              </span>
+
+              <div
+                class="rootz-score-title"
+                id="rootzLevelName"
+              >
+                Seed
+              </div>
+
+              <div class="rootz-level-track">
+
+                <div
+                  class="rootz-level-progress"
+                  id="rootzLevelProgress"
+                ></div>
+
+              </div>
+
+            </div>
+
+
+            <div
+              class="rootz-score-points"
+              id="rootzPointsDisplay"
+            >
+              0 Rootz Points
+            </div>
+
+          </div>
+
+
+          <form
+            class="quiz-form"
+            id="gingerQuiz"
+          >
+
+
+            <!-- Q1 -->
+
+            <fieldset
+              class="quiz-question"
+              data-correct="rhizome"
+            >
+
+              <span class="quiz-question-number">
+                Question 01
+              </span>
+
+              <h3>
+                Which part of the ginger plant is commonly used?
+              </h3>
+
+
+              <div class="quiz-options">
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q1"
+                    value="root"
+                  />
+
+                  Root
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q1"
+                    value="rhizome"
+                  />
+
+                  Rhizome
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q1"
+                    value="flower"
+                  />
+
+                  Flower
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q1"
+                    value="seed"
+                  />
+
+                  Seed
+
+                </label>
+
+              </div>
+
+            </fieldset>
+
+
+            <!-- Q2 -->
+
+            <fieldset
+              class="quiz-question"
+              data-correct="asia"
+            >
+
+              <span class="quiz-question-number">
+                Question 02
+              </span>
+
+              <h3>
+                Where does ginger's native botanical range lie?
+              </h3>
+
+
+              <div class="quiz-options">
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q2"
+                    value="caribbean"
+                  />
+
+                  Caribbean
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q2"
+                    value="africa"
+                  />
+
+                  Africa
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q2"
+                    value="asia"
+                  />
+
+                  Asia
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q2"
+                    value="europe"
+                  />
+
+                  Europe
+
+                </label>
+
+              </div>
+
+            </fieldset>
+
+
+            <!-- Q3 -->
+
+            <fieldset
+              class="quiz-question"
+              data-correct="adopted"
+            >
+
+              <span class="quiz-question-number">
+                Question 03
+              </span>
+
+              <h3>
+                Which statement best describes ginger in Caribbean culture?
+              </h3>
+
+
+              <div class="quiz-options">
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q3"
+                    value="native"
+                  />
+
+                  Ginger originated in Jamaica.
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q3"
+                    value="adopted"
+                  />
+
+                  Ginger travelled into the region and became part of living Caribbean food and plant traditions.
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q3"
+                    value="modern"
+                  />
+
+                  Ginger only arrived in the Caribbean recently.
+
+                </label>
+
+              </div>
+
+            </fieldset>
+
+
+            <!-- Q4 -->
+
+            <fieldset
+              class="quiz-question"
+              data-correct="pregnancy-nausea"
+            >
+
+              <span class="quiz-question-number">
+                Question 04
+              </span>
+
+              <h3>
+                Which area is among ginger's better-studied modern research uses?
+              </h3>
+
+
+              <div class="quiz-options">
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q4"
+                    value="pregnancy-nausea"
+                  />
+
+                  Pregnancy-related nausea
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q4"
+                    value="all-disease"
+                  />
+
+                  Prevention of all disease
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q4"
+                    value="vision"
+                  />
+
+                  Improving eyesight
+
+                </label>
+
+              </div>
+
+            </fieldset>
+
+
+            <!-- Q5 -->
+
+            <fieldset
+              class="quiz-question"
+              data-correct="different"
+            >
+
+              <span class="quiz-question-number">
+                Question 05
+              </span>
+
+              <h3>
+                Why does the Rootz Library separate traditional knowledge from modern evidence?
+              </h3>
+
+
+              <div class="quiz-options">
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q5"
+                    value="different"
+                  />
+
+                  Because traditional use and clinical evidence provide different kinds of information.
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q5"
+                    value="tradition-proof"
+                  />
+
+                  Because traditional use automatically proves medical effectiveness.
+
+                </label>
+
+
+                <label class="quiz-option">
+
+                  <input
+                    type="radio"
+                    name="q5"
+                    value="research-useless"
+                  />
+
+                  Because scientific research is unnecessary.
+
+                </label>
+
+              </div>
+
+            </fieldset>
+
+
+            <div class="quiz-actions">
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+              >
+                Complete Ginger Knowledge Check
+              </button>
+
+            </div>
+
+          </form>
+
+
+          <div
+            class="quiz-result"
+            id="quizResult"
+            aria-live="polite"
+          >
+
+            <h3 id="quizResultTitle">
+              Ginger knowledge complete.
+            </h3>
+
+
+            <p id="quizResultText"></p>
+
+
+            <span
+              class="quiz-points-awarded"
+              id="quizReward"
+            >
+              +25 Rootz Points
+            </span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           ROOTZ ELDER PROGRAMME
+      =================================================== -->
+
+      <section class="botanical-section section-cream">
+
+        <div class="botanical-container">
+
+          <div class="elder-panel">
+
+            <p class="botanical-kicker">
+              Your Rootz Journey
+            </p>
+
+
+            <h2>
+              The Rootz Elder Programme
+            </h2>
+
+
+            <p>
+
+              Knowledge.
+              Contribution.
+              Community.
+
+              As the Rootz Library grows,
+              members will be recognised for learning,
+              participating and helping the community grow.
+
+              Future Rootz Elder benefits may include
+              early access,
+              rewards,
+              member experiences
+              and community recognition.
+
+            </p>
+
+
+            <div class="elder-levels">
+
+
+              <div class="elder-level">
+
+                <strong>
+                  Seed
+                </strong>
+
+                <span>
+                  0–99 points
+                </span>
+
+              </div>
+
+
+              <div class="elder-level">
+
+                <strong>
+                  Root
+                </strong>
+
+                <span>
+                  100–249 points
+                </span>
+
+              </div>
+
+
+              <div class="elder-level">
+
+                <strong>
+                  Cultivator
+                </strong>
+
+                <span>
+                  250–499 points
+                </span>
+
+              </div>
+
+
+              <div class="elder-level">
+
+                <strong>
+                  Guardian
+                </strong>
+
+                <span>
+                  500–999 points
+                </span>
+
+              </div>
+
+
+              <div class="elder-level">
+
+                <strong>
+                  Rootz Elder
+                </strong>
+
+                <span>
+                  1,000+ points
+                </span>
+
+              </div>
+
+            </div>
 
           </div>
 
@@ -6626,7 +6250,6 @@
       <section class="botanical-section section-dark share-section">
 
         <div class="botanical-container">
-
 
           <div class="share-box">
 
@@ -6698,10 +6321,9 @@
 
             <p>
 
-              Rootz Library entries are designed
-              to evolve as stronger evidence
-              and better historical documentation
-              become available.
+              Rootz Library entries evolve
+              as stronger evidence and better
+              historical documentation become available.
 
             </p>
 
@@ -6717,13 +6339,9 @@
                 National Center for Complementary and Integrative Health
               </strong>
 
-
               <p>
 
                 Ginger: Usefulness and Safety.
-
-                Clinical research,
-                limitations and safety information.
 
                 <a
                   href="https://www.nccih.nih.gov/health/ginger"
@@ -6744,14 +6362,10 @@
                 Royal Botanic Gardens, Kew
               </strong>
 
-
               <p>
 
                 Plants of the World Online:
                 <em>Zingiber officinale</em> Roscoe.
-
-                Accepted botanical identity,
-                growth form and native range.
 
                 <a
                   href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:798372-1"
@@ -6772,11 +6386,9 @@
                 Nutrients — Umbrella Review
               </strong>
 
-
               <p>
 
-                Review of systematic reviews examining
-                orally consumed ginger
+                Systematic review evidence on ginger
                 and human health outcomes.
 
                 <a
@@ -6798,13 +6410,10 @@
                 Caribbean Ethnobotanical Research
               </strong>
 
-
               <p>
 
-                Published ethnobotanical research
-                documenting medicinal plant traditions
-                in Trinidad,
-                including <em>Zingiber officinale</em>.
+                Published research documenting plant
+                traditions in Trinidad including ginger.
 
                 <a
                   href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4570261/"
@@ -6818,7 +6427,6 @@
 
             </article>
 
-
           </div>
 
 
@@ -6831,6 +6439,7 @@
             <br />
 
             Published 10 August 2026.
+
             Reviewed and updated as new evidence
             and historical documentation become available.
 
@@ -6844,13 +6453,12 @@
 
 
       <!-- ==================================================
-           NEXT BOTANICAL
+           NEXT
       =================================================== -->
 
       <section class="botanical-section section-light">
 
         <div class="botanical-container">
-
 
           <div class="next-botanical">
 
@@ -6861,11 +6469,9 @@
                 Back To
               </span>
 
-
               <strong>
                 Herbal Library
               </strong>
-
 
               <a href="/herbal-library.html#herbs">
                 Explore All Botanicals →
@@ -6880,18 +6486,15 @@
                 Botanical 02 of 08
               </span>
 
-
               <strong>
                 Lemongrass
               </strong>
-
 
               <span>
                 Full Library Entry Coming Next
               </span>
 
             </div>
-
 
           </div>
 
@@ -6923,45 +6526,16 @@
       aria-label="Footer navigation"
     >
 
-      <a href="/index.html">
-        Home
-      </a>
-
-      <a href="/shop.html">
-        Shop
-      </a>
-
-      <a href="/founder.html">
-        Founder
-      </a>
-
-      <a href="/tea-ritual.html">
-        Tea Ritual
-      </a>
-
-      <a href="/herbal-library.html">
-        Herbal Library
-      </a>
-
-      <a href="/community.html">
-        Community
-      </a>
-
-      <a href="/faq.html">
-        FAQ
-      </a>
-
-      <a href="/privacy.html">
-        Privacy
-      </a>
-
-      <a href="/terms.html">
-        Terms
-      </a>
-
-      <a href="/contact.html">
-        Contact
-      </a>
+      <a href="/index.html">Home</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/founder.html">Founder</a>
+      <a href="/tea-ritual.html">Tea Ritual</a>
+      <a href="/herbal-library.html">Herbal Library</a>
+      <a href="/community.html">Community</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/contact.html">Contact</a>
 
       <a
         href="https://instagram.com/rastarootzs"
@@ -6989,10 +6563,634 @@
 
 
   <!-- ======================================================
-       INTERACTION + ANALYTICS
+       ROOTZ POINTS + QUIZ + SHARE + ANALYTICS
   ======================================================= -->
 
   <script>
+
+    /* ======================================================
+       ROOTZ POINT SYSTEM — MVP
+    ======================================================= */
+
+    const ROOTZ_POINTS_KEY =
+      "rootzPoints";
+
+    const ROOTZ_COMPLETED_KEY =
+      "rootzCompletedBotanicals";
+
+    const GINGER_REWARD =
+      25;
+
+
+    function getRootzPoints() {
+
+      try {
+
+        return parseInt(
+          localStorage.getItem(
+            ROOTZ_POINTS_KEY
+          ) || "0",
+          10
+        );
+
+      } catch (error) {
+
+        return 0;
+
+      }
+
+    }
+
+
+    function setRootzPoints(points) {
+
+      try {
+
+        localStorage.setItem(
+          ROOTZ_POINTS_KEY,
+          String(points)
+        );
+
+      } catch (error) {}
+
+    }
+
+
+    function getCompletedBotanicals() {
+
+      try {
+
+        return JSON.parse(
+          localStorage.getItem(
+            ROOTZ_COMPLETED_KEY
+          ) || "[]"
+        );
+
+      } catch (error) {
+
+        return [];
+
+      }
+
+    }
+
+
+    function setCompletedBotanicals(items) {
+
+      try {
+
+        localStorage.setItem(
+          ROOTZ_COMPLETED_KEY,
+          JSON.stringify(items)
+        );
+
+      } catch (error) {}
+
+    }
+
+
+    function hasCompletedBotanical(name) {
+
+      return getCompletedBotanicals()
+        .includes(name);
+
+    }
+
+
+    function markBotanicalComplete(name) {
+
+      const completed =
+        getCompletedBotanicals();
+
+
+      if (
+        !completed.includes(name)
+      ) {
+
+        completed.push(name);
+
+        setCompletedBotanicals(
+          completed
+        );
+
+      }
+
+    }
+
+
+    function getRootzLevel(points) {
+
+      if (
+        points >= 1000
+      ) {
+
+        return {
+          name:
+            "Rootz Elder",
+
+          start:
+            1000,
+
+          next:
+            1000
+        };
+
+      }
+
+
+      if (
+        points >= 500
+      ) {
+
+        return {
+          name:
+            "Guardian",
+
+          start:
+            500,
+
+          next:
+            1000
+        };
+
+      }
+
+
+      if (
+        points >= 250
+      ) {
+
+        return {
+          name:
+            "Cultivator",
+
+          start:
+            250,
+
+          next:
+            500
+        };
+
+      }
+
+
+      if (
+        points >= 100
+      ) {
+
+        return {
+          name:
+            "Root",
+
+          start:
+            100,
+
+          next:
+            250
+        };
+
+      }
+
+
+      return {
+        name:
+          "Seed",
+
+        start:
+          0,
+
+        next:
+          100
+      };
+
+    }
+
+
+    function updateRootzUI() {
+
+      const points =
+        getRootzPoints();
+
+
+      const level =
+        getRootzLevel(
+          points
+        );
+
+
+      const pointsDisplay =
+        document.getElementById(
+          "rootzPointsDisplay"
+        );
+
+
+      const levelDisplay =
+        document.getElementById(
+          "rootzLevelName"
+        );
+
+
+      const progress =
+        document.getElementById(
+          "rootzLevelProgress"
+        );
+
+
+      if (pointsDisplay) {
+
+        pointsDisplay.textContent =
+          points +
+          " Rootz Points";
+
+      }
+
+
+      if (levelDisplay) {
+
+        levelDisplay.textContent =
+          level.name;
+
+      }
+
+
+      if (progress) {
+
+        let percentage =
+          100;
+
+
+        if (
+          level.name !==
+          "Rootz Elder"
+        ) {
+
+          percentage =
+            (
+              (
+                points -
+                level.start
+              ) /
+              (
+                level.next -
+                level.start
+              )
+            ) *
+            100;
+
+        }
+
+
+        percentage =
+          Math.max(
+            0,
+            Math.min(
+              100,
+              percentage
+            )
+          );
+
+
+        progress.style.width =
+          percentage + "%";
+
+      }
+
+    }
+
+
+    updateRootzUI();
+
+
+    /* ======================================================
+       GINGER QUIZ
+    ======================================================= */
+
+    const gingerQuiz =
+      document.getElementById(
+        "gingerQuiz"
+      );
+
+
+    const quizResult =
+      document.getElementById(
+        "quizResult"
+      );
+
+
+    const quizResultTitle =
+      document.getElementById(
+        "quizResultTitle"
+      );
+
+
+    const quizResultText =
+      document.getElementById(
+        "quizResultText"
+      );
+
+
+    const quizReward =
+      document.getElementById(
+        "quizReward"
+      );
+
+
+    if (
+      gingerQuiz
+    ) {
+
+
+      if (
+        hasCompletedBotanical(
+          "ginger"
+        )
+      ) {
+
+        if (quizResult) {
+
+          quizResult.classList
+            .add(
+              "visible"
+            );
+
+        }
+
+
+        if (quizResultTitle) {
+
+          quizResultTitle.textContent =
+            "Ginger knowledge complete ✓";
+
+        }
+
+
+        if (quizResultText) {
+
+          quizResultText.textContent =
+            "You have already completed Botanical 01. Your Ginger points are safely recorded in this browser.";
+
+        }
+
+
+        if (quizReward) {
+
+          quizReward.textContent =
+            "Botanical 01 Complete";
+
+        }
+
+      }
+
+
+      gingerQuiz.addEventListener(
+        "submit",
+        function (event) {
+
+          event.preventDefault();
+
+
+          const questions =
+            gingerQuiz
+              .querySelectorAll(
+                ".quiz-question"
+              );
+
+
+          let score =
+            0;
+
+          let answered =
+            0;
+
+
+          questions.forEach(
+            function (question) {
+
+              const selected =
+                question
+                  .querySelector(
+                    'input[type="radio"]:checked'
+                  );
+
+
+              if (selected) {
+
+                answered++;
+
+
+                if (
+                  selected.value ===
+                  question.dataset.correct
+                ) {
+
+                  score++;
+
+                }
+
+              }
+
+            }
+          );
+
+
+          if (
+            answered <
+            questions.length
+          ) {
+
+            if (quizResult) {
+
+              quizResult.classList
+                .add(
+                  "visible"
+                );
+
+            }
+
+
+            quizResultTitle.textContent =
+              "Finish the journey.";
+
+
+            quizResultText.textContent =
+              "Answer all five questions before submitting your Ginger knowledge check.";
+
+
+            quizReward.style.display =
+              "none";
+
+
+            return;
+
+          }
+
+
+          const passed =
+            score >= 4;
+
+
+          if (
+            passed
+          ) {
+
+
+            const alreadyCompleted =
+              hasCompletedBotanical(
+                "ginger"
+              );
+
+
+            if (
+              !alreadyCompleted
+            ) {
+
+              const currentPoints =
+                getRootzPoints();
+
+
+              setRootzPoints(
+                currentPoints +
+                GINGER_REWARD
+              );
+
+
+              markBotanicalComplete(
+                "ginger"
+              );
+
+
+              quizReward.textContent =
+                "+" +
+                GINGER_REWARD +
+                " Rootz Points";
+
+
+              quizReward.style.display =
+                "inline-block";
+
+
+            } else {
+
+              quizReward.textContent =
+                "Points Already Awarded";
+
+
+              quizReward.style.display =
+                "inline-block";
+
+            }
+
+
+            quizResultTitle.textContent =
+              "Ginger knowledge complete ✓";
+
+
+            quizResultText.textContent =
+              "You scored " +
+              score +
+              "/5. Botanical 01 is complete and has been added to your Rootz journey.";
+
+
+            updateRootzUI();
+
+
+            if (
+              typeof gtag ===
+              "function"
+            ) {
+
+              gtag(
+                "event",
+                "rootz_botanical_quiz_complete",
+                {
+                  botanical:
+                    "ginger",
+
+                  botanical_number:
+                    "01",
+
+                  score:
+                    score,
+
+                  passed:
+                    true,
+
+                  reward_points:
+                    alreadyCompleted
+                      ? 0
+                      : GINGER_REWARD
+                }
+              );
+
+            }
+
+
+          } else {
+
+
+            quizResultTitle.textContent =
+              "Nearly there.";
+
+
+            quizResultText.textContent =
+              "You scored " +
+              score +
+              "/5. You need 4/5 to complete Botanical 01. Revisit the Ginger entry and try again.";
+
+
+            quizReward.style.display =
+              "none";
+
+
+            if (
+              typeof gtag ===
+              "function"
+            ) {
+
+              gtag(
+                "event",
+                "rootz_botanical_quiz_attempt",
+                {
+                  botanical:
+                    "ginger",
+
+                  botanical_number:
+                    "01",
+
+                  score:
+                    score,
+
+                  passed:
+                    false
+                }
+              );
+
+            }
+
+          }
+
+
+          quizResult.classList
+            .add(
+              "visible"
+            );
+
+
+          quizResult.scrollIntoView(
+            {
+              behavior:
+                "smooth",
+
+              block:
+                "center"
+            }
+          );
+
+        }
+      );
+
+    }
+
 
     /* ======================================================
        SHARE
@@ -7034,8 +7232,9 @@
           try {
 
 
-            if (navigator.share) {
-
+            if (
+              navigator.share
+            ) {
 
               await navigator.share(
                 shareData
@@ -7074,26 +7273,6 @@
               shareStatus.textContent =
                 "Link copied — pass the knowledge on.";
 
-
-              if (
-                typeof gtag ===
-                "function"
-              ) {
-
-                gtag(
-                  "event",
-                  "botanical_share",
-                  {
-                    botanical:
-                      "ginger",
-
-                    share_method:
-                      "copy_link"
-                  }
-                );
-
-              }
-
             }
 
 
@@ -7119,7 +7298,7 @@
 
 
     /* ======================================================
-       PAGE VIEW
+       MEMBER PAGE VIEW
     ======================================================= */
 
     if (
@@ -7151,7 +7330,7 @@
 
 
     /* ======================================================
-       FIELD GUIDE DOWNLOAD
+       FIELD GUIDE
     ======================================================= */
 
     document
@@ -7164,7 +7343,6 @@
           link.addEventListener(
             "click",
             function () {
-
 
               if (
                 typeof gtag ===
@@ -7183,49 +7361,6 @@
 
                     download_location:
                       "ginger_entry"
-                  }
-                );
-
-              }
-
-            }
-          );
-
-        }
-      );
-
-
-    /* ======================================================
-       INTERNAL LIBRARY NAVIGATION
-    ======================================================= */
-
-    document
-      .querySelectorAll(
-        ".contents-grid a"
-      )
-      .forEach(
-        function (link) {
-
-          link.addEventListener(
-            "click",
-            function () {
-
-              if (
-                typeof gtag ===
-                "function"
-              ) {
-
-                gtag(
-                  "event",
-                  "botanical_section_navigation",
-                  {
-                    botanical:
-                      "ginger",
-
-                    destination:
-                      link.getAttribute(
-                        "href"
-                      )
                   }
                 );
 
