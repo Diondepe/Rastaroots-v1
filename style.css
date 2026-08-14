@@ -1,6 +1,7 @@
 /* ==========================================================
    RASTAROOTS LIFE
-   MASTER STYLESHEET V607
+   MASTER STYLESHEET V608
+   UPDATED HERBAL LIBRARY VALUE STRIP
 ========================================================== */
 
 
@@ -40,8 +41,7 @@
   --shadow-deep:
     0 34px 78px rgba(6, 37, 22, 0.22);
 
-  --page-pad:
-    7vw;
+  --page-pad: 7vw;
 
   --sans:
     Arial, Helvetica, sans-serif;
@@ -587,11 +587,14 @@ p {
 
 /* ==========================================================
    VALUE STRIP
+   V608 — SUPPORTS STANDARD SITE + HERBAL LIBRARY
 ========================================================== */
 
 .value-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  width: 100%;
 
   padding: 28px 6vw;
 
@@ -605,24 +608,36 @@ p {
   color: var(--cream);
 
   font-family: var(--sans);
+
+  border-top:
+    1px solid rgba(244, 216, 138, 0.12);
+
+  border-bottom:
+    1px solid rgba(244, 216, 138, 0.12);
 }
 
-.value-strip div {
+
+/* Standard value-strip items used elsewhere on the site */
+
+.value-strip > div:not(.value-strip-inner) {
   padding: 0 28px;
 
   border-right:
     1px solid rgba(244, 216, 138, 0.32);
 }
 
-.value-strip div:first-child {
+.value-strip > div:not(.value-strip-inner):first-child {
   padding-left: 0;
 }
 
-.value-strip div:last-child {
+.value-strip > div:not(.value-strip-inner):last-child {
   border-right: 0;
 }
 
-.value-strip strong {
+
+/* Standard strip typography */
+
+.value-strip > div:not(.value-strip-inner) strong {
   display: block;
 
   margin-bottom: 8px;
@@ -635,11 +650,197 @@ p {
   text-transform: uppercase;
 }
 
-.value-strip p {
+.value-strip > div:not(.value-strip-inner) p {
   color: rgba(255, 249, 238, 0.76);
 
   font-size: 0.93rem;
   line-height: 1.5;
+}
+
+
+/* ==========================================================
+   HERBAL LIBRARY VALUE STRIP
+   Fixes empty space and centres all four value blocks
+========================================================== */
+
+.value-strip > .value-strip-inner {
+  grid-column: 1 / -1;
+
+  width: min(1180px, 88%);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  padding: 0;
+}
+
+.value-strip .value-item {
+  position: relative;
+
+  min-width: 0;
+  min-height: 106px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 34px;
+
+  border: 0;
+
+  text-align: center;
+}
+
+.value-strip .value-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 14px;
+  right: 0;
+  bottom: 14px;
+
+  width: 1px;
+
+  background:
+    rgba(244, 216, 138, 0.34);
+}
+
+.value-strip .value-item strong {
+  display: block;
+
+  max-width: 180px;
+
+  margin: 0 auto 7px;
+
+  color: var(--gold-soft);
+
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 900;
+
+  line-height: 1.15;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.value-strip .value-item span {
+  display: block;
+
+  max-width: 180px;
+
+  margin: 0 auto;
+
+  color:
+    rgba(255, 249, 238, 0.84);
+
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+
+  line-height: 1.45;
+}
+
+
+/* ==========================================================
+   OPTIONAL HERBAL LIBRARY ALTERNATE CLASS NAMES
+   Safe support if HTML uses library-stats-strip
+========================================================== */
+
+.library-stats-strip {
+  width: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--green-dark),
+      var(--green)
+    );
+
+  border-top:
+    1px solid rgba(244, 216, 138, 0.12);
+
+  border-bottom:
+    1px solid rgba(244, 216, 138, 0.12);
+}
+
+.library-stats-inner {
+  width: min(1180px, 88%);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  padding: 28px 0;
+}
+
+.library-stat {
+  position: relative;
+
+  min-height: 106px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 34px;
+
+  text-align: center;
+}
+
+.library-stat:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 14px;
+  right: 0;
+  bottom: 14px;
+
+  width: 1px;
+
+  background:
+    rgba(244, 216, 138, 0.34);
+}
+
+.library-stat strong {
+  display: block;
+
+  max-width: 180px;
+
+  margin-bottom: 7px;
+
+  color: var(--gold-soft);
+
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 900;
+
+  line-height: 1.15;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.library-stat span {
+  display: block;
+
+  max-width: 180px;
+
+  color:
+    rgba(255, 249, 238, 0.84);
+
+  font-family: var(--sans);
+  font-size: 0.78rem;
+
+  line-height: 1.45;
 }
 
 
@@ -1940,6 +2141,7 @@ p {
 ========================================================== */
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -1961,6 +2163,7 @@ p {
 ========================================================== */
 
 @media (max-width: 1360px) {
+
   .brand {
     flex-basis: 370px;
     max-width: 370px;
@@ -1977,6 +2180,7 @@ p {
   .main-nav a {
     font-size: 0.72rem;
   }
+
 }
 
 
@@ -1985,6 +2189,7 @@ p {
 ========================================================== */
 
 @media (max-width: 1180px) {
+
   .site-header {
     height: 100px;
 
@@ -2041,18 +2246,81 @@ p {
     grid-column: 1 / -1;
   }
 
+
+  /* Standard value strip */
+
   .value-strip {
     grid-template-columns:
       repeat(2, 1fr);
   }
 
-  .value-strip div {
+  .value-strip > div:not(.value-strip-inner) {
     padding: 20px;
 
     border-right: 0;
+
     border-bottom:
       1px solid rgba(244, 216, 138, 0.2);
   }
+
+
+  /* Herbal Library strip */
+
+  .value-strip > .value-strip-inner {
+    width: min(960px, 90%);
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .value-strip .value-item {
+    min-height: 110px;
+    padding: 20px 30px;
+  }
+
+  .value-strip .value-item::after {
+    display: none;
+  }
+
+  .value-strip .value-item:nth-child(odd) {
+    border-right:
+      1px solid rgba(244, 216, 138, 0.26);
+  }
+
+  .value-strip .value-item:nth-child(-n + 2) {
+    border-bottom:
+      1px solid rgba(244, 216, 138, 0.22);
+  }
+
+
+  /* Alternate library classes */
+
+  .library-stats-inner {
+    width: min(960px, 90%);
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .library-stat {
+    min-height: 110px;
+    padding: 20px 30px;
+  }
+
+  .library-stat::after {
+    display: none !important;
+  }
+
+  .library-stat:nth-child(odd) {
+    border-right:
+      1px solid rgba(244, 216, 138, 0.26);
+  }
+
+  .library-stat:nth-child(-n + 2) {
+    border-bottom:
+      1px solid rgba(244, 216, 138, 0.22);
+  }
+
 
   .launch-grid {
     grid-template-columns:
@@ -2069,6 +2337,7 @@ p {
     grid-template-columns:
       repeat(2, 1fr);
   }
+
 }
 
 
@@ -2077,6 +2346,7 @@ p {
 ========================================================== */
 
 @media (max-width: 980px) {
+
   .main-nav {
     display: none;
   }
@@ -2152,6 +2422,7 @@ p {
   .guardian-card:last-child {
     grid-column: auto;
   }
+
 }
 
 
@@ -2160,6 +2431,7 @@ p {
 ========================================================== */
 
 @media (max-width: 780px) {
+
   :root {
     --page-pad: 22px;
   }
@@ -2269,21 +2541,127 @@ p {
     flex: 0 0 auto;
   }
 
-  .value-strip,
+
+  /* Standard site strip */
+
+  .value-strip {
+    grid-template-columns: 1fr;
+
+    padding: 16px 24px;
+  }
+
+  .value-strip > div:not(.value-strip-inner) {
+    padding: 18px 0;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(244, 216, 138, 0.2);
+  }
+
+  .value-strip > div:not(.value-strip-inner):last-child {
+    border-bottom: 0;
+  }
+
+
+  /* Herbal Library value strip */
+
+  .value-strip:has(> .value-strip-inner) {
+    display: block;
+
+    padding: 0;
+  }
+
+  .value-strip > .value-strip-inner {
+    width: 100%;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    padding: 10px 18px 14px;
+  }
+
+  .value-strip .value-item {
+    min-height: 105px;
+
+    padding: 18px 14px;
+  }
+
+  .value-strip .value-item::after {
+    display: none !important;
+  }
+
+  .value-strip .value-item:nth-child(odd) {
+    border-right:
+      1px solid rgba(244, 216, 138, 0.21);
+  }
+
+  .value-strip .value-item:nth-child(-n + 2) {
+    border-bottom:
+      1px solid rgba(244, 216, 138, 0.21);
+  }
+
+  .value-strip .value-item strong {
+    max-width: 150px;
+
+    font-size: 0.66rem;
+    line-height: 1.2;
+  }
+
+  .value-strip .value-item span {
+    max-width: 150px;
+
+    font-size: 0.73rem;
+    line-height: 1.4;
+  }
+
+
+  /* Alternate Herbal Library classes */
+
+  .library-stats-inner {
+    width: 100%;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    padding: 10px 18px 14px;
+  }
+
+  .library-stat {
+    min-height: 105px;
+
+    padding: 18px 14px;
+  }
+
+  .library-stat::after {
+    display: none !important;
+  }
+
+  .library-stat:nth-child(odd) {
+    border-right:
+      1px solid rgba(244, 216, 138, 0.21);
+  }
+
+  .library-stat:nth-child(-n + 2) {
+    border-bottom:
+      1px solid rgba(244, 216, 138, 0.21);
+  }
+
+  .library-stat strong {
+    font-size: 0.66rem;
+  }
+
+  .library-stat span {
+    font-size: 0.73rem;
+  }
+
+
   .tea-grid,
   .launch-grid,
   .ingredients-grid,
   .ingredient-grid,
   .community-image-grid {
     grid-template-columns: 1fr;
-  }
-
-  .value-strip {
-    padding: 16px 24px;
-  }
-
-  .value-strip div {
-    padding: 18px 0;
   }
 
   .section,
@@ -2405,6 +2783,7 @@ p {
   .footer-links {
     gap: 12px 18px;
   }
+
 }
 
 
@@ -2413,6 +2792,7 @@ p {
 ========================================================== */
 
 @media (max-width: 420px) {
+
   .brand {
     max-width: 210px;
   }
@@ -2445,4 +2825,23 @@ p {
   .launch-grid > article {
     padding: 28px 24px;
   }
+
+  .value-strip .value-item,
+  .library-stat {
+    min-height: 100px;
+
+    padding:
+      16px 10px;
+  }
+
+  .value-strip .value-item strong,
+  .library-stat strong {
+    font-size: 0.62rem;
+  }
+
+  .value-strip .value-item span,
+  .library-stat span {
+    font-size: 0.69rem;
+  }
+
 }
