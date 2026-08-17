@@ -127,7 +127,7 @@
 
   <link
     rel="stylesheet"
-    href="./style.css?v=607"
+    href="./style.css?v=609"
   />
 
 
@@ -200,15 +200,18 @@
           "Herbal teas",
           "Herbal infusions",
           "Tea rituals",
+          "Herbal tea rituals",
           "British-Caribbean herbal culture",
+          "Caribbean bush tea",
           "Ginger tea",
           "Hibiscus tea",
+          "Sorrel tea",
           "Mint tea",
           "Moringa tea",
           "Lemongrass tea",
-          "Cerasee",
-          "Bitter melon",
-          "Sarsaparilla",
+          "Cerasee tea",
+          "Bitter melon tea",
+          "Sarsaparilla tea",
           "Botanical education"
         ]
       },
@@ -217,6 +220,7 @@
         "@id": "https://www.rastarootslife.com/#website",
         "url": "https://www.rastarootslife.com/",
         "name": "RastaRoots",
+        "alternateName": "RastaRoots Life",
         "publisher": {
           "@id": "https://www.rastarootslife.com/#organization"
         },
@@ -265,6 +269,7 @@
         "@type": "ItemList",
         "@id": "https://www.rastarootslife.com/tea-ritual.html#five-rituals",
         "name": "The Five RastaRoots Tea Rituals",
+        "description": "Five botanical herbal tea rituals: Rise, Root, Bloom, Endure and Unwind.",
         "numberOfItems": 5,
         "itemListElement": [
           {
@@ -304,7 +309,11 @@
         "@id": "https://www.rastarootslife.com/#discovery-collection",
         "name": "RastaRoots Founder Discovery Collection",
         "description": "A 25-sachet herbal tea selection box containing five RastaRoots herbal infusions: Roots Fire, Bush Doctor, Empress Bloom, Iron Root and Cool Mind.",
-        "image": "https://www.rastarootslife.com/assets/ritual/tea-ritual-discovery-collection.png",
+        "image": [
+          "https://www.rastarootslife.com/assets/ritual/tea-ritual-discovery-collection.png",
+          "https://www.rastarootslife.com/assets/discovery-closed-box.png",
+          "https://www.rastarootslife.com/assets/discovery-open-box.png"
+        ],
         "brand": {
           "@id": "https://www.rastarootslife.com/#organization"
         },
@@ -420,1214 +429,6 @@
   }
   </script>
 
-
-  <!-- ======================================================
-       TEA RITUAL PAGE CSS
-       Can later be merged into style.css
-  ======================================================= -->
-
-  <style>
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-
-    .ritual-page {
-      overflow-x: hidden;
-      background: #fff9ee;
-    }
-
-
-    .ritual-page img {
-      max-width: 100%;
-    }
-
-
-    .ritual-page a {
-      text-underline-offset: 3px;
-    }
-
-
-    .ritual-section-heading {
-      max-width: 960px;
-      margin: 0 auto 50px;
-      text-align: center;
-    }
-
-
-    .ritual-section-heading h2 {
-      margin: 0 0 20px;
-      color: #103c25;
-      font-size: clamp(2.8rem, 5vw, 5.7rem);
-      line-height: 0.96;
-      letter-spacing: -0.045em;
-    }
-
-
-    .ritual-section-heading > p:not(.section-kicker) {
-      max-width: 820px;
-      margin: 0 auto;
-      color: #4f574f;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.04rem;
-      line-height: 1.75;
-    }
-
-
-    /* ======================================================
-       HERO
-    ======================================================= */
-
-    .ritual-hero {
-      position: relative;
-      min-height: 760px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      isolation: isolate;
-      background: #071d12;
-    }
-
-
-    .ritual-hero-media {
-      position: absolute;
-      inset: 0;
-      z-index: -3;
-    }
-
-
-    .ritual-hero-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-
-    .ritual-hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(3, 19, 11, 0.96) 0%,
-          rgba(3, 19, 11, 0.83) 34%,
-          rgba(3, 19, 11, 0.43) 58%,
-          rgba(3, 19, 11, 0.08) 100%
-        );
-    }
-
-
-    .ritual-hero-copy {
-      width: min(780px, 59%);
-      padding: 100px 7vw;
-      color: #fff9ee;
-    }
-
-
-    .ritual-hero-copy .eyebrow {
-      margin-bottom: 18px;
-      color: #f4d88a;
-    }
-
-
-    .ritual-hero-copy h1 {
-      margin: 0 0 24px;
-      color: #fff9ee;
-      font-size: clamp(3.8rem, 7vw, 7.5rem);
-      line-height: 0.9;
-      letter-spacing: -0.055em;
-    }
-
-
-    .ritual-hero-copy .hero-text {
-      max-width: 710px;
-      color: rgba(255, 249, 238, 0.88);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.08rem;
-      line-height: 1.75;
-    }
-
-
-    .ritual-hero-copy .hero-text + .hero-text {
-      margin-top: 13px;
-    }
-
-
-    .ritual-hero-copy .hero-actions {
-      margin-top: 32px;
-    }
-
-
-    .ritual-hero-proof {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 30px;
-    }
-
-
-    .ritual-hero-proof span {
-      padding: 9px 13px;
-      border: 1px solid rgba(244, 216, 138, 0.28);
-      border-radius: 999px;
-      background: rgba(5, 28, 16, 0.58);
-      color: #f9ebc3;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      backdrop-filter: blur(7px);
-    }
-
-
-    /* ======================================================
-       VALUE STRIP
-    ======================================================= */
-
-    .ritual-value-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      background: #103c25;
-      color: #fff9ee;
-      border-top: 1px solid rgba(244, 216, 138, 0.18);
-      border-bottom: 1px solid rgba(244, 216, 138, 0.18);
-    }
-
-
-    .ritual-value-strip > div {
-      padding: 26px 22px;
-      text-align: center;
-      border-right: 1px solid rgba(244, 216, 138, 0.18);
-    }
-
-
-    .ritual-value-strip > div:last-child {
-      border-right: 0;
-    }
-
-
-    .ritual-value-strip strong {
-      display: block;
-      margin-bottom: 6px;
-      color: #f4d88a;
-      font-size: 1.25rem;
-    }
-
-
-    .ritual-value-strip p {
-      margin: 0;
-      color: rgba(255, 249, 238, 0.72);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.78rem;
-      line-height: 1.5;
-    }
-
-
-    /* ======================================================
-       INTRO
-    ======================================================= */
-
-    .ritual-intro {
-      padding: 105px 7vw;
-      background:
-        radial-gradient(
-          circle at top left,
-          rgba(182, 138, 51, 0.12),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #fff9ee,
-          #f4ead7
-        );
-    }
-
-
-    .ritual-intro-inner {
-      max-width: 1050px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-
-    .ritual-intro-inner h2 {
-      margin: 0 0 24px;
-      color: #103c25;
-      font-size: clamp(3rem, 5vw, 5.8rem);
-      line-height: 0.96;
-      letter-spacing: -0.045em;
-    }
-
-
-    .ritual-intro-inner > p:not(.section-kicker) {
-      max-width: 850px;
-      margin: 0 auto;
-      color: #354036;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.08rem;
-      line-height: 1.8;
-    }
-
-
-    .ritual-intro-inner > p + p {
-      margin-top: 16px;
-    }
-
-
-    /* ======================================================
-       CHOOSE YOUR RITUAL
-    ======================================================= */
-
-    .ritual-choose-section {
-      padding: 105px 6vw;
-      background: #071d12;
-      color: #fff9ee;
-    }
-
-
-    .ritual-choose-section .ritual-section-heading h2,
-    .ritual-choose-section .section-kicker {
-      color: #f4d88a;
-    }
-
-
-    .ritual-choose-section
-    .ritual-section-heading
-    > p:not(.section-kicker) {
-      color: rgba(255, 249, 238, 0.76);
-    }
-
-
-    .ritual-choose-image {
-      max-width: 1500px;
-      margin: 0 auto;
-      overflow: hidden;
-      border: 1px solid rgba(244, 216, 138, 0.18);
-      border-radius: 30px;
-      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
-    }
-
-
-    .ritual-choose-image img {
-      display: block;
-      width: 100%;
-    }
-
-
-    .ritual-jump-grid {
-      max-width: 1500px;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
-      margin: 22px auto 0;
-    }
-
-
-    .ritual-jump-grid a {
-      padding: 18px 14px;
-      border: 1px solid rgba(244, 216, 138, 0.22);
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.035);
-      color: #fff9ee;
-      text-align: center;
-      text-decoration: none;
-      transition:
-        transform 180ms ease,
-        background 180ms ease;
-    }
-
-
-    .ritual-jump-grid a:hover,
-    .ritual-jump-grid a:focus-visible {
-      transform: translateY(-3px);
-      background: rgba(244, 216, 138, 0.09);
-    }
-
-
-    .ritual-jump-grid strong {
-      display: block;
-      color: #f4d88a;
-      font-size: 1.15rem;
-    }
-
-
-    .ritual-jump-grid span {
-      display: block;
-      margin-top: 4px;
-      color: rgba(255, 249, 238, 0.68);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-    }
-
-
-    /* ======================================================
-       FIVE INDIVIDUAL RITUALS
-    ======================================================= */
-
-    .five-rituals-story {
-      background: #fff9ee;
-    }
-
-
-    .ritual-story {
-      min-height: 690px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: stretch;
-      border-bottom: 1px solid rgba(16, 60, 37, 0.11);
-      scroll-margin-top: 100px;
-    }
-
-
-    .ritual-story:nth-child(even) .ritual-story-media {
-      order: 2;
-    }
-
-
-    .ritual-story:nth-child(even) .ritual-story-copy {
-      order: 1;
-    }
-
-
-    .ritual-story-media {
-      min-height: 690px;
-      overflow: hidden;
-      background: #0b2b1b;
-    }
-
-
-    .ritual-story-media img {
-      width: 100%;
-      height: 100%;
-      min-height: 690px;
-      display: block;
-      object-fit: cover;
-    }
-
-
-    .ritual-story-copy {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 75px 7vw;
-    }
-
-
-    .ritual-story-number {
-      margin-bottom: 10px;
-      color: #b68a33;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.72rem;
-      font-weight: 900;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-
-
-    .ritual-story-copy h2 {
-      margin: 0 0 9px;
-      color: #103c25;
-      font-size: clamp(3rem, 5vw, 5.6rem);
-      line-height: 0.94;
-      letter-spacing: -0.045em;
-    }
-
-
-    .ritual-story-name {
-      margin-bottom: 25px;
-      color: #8a6322;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.86rem;
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-
-    .ritual-story-copy p {
-      max-width: 700px;
-      color: #4f574f;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.02rem;
-      line-height: 1.75;
-    }
-
-
-    .ritual-story-copy p + p {
-      margin-top: 14px;
-    }
-
-
-    .ritual-ingredients {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 25px 0 28px;
-    }
-
-
-    .ritual-ingredients a,
-    .ritual-ingredients span {
-      padding: 8px 11px;
-      border: 1px solid rgba(16, 60, 37, 0.13);
-      border-radius: 999px;
-      background: #f4ead7;
-      color: #103c25;
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.73rem;
-      font-weight: 800;
-    }
-
-
-    .ritual-story-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-
-    /* ======================================================
-       HOW THE RITUAL WORKS
-    ======================================================= */
-
-    .ritual-method {
-      padding: 110px 0;
-      background:
-        radial-gradient(
-          circle at top,
-          rgba(244, 216, 138, 0.11),
-          transparent 30%
-        ),
-        #071d12;
-      color: #fff9ee;
-      overflow: hidden;
-    }
-
-
-    .ritual-method .ritual-section-heading {
-      padding: 0 6vw;
-    }
-
-
-    .ritual-method .ritual-section-heading h2,
-    .ritual-method .section-kicker {
-      color: #f4d88a;
-    }
-
-
-    .ritual-method
-    .ritual-section-heading
-    > p:not(.section-kicker) {
-      color: rgba(255, 249, 238, 0.76);
-    }
-
-
-    .ritual-method-carousel {
-      display: grid;
-      grid-auto-flow: column;
-      grid-auto-columns: minmax(560px, 53vw);
-      gap: 20px;
-      padding:
-        4px
-        max(6vw, calc((100vw - 1500px) / 2))
-        30px;
-      overflow-x: auto;
-      overscroll-behavior-inline: contain;
-      scroll-snap-type: x mandatory;
-      scrollbar-width: thin;
-      scrollbar-color:
-        rgba(244, 216, 138, 0.5)
-        rgba(255, 255, 255, 0.06);
-    }
-
-
-    .ritual-method-card {
-      min-height: 540px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(244, 216, 138, 0.18);
-      border-radius: 28px;
-      background: #0b2b1b;
-      scroll-snap-align: start;
-      isolation: isolate;
-    }
-
-
-    .ritual-method-card img {
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-
-    .ritual-method-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background:
-        linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.02) 30%,
-          rgba(0, 0, 0, 0.88) 100%
-        );
-    }
-
-
-    .ritual-method-copy {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 34px;
-    }
-
-
-    .ritual-method-copy span {
-      display: block;
-      color: #f4d88a;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.7rem;
-      font-weight: 900;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-
-    .ritual-method-copy h3 {
-      margin: 8px 0 8px;
-      color: #fff9ee;
-      font-size: clamp(2.2rem, 4vw, 3.7rem);
-      line-height: 1;
-    }
-
-
-    .ritual-method-copy p {
-      max-width: 620px;
-      color: rgba(255, 249, 238, 0.82);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.97rem;
-      line-height: 1.7;
-    }
-
-
-    /* ======================================================
-       BOTANICAL KNOWLEDGE
-    ======================================================= */
-
-    .ritual-botanicals {
-      padding: 110px 6vw;
-      background:
-        linear-gradient(
-          135deg,
-          #fff9ee,
-          #f4ead7
-        );
-    }
-
-
-    .ritual-botanical-grid {
-      max-width: 1450px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin: 45px auto 0;
-    }
-
-
-    .ritual-botanical-card {
-      padding: 28px;
-      border: 1px solid rgba(16, 60, 37, 0.12);
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.58);
-    }
-
-
-    .ritual-botanical-card h3 {
-      margin: 0 0 9px;
-      color: #103c25;
-      font-size: 1.5rem;
-    }
-
-
-    .ritual-botanical-card p {
-      color: #5a615a;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.93rem;
-      line-height: 1.65;
-    }
-
-
-    .ritual-botanical-card a {
-      display: inline-block;
-      margin-top: 13px;
-      color: #8a6322;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.78rem;
-      font-weight: 900;
-    }
-
-
-    /* ======================================================
-       SPOTIFY
-    ======================================================= */
-
-    .ritual-spotify {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: stretch;
-      background: #103c25;
-      color: #fff9ee;
-    }
-
-
-    .ritual-spotify-media {
-      min-height: 650px;
-    }
-
-
-    .ritual-spotify-media img {
-      width: 100%;
-      height: 100%;
-      min-height: 650px;
-      display: block;
-      object-fit: cover;
-    }
-
-
-    .ritual-spotify-copy {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 7vw;
-    }
-
-
-    .ritual-spotify-copy .section-kicker {
-      color: #f4d88a;
-    }
-
-
-    .ritual-spotify-copy h2 {
-      margin: 0 0 22px;
-      color: #fff9ee;
-      font-size: clamp(3rem, 5vw, 5.5rem);
-      line-height: 0.96;
-      letter-spacing: -0.045em;
-    }
-
-
-    .ritual-spotify-copy p {
-      color: rgba(255, 249, 238, 0.8);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.03rem;
-      line-height: 1.75;
-    }
-
-
-    .ritual-spotify-copy p + p {
-      margin-top: 15px;
-    }
-
-
-    .spotify-button {
-      background: #1db954;
-      color: #fff;
-      border-color: #1db954;
-    }
-
-
-    .spotify-button:hover,
-    .spotify-button:focus-visible {
-      background: #159947;
-    }
-
-
-    /* ======================================================
-       DISCOVERY CONVERSION
-    ======================================================= */
-
-    .ritual-discovery {
-      position: relative;
-      min-height: 720px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      isolation: isolate;
-      background: #0b2b1b;
-    }
-
-
-    .ritual-discovery-media {
-      position: absolute;
-      inset: 0;
-      z-index: -3;
-    }
-
-
-    .ritual-discovery-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-
-    .ritual-discovery::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -2;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(3, 18, 10, 0.95) 0%,
-          rgba(3, 18, 10, 0.82) 36%,
-          rgba(3, 18, 10, 0.18) 72%
-        );
-    }
-
-
-    .ritual-discovery-copy {
-      width: min(780px, 57%);
-      padding: 90px 7vw;
-      color: #fff9ee;
-    }
-
-
-    .ritual-discovery-copy .section-kicker {
-      color: #f4d88a;
-    }
-
-
-    .ritual-discovery-copy h2 {
-      margin: 0 0 22px;
-      color: #f4d88a;
-      font-size: clamp(3.2rem, 6vw, 6.2rem);
-      line-height: 0.94;
-      letter-spacing: -0.05em;
-    }
-
-
-    .ritual-discovery-copy p {
-      max-width: 690px;
-      color: rgba(255, 249, 238, 0.84);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.03rem;
-      line-height: 1.75;
-    }
-
-
-    .ritual-discovery-facts {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(100px, 1fr));
-      gap: 9px;
-      margin: 28px 0;
-    }
-
-
-    .ritual-discovery-facts div {
-      padding: 14px 11px;
-      border: 1px solid rgba(244, 216, 138, 0.22);
-      border-radius: 15px;
-      background: rgba(5, 28, 16, 0.56);
-      text-align: center;
-    }
-
-
-    .ritual-discovery-facts strong {
-      display: block;
-      color: #f4d88a;
-      font-size: 1.25rem;
-    }
-
-
-    .ritual-discovery-facts span {
-      display: block;
-      margin-top: 3px;
-      color: rgba(255, 249, 238, 0.72);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.67rem;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-
-    /* ======================================================
-       GEO / AEO ANSWERS
-    ======================================================= */
-
-    .ritual-answer-section {
-      padding: 110px 6vw;
-      background: #fff9ee;
-    }
-
-
-    .ritual-answer-grid {
-      max-width: 1450px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin: 45px auto 0;
-    }
-
-
-    .ritual-answer-card {
-      padding: 29px;
-      border: 1px solid rgba(16, 60, 37, 0.12);
-      border-radius: 22px;
-      background: #f7eedf;
-    }
-
-
-    .ritual-answer-card h3 {
-      margin: 0 0 11px;
-      color: #103c25;
-      font-size: 1.45rem;
-    }
-
-
-    .ritual-answer-card p {
-      color: #565d56;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.94rem;
-      line-height: 1.7;
-    }
-
-
-    .ritual-answer-card a {
-      color: #8a6322;
-      font-weight: 800;
-    }
-
-
-    /* ======================================================
-       FINAL ROOT / COMMUNITY
-    ======================================================= */
-
-    .ritual-root-finale {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      align-items: stretch;
-      background: #071d12;
-      color: #fff9ee;
-    }
-
-
-    .ritual-root-finale-media {
-      min-height: 650px;
-    }
-
-
-    .ritual-root-finale-media img {
-      width: 100%;
-      height: 100%;
-      min-height: 650px;
-      object-fit: cover;
-      display: block;
-    }
-
-
-    .ritual-root-finale-copy {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 7vw;
-    }
-
-
-    .ritual-root-finale-copy .section-kicker {
-      color: #f4d88a;
-    }
-
-
-    .ritual-root-finale-copy h2 {
-      margin: 0 0 22px;
-      color: #f4d88a;
-      font-size: clamp(3rem, 5vw, 5.5rem);
-      line-height: 0.96;
-      letter-spacing: -0.045em;
-    }
-
-
-    .ritual-root-finale-copy p {
-      color: rgba(255, 249, 238, 0.8);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.03rem;
-      line-height: 1.75;
-    }
-
-
-    /* ======================================================
-       RESPONSIVE
-    ======================================================= */
-
-    @media (max-width: 1180px) {
-
-      .ritual-value-strip {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-
-      .ritual-value-strip > div:nth-child(2) {
-        border-right: 0;
-      }
-
-
-      .ritual-value-strip > div:nth-child(-n+2) {
-        border-bottom:
-          1px solid
-          rgba(244, 216, 138, 0.18);
-      }
-
-
-      .ritual-jump-grid {
-        overflow-x: auto;
-        grid-template-columns:
-          repeat(5, minmax(150px, 1fr));
-      }
-
-
-      .ritual-botanical-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-
-      .ritual-answer-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-    }
-
-
-    @media (max-width: 980px) {
-
-      .ritual-hero-copy,
-      .ritual-discovery-copy {
-        width: 72%;
-      }
-
-
-      .ritual-story {
-        grid-template-columns: 1fr;
-      }
-
-
-      .ritual-story:nth-child(even)
-      .ritual-story-media,
-      .ritual-story:nth-child(even)
-      .ritual-story-copy {
-        order: initial;
-      }
-
-
-      .ritual-story-media,
-      .ritual-story-media img {
-        min-height: 570px;
-      }
-
-
-      .ritual-spotify,
-      .ritual-root-finale {
-        grid-template-columns: 1fr;
-      }
-
-
-      .ritual-spotify-media,
-      .ritual-spotify-media img,
-      .ritual-root-finale-media,
-      .ritual-root-finale-media img {
-        min-height: 560px;
-      }
-
-
-      .ritual-discovery-facts {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-    }
-
-
-    @media (max-width: 780px) {
-
-      .ritual-hero {
-        min-height: 770px;
-        align-items: flex-end;
-      }
-
-
-      .ritual-hero::before {
-        background:
-          linear-gradient(
-            180deg,
-            rgba(3, 19, 11, 0.12) 0%,
-            rgba(3, 19, 11, 0.58) 45%,
-            rgba(3, 19, 11, 0.97) 100%
-          );
-      }
-
-
-      .ritual-hero-copy {
-        width: 100%;
-        padding: 90px 22px 60px;
-      }
-
-
-      .ritual-hero-copy h1 {
-        font-size: clamp(3.3rem, 15vw, 5rem);
-      }
-
-
-      .ritual-value-strip {
-        grid-template-columns: 1fr 1fr;
-      }
-
-
-      .ritual-intro,
-      .ritual-choose-section,
-      .ritual-botanicals,
-      .ritual-answer-section {
-        padding: 70px 22px;
-      }
-
-
-      .ritual-jump-grid {
-        grid-template-columns:
-          repeat(5, 145px);
-      }
-
-
-      .ritual-story-copy {
-        padding: 55px 22px 65px;
-      }
-
-
-      .ritual-story-media,
-      .ritual-story-media img {
-        min-height: 440px;
-      }
-
-
-      .ritual-method {
-        padding: 70px 0;
-      }
-
-
-      .ritual-method
-      .ritual-section-heading {
-        padding: 0 22px;
-      }
-
-
-      .ritual-method-carousel {
-        grid-auto-columns:
-          calc(100vw - 44px);
-        padding: 3px 22px 25px;
-        gap: 16px;
-      }
-
-
-      .ritual-method-card {
-        min-height: 470px;
-      }
-
-
-      .ritual-botanical-grid,
-      .ritual-answer-grid {
-        grid-template-columns: 1fr;
-      }
-
-
-      .ritual-spotify-copy,
-      .ritual-root-finale-copy {
-        padding: 65px 22px;
-      }
-
-
-      .ritual-spotify-media,
-      .ritual-spotify-media img,
-      .ritual-root-finale-media,
-      .ritual-root-finale-media img {
-        min-height: 430px;
-      }
-
-
-      .ritual-discovery {
-        min-height: 720px;
-        align-items: flex-end;
-      }
-
-
-      .ritual-discovery::after {
-        background:
-          linear-gradient(
-            180deg,
-            rgba(3, 18, 10, 0.14) 0%,
-            rgba(3, 18, 10, 0.94) 75%
-          );
-      }
-
-
-      .ritual-discovery-copy {
-        width: 100%;
-        padding: 85px 22px 55px;
-      }
-
-    }
-
-
-    @media (max-width: 500px) {
-
-      .ritual-value-strip {
-        grid-template-columns: 1fr;
-      }
-
-
-      .ritual-value-strip > div {
-        border-right: 0;
-        border-bottom:
-          1px solid
-          rgba(244, 216, 138, 0.18);
-      }
-
-
-      .ritual-value-strip > div:last-child {
-        border-bottom: 0;
-      }
-
-
-      .ritual-discovery-facts {
-        grid-template-columns: 1fr 1fr;
-      }
-
-    }
-
-
-    @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-      }
-
-    }
-
-  </style>
-
 </head>
 
 
@@ -1674,6 +475,7 @@
       class="menu-toggle"
       aria-label="Open menu"
       aria-expanded="false"
+      aria-controls="mobileNav"
     >
       <span></span>
       <span></span>
@@ -1756,7 +558,10 @@
       Founder
     </a>
 
-    <a href="./tea-ritual.html">
+    <a
+      href="./tea-ritual.html"
+      aria-current="page"
+    >
       Tea Ritual
     </a>
 
@@ -1782,6 +587,7 @@
 
     <a
       href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+      data-track="ritual-mobile-nav-preorder"
     >
       Pre-Order
     </a>
@@ -2176,6 +982,7 @@
             <a
               class="btn btn-primary"
               href="./roots-fire.html"
+              data-track="ritual-roots-fire"
             >
               Explore Roots Fire
             </a>
@@ -2265,6 +1072,7 @@
             <a
               class="btn btn-primary"
               href="./bush-doctor.html"
+              data-track="ritual-bush-doctor"
             >
               Explore Bush Doctor
             </a>
@@ -2355,6 +1163,7 @@
             <a
               class="btn btn-primary"
               href="./empress-bloom.html"
+              data-track="ritual-empress-bloom"
             >
               Explore Empress Bloom
             </a>
@@ -2444,6 +1253,7 @@
             <a
               class="btn btn-primary"
               href="./iron-root.html"
+              data-track="ritual-iron-root"
             >
               Explore Iron Root
             </a>
@@ -2533,6 +1343,7 @@
             <a
               class="btn btn-primary"
               href="./cool-mind.html"
+              data-track="ritual-cool-mind"
             >
               Explore Cool Mind
             </a>
@@ -3322,6 +2133,7 @@
           <a
             class="btn btn-primary"
             href="./community.html"
+            data-track="ritual-community"
           >
             Explore RastaRoots Community
           </a>
@@ -3408,7 +2220,10 @@
         Founder
       </a>
 
-      <a href="./tea-ritual.html">
+      <a
+        href="./tea-ritual.html"
+        aria-current="page"
+      >
         Tea Ritual
       </a>
 
