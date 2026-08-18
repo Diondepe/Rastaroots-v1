@@ -6024,3 +6024,958 @@ a[href] {
     min-height: 640px;
   }
 }
+/* ==========================================================
+   RASTAROOTS 2026 GLOBAL PAGE UPGRADE
+   Shop + Community + shared editorial system
+========================================================== */
+
+:root {
+  --rr-green: #103c25;
+  --rr-green-deep: #06170e;
+  --rr-green-soft: #173f2b;
+
+  --rr-gold: #b68a33;
+  --rr-gold-light: #f4d88a;
+
+  --rr-cream: #fff9ee;
+  --rr-cream-dark: #f4ead7;
+  --rr-cream-soft: #f8efdf;
+
+  --rr-text: #354036;
+  --rr-text-soft: #5c5a50;
+
+  --rr-border: rgba(16, 60, 37, 0.12);
+  --rr-border-gold: rgba(244, 216, 138, 0.2);
+
+  --rr-radius-sm: 16px;
+  --rr-radius-md: 22px;
+  --rr-radius-lg: 28px;
+
+  --rr-shadow-soft:
+    0 18px 45px rgba(16, 60, 37, 0.08);
+
+  --rr-shadow-medium:
+    0 24px 60px rgba(16, 60, 37, 0.14);
+
+  --rr-content:
+    1380px;
+
+  --rr-copy:
+    760px;
+}
+
+
+/* ==========================================================
+   GLOBAL RESET / LAYOUT SAFETY
+========================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+}
+
+
+/* ==========================================================
+   GLOBAL CONTENT WIDTH
+========================================================== */
+
+.section-heading,
+.community-intro-inner,
+.community-faq-inner,
+.shop-faq-inner,
+.shop-final-inner,
+.community-final-inner,
+.purpose-purchase-inner {
+  width: min(100%, var(--rr-content));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ==========================================================
+   SECTION HEADINGS
+========================================================== */
+
+.section-heading {
+  max-width: 960px;
+}
+
+.center-heading {
+  text-align: center;
+}
+
+.section-kicker {
+  margin: 0 0 16px;
+
+  color: var(--rr-gold);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin:
+    0
+    auto
+    22px;
+
+  max-width: 900px;
+
+  color: var(--rr-green);
+
+  font-size:
+    clamp(
+      2.9rem,
+      5vw,
+      5.6rem
+    );
+
+  line-height: 0.97;
+  letter-spacing: -0.052em;
+}
+
+.section-heading > p:last-child {
+  max-width: 760px;
+
+  margin:
+    0
+    auto;
+
+  color: var(--rr-text-soft);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.04rem;
+
+  line-height: 1.78;
+}
+
+
+/* ==========================================================
+   BUTTON SYSTEM
+========================================================== */
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  padding:
+    14px
+    22px;
+
+  border-radius: 999px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.79rem;
+  font-weight: 900;
+
+  letter-spacing: 0.045em;
+
+  line-height: 1.2;
+
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  border: 1px solid var(--rr-gold-light);
+
+  background: var(--rr-gold-light);
+  color: var(--rr-green);
+}
+
+.btn-primary:hover {
+  box-shadow:
+    0 12px 28px rgba(244, 216, 138, 0.18);
+}
+
+.btn-secondary {
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.42);
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  color: inherit;
+}
+
+.text-link {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  color: var(--rr-green);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 900;
+
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+
+/* ==========================================================
+   IMAGE SYSTEM
+========================================================== */
+
+.included-card-image,
+.feature-image,
+.shop-founder-image,
+.shop-community-image,
+.community-how-image,
+.community-neighbourhood-image,
+.impact-card-image,
+.tea-ritual-media {
+  overflow: hidden;
+}
+
+.included-card-image img,
+.feature-image img,
+.shop-founder-image img,
+.shop-community-image img,
+.community-how-image img,
+.community-neighbourhood-image img,
+.impact-card-image img,
+.tea-ritual-media img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* ==========================================================
+   SHOP HERO
+========================================================== */
+
+.shop-hero {
+  isolation: isolate;
+}
+
+.shop-hero-copy {
+  min-width: 0;
+}
+
+.shop-hero-text {
+  max-width: 620px;
+}
+
+.shop-carousel {
+  min-width: 0;
+}
+
+.shop-slide {
+  object-position: center center;
+}
+
+
+/* ==========================================================
+   SHOP INCLUDED CARDS
+========================================================== */
+
+.included-grid {
+  width: min(100%, var(--rr-content));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.included-card {
+  min-width: 0;
+}
+
+.included-card-image {
+  background: var(--rr-cream-dark);
+}
+
+.included-card-copy {
+  min-height: 185px;
+}
+
+
+/* ==========================================================
+   SHOP FOUNDER OFFER
+========================================================== */
+
+.shop-founder-offer {
+  position: relative;
+}
+
+.shop-founder-copy {
+  min-width: 0;
+}
+
+.founder-benefits {
+  max-width: 680px;
+}
+
+.founder-benefit {
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.founder-benefit:hover {
+  transform: translateX(3px);
+
+  border-color:
+    rgba(182, 138, 51, 0.28);
+
+  background:
+    rgba(255, 255, 255, 0.7);
+}
+
+
+/* ==========================================================
+   SHOP RITUAL CARDS
+========================================================== */
+
+.ritual-grid {
+  width: min(100%, var(--rr-content));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ritual-card {
+  min-width: 0;
+
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.ritual-card:hover {
+  transform: translateY(-4px);
+
+  background:
+    rgba(255, 255, 255, 0.075);
+
+  border-color:
+    rgba(244, 216, 138, 0.3);
+}
+
+
+/* ==========================================================
+   SHOP COMMUNITY BLOCK
+========================================================== */
+
+.shop-community-copy {
+  min-width: 0;
+}
+
+.shop-community-image img {
+  object-position: center center;
+}
+
+
+/* ==========================================================
+   COMMUNITY HERO
+========================================================== */
+
+.community-hero {
+  isolation: isolate;
+}
+
+.community-hero-copy {
+  min-width: 0;
+}
+
+.community-hero-media {
+  min-width: 0;
+}
+
+.community-hero-media img {
+  object-position: center center;
+}
+
+
+/* ==========================================================
+   COMMUNITY HOW IT WORKS
+========================================================== */
+
+.community-how-grid {
+  width: min(100%, var(--rr-content));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.how-step {
+  min-width: 0;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.how-step:hover {
+  transform: translateY(-2px);
+
+  border-color:
+    rgba(182, 138, 51, 0.24);
+
+  box-shadow: var(--rr-shadow-soft);
+}
+
+
+/* ==========================================================
+   COMMUNITY IMPACT CARDS
+========================================================== */
+
+.impact-grid {
+  width: min(100%, var(--rr-content));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.impact-card {
+  min-width: 0;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(244, 216, 138, 0.3);
+}
+
+
+/* ==========================================================
+   COMMUNITY PRINCIPLES
+========================================================== */
+
+.community-principles-grid {
+  width: min(100%, var(--rr-content));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.community-principle {
+  min-width: 0;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.community-principle:hover {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(182, 138, 51, 0.25);
+
+  box-shadow: var(--rr-shadow-soft);
+}
+
+
+/* ==========================================================
+   COMMUNITY TRANSPARENCY
+========================================================== */
+
+.transparency-grid {
+  width: min(100%, var(--rr-content));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transparency-card {
+  min-width: 0;
+}
+
+
+/* ==========================================================
+   FAQ
+========================================================== */
+
+.shop-faq details,
+.community-faq details {
+  transition:
+    background-color 180ms ease;
+}
+
+.shop-faq details:hover,
+.community-faq details:hover {
+  background:
+    rgba(244, 234, 215, 0.45);
+}
+
+.shop-faq summary,
+.community-faq summary {
+  padding-right: 28px;
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.site-header {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.site-header .brand img {
+  display: block;
+
+  width: auto;
+  max-height: 68px;
+}
+
+.main-nav {
+  align-items: center;
+}
+
+.main-nav a {
+  white-space: nowrap;
+}
+
+
+/* ==========================================================
+   MOBILE NAV
+========================================================== */
+
+.mobile-nav {
+  z-index: 999;
+}
+
+.mobile-nav a {
+  min-height: 44px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* ==========================================================
+   MOBILE STICKY CTA
+========================================================== */
+
+.mobile-sticky-cta {
+  z-index: 998;
+}
+
+.mobile-sticky-cta a {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.site-footer {
+  position: relative;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap:
+    10px
+    20px;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1100px) {
+
+  .shop-section,
+  .community-impact,
+  .community-how,
+  .community-principles,
+  .community-transparency {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE / TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+  .shop-hero,
+  .community-hero,
+  .shop-founder-offer,
+  .tea-ritual-feature,
+  .shop-community,
+  .community-neighbourhood {
+    grid-template-columns: 1fr !important;
+  }
+
+
+  .shop-hero-copy,
+  .community-hero-copy {
+    padding:
+      74px
+      28px
+      62px;
+  }
+
+
+  .shop-carousel,
+  .community-hero-media {
+    min-height: 560px;
+  }
+
+
+  .shop-founder-copy,
+  .tea-ritual-copy,
+  .shop-community-copy,
+  .community-neighbourhood-copy {
+    padding:
+      70px
+      32px;
+  }
+
+
+  .shop-founder-image,
+  .shop-community-image,
+  .tea-ritual-media,
+  .community-neighbourhood-image {
+    min-height: 520px;
+  }
+
+
+  .included-grid,
+  .impact-grid,
+  .community-how-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ritual-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .community-principles-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .impact-strip,
+  .shop-value-strip {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .order-grid,
+  .transparency-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 720px) {
+
+  body {
+    padding-bottom: 58px;
+  }
+
+
+  .shop-section,
+  .community-intro,
+  .community-how,
+  .community-impact,
+  .community-principles,
+  .community-transparency,
+  .purpose-purchase,
+  .shop-faq,
+  .community-faq,
+  .shop-final,
+  .community-final {
+    padding:
+      68px
+      20px;
+  }
+
+
+  .shop-founder-copy,
+  .tea-ritual-copy,
+  .shop-community-copy,
+  .community-neighbourhood-copy {
+    padding:
+      64px
+      20px;
+  }
+
+
+  .section-heading h2 {
+    font-size:
+      clamp(
+        2.6rem,
+        12vw,
+        4.2rem
+      );
+  }
+
+
+  .section-heading > p:last-child {
+    font-size: 0.98rem;
+  }
+
+
+  .hero-actions {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+
+  .shop-hero-proof {
+    width: 100%;
+  }
+
+
+  .shop-hero-proof span {
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+  .shop-carousel,
+  .community-hero-media {
+    min-height: 470px;
+  }
+
+
+  .shop-founder-image,
+  .shop-community-image,
+  .tea-ritual-media,
+  .community-neighbourhood-image {
+    min-height: 420px;
+  }
+
+
+  .ritual-grid,
+  .community-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .impact-strip,
+  .shop-value-strip {
+    grid-template-columns: 1fr;
+  }
+
+
+  .impact-strip div,
+  .shop-value-strip > div {
+    border-right: 0;
+
+    border-bottom:
+      1px solid
+      rgba(16, 60, 37, 0.14);
+  }
+
+
+  .included-card-copy,
+  .impact-card-copy,
+  .community-principle,
+  .order-card,
+  .transparency-card {
+    padding: 24px;
+  }
+
+
+  .community-hero-commitment {
+    align-items: flex-start;
+  }
+
+
+  .commitment-pound {
+    width: 60px;
+    height: 60px;
+
+    font-size: 1.6rem;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .shop-hero-copy,
+  .community-hero-copy {
+    padding:
+      60px
+      18px
+      50px;
+  }
+
+
+  .shop-hero h1,
+  .community-hero h1 {
+    font-size:
+      clamp(
+        3rem,
+        15vw,
+        4.5rem
+      );
+  }
+
+
+  .shop-carousel,
+  .community-hero-media {
+    min-height: 400px;
+  }
+
+
+  .included-card-image {
+    aspect-ratio: 4 / 3;
+  }
+
+
+  .impact-card-image {
+    aspect-ratio: 4 / 3;
+  }
+
+
+  .shop-founder-image,
+  .shop-community-image,
+  .tea-ritual-media,
+  .community-neighbourhood-image {
+    min-height: 360px;
+  }
+
+
+  .footer-links {
+    gap:
+      8px
+      14px;
+  }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+
+}
