@@ -108,8 +108,13 @@
 
 <link
   rel="stylesheet"
-  href="./style.css?v=612"
+  href="./style.css?v=613"
 />
+
+
+<!-- ======================================================
+     GOOGLE ANALYTICS
+======================================================= -->
 
 <script
   async
@@ -145,6 +150,11 @@ gtag(
 );
 
 </script>
+
+
+<!-- ======================================================
+     SEO / GEO STRUCTURED DATA
+======================================================= -->
 
 <script type="application/ld+json">
 {
@@ -187,6 +197,7 @@ gtag(
         "Ethiopian coffee"
       ]
     },
+
     {
       "@type": "WebSite",
       "@id": "https://www.rastarootslife.com/#website",
@@ -198,6 +209,7 @@ gtag(
       },
       "inLanguage": "en-GB"
     },
+
     {
       "@type": "WebPage",
       "@id": "https://www.rastarootslife.com/#webpage",
@@ -216,6 +228,7 @@ gtag(
       },
       "inLanguage": "en-GB"
     },
+
     {
       "@type": "Product",
       "@id": "https://www.rastarootslife.com/#discovery-collection",
@@ -259,6 +272,7 @@ gtag(
         }
       }
     },
+
     {
       "@type": "ItemList",
       "@id": "https://www.rastarootslife.com/#founding-herbs",
@@ -315,6 +329,7 @@ gtag(
         }
       ]
     },
+
     {
       "@type": "FAQPage",
       "@id": "https://www.rastarootslife.com/#homepage-faq",
@@ -365,7 +380,12 @@ gtag(
 }
 </script>
 
+
 <style>
+
+/* ======================================================
+   HERB CAROUSEL
+======================================================= */
 
 .home-herb-gateway {
   position: relative;
@@ -408,12 +428,16 @@ gtag(
   grid-auto-flow: column;
   grid-auto-columns: minmax(255px, 1fr);
   gap: 20px;
+
   overflow-x: auto;
+
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scrollbar-width: none;
+
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x;
+
   padding: 10px 4px 26px;
 }
 
@@ -423,12 +447,23 @@ gtag(
 
 .home-herb-card {
   min-width: 0;
+
   overflow: hidden;
+
   scroll-snap-align: start;
-  border: 1px solid rgba(16, 60, 37, 0.12);
+
+  border:
+    1px solid
+    rgba(16, 60, 37, 0.12);
+
   border-radius: 26px;
+
   background: #103c25;
-  box-shadow: 0 20px 45px rgba(16, 60, 37, 0.09);
+
+  box-shadow:
+    0 20px 45px
+    rgba(16, 60, 37, 0.09);
+
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
@@ -436,30 +471,45 @@ gtag(
 
 .home-herb-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 28px 56px rgba(16, 60, 37, 0.16);
+
+  box-shadow:
+    0 28px 56px
+    rgba(16, 60, 37, 0.16);
 }
 
 .home-herb-card-link {
   display: block;
+
   height: 100%;
+
   color: inherit;
+
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
+
+  -webkit-tap-highlight-color:
+    transparent;
 }
 
 .home-herb-card-image {
   position: relative;
+
   aspect-ratio: 5 / 4;
+
   overflow: hidden;
+
   background: #f4ead7;
 }
 
 .home-herb-card-image img {
   display: block;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
-  transition: transform 400ms ease;
+
+  transition:
+    transform 400ms ease;
 }
 
 .home-herb-card:hover img {
@@ -468,90 +518,161 @@ gtag(
 
 .home-herb-number {
   position: absolute;
+
   top: 15px;
   right: 15px;
+
   display: grid;
   place-items: center;
+
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(244, 216, 138, 0.45);
+
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.45);
+
   border-radius: 50%;
-  background: rgba(6, 23, 14, 0.78);
+
+  background:
+    rgba(6, 23, 14, 0.78);
+
   color: #f4d88a;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.68rem;
   font-weight: 900;
+
   letter-spacing: 0.08em;
 }
 
 .home-herb-card-copy {
   min-height: 275px;
+
   padding: 26px 24px;
 }
 
 .home-herb-category {
   display: block;
+
   margin-bottom: 9px;
+
   color: #f4d88a;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.68rem;
   font-weight: 900;
+
   letter-spacing: 0.13em;
+
   text-transform: uppercase;
 }
 
 .home-herb-card-copy h3 {
   margin: 0 0 9px;
+
   color: #fff9ee;
+
   font-size: 1.72rem;
+
   line-height: 1.1;
 }
 
 .home-herb-profile {
   margin-bottom: 14px !important;
+
   color: #f4d88a !important;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.76rem !important;
   font-weight: 800;
+
   letter-spacing: 0.04em;
+
   text-transform: uppercase;
 }
 
 .home-herb-card-copy p {
-  color: rgba(255, 249, 238, 0.72);
-  font-family: Arial, Helvetica, sans-serif;
+  color:
+    rgba(255, 249, 238, 0.72);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.91rem;
+
   line-height: 1.66;
 }
 
 .home-herb-explore {
   display: inline-block;
+
   margin-top: 18px;
+
   color: #f4d88a;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.72rem;
   font-weight: 900;
+
   letter-spacing: 0.06em;
+
   text-transform: uppercase;
 }
 
 .home-herb-arrow {
   position: absolute;
+
   top: 50%;
+
   z-index: 5;
+
   display: grid;
   place-items: center;
+
   width: 48px;
   height: 48px;
+
   padding: 0;
-  border: 1px solid rgba(16, 60, 37, 0.15);
+
+  border:
+    1px solid
+    rgba(16, 60, 37, 0.15);
+
   border-radius: 50%;
+
   background: #103c25;
+
   color: #f4d88a;
+
   font-size: 1.1rem;
+
   cursor: pointer;
-  transform: translateY(-50%);
-  box-shadow: 0 12px 28px rgba(16, 60, 37, 0.13);
+
+  transform:
+    translateY(-50%);
+
+  box-shadow:
+    0 12px 28px
+    rgba(16, 60, 37, 0.13);
 }
 
 .home-herb-arrow-prev {
@@ -564,27 +685,53 @@ gtag(
 
 .home-herb-swipe {
   display: none;
+
   margin: 6px 0 0;
+
   text-align: center;
+
   color: #5c5a50;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.78rem;
 }
 
+
+/* ======================================================
+   FREE GUIDE PANEL
+======================================================= */
+
 .home-herb-guide {
   display: grid;
+
   grid-template-columns:
     auto
     minmax(0, 1fr)
     minmax(280px, 0.42fr);
+
   gap: 34px;
+
   align-items: center;
-  width: calc(100% - 14vw);
+
+  width:
+    calc(100% - 14vw);
+
   max-width: 1280px;
+
   margin: 62px auto 0;
+
   padding: 38px;
-  border: 1px solid rgba(244, 216, 138, 0.2);
+
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.2);
+
   border-radius: 30px;
+
   background:
     radial-gradient(
       circle at top right,
@@ -596,22 +743,39 @@ gtag(
       #06170e,
       #103c25
     );
-  box-shadow: 0 28px 65px rgba(16, 60, 37, 0.16);
+
+  box-shadow:
+    0 28px 65px
+    rgba(16, 60, 37, 0.16);
 }
 
 .home-herb-guide-badge {
   display: grid;
   place-items: center;
+
   width: 96px;
   height: 96px;
-  border: 1px solid rgba(244, 216, 138, 0.4);
+
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.4);
+
   border-radius: 50%;
+
   background: #f4d88a;
+
   color: #103c25;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.72rem;
   font-weight: 900;
+
   letter-spacing: 0.08em;
+
   text-align: center;
 }
 
@@ -621,42 +785,69 @@ gtag(
 
 .home-herb-guide-copy h3 {
   margin: 0 0 14px;
+
   color: #fff9ee;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+
+  font-size:
+    clamp(2rem, 3.5vw, 3.5rem);
+
   line-height: 1;
+
   letter-spacing: -0.04em;
 }
 
-.home-herb-guide-copy > p:not(.section-kicker) {
+.home-herb-guide-copy
+> p:not(.section-kicker) {
   max-width: 720px;
-  color: rgba(255, 249, 238, 0.72);
-  font-family: Arial, Helvetica, sans-serif;
+
+  color:
+    rgba(255, 249, 238, 0.72);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   line-height: 1.7;
 }
 
 .home-herb-guide-points {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 8px 18px;
+
   margin-top: 20px;
 }
 
 .home-herb-guide-points span {
-  color: rgba(255, 249, 238, 0.86);
-  font-family: Arial, Helvetica, sans-serif;
+  color:
+    rgba(255, 249, 238, 0.86);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.78rem;
 }
 
 .home-herb-guide-action {
   display: flex;
+
   flex-direction: column;
+
   align-items: stretch;
+
   gap: 13px;
 }
 
 .home-herb-guide-action strong {
   color: #fff9ee;
+
   font-size: 1.15rem;
+
   line-height: 1.35;
 }
 
@@ -665,64 +856,117 @@ gtag(
 }
 
 .home-herb-guide-action small {
-  color: rgba(255, 249, 238, 0.58);
-  font-family: Arial, Helvetica, sans-serif;
+  color:
+    rgba(255, 249, 238, 0.58);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.7rem;
+
   line-height: 1.5;
 }
 
 .home-herb-library-link {
   color: #f4d88a;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.74rem;
   font-weight: 800;
+
   text-decoration: none;
 }
 
+
+/* ======================================================
+   LIBRARY PROGRESS
+======================================================= */
+
 .home-herb-progress {
   display: grid;
-  grid-template-columns: auto 1fr;
+
+  grid-template-columns:
+    auto 1fr;
+
   gap: 28px;
+
   align-items: center;
-  width: calc(100% - 14vw);
+
+  width:
+    calc(100% - 14vw);
+
   max-width: 1280px;
+
   margin: 32px auto 0;
+
   padding: 18px 22px;
-  border: 1px solid rgba(16, 60, 37, 0.12);
+
+  border:
+    1px solid
+    rgba(16, 60, 37, 0.12);
+
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.38);
+
+  background:
+    rgba(255, 255, 255, 0.38);
 }
 
 .home-herb-progress-copy {
   display: flex;
+
   flex-direction: column;
+
   min-width: 190px;
 }
 
 .home-herb-progress-copy strong {
   color: #103c25;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.84rem;
 }
 
 .home-herb-progress-copy span {
   color: #5c5a50;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 0.75rem;
 }
 
 .home-herb-progress-bar {
   height: 10px;
+
   overflow: hidden;
+
   border-radius: 999px;
-  background: rgba(16, 60, 37, 0.12);
+
+  background:
+    rgba(16, 60, 37, 0.12);
 }
 
 .home-herb-progress-bar span {
   display: block;
+
   width: 15.1%;
+
   height: 100%;
+
   border-radius: inherit;
+
   background:
     linear-gradient(
       90deg,
@@ -731,10 +975,284 @@ gtag(
     );
 }
 
+
+/* ======================================================
+   HERBAL GUIDE ACCESS GATE
+======================================================= */
+
+body.herb-gate-open {
+  overflow: hidden;
+}
+
+.herb-access-gate {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 10000;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background:
+    rgba(3, 14, 9, 0.84);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.herb-access-gate.is-open {
+  display: flex;
+}
+
+.herb-access-dialog {
+  position: relative;
+
+  width:
+    min(100%, 720px);
+
+  max-height:
+    calc(100vh - 48px);
+
+  overflow-y: auto;
+
+  padding:
+    46px;
+
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.25);
+
+  border-radius: 30px;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(244, 216, 138, 0.14),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #06170e,
+      #103c25
+    );
+
+  box-shadow:
+    0 32px 90px
+    rgba(0, 0, 0, 0.34);
+
+  text-align: center;
+}
+
+.herb-access-close {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  display: grid;
+  place-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.24);
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.05);
+
+  color: #fff9ee;
+
+  font-size: 1.35rem;
+
+  cursor: pointer;
+}
+
+.herb-access-badge {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 34px;
+
+  margin-bottom: 20px;
+
+  padding:
+    8px 16px;
+
+  border-radius: 999px;
+
+  background: #f4d88a;
+
+  color: #103c25;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.herb-access-dialog h2 {
+  max-width: 610px;
+
+  margin:
+    0 auto 18px;
+
+  color: #fff9ee;
+
+  font-size:
+    clamp(2.6rem, 6vw, 4.6rem);
+
+  line-height: 0.96;
+
+  letter-spacing: -0.05em;
+}
+
+.herb-access-dialog
+> p {
+  max-width: 580px;
+
+  margin:
+    0 auto 24px;
+
+  color:
+    rgba(255, 249, 238, 0.75);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+.herb-access-benefits {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 10px;
+
+  max-width: 580px;
+
+  margin:
+    0 auto 28px;
+
+  text-align: left;
+}
+
+.herb-access-benefits span {
+  padding: 13px 14px;
+
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.13);
+
+  border-radius: 14px;
+
+  background:
+    rgba(255, 255, 255, 0.045);
+
+  color:
+    rgba(255, 249, 238, 0.85);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 0.8rem;
+
+  line-height: 1.45;
+}
+
+.herb-access-actions {
+  display: grid;
+
+  gap: 12px;
+
+  max-width: 460px;
+
+  margin: 0 auto;
+}
+
+.herb-access-actions .btn {
+  width: 100%;
+}
+
+.herb-access-unlock {
+  min-height: 50px;
+
+  padding:
+    14px 20px;
+
+  border:
+    1px solid
+    rgba(244, 216, 138, 0.34);
+
+  border-radius: 999px;
+
+  background:
+    transparent;
+
+  color: #f4d88a;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 0.77rem;
+  font-weight: 900;
+
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+}
+
+.herb-access-note {
+  margin-top: 18px !important;
+
+  color:
+    rgba(255, 249, 238, 0.48)
+    !important;
+
+  font-size: 0.7rem !important;
+
+  line-height: 1.5 !important;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+======================================================= */
+
 @media (min-width: 1200px) {
 
   .home-herb-carousel {
-    grid-auto-columns: calc(25% - 15px);
+    grid-auto-columns:
+      calc(25% - 15px);
   }
 
 }
@@ -750,22 +1268,30 @@ gtag(
   }
 
   .home-herb-carousel {
-    grid-auto-columns: minmax(270px, 47%);
+    grid-auto-columns:
+      minmax(270px, 47%);
   }
 
   .home-herb-guide {
-    grid-template-columns: auto 1fr;
-    width: calc(100% - 44px);
+    grid-template-columns:
+      auto 1fr;
+
+    width:
+      calc(100% - 44px);
+
     padding: 30px;
   }
 
   .home-herb-guide-action {
-    grid-column: 1 / -1;
+    grid-column:
+      1 / -1;
+
     margin-top: 4px;
   }
 
   .home-herb-progress {
-    width: calc(100% - 44px);
+    width:
+      calc(100% - 44px);
   }
 
 }
@@ -782,6 +1308,7 @@ gtag(
 
   .home-herb-carousel {
     grid-auto-columns: 84%;
+
     gap: 14px;
   }
 
@@ -795,9 +1322,14 @@ gtag(
 
   .home-herb-guide {
     grid-template-columns: 1fr;
+
     gap: 24px;
-    width: calc(100% - 40px);
-    padding: 27px 22px;
+
+    width:
+      calc(100% - 40px);
+
+    padding:
+      27px 22px;
   }
 
   .home-herb-guide-badge {
@@ -811,8 +1343,31 @@ gtag(
 
   .home-herb-progress {
     grid-template-columns: 1fr;
+
     gap: 14px;
-    width: calc(100% - 40px);
+
+    width:
+      calc(100% - 40px);
+  }
+
+  .herb-access-gate {
+    padding: 14px;
+  }
+
+  .herb-access-dialog {
+    padding:
+      44px 20px 28px;
+
+    border-radius: 24px;
+  }
+
+  .herb-access-dialog h2 {
+    font-size:
+      clamp(2.4rem, 12vw, 3.6rem);
+  }
+
+  .herb-access-benefits {
+    grid-template-columns: 1fr;
   }
 
 }
@@ -821,10 +1376,16 @@ gtag(
 
 </head>
 
+
 <body
   id="top"
   class="home-v2"
 >
+
+
+<!-- ======================================================
+     ANNOUNCEMENT
+======================================================= -->
 
 <a
   class="announcement-bar"
@@ -833,6 +1394,11 @@ gtag(
 >
   🌿 Founder Pre-Orders Open • £19.99 • 25 Sachets • 5 Rituals • £1 From Every Box Goes Back
 </a>
+
+
+<!-- ======================================================
+     HEADER
+======================================================= -->
 
 <header class="site-header">
 
@@ -843,11 +1409,12 @@ gtag(
   >
 
     <img
-      src="./assets/rastaroots-header-logo.png?v=612"
+      src="./assets/rastaroots-header-logo.png?v=613"
       alt="RastaRoots"
     />
 
   </a>
+
 
   <button
     class="menu-toggle"
@@ -859,6 +1426,7 @@ gtag(
     <span></span>
     <span></span>
   </button>
+
 
   <nav
     class="main-nav"
@@ -886,6 +1454,11 @@ gtag(
 
 </header>
 
+
+<!-- ======================================================
+     MOBILE NAV
+======================================================= -->
+
 <nav
   class="mobile-nav"
   id="mobileNav"
@@ -911,7 +1484,13 @@ gtag(
 
 </nav>
 
+
 <main>
+
+
+<!-- ======================================================
+     HERO
+======================================================= -->
 
 <section
   class="home-hero-carousel"
@@ -919,6 +1498,7 @@ gtag(
 >
 
   <div class="home-hero-track">
+
 
     <article
       class="home-hero-slide is-active"
@@ -935,6 +1515,7 @@ gtag(
         />
 
       </div>
+
 
       <div class="home-hero-slide-content">
 
@@ -958,6 +1539,7 @@ gtag(
           Discovery Collection and find the ritual that fits your day.
         </p>
 
+
         <div class="hero-actions">
 
           <a
@@ -977,6 +1559,7 @@ gtag(
 
         </div>
 
+
         <div class="home-hero-mini-proof">
 
           <span>5 Herbal Teas</span>
@@ -989,6 +1572,7 @@ gtag(
       </div>
 
     </article>
+
 
     <article
       class="home-hero-slide"
@@ -1005,6 +1589,7 @@ gtag(
         />
 
       </div>
+
 
       <div class="home-hero-slide-content">
 
@@ -1026,6 +1611,7 @@ gtag(
           coffee — created for convenience without forgetting where the
           story begins.
         </p>
+
 
         <div class="hero-actions">
 
@@ -1052,6 +1638,7 @@ gtag(
     </article>
 
   </div>
+
 
   <div
     class="home-hero-controls"
@@ -1096,6 +1683,11 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     OFFER STRIP
+======================================================= -->
+
 <section
   class="home-offer-strip"
   aria-label="RastaRoots at a glance"
@@ -1123,27 +1715,74 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     SHORTCUTS
+======================================================= -->
+
 <nav
   class="blend-shortcuts"
   aria-label="Explore RastaRoots"
 >
 
-  <p>Explore RastaRoots</p>
+  <p>
+    Explore RastaRoots
+  </p>
 
   <div class="blend-shortcuts-list">
 
-    <a href="#five-rituals">Five Tea Rituals</a>
-    <a href="/herb-ginger.html">Ginger</a>
-    <a href="/herb-cerasee.html">Cerasee</a>
-    <a href="/herb-hibiscus.html">Hibiscus / Sorrel</a>
-    <a href="/herb-sarsaparilla.html">Sarsaparilla</a>
-    <a href="./herbal-library.html">Herbal Library</a>
-    <a href="#know-your-rootz">8 Herbal Guides</a>
-    <a href="#coffee">Ethiopian Coffee</a>
+    <a href="#five-rituals">
+      Five Tea Rituals
+    </a>
+
+    <a
+      href="/herb-ginger.html"
+      data-herb-link
+    >
+      Ginger
+    </a>
+
+    <a
+      href="/herb-cerasee.html"
+      data-herb-link
+    >
+      Cerasee
+    </a>
+
+    <a
+      href="/herb-hibiscus.html"
+      data-herb-link
+    >
+      Hibiscus / Sorrel
+    </a>
+
+    <a
+      href="/herb-sarsaparilla.html"
+      data-herb-link
+    >
+      Sarsaparilla
+    </a>
+
+    <a href="./herbal-library.html">
+      Herbal Library
+    </a>
+
+    <a href="#know-your-rootz">
+      8 Herbal Guides
+    </a>
+
+    <a href="#coffee">
+      Ethiopian Coffee
+    </a>
 
   </div>
 
 </nav>
+
+
+<!-- ======================================================
+     FIVE RITUALS
+======================================================= -->
 
 <section
   id="five-rituals"
@@ -1167,6 +1806,7 @@ gtag(
 
   </div>
 
+
   <div class="five-rituals-visual">
 
     <img
@@ -1177,29 +1817,45 @@ gtag(
 
   </div>
 
+
   <div class="ritual-link-grid">
 
-    <a class="ritual-link" href="./roots-fire.html">
+    <a
+      class="ritual-link"
+      href="./roots-fire.html"
+    >
       <strong>Rise</strong>
       <span>Roots Fire</span>
     </a>
 
-    <a class="ritual-link" href="./bush-doctor.html">
+    <a
+      class="ritual-link"
+      href="./bush-doctor.html"
+    >
       <strong>Root</strong>
       <span>Bush Doctor</span>
     </a>
 
-    <a class="ritual-link" href="./empress-bloom.html">
+    <a
+      class="ritual-link"
+      href="./empress-bloom.html"
+    >
       <strong>Bloom</strong>
       <span>Empress Bloom</span>
     </a>
 
-    <a class="ritual-link" href="./iron-root.html">
+    <a
+      class="ritual-link"
+      href="./iron-root.html"
+    >
       <strong>Endure</strong>
       <span>Iron Root</span>
     </a>
 
-    <a class="ritual-link" href="./cool-mind.html">
+    <a
+      class="ritual-link"
+      href="./cool-mind.html"
+    >
       <strong>Unwind</strong>
       <span>Cool Mind</span>
     </a>
@@ -1208,12 +1864,18 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     8 HERBS / EMAIL GATE
+======================================================= -->
+
 <section
   id="know-your-rootz"
   class="home-herb-gateway"
 >
 
   <div class="home-herb-gateway-inner">
+
 
     <div class="section-heading center-heading home-herb-heading">
 
@@ -1226,12 +1888,14 @@ gtag(
       </h2>
 
       <p class="home-herb-intro">
-        Start with eight botanicals found across the RastaRoots world.
-        Explore their flavour, identity, heritage and traditional
-        knowledge — then get the free RastaRoots 8-Herb Guide.
+        Explore eight founding RastaRoots botanicals.
+        Unlock all eight free guides with your email and learn
+        about flavour, identity, preparation, heritage,
+        traditional knowledge, research and safety.
       </p>
 
     </div>
+
 
     <div class="home-herb-carousel-shell">
 
@@ -1244,16 +1908,21 @@ gtag(
         ←
       </button>
 
+
       <div
         class="home-herb-carousel"
         data-herb-carousel
       >
+
+
+        <!-- GINGER -->
 
         <article class="home-herb-card">
 
           <a
             href="/herb-ginger.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1270,6 +1939,7 @@ gtag(
 
             </div>
 
+
             <div class="home-herb-card-copy">
 
               <span class="home-herb-category">
@@ -1285,12 +1955,12 @@ gtag(
               </p>
 
               <p>
-                Explore ginger's botanical identity, flavour,
-                preparation and herbal traditions.
+                Explore ginger's botanical identity,
+                flavour, preparation and herbal traditions.
               </p>
 
               <span class="home-herb-explore">
-                Explore Ginger →
+                Unlock Ginger →
               </span>
 
             </div>
@@ -1299,11 +1969,15 @@ gtag(
 
         </article>
 
+
+        <!-- LEMONGRASS -->
+
         <article class="home-herb-card">
 
           <a
             href="/herb-lemongrass.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1320,6 +1994,7 @@ gtag(
 
             </div>
 
+
             <div class="home-herb-card-copy">
 
               <span class="home-herb-category">
@@ -1335,12 +2010,13 @@ gtag(
               </p>
 
               <p>
-                Discover the bright aroma, botanical character
-                and preparation of lemongrass.
+                Discover the bright aroma,
+                botanical character and preparation
+                of lemongrass.
               </p>
 
               <span class="home-herb-explore">
-                Explore Lemongrass →
+                Unlock Lemongrass →
               </span>
 
             </div>
@@ -1349,11 +2025,15 @@ gtag(
 
         </article>
 
+
+        <!-- MINT -->
+
         <article class="home-herb-card">
 
           <a
             href="/herb-mint.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1370,6 +2050,7 @@ gtag(
 
             </div>
 
+
             <div class="home-herb-card-copy">
 
               <span class="home-herb-category">
@@ -1385,12 +2066,13 @@ gtag(
               </p>
 
               <p>
-                Learn about mint's flavour, preparation
-                and history as a botanical infusion.
+                Learn about mint's flavour,
+                preparation and history as
+                a botanical infusion.
               </p>
 
               <span class="home-herb-explore">
-                Explore Mint →
+                Unlock Mint →
               </span>
 
             </div>
@@ -1399,11 +2081,15 @@ gtag(
 
         </article>
 
+
+        <!-- HIBISCUS -->
+
         <article class="home-herb-card">
 
           <a
             href="/herb-hibiscus.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1420,6 +2106,7 @@ gtag(
 
             </div>
 
+
             <div class="home-herb-card-copy">
 
               <span class="home-herb-category">
@@ -1435,12 +2122,13 @@ gtag(
               </p>
 
               <p>
-                Explore the plant behind the vivid infusion
-                known across the Caribbean as sorrel.
+                Explore the plant behind the vivid
+                infusion known across the Caribbean
+                as sorrel.
               </p>
 
               <span class="home-herb-explore">
-                Explore Hibiscus →
+                Unlock Hibiscus →
               </span>
 
             </div>
@@ -1449,11 +2137,15 @@ gtag(
 
         </article>
 
+
+        <!-- MORINGA -->
+
         <article class="home-herb-card">
 
           <a
             href="/herb-moringa.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1470,6 +2162,7 @@ gtag(
 
             </div>
 
+
             <div class="home-herb-card-copy">
 
               <span class="home-herb-category">
@@ -1485,12 +2178,13 @@ gtag(
               </p>
 
               <p>
-                Discover moringa's botanical identity,
-                flavour and traditional context.
+                Discover moringa's botanical
+                identity, flavour and
+                traditional context.
               </p>
 
               <span class="home-herb-explore">
-                Explore Moringa →
+                Unlock Moringa →
               </span>
 
             </div>
@@ -1499,11 +2193,15 @@ gtag(
 
         </article>
 
+
+        <!-- CERASEE -->
+
         <article class="home-herb-card">
 
           <a
             href="/herb-cerasee.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1520,6 +2218,7 @@ gtag(
 
             </div>
 
+
             <div class="home-herb-card-copy">
 
               <span class="home-herb-category">
@@ -1535,12 +2234,13 @@ gtag(
               </p>
 
               <p>
-                Explore cerasee and its place within
-                Caribbean bush-tea traditions.
+                Explore cerasee and its place
+                within Caribbean bush-tea
+                traditions.
               </p>
 
               <span class="home-herb-explore">
-                Explore Cerasee →
+                Unlock Cerasee →
               </span>
 
             </div>
@@ -1549,11 +2249,15 @@ gtag(
 
         </article>
 
+
+        <!-- BITTER MELON -->
+
         <article class="home-herb-card">
 
           <a
             href="/herb-bitter-melon.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1570,6 +2274,7 @@ gtag(
 
             </div>
 
+
             <div class="home-herb-card-copy">
 
               <span class="home-herb-category">
@@ -1585,12 +2290,13 @@ gtag(
               </p>
 
               <p>
-                Meet one of the world's most distinctive
-                bitter plants and its botanical story.
+                Meet one of the world's most
+                distinctive bitter plants and
+                its botanical story.
               </p>
 
               <span class="home-herb-explore">
-                Explore Bitter Melon →
+                Unlock Bitter Melon →
               </span>
 
             </div>
@@ -1599,11 +2305,15 @@ gtag(
 
         </article>
 
+
+        <!-- SARSAPARILLA -->
+
         <article class="home-herb-card">
 
           <a
             href="/herb-sarsaparilla.html"
             class="home-herb-card-link"
+            data-herb-link
           >
 
             <div class="home-herb-card-image">
@@ -1619,6 +2329,7 @@ gtag(
               </span>
 
             </div>
+
 
             <div class="home-herb-card-copy">
 
@@ -1636,11 +2347,12 @@ gtag(
 
               <p>
                 Explore sarsaparilla's root,
-                flavour and cultural botanical history.
+                flavour and cultural botanical
+                history.
               </p>
 
               <span class="home-herb-explore">
-                Explore Sarsaparilla →
+                Unlock Sarsaparilla →
               </span>
 
             </div>
@@ -1649,7 +2361,9 @@ gtag(
 
         </article>
 
+
       </div>
+
 
       <button
         class="home-herb-arrow home-herb-arrow-next"
@@ -1662,9 +2376,15 @@ gtag(
 
     </div>
 
+
     <p class="home-herb-swipe">
       Swipe to explore all 8 herbs →
     </p>
+
+
+    <!-- ==================================================
+         FREE GUIDE CTA
+    =================================================== -->
 
     <div class="home-herb-guide">
 
@@ -1672,6 +2392,7 @@ gtag(
         FREE<br />
         GUIDE
       </div>
+
 
       <div class="home-herb-guide-copy">
 
@@ -1685,53 +2406,66 @@ gtag(
         </h3>
 
         <p>
-          Get our free introduction to ginger, lemongrass, mint,
-          hibiscus, moringa, cerasee, bitter melon and sarsaparilla.
+          Unlock our free introduction to ginger,
+          lemongrass, mint, hibiscus, moringa,
+          cerasee, bitter melon and sarsaparilla.
         </p>
+
 
         <div class="home-herb-guide-points">
 
-          <span>✓ Meet all 8 founding herbs</span>
-          <span>✓ Understand flavour & preparation</span>
-          <span>✓ Explore heritage & traditional knowledge</span>
-          <span>✓ Start building your own Tea Ritual</span>
+          <span>
+            ✓ Meet all 8 founding herbs
+          </span>
+
+          <span>
+            ✓ Understand flavour & preparation
+          </span>
+
+          <span>
+            ✓ Explore heritage & traditional knowledge
+          </span>
+
+          <span>
+            ✓ Start building your own Tea Ritual
+          </span>
 
         </div>
 
       </div>
 
+
       <div class="home-herb-guide-action">
 
         <strong>
-          Start with the plants.<br />
-          Keep the knowledge.
+          One signup.<br />
+          All eight guides.
         </strong>
 
-        <a
+        <button
           class="btn btn-primary home-herb-guide-btn"
-          href="https://eepurl.com/9sLCn3GjES"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track="eight-herb-guide-signup"
+          type="button"
+          data-open-herb-gate
         >
-          Get The Free 8-Herb Guide
-        </a>
+          Unlock The Free 8-Herb Guide
+        </button>
 
         <small>
-          Free guide + future Herbal Library releases.
-          No spam.
+          Sign up once and unlock all eight
+          RastaRoots botanical guides.
         </small>
 
         <a
           class="home-herb-library-link"
           href="./herbal-library.html"
         >
-          Or explore the full Herbal Library →
+          Explore the Herbal Library →
         </a>
 
       </div>
 
     </div>
+
 
     <div class="home-herb-progress">
 
@@ -1747,6 +2481,7 @@ gtag(
 
       </div>
 
+
       <div
         class="home-herb-progress-bar"
         role="progressbar"
@@ -1760,9 +2495,15 @@ gtag(
 
     </div>
 
+
   </div>
 
 </section>
+
+
+<!-- ======================================================
+     DISCOVERY COLLECTION
+======================================================= -->
 
 <section
   id="discovery-collection"
@@ -1781,6 +2522,7 @@ gtag(
 
     </div>
 
+
     <div class="discovery-home-copy">
 
       <p class="section-kicker">
@@ -1788,18 +2530,22 @@ gtag(
       </p>
 
       <h2>
-        Five blends. Twenty-five sachets. Find your ritual.
+        Five blends. Twenty-five sachets.
+        Find your ritual.
       </h2>
 
       <p>
-        The RastaRoots Founder Discovery Collection contains all five
-        signature herbal tea blends in one 25-sachet collection.
+        The RastaRoots Founder Discovery Collection
+        contains all five signature herbal tea blends
+        in one 25-sachet collection.
       </p>
 
       <p class="discovery-search-copy">
-        Taste each ritual, learn the plants behind the blends and discover
-        which moments belong in your routine.
+        Taste each ritual, learn the plants behind
+        the blends and discover which moments belong
+        in your routine.
       </p>
+
 
       <div class="collection-facts">
 
@@ -1824,6 +2570,7 @@ gtag(
         </div>
 
       </div>
+
 
       <div class="hero-actions">
 
@@ -1850,6 +2597,11 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     TEA RITUAL
+======================================================= -->
+
 <section
   class="feature-section lifestyle-section"
   id="tea-ritual"
@@ -1865,6 +2617,7 @@ gtag(
 
   </div>
 
+
   <div class="feature-copy">
 
     <p class="section-kicker">
@@ -1872,18 +2625,22 @@ gtag(
     </p>
 
     <h2>
-      Tea already asks for time. Make the time mean something.
+      Tea already asks for time.
+      Make the time mean something.
     </h2>
 
     <p>
-      A RastaRoots Tea Ritual is a modern framework combining herbal tea
-      preparation, music and intentional time.
+      A RastaRoots Tea Ritual is a modern framework
+      combining herbal tea preparation, music and
+      intentional time.
     </p>
 
     <p>
-      Five blends. Five moods. Five different reasons to stop moving
-      automatically for a moment.
+      Five blends. Five moods. Five different
+      reasons to stop moving automatically
+      for a moment.
     </p>
+
 
     <div class="hero-actions">
 
@@ -1909,6 +2666,11 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     CREATE YOUR OWN RITUAL
+======================================================= -->
+
 <section
   id="create-your-ritual"
   class="create-ritual-section"
@@ -1921,18 +2683,23 @@ gtag(
     </p>
 
     <h2>
-      Learn the plants — then make the ritual yours.
+      Learn the plants — then make
+      the ritual yours.
     </h2>
 
     <p>
-      The Herbal Library goes beyond identifying plants. Learn about
-      flavour, preparation, heritage and botanical knowledge, then use
-      that understanding to build rituals around your own life.
+      The Herbal Library goes beyond identifying
+      plants. Learn about flavour, preparation,
+      heritage and botanical knowledge, then use
+      that understanding to build rituals around
+      your own life.
     </p>
 
   </div>
 
+
   <div class="create-ritual-carousel">
+
 
     <article class="create-ritual-card">
 
@@ -1944,19 +2711,23 @@ gtag(
 
       <div class="create-ritual-card-copy">
 
-        <span>01 • Morning</span>
+        <span>
+          01 • Morning
+        </span>
 
         <h3>
           Start with intention.
         </h3>
 
         <p>
-          Make the preparation itself part of the morning.
+          Make the preparation itself
+          part of the morning.
         </p>
 
       </div>
 
     </article>
+
 
     <article class="create-ritual-card">
 
@@ -1968,19 +2739,23 @@ gtag(
 
       <div class="create-ritual-card-copy">
 
-        <span>02 • Move</span>
+        <span>
+          02 • Move
+        </span>
 
         <h3>
           Build a ritual around movement.
         </h3>
 
         <p>
-          Create a deliberate moment around training, walking or activity.
+          Create a deliberate moment around
+          training, walking or activity.
         </p>
 
       </div>
 
     </article>
+
 
     <article class="create-ritual-card">
 
@@ -1992,19 +2767,23 @@ gtag(
 
       <div class="create-ritual-card-copy">
 
-        <span>03 • Heritage</span>
+        <span>
+          03 • Heritage
+        </span>
 
         <h3>
           Keep knowledge moving.
         </h3>
 
         <p>
-          Explore the relationship between plants, families and tradition.
+          Explore the relationship between plants,
+          families and tradition.
         </p>
 
       </div>
 
     </article>
+
 
     <article class="create-ritual-card">
 
@@ -2016,21 +2795,26 @@ gtag(
 
       <div class="create-ritual-card-copy">
 
-        <span>04 • Unwind</span>
+        <span>
+          04 • Unwind
+        </span>
 
         <h3>
           Give the day an ending.
         </h3>
 
         <p>
-          Slow preparation can create a transition into your own time.
+          Slow preparation can create a transition
+          into your own time.
         </p>
 
       </div>
 
     </article>
 
+
   </div>
+
 
   <div class="create-ritual-cta">
 
@@ -2044,6 +2828,11 @@ gtag(
   </div>
 
 </section>
+
+
+<!-- ======================================================
+     COFFEE
+======================================================= -->
 
 <section
   id="coffee"
@@ -2060,6 +2849,7 @@ gtag(
 
   </div>
 
+
   <div class="coffee-coming-copy">
 
     <p class="section-kicker">
@@ -2071,14 +2861,18 @@ gtag(
     </h2>
 
     <p>
-      RastaRoots is expanding into coffee with the same focus on origin,
-      culture, preparation and ritual that shapes the herbal tea world.
+      RastaRoots is expanding into coffee with
+      the same focus on origin, culture,
+      preparation and ritual that shapes the
+      herbal tea world.
     </p>
 
     <p style="margin-top:16px;">
-      The first RastaRoots coffee concept is 100% Ethiopian Arabica
-      freeze-dried instant coffee.
+      The first RastaRoots coffee concept is
+      100% Ethiopian Arabica freeze-dried
+      instant coffee.
     </p>
+
 
     <div class="coffee-tags">
 
@@ -2088,6 +2882,7 @@ gtag(
       <span>Coming Soon</span>
 
     </div>
+
 
     <a
       class="btn btn-primary"
@@ -2102,6 +2897,11 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     BRAND PILLARS
+======================================================= -->
+
 <section class="brand-pillars">
 
   <div class="section-heading center-heading">
@@ -2111,81 +2911,107 @@ gtag(
     </p>
 
     <h2>
-      More than tea. A rooted ecosystem.
+      More than tea.
+      A rooted ecosystem.
     </h2>
 
     <p>
-      Products are the entry point. RastaRoots connects herbal tea,
-      botanical knowledge, ritual, culture and community.
+      Products are the entry point.
+      RastaRoots connects herbal tea,
+      botanical knowledge, ritual,
+      culture and community.
     </p>
 
   </div>
 
+
   <div class="brand-pillar-grid">
+
 
     <article class="brand-pillar">
 
-      <span>01 • Drink</span>
+      <span>
+        01 • Drink
+      </span>
 
       <h3>
         Herbal Tea & Coffee
       </h3>
 
       <p>
-        Five botanical infusions now, with Ethiopian coffee forming
+        Five botanical infusions now,
+        with Ethiopian coffee forming
         the next product chapter.
       </p>
 
     </article>
 
+
     <article class="brand-pillar">
 
-      <span>02 • Ritual</span>
+      <span>
+        02 • Ritual
+      </span>
 
       <h3>
         Intentional Moments
       </h3>
 
       <p>
-        Preparation, music and attention can turn an everyday drink into
+        Preparation, music and attention
+        can turn an everyday drink into
         something more deliberate.
       </p>
 
     </article>
 
+
     <article class="brand-pillar">
 
-      <span>03 • Knowledge</span>
+      <span>
+        03 • Knowledge
+      </span>
 
       <h3>
         Botanical Education
       </h3>
 
       <p>
-        The Herbal Library explores plant identity, flavour, heritage,
+        The Herbal Library explores plant
+        identity, flavour, heritage,
         preparation, research and safety.
       </p>
 
     </article>
 
+
     <article class="brand-pillar">
 
-      <span>04 • Rootz</span>
+      <span>
+        04 • Rootz
+      </span>
 
       <h3>
         Culture & Community
       </h3>
 
       <p>
-        Caribbean heritage, British multicultural life and community
+        Caribbean heritage, British
+        multicultural life and community
         give the brand purpose beyond product.
       </p>
 
     </article>
 
+
   </div>
 
 </section>
+
+
+<!-- ======================================================
+     COMMUNITY
+======================================================= -->
 
 <section class="rooted-lifestyle">
 
@@ -2199,6 +3025,7 @@ gtag(
 
   </div>
 
+
   <div class="rooted-lifestyle-copy">
 
     <p class="section-kicker">
@@ -2206,18 +3033,24 @@ gtag(
     </p>
 
     <h2>
-      Strong roots. Strong communities. Stronger together.
+      Strong roots.
+      Strong communities.
+      Stronger together.
     </h2>
 
     <p>
-      RastaRoots is proudly shaped by Caribbean heritage while being built
-      for the multicultural communities that define Britain today.
+      RastaRoots is proudly shaped by Caribbean
+      heritage while being built for the
+      multicultural communities that define
+      Britain today.
     </p>
 
     <p>
-      £1 from every Discovery Collection sold is committed to our
-      Build Our Communities Back fund for grassroots community projects.
+      £1 from every Discovery Collection sold
+      is committed to our Build Our Communities
+      Back fund for grassroots community projects.
     </p>
+
 
     <div
       class="hero-actions"
@@ -2244,6 +3077,11 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     FOUNDER
+======================================================= -->
+
 <section
   id="founder"
   class="feature-section reverse"
@@ -2259,6 +3097,7 @@ gtag(
 
   </div>
 
+
   <div class="feature-copy">
 
     <p class="section-kicker">
@@ -2266,18 +3105,22 @@ gtag(
     </p>
 
     <h2>
-      Built from roots, not trends.
+      Built from roots,
+      not trends.
     </h2>
 
     <p>
-      RastaRoots began with the belief that modern wellness can become
-      disconnected from culture, history and the people who carried
-      plant knowledge long before it became fashionable.
+      RastaRoots began with the belief that
+      modern wellness can become disconnected
+      from culture, history and the people who
+      carried plant knowledge long before it
+      became fashionable.
     </p>
 
     <p>
-      The goal is to build something modern without throwing away
-      the roots that give it meaning.
+      The goal is to build something modern
+      without throwing away the roots that
+      give it meaning.
     </p>
 
     <a
@@ -2291,6 +3134,11 @@ gtag(
 
 </section>
 
+
+<!-- ======================================================
+     GEO / ANSWER ENGINE
+======================================================= -->
+
 <section
   id="about-rastaroots"
   class="answer-engine-section"
@@ -2303,16 +3151,20 @@ gtag(
     </p>
 
     <h2>
-      Herbal tea, botanicals, ritual and roots.
+      Herbal tea, botanicals,
+      ritual and roots.
     </h2>
 
     <p>
-      Clear answers about the plants, products and ideas behind RastaRoots.
+      Clear answers about the plants,
+      products and ideas behind RastaRoots.
     </p>
 
   </div>
 
+
   <div class="answer-engine-grid">
+
 
     <article class="answer-card">
 
@@ -2321,11 +3173,14 @@ gtag(
       </h3>
 
       <p>
-        RastaRoots is a British-Caribbean lifestyle brand built around
-        herbal tea, botanical knowledge, Tea Ritual, culture and community.
+        RastaRoots is a British-Caribbean
+        lifestyle brand built around herbal tea,
+        botanical knowledge, Tea Ritual,
+        culture and community.
       </p>
 
     </article>
+
 
     <article class="answer-card">
 
@@ -2334,12 +3189,14 @@ gtag(
       </h3>
 
       <p>
-        Herbal tea is an infusion made from botanical ingredients such as
-        roots, leaves, flowers, fruit or seeds rather than traditional
-        tea leaves.
+        Herbal tea is an infusion made from
+        botanical ingredients such as roots,
+        leaves, flowers, fruit or seeds rather
+        than traditional tea leaves.
       </p>
 
     </article>
+
 
     <article class="answer-card">
 
@@ -2348,12 +3205,14 @@ gtag(
       </h3>
 
       <p>
-        Bush tea is a broad Caribbean term for traditional herbal
-        infusions made from locally known plants. Practices vary between
-        islands, communities and families.
+        Bush tea is a broad Caribbean term for
+        traditional herbal infusions made from
+        locally known plants. Practices vary
+        between islands, communities and families.
       </p>
 
     </article>
+
 
     <article class="answer-card">
 
@@ -2362,11 +3221,14 @@ gtag(
       </h3>
 
       <p>
-        Ginger, lemongrass, mint, hibiscus or sorrel, moringa, cerasee,
-        bitter melon and sarsaparilla form the founding eight guides.
+        Ginger, lemongrass, mint, hibiscus or
+        sorrel, moringa, cerasee, bitter melon
+        and sarsaparilla form the founding
+        eight guides.
       </p>
 
     </article>
+
 
     <article class="answer-card">
 
@@ -2375,11 +3237,13 @@ gtag(
       </h3>
 
       <p>
-        A RastaRoots Tea Ritual combines herbal tea preparation with
-        intentional time and music.
+        A RastaRoots Tea Ritual combines
+        herbal tea preparation with intentional
+        time and music.
       </p>
 
     </article>
+
 
     <article class="answer-card">
 
@@ -2388,15 +3252,23 @@ gtag(
       </h3>
 
       <p>
-        It is a growing botanical archive covering identity, flavour,
-        preparation, heritage, traditional knowledge, research and safety.
+        It is a growing botanical archive
+        covering identity, flavour, preparation,
+        heritage, traditional knowledge,
+        research and safety.
       </p>
 
     </article>
 
+
   </div>
 
 </section>
+
+
+<!-- ======================================================
+     FOUNDER PROMISE
+======================================================= -->
 
 <section
   class="launch-section"
@@ -2410,50 +3282,80 @@ gtag(
     </p>
 
     <h2>
-      Build it properly. Tell the truth. Keep the Rootz.
+      Build it properly.
+      Tell the truth.
+      Keep the Rootz.
     </h2>
 
     <p>
-      RastaRoots is still growing. We would rather explain what exists,
-      what is being built and what remains uncertain than fill the site
-      with invented reviews or exaggerated wellness promises.
+      RastaRoots is still growing.
+      We would rather explain what exists,
+      what is being built and what remains
+      uncertain than fill the site with
+      invented reviews or exaggerated
+      wellness promises.
     </p>
+
 
     <div class="launch-grid">
 
       <div>
         <strong>✓</strong>
-        <h3>Clear Ingredients</h3>
+
+        <h3>
+          Clear Ingredients
+        </h3>
+
         <p>
-          Each blend clearly shows what goes into it.
+          Each blend clearly shows
+          what goes into it.
         </p>
       </div>
 
-      <div>
-        <strong>✓</strong>
-        <h3>Tradition & Evidence</h3>
-        <p>
-          Traditional knowledge and modern evidence are treated separately.
-        </p>
-      </div>
 
       <div>
         <strong>✓</strong>
-        <h3>Botanical Education</h3>
+
+        <h3>
+          Tradition & Evidence
+        </h3>
+
         <p>
-          The Herbal Library is being built as a genuine learning resource.
+          Traditional knowledge and modern
+          evidence are treated separately.
         </p>
       </div>
 
+
       <div>
         <strong>✓</strong>
-        <h3>Community Commitment</h3>
+
+        <h3>
+          Botanical Education
+        </h3>
+
         <p>
-          £1 from every Discovery Collection sold is committed to our community fund.
+          The Herbal Library is being built
+          as a genuine learning resource.
+        </p>
+      </div>
+
+
+      <div>
+        <strong>✓</strong>
+
+        <h3>
+          Community Commitment
+        </h3>
+
+        <p>
+          £1 from every Discovery Collection
+          sold is committed to our community fund.
         </p>
       </div>
 
     </div>
+
 
     <a
       class="btn btn-primary"
@@ -2465,6 +3367,11 @@ gtag(
   </div>
 
 </section>
+
+
+<!-- ======================================================
+     FINAL CONVERSION
+======================================================= -->
 
 <section class="final-home-conversion">
 
@@ -2478,6 +3385,7 @@ gtag(
 
   </div>
 
+
   <div class="final-home-conversion-copy">
 
     <p class="section-kicker">
@@ -2485,14 +3393,19 @@ gtag(
     </p>
 
     <h2>
-      Taste the blends. Learn the plants. Find what fits.
+      Taste the blends.
+      Learn the plants.
+      Find what fits.
     </h2>
 
     <p>
-      Begin with the 25-sachet Discovery Collection, explore the plants
-      through the Herbal Library and discover how herbal tea can become
-      a more intentional part of your day.
+      Begin with the 25-sachet Discovery
+      Collection, explore the plants through
+      the Herbal Library and discover how
+      herbal tea can become a more intentional
+      part of your day.
     </p>
+
 
     <div class="hero-actions">
 
@@ -2503,20 +3416,24 @@ gtag(
         Pre-Order For £19.99
       </a>
 
-      <a
+      <button
         class="btn btn-secondary"
-        href="https://eepurl.com/9sLCn3GjES"
-        target="_blank"
-        rel="noopener noreferrer"
+        type="button"
+        data-open-herb-gate
       >
-        Get The Free Herbal Guide
-      </a>
+        Get The Free 8-Herb Guide
+      </button>
 
     </div>
 
   </div>
 
 </section>
+
+
+<!-- ======================================================
+     INSTAGRAM
+======================================================= -->
 
 <section
   id="instagram"
@@ -2530,12 +3447,15 @@ gtag(
     </p>
 
     <h2>
-      Built in public. Rooted in community.
+      Built in public.
+      Rooted in community.
     </h2>
 
     <p>
-      Follow RastaRoots for herbal tea, botanical education, Tea Ritual,
-      culture, Rootz Principles and community stories.
+      Follow RastaRoots for herbal tea,
+      botanical education, Tea Ritual,
+      culture, Rootz Principles and
+      community stories.
     </p>
 
     <a
@@ -2550,6 +3470,11 @@ gtag(
   </div>
 
 </section>
+
+
+<!-- ======================================================
+     EMAIL
+======================================================= -->
 
 <section
   id="subscribe"
@@ -2567,9 +3492,12 @@ gtag(
     </h2>
 
     <p>
-      Get new Herbal Library guides, Discovery Collection updates,
-      Tea Ritual releases, coffee launch news and rooted stories.
+      Get new Herbal Library guides,
+      Discovery Collection updates,
+      Tea Ritual releases, coffee launch
+      news and rooted stories.
     </p>
+
 
     <div class="subscribe-button-wrap">
 
@@ -2584,23 +3512,32 @@ gtag(
 
     </div>
 
+
     <small>
-      No spam. Just guides, product news and rooted stories.
+      No spam. Just guides,
+      product news and rooted stories.
     </small>
 
   </div>
 
 </section>
 
+
 </main>
+
+
+<!-- ======================================================
+     FOOTER
+======================================================= -->
 
 <footer class="site-footer">
 
   <img
-    src="./assets/rastaroots-logo-light.png?v=612"
+    src="./assets/rastaroots-logo-light.png?v=613"
     alt=""
     aria-hidden="true"
   />
+
 
   <nav
     class="footer-links"
@@ -2631,12 +3568,18 @@ gtag(
 
   </nav>
 
+
   <p>
     © 2026 RastaRoots Life.<br />
     Rooted in nature. Fueled by life.
   </p>
 
 </footer>
+
+
+<!-- ======================================================
+     MOBILE CTA
+======================================================= -->
 
 <div class="mobile-sticky-cta">
 
@@ -2647,6 +3590,110 @@ gtag(
   </a>
 
 </div>
+
+
+<!-- ======================================================
+     HERB ACCESS GATE
+======================================================= -->
+
+<div
+  class="herb-access-gate"
+  id="herbAccessGate"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="herbAccessTitle"
+  aria-hidden="true"
+>
+
+  <div class="herb-access-dialog">
+
+    <button
+      class="herb-access-close"
+      type="button"
+      aria-label="Close"
+      data-close-herb-gate
+    >
+      ×
+    </button>
+
+
+    <span class="herb-access-badge">
+      Free Herbal Library Access
+    </span>
+
+
+    <h2 id="herbAccessTitle">
+      Unlock all 8 herbal guides.
+    </h2>
+
+
+    <p>
+      Join the RastaRoots list once and get access
+      to all eight founding botanical guides —
+      ginger, lemongrass, mint, hibiscus,
+      moringa, cerasee, bitter melon
+      and sarsaparilla.
+    </p>
+
+
+    <div class="herb-access-benefits">
+
+      <span>
+        ✓ Botanical identity & flavour
+      </span>
+
+      <span>
+        ✓ Preparation guidance
+      </span>
+
+      <span>
+        ✓ Caribbean heritage & tradition
+      </span>
+
+      <span>
+        ✓ Research & safety context
+      </span>
+
+    </div>
+
+
+    <div class="herb-access-actions">
+
+      <a
+        class="btn btn-primary"
+        href="https://eepurl.com/9sLCn3GjES"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-herb-signup
+      >
+        Sign Up & Unlock Free
+      </a>
+
+
+      <button
+        class="herb-access-unlock"
+        type="button"
+        data-confirm-herb-access
+      >
+        I’ve Signed Up — Unlock My Guides
+      </button>
+
+    </div>
+
+
+    <p class="herb-access-note">
+      Already signed up? Tap “I’ve Signed Up”
+      and this browser will remember your access.
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- ======================================================
+     HERO CAROUSEL
+======================================================= -->
 
 <script>
 
@@ -2698,7 +3745,8 @@ gtag(
       ) {
 
         const active =
-          slideIndex === currentIndex;
+          slideIndex ===
+          currentIndex;
 
         slide.classList.toggle(
           "is-active",
@@ -2718,7 +3766,8 @@ gtag(
       ) {
 
         const active =
-          dotIndex === currentIndex;
+          dotIndex ===
+          currentIndex;
 
         dot.classList.toggle(
           "is-active",
@@ -2785,6 +3834,11 @@ gtag(
 })();
 
 </script>
+
+
+<!-- ======================================================
+     HERB CAROUSEL
+======================================================= -->
 
 <script>
 
@@ -2871,6 +3925,389 @@ gtag(
 
 </script>
 
+
+<!-- ======================================================
+     HERB EMAIL ACCESS GATE
+======================================================= -->
+
+<script>
+
+(function () {
+
+  const ACCESS_KEY =
+    "rastarootsHerbAccess";
+
+  const gate =
+    document.getElementById(
+      "herbAccessGate"
+    );
+
+  const herbLinks =
+    Array.from(
+      document.querySelectorAll(
+        "[data-herb-link]"
+      )
+    );
+
+  const openButtons =
+    Array.from(
+      document.querySelectorAll(
+        "[data-open-herb-gate]"
+      )
+    );
+
+  const closeButtons =
+    Array.from(
+      document.querySelectorAll(
+        "[data-close-herb-gate]"
+      )
+    );
+
+  const confirmButton =
+    document.querySelector(
+      "[data-confirm-herb-access]"
+    );
+
+  const signupButton =
+    document.querySelector(
+      "[data-herb-signup]"
+    );
+
+  let pendingUrl =
+    null;
+
+
+  function hasAccess() {
+
+    try {
+
+      return (
+        window.localStorage.getItem(
+          ACCESS_KEY
+        ) ===
+        "true"
+      );
+
+    } catch (error) {
+
+      return false;
+
+    }
+
+  }
+
+
+  function grantAccess() {
+
+    try {
+
+      window.localStorage.setItem(
+        ACCESS_KEY,
+        "true"
+      );
+
+    } catch (error) {
+
+      /* Local storage may be unavailable. */
+
+    }
+
+  }
+
+
+  function openGate(
+    destination
+  ) {
+
+    pendingUrl =
+      destination ||
+      pendingUrl;
+
+    if (!gate) {
+      return;
+    }
+
+    gate.classList.add(
+      "is-open"
+    );
+
+    gate.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    document.body.classList.add(
+      "herb-gate-open"
+    );
+
+    const closeButton =
+      gate.querySelector(
+        "[data-close-herb-gate]"
+      );
+
+    closeButton?.focus();
+
+  }
+
+
+  function closeGate() {
+
+    if (!gate) {
+      return;
+    }
+
+    gate.classList.remove(
+      "is-open"
+    );
+
+    gate.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+    document.body.classList.remove(
+      "herb-gate-open"
+    );
+
+  }
+
+
+  function refreshCardLabels() {
+
+    if (!hasAccess()) {
+      return;
+    }
+
+    document
+      .querySelectorAll(
+        ".home-herb-explore"
+      )
+      .forEach(
+        function (label) {
+
+          const text =
+            label.textContent
+              .replace(
+                "Unlock ",
+                "Explore "
+              );
+
+          label.textContent =
+            text;
+
+        }
+      );
+
+  }
+
+
+  herbLinks.forEach(
+    function (link) {
+
+      link.addEventListener(
+        "click",
+        function (event) {
+
+          if (hasAccess()) {
+            return;
+          }
+
+          event.preventDefault();
+
+          pendingUrl =
+            link.getAttribute(
+              "href"
+            );
+
+          openGate(
+            pendingUrl
+          );
+
+          if (
+            typeof gtag ===
+            "function"
+          ) {
+
+            gtag(
+              "event",
+              "herbal_guide_gate_open",
+              {
+                herb_url:
+                  pendingUrl,
+                page:
+                  "home"
+              }
+            );
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+  openButtons.forEach(
+    function (button) {
+
+      button.addEventListener(
+        "click",
+        function () {
+
+          if (hasAccess()) {
+
+            window.location.href =
+              "./herbal-library.html";
+
+            return;
+
+          }
+
+          pendingUrl =
+            null;
+
+          openGate();
+
+        }
+      );
+
+    }
+  );
+
+
+  closeButtons.forEach(
+    function (button) {
+
+      button.addEventListener(
+        "click",
+        closeGate
+      );
+
+    }
+  );
+
+
+  gate?.addEventListener(
+    "click",
+    function (event) {
+
+      if (
+        event.target ===
+        gate
+      ) {
+
+        closeGate();
+
+      }
+
+    }
+  );
+
+
+  document.addEventListener(
+    "keydown",
+    function (event) {
+
+      if (
+        event.key ===
+        "Escape" &&
+        gate?.classList.contains(
+          "is-open"
+        )
+      ) {
+
+        closeGate();
+
+      }
+
+    }
+  );
+
+
+  signupButton?.addEventListener(
+    "click",
+    function () {
+
+      if (
+        typeof gtag ===
+        "function"
+      ) {
+
+        gtag(
+          "event",
+          "herbal_guide_signup_click",
+          {
+            page:
+              "home"
+          }
+        );
+
+      }
+
+    }
+  );
+
+
+  confirmButton?.addEventListener(
+    "click",
+    function () {
+
+      grantAccess();
+
+      refreshCardLabels();
+
+      closeGate();
+
+      if (
+        typeof gtag ===
+        "function"
+      ) {
+
+        gtag(
+          "event",
+          "herbal_guide_access_unlocked",
+          {
+            page:
+              "home"
+          }
+        );
+
+      }
+
+      if (pendingUrl) {
+
+        const destination =
+          pendingUrl;
+
+        pendingUrl =
+          null;
+
+        window.location.href =
+          destination;
+
+      } else {
+
+        window.location.href =
+          "./herbal-library.html";
+
+      }
+
+    }
+  );
+
+
+  refreshCardLabels();
+
+})();
+
+</script>
+
+
+<!-- ======================================================
+     CTA TRACKING
+======================================================= -->
+
 <script>
 
 document
@@ -2912,7 +4349,13 @@ document
 
 </script>
 
-<script src="./script.js?v=612"></script>
+
+<!-- ======================================================
+     EXISTING SITE JS
+======================================================= -->
+
+<script src="./script.js?v=613"></script>
+
 
 </body>
 
