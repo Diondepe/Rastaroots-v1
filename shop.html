@@ -11,14 +11,15 @@
   />
 
   <!-- ======================================================
-       SEO
+       RASTAROOTS SHOP
+       V610
   ======================================================= -->
 
   <title>Herbal Tea Gift Set UK | RastaRoots Discovery Collection</title>
 
   <meta
     name="description"
-    content="Discover the RastaRoots herbal tea gift set. 25 naturally caffeine-free herbal tea sachets across 5 signature rituals for £19.99, plus 30-day Herbal Library access, 15% off RastaRoots Coffee and £1 from every box committed to community projects."
+    content="Discover the RastaRoots Discovery Collection: 25 naturally caffeine-free herbal tea sachets across 5 signature rituals for £19.99, plus 30-day Herbal Library access, 15% off RastaRoots Coffee and £1 from every box committed to community projects."
   />
 
   <meta
@@ -72,7 +73,7 @@
 
   <meta
     property="og:description"
-    content="25 caffeine-free herbal tea sachets. 5 signature rituals. 30-day Herbal Library access. 15% off RastaRoots Coffee. £1 from every box goes back."
+    content="25 naturally caffeine-free herbal tea sachets. 5 signature rituals. 30-day Herbal Library access. 15% off RastaRoots Coffee. £1 from every box goes back."
   />
 
   <meta
@@ -101,7 +102,7 @@
 
   <meta
     name="twitter:description"
-    content="25 naturally caffeine-free herbal tea sachets across five RastaRoots rituals for £19.99, plus founder extras and community impact."
+    content="25 naturally caffeine-free herbal tea sachets across five RastaRoots rituals for £19.99, plus Founder extras and community impact."
   />
 
   <meta
@@ -110,7 +111,7 @@
   />
 
   <!-- ======================================================
-       FAVICON + MAIN CSS
+       FAVICON + CSS
   ======================================================= -->
 
   <link
@@ -120,7 +121,7 @@
 
   <link
     rel="stylesheet"
-    href="./style.css?v=608"
+    href="./style.css?v=610"
   />
 
   <!-- ======================================================
@@ -133,7 +134,6 @@
   ></script>
 
   <script>
-
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -143,19 +143,14 @@
     gtag("js", new Date());
 
     gtag("config", "G-1XKF37N3P9", {
-
       linker: {
-
         domains: [
           "rastarootslife.com",
           "www.rastarootslife.com",
           "shop.rastarootslife.com"
         ]
-
       }
-
     });
-
   </script>
 
   <!-- ======================================================
@@ -193,7 +188,7 @@
         "@id": "https://www.rastarootslife.com/shop.html#webpage",
         "url": "https://www.rastarootslife.com/shop.html",
         "name": "Herbal Tea Gift Set UK | RastaRoots Discovery Collection",
-        "description": "Shop the RastaRoots Discovery Collection: 25 caffeine-free herbal tea sachets across five signature rituals with founder extras and community impact.",
+        "description": "Shop the RastaRoots Discovery Collection: 25 naturally caffeine-free herbal tea sachets across five signature rituals with Founder extras and community impact.",
         "inLanguage": "en-GB",
         "isPartOf": {
           "@id": "https://www.rastarootslife.com/#website"
@@ -245,12 +240,12 @@
             "name": "Are the RastaRoots Discovery Collection teas caffeine free?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The RastaRoots Discovery Collection is naturally caffeine free."
+              "text": "Yes. The RastaRoots Discovery Collection is naturally caffeine free."
             }
           },
           {
             "@type": "Question",
-            "name": "What founder extras come with the RastaRoots Discovery Collection?",
+            "name": "What Founder extras come with the RastaRoots Discovery Collection?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "The Founder offer includes 30 days of Herbal Library access and 15% off RastaRoots Coffee."
@@ -279,31 +274,24 @@
   </script>
 
   <!-- ======================================================
-       SHOP PAGE CSS
+       SHOP-SPECIFIC STYLES
   ======================================================= -->
 
   <style>
 
-    html {
-      scroll-behavior: smooth;
+    .shop-page {
+      background: #fff9ee;
     }
 
-
     /* ======================================================
-       HERO CAROUSEL
+       HERO
     ====================================================== */
 
     .shop-hero {
       display: grid;
-
-      grid-template-columns:
-        minmax(0, 43%)
-        minmax(0, 57%);
-
-      min-height: 740px;
-
+      grid-template-columns: minmax(0, 43%) minmax(0, 57%);
+      min-height: min(760px, 84vh);
       overflow: hidden;
-
       background:
         radial-gradient(
           circle at top left,
@@ -317,424 +305,204 @@
         );
     }
 
-
     .shop-hero-copy {
       position: relative;
-
       z-index: 3;
-
       display: flex;
-
       flex-direction: column;
-
       justify-content: center;
-
-      padding:
-        90px
-        5vw
-        90px
-        7vw;
+      padding: 86px 5vw 86px 7vw;
     }
-
 
     .shop-hero .eyebrow {
-      margin-bottom:
-        20px;
-
-      color:
-        #f4d88a;
+      margin-bottom: 18px;
+      color: #f4d88a;
     }
-
 
     .shop-hero h1 {
-      margin-bottom:
-        22px;
-
-      color:
-        #fff9ee;
-
-      font-size:
-        clamp(
-          3.8rem,
-          6.4vw,
-          7rem
-        );
-
-      line-height:
-        0.9;
-
-      letter-spacing:
-        -0.06em;
+      max-width: 760px;
+      margin-bottom: 22px;
+      color: #fff9ee;
+      font-size: clamp(3.8rem, 6.2vw, 6.8rem);
+      line-height: 0.9;
+      letter-spacing: -0.06em;
     }
-
 
     .shop-hero h1 em {
-      display:
-        block;
-
-      color:
-        #f4d88a;
-
-      font-style:
-        normal;
+      display: block;
+      color: #f4d88a;
+      font-style: normal;
     }
-
 
     .shop-hero-text {
-      max-width:
-        640px;
-
-      margin-bottom:
-        30px;
-
-      color:
-        rgba(
-          255,
-          249,
-          238,
-          0.82
-        );
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        1.08rem;
-
-      line-height:
-        1.78;
+      max-width: 620px;
+      margin-bottom: 28px;
+      color: rgba(255, 249, 238, 0.84);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.06rem;
+      line-height: 1.75;
     }
 
+    .shop-hero-price {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+      color: #fff9ee;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .shop-hero-price strong {
+      color: #f4d88a;
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .shop-hero-price span {
+      color: rgba(255, 249, 238, 0.7);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
 
     .shop-hero-proof {
-      display:
-        flex;
-
-      flex-wrap:
-        wrap;
-
-      gap:
-        10px;
-
-      margin-top:
-        26px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 25px;
     }
-
 
     .shop-hero-proof span {
-      padding:
-        10px
-        14px;
-
-      border:
-        1px solid
-        rgba(
-          244,
-          216,
-          138,
-          0.22
-        );
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          0.05
-        );
-
-      color:
-        rgba(
-          255,
-          249,
-          238,
-          0.82
-        );
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.76rem;
-
-      font-weight:
-        700;
+      padding: 10px 13px;
+      border: 1px solid rgba(244, 216, 138, 0.23);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 249, 238, 0.84);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.74rem;
+      font-weight: 700;
     }
 
+    /* ======================================================
+       CAROUSEL
+    ====================================================== */
 
     .shop-carousel {
-      position:
-        relative;
-
-      min-height:
-        740px;
-
-      overflow:
-        hidden;
-
-      background:
-        #0a2416;
+      position: relative;
+      min-height: min(760px, 84vh);
+      overflow: hidden;
+      background: #0a2416;
     }
-
 
     .shop-slide {
-      position:
-        absolute;
-
-      inset:
-        0;
-
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
-
-      opacity:
-        0;
-
-      visibility:
-        hidden;
-
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      visibility: hidden;
       transition:
-        opacity
-        700ms
-        ease;
+        opacity 700ms ease,
+        visibility 700ms ease;
     }
-
 
     .shop-slide.is-active {
-      opacity:
-        1;
-
-      visibility:
-        visible;
+      opacity: 1;
+      visibility: visible;
     }
 
-
     .shop-carousel::after {
-      content:
-        "";
-
-      position:
-        absolute;
-
-      inset:
-        0;
-
-      z-index:
-        1;
-
-      pointer-events:
-        none;
-
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
       background:
         linear-gradient(
           90deg,
-          rgba(
-            16,
-            60,
-            37,
-            0.92
-          )
-          0%,
-          rgba(
-            16,
-            60,
-            37,
-            0.24
-          )
-          14%,
-          transparent
-          40%
+          rgba(16, 60, 37, 0.9) 0%,
+          rgba(16, 60, 37, 0.22) 15%,
+          transparent 42%
         );
     }
-
 
     .shop-carousel-dots {
-      position:
-        absolute;
-
-      z-index:
-        4;
-
-      bottom:
-        24px;
-
-      left:
-        50%;
-
-      display:
-        flex;
-
-      gap:
-        10px;
-
-      transform:
-        translateX(-50%);
+      position: absolute;
+      z-index: 4;
+      bottom: 24px;
+      left: 50%;
+      display: flex;
+      gap: 10px;
+      transform: translateX(-50%);
     }
-
 
     .shop-carousel-dots button {
-      width:
-        11px;
-
-      height:
-        11px;
-
-      padding:
-        0;
-
-      border:
-        1px solid
-        rgba(
-          255,
-          255,
-          255,
-          0.9
-        );
-
-      border-radius:
-        50%;
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          0.3
-        );
-
-      cursor:
-        pointer;
+      width: 12px;
+      height: 12px;
+      padding: 0;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.28);
+      cursor: pointer;
+      touch-action: manipulation;
     }
-
 
     .shop-carousel-dots button.is-active {
-      background:
-        #fff;
+      background: #fff;
     }
 
+    .shop-carousel-dots button:focus-visible {
+      outline: 3px solid #f4d88a;
+      outline-offset: 4px;
+    }
 
     /* ======================================================
        VALUE STRIP
     ====================================================== */
 
     .shop-value-strip {
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          4,
-          1fr
-        );
-
-      background:
-        #f4d88a;
-
-      border-bottom:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          0.14
-        );
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: #f4d88a;
+      border-bottom: 1px solid rgba(16, 60, 37, 0.14);
     }
-
 
     .shop-value-strip > div {
-      padding:
-        27px
-        24px;
-
-      text-align:
-        center;
-
-      border-right:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          0.14
-        );
+      padding: 26px 24px;
+      text-align: center;
+      border-right: 1px solid rgba(16, 60, 37, 0.14);
     }
-
 
     .shop-value-strip > div:last-child {
-      border-right:
-        0;
+      border-right: 0;
     }
-
 
     .shop-value-strip strong {
-      display:
-        block;
-
-      margin-bottom:
-        6px;
-
-      color:
-        #103c25;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.8rem;
-
-      font-weight:
-        900;
-
-      letter-spacing:
-        0.06em;
-
-      text-transform:
-        uppercase;
+      display: block;
+      margin-bottom: 6px;
+      color: #103c25;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-
 
     .shop-value-strip p {
-      color:
-        #354036;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.86rem;
-
-      line-height:
-        1.5;
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+      line-height: 1.5;
     }
 
-
     /* ======================================================
-       GENERAL SHOP SECTION
+       GENERAL SHOP SECTIONS
     ====================================================== */
 
     .shop-section {
-      padding:
-        110px
-        7vw;
+      padding: 105px 7vw;
     }
-
 
     .shop-section-light {
       background:
@@ -745,25 +513,17 @@
         );
     }
 
-
     .shop-section-white {
-      background:
-        #fff9ee;
+      background: #fff9ee;
     }
 
-
     .shop-section-dark {
+      color-scheme: dark;
       background:
         radial-gradient(
           circle at top,
-          rgba(
-            244,
-            216,
-            138,
-            0.12
-          ),
-          transparent
-          32%
+          rgba(244, 216, 138, 0.12),
+          transparent 32%
         ),
         linear-gradient(
           135deg,
@@ -772,590 +532,262 @@
         );
     }
 
-
     .shop-section-dark .section-kicker {
-      color:
-        #f4d88a;
+      color: #f4d88a;
     }
-
 
     .shop-section-dark .section-heading h2 {
-      color:
-        #fff9ee;
+      color: #fff9ee;
     }
-
 
     .shop-section-dark .section-heading > p:last-child {
-      color:
-        rgba(
-          255,
-          249,
-          238,
-          0.74
-        );
+      color: rgba(255, 249, 238, 0.74);
     }
 
-
     /* ======================================================
-       INCLUDED GRID
+       INCLUDED
     ====================================================== */
 
     .included-grid {
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          2,
-          1fr
-        );
-
-      gap:
-        28px;
-
-      margin-top:
-        55px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      margin-top: 54px;
     }
-
 
     .included-card {
-      overflow:
-        hidden;
-
-      border:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          0.11
-        );
-
-      border-radius:
-        26px;
-
-      background:
-        #fff;
-
-      box-shadow:
-        0
-        22px
-        50px
-        rgba(
-          16,
-          60,
-          37,
-          0.08
-        );
+      overflow: hidden;
+      border: 1px solid rgba(16, 60, 37, 0.11);
+      border-radius: 26px;
+      background: #fff;
+      box-shadow: 0 22px 50px rgba(16, 60, 37, 0.08);
     }
-
 
     .included-card-image {
-      aspect-ratio:
-        16 / 10;
-
-      overflow:
-        hidden;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #eadcc5;
     }
-
 
     .included-card-image img {
-      display:
-        block;
-
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
-
-      transition:
-        transform
-        500ms
-        ease;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 450ms ease;
     }
 
-
-    .included-card:hover img {
-      transform:
-        scale(
-          1.02
-        );
+    @media (hover: hover) {
+      .included-card:hover img {
+        transform: scale(1.025);
+      }
     }
-
 
     .included-card-copy {
-      padding:
-        28px;
+      padding: 28px;
     }
-
 
     .included-card-copy span {
-      display:
-        block;
-
-      margin-bottom:
-        10px;
-
-      color:
-        #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.7rem;
-
-      font-weight:
-        900;
-
-      letter-spacing:
-        0.12em;
-
-      text-transform:
-        uppercase;
+      display: block;
+      margin-bottom: 10px;
+      color: #b68a33;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
-
 
     .included-card-copy h3 {
-      margin-bottom:
-        10px;
-
-      color:
-        #103c25;
-
-      font-size:
-        1.7rem;
+      margin-bottom: 10px;
+      color: #103c25;
+      font-size: 1.7rem;
     }
-
 
     .included-card-copy p {
-      color:
-        #5c5a50;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      line-height:
-        1.7;
+      color: #5c5a50;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
     }
-
 
     /* ======================================================
        FOUNDER OFFER
     ====================================================== */
 
     .shop-founder-offer {
-      display:
-        grid;
-
-      grid-template-columns:
-        52% 48%;
-
-      align-items:
-        stretch;
-
-      background:
-        #f4ead7;
+      display: grid;
+      grid-template-columns: 52% 48%;
+      align-items: stretch;
+      background: #f4ead7;
     }
-
 
     .shop-founder-image {
-      min-height:
-        680px;
-
-      overflow:
-        hidden;
+      min-height: 680px;
+      overflow: hidden;
+      background: #eadcc5;
     }
-
 
     .shop-founder-image img {
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-
 
     .shop-founder-copy {
-      display:
-        flex;
-
-      flex-direction:
-        column;
-
-      justify-content:
-        center;
-
-      padding:
-        90px
-        7vw
-        90px
-        6vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 88px 7vw 88px 6vw;
     }
-
 
     .shop-founder-copy h2 {
-      margin-bottom:
-        23px;
-
-      color:
-        #103c25;
-
-      font-size:
-        clamp(
-          3rem,
-          5vw,
-          5.3rem
-        );
-
-      line-height:
-        0.98;
-
-      letter-spacing:
-        -0.05em;
+      margin-bottom: 23px;
+      color: #103c25;
+      font-size: clamp(3rem, 5vw, 5.3rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
     }
-
 
     .shop-founder-copy > p:not(.section-kicker) {
-      margin-bottom:
-        18px;
-
-      color:
-        #354036;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        1.04rem;
-
-      line-height:
-        1.8;
+      margin-bottom: 18px;
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.03rem;
+      line-height: 1.8;
     }
-
 
     .founder-benefits {
-      display:
-        grid;
-
-      gap:
-        12px;
-
-      margin:
-        22px
-        0
-        30px;
+      display: grid;
+      gap: 11px;
+      margin: 22px 0 30px;
     }
-
 
     .founder-benefit {
-      padding:
-        17px
-        19px;
-
-      border:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          0.11
-        );
-
-      border-radius:
-        17px;
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          0.5
-        );
-
-      color:
-        #354036;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      line-height:
-        1.6;
+      padding: 17px 19px;
+      border: 1px solid rgba(16, 60, 37, 0.11);
+      border-radius: 17px;
+      background: rgba(255, 255, 255, 0.52);
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
     }
-
 
     .founder-benefit strong {
-      color:
-        #103c25;
+      color: #103c25;
     }
 
-
     /* ======================================================
-       FIVE RITUALS
+       RITUALS
     ====================================================== */
 
     .ritual-grid {
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          5,
-          1fr
-        );
-
-      gap:
-        17px;
-
-      margin-top:
-        52px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 17px;
+      margin-top: 52px;
     }
-
 
     .ritual-card {
-      padding:
-        27px
-        23px;
-
-      border:
-        1px solid
-        rgba(
-          244,
-          216,
-          138,
-          0.16
-        );
-
-      border-radius:
-        22px;
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          0.05
-        );
+      display: flex;
+      flex-direction: column;
+      padding: 27px 23px;
+      border: 1px solid rgba(244, 216, 138, 0.16);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.05);
     }
-
 
     .ritual-card span {
-      display:
-        block;
-
-      margin-bottom:
-        15px;
-
-      color:
-        #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.68rem;
-
-      font-weight:
-        900;
-
-      letter-spacing:
-        0.12em;
-
-      text-transform:
-        uppercase;
+      display: block;
+      margin-bottom: 15px;
+      color: #f4d88a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
-
 
     .ritual-card h3 {
-      margin-bottom:
-        10px;
-
-      color:
-        #fff9ee;
-
-      font-size:
-        1.48rem;
+      margin-bottom: 10px;
+      color: #fff9ee;
+      font-size: 1.48rem;
     }
-
 
     .ritual-card p {
-      color:
-        rgba(
-          255,
-          249,
-          238,
-          0.68
-        );
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.92rem;
-
-      line-height:
-        1.65;
+      color: rgba(255, 249, 238, 0.7);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.92rem;
+      line-height: 1.65;
     }
-
 
     .ritual-card a {
-      display:
-        inline-block;
-
-      margin-top:
-        16px;
-
-      color:
-        #f4d88a;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.72rem;
-
-      font-weight:
-        900;
-
-      letter-spacing:
-        0.06em;
-
-      text-transform:
-        uppercase;
+      display: inline-block;
+      margin-top: auto;
+      padding-top: 17px;
+      color: #f4d88a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-
 
     /* ======================================================
        TEA RITUAL FEATURE
     ====================================================== */
 
     .tea-ritual-feature {
-      display:
-        grid;
-
-      grid-template-columns:
-        50% 50%;
-
-      background:
-        #fff9ee;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      background: #fff9ee;
     }
-
 
     .tea-ritual-media {
-      min-height:
-        650px;
-
-      overflow:
-        hidden;
+      min-height: 650px;
+      overflow: hidden;
+      background: #eadcc5;
     }
-
 
     .tea-ritual-media img {
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-
 
     .tea-ritual-copy {
-      display:
-        flex;
-
-      flex-direction:
-        column;
-
-      justify-content:
-        center;
-
-      padding:
-        90px
-        7vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 88px 7vw;
     }
-
 
     .tea-ritual-copy h2 {
-      margin-bottom:
-        23px;
-
-      color:
-        #103c25;
-
-      font-size:
-        clamp(
-          3rem,
-          5vw,
-          5.3rem
-        );
-
-      line-height:
-        0.98;
-
-      letter-spacing:
-        -0.05em;
+      margin-bottom: 23px;
+      color: #103c25;
+      font-size: clamp(3rem, 5vw, 5.3rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
     }
-
 
     .tea-ritual-copy p:not(.section-kicker) {
-      margin-bottom:
-        18px;
-
-      color:
-        #354036;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        1.04rem;
-
-      line-height:
-        1.8;
+      margin-bottom: 18px;
+      color: #354036;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.03rem;
+      line-height: 1.8;
     }
-
 
     /* ======================================================
        COMMUNITY
     ====================================================== */
 
     .shop-community {
-      display:
-        grid;
-
-      grid-template-columns:
-        43% 57%;
-
-      align-items:
-        stretch;
-
+      display: grid;
+      grid-template-columns: 43% 57%;
+      align-items: stretch;
+      color-scheme: dark;
       background:
         linear-gradient(
           135deg,
@@ -1364,400 +796,182 @@
         );
     }
 
-
     .shop-community-copy {
-      display:
-        flex;
-
-      flex-direction:
-        column;
-
-      justify-content:
-        center;
-
-      padding:
-        90px
-        5vw
-        90px
-        7vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 88px 5vw 88px 7vw;
     }
-
 
     .shop-community-copy .section-kicker {
-      color:
-        #f4d88a;
+      color: #f4d88a;
     }
-
 
     .shop-community-copy h2 {
-      margin-bottom:
-        23px;
-
-      color:
-        #fff9ee;
-
-      font-size:
-        clamp(
-          3rem,
-          5vw,
-          5.2rem
-        );
-
-      line-height:
-        0.97;
-
-      letter-spacing:
-        -0.05em;
+      margin-bottom: 23px;
+      color: #fff9ee;
+      font-size: clamp(3rem, 5vw, 5.2rem);
+      line-height: 0.97;
+      letter-spacing: -0.05em;
     }
-
 
     .shop-community-copy p {
-      margin-bottom:
-        18px;
-
-      color:
-        rgba(
-          255,
-          249,
-          238,
-          0.76
-        );
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        1.03rem;
-
-      line-height:
-        1.78;
+      margin-bottom: 18px;
+      color: rgba(255, 249, 238, 0.76);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.03rem;
+      line-height: 1.78;
     }
-
 
     .community-pound {
-      display:
-        inline-flex;
-
-      align-items:
-        center;
-
-      gap:
-        15px;
-
-      margin:
-        8px
-        0
-        26px;
-
-      padding:
-        17px
-        19px;
-
-      border:
-        1px solid
-        rgba(
-          244,
-          216,
-          138,
-          0.24
-        );
-
-      border-radius:
-        18px;
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          0.05
-        );
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      margin: 8px 0 26px;
+      padding: 17px 19px;
+      border: 1px solid rgba(244, 216, 138, 0.24);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.05);
     }
-
 
     .community-pound strong {
-      color:
-        #f4d88a;
-
-      font-size:
-        2rem;
+      color: #f4d88a;
+      font-size: 2rem;
     }
-
 
     .community-pound span {
-      color:
-        #fff9ee;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-weight:
-        700;
+      color: #fff9ee;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
     }
-
 
     .shop-community-image {
-      min-height:
-        680px;
-
-      overflow:
-        hidden;
+      min-height: 680px;
+      overflow: hidden;
+      background: #062516;
     }
-
 
     .shop-community-image img {
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-
     /* ======================================================
-       ORDER PROCESS
+       ORDER / TRUST CARDS
     ====================================================== */
 
     .order-grid {
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          3,
-          1fr
-        );
-
-      gap:
-        22px;
-
-      margin-top:
-        48px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 48px;
     }
-
 
     .order-card {
-      padding:
-        30px;
-
-      border:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          0.11
-        );
-
-      border-radius:
-        23px;
-
-      background:
-        #f8efdf;
+      padding: 30px;
+      border: 1px solid rgba(16, 60, 37, 0.11);
+      border-radius: 23px;
+      background: #f8efdf;
     }
-
 
     .order-card strong {
-      display:
-        block;
-
-      margin-bottom:
-        14px;
-
-      color:
-        #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        0.74rem;
-
-      font-weight:
-        900;
-
-      letter-spacing:
-        0.12em;
-
-      text-transform:
-        uppercase;
+      display: block;
+      margin-bottom: 14px;
+      color: #b68a33;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
-
 
     .order-card h3 {
-      margin-bottom:
-        11px;
-
-      color:
-        #103c25;
-
-      font-size:
-        1.65rem;
+      margin-bottom: 11px;
+      color: #103c25;
+      font-size: 1.65rem;
     }
-
 
     .order-card p {
-      color:
-        #5c5a50;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      line-height:
-        1.7;
+      color: #5c5a50;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
     }
-
 
     /* ======================================================
        FAQ
     ====================================================== */
 
     .shop-faq {
-      padding:
-        105px
-        7vw;
-
-      background:
-        #fff9ee;
+      padding: 105px 7vw;
+      background: #fff9ee;
     }
-
 
     .shop-faq-inner {
-      max-width:
-        960px;
-
-      margin:
-        0
-        auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
-
 
     .shop-faq-list {
-      margin-top:
-        48px;
+      margin-top: 48px;
     }
-
 
     .shop-faq details {
-      padding:
-        24px
-        0;
-
-      border-bottom:
-        1px solid
-        rgba(
-          16,
-          60,
-          37,
-          0.14
-        );
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(16, 60, 37, 0.14);
     }
-
 
     .shop-faq summary {
-      cursor:
-        pointer;
-
-      list-style:
-        none;
-
-      color:
-        #103c25;
-
-      font-size:
-        1.28rem;
-
-      font-weight:
-        700;
+      position: relative;
+      padding-right: 42px;
+      cursor: pointer;
+      list-style: none;
+      color: #103c25;
+      font-size: 1.28rem;
+      font-weight: 700;
     }
-
 
     .shop-faq summary::-webkit-details-marker {
-      display:
-        none;
+      display: none;
     }
-
 
     .shop-faq summary::after {
-      content:
-        "+";
-
-      float:
-        right;
-
-      color:
-        #b68a33;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        1.5rem;
+      content: "+";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      color: #b68a33;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      transform: translateY(-50%);
     }
-
 
     .shop-faq details[open] summary::after {
-      content:
-        "–";
+      content: "–";
     }
-
 
     .shop-faq details p {
-      max-width:
-        820px;
-
-      margin-top:
-        16px;
-
-      color:
-        #5c5a50;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      line-height:
-        1.75;
+      max-width: 820px;
+      margin-top: 16px;
+      color: #5c5a50;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
     }
-
 
     /* ======================================================
        FINAL CTA
     ====================================================== */
 
     .shop-final {
-      padding:
-        110px
-        7vw;
-
-      text-align:
-        center;
-
+      padding: 110px 7vw;
+      text-align: center;
+      color-scheme: dark;
       background:
         radial-gradient(
           circle at center,
-          rgba(
-            244,
-            216,
-            138,
-            0.14
-          ),
-          transparent
-          36%
+          rgba(244, 216, 138, 0.14),
+          transparent 36%
         ),
         linear-gradient(
           135deg,
@@ -1766,254 +980,232 @@
         );
     }
 
-
     .shop-final-inner {
-      max-width:
-        920px;
-
-      margin:
-        0
-        auto;
+      max-width: 920px;
+      margin: 0 auto;
     }
-
 
     .shop-final .section-kicker {
-      color:
-        #f4d88a;
+      color: #f4d88a;
     }
-
 
     .shop-final h2 {
-      margin-bottom:
-        24px;
-
-      color:
-        #fff9ee;
-
-      font-size:
-        clamp(
-          3.2rem,
-          5.8vw,
-          6rem
-        );
-
-      line-height:
-        0.95;
-
-      letter-spacing:
-        -0.055em;
+      margin-bottom: 24px;
+      color: #fff9ee;
+      font-size: clamp(3.2rem, 5.8vw, 6rem);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
     }
-
 
     .shop-final p {
-      max-width:
-        740px;
-
-      margin:
-        0
-        auto
-        28px;
-
-      color:
-        rgba(
-          255,
-          249,
-          238,
-          0.76
-        );
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      font-size:
-        1.07rem;
-
-      line-height:
-        1.8;
+      max-width: 740px;
+      margin: 0 auto 28px;
+      color: rgba(255, 249, 238, 0.78);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.07rem;
+      line-height: 1.8;
     }
 
+    /* ======================================================
+       DARK SECTION BUTTON CLARITY
+    ====================================================== */
+
+    .shop-hero .btn-secondary,
+    .shop-final .btn-secondary {
+      border-color: rgba(244, 216, 138, 0.65);
+      color: #fff9ee;
+    }
+
+    .shop-community .text-link {
+      color: #f4d88a;
+    }
 
     /* ======================================================
        RESPONSIVE
     ====================================================== */
 
-    @media (
-      max-width:
-      1100px
-    ) {
+    @media (max-width: 1100px) {
 
       .ritual-grid {
-        grid-template-columns:
-          repeat(
-            3,
-            1fr
-          );
+        grid-template-columns: repeat(3, 1fr);
       }
 
     }
 
-
-    @media (
-      max-width:
-      900px
-    ) {
+    @media (max-width: 980px) {
 
       .shop-hero {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
+        min-height: 0;
       }
-
 
       .shop-hero-copy {
-        padding:
-          80px
-          7vw;
+        padding: 78px 7vw 72px;
       }
-
 
       .shop-carousel {
-        min-height:
-          600px;
+        min-height: 600px;
       }
-
 
       .shop-carousel::after {
         background:
           linear-gradient(
             180deg,
-            rgba(
-              16,
-              60,
-              37,
-              0.75
-            )
-            0%,
-            transparent
-            22%
+            rgba(16, 60, 37, 0.5) 0%,
+            transparent 28%
           );
       }
-
 
       .shop-value-strip {
-        grid-template-columns:
-          repeat(
-            2,
-            1fr
-          );
+        grid-template-columns: repeat(2, 1fr);
       }
-
 
       .included-grid {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
-
 
       .shop-founder-offer,
       .tea-ritual-feature,
       .shop-community {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
-
 
       .shop-founder-image,
       .tea-ritual-media,
       .shop-community-image {
-        min-height:
-          520px;
+        min-height: 520px;
       }
 
-
       .order-grid {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
     }
 
-
-    @media (
-      max-width:
-      780px
-    ) {
+    @media (max-width: 780px) {
 
       .shop-section,
       .shop-faq,
       .shop-final {
-        padding:
-          72px
-          22px;
+        padding: 72px 22px;
       }
 
+      .shop-hero-copy {
+        padding: 64px 22px 58px;
+      }
+
+      .shop-hero h1 {
+        font-size: clamp(3.25rem, 14vw, 5rem);
+      }
+
+      .shop-hero-text {
+        font-size: 1rem;
+      }
 
       .shop-founder-copy,
       .tea-ritual-copy,
       .shop-community-copy {
-        padding:
-          72px
-          22px;
+        padding: 72px 22px;
       }
-
 
       .ritual-grid {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
 
-
       .shop-carousel {
-        min-height:
-          500px;
+        min-height: clamp(460px, 70svh, 560px);
+      }
+
+      .shop-carousel::after {
+        display: none;
+      }
+
+      .shop-founder-image,
+      .tea-ritual-media,
+      .shop-community-image {
+        min-height: 460px;
+      }
+
+      .included-grid {
+        gap: 20px;
+        margin-top: 38px;
+      }
+
+      .included-card-copy {
+        padding: 23px;
+      }
+
+      .order-grid {
+        gap: 16px;
+        margin-top: 38px;
+      }
+
+      .order-card {
+        padding: 25px;
+      }
+
+      .shop-faq-list {
+        margin-top: 35px;
+      }
+
+      .shop-faq summary {
+        font-size: 1.12rem;
       }
 
     }
 
-
-    @media (
-      max-width:
-      520px
-    ) {
+    @media (max-width: 520px) {
 
       .shop-value-strip {
-        grid-template-columns:
-          1fr;
+        grid-template-columns: 1fr;
       }
-
 
       .shop-value-strip > div {
-        border-right:
-          0;
-
-        border-bottom:
-          1px solid
-          rgba(
-            16,
-            60,
-            37,
-            0.14
-          );
+        border-right: 0;
+        border-bottom: 1px solid rgba(16, 60, 37, 0.14);
       }
 
-
-      .shop-hero h1 {
-        font-size:
-          clamp(
-            3.3rem,
-            16vw,
-            5rem
-          );
+      .shop-value-strip > div:last-child {
+        border-bottom: 0;
       }
-
 
       .shop-hero-proof {
-        flex-direction:
-          column;
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-        align-items:
-          flex-start;
+      .shop-hero-proof span {
+        width: fit-content;
+      }
+
+      .shop-founder-image,
+      .tea-ritual-media,
+      .shop-community-image {
+        min-height: 400px;
+      }
+
+      .shop-final h2,
+      .shop-founder-copy h2,
+      .tea-ritual-copy h2,
+      .shop-community-copy h2 {
+        font-size: clamp(2.8rem, 13vw, 4.2rem);
+      }
+
+    }
+
+    /* ======================================================
+       REDUCED MOTION
+    ====================================================== */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      .shop-slide,
+      .included-card-image img {
+        transition: none;
       }
 
     }
@@ -2023,7 +1215,10 @@
 </head>
 
 
-<body id="top">
+<body
+  id="top"
+  class="shop-page"
+>
 
 
   <!-- ======================================================
@@ -2033,6 +1228,7 @@
   <a
     class="announcement-bar"
     href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+    data-preorder-link
   >
     🌿 Founder Offer £19.99 • 25 Herbal Tea Sachets • 30-Day Herbal Library Access • £1 From Every Box Goes Back
   </a>
@@ -2049,26 +1245,25 @@
       href="./index.html"
       aria-label="RastaRoots Life home"
     >
-
       <img
-        src="./assets/rastaroots-header-logo.png?v=608"
+        src="./assets/rastaroots-header-logo.png?v=610"
         alt="RastaRoots Life"
+        width="430"
+        decoding="async"
       />
-
     </a>
 
 
     <button
       class="menu-toggle"
+      type="button"
       aria-label="Open menu"
       aria-expanded="false"
       aria-controls="mobileNav"
     >
-
       <span></span>
       <span></span>
       <span></span>
-
     </button>
 
 
@@ -2111,6 +1306,7 @@
       <a
         class="nav-cta"
         href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+        data-preorder-link
       >
         Pre-Order
       </a>
@@ -2134,7 +1330,10 @@
       Home
     </a>
 
-    <a href="./shop.html">
+    <a
+      href="./shop.html"
+      aria-current="page"
+    >
       Shop
     </a>
 
@@ -2164,6 +1363,7 @@
 
     <a
       href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+      data-preorder-link
     >
       Pre-Order
     </a>
@@ -2180,27 +1380,36 @@
 
     <section
       class="shop-hero"
-      aria-label="RastaRoots Discovery Collection"
+      aria-labelledby="shopHeroTitle"
     >
 
       <div class="shop-hero-copy">
 
         <p class="eyebrow">
-          Founder Discovery Collection • £19.99
+          Founder Discovery Collection
         </p>
 
-        <h1>
+        <h1 id="shopHeroTitle">
           Herbal tea.
           <em>Rooted differently.</em>
         </h1>
 
         <p class="shop-hero-text">
 
-          Discover 25 naturally caffeine-free herbal tea sachets across five
-          signature RastaRoots rituals — created to turn everyday tea into a
-          more intentional moment.
+          Discover 25 naturally caffeine-free herbal tea sachets across
+          five signature RastaRoots rituals — created to turn everyday
+          tea into a more intentional moment.
 
         </p>
+
+
+        <div
+          class="shop-hero-price"
+          aria-label="Founder price £19.99"
+        >
+          <strong>£19.99</strong>
+          <span>Founder Discovery Collection</span>
+        </div>
 
 
         <div class="hero-actions">
@@ -2208,21 +1417,25 @@
           <a
             class="btn btn-primary"
             href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+            data-preorder-link
           >
-            Get The Discovery Collection — £19.99
+            Pre-Order The Collection
           </a>
 
           <a
             class="btn btn-secondary"
             href="#included"
           >
-            Explore What’s Inside
+            See What’s Inside
           </a>
 
         </div>
 
 
-        <div class="shop-hero-proof">
+        <div
+          class="shop-hero-proof"
+          aria-label="Discovery Collection highlights"
+        >
 
           <span>
             25 Sachets • 5 Rituals
@@ -2248,6 +1461,8 @@
       <div
         class="shop-carousel"
         data-shop-carousel
+        aria-roledescription="carousel"
+        aria-label="RastaRoots Discovery Collection"
       >
 
         <img
@@ -2262,6 +1477,7 @@
           class="shop-slide"
           src="./assets/shop/shop-hero-man.png"
           alt="Man enjoying the RastaRoots herbal tea Discovery Collection"
+          loading="lazy"
           decoding="async"
         />
 
@@ -2269,29 +1485,33 @@
           class="shop-slide"
           src="./assets/shop/shop-hero-together.png"
           alt="People enjoying RastaRoots herbal tea together"
+          loading="lazy"
           decoding="async"
         />
 
 
         <div
           class="shop-carousel-dots"
-          aria-label="Discovery Collection hero images"
+          aria-label="Choose Discovery Collection image"
         >
 
           <button
             class="is-active"
             type="button"
-            aria-label="Show image 1"
+            aria-label="Show image 1 of 3"
+            aria-pressed="true"
           ></button>
 
           <button
             type="button"
-            aria-label="Show image 2"
+            aria-label="Show image 2 of 3"
+            aria-pressed="false"
           ></button>
 
           <button
             type="button"
-            aria-label="Show image 3"
+            aria-label="Show image 3 of 3"
+            aria-pressed="false"
           ></button>
 
         </div>
@@ -2311,54 +1531,23 @@
     >
 
       <div>
-
-        <strong>
-          25 Herbal Tea Sachets
-        </strong>
-
-        <p>
-          Five signature rituals with five sachets per blend.
-        </p>
-
+        <strong>25 Herbal Tea Sachets</strong>
+        <p>Five signature rituals with five sachets per blend.</p>
       </div>
 
-
       <div>
-
-        <strong>
-          Naturally Caffeine Free
-        </strong>
-
-        <p>
-          Herbal blends designed for rituals throughout your day.
-        </p>
-
+        <strong>Naturally Caffeine Free</strong>
+        <p>Herbal blends created for rituals throughout your day.</p>
       </div>
 
-
       <div>
-
-        <strong>
-          30 Days Free
-        </strong>
-
-        <p>
-          Explore the Herbal Library and learn the roots behind the herbs.
-        </p>
-
+        <strong>30 Days Herbal Library</strong>
+        <p>Explore the herbs and learn the roots behind the rituals.</p>
       </div>
 
-
       <div>
-
-        <strong>
-          £1 Goes Back
-        </strong>
-
-        <p>
-          Every Discovery Collection helps build our community fund.
-        </p>
-
+        <strong>£1 Goes Back</strong>
+        <p>Every Discovery Collection helps build our community fund.</p>
       </div>
 
     </section>
@@ -2398,8 +1587,6 @@
       <div class="included-grid">
 
 
-        <!-- CLOSED BOX -->
-
         <article class="included-card">
 
           <div class="included-card-image">
@@ -2415,9 +1602,7 @@
 
           <div class="included-card-copy">
 
-            <span>
-              The Collection
-            </span>
+            <span>The Collection</span>
 
             <h3>
               Premium Herbal Tea Gift Box
@@ -2425,8 +1610,8 @@
 
             <p>
 
-              A premium Founder Discovery Collection containing 25 herbal tea
-              sachets across five signature RastaRoots rituals.
+              A premium Founder Discovery Collection containing 25
+              herbal tea sachets across five signature RastaRoots rituals.
 
             </p>
 
@@ -2434,8 +1619,6 @@
 
         </article>
 
-
-        <!-- OPEN BOX -->
 
         <article class="included-card">
 
@@ -2452,9 +1635,7 @@
 
           <div class="included-card-copy">
 
-            <span>
-              Five Rituals
-            </span>
+            <span>Five Rituals</span>
 
             <h3>
               Five Signature Herbal Tea Blends
@@ -2462,8 +1643,8 @@
 
             <p>
 
-              Roots Fire, Bush Doctor, Empress Bloom, Iron Root and Cool Mind —
-              five sachets of each blend.
+              Roots Fire, Bush Doctor, Empress Bloom, Iron Root and
+              Cool Mind — five sachets of each blend.
 
             </p>
 
@@ -2471,8 +1652,6 @@
 
         </article>
 
-
-        <!-- WHAT'S INCLUDED GRAPHIC -->
 
         <article class="included-card">
 
@@ -2489,9 +1668,7 @@
 
           <div class="included-card-copy">
 
-            <span>
-              Inside The Box
-            </span>
+            <span>Inside The Box</span>
 
             <h3>
               Everything You Need To Discover Your Ritual
@@ -2509,8 +1686,6 @@
         </article>
 
 
-        <!-- TEA RITUAL -->
-
         <article class="included-card">
 
           <div class="included-card-image">
@@ -2526,9 +1701,7 @@
 
           <div class="included-card-copy">
 
-            <span>
-              More Than Tea
-            </span>
+            <span>More Than Tea</span>
 
             <h3>
               Tea Ritual Experience
@@ -2545,23 +1718,20 @@
 
         </article>
 
-
       </div>
 
 
       <div
         class="hero-actions"
-        style="
-          justify-content: center;
-          margin-top: 48px;
-        "
+        style="justify-content:center; margin-top:48px;"
       >
 
         <a
           class="btn btn-primary"
           href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+          data-preorder-link
         >
-          Pre-Order The Collection — £19.99
+          Pre-Order For £19.99
         </a>
 
       </div>
@@ -2609,50 +1779,25 @@
 
         <div class="founder-benefits">
 
-
           <div class="founder-benefit">
-
-            <strong>
-              25 herbal tea sachets
-            </strong>
-
+            <strong>25 herbal tea sachets</strong>
             — five signature blends with five sachets of each.
-
           </div>
 
-
           <div class="founder-benefit">
-
-            <strong>
-              30-day Herbal Library access
-            </strong>
-
-            — explore the herbs and learn how to build your own ritual.
-
+            <strong>30-day Herbal Library access</strong>
+            — explore the herbs and learn the roots behind the rituals.
           </div>
 
-
           <div class="founder-benefit">
-
-            <strong>
-              15% off RastaRoots Coffee
-            </strong>
-
+            <strong>15% off RastaRoots Coffee</strong>
             — continue exploring the wider RastaRoots experience.
-
           </div>
-
 
           <div class="founder-benefit">
-
-            <strong>
-              £1 from every box goes back
-            </strong>
-
+            <strong>£1 from every box goes back</strong>
             — committed to our Build Our Communities Back fund.
-
           </div>
-
 
         </div>
 
@@ -2662,6 +1807,7 @@
           <a
             class="btn btn-primary"
             href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+            data-preorder-link
           >
             Get The Founder Offer — £19.99
           </a>
@@ -2702,8 +1848,8 @@
         <p>
 
           Each blend has its own ingredients, flavour and personality.
-          Explore all five and discover which ritual fits different moments
-          throughout your day.
+          Explore all five and discover which ritual fits different
+          moments throughout your day.
 
         </p>
 
@@ -2715,16 +1861,13 @@
 
         <article class="ritual-card">
 
-          <span>
-            Morning Ritual
-          </span>
+          <span>Morning Ritual</span>
 
-          <h3>
-            Roots Fire
-          </h3>
+          <h3>Roots Fire</h3>
 
           <p>
-            A bold, warming herbal blend built around energy, warmth and vitality.
+            A bold, warming herbal blend built around energy,
+            warmth and vitality.
           </p>
 
           <a href="./roots-fire.html">
@@ -2736,16 +1879,13 @@
 
         <article class="ritual-card">
 
-          <span>
-            Midday Ritual
-          </span>
+          <span>Midday Ritual</span>
 
-          <h3>
-            Bush Doctor
-          </h3>
+          <h3>Bush Doctor</h3>
 
           <p>
-            A green herbal ritual created around balance, restoration and reset.
+            A green herbal ritual created around balance,
+            restoration and reset.
           </p>
 
           <a href="./bush-doctor.html">
@@ -2757,16 +1897,13 @@
 
         <article class="ritual-card">
 
-          <span>
-            Afternoon Ritual
-          </span>
+          <span>Afternoon Ritual</span>
 
-          <h3>
-            Empress Bloom
-          </h3>
+          <h3>Empress Bloom</h3>
 
           <p>
-            A vibrant floral ritual created for a colourful and uplifting moment.
+            A vibrant floral ritual created for a colourful
+            and uplifting moment.
           </p>
 
           <a href="./empress-bloom.html">
@@ -2778,16 +1915,13 @@
 
         <article class="ritual-card">
 
-          <span>
-            Strength Ritual
-          </span>
+          <span>Strength Ritual</span>
 
-          <h3>
-            Iron Root
-          </h3>
+          <h3>Iron Root</h3>
 
           <p>
-            An earthy, powerful ritual designed around strength and endurance.
+            An earthy, powerful ritual designed around strength
+            and endurance.
           </p>
 
           <a href="./iron-root.html">
@@ -2799,16 +1933,13 @@
 
         <article class="ritual-card">
 
-          <span>
-            Evening Ritual
-          </span>
+          <span>Evening Ritual</span>
 
-          <h3>
-            Cool Mind
-          </h3>
+          <h3>Cool Mind</h3>
 
           <p>
-            A cooling herbal ritual created for calmer, slower evening moments.
+            A cooling herbal ritual created for calmer,
+            slower evening moments.
           </p>
 
           <a href="./cool-mind.html">
@@ -2816,7 +1947,6 @@
           </a>
 
         </article>
-
 
       </div>
 
@@ -2854,26 +1984,25 @@
 
         <p>
 
-          RastaRoots is not designed as another box of tea bags sitting at
-          the back of a cupboard.
+          RastaRoots is not designed as another box of tea bags
+          sitting at the back of a cupboard.
 
         </p>
 
         <p>
 
-          Each blend belongs to a ritual — a reason to slow down, reset,
-          connect or create a more intentional moment in your day.
+          Each blend belongs to a ritual — a reason to slow down,
+          reset, connect or create a more intentional moment in your day.
 
         </p>
 
         <p>
 
-          Your Discovery Collection also gives you access to the official
-          RastaRoots Tea Ritual playlist so your brew can become part of a
-          complete rooted experience.
+          Your Discovery Collection also gives you access to the
+          official RastaRoots Tea Ritual playlist so your brew can
+          become part of a complete rooted experience.
 
         </p>
-
 
         <a
           class="text-link"
@@ -2888,7 +2017,7 @@
 
 
     <!-- ====================================================
-         BUILD OUR COMMUNITIES BACK
+         COMMUNITY
     ===================================================== -->
 
     <section class="shop-community">
@@ -2905,9 +2034,7 @@
 
         <div class="community-pound">
 
-          <strong>
-            £1
-          </strong>
+          <strong>£1</strong>
 
           <span>
             from every Discovery Collection sold goes back.
@@ -2931,11 +2058,9 @@
 
         </p>
 
-
         <a
           class="text-link"
           href="./community.html"
-          style="color:#f4d88a;"
         >
           Explore Build Our Communities Back →
         </a>
@@ -2958,7 +2083,7 @@
 
 
     <!-- ====================================================
-         WHAT HAPPENS AFTER ORDER
+         ORDER PROCESS
     ===================================================== -->
 
     <section class="shop-section shop-section-light">
@@ -2975,9 +2100,9 @@
 
         <p>
 
-          You are joining the first RastaRoots Discovery Collection drop.
-          We will keep Founder customers updated throughout production
-          and dispatch.
+          You are joining the first RastaRoots Discovery Collection
+          drop. We will keep Founder customers updated throughout
+          production and dispatch.
 
         </p>
 
@@ -2986,12 +2111,9 @@
 
       <div class="order-grid">
 
-
         <article class="order-card">
 
-          <strong>
-            Step 01
-          </strong>
+          <strong>Step 01</strong>
 
           <h3>
             Order confirmed.
@@ -2999,8 +2121,8 @@
 
           <p>
 
-            Complete checkout securely through Shopify and receive your
-            order confirmation by email.
+            Complete checkout securely through the official RastaRoots
+            Shopify store and receive your order confirmation by email.
 
           </p>
 
@@ -3009,9 +2131,7 @@
 
         <article class="order-card">
 
-          <strong>
-            Step 02
-          </strong>
+          <strong>Step 02</strong>
 
           <h3>
             Founder updates.
@@ -3029,12 +2149,10 @@
 
         <article class="order-card">
 
-          <strong>
-            Step 03
-          </strong>
+          <strong>Step 03</strong>
 
           <h3>
-            Discovery Collection arrives.
+            Your collection arrives.
           </h3>
 
           <p>
@@ -3046,21 +2164,18 @@
 
         </article>
 
-
       </div>
 
 
       <div
         class="hero-actions"
-        style="
-          justify-content:center;
-          margin-top:42px;
-        "
+        style="justify-content:center; margin-top:42px;"
       >
 
         <a
           class="btn btn-primary"
           href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+          data-preorder-link
         >
           Secure Your Founder Collection
         </a>
@@ -3096,9 +2211,9 @@
 
         <p>
 
-          RastaRoots is pre-launch. We would rather tell you exactly what
-          we are building than fill the page with testimonials that do not
-          exist yet.
+          RastaRoots is pre-launch. We would rather tell you exactly
+          what we are building than fill the page with testimonials
+          that do not exist yet.
 
         </p>
 
@@ -3107,12 +2222,9 @@
 
       <div class="order-grid">
 
-
         <article class="order-card">
 
-          <strong>
-            Natural
-          </strong>
+          <strong>Natural</strong>
 
           <h3>
             Herbal ingredients.
@@ -3130,9 +2242,7 @@
 
         <article class="order-card">
 
-          <strong>
-            Purpose
-          </strong>
+          <strong>Purpose</strong>
 
           <h3>
             More than product.
@@ -3140,8 +2250,8 @@
 
           <p>
 
-            RastaRoots combines tea, herbal education, culture, ritual
-            and a commitment to building stronger communities.
+            RastaRoots combines tea, herbal education, culture,
+            ritual and a commitment to building stronger communities.
 
           </p>
 
@@ -3150,9 +2260,7 @@
 
         <article class="order-card">
 
-          <strong>
-            Transparency
-          </strong>
+          <strong>Transparency</strong>
 
           <h3>
             Join from the beginning.
@@ -3160,13 +2268,12 @@
 
           <p>
 
-            Founder customers will see the product, Herbal Library and
-            community mission develop as RastaRoots grows.
+            Founder customers will see the product, Herbal Library
+            and community mission develop as RastaRoots grows.
 
           </p>
 
         </article>
-
 
       </div>
 
@@ -3330,16 +2437,12 @@
 
           </details>
 
-
         </div>
 
 
         <div
           class="hero-actions"
-          style="
-            justify-content:center;
-            margin-top:42px;
-          "
+          style="justify-content:center; margin-top:42px;"
         >
 
           <a
@@ -3375,10 +2478,11 @@
 
         <p>
 
-          Get 25 naturally caffeine-free herbal tea sachets across five
-          signature rituals, 30-day Herbal Library access, 15% off
-          RastaRoots Coffee and help build the Build Our Communities Back
-          fund with £1 from every Discovery Collection sold.
+          Get 25 naturally caffeine-free herbal tea sachets across
+          five signature rituals, 30-day Herbal Library access,
+          15% off RastaRoots Coffee and help build the Build Our
+          Communities Back fund with £1 from every Discovery
+          Collection sold.
 
         </p>
 
@@ -3391,6 +2495,7 @@
           <a
             class="btn btn-primary"
             href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+            data-preorder-link
           >
             Pre-Order For £19.99
           </a>
@@ -3419,9 +2524,11 @@
   <footer class="site-footer">
 
     <img
-      src="./assets/rastaroots-logo-light.png?v=608"
+      src="./assets/rastaroots-logo-light.png?v=610"
       alt=""
       aria-hidden="true"
+      loading="lazy"
+      decoding="async"
     />
 
 
@@ -3430,53 +2537,29 @@
       aria-label="Footer navigation"
     >
 
-      <a href="./index.html">
-        Home
-      </a>
+      <a href="./index.html">Home</a>
 
-      <a href="./shop.html">
-        Shop
-      </a>
+      <a href="./shop.html">Shop</a>
 
-      <a href="./founder.html">
-        Founder
-      </a>
+      <a href="./founder.html">Founder</a>
 
-      <a href="./tea-ritual.html">
-        Tea Ritual
-      </a>
+      <a href="./tea-ritual.html">Tea Ritual</a>
 
-      <a href="./herbal-library.html">
-        Herbal Library
-      </a>
+      <a href="./herbal-library.html">Herbal Library</a>
 
-      <a href="./community.html">
-        Community
-      </a>
+      <a href="./community.html">Community</a>
 
-      <a href="./faq.html">
-        FAQ
-      </a>
+      <a href="./faq.html">FAQ</a>
 
-      <a href="./shipping.html">
-        Shipping
-      </a>
+      <a href="./shipping.html">Shipping</a>
 
-      <a href="./refunds.html">
-        Refunds
-      </a>
+      <a href="./refunds.html">Refunds</a>
 
-      <a href="./privacy.html">
-        Privacy
-      </a>
+      <a href="./privacy.html">Privacy</a>
 
-      <a href="./terms.html">
-        Terms
-      </a>
+      <a href="./terms.html">Terms</a>
 
-      <a href="./contact.html">
-        Contact
-      </a>
+      <a href="./contact.html">Contact</a>
 
       <a
         href="https://instagram.com/rastarootzs"
@@ -3503,10 +2586,14 @@
        MOBILE STICKY CTA
   ======================================================= -->
 
-  <div class="mobile-sticky-cta">
+  <div
+    class="mobile-sticky-cta"
+    aria-label="Pre-order RastaRoots Discovery Collection"
+  >
 
     <a
       href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+      data-preorder-link
     >
       Pre-Order • £19.99
     </a>
@@ -3518,194 +2605,187 @@
        MAIN SITE JAVASCRIPT
   ======================================================= -->
 
-  <script src="./script.js?v=608"></script>
+  <script src="./script.js?v=610"></script>
 
 
   <!-- ======================================================
-       HERO CAROUSEL JAVASCRIPT
+       SHOP CAROUSEL
   ======================================================= -->
 
   <script>
 
-    document.addEventListener(
-      "DOMContentLoaded",
-      function () {
+    document.addEventListener("DOMContentLoaded", function () {
 
-        const carousel =
-          document.querySelector(
-            "[data-shop-carousel]"
-          );
+      const carousel =
+        document.querySelector("[data-shop-carousel]");
 
-        if (!carousel) {
-          return;
-        }
+      if (!carousel) {
+        return;
+      }
 
-
-        const slides =
-          Array.from(
-            carousel.querySelectorAll(
-              ".shop-slide"
-            )
-          );
-
-
-        const dots =
-          Array.from(
-            carousel.querySelectorAll(
-              ".shop-carousel-dots button"
-            )
-          );
-
-
-        if (!slides.length) {
-          return;
-        }
-
-
-        let currentIndex =
-          0;
-
-
-        let timer =
-          null;
-
-
-        function showSlide(index) {
-
-          currentIndex =
-            (
-              index +
-              slides.length
-            ) %
-            slides.length;
-
-
-          slides.forEach(
-            function (
-              slide,
-              slideIndex
-            ) {
-
-              slide.classList.toggle(
-                "is-active",
-                slideIndex ===
-                  currentIndex
-              );
-
-            }
-          );
-
-
-          dots.forEach(
-            function (
-              dot,
-              dotIndex
-            ) {
-
-              dot.classList.toggle(
-                "is-active",
-                dotIndex ===
-                  currentIndex
-              );
-
-            }
-          );
-
-        }
-
-
-        function stopCarousel() {
-
-          if (timer) {
-
-            window.clearInterval(
-              timer
-            );
-
-            timer =
-              null;
-
-          }
-
-        }
-
-
-        function startCarousel() {
-
-          stopCarousel();
-
-
-          if (
-            window.matchMedia(
-              "(prefers-reduced-motion: reduce)"
-            ).matches
-          ) {
-
-            return;
-
-          }
-
-
-          timer =
-            window.setInterval(
-              function () {
-
-                showSlide(
-                  currentIndex +
-                  1
-                );
-
-              },
-              5500
-            );
-
-        }
-
-
-        dots.forEach(
-          function (
-            dot,
-            index
-          ) {
-
-            dot.addEventListener(
-              "click",
-              function () {
-
-                showSlide(
-                  index
-                );
-
-                startCarousel();
-
-              }
-            );
-
-          }
+      const slides =
+        Array.from(
+          carousel.querySelectorAll(".shop-slide")
         );
 
-
-        carousel.addEventListener(
-          "mouseenter",
-          stopCarousel
+      const dots =
+        Array.from(
+          carousel.querySelectorAll(
+            ".shop-carousel-dots button"
+          )
         );
 
+      if (!slides.length) {
+        return;
+      }
 
-        carousel.addEventListener(
-          "mouseleave",
-          startCarousel
+      let currentIndex = 0;
+      let timer = null;
+
+      const reducedMotion =
+        window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
         );
 
+      function showSlide(index) {
 
-        showSlide(
-          0
-        );
+        currentIndex =
+          (index + slides.length) %
+          slides.length;
 
+        slides.forEach(function (slide, slideIndex) {
 
-        startCarousel();
+          const active =
+            slideIndex === currentIndex;
+
+          slide.classList.toggle(
+            "is-active",
+            active
+          );
+
+          slide.setAttribute(
+            "aria-hidden",
+            String(!active)
+          );
+
+        });
+
+        dots.forEach(function (dot, dotIndex) {
+
+          const active =
+            dotIndex === currentIndex;
+
+          dot.classList.toggle(
+            "is-active",
+            active
+          );
+
+          dot.setAttribute(
+            "aria-pressed",
+            String(active)
+          );
+
+        });
 
       }
-    );
+
+      function stopCarousel() {
+
+        if (!timer) {
+          return;
+        }
+
+        window.clearInterval(timer);
+        timer = null;
+
+      }
+
+      function startCarousel() {
+
+        stopCarousel();
+
+        if (
+          reducedMotion.matches ||
+          document.hidden
+        ) {
+          return;
+        }
+
+        timer =
+          window.setInterval(
+            function () {
+              showSlide(currentIndex + 1);
+            },
+            5500
+          );
+
+      }
+
+      dots.forEach(function (dot, index) {
+
+        dot.addEventListener(
+          "click",
+          function () {
+
+            showSlide(index);
+            startCarousel();
+
+          }
+        );
+
+      });
+
+      carousel.addEventListener(
+        "mouseenter",
+        stopCarousel
+      );
+
+      carousel.addEventListener(
+        "mouseleave",
+        startCarousel
+      );
+
+      carousel.addEventListener(
+        "focusin",
+        stopCarousel
+      );
+
+      carousel.addEventListener(
+        "focusout",
+        startCarousel
+      );
+
+      document.addEventListener(
+        "visibilitychange",
+        function () {
+
+          if (document.hidden) {
+            stopCarousel();
+          } else {
+            startCarousel();
+          }
+
+        }
+      );
+
+      if (
+        typeof reducedMotion.addEventListener ===
+        "function"
+      ) {
+
+        reducedMotion.addEventListener(
+          "change",
+          function () {
+            startCarousel();
+          }
+        );
+
+      }
+
+      showSlide(0);
+      startCarousel();
+
+    });
 
   </script>
 
