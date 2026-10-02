@@ -5,8 +5,9 @@
 
   <!-- ======================================================
        RASTAROOTS HERBAL LIBRARY
-       MASTER PAGE V610
+       MASTER PAGE V610.1
        SEO + GEO + AEO + CRO + MEMBER ACCESS
+       Updated: 02 October 2026
   ======================================================= -->
 
   <meta charset="UTF-8" />
@@ -22,7 +23,7 @@
 
   <meta
     name="description"
-    content="Explore herbal tea, Caribbean and African plant knowledge through 8 RastaRoots botanical guides: ginger, lemongrass, mint, cerasee, bitter melon, moringa, hibiscus and sarsaparilla."
+    content="Explore 8 RastaRoots botanical guides covering ginger, lemongrass, mint, cerasee, bitter melon, moringa, hibiscus and sarsaparilla — with flavour, preparation, heritage, traditional knowledge and modern research."
   />
 
   <meta
@@ -62,7 +63,7 @@
 
   <meta
     property="og:description"
-    content="Explore eight botanical entries covering herbal tea, flavour, preparation, Caribbean and African heritage, traditional knowledge and modern research."
+    content="Explore eight botanical guides covering herbal tea, flavour, preparation, Caribbean and African plant heritage, traditional knowledge and modern research."
   />
 
   <meta
@@ -122,18 +123,18 @@
 
   <link
     rel="icon"
-    href="/assets/badge-logo.png"
+    href="./assets/badge-logo.png"
   />
 
   <link
     rel="preload"
     as="image"
-    href="/assets/herbal-library-hero.png"
+    href="./assets/herbal-library-hero.png"
   />
 
   <link
     rel="stylesheet"
-    href="/style.css?v=610"
+    href="./style.css?v=610"
   />
 
 
@@ -177,6 +178,7 @@
         "name": "RastaRoots Herbal Library",
         "headline": "Herbal Tea, Caribbean Herbs & Botanical Guides",
         "description": "A botanical education collection covering herbal tea, Caribbean and African plant heritage, flavour, preparation, traditional knowledge and modern research.",
+        "dateModified": "2026-10-02",
         "isPartOf": {
           "@id": "https://www.rastarootslife.com/#website"
         },
@@ -185,6 +187,9 @@
         },
         "mainEntity": {
           "@id": "https://www.rastarootslife.com/herbal-library.html#botanical-list"
+        },
+        "breadcrumb": {
+          "@id": "https://www.rastarootslife.com/herbal-library.html#breadcrumbs"
         },
         "inLanguage": "en-GB"
       },
@@ -294,28 +299,19 @@
 
           {
             "@type": "Question",
-            "name": "Which herbs are in the RastaRoots Herbal Library?",
+            "name": "Which herbs are currently in the Herbal Library?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The founding eight botanicals are ginger, lemongrass, mint, cerasee, bitter melon, moringa, hibiscus or sorrel, and sarsaparilla."
+              "text": "The Founding Eight are ginger, lemongrass, mint, cerasee, bitter melon, moringa, hibiscus or sorrel, and sarsaparilla."
             }
           },
 
           {
             "@type": "Question",
-            "name": "Is the RastaRoots Herbal Library free?",
+            "name": "Is the Rootz Library free?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Founding Rootz Library membership is free. Members can access Field Guide 001, botanical knowledge checks, Rootz Points and future Library releases."
-            }
-          },
-
-          {
-            "@type": "Question",
-            "name": "Does the Herbal Library provide medical advice?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. The Herbal Library is educational. It separates traditional use from modern research and does not diagnose, treat or replace professional medical advice."
             }
           },
 
@@ -325,6 +321,42 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Botanical entries can include plant identity, flavour, heritage, traditional context, preparation, modern research, evidence limitations, safety information, frequently asked questions and links to relevant RastaRoots blends."
+            }
+          },
+
+          {
+            "@type": "Question",
+            "name": "Is traditional use the same as scientific evidence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The Library treats traditional knowledge as an important part of plant history and culture while keeping it distinct from modern scientific and clinical evidence."
+            }
+          },
+
+          {
+            "@type": "Question",
+            "name": "Does the Herbal Library provide medical advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The Herbal Library is educational. It does not diagnose, treat or replace professional medical advice."
+            }
+          },
+
+          {
+            "@type": "Question",
+            "name": "How does the Herbal Library connect to RastaRoots tea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Library helps visitors explore botanicals that appear throughout the RastaRoots world and understand more about the plants behind the five tea rituals."
+            }
+          },
+
+          {
+            "@type": "Question",
+            "name": "What is Field Guide 001?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Field Guide 001 is a companion resource for the Founding Eight, available to Rootz Library members."
             }
           }
 
@@ -526,6 +558,7 @@
 
   <!-- ======================================================
        PAGE-SPECIFIC STYLES
+       SCOPED TO HERBAL LIBRARY
   ======================================================= -->
 
   <style>
@@ -556,6 +589,16 @@
     img {
       max-width: 100%;
       height: auto;
+    }
+
+
+    #herbs,
+    #join,
+    #library-faq,
+    #field-guide,
+    #rootz-standard,
+    #tea-connection {
+      scroll-margin-top: 120px;
     }
 
 
@@ -849,6 +892,10 @@
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1.02rem;
       line-height: 1.8;
+    }
+
+    .library-heading p + p {
+      margin-top: 14px;
     }
 
     .library-section-dark .library-heading h2 {
@@ -1225,6 +1272,62 @@
 
 
     /* ======================================================
+       BOTANICAL -> RITUAL BRIDGE
+    ======================================================= */
+
+    .ritual-bridge-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 38px;
+    }
+
+    .ritual-bridge-card {
+      display: flex;
+      min-height: 145px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px;
+      border: 1px solid rgba(16, 60, 37, .13);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, .55);
+      text-decoration: none;
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .ritual-bridge-card:hover,
+    .ritual-bridge-card:focus-visible {
+      transform: translateY(-4px);
+      border-color: rgba(182, 138, 51, .45);
+      box-shadow: 0 16px 34px rgba(16, 60, 37, .08);
+    }
+
+    .ritual-bridge-card span {
+      color: var(--rootz-gold);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .61rem;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .ritual-bridge-card strong {
+      color: var(--rootz-green);
+      font-size: 1.45rem;
+      line-height: 1.08;
+    }
+
+    .ritual-bridge-card small {
+      color: var(--rootz-text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+
+
+    /* ======================================================
        FAQ
     ======================================================= */
 
@@ -1295,6 +1398,10 @@
       margin-top: 30px;
     }
 
+    .field-guide-actions {
+      margin-top: 42px;
+    }
+
 
     /* ======================================================
        MOBILE LIBRARY CTA
@@ -1302,6 +1409,20 @@
 
     .mobile-library-cta {
       display: none;
+    }
+
+
+    /* ======================================================
+       ACCESSIBILITY
+    ======================================================= */
+
+    .herb-card:focus-visible,
+    .ritual-bridge-card:focus-visible,
+    .library-faq summary:focus-visible,
+    .library-hero a:focus-visible,
+    .library-section a:focus-visible {
+      outline: 3px solid var(--rootz-gold);
+      outline-offset: 4px;
     }
 
 
@@ -1318,6 +1439,10 @@
       .principle-grid,
       .guide-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .ritual-bridge-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
 
     }
@@ -1354,6 +1479,15 @@
 
     @media (max-width: 780px) {
 
+      #herbs,
+      #join,
+      #library-faq,
+      #field-guide,
+      #rootz-standard,
+      #tea-connection {
+        scroll-margin-top: 92px;
+      }
+
       .library-hero {
         min-height: 680px;
         align-items: flex-end;
@@ -1389,7 +1523,8 @@
 
       .herb-grid,
       .principle-grid,
-      .guide-grid {
+      .guide-grid,
+      .ritual-bridge-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1419,12 +1554,16 @@
         padding: 25px;
       }
 
+      .ritual-bridge-card {
+        min-height: 125px;
+      }
+
       .mobile-library-cta {
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 90;
+        z-index: 998;
         display: block;
         padding:
           10px
@@ -1448,12 +1587,14 @@
         text-align: center;
       }
 
-      .rootz-member .mobile-library-cta {
+      .rootz-member .mobile-library-cta,
+      body.menu-open .mobile-library-cta {
         display: none;
       }
 
       body:has(.mobile-library-cta) {
-        padding-bottom: 78px;
+        padding-bottom:
+          calc(78px + env(safe-area-inset-bottom));
       }
 
       .rootz-member body:has(.mobile-library-cta) {
@@ -1499,12 +1640,15 @@
       }
 
       .herb-card,
-      .herb-image img {
+      .herb-image img,
+      .ritual-bridge-card {
         transition: none;
       }
 
       .herb-card:hover,
-      .herb-card:focus-visible {
+      .herb-card:focus-visible,
+      .ritual-bridge-card:hover,
+      .ritual-bridge-card:focus-visible {
         transform: none;
       }
 
@@ -1533,7 +1677,7 @@
     •
 
     <a
-      href="/downloads/rootz-field-guide-001.pdf"
+      href="./downloads/rootz-field-guide-001.pdf"
       download="RastaRoots-Field-Guide-001.pdf"
     >
       Field Guide 001
@@ -1550,7 +1694,7 @@
     class="announcement-bar"
     href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
   >
-    🌿 Discover The Five RastaRoots Herbal Tea Rituals • Explore The Founder Collection
+    🌿 Founder Pre-Orders Open • £19.99 • 25 Sachets • 5 Rituals • £1 From Every Box Goes Back
   </a>
 
 
@@ -1562,12 +1706,12 @@
 
     <a
       class="brand"
-      href="/index.html"
+      href="./index.html"
       aria-label="RastaRoots Life home"
     >
 
       <img
-        src="/assets/rastaroots-header-logo.png?v=610"
+        src="./assets/rastaroots-header-logo.png?v=610"
         alt="RastaRoots Life"
         decoding="async"
       />
@@ -1595,34 +1739,34 @@
       aria-label="Main navigation"
     >
 
-      <a href="/index.html">
+      <a href="./index.html">
         Home
       </a>
 
-      <a href="/shop.html">
+      <a href="./shop.html">
         Shop
       </a>
 
-      <a href="/founder.html">
+      <a href="./founder.html">
         Founder
       </a>
 
-      <a href="/tea-ritual.html">
+      <a href="./tea-ritual.html">
         Tea Ritual
       </a>
 
       <a
-        href="/herbal-library.html"
+        href="./herbal-library.html"
         aria-current="page"
       >
         Herbal Library
       </a>
 
-      <a href="/community.html">
+      <a href="./community.html">
         Community
       </a>
 
-      <a href="/faq.html">
+      <a href="./faq.html">
         FAQ
       </a>
 
@@ -1648,38 +1792,38 @@
     aria-label="Mobile navigation"
   >
 
-    <a href="/index.html">
+    <a href="./index.html">
       Home
     </a>
 
-    <a href="/shop.html">
+    <a href="./shop.html">
       Shop
     </a>
 
-    <a href="/founder.html">
+    <a href="./founder.html">
       Founder
     </a>
 
-    <a href="/tea-ritual.html">
+    <a href="./tea-ritual.html">
       Tea Ritual
     </a>
 
     <a
-      href="/herbal-library.html"
+      href="./herbal-library.html"
       aria-current="page"
     >
       Herbal Library
     </a>
 
-    <a href="/community.html">
+    <a href="./community.html">
       Community
     </a>
 
-    <a href="/faq.html">
+    <a href="./faq.html">
       FAQ
     </a>
 
-    <a href="/contact.html">
+    <a href="./contact.html">
       Contact
     </a>
 
@@ -1706,7 +1850,7 @@
 
       <img
         class="library-hero-background"
-        src="/assets/herbal-library-hero.png"
+        src="./assets/herbal-library-hero.png"
         alt=""
         aria-hidden="true"
         fetchpriority="high"
@@ -1740,8 +1884,8 @@
           preparation, Caribbean and African plant heritage,
           traditional knowledge and modern research.
 
-          The Library exists to help you understand what is
-          actually in your cup — and the roots behind it.
+          The Library helps you understand what is actually
+          in your cup — and the roots behind it.
 
         </p>
 
@@ -1757,7 +1901,7 @@
 
           <a
             class="btn btn-secondary visitor-only signup-cta"
-            href="/join-library.html?source=herbal-library&cta=hero"
+            href="./join-library.html?source=herbal-library&cta=hero"
             data-cta-location="hero"
           >
             Join The Library — Free
@@ -1765,7 +1909,7 @@
 
           <a
             class="btn btn-secondary member-only field-guide-download"
-            href="/downloads/rootz-field-guide-001.pdf"
+            href="./downloads/rootz-field-guide-001.pdf"
             download="RastaRoots-Field-Guide-001.pdf"
           >
             Download Field Guide 001
@@ -1780,13 +1924,9 @@
         >
 
           <span>8 Botanical Guides</span>
-
           <span>Caribbean & African Heritage</span>
-
           <span>Traditional Knowledge</span>
-
           <span>Modern Research</span>
-
           <span>Free Founding Membership</span>
 
         </div>
@@ -1856,7 +1996,10 @@
          WHAT IS THE LIBRARY
     ===================================================== -->
 
-    <section class="library-section library-section-cream">
+    <section
+      class="library-section library-section-cream"
+      aria-labelledby="whatIsLibrary"
+    >
 
       <div class="library-container">
 
@@ -1866,7 +2009,7 @@
             Know Your Rootz
           </p>
 
-          <h2>
+          <h2 id="whatIsLibrary">
             What is the RastaRoots Herbal Library?
           </h2>
 
@@ -1881,10 +2024,10 @@
 
           <p>
 
-            Each botanical entry is designed to help separate
-            plant identity, flavour, preparation, heritage,
-            traditional context and modern research rather than
-            reducing an herb to a list of internet “benefits”.
+            Each botanical entry separates plant identity,
+            flavour, preparation, heritage, traditional context
+            and modern research rather than reducing an herb to
+            a list of internet “benefits”.
 
           </p>
 
@@ -1893,15 +2036,16 @@
             Caribbean and African plant knowledge matters here.
             Traditional knowledge is respected as traditional
             knowledge, while modern research is presented as
-            modern research. They are connected without pretending
-            they are the same thing.
+            modern research. They are connected without
+            pretending they are the same thing.
 
           </p>
 
           <p>
 
-            The Library is educational and does not diagnose,
-            treat or replace professional medical advice.
+            The Herbal Library is educational. It does not
+            diagnose, treat or replace professional medical
+            advice.
 
           </p>
 
@@ -1919,6 +2063,7 @@
     <section
       id="herbs"
       class="library-section library-section-light"
+      aria-labelledby="foundingEightTitle"
     >
 
       <div class="library-container">
@@ -1929,18 +2074,20 @@
             The Founding Eight
           </p>
 
-          <h2>
+          <h2 id="foundingEightTitle">
             Choose a botanical.<br />
             Follow its roots.
           </h2>
 
           <p>
 
-            Every founding botanical has its own RastaRoots
-            Library entry.
+            Explore ginger, lemongrass, mint, cerasee,
+            bitter melon, moringa, hibiscus and sarsaparilla.
 
-            Select a card to explore flavour, heritage,
-            preparation, traditional context and modern research.
+            Every founding botanical has its own RastaRoots
+            Library entry covering the plant, flavour,
+            heritage, preparation, traditional context and
+            modern research.
 
           </p>
 
@@ -1953,13 +2100,11 @@
         >
 
 
-          <!-- =================================================
-               01 GINGER
-          ================================================== -->
+          <!-- 01 GINGER -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-ginger.html"
+            href="./herb-ginger.html"
             data-herb="ginger"
             data-herb-name="Ginger"
           >
@@ -1975,7 +2120,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-ginger.png?v=610"
+                src="./assets/botanicals/botanical-ginger.png?v=610"
                 alt="Fresh ginger rhizomes and green ginger plant"
                 loading="lazy"
                 decoding="async"
@@ -1983,12 +2128,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Ginger
-              </h3>
+              <h3>Ginger</h3>
 
               <div class="herb-latin">
                 Zingiber officinale
@@ -2001,18 +2143,14 @@
               <p>
 
                 One of the world's most familiar herbal tea
-                ingredients.
-
-                Explore ginger's rhizome, flavour, journey,
-                traditional use and modern research.
+                ingredients. Explore ginger's rhizome, flavour,
+                journey, traditional use and modern research.
 
               </p>
 
               <div class="herb-tags">
-
                 <span>Roots Fire</span>
                 <span>Iron Root</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2032,13 +2170,11 @@
           </a>
 
 
-          <!-- =================================================
-               02 LEMONGRASS
-          ================================================== -->
+          <!-- 02 LEMONGRASS -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-lemongrass.html"
+            href="./herb-lemongrass.html"
             data-herb="lemongrass"
             data-herb-name="Lemongrass"
           >
@@ -2054,7 +2190,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-lemongrass.png?v=610"
+                src="./assets/botanicals/botanical-lemongrass.png?v=610"
                 alt="Fresh lemongrass leaves and stalks"
                 loading="lazy"
                 decoding="async"
@@ -2062,12 +2198,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Lemongrass
-              </h3>
+              <h3>Lemongrass</h3>
 
               <div class="herb-latin">
                 Cymbopogon species
@@ -2080,18 +2213,14 @@
               <p>
 
                 A bright aromatic grass used across food,
-                tea and traditional plant cultures.
-
-                Explore its identity, flavour, preparation
-                and journey.
+                tea and traditional plant cultures. Explore
+                its identity, flavour, preparation and journey.
 
               </p>
 
               <div class="herb-tags">
-
                 <span>Roots Fire</span>
                 <span>Cool Mind</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2111,13 +2240,11 @@
           </a>
 
 
-          <!-- =================================================
-               03 MINT
-          ================================================== -->
+          <!-- 03 MINT -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-mint.html"
+            href="./herb-mint.html"
             data-herb="mint"
             data-herb-name="Mint"
           >
@@ -2133,7 +2260,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-mint.png?v=610"
+                src="./assets/botanicals/botanical-mint.png?v=610"
                 alt="Fresh green mint leaves"
                 loading="lazy"
                 decoding="async"
@@ -2141,12 +2268,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Mint
-              </h3>
+              <h3>Mint</h3>
 
               <div class="herb-latin">
                 Mentha spicata
@@ -2159,19 +2283,16 @@
               <p>
 
                 Mint brings immediate freshness and a cooling
-                aromatic character.
-
-                Explore spearmint identity, heritage,
-                preparation, research and herbal tea use.
+                aromatic character. Explore spearmint identity,
+                heritage, preparation, research and herbal
+                tea use.
 
               </p>
 
               <div class="herb-tags">
-
                 <span>Roots Fire</span>
                 <span>Empress Bloom</span>
                 <span>Cool Mind</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2191,13 +2312,11 @@
           </a>
 
 
-          <!-- =================================================
-               04 CERASEE
-          ================================================== -->
+          <!-- 04 CERASEE -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-cerasee.html"
+            href="./herb-cerasee.html"
             data-herb="cerasee"
             data-herb-name="Cerasee"
           >
@@ -2213,7 +2332,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-cerasee.png?v=610"
+                src="./assets/botanicals/botanical-cerasee.png?v=610"
                 alt="Cerasee vine and leaves"
                 loading="lazy"
                 decoding="async"
@@ -2221,12 +2340,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Cerasee
-              </h3>
+              <h3>Cerasee</h3>
 
               <div class="herb-latin">
                 Momordica charantia
@@ -2240,15 +2356,12 @@
 
                 A distinctly bitter botanical strongly associated
                 with Jamaican and Caribbean bush-tea traditions.
-
                 Explore the plant behind cerasee tea.
 
               </p>
 
               <div class="herb-tags">
-
                 <span>Bush Doctor</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2268,13 +2381,11 @@
           </a>
 
 
-          <!-- =================================================
-               05 BITTER MELON
-          ================================================== -->
+          <!-- 05 BITTER MELON -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-bitter-melon.html"
+            href="./herb-bitter-melon.html"
             data-herb="bitter-melon"
             data-herb-name="Bitter Melon"
           >
@@ -2290,7 +2401,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-bitter-melon.png?v=610"
+                src="./assets/botanicals/botanical-bitter-melon.png?v=610"
                 alt="Bitter melon fruit and green vine"
                 loading="lazy"
                 decoding="async"
@@ -2298,12 +2409,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Bitter Melon
-              </h3>
+              <h3>Bitter Melon</h3>
 
               <div class="herb-latin">
                 Momordica charantia
@@ -2316,7 +2424,6 @@
               <p>
 
                 Bitter melon is both food and botanical tradition.
-
                 Explore bitter gourd, tea, cultural use,
                 metabolic research and the difference between
                 fruit and extracts.
@@ -2324,9 +2431,7 @@
               </p>
 
               <div class="herb-tags">
-
                 <span>Bush Doctor</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2346,13 +2451,11 @@
           </a>
 
 
-          <!-- =================================================
-               06 MORINGA
-          ================================================== -->
+          <!-- 06 MORINGA -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-moringa.html"
+            href="./herb-moringa.html"
             data-herb="moringa"
             data-herb-name="Moringa"
           >
@@ -2368,7 +2471,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-moringa.png?v=610"
+                src="./assets/botanicals/botanical-moringa.png?v=610"
                 alt="Moringa leaves and botanical plant"
                 loading="lazy"
                 decoding="async"
@@ -2376,12 +2479,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Moringa
-              </h3>
+              <h3>Moringa</h3>
 
               <div class="herb-latin">
                 Moringa oleifera
@@ -2393,20 +2493,16 @@
 
               <p>
 
-                One of the most searched botanicals in the
-                founding Library.
-
                 Explore moringa leaves, nutrition, traditional
-                use, preparation, heritage and modern research.
+                use, preparation, heritage and modern research
+                through the RastaRoots botanical entry.
 
               </p>
 
               <div class="herb-tags">
-
                 <span>Bush Doctor</span>
                 <span>Empress Bloom</span>
                 <span>Iron Root</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2426,13 +2522,11 @@
           </a>
 
 
-          <!-- =================================================
-               07 HIBISCUS
-          ================================================== -->
+          <!-- 07 HIBISCUS -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-hibiscus.html"
+            href="./herb-hibiscus.html"
             data-herb="hibiscus"
             data-herb-name="Hibiscus / Sorrel"
           >
@@ -2448,7 +2542,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-hibiscus.png?v=610"
+                src="./assets/botanicals/botanical-hibiscus.png?v=610"
                 alt="Red hibiscus or sorrel calyces"
                 loading="lazy"
                 decoding="async"
@@ -2456,12 +2550,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Hibiscus / Sorrel
-              </h3>
+              <h3>Hibiscus / Sorrel</h3>
 
               <div class="herb-latin">
                 Hibiscus sabdariffa
@@ -2474,18 +2565,15 @@
               <p>
 
                 The ruby-red botanical behind hibiscus tea
-                and Caribbean sorrel.
-
-                Explore calyces, festive heritage, preparation
-                and blood-pressure research.
+                and Caribbean sorrel. Explore its calyces,
+                festive heritage, preparation and modern
+                research.
 
               </p>
 
               <div class="herb-tags">
-
                 <span>Empress Bloom</span>
                 <span>Cool Mind</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2505,13 +2593,11 @@
           </a>
 
 
-          <!-- =================================================
-               08 SARSAPARILLA
-          ================================================== -->
+          <!-- 08 SARSAPARILLA -->
 
           <a
             class="herb-card botanical-card"
-            href="/herb-sarsaparilla.html"
+            href="./herb-sarsaparilla.html"
             data-herb="sarsaparilla"
             data-herb-name="Sarsaparilla"
           >
@@ -2527,7 +2613,7 @@
               </span>
 
               <img
-                src="/assets/botanicals/botanical-sarsaparilla.png?v=610"
+                src="./assets/botanicals/botanical-sarsaparilla.png?v=610"
                 alt="Sarsaparilla root and botanical plant"
                 loading="lazy"
                 decoding="async"
@@ -2535,12 +2621,9 @@
 
             </div>
 
-
             <div class="herb-content">
 
-              <h3>
-                Sarsaparilla
-              </h3>
+              <h3>Sarsaparilla</h3>
 
               <div class="herb-latin">
                 Smilax ornata
@@ -2560,9 +2643,7 @@
               </p>
 
               <div class="herb-tags">
-
                 <span>Iron Root</span>
-
               </div>
 
               <div class="herb-entry-status">
@@ -2581,7 +2662,6 @@
 
           </a>
 
-
         </div>
 
       </div>
@@ -2596,6 +2676,7 @@
     <section
       id="join"
       class="library-section library-section-cream visitor-only"
+      aria-labelledby="joinLibraryTitle"
     >
 
       <div class="library-panel">
@@ -2606,7 +2687,7 @@
             Founding Rootz Library
           </p>
 
-          <h2>
+          <h2 id="joinLibraryTitle">
             Eight botanicals.<br />
             One free Library.
           </h2>
@@ -2648,7 +2729,7 @@
 
           <a
             class="btn btn-primary signup-cta"
-            href="/join-library.html?source=herbal-library&cta=main"
+            href="./join-library.html?source=herbal-library&cta=main"
             data-cta-location="library-main"
           >
             Join The Rootz Library — Free
@@ -2693,6 +2774,7 @@
 
     <section
       class="library-section library-section-cream member-only block"
+      aria-labelledby="memberLibraryTitle"
     >
 
       <div class="library-panel">
@@ -2703,7 +2785,7 @@
             Member Access Active
           </p>
 
-          <h2>
+          <h2 id="memberLibraryTitle">
             Don't just read it.<br />
             Complete it.
           </h2>
@@ -2748,7 +2830,7 @@
 
             <a
               class="btn btn-primary field-guide-download"
-              href="/downloads/rootz-field-guide-001.pdf"
+              href="./downloads/rootz-field-guide-001.pdf"
               download="RastaRoots-Field-Guide-001.pdf"
             >
               Download Field Guide 001
@@ -2800,7 +2882,11 @@
          FIELD GUIDE
     ===================================================== -->
 
-    <section class="library-section library-section-light">
+    <section
+      id="field-guide"
+      class="library-section library-section-light"
+      aria-labelledby="fieldGuideTitle"
+    >
 
       <div class="library-container">
 
@@ -2810,7 +2896,7 @@
             Rootz Field Guide
           </p>
 
-          <h2>
+          <h2 id="fieldGuideTitle">
             Field Guide 001.
           </h2>
 
@@ -2876,8 +2962,9 @@
 
             <p>
 
-              Learn where modern research exists, what it actually
-              investigated and where the evidence remains limited.
+              Learn where modern research exists, what it
+              investigated and where the evidence remains
+              limited.
 
             </p>
 
@@ -2886,14 +2973,11 @@
         </div>
 
 
-        <div
-          class="library-final-actions"
-          style="margin-top:42px;"
-        >
+        <div class="library-final-actions field-guide-actions">
 
           <a
             class="btn btn-primary visitor-only signup-cta"
-            href="/join-library.html?source=herbal-library&cta=field-guide"
+            href="./join-library.html?source=herbal-library&cta=field-guide"
             data-cta-location="field-guide"
           >
             Join Free To Get Field Guide 001
@@ -2901,7 +2985,7 @@
 
           <a
             class="btn btn-primary member-only field-guide-download"
-            href="/downloads/rootz-field-guide-001.pdf"
+            href="./downloads/rootz-field-guide-001.pdf"
             download="RastaRoots-Field-Guide-001.pdf"
           >
             Download Field Guide 001
@@ -2909,9 +2993,9 @@
 
           <a
             class="btn btn-secondary member-only field-guide-view"
-            href="/downloads/rootz-field-guide-001.pdf"
+            href="./downloads/rootz-field-guide-001.pdf"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             View Field Guide
           </a>
@@ -2927,7 +3011,11 @@
          KNOWLEDGE PHILOSOPHY
     ===================================================== -->
 
-    <section class="library-section library-section-dark">
+    <section
+      id="rootz-standard"
+      class="library-section library-section-dark"
+      aria-labelledby="rootzStandardTitle"
+    >
 
       <div class="library-container">
 
@@ -2937,7 +3025,7 @@
             The Rootz Standard
           </p>
 
-          <h2>
+          <h2 id="rootzStandardTitle">
             Herbal knowledge deserves<br />
             more than a product label.
           </h2>
@@ -3028,7 +3116,10 @@
          MORE THAN BENEFITS
     ===================================================== -->
 
-    <section class="library-section library-section-cream">
+    <section
+      class="library-section library-section-cream"
+      aria-labelledby="wholePlantTitle"
+    >
 
       <div class="library-container">
 
@@ -3038,7 +3129,7 @@
             Learn The Whole Plant
           </p>
 
-          <h2>
+          <h2 id="wholePlantTitle">
             More than “benefits”.
           </h2>
 
@@ -3061,9 +3152,7 @@
 
             <strong>Identity</strong>
 
-            <h3>
-              What is it?
-            </h3>
+            <h3>What is it?</h3>
 
             <p>
 
@@ -3079,9 +3168,7 @@
 
             <strong>Flavour</strong>
 
-            <h3>
-              What does it taste like?
-            </h3>
+            <h3>What does it taste like?</h3>
 
             <p>
 
@@ -3097,9 +3184,7 @@
 
             <strong>Heritage</strong>
 
-            <h3>
-              Where does it sit culturally?
-            </h3>
+            <h3>Where does it sit culturally?</h3>
 
             <p>
 
@@ -3115,9 +3200,7 @@
 
             <strong>Preparation</strong>
 
-            <h3>
-              How has it been used?
-            </h3>
+            <h3>How has it been used?</h3>
 
             <p>
 
@@ -3133,9 +3216,7 @@
 
             <strong>Research</strong>
 
-            <h3>
-              What has been studied?
-            </h3>
+            <h3>What has been studied?</h3>
 
             <p>
 
@@ -3151,9 +3232,7 @@
 
             <strong>Ritual</strong>
 
-            <h3>
-              Where does it meet RastaRoots?
-            </h3>
+            <h3>Where does it meet RastaRoots?</h3>
 
             <p>
 
@@ -3172,12 +3251,152 @@
 
 
     <!-- ====================================================
+         BOTANICAL TO RITUAL BRIDGE
+    ===================================================== -->
+
+    <section
+      id="tea-connection"
+      class="library-section library-section-light"
+      aria-labelledby="teaConnectionTitle"
+    >
+
+      <div class="library-container">
+
+        <div class="library-heading">
+
+          <p class="library-kicker">
+            From Plant To Cup
+          </p>
+
+          <h2 id="teaConnectionTitle">
+            Eight botanicals.<br />
+            Five RastaRoots rituals.
+          </h2>
+
+          <p>
+
+            The Herbal Library explores individual plants.
+            The RastaRoots tea rituals bring botanicals together
+            through flavour, purpose, heritage and the simple act
+            of making time for a cup.
+
+          </p>
+
+          <p>
+
+            Follow the ingredients through the Library, then
+            explore how they appear across the five RastaRoots
+            herbal tea rituals.
+
+          </p>
+
+        </div>
+
+
+        <div
+          class="ritual-bridge-grid"
+          aria-label="Five RastaRoots tea rituals"
+        >
+
+          <a
+            class="ritual-bridge-card ritual-link"
+            href="./tea-ritual.html"
+            data-ritual="Roots Fire"
+          >
+            <span>Ritual 01</span>
+            <strong>Roots Fire</strong>
+            <small>
+              Ginger • Lemongrass • Mint
+            </small>
+          </a>
+
+
+          <a
+            class="ritual-bridge-card ritual-link"
+            href="./tea-ritual.html"
+            data-ritual="Bush Doctor"
+          >
+            <span>Ritual 02</span>
+            <strong>Bush Doctor</strong>
+            <small>
+              Cerasee • Bitter Melon • Moringa
+            </small>
+          </a>
+
+
+          <a
+            class="ritual-bridge-card ritual-link"
+            href="./tea-ritual.html"
+            data-ritual="Empress Bloom"
+          >
+            <span>Ritual 03</span>
+            <strong>Empress Bloom</strong>
+            <small>
+              Hibiscus • Mint • Moringa
+            </small>
+          </a>
+
+
+          <a
+            class="ritual-bridge-card ritual-link"
+            href="./tea-ritual.html"
+            data-ritual="Iron Root"
+          >
+            <span>Ritual 04</span>
+            <strong>Iron Root</strong>
+            <small>
+              Sarsaparilla • Ginger • Moringa
+            </small>
+          </a>
+
+
+          <a
+            class="ritual-bridge-card ritual-link"
+            href="./tea-ritual.html"
+            data-ritual="Cool Mind"
+          >
+            <span>Ritual 05</span>
+            <strong>Cool Mind</strong>
+            <small>
+              Lemongrass • Mint • Hibiscus
+            </small>
+          </a>
+
+        </div>
+
+
+        <div class="library-final-actions">
+
+          <a
+            class="btn btn-primary"
+            href="./tea-ritual.html"
+          >
+            Explore The Tea Ritual
+          </a>
+
+          <a
+            class="btn btn-secondary collection-cta"
+            href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
+            data-cta-location="botanical-ritual-bridge"
+          >
+            Explore The Discovery Collection
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
          FAQ
     ===================================================== -->
 
     <section
       id="library-faq"
-      class="library-section library-section-light"
+      class="library-section library-section-cream"
+      aria-labelledby="libraryFaqTitle"
     >
 
       <div class="library-container">
@@ -3188,14 +3407,15 @@
             Herbal Library FAQ
           </p>
 
-          <h2>
+          <h2 id="libraryFaqTitle">
             Start here.
           </h2>
 
           <p>
 
             The essentials about the RastaRoots Herbal Library,
-            membership and how the botanical guides should be used.
+            membership and how the botanical guides should be
+            used.
 
           </p>
 
@@ -3364,6 +3584,7 @@
 
     <section
       class="library-section library-section-dark library-final visitor-only"
+      aria-labelledby="visitorFinalTitle"
     >
 
       <div class="library-container">
@@ -3374,7 +3595,7 @@
             Join The Rootz Library
           </p>
 
-          <h2>
+          <h2 id="visitorFinalTitle">
             Don't just drink the herbs.<br />
             Know them.
           </h2>
@@ -3395,7 +3616,7 @@
 
           <a
             class="btn btn-primary signup-cta"
-            href="/join-library.html?source=herbal-library&cta=bottom"
+            href="./join-library.html?source=herbal-library&cta=bottom"
             data-cta-location="library-bottom"
           >
             Join The Rootz Library — Free
@@ -3421,6 +3642,7 @@
 
     <section
       class="library-section library-section-dark library-final member-only block"
+      aria-labelledby="memberFinalTitle"
     >
 
       <div class="library-container">
@@ -3431,7 +3653,7 @@
             Rootz Library Member
           </p>
 
-          <h2>
+          <h2 id="memberFinalTitle">
             The first eight<br />
             are only the beginning.
           </h2>
@@ -3458,7 +3680,7 @@
 
           <a
             class="btn btn-secondary field-guide-download"
-            href="/downloads/rootz-field-guide-001.pdf"
+            href="./downloads/rootz-field-guide-001.pdf"
             download="RastaRoots-Field-Guide-001.pdf"
           >
             Download Field Guide 001
@@ -3475,7 +3697,10 @@
          DISCOVERY COLLECTION BRIDGE
     ===================================================== -->
 
-    <section class="library-section library-section-cream library-final">
+    <section
+      class="library-section library-section-cream library-final"
+      aria-labelledby="discoveryBridgeTitle"
+    >
 
       <div class="library-container">
 
@@ -3485,7 +3710,7 @@
             From Knowledge To Ritual
           </p>
 
-          <h2>
+          <h2 id="discoveryBridgeTitle">
             Taste the first chapter.
           </h2>
 
@@ -3509,12 +3734,12 @@
             href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection"
             data-cta-location="library-bottom"
           >
-            Explore Discovery Collection
+            Pre-Order Discovery Collection — £19.99
           </a>
 
           <a
             class="btn btn-secondary"
-            href="/tea-ritual.html"
+            href="./tea-ritual.html"
           >
             Explore The Tea Ritual
           </a>
@@ -3536,7 +3761,7 @@
   <footer class="site-footer">
 
     <img
-      src="/assets/rastaroots-logo-light.png?v=610"
+      src="./assets/rastaroots-logo-light.png?v=610"
       alt=""
       aria-hidden="true"
       loading="lazy"
@@ -3549,51 +3774,54 @@
       aria-label="Footer navigation"
     >
 
-      <a href="/index.html">
+      <a href="./index.html">
         Home
       </a>
 
-      <a href="/shop.html">
+      <a href="./shop.html">
         Shop
       </a>
 
-      <a href="/founder.html">
+      <a href="./founder.html">
         Founder
       </a>
 
-      <a href="/tea-ritual.html">
+      <a href="./tea-ritual.html">
         Tea Ritual
       </a>
 
-      <a href="/herbal-library.html">
+      <a
+        href="./herbal-library.html"
+        aria-current="page"
+      >
         Herbal Library
       </a>
 
-      <a href="/community.html">
+      <a href="./community.html">
         Community
       </a>
 
-      <a href="/faq.html">
+      <a href="./faq.html">
         FAQ
       </a>
 
-      <a href="/shipping.html">
+      <a href="./shipping.html">
         Shipping
       </a>
 
-      <a href="/refunds.html">
+      <a href="./refunds.html">
         Refunds
       </a>
 
-      <a href="/privacy.html">
+      <a href="./privacy.html">
         Privacy
       </a>
 
-      <a href="/terms.html">
+      <a href="./terms.html">
         Terms
       </a>
 
-      <a href="/contact.html">
+      <a href="./contact.html">
         Contact
       </a>
 
@@ -3628,7 +3856,7 @@
 
     <a
       class="signup-cta"
-      href="/join-library.html?source=herbal-library&cta=mobile-sticky"
+      href="./join-library.html?source=herbal-library&cta=mobile-sticky"
       data-cta-location="mobile-sticky"
     >
       Join The Rootz Library — Free
@@ -3641,11 +3869,14 @@
        GLOBAL SITE SCRIPT
   ======================================================= -->
 
-  <script src="/script.js?v=610"></script>
+  <script
+    src="./script.js?v=610"
+    defer
+  ></script>
 
 
   <!-- ======================================================
-       LIBRARY ANALYTICS + ACCESS
+       LIBRARY ANALYTICS
   ======================================================= -->
 
   <script>
@@ -3749,6 +3980,37 @@
                         ROOTZ_IS_MEMBER
                           ? "member"
                           : "visitor"
+                    }
+                  );
+
+                }
+              );
+
+            }
+          );
+
+
+        /* ==================================================
+           RITUAL BRIDGE CLICKS
+        ================================================== */
+
+        document
+          .querySelectorAll(
+            ".ritual-link"
+          )
+          .forEach(
+            function (link) {
+
+              link.addEventListener(
+                "click",
+                function () {
+
+                  libraryTrack(
+                    "library_ritual_click",
+                    {
+                      ritual:
+                        link.dataset.ritual ||
+                        ""
                     }
                   );
 
