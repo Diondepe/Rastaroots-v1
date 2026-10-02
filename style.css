@@ -6988,3 +6988,87 @@ section {
 ========================================================== */
 
 /* V610-01: deployment marker */
+/* ==========================================================
+   V610-02
+   MOBILE STABILITY + ACCESSIBILITY
+   Safe additive patch
+========================================================== */
+
+/* Better anchor positioning beneath the sticky header */
+.home-v2 section[id],
+.ritual-page section[id],
+.library-section[id],
+.shop-section[id],
+.community-section[id] {
+  scroll-margin-top: 120px;
+}
+
+/* Keyboard accessibility without changing mouse/touch appearance */
+.home-v2 a:focus-visible,
+.home-v2 button:focus-visible,
+.ritual-page a:focus-visible,
+.ritual-page button:focus-visible,
+.library-section a:focus-visible,
+.library-section button:focus-visible {
+  outline: 3px solid #b68a33;
+  outline-offset: 4px;
+}
+
+/* Prevent media from accidentally creating horizontal overflow */
+.home-v2 img,
+.ritual-page img,
+.library-section img {
+  max-width: 100%;
+}
+
+/* Touch devices */
+@media (max-width: 780px) {
+
+  /* More accurate anchor position on mobile */
+  .home-v2 section[id],
+  .ritual-page section[id],
+  .library-section[id],
+  .shop-section[id],
+  .community-section[id] {
+    scroll-margin-top: 92px;
+  }
+
+  /* Ensure interactive controls have a usable touch target */
+  .home-v2 button,
+  .home-v2 .btn,
+  .ritual-page button,
+  .ritual-page .btn,
+  .library-section button,
+  .library-section .btn {
+    min-height: 44px;
+  }
+
+  /* Protect horizontal carousels from page-level overflow */
+  .herb-carousel,
+  .ritual-carousel,
+  .product-carousel {
+    max-width: 100%;
+    overscroll-behavior-inline: contain;
+  }
+
+  /* Keep the mobile conversion CTA above iPhone safe areas */
+  .mobile-sticky-cta {
+    bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  /* Never leave the conversion CTA sitting over an open menu */
+  body.menu-open .mobile-sticky-cta {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+/* Respect visitors who disable animation */
+@media (prefers-reduced-motion: reduce) {
+  .home-v2 *,
+  .ritual-page *,
+  .library-section * {
+    scroll-behavior: auto !important;
+  }
+}
