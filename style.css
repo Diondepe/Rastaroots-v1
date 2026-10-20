@@ -7578,3 +7578,54 @@ section {
 @media (prefers-reduced-motion: reduce) {
   .home-v2 .home-conversion-grid > a.home-conversion-card { transition: none; }
 }
+
+/* ==========================================================
+   V612: product-first cinematic hero + conversion cards
+   Scoped to homepage; preserve existing coffee carousel.
+========================================================== */
+.home-v2 .home-hero-slide--discovery { min-height: clamp(620px, 68vw, 800px); }
+.home-v2 .home-hero-slide--discovery .home-hero-slide-media,
+.home-v2 .home-hero-slide--discovery .home-hero-slide-media picture { position:absolute; inset:0; display:block; width:100%; height:100%; }
+.home-v2 .home-hero-slide--discovery .home-hero-slide-media img { width:100%; height:100%; object-fit:cover; object-position:center center; }
+.home-v2 .home-hero-slide--discovery::before { background:linear-gradient(90deg,rgba(1,15,9,.62) 0%,rgba(1,15,9,.39) 29%,rgba(1,15,9,.04) 59%,transparent 100%); }
+.home-v2 .home-hero-slide--discovery .home-hero-slide-content { width:min(620px,49%); padding:65px 0 115px clamp(30px,5.6vw,95px); justify-content:center; }
+.home-v2 .home-hero-slide--discovery .eyebrow { font-size:clamp(.72rem,1vw,.95rem); text-transform:uppercase; letter-spacing:.22em; }
+.home-v2 .home-hero-slide--discovery h1 { font-size:clamp(2.9rem,4.5vw,5.1rem); line-height:.99; letter-spacing:-.045em; margin:0 0 22px; }
+.home-v2 .home-hero-slide--discovery h1 em { font-style:normal; color:#f4d88a; }
+.home-v2 .home-hero-slide--discovery .hero-text { max-width:480px; font-size:clamp(.91rem,1.12vw,1.1rem); line-height:1.5; }
+.home-v2 .home-hero-slide--discovery .home-hero-mini-proof { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); max-width:460px; gap:10px 14px; margin-top:22px; }
+.home-v2 .home-hero-slide--discovery .home-hero-mini-proof span { border:0; background:transparent; backdrop-filter:none; padding:2px 0 2px 13px; border-left:2px solid #f4d88a; border-radius:0; font-size:.72rem; }
+.home-v2 .home-hero-slide--discovery .hero-actions { margin-top:25px; }
+.home-v2 .home-hero-slide--discovery .btn-primary { background:#f4d88a; color:#062316; border-radius:100px; padding:17px 28px; font-size:1rem; font-weight:800; }
+.home-v2 .home-hero-slide--discovery .btn-primary span { margin-left:18px; }
+.home-v2 .home-offer-strip.home-conversion-grid--v612 { width:min(94%,1420px); margin:-30px auto 0; position:relative; z-index:9; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border:1px solid #cba957; border-radius:18px; overflow:hidden; background:#062b1c; box-shadow:0 12px 40px rgba(0,0,0,.24); }
+.home-v2 .home-conversion-grid--v612 > a.home-conversion-card { min-height:178px; display:grid; grid-template-columns:52px 1fr; grid-template-rows:auto 1fr auto; column-gap:12px; align-items:start; justify-items:start; padding:23px 18px; text-align:left; border-right:1px solid rgba(244,216,138,.3); background:linear-gradient(140deg,#0b3925,#042015); text-decoration:none; }
+.home-v2 .home-conversion-grid--v612 > a.home-conversion-card:last-child { border-right:0; }
+.home-v2 .home-conversion-grid--v612 .home-conversion-icon { grid-column:1; grid-row:1/4; font-size:2.5rem; color:#f4d88a; line-height:1; }
+.home-v2 .home-conversion-grid--v612 strong { grid-column:2; font-family:Georgia,serif; font-size:clamp(1rem,1.4vw,1.45rem); color:#f4d88a; }
+.home-v2 .home-conversion-grid--v612 > a.home-conversion-card > span:not(.home-conversion-icon):not(.home-card-arrow) { grid-column:2; color:#fff9ee; font-size:.81rem; line-height:1.45; }
+.home-v2 .home-conversion-grid--v612 .home-card-arrow { grid-column:2; display:grid; place-items:center; width:36px; height:36px; border:1px solid #f4d88a; border-radius:50%; font-size:1.2rem; color:#fff9ee; }
+.home-v2 .home-conversion-grid--v612 > a.home-conversion-card:hover { background:#145338; }
+@media(max-width:1000px){
+ .home-v2 .home-hero-slide--discovery .home-hero-slide-content { width:55%; }
+ .home-v2 .home-offer-strip.home-conversion-grid--v612 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .home-v2 .home-conversion-grid--v612 > a.home-conversion-card:nth-child(2) { border-right:0; }
+ .home-v2 .home-conversion-grid--v612 > a.home-conversion-card:nth-child(-n+2) { border-bottom:1px solid rgba(244,216,138,.3); }
+}
+@media(max-width:780px){
+ .home-v2 .home-hero-slide--discovery { min-height:810px; }
+ .home-v2 .home-hero-slide--discovery .home-hero-slide-media img { object-position:center top; }
+ .home-v2 .home-hero-slide--discovery::before { background:linear-gradient(180deg,rgba(2,20,12,.22) 0%,rgba(2,20,12,.13) 30%,rgba(2,20,12,.78) 55%,rgba(2,20,12,.96) 100%); }
+ .home-v2 .home-hero-slide--discovery .home-hero-slide-content { width:100%; justify-content:flex-end; padding:320px 23px 110px; }
+ .home-v2 .home-hero-slide--discovery h1 { font-size:clamp(2.65rem,10vw,4.2rem); max-width:620px; }
+ .home-v2 .home-hero-slide--discovery .hero-text { max-width:560px; }
+ .home-v2 .home-hero-slide--discovery .home-hero-mini-proof { margin-top:15px; }
+ .home-v2 .home-offer-strip.home-conversion-grid--v612 { width:calc(100% - 24px); margin:-10px auto 0; }
+ .home-v2 .home-conversion-grid--v612 > a.home-conversion-card { min-height:185px; grid-template-columns:1fr; grid-template-rows:auto auto 1fr auto; gap:7px; padding:18px 12px; }
+ .home-v2 .home-conversion-grid--v612 .home-conversion-icon { grid-column:1; grid-row:1; font-size:2rem; }
+ .home-v2 .home-conversion-grid--v612 strong, .home-v2 .home-conversion-grid--v612 > a.home-conversion-card > span:not(.home-conversion-icon):not(.home-card-arrow), .home-v2 .home-conversion-grid--v612 .home-card-arrow { grid-column:1; }
+ .home-v2 .home-conversion-grid--v612 strong { font-size:1rem; }
+ .home-v2 .home-conversion-grid--v612 > a.home-conversion-card > span:not(.home-conversion-icon):not(.home-card-arrow) { font-size:.74rem; }
+ .home-v2 .home-conversion-grid--v612 .home-card-arrow { width:32px; height:32px; }
+}
+@media(max-width:380px){.home-v2 .home-hero-slide--discovery .home-hero-slide-content { padding-top:300px; }.home-v2 .home-hero-slide--discovery h1 { font-size:2.55rem; }}
