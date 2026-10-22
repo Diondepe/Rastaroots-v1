@@ -3,7 +3,7 @@
 <head>
 <!-- ======================================================
        RASTAROOTS HERBAL LIBRARY
-       MASTER PAGE V614
+       MASTER PAGE V616
        SEO + GEO + AEO + CRO + MEMBER ACCESS
        Updated: 22 October 2026
   ======================================================= -->
@@ -1648,7 +1648,7 @@
     @media(max-width:390px) { .library-hero { min-height:780px; } .library-hero-content { padding-left:18px; padding-right:18px; } }
 
   
-/* V614 — homepage-style pathway cards, first-screen conversion and fast section access */
+/* V615 — homepage-style pathway cards, first-screen conversion and fast section access */
 .library-value-strip{background:#f7f1e4;padding:30px max(20px,3vw);border:0}
 .library-value-inner{max-width:1360px;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
 .library-value-item{display:flex!important;flex-direction:column;align-items:flex-start;text-align:left;min-height:205px;padding:24px 24px 22px!important;background:linear-gradient(140deg,#073824,#052719);border:1px solid rgba(244,216,138,.25)!important;text-decoration:none!important;transition:background .2s,transform .2s;gap:9px;position:relative}
@@ -1678,6 +1678,16 @@
 @media(max-width:950px){.library-value-inner{grid-template-columns:repeat(2,minmax(0,1fr))}.library-value-item:first-child{border-radius:16px 0 0 0}.library-value-item:nth-child(2){border-radius:0 16px 0 0}.library-value-item:last-child{border-radius:0 0 16px 0}.library-value-item:nth-last-child(2){border-radius:0 0 0 16px}}
 @media(max-width:600px){.library-value-strip{padding:18px 12px}.library-value-inner{grid-template-columns:repeat(2,minmax(0,1fr))!important}.library-value-item{min-height:208px;padding:16px 13px!important}.library-value-item strong{font-size:1.04rem!important}.library-value-item>span:not(.pathway-symbol):not(.pathway-arrow){font-size:.63rem!important}.library-top-shop{margin:0 12px 18px;flex-direction:column;align-items:stretch;padding:21px 18px;gap:17px}.library-top-shop .btn{white-space:normal}.library-jump-nav{top:var(--library-sticky-offset,64px)}.library-jump-inner{padding:9px 12px}.library-back-top{right:14px;bottom:78px}}
 @media(prefers-reduced-motion:reduce){.library-value-item{transition:none}.library-value-item:hover{transform:none}}
+/* V616 — overlay the four homepage-style cards across the lower edge of the hero image. */
+@media(min-width:951px){.library-hero-content{padding-bottom:175px!important}}
+@media(min-width:601px) and (max-width:950px){.library-hero-content{padding-bottom:125px!important}}
+.library-hero{overflow:visible!important}
+.library-value-strip{position:relative!important;z-index:12!important;margin-top:-115px!important;padding:0 max(20px,3vw) 25px!important;background:transparent!important;border:0!important;isolation:isolate}
+.library-value-inner{position:relative;z-index:1;box-shadow:0 18px 38px rgba(0,0,0,.22);border-radius:17px}
+.library-top-shop{position:relative;z-index:2}
+@media(max-width:950px){.library-value-strip{margin-top:-75px!important}}
+@media(max-width:600px){.library-value-strip{margin-top:-32px!important;padding:0 12px 18px!important}.library-value-inner{box-shadow:0 12px 24px rgba(0,0,0,.18)}}
+
 </style>
 </head>
 <body id="top">
