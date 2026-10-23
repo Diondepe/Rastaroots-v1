@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!DOCTYPE html>
 
 <html lang="en-GB">
@@ -630,7 +631,6 @@ main>.hero.hero-upgraded .btn-secondary{color:#fff8e8!important;border-color:rgb
 @media(max-width:600px){main>.hero.hero-upgraded{min-height:640px!important;padding:64px 22px 55px!important;align-items:flex-end!important}main>.hero.hero-upgraded>.hero-media img{object-position:64% 22%!important}main>.hero.hero-upgraded::before{background:linear-gradient(0deg,rgba(3,20,12,.96) 0%,rgba(3,20,12,.87) 40%,rgba(3,20,12,.18) 83%)}main>.hero.hero-upgraded>.hero-copy{width:100%!important;max-width:100%!important}main>.hero.hero-upgraded h1{font-size:clamp(3.4rem,13vw,5.5rem)!important}main>.hero.hero-upgraded .hero-text{font-size:.95rem!important;line-height:1.5!important}main>.hero.hero-upgraded .hero-proof{display:none!important}main>.hero.hero-upgraded .hero-actions{display:flex;flex-wrap:wrap;gap:9px}main>.hero.hero-upgraded .hero-actions .btn{font-size:.73rem!important;padding:12px 14px!important}.founder-routes{padding:14px 13px}.founder-routes-grid{gap:9px}.founder-route{min-height:145px;padding:15px 12px;gap:9px;border-radius:11px}.founder-route strong{font-size:.7rem}.founder-route>span:not(.route-symbol){font-size:.74rem}.founder-page-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;gap:15px;padding:10px 17px;scrollbar-width:thin}.founder-page-nav a{flex:0 0 auto;font-size:.76rem}.founder-page-nav-label{flex:0 0 auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.founder-route{transition:none}}
 </style>
-
 <style id="founder-v7-layout">
 /* V7: Home-style overlapping connected quick links */
 main>.hero.hero-upgraded{padding-bottom:125px!important}
@@ -674,7 +674,24 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
  .founder-event-gallery figure:nth-child(2) img{aspect-ratio:16/9!important}
 }
 </style>
-</head>
+<style id="founder-v8-three-refinements">
+/* Full-bleed heritage visual replaces text-only green philosophy section */
+.rootz-philosophy{padding:0!important;background:#062618!important;border:0!important;}
+.rootz-philosophy-inner{max-width:none!important;padding:0!important;margin:0!important;}
+.founder-heritage-art{display:block;width:100%;line-height:0;}
+.founder-heritage-art img{display:block;width:100%;height:auto;object-fit:contain;}
+/* Homepage-style discovery CTA beneath overlapping four cards */
+.founder-discovery-cta{max-width:calc(100% - 20px);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:23px clamp(20px,4vw,54px);background:#f6e9c5;border:1px solid #dfc67b;border-radius:18px;color:#103c25;box-sizing:border-box;}
+.founder-discovery-eyebrow{font-size:.72rem;letter-spacing:.13em;font-weight:800;color:#9b742c;margin:0 0 6px!important;}
+.founder-discovery-cta h2{font-family:Georgia,serif;font-size:clamp(1.7rem,3.4vw,3rem);line-height:1.08;margin:0 0 6px;color:#103c25;}
+.founder-discovery-cta p:last-child{margin:0;line-height:1.45;}
+.founder-discovery-button{flex-shrink:0;display:inline-flex;gap:12px;align-items:center;justify-content:center;background:#f4d882;color:#103c25;text-decoration:none;padding:16px 25px;border-radius:99px;font-weight:800;font-size:.88rem;}
+/* Clickable artwork poster in the Herbal Library panel */
+.founder-library-card{padding:0!important;min-height:0!important;overflow:hidden;background:#103c25!important;}
+.founder-library-poster-link{display:block;width:100%;line-height:0;}
+.founder-library-poster-link img{display:block;width:100%!important;height:auto!important;max-width:none!important;margin:0!important;object-fit:cover;}
+@media(max-width:700px){.founder-discovery-cta{flex-direction:column;align-items:flex-start;padding:22px;margin:0 10px;gap:16px}.founder-discovery-button{width:100%;box-sizing:border-box}.founder-library-card{border-radius:18px}}
+</style></head>
 <body id="top">
 <!-- ======================================================
        ANNOUNCEMENT
@@ -791,21 +808,21 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
 </div>
 </section>
 <!-- Founder quick routes: consistent with Shop and Herbal Library -->
-<section class="founder-routes" aria-label="Explore RastaRoots">
-  <div class="founder-routes-grid">
-    <a class="founder-route" href="#story"><span class="route-symbol" aria-hidden="true">✦</span><strong>MY STORY</strong><span>The person and purpose behind RastaRoots</span><b aria-hidden="true">↗</b></a>
-    <a class="founder-route" href="./tea-ritual.html"><span class="route-symbol" aria-hidden="true">☕</span><strong>TEA RITUAL</strong><span>Make space for a meaningful daily moment</span><b aria-hidden="true">↗</b></a>
-    <a class="founder-route" href="./herbal-library.html"><span class="route-symbol" aria-hidden="true">❧</span><strong>HERBAL LIBRARY</strong><span>Explore the herbs and their stories</span><b aria-hidden="true">↗</b></a>
-    <a class="founder-route" href="./shop.html"><span class="route-symbol" aria-hidden="true">✧</span><strong>DISCOVERY COLLECTION</strong><span>Five blends · 25 sachets · £19.99</span><b aria-hidden="true">↗</b></a>
-  </div>
-</section>
-<nav class="founder-page-nav" aria-label="On this page">
-  <span class="founder-page-nav-label">EXPLORE THE STORY</span>
-  <a href="#story">My Story</a>
-  <a href="#founder-in-community">Taster Event</a>
-  <a href="#founder-philosophy">Our Rootz</a>
-  <a href="#founder-vision">The Vision</a>
-  <a href="#founder-faq">FAQs</a>
+<section aria-label="Explore RastaRoots" class="founder-routes">
+<div class="founder-routes-grid">
+<a class="founder-route" href="#story"><span aria-hidden="true" class="route-symbol">✦</span><strong>MY STORY</strong><span>The person and purpose behind RastaRoots</span><b aria-hidden="true">↗</b></a>
+<a class="founder-route" href="./tea-ritual.html"><span aria-hidden="true" class="route-symbol">☕</span><strong>TEA RITUAL</strong><span>Make space for a meaningful daily moment</span><b aria-hidden="true">↗</b></a>
+<a class="founder-route" href="./herbal-library.html"><span aria-hidden="true" class="route-symbol">❧</span><strong>HERBAL LIBRARY</strong><span>Explore the herbs and their stories</span><b aria-hidden="true">↗</b></a>
+<a class="founder-route" href="./shop.html"><span aria-hidden="true" class="route-symbol">✧</span><strong>DISCOVERY COLLECTION</strong><span>Five blends · 25 sachets · £19.99</span><b aria-hidden="true">↗</b></a>
+</div>
+</section><section aria-label="Explore the RastaRoots Discovery Collection" class="founder-discovery-cta"><div><p class="founder-discovery-eyebrow">THE RASTAROOTS DISCOVERY COLLECTION</p><h2>Five Teas. One Journey.</h2><p>Five Caribbean-inspired botanical blends. 25 sachets in one Discovery Collection — £19.99.</p></div><a class="founder-discovery-button" href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">PRE-ORDER · £19.99 <span aria-hidden="true">→</span></a></section>
+<nav aria-label="On this page" class="founder-page-nav">
+<span class="founder-page-nav-label">EXPLORE THE STORY</span>
+<a href="#story">My Story</a>
+<a href="#founder-in-community">Taster Event</a>
+<a href="#founder-philosophy">Our Rootz</a>
+<a href="#founder-vision">The Vision</a>
+<a href="#founder-faq">FAQs</a>
 </nav>
 <!-- ====================================================
          STORY
@@ -856,33 +873,7 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
 <!-- ====================================================
          DON'T LOSE YOUR ROOTZ
     ===================================================== -->
-<section class="rootz-philosophy" id="founder-philosophy">
-<div class="rootz-philosophy-inner">
-<p class="section-kicker">
-          The Philosophy
-        </p>
-<h2>
-          Don’t Lose Your Rootz.
-        </h2>
-<p>
-          Roots are not about living in the past. They are about understanding
-          what holds you steady while you move forward.
-        </p>
-<p>
-          Your family. Your culture. Your values. Your stories. Your traditions.
-          The places that shaped you. The knowledge passed down before you were
-          here.
-        </p>
-<p>
-          Progress matters. But progress without memory can leave people with
-          more choices and less connection.
-        </p>
-<blockquote class="rootz-quote">
-          “Know where you come from. Decide where you are going. Don’t lose
-          yourself between the two.”
-        </blockquote>
-</div>
-</section>
+<section class="rootz-philosophy" id="founder-philosophy"><a aria-label="Explore the RastaRoots community and Don’t Lose Your Rootz philosophy" class="founder-heritage-art" href="./community.html"><img alt="Don’t Lose Your Rootz: RastaRoots heritage from Africa through the Caribbean to Britain and the wider world" decoding="async" loading="lazy" src="./assets/founder/founder-rootz-heritage.webp"/></a></section>
 <!-- ====================================================
          WHY THIS BRAND
     ===================================================== -->
@@ -1140,15 +1131,7 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
           </a>
 </div>
 </div>
-<div class="founder-library-card">
-<img alt="RastaRoots Herbal Library" decoding="async" loading="lazy" src="./assets/badge-logo.png"/>
-<strong>
-          Know Your Rootz.
-        </strong>
-<span>
-          Herbal Library • Growing Now
-        </span>
-</div>
+<div class="founder-library-card"><a aria-label="Explore the RastaRoots Herbal Library" class="founder-library-poster-link" href="./herbal-library.html"><img alt="RastaRoots Herbal Library: explore herbs, traditions, preparation and modern research" decoding="async" loading="lazy" src="./assets/founder/founder-herbal-library-poster.webp"/></a></div>
 </section>
 <!-- ====================================================
          COMMUNITY
