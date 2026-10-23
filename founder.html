@@ -691,7 +691,23 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
 .founder-library-poster-link{display:block;width:100%;line-height:0;}
 .founder-library-poster-link img{display:block;width:100%!important;height:auto!important;max-width:none!important;margin:0!important;object-fit:cover;}
 @media(max-width:700px){.founder-discovery-cta{flex-direction:column;align-items:flex-start;padding:22px;margin:0 10px;gap:16px}.founder-discovery-button{width:100%;box-sizing:border-box}.founder-library-card{border-radius:18px}}
-</style></head>
+</style><style id="founder-v9-polish">
+/* V9: scoped refinements, leaving sitewide styles unchanged */
+.founder-video-section{background:#fff9ee;padding:68px 7vw;scroll-margin-top:110px}
+.founder-video-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,390px);gap:clamp(30px,6vw,90px);align-items:center}
+.founder-video-copy h2{font-family:Georgia,serif;font-size:clamp(2.6rem,5vw,4.8rem);line-height:1.05;letter-spacing:-.035em;color:#103c25;margin:12px 0 22px}
+.founder-video-copy p:not(.section-kicker){font:1.05rem/1.8 Arial,sans-serif;color:#354036;max-width:560px}
+.founder-video-frame{border-radius:24px;overflow:hidden;background:#092b1c;box-shadow:0 22px 50px rgba(0,0,0,.15);max-width:390px;width:100%;margin:auto}
+.founder-video-frame video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover}
+.founder-video-note{font:.82rem/1.5 Arial,sans-serif;color:#57665c;margin-top:12px;text-align:center}
+/* Crop the miniature navigation strip from the existing poster until a clean replacement is supplied */
+.founder-library-poster-link{display:block;aspect-ratio:1.68;overflow:hidden}
+.founder-library-poster-link img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.founder-intro,.brand-world,.founder-principles,.founder-library,.founder-promise{padding-top:clamp(55px,6vw,85px);padding-bottom:clamp(55px,6vw,85px)}
+.founder-video-copy .btn{display:inline-flex;margin-top:18px}
+@media(max-width:760px){.founder-video-section{padding:54px 22px}.founder-video-inner{grid-template-columns:1fr;gap:28px}.founder-video-frame{max-width:340px}.founder-library-poster-link{aspect-ratio:1.55}.founder-video-copy h2{font-size:clamp(2.3rem,10vw,3.3rem)}}
+</style>
+</head>
 <body id="top">
 <!-- ======================================================
        ANNOUNCEMENT
@@ -819,6 +835,7 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
 <nav aria-label="On this page" class="founder-page-nav">
 <span class="founder-page-nav-label">EXPLORE THE STORY</span>
 <a href="#story">My Story</a>
+<a href="#founder-video">Founder Film</a>
 <a href="#founder-in-community">Taster Event</a>
 <a href="#founder-philosophy">Our Rootz</a>
 <a href="#founder-vision">The Vision</a>
@@ -842,6 +859,19 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
 <p>Building the brand in Manchester, I wanted to bring those influences into a modern experience without pretending that every herb comes from Jamaica or that tradition is a substitute for evidence. Our ingredients are sourced from around the world; the inspiration is rooted in Caribbean heritage.</p>
 <p>Tea was the natural starting point. A cup gives people a moment to talk, to learn what they are drinking and to connect. That is the beginning of RastaRoots — not the limit of what it can become.</p>
 </div>
+</section>
+<!-- V9 founder film: deliberately user-initiated; no autoplay or forced sound -->
+<section class="founder-video-section" id="founder-video" aria-labelledby="founderVideoTitle">
+ <div class="founder-video-inner">
+  <div class="founder-video-copy">
+   <p class="section-kicker">THE FOUNDER FILM</p>
+   <h2 id="founderVideoTitle">Every root has a story.</h2>
+   <p>RastaRoots began with a bigger question than what to put in a tea box: how do we carry our culture, our knowledge and our connection to one another into the future?</p>
+   <p>Watch the founder film, then explore the people and principles behind the journey.</p>
+   <a class="btn btn-primary" href="#founder-in-community">Meet the community →</a>
+  </div>
+  <div><div class="founder-video-frame"><video controls playsinline preload="none" poster="./assets/founder/founder-video-poster.jpg" aria-label="RastaRoots founder film, approximately 72 seconds"><source src="./assets/founder/founder-story.mp4" type="video/mp4"/>Your browser does not support embedded video.</video></div><p class="founder-video-note">Founder film · 1 minute 12 seconds · Tap play to watch</p></div>
+ </div>
 </section>
 <!-- ====================================================
          INTRO
@@ -1192,7 +1222,7 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
 <p class="section-kicker">
           The First Chapter
         </p>
-<h2>Five blends. 25 sachets. The beginning of RastaRoots.</h2>
+<h2>Be part of the beginning.</h2>
 <p>
           The Founder Discovery Collection is the first physical chapter of the
           wider RastaRoots vision. Explore the five rituals and become part of
@@ -1200,7 +1230,7 @@ main>.hero.hero-upgraded{padding-bottom:125px!important}
         </p>
 <div class="hero-actions" style="justify-content: center;">
 <a class="btn btn-primary" href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">
-            Pre-Order Discovery Collection
+            Pre-Order the 25-Sachet Collection · £19.99
           </a>
 <a class="btn btn-secondary" href="./index.html#teas">
             Explore The Five Blends
