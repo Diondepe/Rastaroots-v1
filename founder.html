@@ -630,6 +630,50 @@ main>.hero.hero-upgraded .btn-secondary{color:#fff8e8!important;border-color:rgb
 @media(max-width:600px){main>.hero.hero-upgraded{min-height:640px!important;padding:64px 22px 55px!important;align-items:flex-end!important}main>.hero.hero-upgraded>.hero-media img{object-position:64% 22%!important}main>.hero.hero-upgraded::before{background:linear-gradient(0deg,rgba(3,20,12,.96) 0%,rgba(3,20,12,.87) 40%,rgba(3,20,12,.18) 83%)}main>.hero.hero-upgraded>.hero-copy{width:100%!important;max-width:100%!important}main>.hero.hero-upgraded h1{font-size:clamp(3.4rem,13vw,5.5rem)!important}main>.hero.hero-upgraded .hero-text{font-size:.95rem!important;line-height:1.5!important}main>.hero.hero-upgraded .hero-proof{display:none!important}main>.hero.hero-upgraded .hero-actions{display:flex;flex-wrap:wrap;gap:9px}main>.hero.hero-upgraded .hero-actions .btn{font-size:.73rem!important;padding:12px 14px!important}.founder-routes{padding:14px 13px}.founder-routes-grid{gap:9px}.founder-route{min-height:145px;padding:15px 12px;gap:9px;border-radius:11px}.founder-route strong{font-size:.7rem}.founder-route>span:not(.route-symbol){font-size:.74rem}.founder-page-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;gap:15px;padding:10px 17px;scrollbar-width:thin}.founder-page-nav a{flex:0 0 auto;font-size:.76rem}.founder-page-nav-label{flex:0 0 auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.founder-route{transition:none}}
 </style>
+
+<style id="founder-v7-layout">
+/* V7: Home-style overlapping connected quick links */
+main>.hero.hero-upgraded{padding-bottom:125px!important}
+.founder-routes{position:relative;z-index:5;background:transparent!important;padding:0 2.4vw!important;margin-top:-68px!important}
+.founder-routes-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0!important;max-width:1320px;margin:0 auto;background:#072d1c;border:1px solid #c3a55b;border-radius:18px;overflow:hidden;box-shadow:0 20px 35px rgba(5,30,18,.17)}
+.founder-route{border:0!important;border-right:1px solid rgba(216,185,109,.38)!important;border-radius:0!important;min-height:192px!important;background:#072d1c!important;padding:25px 22px 54px!important;gap:11px!important;box-shadow:none!important;transform:none!important}
+.founder-route:last-child{border-right:0!important}
+.founder-route:hover,.founder-route:focus-visible{background:#10402a!important;box-shadow:none!important;transform:none!important}
+.founder-route strong{font-family:Georgia,serif!important;font-size:clamp(1rem,1.35vw,1.35rem)!important;letter-spacing:0!important;line-height:1.15!important}
+.founder-route .route-symbol{font-size:25px!important}
+.founder-route>span:not(.route-symbol){font-size:.76rem!important;font-weight:600!important;text-transform:uppercase;line-height:1.5!important}
+.founder-route b{top:auto!important;bottom:16px!important;left:22px!important;right:auto!important;width:31px;height:31px;border:1px solid #d9b96d;border-radius:50%;display:grid;place-items:center;font-size:16px;font-weight:400}
+.founder-page-nav{margin-top:0}
+/* V7: tall founder portrait + three precisely matched supporting photographs */
+.founder-event-gallery{display:grid!important;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;gap:16px!important;align-items:stretch;max-width:1200px}
+.founder-event-gallery figure{min-width:0;min-height:0;display:flex;flex-direction:column;border-radius:18px!important;overflow:hidden}
+.founder-event-gallery figure:first-child{grid-column:1;grid-row:1/4}
+.founder-event-gallery figure:not(:first-child){grid-column:2}
+.founder-event-gallery figure:nth-child(2){grid-row:1}
+.founder-event-gallery figure:nth-child(3){grid-row:2}
+.founder-event-gallery figure:nth-child(4){grid-row:3}
+.founder-event-gallery img{width:100%!important;height:100%!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center 38%!important;flex:1 1 auto}
+.founder-event-gallery figure:first-child img{object-position:center 28%!important}
+.founder-event-gallery figure:nth-child(2) img{object-position:center 47%!important}
+.founder-event-gallery figcaption{min-height:0!important;flex:0 0 auto;padding:11px 15px!important;font-size:.79rem!important}
+@media(min-width:781px){.founder-event-gallery{height:780px!important}}
+@media(max-width:900px){.founder-route{padding:18px 15px 52px!important;min-height:164px!important}.founder-route strong{font-size:1rem!important}}
+@media(max-width:780px){
+ main>.hero.hero-upgraded{padding-bottom:100px!important}
+ .founder-routes{padding:0 14px!important;margin-top:-42px!important}
+ .founder-routes-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;border-radius:14px}
+ .founder-route{min-height:155px!important;padding:17px 13px 46px!important;border-right:1px solid rgba(216,185,109,.38)!important;border-bottom:1px solid rgba(216,185,109,.38)!important}
+ .founder-route:nth-child(even){border-right:0!important}
+ .founder-route:nth-child(n+3){border-bottom:0!important}
+ .founder-route strong{font-size:.98rem!important}
+ .founder-route b{left:13px!important;bottom:10px!important;width:27px;height:27px}
+ .founder-event-gallery{height:auto!important;grid-template-columns:1fr!important;grid-template-rows:none!important;gap:14px!important}
+ .founder-event-gallery figure,.founder-event-gallery figure:first-child,.founder-event-gallery figure:nth-child(n){grid-column:auto!important;grid-row:auto!important}
+ .founder-event-gallery img{height:auto!important;flex:none!important;aspect-ratio:4/3!important;object-fit:cover!important}
+ .founder-event-gallery figure:first-child img{aspect-ratio:3/4!important}
+ .founder-event-gallery figure:nth-child(2) img{aspect-ratio:16/9!important}
+}
+</style>
 </head>
 <body id="top">
 <!-- ======================================================
