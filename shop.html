@@ -2,11 +2,11 @@
 
 <html lang="en-GB">
 <head>
-<!-- RastaRoots Shop V614: layout and markup repairs -->
+<!-- RastaRoots Shop V615: targeted mobile layout and sticky CTA repairs -->
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<!-- RASTAROOTS SHOP V614 -->
+<!-- RASTAROOTS SHOP V615 -->
 <title>Herbal Tea Gift Set UK | RastaRoots Discovery Collection</title>
 <meta content="Discover the RastaRoots Discovery Collection: 25 naturally caffeine-free herbal tea sachets across 5 signature rituals for £19.99, plus 30-day Herbal Library access, 15% off RastaRoots Coffee and £1 from every box committed to community projects." name="description"/>
 <meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
@@ -1260,6 +1260,73 @@
 }
 @media(max-width:640px){.shop-page .shop-value-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important}.shop-page .shop-pathway{min-width:0}}
 </style>
+
+<style id="shop-v615-mobile-refinement">
+/* V615 is intentionally scoped to Shop. Desktop and global style.css are unchanged. */
+@media (max-width: 780px) {
+  .shop-page .shop-hero {display:flex;flex-direction:column;min-height:0!important;overflow:visible}
+  .shop-page .shop-carousel {order:0;position:relative!important;inset:auto!important;width:100%;height:auto!important;min-height:0!important;aspect-ratio: 4 / 3;background:#082415;overflow:hidden}
+  .shop-page .shop-slide {width:100%;height:100%;object-fit:cover!important;object-position:center center;background:#082415}
+  .shop-page .shop-carousel-dots {bottom:12px;gap:11px}
+  .shop-page .shop-carousel-dots button {width:11px;height:11px}
+  .shop-page .shop-hero-copy {order:1;min-height:0!important;width:100%!important;padding:30px 22px 30px!important;background:linear-gradient(135deg,#06170e,#103c25)}
+  .shop-page .shop-hero .eyebrow {margin-bottom:10px;font-size:.72rem;letter-spacing:.12em}
+  .shop-page .shop-hero h1 {margin-bottom:16px;font-size:clamp(2.65rem,10.5vw,4.2rem);line-height:.98;letter-spacing:-.045em}
+  .shop-page .shop-hero-text {margin-bottom:17px;font-size:.94rem;line-height:1.6}
+  .shop-page .shop-hero-price {margin-bottom:18px;gap:8px}
+  .shop-page .shop-hero-price strong {font-size:1.85rem}
+  .shop-page .shop-hero .hero-actions {display:grid;grid-template-columns:1fr;gap:10px}
+  .shop-page .shop-hero .hero-actions .btn {width:100%;min-height:48px;padding:12px 16px;text-align:center;font-size:.8rem}
+  .shop-page .shop-hero-proof {flex-direction:row;align-items:stretch;gap:7px;margin-top:17px}
+  .shop-page .shop-hero-proof span {width:auto;max-width:100%;padding:7px 10px;font-size:.67rem;line-height:1.4}
+  .shop-page .shop-value-strip {max-width:calc(100% - 24px);margin:-1px auto 0!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;border-radius:16px}
+  .shop-page .shop-pathway {min-height:155px;padding:16px 13px 13px}
+  .shop-page .shop-pathway-icon {margin-bottom:5px;font-size:20px}
+  .shop-page .shop-pathway strong {font-size:clamp(.95rem,3.9vw,1.15rem);line-height:1.15}
+  .shop-page .shop-pathway p {margin:7px 0 12px;font-size:.59rem;line-height:1.5}
+  .shop-page .shop-pathway-arrow {width:29px;height:29px}
+  .shop-page .shop-discovery-cta {gap:15px;margin:0 12px 12px;padding:21px 19px}
+  .shop-page .shop-discovery-cta h2 {font-size:clamp(1.85rem,8vw,2.55rem)}
+  .shop-page .shop-discovery-cta p:last-child {font-size:.9rem;line-height:1.55}
+  .shop-page .shop-discovery-cta .btn {min-height:48px;padding:12px 15px}
+  .shop-page .shop-section,.shop-page .shop-faq,.shop-page .shop-final {padding:54px 22px}
+  .shop-page .section-heading h2 {font-size:clamp(2.3rem,9vw,3.7rem);line-height:1.04;letter-spacing:-.035em}
+  .shop-page .section-heading > p:last-child {font-size:.98rem;line-height:1.65}
+  .shop-page .included-grid {gap:16px;margin-top:27px}
+  .shop-page .included-card-image {aspect-ratio: 16 / 10}
+  .shop-page .included-card-copy {padding:19px}
+  .shop-page .included-card-copy h3 {font-size:1.45rem}
+  .shop-page .included-card-copy p {font-size:.92rem;line-height:1.6}
+  .shop-page .shop-founder-copy,.shop-page .shop-community-copy {padding:42px 22px!important}
+  .shop-page .tea-ritual-copy {padding:45px 22px}
+  .shop-page .shop-founder-copy h2,.shop-page .tea-ritual-copy h2,.shop-page .shop-community-copy h2,.shop-page .shop-coffee-copy h2 {font-size:clamp(2.5rem,10vw,3.65rem);line-height:1.03}
+  .shop-page .shop-coffee-copy {padding:42px 22px}
+  .shop-page .shop-coffee-copy>p:not(.section-kicker) {line-height:1.65}
+  .shop-page .shop-coffee-media {min-height:0;max-height:none;aspect-ratio: 4 / 3}
+  .shop-page .shop-coffee-media img {object-fit:cover}
+  .shop-page .shop-founder-image,.shop-page .shop-community-image {min-height:0!important}
+  .shop-page .shop-founder-image img,.shop-page .shop-community-image img {height:auto;object-fit:contain}
+  .shop-page .tea-ritual-media {min-height:0;aspect-ratio: 4 / 3}
+  .shop-page .tea-ritual-media img {object-fit:cover}
+  .shop-page .shop-blends-showcase {margin:25px auto 6px}
+  .shop-page .ritual-grid {gap:12px;margin-top:26px}
+  .shop-page .ritual-card {padding:20px}
+  .shop-page .order-grid {margin-top:27px}
+  .shop-page .order-card {padding:20px}
+  .shop-page .shop-faq-list {margin-top:24px}
+  .shop-page .shop-faq details {padding:18px 0}
+  .shop-page .shop-final h2 {font-size:clamp(2.6rem,10vw,4rem)}
+  /* Existing global fixed CTA remains available but never obscures page text. */
+  body.shop-page {padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+  body.shop-page .mobile-sticky-cta {position:fixed;z-index:100;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));width:auto;max-width:none;margin:0;padding:0;background:transparent;box-shadow:none;transition:opacity .2s ease,transform .2s ease,visibility .2s ease}
+  body.shop-page .mobile-sticky-cta a {display:flex;justify-content:center;align-items:center;width:100%;min-height:49px;padding:11px 16px;border:1px solid rgba(244,216,138,.45);border-radius:999px;background:#103c25;color:#f4d88a;font-size:.8rem;font-weight:800;letter-spacing:.1em;box-shadow:0 5px 20px rgba(0,0,0,.16);text-decoration:none}
+  body.shop-page .mobile-sticky-cta.shop-sticky-hidden {opacity:0;visibility:hidden;transform:translateY(15px);pointer-events:none}
+  .shop-page .shop-jump-nav {padding:10px 12px}
+  .shop-page .shop-jump-inner a {min-height:34px}
+}
+@media(max-width:380px){.shop-page .shop-pathway {padding:13px 10px;min-height:157px}.shop-page .shop-pathway strong{font-size:.92rem}.shop-page .shop-hero h1{font-size:2.55rem}}
+@media(prefers-reduced-motion:reduce){body.shop-page .mobile-sticky-cta{transition:none}}
+</style>
 </head>
 <body class="shop-page" id="top">
 <!-- ======================================================
@@ -1489,7 +1556,7 @@
           Pre-Order For £19.99
         </a>
 </div>
-<p class="shop-facts-note">What you receive: five individually wrapped sachets of each blend (25 sachets total). Ingredients vary by blend. This is a herbal tea collection, not a medical treatment.</p></section><section aria-labelledby="coffeeTitle" class="shop-coffee-section" id="coffee-early-access"><div class="shop-coffee-media"><img alt="RastaRoots Discovery Collection herbal tea gift box displayed alongside Ethiopian coffee" decoding="async" loading="lazy" src="./assets/shop/shop-tea-coffee-gifting.webp"/></div><div class="shop-coffee-copy"><p class="section-kicker">COMING SOON · ETHIOPIAN COFFEE</p><h2 id="coffeeTitle">From Ethiopia.<br/>Rooted in ritual.</h2><p>Meet RastaRoots Coffee: 100% Ethiopian Arabica instant coffee, inspired by the roots of coffee culture. Crafted for the moments that bring us together.</p><div class="shop-coffee-price"><strong>£19.99</strong><span>Planned retail price · Not available to order yet</span></div><p>Be first to hear when coffee launches. Register your interest for product news and early-access updates.</p><form class="shop-coffee-form" data-mailchimp-action="" id="shopCoffeeInterest" novalidate=""><label for="shopCoffeeEmail">Email address</label><div class="shop-coffee-form-row"><input autocomplete="email" id="shopCoffeeEmail" name="EMAIL" placeholder="you@example.com" required="" type="email"/><button class="btn btn-primary" type="submit">Register Interest →</button></div><label class="shop-coffee-consent"><input id="shopCoffeeConsent" required="" type="checkbox"/><span>I'd like to receive RastaRoots coffee launch news and occasional marketing emails. I can unsubscribe at any time.</span></label><p aria-live="polite" class="shop-coffee-feedback" id="shopCoffeeFeedback" role="status"></p></form><p class="shop-coffee-small">Coffee is coming soon and is not included in the £19.99 tea Discovery Collection. <a href="./privacy.html">Privacy policy</a>.</p></div></section>
+<p class="shop-facts-note">What you receive: five individually wrapped sachets of each blend (25 sachets total). Ingredients vary by blend. This is a herbal tea collection, not a medical treatment.</p></section><section aria-labelledby="coffeeTitle" class="shop-coffee-section" id="coffee-early-access"><div class="shop-coffee-media"><img alt="RastaRoots Discovery Collection herbal tea gift box displayed alongside Ethiopian coffee" decoding="async" loading="lazy" src="./assets/shop/shop-tea-coffee-gifting.webp"/></div><div class="shop-coffee-copy"><p class="section-kicker">COMING SOON · ETHIOPIAN COFFEE</p><h2 id="coffeeTitle">From Ethiopia.<br/>Rooted in ritual.</h2><p>Meet RastaRoots Coffee: 100% Ethiopian Arabica instant coffee, inspired by the roots of coffee culture. Crafted for the moments that bring us together.</p><div class="shop-coffee-price"><strong>£19.99</strong><span>Planned retail price · Not available to order yet</span></div><p>Be first to hear when coffee launches. Join our Know Your Rootz signup for product news and early-access updates.</p><div class="shop-coffee-form"><a class="btn btn-primary" data-coffee-early-access-link href="https://www.rastarootslife.com/index.html#know-your-rootz" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;max-width:100%;">JOIN COFFEE EARLY ACCESS →</a><p class="shop-coffee-small" style="margin-top:12px;">Continue to our Know Your Rootz signup on the RastaRoots homepage to register your interest.</p></div><p class="shop-coffee-small">Coffee is coming soon and is not included in the £19.99 tea Discovery Collection. <a href="./privacy.html">Privacy policy</a>.</p></div></section>
 <!-- ====================================================
          FOUNDER OFFER
     ===================================================== -->
@@ -2219,31 +2286,39 @@
       var faq=ev.target.closest('.shop-faq summary');
       if(faq)track('shop_faq_open',{question:label(faq)});
     });
-    var form=document.getElementById('shopCoffeeInterest');
-    if(form){
-      var feedback=document.getElementById('shopCoffeeFeedback');
-      form.addEventListener('submit',function(ev){
-        ev.preventDefault();
-        var email=document.getElementById('shopCoffeeEmail');
-        var consent=document.getElementById('shopCoffeeConsent');
-        if(!email.checkValidity()){email.reportValidity();return;}
-        if(!consent.checked){consent.reportValidity();return;}
-        var endpoint=(form.getAttribute('data-mailchimp-action')||'').trim();
-        track('shop_coffee_interest_intent',{signup_method:endpoint?'mailchimp':'email_draft'});
-        if(/^https:\/\/[^\s]+$/i.test(endpoint)){
-          // Mailchimp endpoint must be a verified list-specific hosted action.
-          form.action=endpoint;form.method='POST';form.submit();return;
-        }
-        if(feedback)feedback.textContent='Mailchimp signup is not connected yet. Your email app will open with a message you can choose to send. You have not been subscribed automatically.';
-        var subject=encodeURIComponent('RastaRoots Coffee Early Access Interest');
-        var body=encodeURIComponent('Please register my interest in RastaRoots Coffee launch updates.\nEmail: '+email.value+'\nI agree to receive marketing updates and understand I can unsubscribe.');
-        location.href='mailto:hello@rastarootslife.com?subject='+subject+'&body='+body;
-      });
-    }
+    var coffeeLink=document.querySelector('[data-coffee-early-access-link]');
+    if(coffeeLink){coffeeLink.addEventListener('click',function(){track('shop_coffee_interest_intent',{signup_method:'homepage_know_your_rootz',destination:coffeeLink.href});});}
     if('IntersectionObserver' in window){
       var seen={};var obs=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){var id=entry.target.id||entry.target.className.split(' ')[0];if(!seen[id]){seen[id]=true;track('shop_section_view',{section:id});}obs.unobserve(entry.target);}});},{threshold:0.35});
       document.querySelectorAll('#included,#coffee-early-access,#rituals,#tea-ritual-story,#shop-faqs').forEach(function(el){obs.observe(el);});
     }
   });
-})();</script></body>
+})();</script>
+<script id="shop-v615-sticky-behaviour">
+(function(){
+  'use strict';
+  document.addEventListener('DOMContentLoaded',function(){
+    var bar=document.querySelector('body.shop-page .mobile-sticky-cta');
+    if(!bar)return;
+    var mobile=window.matchMedia('(max-width: 780px)');
+    var targets=Array.from(document.querySelectorAll('.shop-hero .hero-actions a[data-preorder-link], .shop-discovery-cta a[data-preorder-link], #included .hero-actions a[data-preorder-link], .shop-final a[data-preorder-link]'));
+    function update(){
+      if(!mobile.matches){bar.classList.remove('shop-sticky-hidden');return;}
+      var viewportH=window.innerHeight||document.documentElement.clientHeight;
+      var visible=targets.some(function(el){
+        var r=el.getBoundingClientRect();
+        return r.width>0&&r.height>0&&r.top<viewportH-80&&r.bottom>85;
+      });
+      bar.classList.toggle('shop-sticky-hidden',visible);
+    }
+    var scheduled=false;
+    function requestUpdate(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;update();});}
+    window.addEventListener('scroll',requestUpdate,{passive:true});
+    window.addEventListener('resize',requestUpdate,{passive:true});
+    if(mobile.addEventListener)mobile.addEventListener('change',update);
+    update();
+  });
+})();
+</script>
+</body>
 </html>
