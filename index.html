@@ -1112,7 +1112,17 @@ html{scroll-padding-top:90px}section[id],div[id="about-rastaroots"]{scroll-margi
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
 <style>/* V619 British herbal tea discovery — homepage only */
-.uk-tea-discovery{background:#fffaf0;color:#123d2b;padding:clamp(55px,7vw,100px) 22px}.uk-tea-inner{max-width:1190px;margin:auto}.uk-tea-discovery h2{font-family:Georgia,serif;font-size:clamp(2.1rem,4.5vw,3.8rem);line-height:1.1;max-width:800px;margin:12px 0 22px;color:#0e3b29}.uk-tea-discovery p{line-height:1.75}.uk-tea-inner>p:not(.section-kicker){max-width:850px}.uk-tea-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:34px 0}.uk-tea-grid article{border:1px solid #ddd1b9;border-radius:18px;background:#fff;padding:26px;box-shadow:0 12px 32px rgba(12,46,30,.05)}.uk-tea-grid h3{font:700 clamp(1.3rem,2vw,1.65rem)/1.2 Georgia,serif;color:#123d2b;margin:0 0 12px}.uk-tea-grid a,.uk-tea-signup{color:#14613f;font-weight:800;text-underline-offset:4px}.uk-tea-cta{display:flex;align-items:center;justify-content:space-between;gap:25px;background:#0d3525;color:#fff7e6;border-radius:20px;padding:28px}.uk-tea-cta p{max-width:690px;margin:0;color:#fff7e6}.uk-tea-cta>div{display:flex;flex-direction:column;align-items:flex-start;gap:12px;flex-shrink:0}.uk-tea-cta .uk-tea-signup{color:#f4d88a}.uk-tea-discovery a:focus-visible{outline:3px solid #b68a33;outline-offset:4px}@media(max-width:850px){.uk-tea-grid{grid-template-columns:1fr}.uk-tea-cta{flex-direction:column;align-items:stretch}.uk-tea-cta>div{align-items:stretch;text-align:center}.uk-tea-grid article{padding:23px}}</style></head>
+.uk-tea-discovery{background:#fffaf0;color:#123d2b;padding:clamp(55px,7vw,100px) 22px}.uk-tea-inner{max-width:1190px;margin:auto}.uk-tea-discovery h2{font-family:Georgia,serif;font-size:clamp(2.1rem,4.5vw,3.8rem);line-height:1.1;max-width:800px;margin:12px 0 22px;color:#0e3b29}.uk-tea-discovery p{line-height:1.75}.uk-tea-inner>p:not(.section-kicker){max-width:850px}.uk-tea-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:34px 0}.uk-tea-grid article{border:1px solid #ddd1b9;border-radius:18px;background:#fff;padding:26px;box-shadow:0 12px 32px rgba(12,46,30,.05)}.uk-tea-grid h3{font:700 clamp(1.3rem,2vw,1.65rem)/1.2 Georgia,serif;color:#123d2b;margin:0 0 12px}.uk-tea-grid a,.uk-tea-signup{color:#14613f;font-weight:800;text-underline-offset:4px}.uk-tea-cta{display:flex;align-items:center;justify-content:space-between;gap:25px;background:#0d3525;color:#fff7e6;border-radius:20px;padding:28px}.uk-tea-cta p{max-width:690px;margin:0;color:#fff7e6}.uk-tea-cta>div{display:flex;flex-direction:column;align-items:flex-start;gap:12px;flex-shrink:0}.uk-tea-cta .uk-tea-signup{color:#f4d88a}.uk-tea-discovery a:focus-visible{outline:3px solid #b68a33;outline-offset:4px}@media(max-width:850px){.uk-tea-grid{grid-template-columns:1fr}.uk-tea-cta{flex-direction:column;align-items:stretch}.uk-tea-cta>div{align-items:stretch;text-align:center}.uk-tea-grid article{padding:23px}}</style><style>
+/* V621: SEO topic hub, future links appear only when the destination exists */
+.rootz-topic-hub{max-width:1190px;margin:34px auto 0;padding:25px;border:1px solid #d9ceb0;border-radius:18px;background:#fffdf7}
+.rootz-topic-hub h3{font:700 clamp(1.3rem,2vw,1.7rem)/1.2 Georgia,serif;color:#103b2b;margin:0 0 10px}
+.rootz-topic-hub p{margin:0 0 15px;color:#244c37;line-height:1.6}
+.rootz-topic-links{display:flex;flex-wrap:wrap;gap:10px}
+.rootz-topic-links a{display:inline-flex;padding:11px 15px;border:1px solid #b8a87d;border-radius:999px;background:#fff;color:#145c3e;font:700 .85rem/1.3 Arial,sans-serif;text-decoration:none}
+.rootz-topic-links a:focus-visible{outline:3px solid #a87915;outline-offset:3px}
+.rootz-topic-links a[hidden]{display:none!important}
+</style>
+</head>
 <body class="home-v2" id="top">
 <!-- ======================================================
      ANNOUNCEMENT
@@ -1992,6 +2002,13 @@ html{scroll-padding-top:90px}section[id],div[id="about-rastaroots"]{scroll-margi
     </a>
 </div>
 </section>
+<!-- SEO landing-page roadmap (publish and internally link each only when live):
+     herbal-tea-uk.html — UK herbal tea shopping/discovery
+     caffeine-free-tea.html — caffeine-free botanical infusions
+     herbal-tea-gifts.html — herbal tea gifts and Discovery Collection
+     tea-rituals.html — tea rituals education (distinct from existing tea-ritual.html)
+     Do not add unverified sustainability claims or competitor comparisons.
+-->
 <!-- ======================================================
      SEARCH / ANSWER ENGINE
 ======================================================= -->
@@ -2000,12 +2017,12 @@ html{scroll-padding-top:90px}section[id],div[id="about-rastaroots"]{scroll-margi
 <h2 id="caribbean-tea-heading">Caribbean-inspired herbal tea, rooted in tradition.</h2>
 <p>Looking for <strong>Caribbean herbal tea</strong> or curious about <strong>Jamaican bush tea</strong>? RastaRoots brings Caribbean-inspired plant traditions into five modern herbal infusions. Built in Manchester, our blends bring together ingredients sourced from around the world, botanical education and a moment to slow down. They are inspired by heritage, not presented as traditional remedies or as plants exclusively grown in the Caribbean.</p>
 <div class="seo-discovery-grid">
-<article class="seo-discovery-card"><h3>What is Caribbean bush tea?</h3><p>Across the Caribbean, “bush tea” is a broad term for herbal infusions made using familiar leaves, roots and other plants. Recipes, preparation methods and meanings differ across islands and families. Explore how cerasee, ginger, sarsaparilla and sorrel feature in different traditions.</p><a data-track="seo-bush-tea-library" href="./herbal-library.html">Explore the herbal traditions →</a></article>
+<article class="seo-discovery-card"><h3>What is Caribbean bush tea?</h3><p>Across the Caribbean, “bush tea” is a broad term for herbal infusions made using familiar leaves, roots and other plants. Recipes, preparation methods and meanings differ across islands and families. Explore how cerasee, ginger, sarsaparilla and sorrel feature in different traditions.</p><a data-track="seo-bush-tea-guide" href="./caribbean-bush-tea.html">Discover Caribbean Bush Tea →</a></article>
 <article class="seo-discovery-card"><h3>Herbal tea blends in the UK</h3><p>Choose from five caffeine-free-by-ingredient herbal infusions: Roots Fire (ginger, lemongrass, mint), Bush Doctor (cerasee, bitter melon, moringa), Empress Bloom (hibiscus, mint, moringa), Iron Root (sarsaparilla, ginger, moringa) and Cool Mind (mint, lemongrass, hibiscus).</p><a data-track="seo-five-blends" href="#five-rituals">Compare the five tea rituals →</a></article>
 <article class="seo-discovery-card"><h3>Start with a herbal tea selection box</h3><p>Not sure which blend is yours? The RastaRoots Founder Discovery Collection brings together <strong>25 sachets across five blends</strong> for <strong>£19.99</strong>. Explore each ritual before choosing your favourite.</p><a data-track="seo-discovery-shop" href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">Explore the Discovery Collection →</a></article>
 </div>
 <h3>Explore herbs, flavour and traditional knowledge</h3><p>Our eight founding botanical guides cover the plant itself, its flavour, preparation, Caribbean and wider heritage, what researchers have studied and important safety considerations. Traditional use and preliminary research do not establish that a particular RastaRoots tea prevents or treats illness.</p>
-<nav aria-label="Explore RastaRoots herbal tea topics" class="seo-links"><a data-track="seo-herb-ginger" href="./herb-ginger.html">Ginger tea</a><a data-track="seo-herb-hibiscus" href="./herb-hibiscus.html">Hibiscus / sorrel tea</a><a data-track="seo-herb-cerasee" href="./herb-cerasee.html">Cerasee bush tea</a><a data-track="seo-herb-moringa" href="./herb-moringa.html">Moringa leaves</a><a data-track="seo-herb-sarsaparilla" href="./herb-sarsaparilla.html">Sarsaparilla root</a><a data-track="seo-herb-bitter-melon" href="./herb-bitter-melon.html">Bitter melon</a><a data-track="seo-herbal-library" href="./herbal-library.html">All eight free herb guides</a><a data-track="seo-tea-ritual" href="./tea-ritual.html">How to create a tea ritual</a></nav>
+<nav aria-label="Explore RastaRoots herbal tea topics" class="seo-links"><a data-track="seo-caribbean-bush-tea" href="./caribbean-bush-tea.html">Caribbean Bush Tea guide</a><a data-track="seo-herb-ginger" href="./herb-ginger.html">Ginger tea</a><a data-track="seo-herb-hibiscus" href="./herb-hibiscus.html">Hibiscus / sorrel tea</a><a data-track="seo-herb-cerasee" href="./herb-cerasee.html">Cerasee bush tea</a><a data-track="seo-herb-moringa" href="./herb-moringa.html">Moringa leaves</a><a data-track="seo-herb-sarsaparilla" href="./herb-sarsaparilla.html">Sarsaparilla root</a><a data-track="seo-herb-bitter-melon" href="./herb-bitter-melon.html">Bitter melon</a><a data-track="seo-herbal-library" href="./herbal-library.html">All eight free herb guides</a><a data-track="seo-tea-ritual" href="./tea-ritual.html">How to create a tea ritual</a></nav>
 <div class="seo-faq"><h3>Frequently asked questions about Caribbean herbal tea</h3>
 <details><summary>What is the difference between herbal tea and regular tea?</summary><p>Regular tea comes from the tea plant, <em>Camellia sinensis</em>. Herbal teas, also called herbal infusions or tisanes, use other plants such as hibiscus flowers, mint leaves or ginger root. Most herbal infusions made only from these botanicals are naturally caffeine-free.</p></details>
 <details><summary>Is Jamaican bush tea one specific recipe?</summary><p>No. “Bush tea” describes a range of plant-based infusions rather than one fixed recipe. The plants used and the knowledge passed down can differ by household, island and community. Cerasee is one plant associated with Jamaican bush-tea traditions.</p></details>
@@ -2014,6 +2031,21 @@ html{scroll-padding-top:90px}section[id],div[id="about-rastaroots"]{scroll-margi
 <details><summary>Which RastaRoots herbal tea should I try first?</summary><p>For a warming, spicy cup explore Roots Fire; for a bitter botanical tradition try Bush Doctor; for a floral infusion choose Empress Bloom; for an earthy root-led flavour explore Iron Root; and for a mint-forward cup try Cool Mind. The <a data-track="seo-faq-rituals" href="#five-rituals">five tea rituals</a> help you compare ingredients and flavour.</p></details>
 <details><summary>Can herbal tea replace medical treatment?</summary><p>No. Herbal tea is a beverage, not a substitute for diagnosis or treatment. Herbs can interact with medicines and may be unsuitable during pregnancy or for some health conditions. Consult an appropriate healthcare professional if you are unsure.</p></details>
 </div>
+<aside class="rootz-topic-hub" aria-labelledby="rootz-topic-title">
+<h3 id="rootz-topic-title">Explore the RastaRoots herbal tea guides</h3>
+<p>Explore Caribbean heritage, UK herbal tea, ingredients and tea rituals. New guides appear here as they are published.</p>
+<nav class="rootz-topic-links" aria-label="RastaRoots SEO topic guides">
+<a data-track="topic-caribbean-bush-tea" href="./caribbean-bush-tea.html">Caribbean Bush Tea</a>
+<a data-future-seo-link data-track="topic-herbal-tea-uk" href="./herbal-tea-uk.html" hidden>Herbal Tea UK</a>
+<a data-future-seo-link data-track="topic-caffeine-free-tea" href="./caffeine-free-tea.html" hidden>Caffeine-Free Tea</a>
+<a data-future-seo-link data-track="topic-herbal-tea-gifts" href="./herbal-tea-gifts.html" hidden>Herbal Tea Gifts</a>
+<a data-future-seo-link data-track="topic-tea-rituals" href="./tea-rituals.html" hidden>Tea Rituals Guide</a>
+<a data-future-seo-link data-track="topic-plant-based-tea-bags" href="./plant-based-tea-bags.html" hidden>Plant-Based Tea Bags</a>
+<a data-future-seo-link data-track="topic-pukka-tea-alternatives" href="./pukka-tea-alternatives.html" hidden>Herbal Tea Alternatives</a>
+<a href="./herbal-library.html">Herbal Library</a>
+<a href="./tea-ritual.html">Create Your Tea Ritual</a>
+</nav>
+</aside>
 <div class="seo-buy"><p><strong>Five blends. Twenty-five sachets. One place to start.</strong><br/>Explore the £19.99 Founder Discovery Collection.</p><a data-track="seo-final-preorder" href="https://shop.rastarootslife.com/products/rastaroots-discovery-collection">Pre-order the Discovery Collection →</a></div>
 </div></section><section class="answer-engine-section" id="about-rastaroots">
 <div class="section-heading center-heading">
@@ -2876,6 +2908,19 @@ document.addEventListener('click',function(e){var btn=e.target.closest('.guardia
     links.forEach(function(a){if(a.getAttribute('href')==='#'+visible[0].target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
   },{rootMargin:'-15% 0px -60% 0px',threshold:[0,.1,.4]});
   targets.forEach(function(t){observer.observe(t);});
+})();
+</script>
+<script>
+/* V621: activate future SEO links only after their same-origin pages return HTTP 200.
+   This prevents visitors reaching unpublished 404 pages; keep the sitemap updated separately. */
+(function(){
+  var links=document.querySelectorAll('[data-future-seo-link]');
+  links.forEach(function(link){
+    var url=link.getAttribute('href');
+    fetch(url,{method:'HEAD',cache:'no-store',credentials:'same-origin'})
+      .then(function(response){if(response.ok && response.status===200){link.hidden=false;}})
+      .catch(function(){/* Leave link hidden until the page is available. */});
+  });
 })();
 </script>
 </body>
