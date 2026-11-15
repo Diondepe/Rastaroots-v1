@@ -7629,3 +7629,125 @@ section {
  .home-v2 .home-conversion-grid--v612 .home-card-arrow { width:32px; height:32px; }
 }
 @media(max-width:380px){.home-v2 .home-hero-slide--discovery .home-hero-slide-content { padding-top:300px; }.home-v2 .home-hero-slide--discovery h1 { font-size:2.55rem; }}
+
+
+/* ==========================================================
+   QUICK ANSWER BOX (herb pages, V640)
+   Short, quotable summary under the hero for search + AI answers.
+========================================================== */
+
+.quick-answer-section {
+  padding: 56px var(--page-pad) 8px;
+  background: var(--cream-light);
+}
+
+.quick-answer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 36px 40px;
+  background: #fff;
+  border: 1px solid var(--line-gold);
+  border-left: 6px solid var(--gold);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.quick-answer-kicker {
+  margin: 0 0 6px;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.quick-answer h2 {
+  margin: 0 0 14px;
+  color: var(--green-dark);
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+}
+
+.quick-answer-lead {
+  margin: 0 0 26px;
+  color: var(--ink);
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.quick-answer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+}
+
+.quick-answer-card {
+  padding: 22px 24px;
+  background: var(--cream-light);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.quick-answer-card--safety {
+  background: #fff6ea;
+  border-color: var(--line-gold);
+}
+
+.quick-answer-card h3 {
+  margin: 0 0 12px;
+  color: var(--green-dark);
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+
+.quick-answer-card ul {
+  margin: 0 0 12px;
+  padding-left: 1.1em;
+}
+
+.quick-answer-card li {
+  margin-bottom: 8px;
+  line-height: 1.55;
+}
+
+.quick-answer-card a {
+  color: var(--green);
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+.quick-answer-card dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 14px;
+  margin: 0;
+}
+
+.quick-answer-card dt {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.quick-answer-card dd {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.quick-answer-meta {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 760px) {
+  .quick-answer {
+    padding: 26px 22px;
+  }
+
+  .quick-answer-grid {
+    grid-template-columns: 1fr;
+  }
+}
