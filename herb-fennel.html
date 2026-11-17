@@ -2369,6 +2369,123 @@
 
     </section>
 
+    <!-- ROOTZ LETTER SIGNUP -->
+    <section class="rl-signup visitor-only" aria-labelledby="rl-title">
+      <style>
+        .rl-signup{padding:8px 20px 40px}
+        .rl-card{max-width:880px;margin:0 auto;background:#103c25;color:#fff9ee;border-radius:18px;padding:32px 28px;border:1px solid rgba(182,138,51,.45);box-shadow:0 12px 32px rgba(6,23,14,.18)}
+        .rl-kicker{margin:0 0 6px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#f4d88a;font-weight:600}
+        .rl-card h2{margin:0 0 10px;font-family:Lora,Georgia,serif;font-size:clamp(1.5rem,3vw,2rem);line-height:1.2;color:#fff9ee}
+        .rl-lead{margin:0 0 20px;line-height:1.6;color:#f4ead7}
+        .rl-row{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:12px;margin-bottom:16px}
+        .rl-field label{display:block;font-size:.85rem;margin-bottom:4px;color:#f4ead7}
+        .rl-field input,.rl-field select{width:100%;box-sizing:border-box;padding:11px 12px;border-radius:10px;border:1px solid #b68a33;background:#fff9ee;color:#06170e;font-size:1rem}
+        .rl-card fieldset{border:0;padding:0;margin:0 0 16px}
+        .rl-card legend{font-size:.9rem;margin-bottom:8px;color:#f4d88a}
+        .rl-ticks{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 14px}
+        .rl-tick,.rl-consent{display:flex;gap:8px;align-items:flex-start;font-size:.92rem;line-height:1.4;cursor:pointer}
+        .rl-tick input,.rl-consent input{margin-top:3px;accent-color:#b68a33;width:16px;height:16px;flex:none}
+        .rl-consent{margin:0 0 18px;color:#f4ead7}
+        .rl-consent a{color:#f4d88a}
+        .rl-btn{background:#b68a33;color:#06170e;border:0;border-radius:999px;padding:13px 30px;font-weight:700;font-size:1rem;cursor:pointer}
+        .rl-btn:hover{background:#f4d88a}
+        .rl-btn[disabled]{opacity:.6;cursor:wait}
+        .rl-msg{margin:14px 0 0;min-height:1.2em;font-size:.95rem;color:#f4d88a}
+        .rl-hp{position:absolute;left:-5000px}
+        @media (max-width:720px){.rl-row{grid-template-columns:1fr}.rl-ticks{grid-template-columns:1fr 1fr}.rl-card{padding:26px 18px}}
+      </style>
+      <div class="rl-card">
+        <p class="rl-kicker">Free &middot; The Rootz Library</p>
+        <h2 id="rl-title">Unlock the full Herbal Library, free</h2>
+        <p class="rl-lead">Join free to open every botanical in full, download Field Guide 001 and start earning Rootz Points. You also get <strong>The Rootz Letter</strong> every Sunday: herbs, rituals, health and culture for the African-Caribbean diaspora.</p>
+        <form class="rl-form" action="https://rastaroots.us22.list-manage.com/subscribe/post?u=09f0153086ee649d8ae7ef310&amp;id=f0864e5b23&amp;f_id=00d0c3e1f0" method="post" target="_blank" novalidate>
+          <div class="rl-row">
+            <div class="rl-field"><label for="rl-fname">First name</label><input id="rl-fname" name="FNAME" type="text" autocomplete="given-name"></div>
+            <div class="rl-field"><label for="rl-email">Email address *</label><input id="rl-email" name="EMAIL" type="email" autocomplete="email" required></div>
+            <div class="rl-field"><label for="rl-country">Country</label>
+              <select id="rl-country" name="COUNTRY">
+            <option value="">Choose&hellip;</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Jamaica</option>
+            <option>Trinidad and Tobago</option>
+            <option>Barbados</option>
+            <option>Guyana</option>
+            <option>Grenada</option>
+            <option>St Lucia</option>
+            <option>Antigua and Barbuda</option>
+            <option>Bahamas</option>
+            <option>Nigeria</option>
+            <option>Ghana</option>
+            <option>Kenya</option>
+            <option>South Africa</option>
+            <option>Ethiopia</option>
+            <option>France</option>
+            <option>Netherlands</option>
+            <option>Germany</option>
+            <option>Ireland</option>
+            <option>Australia</option>
+            <option>Other</option>
+              </select></div>
+          </div>
+          <fieldset>
+            <legend>Want more of anything? Tick any that interest you (optional)</legend>
+            <div class="rl-ticks">
+          <label class="rl-tick"><input type="checkbox" name="group[16][1]" value="1"> Her Rootz (women's health)</label>
+          <label class="rl-tick"><input type="checkbox" name="group[16][2]" value="2"> His Rootz (men's health)</label>
+          <label class="rl-tick"><input type="checkbox" name="group[16][4]" value="4"> Move (exercise)</label>
+          <label class="rl-tick"><input type="checkbox" name="group[16][8]" value="8"> Still (meditation)</label>
+          <label class="rl-tick"><input type="checkbox" name="group[16][16]" value="16"> Travel and history</label>
+          <label class="rl-tick"><input type="checkbox" name="group[16][32]" value="32"> Future Rootz (AI, tech, climate)</label>
+            </div>
+          </fieldset>
+          <label class="rl-consent"><input type="checkbox" class="rl-ok" required> <span>Send me The Rootz Letter on Sundays and Library updates. Unsubscribe any time. See our <a href="/privacy.html">privacy policy</a>.</span></label>
+          <input type="hidden" name="SOURCE" value="herb-fennel">
+          <div class="rl-hp" aria-hidden="true"><input type="text" name="b_09f0153086ee649d8ae7ef310_f0864e5b23" tabindex="-1" value=""></div>
+          <button class="rl-btn" type="submit">Join free</button>
+          <p class="rl-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <script>
+      (function () {
+        var f = document.currentScript.parentNode.querySelector('.rl-form');
+        var msg = f.querySelector('.rl-msg'), btn = f.querySelector('.rl-btn');
+        f.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var email = f.EMAIL.value.trim();
+          if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.textContent = 'Please enter a valid email address.'; f.EMAIL.focus(); return; }
+          if (!f.querySelector('.rl-ok').checked) { msg.textContent = 'Please tick the box to agree to receive emails.'; return; }
+          btn.disabled = true; msg.textContent = 'Joining…';
+          var cb = 'rlcb' + Date.now(), done = false;
+          var q = Array.prototype.map.call(f.querySelectorAll('input[name],select[name]'), function (el) {
+            if (el.type === 'checkbox' && !el.checked) return '';
+            return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+          }).filter(Boolean).join('&');
+          var s = document.createElement('script');
+          function finish(ok, text) {
+            if (done) return; done = true; delete window[cb]; s.remove(); btn.disabled = false;
+            if (ok) {
+              msg.textContent = 'You are in. Opening the Library…';
+              setTimeout(function () { location.href = '/library-welcome.html'; }, 1200);
+            } else { msg.innerHTML = text; }
+          }
+          window[cb] = function (r) {
+            var t = (r && r.msg) || '';
+            if (r && r.result === 'success') return finish(true);
+            if (/already subscribed/i.test(t)) return finish(true);
+            finish(false, t.replace(/^\d+ - /, '') || 'Something went wrong. Please try again.');
+          };
+          s.src = 'https://rastaroots.us22.list-manage.com/subscribe/post-json?u=09f0153086ee649d8ae7ef310&id=f0864e5b23&f_id=00d0c3e1f0&c=' + cb + '&' + q;
+          s.onerror = function () { done = true; btn.disabled = false; f.submit(); };
+          setTimeout(function () { if (!done) { done = true; btn.disabled = false; f.submit(); } }, 10000);
+          document.body.appendChild(s);
+        });
+      })();
+      </script>
+    </section>
+
+
     <!-- ====================================================
          AT A GLANCE
     ===================================================== -->
