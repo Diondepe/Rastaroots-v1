@@ -97,6 +97,12 @@
     },
     {
       "@type": "Article",
+      "isAccessibleForFree": false,
+      "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": false,
+        "cssSelector": ".rr-gated"
+      },
       "@id": "https://www.rastarootslife.com/herb-guinea-hen-weed.html#article",
       "headline": "Guinea Hen Weed (Anamu): Uses, Cancer Claims Checked & Safety",
       "alternativeHeadline": "Guinea Hen Weed — Petiveria alliacea | RastaRoots Herbal Library",
@@ -2165,6 +2171,50 @@
 
   </style>
 
+<style>
+html:not(.rootz-member) .rr-preview{max-height:460px;overflow:hidden;position:relative}
+html:not(.rootz-member) .rr-preview::after{content:"";position:absolute;left:0;right:0;bottom:0;height:260px;background:linear-gradient(rgba(6,23,14,0),#06170e 85%);pointer-events:none}
+.rr-gate{background:#06170e;padding:0 20px 56px;margin-top:-1px}
+.rr-gcard{max-width:880px;margin:0 auto;background:#103c25;color:#fff9ee;border-radius:18px;padding:32px 30px;border:2px solid #b68a33}
+.rr-gbadge{display:inline-block;background:rgba(244,216,138,.15);color:#f4d88a;border-radius:999px;padding:6px 14px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.rr-gcard h2{margin:0 0 10px;font-family:Lora,Georgia,serif;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.2;color:#fff9ee}
+.rr-glead{margin:0 0 18px;color:#f4ead7;line-height:1.6}
+.rr-gbens{list-style:none;padding:0;margin:0 0 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+.rr-gbens li{display:flex;gap:10px;align-items:flex-start;line-height:1.45;color:#fff9ee}
+.rr-gbens li::before{content:"\2713";color:#f4d88a;font-weight:700}
+.rr-grow{display:grid;grid-template-columns:1fr 1.4fr;gap:12px;margin-bottom:12px}
+.rr-grow label{display:block;font-size:.85rem;margin-bottom:4px;color:#f4ead7}
+.rr-grow input{width:100%;box-sizing:border-box;padding:12px;border-radius:10px;border:1px solid #b68a33;background:#fff9ee;color:#06170e;font-size:1rem}
+.rr-gconsent{display:flex;gap:8px;align-items:flex-start;font-size:.9rem;line-height:1.45;margin:0 0 16px;color:#f4ead7;cursor:pointer}
+.rr-gconsent input{margin-top:3px;accent-color:#b68a33;width:16px;height:16px;flex:none}
+.rr-gconsent a{color:#f4d88a}
+.rr-gact{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.rr-gbtn{background:#b68a33;color:#06170e;border:0;border-radius:999px;padding:14px 32px;font-weight:700;font-size:1rem;cursor:pointer}
+.rr-gbtn:hover{background:#f4d88a}.rr-gbtn[disabled]{opacity:.6;cursor:wait}
+.rr-gsmall{font-size:.88rem;color:#f4ead7}
+.rr-gmsg{margin:12px 0 0;min-height:1.2em;color:#f4d88a}
+.rr-glocked{max-width:880px;margin:18px auto 0;color:#cfc6b3;font-size:.95rem}
+.rr-glocked p{margin:6px 0}.rr-glocked p:not(.rr-gintro)::before{content:"\1F512  ";}.rr-gintro{margin-bottom:8px!important;color:#f4d88a}
+.rr-hp{position:absolute;left:-5000px}
+.rr-corner .rr-card{max-width:760px;margin:0 auto 28px;background:#fff9ee;border:2px solid #b68a33;border-radius:18px;padding:26px 28px;color:#06170e}
+.rr-card h3{margin:0 0 4px;font-family:Lora,Georgia,serif;font-size:1.6rem}
+.rr-card .rr-lat{font-style:italic;color:#706f67;margin:0 0 14px}
+.rr-card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0 0 16px}
+.rr-card dt{font-weight:700}.rr-card dd{margin:0}
+.rr-card h4{margin:14px 0 6px;font-size:1rem;text-transform:uppercase;letter-spacing:.06em;color:#103c25}
+.rr-card ol,.rr-card ul{margin:0;padding-left:20px;line-height:1.55}
+.rr-card .rr-foot{margin-top:14px;font-size:.8rem;color:#706f67}
+.rr-print{background:#103c25;color:#fff9ee;border:0;border-radius:999px;padding:11px 24px;font-weight:700;cursor:pointer;display:block;margin:0 auto 34px}
+.rr-recipes{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1000px;margin:0 auto}
+.rr-recipe{background:#fff;border:1px solid #e5d9bf;border-radius:16px;padding:22px 24px}
+.rr-recipe h3{margin:0 0 4px;font-family:Lora,Georgia,serif;font-size:1.3rem;color:#06170e}
+.rr-recipe .rr-serves{color:#706f67;font-size:.9rem;margin:0 0 12px}
+.rr-recipe h4{margin:12px 0 6px;font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:#103c25}
+.rr-recipe ul,.rr-recipe ol{margin:0;padding-left:20px;line-height:1.55;color:#4f574f}
+.rr-recipe .rr-tip{margin:12px 0 0;font-size:.92rem;color:#103c25;background:#f4ead7;border-radius:10px;padding:10px 12px}
+@media (max-width:720px){.rr-gbens,.rr-grow,.rr-recipes{grid-template-columns:1fr}.rr-gcard{padding:26px 18px}}
+@media print{body.rr-printing *{visibility:hidden}body.rr-printing .rr-card,body.rr-printing .rr-card *{visibility:visible}body.rr-printing .rr-card{position:absolute;left:0;top:0;border:2px solid #b68a33}}
+</style>
 </head>
 
 <body id="top">
@@ -2771,7 +2821,9 @@
       </div>
     </section>
 
-    <!-- ====================================================
+    <!-- RR MEMBER GATE -->
+    <div class="rr-gated rr-preview">
+<!-- ====================================================
          HERITAGE
     ===================================================== -->
 
@@ -2994,6 +3046,86 @@
       </div>
     </section>
 
+        </div>
+
+    <section class="rr-gate visitor-only" id="unlock" aria-labelledby="rr-gtitle">
+      <div class="rr-gcard">
+        <span class="rr-gbadge">Free Rootz Library membership</span>
+        <h2 id="rr-gtitle">Unlock the full Guinea Hen Weed guide, free</h2>
+        <p class="rr-glead">Join the Rootz Library and the rest of this page opens straight away, along with every other herb guide in the Library.</p>
+        <ul class="rr-gbens">
+          <li>Guinea Hen Weed’s heritage story and journey map</li>
+          <li>What the research really shows, in plain English</li>
+          <li>A printable Guinea Hen Weed herb card</li>
+          <li>The Test Your Rootz quiz and Seed-to-Elder points</li>
+          <li>The Rootz Letter every Sunday</li>
+          <li>Field Guide 001, free to download</li>
+        </ul>
+        <form class="rr-gform" action="https://rastaroots.us22.list-manage.com/subscribe/post?u=09f0153086ee649d8ae7ef310&amp;id=f0864e5b23&amp;f_id=00d0c3e1f0" method="post" target="_blank" novalidate>
+          <div class="rr-grow">
+            <div><label for="rr-gfname">First name</label><input id="rr-gfname" name="FNAME" type="text" autocomplete="given-name"></div>
+            <div><label for="rr-gemail">Email address *</label><input id="rr-gemail" name="EMAIL" type="email" autocomplete="email" required></div>
+          </div>
+          <label class="rr-gconsent"><input type="checkbox" class="rr-gok" required> <span>Send me The Rootz Letter on Sundays and Library updates. Unsubscribe any time. See our <a href="/privacy.html">privacy policy</a>.</span></label>
+          <input type="hidden" name="SOURCE" value="gate-guinea-hen-weed">
+          <div class="rr-hp" aria-hidden="true"><input type="text" name="b_09f0153086ee649d8ae7ef310_f0864e5b23" tabindex="-1" value=""></div>
+          <div class="rr-gact">
+            <button class="rr-gbtn" type="submit">Unlock the guide</button>
+            <span class="rr-gsmall">Free &middot; One email a week &middot; Already a member? Enter the same email to unlock.</span>
+          </div>
+          <p class="rr-gmsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="rr-glocked">
+      <p class="rr-gintro">Inside the full guide:</p>
+      <p>A Jamaican bush remedy.</p>
+      <p>Where the plant comes from. Where the tradition travelled.</p>
+      <p>Where researchers have looked.</p>
+      <p>Big claims. Lab-only evidence.</p>
+      </div>
+      <script>
+      (function () {
+        var f = document.currentScript.parentNode.querySelector('.rr-gform');
+        var msg = f.querySelector('.rr-gmsg'), btn = f.querySelector('.rr-gbtn');
+        function unlock() {
+          try { localStorage.setItem('rootzLibraryMember', 'true'); localStorage.setItem('rootzLibraryAccess', 'granted');
+                 if (!localStorage.getItem('rootzLibraryJoinedAt')) localStorage.setItem('rootzLibraryJoinedAt', new Date().toISOString()); } catch (e) {}
+          try { ['rootzLibraryMember=true', 'rootzLibraryAccess=granted'].forEach(function (c) {
+                 document.cookie = c + '; Max-Age=31536000; Path=/; Domain=.rastarootslife.com; SameSite=Lax; Secure'; }); } catch (e) {}
+          document.documentElement.classList.add('rootz-member'); window.rootzLibraryIsMember = true;
+          try { gtag('event', 'rootz_unlock', { herb: 'guinea-hen-weed' }); } catch (e) {}
+          var h = document.getElementById('heritage'); if (h) h.scrollIntoView({ behavior: 'smooth' });
+        }
+        f.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var email = f.EMAIL.value.trim();
+          if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.textContent = 'Enter a valid email address.'; f.EMAIL.focus(); return; }
+          if (!f.querySelector('.rr-gok').checked) { msg.textContent = 'Tick the box to join and unlock the guide.'; return; }
+          btn.disabled = true; msg.textContent = 'Unlocking…';
+          var cb = 'rrgcb' + Date.now(), done = false, s = document.createElement('script');
+          var q = Array.prototype.map.call(f.querySelectorAll('input[name]'), function (el) {
+            if (el.type === 'checkbox' && !el.checked) return '';
+            return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+          }).filter(Boolean).join('&');
+          function finish(ok, text) {
+            if (done) return; done = true; try { delete window[cb]; } catch (e) {} s.remove(); btn.disabled = false;
+            if (ok) { msg.textContent = 'Unlocked. Welcome to the Rootz Library.'; unlock(); } else { msg.innerHTML = text; }
+          }
+          window[cb] = function (r) {
+            var t = (r && r.msg) || '';
+            if (r && r.result === 'success') return finish(true);
+            if (/already subscribed/i.test(t)) return finish(true);
+            finish(false, t.replace(/^\d+ - /, '') || 'Something went wrong. Try again.');
+          };
+          s.src = 'https://rastaroots.us22.list-manage.com/subscribe/post-json?u=09f0153086ee649d8ae7ef310&id=f0864e5b23&f_id=00d0c3e1f0&c=' + cb + '&' + q;
+          s.onerror = function () { done = true; btn.disabled = false; f.submit(); unlock(); };
+          setTimeout(function () { if (!done) { done = true; btn.disabled = false; f.submit(); unlock(); } }, 10000);
+          document.body.appendChild(s);
+        });
+      })();
+      </script>
+    </section>
+
     <!-- ====================================================
          THREE TRUTHS
     ===================================================== -->
@@ -3188,6 +3320,43 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    
+    <section id="members-corner" class="botanical-section section-cream member-only rr-gated rr-corner">
+      <div class="botanical-container">
+        <div class="botanical-heading center">
+          <p class="botanical-kicker">Members’ corner</p>
+          <h2>Your Guinea Hen Weed herb card</h2>
+          <p>Print it, stick it on the cupboard door, or keep it with your tea.</p>
+        </div>
+        <div class="rr-card" id="rr-card">
+          <h3>Guinea Hen Weed</h3>
+          <p class="rr-lat">Petiveria alliacea &middot; Garlicky • Pungent • Earthy</p>
+          <dl>
+          <dt>Plant</dt><dd>Petiveria alliacea (leaves and root)</dd>
+          <dt>Taste</dt><dd>Garlicky, pungent</dd>
+          <dt>Also called</dt><dd>Garlic weed, gully root, anamu</dd>
+          <dt>Native to</dt><dd>The Caribbean and tropical Americas</dd>
+          </dl>
+          <h4>How to make it</h4>
+          <ol>
+          <li>Wash: 3–4 fresh leaves or 1 tsp dried.</li>
+          <li>Pour: 250 ml just-boiled water.</li>
+          <li>Steep: 5–10 minutes.</li>
+          <li>Limit: Occasional; not in pregnancy.</li>
+          </ol>
+          <h4>Take care</h4>
+          <ul>
+          <li>Never use it instead of cancer treatment, or without telling your cancer team.</li>
+          <li>Avoid it in pregnancy; it has been used traditionally to cause miscarriage.</li>
+          <li>It may thin the blood and lower blood sugar; take care with medicines.</li>
+          <li>There is little human safety data.</li>
+          </ul>
+          <p class="rr-foot">RastaRoots Herbal Library &middot; rastarootslife.com/herb-guinea-hen-weed.html &middot; Educational, not medical advice.</p>
+        </div>
+        <button class="rr-print" type="button" onclick="document.body.classList.add('rr-printing');window.print();setTimeout(function(){document.body.classList.remove('rr-printing')},500)">Print herb card</button>
       </div>
     </section>
 
@@ -3582,7 +3751,7 @@
 
     <section
       id="field-archive"
-      class="botanical-section section-dark member-only"
+      class="botanical-section section-dark member-only rr-gated"
     >
 
       <div class="botanical-container">
@@ -3717,7 +3886,7 @@
          KNOWLEDGE CHECK
     ===================================================== -->
 
-    <section id="test-your-rootz" class="botanical-section knowledge-section member-only">
+    <section id="test-your-rootz" class="botanical-section knowledge-section member-only rr-gated">
       <div class="knowledge-shell">
         <div class="knowledge-intro">
           <p class="botanical-kicker">
@@ -3879,7 +4048,7 @@
     ===================================================== -->
 
     <section
-      class="botanical-section section-cream member-only"
+      class="botanical-section section-cream member-only rr-gated"
     >
 
       <div class="botanical-container">
