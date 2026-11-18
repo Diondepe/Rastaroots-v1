@@ -135,7 +135,7 @@
        GOOGLE ANALYTICS 4
   ======================================================= -->
 
-  <script>/* Consent Mode v2 defaults: analytics off until the visitor accepts */window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var c=null;try{c=localStorage.getItem('rrCookieConsent')}catch(e){}gtag('consent','default',{analytics_storage:c==='granted'?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});})();</script>
+  <script>/* Consent Mode v2 defaults: analytics on unless the visitor has turned it off in Cookie settings; no advertising */window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var c=null;try{c=localStorage.getItem('rrCookieConsent')}catch(e){}gtag('consent','default',{analytics_storage:c==='denied'?'denied':'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});})();</script>
 <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
@@ -2356,7 +2356,7 @@
 
   <script src="./script.js?v=601"></script>
 
-<script src="/assets/cookie-consent.js?v=2" defer></script>
+<script src="/assets/cookie-consent.js?v=3" defer></script>
 </body>
 
 </html>
