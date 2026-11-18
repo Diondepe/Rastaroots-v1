@@ -2214,6 +2214,30 @@
   .lib-empty{display:none;text-align:center;padding:30px;font-weight:700;color:#354036}
   .herb-card[hidden]{display:none!important}
   @media(max-width:720px){.lib-filter-label{min-width:100%}}
+  /* Compact library grid (18 Nov) */
+  #libGrid.herb-grid{grid-template-columns:repeat(5,1fr);gap:16px}
+  #libGrid .herb-card{min-height:0;border-radius:18px}
+  #libGrid .herb-card:hover{transform:translateY(-3px)}
+  #libGrid .herb-image{height:auto;aspect-ratio:4/5}
+  #libGrid .herb-image img{width:100%;height:100%;object-fit:cover;display:block}
+  #libGrid .herb-content{padding:12px 14px 14px}
+  #libGrid .herb-content h3{font-size:1.15rem;margin:0 0 2px;line-height:1.15}
+  #libGrid .herb-latin{font-size:.8rem;margin:0 0 6px}
+  #libGrid .herb-flavour{font-size:.68rem;letter-spacing:.08em;margin:0 0 8px}
+  #libGrid .herb-cta{font:800 .78rem Arial,Helvetica,sans-serif;color:#103c25;letter-spacing:.04em}
+  #libGrid.lib-collapsed .herb-card.lib-extra{display:none}
+  .lib-more{display:block;margin:22px auto 0;padding:13px 26px;border-radius:999px;border:1px solid #103c25;background:#103c25;color:#fff9ee;font:800 .95rem Arial,Helvetica,sans-serif;cursor:pointer}
+  .lib-more[hidden]{display:none}
+  @media(max-width:1100px){#libGrid.herb-grid{grid-template-columns:repeat(4,1fr)}}
+  @media(max-width:820px){#libGrid.herb-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:560px){
+    #libGrid.herb-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+    #libGrid .herb-content h3{font-size:1.02rem}
+    .lib-filter-row{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:none}
+    .lib-filter-row::-webkit-scrollbar{display:none}
+    .lib-filter-label{min-width:auto!important;flex:0 0 auto}
+    .lib-chip{flex:0 0 auto;white-space:nowrap}
+  }
 </style>
 <div class="library-container">
 <div class="library-heading">
@@ -2238,2269 +2262,229 @@
 </div>
 <p style="margin:0 0 28px;font-weight:700;">Brewing guides: <a href="./how-to-make-herbal-tea.html">How to make herbal tea →</a> &nbsp;·&nbsp; <a href="./sorrel-drink-recipe.html">Jamaican sorrel drink recipe →</a> &nbsp;·&nbsp; <a href="./rootz-letter.html">New herbs every Sunday in The Rootz Letter →</a></p>
 <div aria-label="All RastaRoots herbal tea guides" class="herb-grid" id="libGrid">
-<!-- 01 GINGER -->
 <a class="herb-card botanical-card" data-herb="ginger" data-use="digest cold" data-flavour="warm" data-heritage="caribbean global" data-herb-name="Ginger" href="./herb-ginger.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 01
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1024" height="1536" alt="Fresh ginger rhizomes and green ginger plant" decoding="async" loading="lazy" src="./assets/botanicals/botanical-ginger.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Ginger</h3>
-<div class="herb-latin">
-                Zingiber officinale
-              </div>
-<div class="herb-flavour">
-                Warming • Spicy • Aromatic
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Stomach: nausea and queasiness research</li>
-<li>Digestion: gastric comfort and motility</li>
-<li>Joints: osteoarthritis pain research</li>
-<li>Muscles: post-exercise soreness studies</li>
-<li>Everyday ritual: warming, caffeine-free tea</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Roots Fire</span>
-<span>Iron Root</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Ginger →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fresh ginger rhizomes and green ginger plant" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/ginger.webp?v=1"/></div>
+<div class="herb-content"><h3>Ginger</h3><div class="herb-latin">Zingiber officinale</div><div class="herb-flavour">Warming • Spicy • Aromatic</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 02 LEMONGRASS -->
 <a class="herb-card botanical-card" data-herb="lemongrass" data-use="calm digest" data-flavour="citrus" data-heritage="caribbean" data-herb-name="Lemongrass" href="./herb-lemongrass.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 02
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1024" height="1536" alt="Fresh lemongrass leaves and stalks" decoding="async" loading="lazy" src="./assets/botanicals/botanical-lemongrass.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Lemongrass</h3>
-<div class="herb-latin">
-                Cymbopogon species
-              </div>
-<div class="herb-flavour">
-                Citrusy • Fresh • Grassy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Digestion: traditional after-meal infusions</li>
-<li>Mind: calming evening tea traditions</li>
-<li>Sleep: bedtime rituals and relaxation</li>
-<li>Mouth: aromatic freshness and hygiene research</li>
-<li>Cells: antioxidant compounds studied in laboratories</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Roots Fire</span>
-<span>Cool Mind</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Lemongrass →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fresh lemongrass leaves and stalks" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/lemongrass.webp?v=1"/></div>
+<div class="herb-content"><h3>Lemongrass</h3><div class="herb-latin">Cymbopogon species</div><div class="herb-flavour">Citrusy • Fresh • Grassy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 03 MINT -->
 <a class="herb-card botanical-card" data-herb="mint" data-use="digest everyday" data-flavour="fresh" data-heritage="caribbean global" data-herb-name="Mint" href="./herb-mint.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 03
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1023" height="1537" alt="Fresh green mint leaves" decoding="async" loading="lazy" src="./assets/botanicals/botanical-mint.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Mint</h3>
-<div class="herb-latin">
-                Mentha spicata
-              </div>
-<div class="herb-flavour">
-                Cooling • Clean • Fresh
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Digestion: traditional after-meal tea</li>
-<li>Stomach: bloating and digestive comfort traditions</li>
-<li>Breath: freshening aromatic rituals</li>
-<li>Mind: cooling, refreshing sensory experience</li>
-<li>Evening routine: naturally caffeine-free infusion</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Roots Fire</span>
-<span>Empress Bloom</span>
-<span>Cool Mind</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Mint →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fresh green mint leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/mint.webp?v=1"/></div>
+<div class="herb-content"><h3>Mint</h3><div class="herb-latin">Mentha spicata</div><div class="herb-flavour">Cooling • Clean • Fresh</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 04 CERASEE -->
 <a class="herb-card botanical-card" data-herb="cerasee" data-use="digest heart" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Cerasee" href="./herb-cerasee.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 04
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1023" height="1537" alt="Cerasee vine and leaves" decoding="async" loading="lazy" src="./assets/botanicals/botanical-cerasee.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Cerasee</h3>
-<div class="herb-latin">
-                Momordica charantia
-              </div>
-<div class="herb-flavour">
-                Bitter • Green • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Blood sugar: traditional use and early research</li>
-<li>Digestion: bitter bush-tea traditions</li>
-<li>Skin: traditional wash and bathing practices</li>
-<li>Metabolism: studies of bitter plant compounds</li>
-<li>Heritage: Jamaican household bush-tea knowledge</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Bush Doctor</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Cerasee →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Cerasee vine and leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/cerasee.webp?v=1"/></div>
+<div class="herb-content"><h3>Cerasee</h3><div class="herb-latin">Momordica charantia</div><div class="herb-flavour">Bitter • Green • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 05 BITTER MELON -->
 <a class="herb-card botanical-card" data-herb="bitter-melon" data-use="digest heart" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Bitter Melon" href="./herb-bitter-melon.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 05
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1023" height="1537" alt="Bitter melon fruit and green vine" decoding="async" loading="lazy" src="./assets/botanicals/botanical-bitter-melon.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Bitter Melon</h3>
-<div class="herb-latin">
-                Momordica charantia
-              </div>
-<div class="herb-flavour">
-                Bitter • Vegetal • Bold
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Blood glucose: human studies with mixed findings</li>
-<li>Metabolism: insulin-response research</li>
-<li>Gut: traditional bitter-food practices</li>
-<li>Nutrition: fruit as a vegetable in meals</li>
-<li>Plant science: fruit versus leaf and extract research</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Bush Doctor</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Bitter Melon →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Bitter melon fruit and green vine" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/bitter-melon.webp?v=1"/></div>
+<div class="herb-content"><h3>Bitter Melon</h3><div class="herb-latin">Momordica charantia</div><div class="herb-flavour">Bitter • Vegetal • Bold</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 06 MORINGA -->
 <a class="herb-card botanical-card" data-herb="moringa" data-use="everyday" data-flavour="earthy" data-heritage="african caribbean" data-herb-name="Moringa" href="./herb-moringa.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 06
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1023" height="1537" alt="Moringa leaves and botanical plant" decoding="async" loading="lazy" src="./assets/botanicals/botanical-moringa.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Moringa</h3>
-<div class="herb-latin">
-                Moringa oleifera
-              </div>
-<div class="herb-flavour">
-                Leafy • Mild • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Nutrition: leaf protein and micronutrients</li>
-<li>Iron: dietary iron content of leaves</li>
-<li>Bones: calcium content of dried leaves</li>
-<li>Metabolism: blood-glucose research</li>
-<li>Daily diet: nutrient-rich leafy food traditions</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Bush Doctor</span>
-<span>Empress Bloom</span>
-<span>Iron Root</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Moringa →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Moringa leaves and botanical plant" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/moringa.webp?v=1"/></div>
+<div class="herb-content"><h3>Moringa</h3><div class="herb-latin">Moringa oleifera</div><div class="herb-flavour">Leafy • Mild • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 07 HIBISCUS -->
 <a class="herb-card botanical-card" data-herb="hibiscus" data-use="heart everyday" data-flavour="floral" data-heritage="caribbean african" data-herb-name="Hibiscus / Sorrel" href="./herb-hibiscus.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 07
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1023" height="1537" alt="Red hibiscus or sorrel calyces" decoding="async" loading="lazy" src="./assets/botanicals/botanical-hibiscus.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Hibiscus / Sorrel</h3>
-<div class="herb-latin">
-                Hibiscus sabdariffa
-              </div>
-<div class="herb-flavour">
-                Tart • Floral • Bright
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Heart: blood-pressure studies of hibiscus tea</li>
-<li>Blood vessels: cardiovascular research</li>
-<li>Hydration: tart, caffeine-free drinks</li>
-<li>Cells: anthocyanins and antioxidant research</li>
-<li>Lifestyle: Caribbean sorrel drink traditions</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Empress Bloom</span>
-<span>Cool Mind</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Hibiscus →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Red hibiscus or sorrel calyces" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/hibiscus.webp?v=1"/></div>
+<div class="herb-content"><h3>Hibiscus / Sorrel</h3><div class="herb-latin">Hibiscus sabdariffa</div><div class="herb-flavour">Tart • Floral • Bright</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 08 SARSAPARILLA -->
 <a class="herb-card botanical-card" data-herb="sarsaparilla" data-use="everyday" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Sarsaparilla" href="./herb-sarsaparilla.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 08
-              </span>
-<span class="herb-live">
-                Live
-              </span>
-<img width="1023" height="1537" alt="Sarsaparilla root and botanical plant" decoding="async" loading="lazy" src="./assets/botanicals/botanical-sarsaparilla.webp?v=610"/>
-</div>
-<div class="herb-content">
-<h3>Sarsaparilla</h3>
-<div class="herb-latin">
-                Smilax ornata
-              </div>
-<div class="herb-flavour">
-                Rooty • Woody • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Skin: traditional herbal uses and folklore</li>
-<li>Joints: traditional root-tonic uses</li>
-<li>Digestion: bitter-root tea traditions</li>
-<li>Plant science: saponins studied in laboratories</li>
-<li>Heritage: Jamaican roots-drink traditions</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Iron Root</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Sarsaparilla →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Sarsaparilla root and botanical plant" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/sarsaparilla.webp?v=1"/></div>
+<div class="herb-content"><h3>Sarsaparilla</h3><div class="herb-latin">Smilax ornata</div><div class="herb-flavour">Rooty • Woody • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 09 SOURSOP -->
 <a class="herb-card botanical-card" data-herb="soursop" data-use="calm" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Soursop" href="./herb-soursop.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 09
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Soursop fruit and leaves" decoding="async" loading="lazy" src="./assets/botanicals/soursop-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Soursop</h3>
-<div class="herb-latin">
-                Annona muricata
-              </div>
-<div class="herb-flavour">
-                Tropical • Creamy • Green
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Fruit: a much-loved Caribbean juice</li>
-<li>Leaf: traditional calming evening tea</li>
-<li>Lab: acetogenin research (not proven in people)</li>
-<li>Safety: the annonacin question explained</li>
-<li>Heritage: native to the Caribbean</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Soursop →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Soursop fruit and leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/soursop.webp?v=1"/></div>
+<div class="herb-content"><h3>Soursop</h3><div class="herb-latin">Annona muricata</div><div class="herb-flavour">Tropical • Creamy • Green</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 10 BITTER KOLA -->
 <a class="herb-card botanical-card" data-herb="bitter-kola" data-use="cold" data-flavour="earthy" data-heritage="african" data-herb-name="Bitter Kola" href="./herb-bitter-kola.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 10
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Bitter kola seeds" decoding="async" loading="lazy" src="./assets/botanicals/bitter-kola-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Bitter Kola</h3>
-<div class="herb-latin">
-                Garcinia kola
-              </div>
-<div class="herb-flavour">
-                Bitter • Astringent • Woody
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Throat: traditionally chewed for coughs</li>
-<li>Hospitality: shared with guests</li>
-<li>Lab: kolaviron antioxidant research</li>
-<li>Kola confusion: not the same as kola nut</li>
-<li>Heritage: West and Central Africa</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>West African Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Bitter Kola →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Bitter kola seeds" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/bitter-kola.webp?v=1"/></div>
+<div class="herb-content"><h3>Bitter Kola</h3><div class="herb-latin">Garcinia kola</div><div class="herb-flavour">Bitter • Astringent • Woody</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 11 RASPBERRY LEAF -->
 <a class="herb-card botanical-card" data-herb="raspberry-leaf" data-use="women" data-flavour="sweet" data-heritage="global" data-herb-name="Raspberry Leaf" href="./herb-raspberry-leaf.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 11
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Raspberry leaves" decoding="async" loading="lazy" src="./assets/botanicals/raspberry-leaf-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Raspberry Leaf</h3>
-<div class="herb-latin">
-                Rubus idaeus
-              </div>
-<div class="herb-flavour">
-                Earthy • Mellow • Caffeine-free
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Pregnancy: what the evidence really says</li>
-<li>Labour: does it induce? (no evidence)</li>
-<li>Timing: UK guidance and your midwife</li>
-<li>Safety: who should avoid it</li>
-<li>Everyday: a mellow caffeine-free tea</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Raspberry Leaf →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Raspberry leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/raspberry-leaf.webp?v=1"/></div>
+<div class="herb-content"><h3>Raspberry Leaf</h3><div class="herb-latin">Rubus idaeus</div><div class="herb-flavour">Earthy • Mellow • Caffeine-free</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 12 LEMON BALM -->
 <a class="herb-card botanical-card" data-herb="lemon-balm" data-use="calm digest" data-flavour="citrus" data-heritage="global" data-herb-name="Lemon Balm" href="./herb-lemon-balm.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 12
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Lemon balm leaves" decoding="async" loading="lazy" src="./assets/botanicals/lemon-balm-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Lemon Balm</h3>
-<div class="herb-latin">
-                Melissa officinalis
-              </div>
-<div class="herb-flavour">
-                Lemony • Fresh • Soft
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Stress: accepted traditional use</li>
-<li>Sleep: a traditional evening tea</li>
-<li>Digestion: bloating and wind</li>
-<li>Trials: small studies on anxiety</li>
-<li>Garden: easy to grow in the UK</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>European Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Lemon Balm →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Lemon balm leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/lemon-balm.webp?v=1"/></div>
+<div class="herb-content"><h3>Lemon Balm</h3><div class="herb-latin">Melissa officinalis</div><div class="herb-flavour">Lemony • Fresh • Soft</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 13 HONEYBUSH -->
 <a class="herb-card botanical-card" data-herb="honeybush" data-use="everyday calm" data-flavour="sweet" data-heritage="african" data-herb-name="Honeybush" href="./herb-honeybush.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 13
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Honeybush flowers" decoding="async" loading="lazy" src="./assets/botanicals/honeybush-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Honeybush</h3>
-<div class="herb-latin">
-                Cyclopia species
-              </div>
-<div class="herb-flavour">
-                Honeyed • Sweet • Floral
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Caffeine: none, naturally</li>
-<li>Taste: sweet without sugar</li>
-<li>Rooibos: cousin, not the same</li>
-<li>Lab: mangiferin antioxidant research</li>
-<li>Heritage: South African fynbos</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>South African Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Honeybush →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Honeybush flowers" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/honeybush.webp?v=1"/></div>
+<div class="herb-content"><h3>Honeybush</h3><div class="herb-latin">Cyclopia species</div><div class="herb-flavour">Honeyed • Sweet • Floral</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 14 PEPPERMINT -->
 <a class="herb-card botanical-card" data-herb="peppermint" data-use="digest" data-flavour="fresh" data-heritage="global" data-herb-name="Peppermint" href="./herb-peppermint.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 14
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Peppermint leaves" decoding="async" loading="lazy" src="./assets/botanicals/peppermint-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Peppermint</h3>
-<div class="herb-latin">
-                Mentha × piperita
-              </div>
-<div class="herb-flavour">
-                Cooling • Sharp • Menthol
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Caffeine: none, naturally</li>
-<li>Digestion: accepted traditional use</li>
-<li>Bloating: what helps and what doesn’t</li>
-<li>IBS: the evidence is for oil capsules</li>
-<li>Reflux: who should skip it</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Peppermint →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Peppermint leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/peppermint.webp?v=1"/></div>
+<div class="herb-content"><h3>Peppermint</h3><div class="herb-latin">Mentha × piperita</div><div class="herb-flavour">Cooling • Sharp • Menthol</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 15 DANDELION -->
 <a class="herb-card botanical-card" data-herb="dandelion" data-use="digest" data-flavour="earthy" data-heritage="global" data-herb-name="Dandelion" href="./herb-dandelion.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 15
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dandelion root and leaves" decoding="async" loading="lazy" src="./assets/botanicals/dandelion-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Dandelion</h3>
-<div class="herb-latin">
-                Taraxacum officinale
-              </div>
-<div class="herb-flavour">
-                Bitter • Earthy • Roasted
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Digestion: accepted traditional use</li>
-<li>Urine flow: a traditional diuretic</li>
-<li>Coffee: roasted root, no caffeine</li>
-<li>Detox claims: checked honestly</li>
-<li>Safety: allergy and bile cautions</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>European Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Dandelion →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dandelion root and leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/dandelion.webp?v=1"/></div>
+<div class="herb-content"><h3>Dandelion</h3><div class="herb-latin">Taraxacum officinale</div><div class="herb-flavour">Bitter • Earthy • Roasted</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 16 ROOIBOS -->
 <a class="herb-card botanical-card" data-herb="rooibos" data-use="everyday calm" data-flavour="sweet" data-heritage="african" data-herb-name="Rooibos" href="./herb-rooibos.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 16
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Red rooibos tea leaves" decoding="async" loading="lazy" src="./assets/botanicals/rooibos-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Rooibos</h3>
-<div class="herb-latin">
-                Aspalathus linearis
-              </div>
-<div class="herb-flavour">
-                Sweet • Earthy • Vanilla
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Caffeine: none, naturally</li>
-<li>Tannins: lower than black tea</li>
-<li>Lab: aspalathin antioxidant research</li>
-<li>Heritage: the Cederberg mountains</li>
-<li>Brewing: milk, iced or red latte</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>South African Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Rooibos →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Red rooibos tea leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/rooibos.webp?v=1"/></div>
+<div class="herb-content"><h3>Rooibos</h3><div class="herb-latin">Aspalathus linearis</div><div class="herb-flavour">Sweet • Earthy • Vanilla</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 17 NETTLE -->
 <a class="herb-card botanical-card" data-herb="nettle" data-use="women everyday" data-flavour="earthy" data-heritage="global" data-herb-name="Nettle" href="./herb-nettle.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 17
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Stinging nettle leaves" decoding="async" loading="lazy" src="./assets/botanicals/nettle-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Nettle</h3>
-<div class="herb-latin">
-                Urtica dioica
-              </div>
-<div class="herb-flavour">
-                Green • Earthy • Spinach-like
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Urine flow: accepted traditional use</li>
-<li>Joints: accepted traditional use</li>
-<li>Hay fever: what the trials show</li>
-<li>Foraging: pick safely in spring</li>
-<li>Safety: fluids and medicines</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Nettle →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Stinging nettle leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/nettle.webp?v=1"/></div>
+<div class="herb-content"><h3>Nettle</h3><div class="herb-latin">Urtica dioica</div><div class="herb-flavour">Green • Earthy • Spinach-like</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 18 MAUBY -->
 <a class="herb-card botanical-card" data-herb="mauby" data-use="everyday" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Mauby" href="./herb-mauby.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 18
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Mauby bark" decoding="async" loading="lazy" src="./assets/botanicals/mauby-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Mauby</h3>
-<div class="herb-latin">
-                Colubrina species
-              </div>
-<div class="herb-flavour">
-                Bittersweet • Spiced • Aniseed
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Drink: Trinidad, Barbados and Guyana</li>
-<li>Recipe: bark, spice and ice</li>
-<li>Lab: antioxidant polyphenols</li>
-<li>Claims: blood pressure beliefs checked</li>
-<li>Sugar: the real everyday concern</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Mauby →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Mauby bark" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/mauby.webp?v=1"/></div>
+<div class="herb-content"><h3>Mauby</h3><div class="herb-latin">Colubrina species</div><div class="herb-flavour">Bittersweet • Spiced • Aniseed</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 19 TURMERIC -->
 <a class="herb-card botanical-card" data-herb="turmeric" data-use="cold digest" data-flavour="warm" data-heritage="global" data-herb-name="Turmeric" href="./herb-turmeric.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 19
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Turmeric botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/turmeric-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Turmeric</h3>
-<div class="herb-latin">
-                Curcuma longa
-              </div>
-<div class="herb-flavour">
-                Earthy • Warm • Peppery
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Kitchen: “saffron” in Trini and Guyanese curry</li>
-<li>Recipe: turmeric and ginger tea</li>
-<li>Research: joints, fatty liver and cholesterol</li>
-<li>Absorption: why black pepper is added</li>
-<li>Safety: supplements vs the spice</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Indo-Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Turmeric →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Turmeric botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/turmeric.webp?v=1"/></div>
+<div class="herb-content"><h3>Turmeric</h3><div class="herb-latin">Curcuma longa</div><div class="herb-flavour">Earthy • Warm • Peppery</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 20 LEMON VERBENA -->
 <a class="herb-card botanical-card" data-herb="lemon-verbena" data-use="calm digest" data-flavour="citrus" data-heritage="global" data-herb-name="Lemon Verbena" href="./herb-lemon-verbena.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 20
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Lemon verbena botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/lemon-verbena-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Lemon Verbena</h3>
-<div class="herb-latin">
-                Aloysia citrodora
-              </div>
-<div class="herb-flavour">
-                Bright Lemon • Floral • Fresh
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Taste: the most lemony leaf of all</li>
-<li>Compare: not lemon balm or lemongrass</li>
-<li>EU review: traditional calming tea</li>
-<li>Recipe: hot verveine or iced tea</li>
-<li>Grow: a sunny pot in the UK</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>South American Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Lemon Verbena →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Lemon verbena botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/lemon-verbena.webp?v=1"/></div>
+<div class="herb-content"><h3>Lemon Verbena</h3><div class="herb-latin">Aloysia citrodora</div><div class="herb-flavour">Bright Lemon • Floral • Fresh</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 21 MULLEIN -->
 <a class="herb-card botanical-card" data-herb="mullein" data-use="cold" data-flavour="earthy" data-heritage="global" data-herb-name="Mullein" href="./herb-mullein.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 21
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Mullein botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/mullein-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Mullein</h3>
-<div class="herb-latin">
-                Verbascum thapsus
-              </div>
-<div class="herb-flavour">
-                Mild • Earthy • Soft
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>EU review: sore throat with dry cough</li>
-<li>Claims: “lung detox” checked</li>
-<li>Recipe: why you must strain it</li>
-<li>Safety: never smoke mullein</li>
-<li>Wild: a native British plant</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British Wild Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Mullein →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Mullein botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/mullein.webp?v=1"/></div>
+<div class="herb-content"><h3>Mullein</h3><div class="herb-latin">Verbascum thapsus</div><div class="herb-flavour">Mild • Earthy • Soft</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 22 FENNEL -->
 <a class="herb-card botanical-card" data-herb="fennel" data-use="digest" data-flavour="sweet" data-heritage="global" data-herb-name="Fennel" href="./herb-fennel.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 22
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Fennel botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/fennel-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Fennel</h3>
-<div class="herb-latin">
-                Foeniculum vulgare
-              </div>
-<div class="herb-flavour">
-                Sweet • Aniseed • Warm
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>EU review: bloating and wind</li>
-<li>Recipe: crushed seed tea</li>
-<li>Periods: bitter fennel tradition</li>
-<li>Children: not for under-4s</li>
-<li>Kitchen: saunf after meals</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Mediterranean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Fennel →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fennel botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/fennel.webp?v=1"/></div>
+<div class="herb-content"><h3>Fennel</h3><div class="herb-latin">Foeniculum vulgare</div><div class="herb-flavour">Sweet • Aniseed • Warm</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 23 CINNAMON -->
 <a class="herb-card botanical-card" data-herb="cinnamon" data-use="heart digest cold" data-flavour="warm" data-heritage="global caribbean" data-herb-name="Cinnamon" href="./herb-cinnamon.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 23
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Cinnamon botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/cinnamon-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Cinnamon</h3>
-<div class="herb-latin">
-                Cinnamomum verum &amp; C. cassia
-              </div>
-<div class="herb-flavour">
-                Sweet • Woody • Warming
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Caribbean: sorrel, cocoa tea and black cake</li>
-<li>Compare: Ceylon vs cassia</li>
-<li>Research: mixed blood sugar trials</li>
-<li>Safety: coumarin in cassia</li>
-<li>Recipe: cinnamon stick tea</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean Spice Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Cinnamon →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Cinnamon botanical profile" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/cinnamon.webp?v=1"/></div>
+<div class="herb-content"><h3>Cinnamon</h3><div class="herb-latin">Cinnamomum verum &amp; C. cassia</div><div class="herb-flavour">Sweet • Woody • Warming</div><span class="herb-cta">Read guide →</span></div>
 </a><!-- 24 CHAMOMILE -->
 <a class="herb-card botanical-card" data-herb="chamomile" data-use="calm digest everyday" data-flavour="floral" data-heritage="african global" data-herb-name="Chamomile" href="./herb-chamomile.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 24
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried chamomile flowers" decoding="async" loading="lazy" src="./assets/botanicals/chamomile-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Chamomile</h3>
-<div class="herb-latin">
-                Matricaria chamomilla
-              </div>
-<div class="herb-flavour">
-                Floral • Honeyed • Soft
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Calm: anxiety research (supplements)</li>
-<li>Sleep: a classic bedtime ritual</li>
-<li>Stomach: traditional after-meal tea</li>
-<li>Allergy: the daisy-family link</li>
-<li>Heritage: grown along the Nile</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Egyptian Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Chamomile →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried chamomile flowers" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/chamomile.webp?v=1"/></div>
+<div class="herb-content"><h3>Chamomile</h3><div class="herb-latin">Matricaria chamomilla</div><div class="herb-flavour">Floral • Honeyed • Soft</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 25 GINSENG -->
 <a class="herb-card botanical-card" data-herb="ginseng" data-use="heart everyday" data-flavour="earthy" data-heritage="global" data-herb-name="Ginseng" href="./herb-ginseng.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 25
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried ginseng roots" decoding="async" loading="lazy" src="./assets/botanicals/ginseng-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Ginseng</h3>
-<div class="herb-latin">
-                Panax ginseng
-              </div>
-<div class="herb-flavour">
-                Earthy • Bittersweet • Woody
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Blood sugar: conflicting research</li>
-<li>Focus: mixed study results</li>
-<li>Energy: a traditional tonic root</li>
-<li>Sleep: can keep you awake</li>
-<li>Safety: not for pregnancy</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Korean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Ginseng →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried ginseng roots" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/ginseng.webp?v=1"/></div>
+<div class="herb-content"><h3>Ginseng</h3><div class="herb-latin">Panax ginseng</div><div class="herb-flavour">Earthy • Bittersweet • Woody</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 26 CLOVE -->
 <a class="herb-card botanical-card" data-herb="clove" data-use="digest cold" data-flavour="warm" data-heritage="african caribbean global" data-herb-name="Clove" href="./herb-clove.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 26
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Whole dried cloves" decoding="async" loading="lazy" src="./assets/botanicals/clove-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Clove</h3>
-<div class="herb-latin">
-                Syzygium aromaticum
-              </div>
-<div class="herb-flavour">
-                Warm • Pungent • Sweet-Spicy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Eugenol: lab research</li>
-<li>Teeth: clove oil for toothache</li>
-<li>Christmas: sorrel and black cake</li>
-<li>Clove water: the trend, checked</li>
-<li>Safety: keep clove oil from children</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Zanzibar &amp; Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Clove →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Whole dried cloves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/clove.webp?v=1"/></div>
+<div class="herb-content"><h3>Clove</h3><div class="herb-latin">Syzygium aromaticum</div><div class="herb-flavour">Warm • Pungent • Sweet-Spicy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 27 ROSEMARY -->
 <a class="herb-card botanical-card" data-herb="rosemary" data-use="digest everyday" data-flavour="earthy" data-heritage="global" data-herb-name="Rosemary" href="./herb-rosemary.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 27
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Fresh rosemary sprigs" decoding="async" loading="lazy" src="./assets/botanicals/rosemary-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Rosemary</h3>
-<div class="herb-latin">
-                Salvia rosmarinus
-              </div>
-<div class="herb-flavour">
-                Piney • Resinous • Savoury
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Hair: one small oil study</li>
-<li>Rosemary water: what it can’t prove</li>
-<li>Memory: early aroma studies</li>
-<li>Digestion: a traditional after-meal herb</li>
-<li>Safety: pregnancy and epilepsy</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Mediterranean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Rosemary →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fresh rosemary sprigs" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/rosemary.webp?v=1"/></div>
+<div class="herb-content"><h3>Rosemary</h3><div class="herb-latin">Salvia rosmarinus</div><div class="herb-flavour">Piney • Resinous • Savoury</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 28 SAGE -->
 <a class="herb-card botanical-card" data-herb="sage" data-use="women calm" data-flavour="earthy" data-heritage="global" data-herb-name="Sage" href="./herb-sage.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 28
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Grey-green sage leaves" decoding="async" loading="lazy" src="./assets/botanicals/sage-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Sage</h3>
-<div class="herb-latin">
-                Salvia officinalis
-              </div>
-<div class="herb-flavour">
-                Earthy • Herbal • Slightly Bitter
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Menopause: hot flush studies</li>
-<li>Throat: a traditional gargle</li>
-<li>Blood fats: limited research</li>
-<li>Thujone: why dose matters</li>
-<li>Breastfeeding: best avoided</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Mediterranean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Sage →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Grey-green sage leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/sage.webp?v=1"/></div>
+<div class="herb-content"><h3>Sage</h3><div class="herb-latin">Salvia officinalis</div><div class="herb-flavour">Earthy • Herbal • Slightly Bitter</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 29 LAVENDER -->
 <a class="herb-card botanical-card" data-herb="lavender" data-use="calm" data-flavour="floral" data-heritage="global" data-herb-name="Lavender" href="./herb-lavender.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 29
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried lavender buds" decoding="async" loading="lazy" src="./assets/botanicals/lavender-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Lavender</h3>
-<div class="herb-latin">
-                Lavandula angustifolia
-              </div>
-<div class="herb-flavour">
-                Floral • Perfumed • Slightly Bitter
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Anxiety: small oil-capsule studies</li>
-<li>Sleep: a traditional bedtime cup</li>
-<li>Tea vs oil: why it matters</li>
-<li>Baking: lavender in UK kitchens</li>
-<li>Pregnancy: avoid medicinal amounts</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Mediterranean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Lavender →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried lavender buds" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/lavender.webp?v=1"/></div>
+<div class="herb-content"><h3>Lavender</h3><div class="herb-latin">Lavandula angustifolia</div><div class="herb-flavour">Floral • Perfumed • Slightly Bitter</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 30 ROSE -->
 <a class="herb-card botanical-card" data-herb="rose" data-use="calm everyday" data-flavour="floral sweet" data-heritage="african global" data-herb-name="Rose" href="./herb-rose.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 30
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried pink rose buds" decoding="async" loading="lazy" src="./assets/botanicals/rose-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Rose</h3>
-<div class="herb-latin">
-                Rosa damascena
-              </div>
-<div class="herb-flavour">
-                Floral • Fragrant • Softly Sweet
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Mouth &amp; throat: traditional rinse</li>
-<li>Antioxidants: lab research</li>
-<li>Petal vs hip: two different teas</li>
-<li>Valley of Roses: Morocco’s harvest</li>
-<li>Food-grade: why sprays matter</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>African &amp; Persian Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Rose →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried pink rose buds" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/rose.webp?v=1"/></div>
+<div class="herb-content"><h3>Rose</h3><div class="herb-latin">Rosa damascena</div><div class="herb-flavour">Floral • Fragrant • Softly Sweet</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 31 LINDEN -->
 <a class="herb-card botanical-card" data-herb="linden" data-use="calm cold" data-flavour="floral sweet" data-heritage="global" data-herb-name="Linden" href="./herb-linden.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 31
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried linden flowers and bracts" decoding="async" loading="lazy" src="./assets/botanicals/linden-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Linden</h3>
-<div class="herb-latin">
-                Tilia cordata &amp; T. platyphyllos
-              </div>
-<div class="herb-flavour">
-                Honeyed • Floral • Mellow
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Colds: recognised traditional use</li>
-<li>Mild stress: traditional use</li>
-<li>Lime tree, not lime fruit</li>
-<li>Tilleul: the French evening cup</li>
-<li>Heart conditions: ask first</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British &amp; European Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Linden →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried linden flowers and bracts" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/linden.webp?v=1"/></div>
+<div class="herb-content"><h3>Linden</h3><div class="herb-latin">Tilia cordata &amp; T. platyphyllos</div><div class="herb-flavour">Honeyed • Floral • Mellow</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 32 BUTTERFLY PEA -->
 <a class="herb-card botanical-card" data-herb="butterfly-pea" data-use="everyday" data-flavour="earthy" data-heritage="caribbean global" data-herb-name="Butterfly Pea" href="./herb-butterfly-pea.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 32
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried blue butterfly pea flowers" decoding="async" loading="lazy" src="./assets/botanicals/butterfly-pea-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Butterfly Pea</h3>
-<div class="herb-latin">
-                Clitoria ternatea
-              </div>
-<div class="herb-flavour">
-                Earthy • Woody • Mild
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Colour change: blue to purple</li>
-<li>Antioxidants: lab research</li>
-<li>Blue pea: a Jamaican garden vine</li>
-<li>Party drinks: caffeine-free</li>
-<li>Pregnancy: not enough data</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean &amp; Asian Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Butterfly Pea →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried blue butterfly pea flowers" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/butterfly-pea.webp?v=1"/></div>
+<div class="herb-content"><h3>Butterfly Pea</h3><div class="herb-latin">Clitoria ternatea</div><div class="herb-flavour">Earthy • Woody • Mild</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 33 VALERIAN -->
 <a class="herb-card botanical-card" data-herb="valerian" data-use="calm" data-flavour="earthy" data-heritage="global" data-herb-name="Valerian" href="./herb-valerian.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 33
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried valerian root pieces" decoding="async" loading="lazy" src="./assets/botanicals/valerian-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Valerian</h3>
-<div class="herb-latin">
-                Valeriana officinalis
-              </div>
-<div class="herb-flavour">
-                Earthy • Musky • Pungent
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Sleep: inconsistent studies</li>
-<li>Guidelines: not for chronic insomnia</li>
-<li>Short-term: up to 6 weeks studied</li>
-<li>Alcohol &amp; sedatives: never mix</li>
-<li>Liver: very rare warnings</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>European Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Valerian →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried valerian root pieces" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/valerian.webp?v=1"/></div>
+<div class="herb-content"><h3>Valerian</h3><div class="herb-latin">Valeriana officinalis</div><div class="herb-flavour">Earthy • Musky • Pungent</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 34 MILK THISTLE -->
 <a class="herb-card botanical-card" data-herb="milk-thistle" data-use="digest" data-flavour="earthy" data-heritage="african global" data-herb-name="Milk Thistle" href="./herb-milk-thistle.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 34
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Milk thistle flower and seeds" decoding="async" loading="lazy" src="./assets/botanicals/milk-thistle-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Milk Thistle</h3>
-<div class="herb-latin">
-                Silybum marianum
-              </div>
-<div class="herb-flavour">
-                Nutty • Earthy • Mildly Bitter
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Liver: conflicting human trials</li>
-<li>Silymarin: lab research</li>
-<li>Blood sugar: small studies</li>
-<li>Detox: a myth, checked</li>
-<li>Allergies: the daisy family link</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Mediterranean &amp; North African Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Milk Thistle →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Milk thistle flower and seeds" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/milk-thistle.webp?v=1"/></div>
+<div class="herb-content"><h3>Milk Thistle</h3><div class="herb-latin">Silybum marianum</div><div class="herb-flavour">Nutty • Earthy • Mildly Bitter</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 35 TULSI (HOLY BASIL) -->
 <a class="herb-card botanical-card" data-herb="tulsi" data-use="calm cold everyday" data-flavour="warm fresh" data-heritage="caribbean global" data-herb-name="Tulsi (Holy Basil)" href="./herb-tulsi.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 35
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Tulsi holy basil leaves" decoding="async" loading="lazy" src="./assets/botanicals/tulsi-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Tulsi (Holy Basil)</h3>
-<div class="herb-latin">
-                Ocimum tenuiflorum
-              </div>
-<div class="herb-flavour">
-                Peppery • Clove-like • Minty
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Stress: small studies</li>
-<li>Blood sugar: early research</li>
-<li>Sacred plant: Trinidad &amp; Guyana yards</li>
-<li>Holy vs sweet basil</li>
-<li>Pregnancy: best avoided</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Indo-Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Tulsi (Holy Basil) →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Tulsi holy basil leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/tulsi.webp?v=1"/></div>
+<div class="herb-content"><h3>Tulsi (Holy Basil)</h3><div class="herb-latin">Ocimum tenuiflorum</div><div class="herb-flavour">Peppery • Clove-like • Minty</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 36 ASHWAGANDHA -->
 <a class="herb-card botanical-card" data-herb="ashwagandha" data-use="calm" data-flavour="earthy" data-heritage="african global" data-herb-name="Ashwagandha" href="./herb-ashwagandha.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 36
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried ashwagandha roots" decoding="async" loading="lazy" src="./assets/botanicals/ashwagandha-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Ashwagandha</h3>
-<div class="herb-latin">
-                Withania somnifera
-              </div>
-<div class="herb-flavour">
-                Earthy • Bitter • Horsey
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Stress &amp; sleep: short studies</li>
-<li>UK safety review: underway</li>
-<li>Liver: rare injury reports</li>
-<li>Thyroid: who should avoid it</li>
-<li>Pregnancy: avoid</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>African &amp; Indian Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Ashwagandha →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried ashwagandha roots" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/ashwagandha.webp?v=1"/></div>
+<div class="herb-content"><h3>Ashwagandha</h3><div class="herb-latin">Withania somnifera</div><div class="herb-flavour">Earthy • Bitter • Horsey</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 37 FENUGREEK -->
 <a class="herb-card botanical-card" data-herb="fenugreek" data-use="digest women heart" data-flavour="warm" data-heritage="african caribbean global" data-herb-name="Fenugreek" href="./herb-fenugreek.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 37
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Golden fenugreek seeds" decoding="async" loading="lazy" src="./assets/botanicals/fenugreek-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Fenugreek</h3>
-<div class="herb-latin">
-                Trigonella foenum-graecum
-              </div>
-<div class="herb-flavour">
-                Maple-like • Nutty • Bitter
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Blood sugar: small studies</li>
-<li>Breast milk: mixed results</li>
-<li>Helba: Egypt’s fenugreek drink</li>
-<li>Methi: Caribbean curry spice</li>
-<li>Pregnancy &amp; allergies: take care</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>African &amp; Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Fenugreek →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Golden fenugreek seeds" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/fenugreek.webp?v=1"/></div>
+<div class="herb-content"><h3>Fenugreek</h3><div class="herb-latin">Trigonella foenum-graecum</div><div class="herb-flavour">Maple-like • Nutty • Bitter</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 38 LIQUORICE ROOT -->
 <a class="herb-card botanical-card" data-herb="liquorice-root" data-use="digest cold" data-flavour="sweet" data-heritage="african global" data-herb-name="Liquorice Root" href="./herb-liquorice-root.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 38
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried liquorice root sticks" decoding="async" loading="lazy" src="./assets/botanicals/liquorice-root-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Liquorice Root</h3>
-<div class="herb-latin">
-                Glycyrrhiza glabra
-              </div>
-<div class="herb-flavour">
-                Sweet • Anise-like • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Coughs &amp; throat: traditional use</li>
-<li>Blood pressure: a real risk</li>
-<li>Erk sous: Egypt’s Ramadan drink</li>
-<li>Pontefract: Yorkshire liquorice</li>
-<li>Pregnancy: avoid</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>African &amp; World Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Liquorice Root →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried liquorice root sticks" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/liquorice-root.webp?v=1"/></div>
+<div class="herb-content"><h3>Liquorice Root</h3><div class="herb-latin">Glycyrrhiza glabra</div><div class="herb-flavour">Sweet • Anise-like • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 39 CARDAMOM -->
 <a class="herb-card botanical-card" data-herb="cardamom" data-use="digest everyday" data-flavour="warm" data-heritage="african global" data-herb-name="Cardamom" href="./herb-cardamom.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 39
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Green cardamom pods" decoding="async" loading="lazy" src="./assets/botanicals/cardamom-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Cardamom</h3>
-<div class="herb-latin">
-                Elettaria cardamomum
-              </div>
-<div class="herb-flavour">
-                Warm • Floral • Citrusy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Digestion: traditional use</li>
-<li>Blood pressure: small powder studies</li>
-<li>Tanzania &amp; Guatemala: spice farms</li>
-<li>Gahwa: cardamom coffee</li>
-<li>Green vs black cardamom</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>African &amp; World Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Cardamom →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Green cardamom pods" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/cardamom.webp?v=1"/></div>
+<div class="herb-content"><h3>Cardamom</h3><div class="herb-latin">Elettaria cardamomum</div><div class="herb-flavour">Warm • Floral • Citrusy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 40 THYME -->
 <a class="herb-card botanical-card" data-herb="thyme" data-use="cold digest" data-flavour="earthy" data-heritage="caribbean global" data-herb-name="Thyme" href="./herb-thyme.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 40
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Fresh thyme sprigs" decoding="async" loading="lazy" src="./assets/botanicals/thyme-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Thyme</h3>
-<div class="herb-latin">
-                Thymus vulgaris
-              </div>
-<div class="herb-flavour">
-                Earthy • Herbal • Warm
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Chesty cough: recognised traditional use</li>
-<li>Thymol: lab research</li>
-<li>Rice and peas: a Caribbean staple</li>
-<li>Tea vs thyme oil</li>
-<li>When to see a GP</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean &amp; Mediterranean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Thyme →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fresh thyme sprigs" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/thyme.webp?v=1"/></div>
+<div class="herb-content"><h3>Thyme</h3><div class="herb-latin">Thymus vulgaris</div><div class="herb-flavour">Earthy • Herbal • Warm</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 41 ECHINACEA -->
 <a class="herb-card botanical-card" data-herb="echinacea" data-use="cold" data-flavour="earthy floral" data-heritage="global" data-herb-name="Echinacea" href="./herb-echinacea.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 41
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Purple coneflowers" decoding="async" loading="lazy" src="./assets/botanicals/echinacea-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Echinacea</h3>
-<div class="herb-latin">
-                Echinacea purpurea
-              </div>
-<div class="herb-flavour">
-                Earthy • Floral • Tingly
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Colds: a possible slight effect</li>
-<li>Cochrane: 24 trials reviewed</li>
-<li>Allergies: the daisy family</li>
-<li>Autoimmune: who should avoid it</li>
-<li>Plains medicine heritage</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>North American Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Echinacea →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Purple coneflowers" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/echinacea.webp?v=1"/></div>
+<div class="herb-content"><h3>Echinacea</h3><div class="herb-latin">Echinacea purpurea</div><div class="herb-flavour">Earthy • Floral • Tingly</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 42 MARSHMALLOW ROOT -->
 <a class="herb-card botanical-card" data-herb="marshmallow-root" data-use="cold digest" data-flavour="sweet" data-heritage="african global" data-herb-name="Marshmallow Root" href="./herb-marshmallow-root.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 42
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried marshmallow root pieces" decoding="async" loading="lazy" src="./assets/botanicals/marshmallow-root-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Marshmallow Root</h3>
-<div class="herb-latin">
-                Althaea officinalis
-              </div>
-<div class="herb-flavour">
-                Mild • Sweet • Silky
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Throat &amp; dry cough: recognised use</li>
-<li>Stomach: traditional use</li>
-<li>Cold infusion: how to make it</li>
-<li>Medicines: take at a different time</li>
-<li>The original marshmallow</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>North African &amp; European Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Marshmallow Root →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried marshmallow root pieces" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/marshmallow-root.webp?v=1"/></div>
+<div class="herb-content"><h3>Marshmallow Root</h3><div class="herb-latin">Althaea officinalis</div><div class="herb-flavour">Mild • Sweet • Silky</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 43 CULANTRO (SHADO BENI) -->
 <a class="herb-card botanical-card" data-herb="culantro" data-use="digest cold everyday" data-flavour="fresh" data-heritage="caribbean" data-herb-name="Culantro (Shado Beni)" href="./herb-culantro.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 43
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Fresh culantro leaves" decoding="async" loading="lazy" src="./assets/botanicals/culantro-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Culantro (Shado Beni)</h3>
-<div class="herb-latin">
-                Eryngium foetidum
-              </div>
-<div class="herb-flavour">
-                Pungent • Fresh • Coriander-like
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Green seasoning: Trinidad &amp; beyond</li>
-<li>Fit weed: Jamaican bush tea</li>
-<li>Anticonvulsant: animal study only</li>
-<li>Culantro vs coriander</li>
-<li>Pregnancy: food amounts only</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Culantro (Shado Beni) →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fresh culantro leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/culantro.webp?v=1"/></div>
+<div class="herb-content"><h3>Culantro (Shado Beni)</h3><div class="herb-latin">Eryngium foetidum</div><div class="herb-flavour">Pungent • Fresh • Coriander-like</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 44 BITTER LEAF -->
 <a class="herb-card botanical-card" data-herb="bitter-leaf" data-use="digest heart" data-flavour="earthy" data-heritage="african" data-herb-name="Bitter Leaf" href="./herb-bitter-leaf.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 44
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Fresh bitter leaf leaves" decoding="async" loading="lazy" src="./assets/botanicals/bitter-leaf-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Bitter Leaf</h3>
-<div class="herb-latin">
-                Vernonia amygdalina
-              </div>
-<div class="herb-flavour">
-                Intensely Bitter • Green • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Bitterleaf soup: ofe onugbu</li>
-<li>Ndolé: Cameroon’s national dish</li>
-<li>Blood sugar: animal &amp; small studies</li>
-<li>Ewuro, onugbu, grawa</li>
-<li>Malaria: needs real medicine</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>West African Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Bitter Leaf →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Fresh bitter leaf leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/bitter-leaf.webp?v=1"/></div>
+<div class="herb-content"><h3>Bitter Leaf</h3><div class="herb-latin">Vernonia amygdalina</div><div class="herb-flavour">Intensely Bitter • Green • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 45 RED CLOVER -->
 <a class="herb-card botanical-card" data-herb="red-clover" data-use="women" data-flavour="floral sweet" data-heritage="global" data-herb-name="Red Clover" href="./herb-red-clover.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 45
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Pink red clover flowers" decoding="async" loading="lazy" src="./assets/botanicals/red-clover-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Red Clover</h3>
-<div class="herb-latin">
-                Trifolium pratense
-              </div>
-<div class="herb-flavour">
-                Mild • Grassy • Sweet
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Hot flushes: mixed results</li>
-<li>Isoflavones: hormone-like</li>
-<li>Breast cancer: who should avoid it</li>
-<li>HRT &amp; blood thinners</li>
-<li>British meadow flower</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British &amp; European Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Red Clover →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Pink red clover flowers" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/red-clover.webp?v=1"/></div>
+<div class="herb-content"><h3>Red Clover</h3><div class="herb-latin">Trifolium pratense</div><div class="herb-flavour">Mild • Grassy • Sweet</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 46 HAWTHORN -->
 <a class="herb-card botanical-card" data-herb="hawthorn" data-use="heart" data-flavour="floral" data-heritage="global" data-herb-name="Hawthorn" href="./herb-hawthorn.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 46
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Red hawthorn berries" decoding="async" loading="lazy" src="./assets/botanicals/hawthorn-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Hawthorn</h3>
-<div class="herb-latin">
-                Crataegus monogyna
-              </div>
-<div class="herb-flavour">
-                Tart • Fruity • Mild
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Mild heart failure: extract trials</li>
-<li>No fewer deaths: the key finding</li>
-<li>Heart medicines: interactions</li>
-<li>Haws: hedgerow berries</li>
-<li>Never replaces medicine</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British Hedgerow Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Hawthorn →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Red hawthorn berries" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/hawthorn.webp?v=1"/></div>
+<div class="herb-content"><h3>Hawthorn</h3><div class="herb-latin">Crataegus monogyna</div><div class="herb-flavour">Tart • Fruity • Mild</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 47 PASSIONFLOWER -->
 <a class="herb-card botanical-card" data-herb="passionflower" data-use="calm" data-flavour="earthy" data-heritage="caribbean global" data-herb-name="Passionflower" href="./herb-passionflower.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 47
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Purple passionflower bloom" decoding="async" loading="lazy" src="./assets/botanicals/passionflower-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Passionflower</h3>
-<div class="herb-latin">
-                Passiflora incarnata
-              </div>
-<div class="herb-flavour">
-                Mild • Grassy • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Anxiety: small, flawed studies</li>
-<li>Sleep: an evening cup</li>
-<li>Passion fruit: the Caribbean cousin</li>
-<li>Drowsiness: driving caution</li>
-<li>Pregnancy: avoid</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean &amp; Americas Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Passionflower →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Purple passionflower bloom" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/passionflower.webp?v=1"/></div>
+<div class="herb-content"><h3>Passionflower</h3><div class="herb-latin">Passiflora incarnata</div><div class="herb-flavour">Mild • Grassy • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 48 BURDOCK ROOT -->
 <a class="herb-card botanical-card" data-herb="burdock-root" data-use="digest" data-flavour="earthy sweet" data-heritage="global" data-herb-name="Burdock Root" href="./herb-burdock-root.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 48
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried burdock root" decoding="async" loading="lazy" src="./assets/botanicals/burdock-root-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Burdock Root</h3>
-<div class="herb-latin">
-                Arctium lappa
-              </div>
-<div class="herb-flavour">
-                Earthy • Sweet • Woody
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Dandelion &amp; burdock: a British classic</li>
-<li>Gobo: a Japanese vegetable</li>
-<li>Skin claims: unproven</li>
-<li>Allergies: the daisy family</li>
-<li>Velcro: the burr story</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British &amp; Asian Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Burdock Root →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried burdock root" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/burdock-root.webp?v=1"/></div>
+<div class="herb-content"><h3>Burdock Root</h3><div class="herb-latin">Arctium lappa</div><div class="herb-flavour">Earthy • Sweet • Woody</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 49 ELDERFLOWER -->
 <a class="herb-card botanical-card" data-herb="elderflower" data-use="cold everyday" data-flavour="floral sweet" data-heritage="global" data-herb-name="Elderflower" href="./herb-elderflower.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 49
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="White elderflower heads" decoding="async" loading="lazy" src="./assets/botanicals/elderflower-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Elderflower</h3>
-<div class="herb-latin">
-                Sambucus nigra
-              </div>
-<div class="herb-flavour">
-                Floral • Honeyed • Light
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Early colds: recognised traditional use</li>
-<li>Cordial: a British June classic</li>
-<li>Raw leaves &amp; bark: unsafe</li>
-<li>Elderberry: a separate story</li>
-<li>Foraging: pick safely</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Elderflower →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="White elderflower heads" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/elderflower.webp?v=1"/></div>
+<div class="herb-content"><h3>Elderflower</h3><div class="herb-latin">Sambucus nigra</div><div class="herb-flavour">Floral • Honeyed • Light</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 50 YARROW -->
 <a class="herb-card botanical-card" data-herb="yarrow" data-use="digest women" data-flavour="earthy" data-heritage="global" data-herb-name="Yarrow" href="./herb-yarrow.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 50
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="White yarrow flowers" decoding="async" loading="lazy" src="./assets/botanicals/yarrow-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Yarrow</h3>
-<div class="herb-latin">
-                Achillea millefolium
-              </div>
-<div class="herb-flavour">
-                Bitter • Herbal • Aromatic
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Appetite &amp; digestion: recognised use</li>
-<li>Period cramps: traditional use</li>
-<li>Achilles: the legend</li>
-<li>Allergies: daisy family</li>
-<li>Pregnancy: avoid</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>British &amp; World Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Yarrow →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="White yarrow flowers" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/yarrow.webp?v=1"/></div>
+<div class="herb-content"><h3>Yarrow</h3><div class="herb-latin">Achillea millefolium</div><div class="herb-flavour">Bitter • Herbal • Aromatic</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 51 NEEM -->
 <a class="herb-card botanical-card" data-herb="neem" data-use="" data-flavour="earthy" data-heritage="african global" data-herb-name="Neem" href="./herb-neem.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 51
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Neem leaves" decoding="async" loading="lazy" src="./assets/botanicals/neem-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Neem</h3>
-<div class="herb-latin">
-                Azadirachta indica
-              </div>
-<div class="herb-flavour">
-                Very Bitter • Green • Sharp
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Dogonyaro: Nigeria’s neem</li>
-<li>Neem oil: never for children</li>
-<li>Malaria: needs real medicine</li>
-<li>Skin &amp; teeth: traditional uses</li>
-<li>Pregnancy: avoid</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>African &amp; Indian Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Neem →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Neem leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/neem.webp?v=1"/></div>
+<div class="herb-content"><h3>Neem</h3><div class="herb-latin">Azadirachta indica</div><div class="herb-flavour">Very Bitter • Green • Sharp</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 52 WEST INDIAN BAY LEAF -->
 <a class="herb-card botanical-card" data-herb="west-indian-bay-leaf" data-use="digest" data-flavour="warm" data-heritage="caribbean" data-herb-name="West Indian Bay Leaf" href="./herb-west-indian-bay-leaf.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 52
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="West Indian bay leaves" decoding="async" loading="lazy" src="./assets/botanicals/west-indian-bay-leaf-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>West Indian Bay Leaf</h3>
-<div class="herb-latin">
-                Pimenta racemosa
-              </div>
-<div class="herb-flavour">
-                Spicy • Clove-like • Warm
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Bay rum: a Caribbean classic</li>
-<li>Dominica: bay oil island</li>
-<li>Not bay laurel</li>
-<li>Bush tea: stomach &amp; sleep</li>
-<li>Bay oil: never drink it</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore West Indian Bay Leaf →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="West Indian bay leaves" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/west-indian-bay-leaf.webp?v=1"/></div>
+<div class="herb-content"><h3>West Indian Bay Leaf</h3><div class="herb-latin">Pimenta racemosa</div><div class="herb-flavour">Spicy • Clove-like • Warm</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 53 VERVAIN (VERVINE) -->
 <a class="herb-card botanical-card" data-herb="vervain" data-use="everyday" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Vervain (Vervine)" href="./herb-vervain.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 53
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Blue vervine flower spikes" decoding="async" loading="lazy" src="./assets/botanicals/vervain-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Vervain (Vervine)</h3>
-<div class="herb-latin">
-                Stachytarpheta jamaicensis
-              </div>
-<div class="herb-flavour">
-                Bitter • Green • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Cooling bush tea: Jamaica</li>
-<li>Blood pressure: animal study</li>
-<li>Jamaican vs European vervain</li>
-<li>Lookalike plants</li>
-<li>Pregnancy: avoid</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Vervain (Vervine) →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Blue vervine flower spikes" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/vervain.webp?v=1"/></div>
+<div class="herb-content"><h3>Vervain (Vervine)</h3><div class="herb-latin">Stachytarpheta jamaicensis</div><div class="herb-flavour">Bitter • Green • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 54 GUINEA HEN WEED -->
 <a class="herb-card botanical-card" data-herb="guinea-hen-weed" data-use="cold" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Guinea Hen Weed" href="./herb-guinea-hen-weed.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 54
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Guinea hen weed plant" decoding="async" loading="lazy" src="./assets/botanicals/guinea-hen-weed-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Guinea Hen Weed</h3>
-<div class="herb-latin">
-                Petiveria alliacea
-              </div>
-<div class="herb-flavour">
-                Garlicky • Pungent • Earthy
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Cancer claims: lab only</li>
-<li>Garlic weed &amp; gully root</li>
-<li>Colds &amp; fever: bush tea</li>
-<li>Pregnancy: avoid</li>
-<li>Tell your cancer team</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Caribbean Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Guinea Hen Weed →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Guinea hen weed plant" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/guinea-hen-weed.webp?v=1"/></div>
+<div class="herb-content"><h3>Guinea Hen Weed</h3><div class="herb-latin">Petiveria alliacea</div><div class="herb-flavour">Garlicky • Pungent • Earthy</div><span class="herb-cta">Read guide →</span></div>
 </a>
-<!-- 55 CHAINY ROOT -->
 <a class="herb-card botanical-card" data-herb="chainy-root" data-use="everyday" data-flavour="earthy" data-heritage="caribbean" data-herb-name="Chainy Root" href="./herb-chainy-root.html">
-<div class="herb-image">
-<span class="herb-number">
-                HERB 55
-              </span>
-<span class="herb-live">
-                New
-              </span>
-<img width="1536" height="1024" alt="Dried chainy root" decoding="async" loading="lazy" src="./assets/botanicals/chainy-root-botanical-profile.webp?v=640"/>
-</div>
-<div class="herb-content">
-<h3>Chainy Root</h3>
-<div class="herb-latin">
-                Smilax balbisiana
-              </div>
-<div class="herb-flavour">
-                Earthy • Woody • Bittersweet
-              </div>
-<p class="herb-benefit-intro">Explore five reasons people study or traditionally use this botanical:</p>
-<ul aria-label="research and traditional-use topics" class="herb-benefit-list">
-<li>Found only in Jamaica</li>
-<li>Roots tonics: a living tradition</li>
-<li>Sarsaparilla’s cousin</li>
-<li>Blood sugar: rat studies</li>
-<li>Bottled tonics: alcohol &amp; sugar</li>
-</ul>
-<p class="herb-benefit-note">Topics for education, not proven effects of this tea. Evidence and safety vary by preparation.</p>
-<div class="herb-tags">
-<span>Jamaican Heritage</span>
-</div>
-<div class="herb-entry-status">
-<strong>
-                  Full Botanical Entry • Live
-                </strong>
-<span class="herb-cta">
-                  Explore Chainy Root →
-                </span>
-</div>
-</div>
+<div class="herb-image"><img width="480" height="600" alt="Dried chainy root" decoding="async" loading="lazy" src="./assets/botanicals/thumbs/chainy-root.webp?v=1"/></div>
+<div class="herb-content"><h3>Chainy Root</h3><div class="herb-latin">Smilax balbisiana</div><div class="herb-flavour">Earthy • Woody • Bittersweet</div><span class="herb-cta">Read guide →</span></div>
 </a>
 
 </div>
+<button type="button" class="lib-more" id="libMore">Show all 55 herbs ↓</button>
 <p class="lib-empty" id="libEmpty">No herbs match those filters yet. Try clearing one, or <a href="./rootz-letter.html">join The Rootz Letter</a> to hear when new herbs land.</p>
 <p class="herb-benefit-note" style="margin-top:22px;">Uses are topics people study or traditionally use each herb for, not proven effects of a tea. Evidence and safety vary by herb and preparation.</p>
 </div>
@@ -4509,7 +2493,9 @@
   var grid=document.getElementById('libGrid'); if(!grid) return;
   var cards=[].slice.call(grid.querySelectorAll('.herb-card')), chips=[].slice.call(document.querySelectorAll('.lib-chip'));
   var q=document.getElementById('libSearch'), count=document.getElementById('libCount'), empty=document.getElementById('libEmpty');
-  var state={use:'',flavour:'',heritage:''};
+  var state={use:'',flavour:'',heritage:''}, FIRST=12, expanded=false, more=document.getElementById('libMore');
+  cards.forEach(function(c,i){ if(i>=FIRST) c.classList.add('lib-extra'); });
+  more.addEventListener('click',function(){ expanded=true; apply(); });
   function apply(){
     var term=(q.value||'').trim().toLowerCase(), n=0;
     cards.forEach(function(c){
@@ -4518,7 +2504,10 @@
       if(ok && term) ok=c.textContent.toLowerCase().indexOf(term)>-1;
       c.hidden=!ok; if(ok) n++;
     });
-    count.textContent = n===cards.length ? 'Showing all '+n+' herbs' : 'Showing '+n+' of '+cards.length+' herbs';
+    var filtered = !!(term||state.use||state.flavour||state.heritage);
+    grid.classList.toggle('lib-collapsed', !filtered && !expanded);
+    more.hidden = filtered || expanded;
+    count.textContent = filtered ? 'Showing '+n+' of '+cards.length+' herbs' : (expanded ? 'Showing all '+n+' herbs' : 'Showing '+FIRST+' of '+n+' herbs');
     empty.style.display = n ? 'none' : 'block';
   }
   chips.forEach(function(b){ b.addEventListener('click',function(){
@@ -4528,6 +2517,8 @@
     apply();
   }); });
   q.addEventListener('input',apply);
+  if(location.hash==='#all') expanded=true;
+  apply();
   document.getElementById('libReset').addEventListener('click',function(){ state={use:'',flavour:'',heritage:''}; q.value=''; chips.forEach(function(x){x.setAttribute('aria-pressed','false');}); apply(); });
   var p=new URLSearchParams(location.search); ['use','flavour','heritage'].forEach(function(g){ var v=p.get(g); if(v){ var b=document.querySelector('.lib-chip[data-group="'+g+'"][data-value="'+v+'"]'); if(b) b.click(); } });
 })();
