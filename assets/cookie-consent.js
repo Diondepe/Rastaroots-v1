@@ -1,5 +1,6 @@
-/* RastaRoots cookie consent: Google Consent Mode v2.
-   Analytics cookies stay off until the visitor chooses "Accept".
+/* RastaRoots cookie settings: Google Consent Mode v2.
+   Analytics is on by default (statistics only, no advertising). No pop-up on first visit.
+   Visitors can turn it off (or back on) from the footer "Cookie settings" link.
    The choice is stored in localStorage (rrCookieConsent = granted | denied). */
 (function () {
   var KEY = 'rrCookieConsent';
@@ -7,7 +8,7 @@
   function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
   function g() { window.dataLayer = window.dataLayer || []; window.dataLayer.push(arguments); }
   function apply(v) {
-    g('consent', 'update', { analytics_storage: v === 'granted' ? 'granted' : 'denied' });
+    g('consent', 'update', { analytics_storage: v === 'denied' ? 'denied' : 'granted' });
   }
   function css() {
     if (document.getElementById('rr-cc-style')) return;
@@ -26,9 +27,13 @@
     if (document.getElementById('rr-cc')) return;
     css();
     var b = document.createElement('div');
-    b.id = 'rr-cc'; b.setAttribute('role', 'dialog'); b.setAttribute('aria-live', 'polite'); b.setAttribute('aria-label', 'Cookie choice');
-    b.innerHTML = '<p><strong>A quick one about cookies.</strong> We’d like to use analytics cookies to see which pages and guides help people most. Nothing for advertising, and you can change your mind any time. <a href="/privacy.html#privacy-details">Privacy</a></p>'
-      + '<div class="rr-cc-actions"><button type="button" class="rr-cc-yes">Accept analytics</button><button type="button" class="rr-cc-no">No thanks</button></div>';
+    b.id = 'rr-cc'; b.setAttribute('role', 'dialog'); b.setAttribute('aria-live', 'polite'); b.setAttribute('aria-label', 'Cookie settings');
+    var off = get() === 'denied';
+    b.innerHTML = '<p><strong>Cookie settings</strong></p>'
+      + '<p>We use analytics cookies to count visits and see which pages and guides help people most. Statistics only: nothing for advertising. '
+      + 'Analytics is currently <strong>' + (off ? 'off' : 'on') + '</strong>. <a href="/privacy.html#privacy-details">Privacy</a></p>'
+      + '<div class="rr-cc-actions"><button type="button" class="rr-cc-yes">' + (off ? 'Turn analytics on' : 'Keep analytics on') + '</button>'
+      + '<button type="button" class="rr-cc-no">' + (off ? 'Keep it off' : 'Turn analytics off') + '</button></div>';
     b.querySelector('.rr-cc-yes').addEventListener('click', function () { set('granted'); apply('granted'); close(); });
     b.querySelector('.rr-cc-no').addEventListener('click', function () { set('denied'); apply('denied'); close(); });
     document.body.appendChild(b);
@@ -36,7 +41,9 @@
   window.rrCookieSettings = function (e) { if (e && e.preventDefault) e.preventDefault(); show(); };
   function init() {
     var v = get();
-    if (v === 'granted' || v === 'denied') { apply(v); } else { show(); }
+    /* 18 Nov 2026: no pop-up on first visit while site updates are finished.
+       Analytics on by default; visitors switch it off via the footer "Cookie settings" link. */
+    apply(v);
     document.querySelectorAll('[data-cookie-settings]').forEach(function (a) { a.addEventListener('click', window.rrCookieSettings); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
