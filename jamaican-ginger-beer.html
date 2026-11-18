@@ -263,7 +263,7 @@
        GOOGLE ANALYTICS
   ======================================================= -->
 
-  <script>/* Consent Mode v2 defaults: analytics off until the visitor accepts */window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var c=null;try{c=localStorage.getItem('rrCookieConsent')}catch(e){}gtag('consent','default',{analytics_storage:c==='granted'?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});})();</script>
+  <script>/* Analytics-only statistics (PECR statistical exemption): on by default, off if the visitor opted out via Cookie settings; advertising always off */window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var c=null;try{c=localStorage.getItem('rrCookieConsent')}catch(e){}gtag('consent','default',{analytics_storage:c==='denied'?'denied':'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('set','ads_data_redaction',true);gtag('set','allow_google_signals',false);gtag('set','allow_ad_personalization_signals',false);})();</script>
 <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"
@@ -3086,7 +3086,7 @@
   </script>
 
 
-<script src="/assets/cookie-consent.js?v=1" defer></script>
+<script src="/assets/cookie-consent.js?v=2" defer></script>
 </body>
 
 </html>

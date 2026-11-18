@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./style.css?v=700" />
 
   <!-- Google Analytics 4 cross-domain tracking -->
-  <script>/* Consent Mode v2 defaults: analytics off until the visitor accepts */window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var c=null;try{c=localStorage.getItem('rrCookieConsent')}catch(e){}gtag('consent','default',{analytics_storage:c==='granted'?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});})();</script>
+  <script>/* Analytics-only statistics (PECR statistical exemption): on by default, off if the visitor opted out via Cookie settings; advertising always off */window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var c=null;try{c=localStorage.getItem('rrCookieConsent')}catch(e){}gtag('consent','default',{analytics_storage:c==='denied'?'denied':'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('set','ads_data_redaction',true);gtag('set','allow_google_signals',false);gtag('set','allow_ad_personalization_signals',false);})();</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XKF37N3P9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -324,12 +324,12 @@
         <h3>Who we share it with</h3>
         <p>We only share what each service needs to do its job: Shopify (our shop and checkout) and its payment partners; Mailchimp, run by Intuit (our email service); Google Analytics (website statistics); and our courier, to deliver your order. Some of these providers store data outside the UK, including in the United States. Where they do, they use legal safeguards approved under UK data protection law. We never sell your personal information.</p>
         <h3>Cookies and your browser</h3>
-        <p>We only set Google Analytics cookies if you choose <strong>Accept analytics</strong> in our cookie banner; they help us understand how people use the site. You can change your choice at any time using <a href="#" data-cookie-settings>Cookie settings</a> in the footer. We do not use advertising cookies. When you join the free Rootz Library, we save a small note in your browser so the guides stay unlocked when you come back. You can clear it at any time in your browser settings.</p>
+        <p>We use Google Analytics cookies only to produce overall statistics about how people use the site, such as which pages are visited, so we can improve it. Under UK law (the statistical-purposes exception added to PECR by the Data (Use and Access) Act 2025) these cookies can be set without asking first, as long as we tell you and give you an easy way to say no. You can switch analytics off, or back on, at any time using <a href="#" data-cookie-settings>Cookie settings</a> in the footer of any page. We do not use advertising cookies, and Google signals and ad personalisation are switched off. When you join the free Rootz Library, we save a small note in your browser so the guides stay unlocked when you come back. You can clear it at any time in your browser settings.</p>
         <h3>How long we keep it</h3>
         <p>Order records are kept for six years for tax and accounting reasons. Email subscriber details are kept until you unsubscribe or ask us to delete them.</p>
         <h3>Your rights</h3>
         <p>You can ask to see, correct or delete your information, to restrict or object to how we use it, or to receive a copy to take elsewhere. Where we rely on consent, you can withdraw it at any time. Email us and we will reply within one month. If you are unhappy with how we handle your data, you can complain to the Information Commissioner's Office at <a href="https://ico.org.uk/make-a-complaint/" rel="noopener noreferrer" target="_blank">ico.org.uk</a>.</p>
-        <p><em>Last updated: 17 November 2026.</em></p>
+        <p><em>Last updated: 18 November 2026.</em></p>
       </div>
     </section>
 
@@ -385,6 +385,6 @@
 
   <script src="./script.js?v=601"></script>
 
-<script src="/assets/cookie-consent.js?v=1" defer></script>
+<script src="/assets/cookie-consent.js?v=2" defer></script>
 </body>
 </html>
