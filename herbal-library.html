@@ -2238,8 +2238,25 @@
     .lib-filter-label{min-width:auto!important;flex:0 0 auto}
     .lib-chip{flex:0 0 auto;white-space:nowrap}
   }
+  /* Find your herb: farmers illustration (18 Nov) */
+  .lib-find-hero{position:relative;border-radius:28px;overflow:hidden;margin:0 0 30px;background:#efe3c8 url("./assets/home/find-your-herb-farmers.webp?v=1") center 62%/cover no-repeat;box-shadow:0 18px 44px rgba(16,60,37,.12)}
+  .lib-find-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,249,238,.96) 0%,rgba(255,249,238,.9) 38%,rgba(255,249,238,.45) 62%,rgba(255,249,238,0) 82%)}
+  .lib-find-art{display:none}
+  .lib-find-inner{position:relative;max-width:620px;padding:46px 0 34px 46px}
+  .lib-find-inner .library-heading{text-align:left;margin-bottom:22px}
+  .lib-find-inner .lib-filters{margin:0;background:rgba(255,249,238,.94);backdrop-filter:blur(4px)}
+  @media(max-width:820px){
+    .lib-find-hero{background:#fff9ee;box-shadow:none;border-radius:22px;border:1px solid rgba(16,60,37,.12)}
+    .lib-find-hero::before{display:none}
+    .lib-find-art{display:block;height:230px;background:url("./assets/home/find-your-herb-farmers-mobile.webp?v=2") center 55%/cover no-repeat}
+    .lib-find-inner{max-width:none;padding:22px 18px 18px}
+  }
+
 </style>
 <div class="library-container">
+<div class="lib-find-hero" role="presentation">
+<div class="lib-find-art" aria-hidden="true"></div>
+<div class="lib-find-inner">
 <div class="library-heading">
 <p class="library-kicker">
             The Herbal Library • 55 Herbs • And Still Growing
@@ -2259,6 +2276,8 @@
 <input class="lib-search" id="libSearch" type="search" placeholder="Search herbs, e.g. sorrel, ginger, rooibos" autocomplete="off"/>
 <div class="lib-filter-row" role="group" aria-label="Filter by use"><span class="lib-filter-label">Use</span><button type="button" class="lib-chip" data-group="use" data-value="calm" aria-pressed="false">Calm &amp; sleep</button><button type="button" class="lib-chip" data-group="use" data-value="digest" aria-pressed="false">Digestion</button><button type="button" class="lib-chip" data-group="use" data-value="cold" aria-pressed="false">Cold season &amp; chest</button><button type="button" class="lib-chip" data-group="use" data-value="women" aria-pressed="false">Women’s health</button><button type="button" class="lib-chip" data-group="use" data-value="heart" aria-pressed="false">Heart &amp; blood sugar research</button><button type="button" class="lib-chip" data-group="use" data-value="everyday" aria-pressed="false">Everyday sipping</button></div><div class="lib-filter-row" role="group" aria-label="Filter by flavour"><span class="lib-filter-label">Flavour</span><button type="button" class="lib-chip" data-group="flavour" data-value="warm" aria-pressed="false">Warming &amp; spicy</button><button type="button" class="lib-chip" data-group="flavour" data-value="fresh" aria-pressed="false">Fresh &amp; minty</button><button type="button" class="lib-chip" data-group="flavour" data-value="citrus" aria-pressed="false">Citrus &amp; lemony</button><button type="button" class="lib-chip" data-group="flavour" data-value="floral" aria-pressed="false">Floral &amp; fruity</button><button type="button" class="lib-chip" data-group="flavour" data-value="earthy" aria-pressed="false">Earthy &amp; bitter</button><button type="button" class="lib-chip" data-group="flavour" data-value="sweet" aria-pressed="false">Sweet &amp; mellow</button></div><div class="lib-filter-row" role="group" aria-label="Filter by heritage"><span class="lib-filter-label">Heritage</span><button type="button" class="lib-chip" data-group="heritage" data-value="caribbean" aria-pressed="false">Caribbean</button><button type="button" class="lib-chip" data-group="heritage" data-value="african" aria-pressed="false">African</button><button type="button" class="lib-chip" data-group="heritage" data-value="global" aria-pressed="false">Everyday &amp; global</button></div>
 <div class="lib-status"><span id="libCount" aria-live="polite">Showing all 55 herbs</span><button type="button" class="lib-reset" id="libReset">Clear filters</button></div>
+</div>
+</div>
 </div>
 <p style="margin:0 0 28px;font-weight:700;">Brewing guides: <a href="./how-to-make-herbal-tea.html">How to make herbal tea →</a> &nbsp;·&nbsp; <a href="./sorrel-drink-recipe.html">Jamaican sorrel drink recipe →</a> &nbsp;·&nbsp; <a href="./rootz-letter.html">New herbs every Sunday in The Rootz Letter →</a></p>
 <div aria-label="All RastaRoots herbal tea guides" class="herb-grid" id="libGrid">
