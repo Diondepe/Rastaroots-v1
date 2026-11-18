@@ -36,7 +36,10 @@
   window.rrCookieSettings = function (e) { if (e && e.preventDefault) e.preventDefault(); show(); };
   function init() {
     var v = get();
-    if (v === 'granted' || v === 'denied') { apply(v); } else { show(); }
+    /* Banner paused 18 Nov 2026 until site updates are finished: it no longer pops up on first visit.
+       Analytics stays off unless a visitor opts in via the footer "Cookie settings" link.
+       To bring the pop-up back, restore: else { show(); } */
+    if (v === 'granted' || v === 'denied') { apply(v); }
     document.querySelectorAll('[data-cookie-settings]').forEach(function (a) { a.addEventListener('click', window.rrCookieSettings); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
