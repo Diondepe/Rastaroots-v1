@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//RastaRoots//Launch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rastaroots-launch-20261129@rastarootslife.com
+DTSTAMP:20261119T070000Z
+DTSTART:20261129T133000Z
+DTEND:20261129T163000Z
+SUMMARY:RastaRoots launch day: free herbal tea & coffee tastings
+LOCATION:Windrush Millennium Centre, 70 Alexandra Road, Manchester M16 7WD
+DESCRIPTION:Free herbal tea and coffee tastings, launch freebies and the RastaRoots story. Everyone welcome. https://www.rastarootslife.com/links.html
+URL:https://www.rastarootslife.com/links.html
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:RastaRoots launch day today, 1:30pm
+END:VALARM
+END:VEVENT
+END:VCALENDAR
