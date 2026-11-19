@@ -4020,7 +4020,36 @@
          NEXT BOTANICAL
     ===================================================== -->
 
-    <section class="botanical-section section-light">
+        <section class="rr-next-steps" aria-labelledby="rr-next-title">
+      <style>
+        .rr-next-steps{padding:10px 0 40px}
+        .rr-next-box{background:#103c25;color:#fff9ee;border-radius:26px;padding:30px 28px}
+        .rr-next-kicker{margin:0 0 6px;font:800 .78rem Arial,Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f4d88a}
+        .rr-next-box h2{margin:0 0 18px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.2rem);color:#fff9ee}
+        .rr-next-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+        .rr-next-grid a{display:block;text-decoration:none;background:rgba(255,249,238,.08);border:1px solid rgba(244,216,138,.28);border-radius:16px;padding:16px;color:#fff9ee}
+        .rr-next-grid a:hover{background:rgba(255,249,238,.14)}
+        .rr-next-grid strong{display:block;font-size:1.02rem;margin:0 0 6px;color:#f4d88a}
+        .rr-next-grid span{font-size:.9rem;line-height:1.45;color:#efe6d2}
+        @media(max-width:900px){.rr-next-grid{grid-template-columns:1fr 1fr}}
+        @media(max-width:520px){.rr-next-grid{grid-template-columns:1fr}.rr-next-box{padding:24px 18px}}
+      </style>
+      <div class="botanical-container">
+        <div class="rr-next-box">
+          <p class="rr-next-kicker">Where to next</p>
+          <h2 id="rr-next-title">Keep following the roots</h2>
+          <div class="rr-next-grid">
+            <a href="/caribbean-bush-tea.html" data-next="bush-tea"><strong>Caribbean bush tea →</strong><span>The herbs, the stories and how families brew them.</span></a>
+            <a href="/caribbean-drinks.html" data-next="drinks"><strong>Christmas drinks →</strong><span>Sorrel, rum punch, Guinness punch and 10 more recipes.</span></a>
+            <a href="/herbal-tea-gifts.html" data-next="gifts"><strong>A gift with a story →</strong><span>The Discovery Collection: 5 blends, 25 sachets, £19.99.</span></a>
+            <a href="/rootz-letter.html" data-next="rootz-letter"><strong>The Rootz Letter →</strong><span>One free email every Sunday: a herb, a recipe, a story.</span></a>
+          </div>
+        </div>
+      </div>
+      <script>document.querySelectorAll('[data-next]').forEach(function(a){a.addEventListener('click',function(){if(window.gtag)gtag('event','herb_next_step_click',{target:a.dataset.next,herb:location.pathname});});});</script>
+    </section>
+
+<section class="botanical-section section-light">
       <div class="botanical-container">
         <div class="next-botanical">
           <div class="next-card">
